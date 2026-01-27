@@ -8,9 +8,8 @@ __pycache__/
 *.egg-info/
 .eggs/
 
-# Output files
-*.json
-*.csv
+# Debug output files (keep automobile_tn_* for GitHub Pages)
+debug_*.json
 
 # Debug files
 debug_*.html

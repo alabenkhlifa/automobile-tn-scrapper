@@ -786,10 +786,8 @@ class AutomobileTnScraper:
         print(f"\n✅ Scraping complete! Total: {len(self.cars)} trims")
     
     def _filter_valid_cars(self) -> List[CarTrim]:
-        """Filter out non-car entries like Devis pages, Concessionnaires, and noisy trims"""
-        # First pass: collect all valid non-Standard trims and track prices per model
+        """Filter out non-car entries and deduplicate by model_url"""
         valid_trims = []
-        model_prices = {}  # {(brand, model): set of prices with named trims}
 
         for car in self.cars:
             # Skip entries with model "Devis"
@@ -804,36 +802,19 @@ class AutomobileTnScraper:
             # Skip entries with noisy trim names (other brand names)
             if not self._is_valid_trim_name(car.trim, car.brand):
                 continue
-
-            model_key = (car.brand.lower(), car.model.lower())
-
-            # Track prices for named trims
-            if car.trim.lower() != 'standard':
-                if model_key not in model_prices:
-                    model_prices[model_key] = set()
-                model_prices[model_key].add(car.price_tnd)
-
             valid_trims.append(car)
 
-        # Second pass: deduplicate and skip "Standard" entries with duplicate prices
+        # Deduplicate by model_url only (one entry per model page)
         filtered = []
-        seen_trims = set()
+        seen_urls = set()
 
         for car in valid_trims:
-            model_key = (car.brand.lower(), car.model.lower())
-            trim_key = (car.brand.lower(), car.model.lower(), car.trim.lower())
-
-            # Skip "Standard" if we have a named trim with the same price
-            if car.trim.lower() == 'standard':
-                if model_key in model_prices and car.price_tnd in model_prices[model_key]:
-                    continue
-
-            # Deduplicate by brand+model+trim
-            if trim_key in seen_trims:
+            # One entry per model page URL
+            if car.model_url in seen_urls:
                 continue
-            seen_trims.add(trim_key)
-
+            seen_urls.add(car.model_url)
             filtered.append(car)
+
         return filtered
 
     def save_to_csv(self, filename: str = "automobile_tn_new_cars.csv"):

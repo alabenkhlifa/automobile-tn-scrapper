@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunisia New Cars Dashboard - automobile.tn</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-treemap@2.3.1/dist/chartjs-chart-treemap.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-card: #334155;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-blue: #3b82f6;
+            --accent-purple: #8b5cf6;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-red: #ef4444;
+            --accent-pink: #ec4899;
+            --accent-cyan: #06b6d4;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --gradient-4: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            --gradient-5: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+            position: relative;
+        }
+
+        .lang-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .lang-toggle button {
+            padding: 8px 16px;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .lang-toggle button:hover {
+            background: rgba(255,255,255,0.05);
+        }
+
+        .lang-toggle button.active {
+            background: var(--accent-blue);
+            color: var(--text-primary);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .stat-card.gradient-1 { border-left: 4px solid #667eea; }
+        .stat-card.gradient-2 { border-left: 4px solid #f5576c; }
+        .stat-card.gradient-3 { border-left: 4px solid #4facfe; }
+        .stat-card.gradient-4 { border-left: 4px solid #43e97b; }
+        .stat-card.gradient-5 { border-left: 4px solid #fa709a; }
+        .stat-card.gradient-6 { border-left: 4px solid #f59e0b; }
+
+        .stat-card h3 {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .stat-card .value {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .stat-card .subtitle {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 1200px) {
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .chart-card {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .chart-card.full-width {
+            grid-column: span 2;
+        }
+
+        @media (max-width: 1200px) {
+            .chart-card.full-width {
+                grid-column: span 1;
+            }
+        }
+
+        .chart-card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .chart-card h2::before {
+            content: '';
+            width: 4px;
+            height: 20px;
+            background: var(--gradient-1);
+            border-radius: 2px;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 300px;
+        }
+
+        .chart-container.tall {
+            height: 400px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        th {
+            background: var(--bg-card);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        tr:hover {
+            background: rgba(255,255,255,0.05);
+        }
+
+        .price {
+            font-weight: 600;
+            color: var(--accent-green);
+            white-space: nowrap;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .badge-populaire {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent-green);
+        }
+
+        .badge-new {
+            background: rgba(59, 130, 246, 0.2);
+            color: var(--accent-blue);
+        }
+
+        .badge-electric {
+            background: rgba(6, 182, 212, 0.2);
+            color: var(--accent-cyan);
+        }
+
+        .badge-hybrid {
+            background: rgba(139, 92, 246, 0.2);
+            color: var(--accent-purple);
+        }
+
+        /* Fuel type badges */
+        .badge-essence {
+            background: rgba(249, 115, 22, 0.2);
+            color: #f97316;
+        }
+
+        .badge-diesel {
+            background: rgba(100, 116, 139, 0.2);
+            color: #94a3b8;
+        }
+
+        .badge-electrique {
+            background: rgba(6, 182, 212, 0.2);
+            color: var(--accent-cyan);
+        }
+
+        .badge-hybride {
+            background: rgba(139, 92, 246, 0.2);
+            color: var(--accent-purple);
+        }
+
+        /* Transmission badges */
+        .badge-automatique {
+            background: rgba(59, 130, 246, 0.2);
+            color: var(--accent-blue);
+        }
+
+        .badge-manuelle {
+            background: rgba(250, 204, 21, 0.2);
+            color: #facc15;
+        }
+
+        /* Body type badges */
+        .badge-suv {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent-green);
+        }
+
+        .badge-berline {
+            background: rgba(99, 102, 241, 0.2);
+            color: #6366f1;
+        }
+
+        .badge-citadine {
+            background: rgba(236, 72, 153, 0.2);
+            color: var(--accent-pink);
+        }
+
+        .badge-compacte {
+            background: rgba(20, 184, 166, 0.2);
+            color: #14b8a6;
+        }
+
+        .badge-break {
+            background: rgba(168, 85, 247, 0.2);
+            color: #a855f7;
+        }
+
+        .badge-coupe {
+            background: rgba(239, 68, 68, 0.2);
+            color: var(--accent-red);
+        }
+
+        .badge-cabriolet {
+            background: rgba(251, 146, 60, 0.2);
+            color: #fb923c;
+        }
+
+        .badge-monospace {
+            background: rgba(34, 197, 94, 0.2);
+            color: #22c55e;
+        }
+
+        .badge-pick-up {
+            background: rgba(120, 113, 108, 0.2);
+            color: #a8a29e;
+        }
+
+        .badge-utilitaire {
+            background: rgba(107, 114, 128, 0.2);
+            color: #9ca3af;
+        }
+
+        .badge-default {
+            background: rgba(148, 163, 184, 0.2);
+            color: var(--text-secondary);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 60px;
+            color: var(--text-secondary);
+        }
+
+        .loading::after {
+            content: '';
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 3px solid var(--bg-card);
+            border-top-color: var(--accent-blue);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 15px;
+            vertical-align: middle;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .error {
+            background: rgba(239, 68, 68, 0.2);
+            border: 1px solid var(--accent-red);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: var(--accent-red);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .brand-logo {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background: var(--bg-card);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+
+        .progress-bar .fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-toggle">
+                <button id="lang-en" onclick="setLanguage('en')">EN</button>
+                <button id="lang-fr" class="active" onclick="setLanguage('fr')">FR</button>
+            </div>
+            <h1 id="header-title">Tableau de Bord Voitures Neuves Tunisie</h1>
+            <p id="header-subtitle">Analyses en temps réel du marché automobile.tn</p>
+        </header>
+
+        <div id="content">
+            <div class="loading" id="loading-text">Chargement des données...</div>
+        </div>
+
+        <footer>
+            Données extraites de automobile.tn | Tableau de bord généré automatiquement
+        </footer>
+    </div>
+
+    <script>
+        // Chart.js global configuration
+        Chart.defaults.color = '#94a3b8';
+        Chart.defaults.borderColor = 'rgba(255,255,255,0.1)';
+        Chart.defaults.font.family = "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+
+        // Language management
+        let currentLang = localStorage.getItem('dashboardLang') || 'fr';
+        let cachedData = null;
+        let chartInstances = {};
+
+        const translations = {
+            en: {
+                // Header & Footer
+                headerTitle: "Tunisia New Cars Dashboard",
+                headerSubtitle: "Real-time analytics from automobile.tn marketplace",
+                footerText: "Data scraped from automobile.tn | Dashboard generated automatically",
+
+                // Stat cards
+                totalTrims: "Total Trims",
+                totalTrimsSubtitle: "car configurations",
+                totalModels: "Total Models",
+                totalModelsSubtitle: "unique car models",
+                brands: "Brands",
+                brandsSubtitle: "manufacturers",
+                lowestPrice: "Lowest Price",
+                lowestPriceSubtitle: "starting from",
+                averagePrice: "Average Price",
+                averagePriceSubtitle: "market average",
+                populaireTrims: "Populaire Trims",
+                populaireTrimsSubtitle: "government subsidized",
+
+                // Chart titles
+                priceDistribution: "Price Distribution",
+                fuelTypes: "Fuel Types",
+                topBrands: "Top 15 Brands by Model Count",
+                bodyTypes: "Body Types",
+                transmissionTypes: "Transmission Types",
+                priceRangeByBrand: "Price Range by Top Brands",
+                electricHybrid: "Electric & Hybrid Trims",
+                priceSegments: "Price Segments",
+                topExpensive: "Top 10 Most Expensive Trims",
+                topAffordable: "Top 10 Most Affordable Trims",
+                populaireTrimsTable: "Government Subsidized \"Populaire\" Trims",
+                brandMarketShare: "Brand Market Share (by model count)",
+
+                // Chart labels
+                numberOfTrims: "Number of Trims",
+                models: "Models",
+                minPrice: "Min Price",
+                avgPrice: "Avg Price",
+                maxPrice: "Max Price",
+                conventional: "Conventional",
+                electric: "Electric",
+                hybrid: "Hybrid",
+                budget: "Budget (< 50K)",
+                economy: "Economy (50-100K)",
+                midRange: "Mid-range (100-200K)",
+                premium: "Premium (200-400K)",
+                luxury: "Luxury (> 400K)",
+                marketShare: "Market Share",
+                marketShareTooltip: "market share",
+                others: "Others",
+
+                // Table headers
+                rank: "#",
+                trim: "Trim",
+                price: "Price",
+                type: "Type",
+                fuel: "Fuel",
+                transmission: "Transmission",
+                cvFiscal: "CV Fiscal",
+
+                // Error & loading
+                loading: "Loading data...",
+                errorTitle: "Error Loading Data",
+                errorHelp: "Please run the scraper first:",
+                noPopulaire: "No populaire trims found"
+            },
+            fr: {
+                // Header & Footer
+                headerTitle: "Tableau de Bord Voitures Neuves Tunisie",
+                headerSubtitle: "Analyses en temps réel du marché automobile.tn",
+                footerText: "Données extraites de automobile.tn | Tableau de bord généré automatiquement",
+
+                // Stat cards
+                totalTrims: "Total Finitions",
+                totalTrimsSubtitle: "configurations de voitures",
+                totalModels: "Total Modèles",
+                totalModelsSubtitle: "modèles uniques",
+                brands: "Marques",
+                brandsSubtitle: "constructeurs",
+                lowestPrice: "Prix Minimum",
+                lowestPriceSubtitle: "à partir de",
+                averagePrice: "Prix Moyen",
+                averagePriceSubtitle: "moyenne du marché",
+                populaireTrims: "Finitions Populaire",
+                populaireTrimsSubtitle: "subventionnées par l'état",
+
+                // Chart titles
+                priceDistribution: "Distribution des Prix",
+                fuelTypes: "Types de Carburant",
+                topBrands: "Top 15 Marques par Nombre de Modèles",
+                bodyTypes: "Types de Carrosserie",
+                transmissionTypes: "Types de Transmission",
+                priceRangeByBrand: "Gamme de Prix par Marques",
+                electricHybrid: "Finitions Électriques & Hybrides",
+                priceSegments: "Segments de Prix",
+                topExpensive: "Top 10 Finitions les Plus Chères",
+                topAffordable: "Top 10 Finitions les Plus Abordables",
+                populaireTrimsTable: "Finitions \"Populaire\" Subventionnées",
+                brandMarketShare: "Parts de Marché par Marque (par modèles)",
+
+                // Chart labels
+                numberOfTrims: "Nombre de Finitions",
+                models: "Modèles",
+                minPrice: "Prix Min",
+                avgPrice: "Prix Moy",
+                maxPrice: "Prix Max",
+                conventional: "Conventionnel",
+                electric: "Électrique",
+                hybrid: "Hybride",
+                budget: "Économique (< 50K)",
+                economy: "Entrée de gamme (50-100K)",
+                midRange: "Milieu de gamme (100-200K)",
+                premium: "Premium (200-400K)",
+                luxury: "Luxe (> 400K)",
+                marketShare: "Part de Marché",
+                marketShareTooltip: "part de marché",
+                others: "Autres",
+
+                // Table headers
+                rank: "#",
+                trim: "Finition",
+                price: "Prix",
+                type: "Type",
+                fuel: "Carburant",
+                transmission: "Transmission",
+                cvFiscal: "CV Fiscal",
+
+                // Error & loading
+                loading: "Chargement des données...",
+                errorTitle: "Erreur de Chargement",
+                errorHelp: "Veuillez d'abord exécuter le scraper :",
+                noPopulaire: "Aucune finition populaire trouvée"
+            }
+        };
+
+        function t(key) {
+            return translations[currentLang][key] || key;
+        }
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('dashboardLang', lang);
+
+            // Update button states
+            document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+            document.getElementById('lang-fr').classList.toggle('active', lang === 'fr');
+
+            // Update header
+            document.getElementById('header-title').textContent = t('headerTitle');
+            document.getElementById('header-subtitle').textContent = t('headerSubtitle');
+
+            // Update footer
+            document.querySelector('footer').textContent = t('footerText');
+
+            // Re-render dashboard if data is loaded
+            if (cachedData) {
+                destroyAllCharts();
+                renderDashboard(cachedData);
+            }
+        }
+
+        function destroyAllCharts() {
+            Object.values(chartInstances).forEach(chart => {
+                if (chart && typeof chart.destroy === 'function') {
+                    chart.destroy();
+                }
+            });
+            chartInstances = {};
+        }
+
+        function initLanguage() {
+            document.getElementById('lang-en').classList.toggle('active', currentLang === 'en');
+            document.getElementById('lang-fr').classList.toggle('active', currentLang === 'fr');
+            document.getElementById('header-title').textContent = t('headerTitle');
+            document.getElementById('header-subtitle').textContent = t('headerSubtitle');
+            document.querySelector('footer').textContent = t('footerText');
+            const loadingEl = document.getElementById('loading-text');
+            if (loadingEl) loadingEl.textContent = t('loading');
+        }
+
+        // Color palettes
+        const colors = {
+            blue: '#3b82f6',
+            purple: '#8b5cf6',
+            green: '#10b981',
+            orange: '#f59e0b',
+            red: '#ef4444',
+            pink: '#ec4899',
+            cyan: '#06b6d4',
+            yellow: '#eab308',
+            indigo: '#6366f1',
+            teal: '#14b8a6'
+        };
+
+        const colorPalette = [
+            colors.blue, colors.purple, colors.green, colors.orange, colors.red,
+            colors.pink, colors.cyan, colors.yellow, colors.indigo, colors.teal
+        ];
+
+        const gradients = [
+            ['#667eea', '#764ba2'],
+            ['#f093fb', '#f5576c'],
+            ['#4facfe', '#00f2fe'],
+            ['#43e97b', '#38f9d7'],
+            ['#fa709a', '#fee140'],
+            ['#a8edea', '#fed6e3'],
+            ['#5ee7df', '#b490ca'],
+            ['#d299c2', '#fef9d7']
+        ];
+
+        function formatPrice(price) {
+            return new Intl.NumberFormat('fr-TN').format(price) + ' DT';
+        }
+
+        function formatNumber(num) {
+            return new Intl.NumberFormat('fr-TN').format(num);
+        }
+
+        function getFuelBadge(fuel) {
+            if (!fuel) return '<span class="badge badge-default">-</span>';
+            const fuelLower = fuel.toLowerCase();
+            if (fuelLower.includes('electrique') || fuelLower.includes('électrique')) {
+                return `<span class="badge badge-electrique">${fuel}</span>`;
+            } else if (fuelLower.includes('hybride')) {
+                return `<span class="badge badge-hybride">${fuel}</span>`;
+            } else if (fuelLower.includes('diesel')) {
+                return `<span class="badge badge-diesel">${fuel}</span>`;
+            } else if (fuelLower.includes('essence')) {
+                return `<span class="badge badge-essence">${fuel}</span>`;
+            }
+            return `<span class="badge badge-default">${fuel}</span>`;
+        }
+
+        function getTransmissionBadge(trans) {
+            if (!trans) return '<span class="badge badge-default">-</span>';
+            const transLower = trans.toLowerCase();
+            if (transLower.includes('auto')) {
+                return `<span class="badge badge-automatique">${trans}</span>`;
+            } else if (transLower.includes('manuel') || transLower.includes('manual')) {
+                return `<span class="badge badge-manuelle">${trans}</span>`;
+            }
+            return `<span class="badge badge-default">${trans}</span>`;
+        }
+
+        function getBodyTypeBadge(bodyType) {
+            if (!bodyType) return '<span class="badge badge-default">-</span>';
+            const bodyLower = bodyType.toLowerCase();
+            const badgeMap = {
+                'suv': 'suv',
+                'crossover': 'suv',
+                'berline': 'berline',
+                'citadine': 'citadine',
+                'compacte': 'compacte',
+                'break': 'break',
+                'coupé': 'coupe',
+                'coupe': 'coupe',
+                'cabriolet': 'cabriolet',
+                'monospace': 'monospace',
+                'pick-up': 'pick-up',
+                'pickup': 'pick-up',
+                'utilitaire': 'utilitaire'
+            };
+            for (const [key, badgeClass] of Object.entries(badgeMap)) {
+                if (bodyLower.includes(key)) {
+                    return `<span class="badge badge-${badgeClass}">${bodyType}</span>`;
+                }
+            }
+            return `<span class="badge badge-default">${bodyType}</span>`;
+        }
+
+        async function loadData() {
+            try {
+                const response = await fetch('automobile_tn_new_cars.json');
+                if (!response.ok) throw new Error('Data file not found');
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                throw error;
+            }
+        }
+
+        function calculateStats(cars) {
+            const prices = cars.map(c => c.price_tnd).filter(p => p);
+            const brands = [...new Set(cars.map(c => c.brand))];
+            const fuelTypes = {};
+            const bodyTypes = {};
+            const transmissions = {};
+            const brandTrimCounts = {};  // Trims per brand
+            const brandModelCounts = {}; // Unique models per brand
+            const brandPrices = {};
+
+            // Count unique models (brand + model combinations)
+            const uniqueModels = new Set();
+            const brandModelsSet = {}; // Track unique models per brand
+
+            cars.forEach(car => {
+                // Fuel types
+                const fuel = car.fuel_type || 'Unknown';
+                fuelTypes[fuel] = (fuelTypes[fuel] || 0) + 1;
+
+                // Body types
+                const body = car.body_type || 'Unknown';
+                bodyTypes[body] = (bodyTypes[body] || 0) + 1;
+
+                // Transmissions
+                const trans = car.transmission || 'Unknown';
+                transmissions[trans] = (transmissions[trans] || 0) + 1;
+
+                // Count trims per brand
+                brandTrimCounts[car.brand] = (brandTrimCounts[car.brand] || 0) + 1;
+
+                // Track unique models per brand
+                const modelKey = `${car.brand}|${car.model}`;
+                uniqueModels.add(modelKey);
+                if (!brandModelsSet[car.brand]) brandModelsSet[car.brand] = new Set();
+                brandModelsSet[car.brand].add(car.model);
+
+                if (!brandPrices[car.brand]) brandPrices[car.brand] = [];
+                if (car.price_tnd) brandPrices[car.brand].push(car.price_tnd);
+            });
+
+            // Convert model sets to counts
+            Object.keys(brandModelsSet).forEach(brand => {
+                brandModelCounts[brand] = brandModelsSet[brand].size;
+            });
+
+            return {
+                totalTrims: cars.length,
+                totalModels: uniqueModels.size,
+                totalBrands: brands.length,
+                minPrice: Math.min(...prices),
+                maxPrice: Math.max(...prices),
+                avgPrice: Math.round(prices.reduce((a, b) => a + b, 0) / prices.length),
+                medianPrice: prices.sort((a, b) => a - b)[Math.floor(prices.length / 2)],
+                populaireTrims: cars.filter(c => c.is_populaire).length,
+                nouveauTrims: cars.filter(c => c.is_new).length,
+                electricTrims: cars.filter(c => c.is_electric).length,
+                hybridTrims: cars.filter(c => c.is_hybrid).length,
+                fuelTypes,
+                bodyTypes,
+                transmissions,
+                brandTrimCounts,
+                brandModelCounts,
+                brandPrices,
+                prices
+            };
+        }
+
+        function createGradient(ctx, colors) {
+            const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+            gradient.addColorStop(0, colors[0]);
+            gradient.addColorStop(1, colors[1]);
+            return gradient;
+        }
+
+        function renderDashboard(data) {
+            cachedData = data;
+            const cars = data.cars;
+            const stats = calculateStats(cars);
+
+            const content = document.getElementById('content');
+            content.innerHTML = `
+                <!-- Summary Stats -->
+                <div class="stats-grid">
+                    <div class="stat-card gradient-1">
+                        <h3>${t('totalTrims')}</h3>
+                        <div class="value">${formatNumber(stats.totalTrims)}</div>
+                        <div class="subtitle">${t('totalTrimsSubtitle')}</div>
+                    </div>
+                    <div class="stat-card gradient-2">
+                        <h3>${t('totalModels')}</h3>
+                        <div class="value">${formatNumber(stats.totalModels)}</div>
+                        <div class="subtitle">${t('totalModelsSubtitle')}</div>
+                    </div>
+                    <div class="stat-card gradient-3">
+                        <h3>${t('brands')}</h3>
+                        <div class="value">${stats.totalBrands}</div>
+                        <div class="subtitle">${t('brandsSubtitle')}</div>
+                    </div>
+                    <div class="stat-card gradient-4">
+                        <h3>${t('lowestPrice')}</h3>
+                        <div class="value">${formatPrice(stats.minPrice)}</div>
+                        <div class="subtitle">${t('lowestPriceSubtitle')}</div>
+                    </div>
+                    <div class="stat-card gradient-5">
+                        <h3>${t('averagePrice')}</h3>
+                        <div class="value">${formatPrice(stats.avgPrice)}</div>
+                        <div class="subtitle">${t('averagePriceSubtitle')}</div>
+                    </div>
+                    <div class="stat-card gradient-6">
+                        <h3>${t('populaireTrims')}</h3>
+                        <div class="value">${stats.populaireTrims}</div>
+                        <div class="subtitle">${t('populaireTrimsSubtitle')}</div>
+                    </div>
+                </div>
+
+                <!-- Charts Grid -->
+                <div class="charts-grid">
+                    <!-- Price Distribution -->
+                    <div class="chart-card">
+                        <h2>${t('priceDistribution')}</h2>
+                        <div class="chart-container">
+                            <canvas id="priceDistChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Fuel Types -->
+                    <div class="chart-card">
+                        <h2>${t('fuelTypes')}</h2>
+                        <div class="chart-container">
+                            <canvas id="fuelChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Top Brands -->
+                    <div class="chart-card">
+                        <h2>${t('topBrands')}</h2>
+                        <div class="chart-container tall">
+                            <canvas id="brandChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Body Types -->
+                    <div class="chart-card">
+                        <h2>${t('bodyTypes')}</h2>
+                        <div class="chart-container">
+                            <canvas id="bodyChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Transmission Types -->
+                    <div class="chart-card">
+                        <h2>${t('transmissionTypes')}</h2>
+                        <div class="chart-container">
+                            <canvas id="transmissionChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Price Range by Brand -->
+                    <div class="chart-card">
+                        <h2>${t('priceRangeByBrand')}</h2>
+                        <div class="chart-container tall">
+                            <canvas id="priceRangeChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Electric & Hybrid Stats -->
+                    <div class="chart-card">
+                        <h2>${t('electricHybrid')}</h2>
+                        <div class="chart-container">
+                            <canvas id="evChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Price Segments -->
+                    <div class="chart-card">
+                        <h2>${t('priceSegments')}</h2>
+                        <div class="chart-container">
+                            <canvas id="segmentChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Top 10 Most Expensive -->
+                    <div class="chart-card">
+                        <h2>${t('topExpensive')}</h2>
+                        <div class="table-container">
+                            <table id="expensiveTable"></table>
+                        </div>
+                    </div>
+
+                    <!-- Top 10 Cheapest -->
+                    <div class="chart-card">
+                        <h2>${t('topAffordable')}</h2>
+                        <div class="table-container">
+                            <table id="cheapestTable"></table>
+                        </div>
+                    </div>
+
+                    <!-- Populaire Cars -->
+                    <div class="chart-card full-width">
+                        <h2>${t('populaireTrimsTable')}</h2>
+                        <div class="table-container">
+                            <table id="populaireTable"></table>
+                        </div>
+                    </div>
+
+                    <!-- Brand Market Share -->
+                    <div class="chart-card full-width">
+                        <h2>${t('brandMarketShare')}</h2>
+                        <div class="chart-container tall">
+                            <canvas id="marketShareChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            // Render all charts
+            renderPriceDistribution(stats);
+            renderFuelChart(stats);
+            renderBrandChart(stats);
+            renderBodyChart(stats);
+            renderTransmissionChart(stats);
+            renderPriceRangeChart(stats);
+            renderEVChart(stats, cars);
+            renderSegmentChart(stats);
+            renderExpensiveTable(cars);
+            renderCheapestTable(cars);
+            renderPopulaireTable(cars);
+            renderMarketShareChart(stats);
+        }
+
+        function renderPriceDistribution(stats) {
+            const ctx = document.getElementById('priceDistChart').getContext('2d');
+
+            // Create price buckets
+            const buckets = [
+                { label: '< 50K', min: 0, max: 50000 },
+                { label: '50-100K', min: 50000, max: 100000 },
+                { label: '100-150K', min: 100000, max: 150000 },
+                { label: '150-200K', min: 150000, max: 200000 },
+                { label: '200-300K', min: 200000, max: 300000 },
+                { label: '300-500K', min: 300000, max: 500000 },
+                { label: '> 500K', min: 500000, max: Infinity }
+            ];
+
+            const counts = buckets.map(b =>
+                stats.prices.filter(p => p >= b.min && p < b.max).length
+            );
+
+            chartInstances.priceDist = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: buckets.map(b => b.label),
+                    datasets: [{
+                        label: t('numberOfTrims'),
+                        data: counts,
+                        backgroundColor: colorPalette,
+                        borderRadius: 8,
+                        borderSkipped: false
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: 'rgba(255,255,255,0.05)' }
+                        },
+                        x: {
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderFuelChart(stats) {
+            const ctx = document.getElementById('fuelChart').getContext('2d');
+            const labels = Object.keys(stats.fuelTypes);
+            const data = Object.values(stats.fuelTypes);
+
+            chartInstances.fuel = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: labels.map(l => l.charAt(0).toUpperCase() + l.slice(1)),
+                    datasets: [{
+                        data: data,
+                        backgroundColor: colorPalette.slice(0, labels.length),
+                        borderWidth: 0,
+                        spacing: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: { padding: 15, usePointStyle: true }
+                        }
+                    },
+                    cutout: '60%'
+                }
+            });
+        }
+
+        function renderBrandChart(stats) {
+            const ctx = document.getElementById('brandChart').getContext('2d');
+            // Sort by model count (unique models per brand)
+            const sorted = Object.entries(stats.brandModelCounts)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 15);
+
+            chartInstances.brand = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: sorted.map(s => s[0]),
+                    datasets: [{
+                        label: t('models'),
+                        data: sorted.map(s => s[1]),
+                        backgroundColor: colorPalette,
+                        borderRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            grid: { color: 'rgba(255,255,255,0.05)' }
+                        },
+                        y: {
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderBodyChart(stats) {
+            const ctx = document.getElementById('bodyChart').getContext('2d');
+            const sorted = Object.entries(stats.bodyTypes).sort((a, b) => b[1] - a[1]);
+
+            chartInstances.body = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: sorted.map(s => s[0]),
+                    datasets: [{
+                        data: sorted.map(s => s[1]),
+                        backgroundColor: colorPalette.slice(0, sorted.length),
+                        borderWidth: 0,
+                        spacing: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: { padding: 15, usePointStyle: true }
+                        }
+                    },
+                    cutout: '60%'
+                }
+            });
+        }
+
+        function renderTransmissionChart(stats) {
+            const ctx = document.getElementById('transmissionChart').getContext('2d');
+            const labels = Object.keys(stats.transmissions);
+            const data = Object.values(stats.transmissions);
+
+            chartInstances.transmission = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: labels.map(l => l.charAt(0).toUpperCase() + l.slice(1)),
+                    datasets: [{
+                        data: data,
+                        backgroundColor: [colors.blue, colors.orange, colors.purple],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: { padding: 15, usePointStyle: true }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderPriceRangeChart(stats) {
+            const ctx = document.getElementById('priceRangeChart').getContext('2d');
+
+            const brandData = Object.entries(stats.brandPrices)
+                .filter(([_, prices]) => prices.length >= 3)
+                .map(([brand, prices]) => ({
+                    brand,
+                    min: Math.min(...prices),
+                    max: Math.max(...prices),
+                    avg: Math.round(prices.reduce((a, b) => a + b, 0) / prices.length)
+                }))
+                .sort((a, b) => b.avg - a.avg)
+                .slice(0, 12);
+
+            chartInstances.priceRange = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: brandData.map(d => d.brand),
+                    datasets: [
+                        {
+                            label: t('minPrice'),
+                            data: brandData.map(d => d.min),
+                            backgroundColor: colors.green + '99',
+                            borderRadius: 4
+                        },
+                        {
+                            label: t('avgPrice'),
+                            data: brandData.map(d => d.avg),
+                            backgroundColor: colors.blue + '99',
+                            borderRadius: 4
+                        },
+                        {
+                            label: t('maxPrice'),
+                            data: brandData.map(d => d.max),
+                            backgroundColor: colors.red + '99',
+                            borderRadius: 4
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    plugins: {
+                        legend: { position: 'top' },
+                        tooltip: {
+                            callbacks: {
+                                label: ctx => ctx.dataset.label + ': ' + formatPrice(ctx.raw)
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: v => (v / 1000) + 'K'
+                            },
+                            grid: { color: 'rgba(255,255,255,0.05)' }
+                        },
+                        y: {
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderEVChart(stats, cars) {
+            const ctx = document.getElementById('evChart').getContext('2d');
+
+            const regular = stats.totalTrims - stats.electricTrims - stats.hybridTrims;
+
+            chartInstances.ev = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: [t('conventional'), t('electric'), t('hybrid')],
+                    datasets: [{
+                        data: [regular, stats.electricTrims, stats.hybridTrims],
+                        backgroundColor: [colors.blue, colors.cyan, colors.purple],
+                        borderWidth: 0,
+                        spacing: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: { padding: 15, usePointStyle: true }
+                        }
+                    },
+                    cutout: '60%'
+                }
+            });
+        }
+
+        function renderSegmentChart(stats) {
+            const ctx = document.getElementById('segmentChart').getContext('2d');
+
+            const segments = [
+                { label: t('budget'), count: stats.prices.filter(p => p < 50000).length, color: colors.green },
+                { label: t('economy'), count: stats.prices.filter(p => p >= 50000 && p < 100000).length, color: colors.blue },
+                { label: t('midRange'), count: stats.prices.filter(p => p >= 100000 && p < 200000).length, color: colors.orange },
+                { label: t('premium'), count: stats.prices.filter(p => p >= 200000 && p < 400000).length, color: colors.purple },
+                { label: t('luxury'), count: stats.prices.filter(p => p >= 400000).length, color: colors.red }
+            ];
+
+            chartInstances.segment = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: segments.map(s => s.label),
+                    datasets: [{
+                        data: segments.map(s => s.count),
+                        backgroundColor: segments.map(s => s.color),
+                        borderRadius: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: 'rgba(255,255,255,0.05)' }
+                        },
+                        x: {
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderExpensiveTable(cars) {
+            const sorted = [...cars].sort((a, b) => (b.price_tnd || 0) - (a.price_tnd || 0)).slice(0, 10);
+            const table = document.getElementById('expensiveTable');
+
+            table.innerHTML = `
+                <thead>
+                    <tr>
+                        <th>${t('rank')}</th>
+                        <th>${t('trim')}</th>
+                        <th>${t('price')}</th>
+                        <th>${t('type')}</th>
+                        <th>${t('fuel')}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${sorted.map((car, i) => `
+                        <tr>
+                            <td>${i + 1}</td>
+                            <td><strong>${car.full_name}</strong></td>
+                            <td class="price">${formatPrice(car.price_tnd)}</td>
+                            <td>${getBodyTypeBadge(car.body_type)}</td>
+                            <td>${getFuelBadge(car.fuel_type)}</td>
+                        </tr>
+                    `).join('')}
+                </tbody>
+            `;
+        }
+
+        function renderCheapestTable(cars) {
+            const sorted = [...cars].filter(c => c.price_tnd).sort((a, b) => a.price_tnd - b.price_tnd).slice(0, 10);
+            const table = document.getElementById('cheapestTable');
+
+            table.innerHTML = `
+                <thead>
+                    <tr>
+                        <th>${t('rank')}</th>
+                        <th>${t('trim')}</th>
+                        <th>${t('price')}</th>
+                        <th>${t('fuel')}</th>
+                        <th>${t('type')}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${sorted.map((car, i) => `
+                        <tr>
+                            <td>${i + 1}</td>
+                            <td>
+                                <strong>${car.full_name}</strong>
+                                ${car.is_populaire ? '<span class="badge badge-populaire">Populaire</span>' : ''}
+                            </td>
+                            <td class="price">${formatPrice(car.price_tnd)}</td>
+                            <td>${getFuelBadge(car.fuel_type)}</td>
+                            <td>${getBodyTypeBadge(car.body_type)}</td>
+                        </tr>
+                    `).join('')}
+                </tbody>
+            `;
+        }
+
+        function renderPopulaireTable(cars) {
+            const populaire = cars.filter(c => c.is_populaire).sort((a, b) => a.price_tnd - b.price_tnd);
+            const table = document.getElementById('populaireTable');
+
+            if (populaire.length === 0) {
+                table.innerHTML = `<tr><td colspan="6" style="text-align:center;padding:40px;color:#94a3b8;">${t('noPopulaire')}</td></tr>`;
+                return;
+            }
+
+            table.innerHTML = `
+                <thead>
+                    <tr>
+                        <th>${t('trim')}</th>
+                        <th>${t('price')}</th>
+                        <th>${t('fuel')}</th>
+                        <th>${t('transmission')}</th>
+                        <th>${t('type')}</th>
+                        <th>${t('cvFiscal')}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${populaire.map(car => `
+                        <tr>
+                            <td><strong>${car.full_name}</strong></td>
+                            <td class="price">${formatPrice(car.price_tnd)}</td>
+                            <td>${getFuelBadge(car.fuel_type)}</td>
+                            <td>${getTransmissionBadge(car.transmission)}</td>
+                            <td>${getBodyTypeBadge(car.body_type)}</td>
+                            <td>${car.cv_fiscal ? car.cv_fiscal + ' CV' : '-'}</td>
+                        </tr>
+                    `).join('')}
+                </tbody>
+            `;
+        }
+
+        function renderMarketShareChart(stats) {
+            const ctx = document.getElementById('marketShareChart').getContext('2d');
+            // Use model counts for market share (unique models per brand)
+            const sorted = Object.entries(stats.brandModelCounts).sort((a, b) => b[1] - a[1]);
+            const total = sorted.reduce((sum, [_, count]) => sum + count, 0);
+
+            // Top 10 + Others
+            const top10 = sorted.slice(0, 10);
+            const othersCount = sorted.slice(10).reduce((sum, [_, count]) => sum + count, 0);
+            if (othersCount > 0) {
+                top10.push([t('others'), othersCount]);
+            }
+
+            chartInstances.marketShare = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: top10.map(s => s[0]),
+                    datasets: [{
+                        label: t('marketShare'),
+                        data: top10.map(s => ((s[1] / total) * 100).toFixed(1)),
+                        backgroundColor: [...colorPalette.slice(0, 10), '#64748b'],
+                        borderRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: ctx => ctx.raw + '% ' + t('marketShareTooltip')
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: v => v + '%'
+                            },
+                            grid: { color: 'rgba(255,255,255,0.05)' }
+                        },
+                        x: {
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Initialize dashboard
+        initLanguage();
+        loadData()
+            .then(data => renderDashboard(data))
+            .catch(error => {
+                document.getElementById('content').innerHTML = `
+                    <div class="error">
+                        <h3>${t('errorTitle')}</h3>
+                        <p>${error.message}</p>
+                        <p style="margin-top:10px;color:#94a3b8;">
+                            ${t('errorHelp')} <code>python automobile_scraper.py</code>
+                        </p>
+                    </div>
+                `;
+            });
+    </script>
+</body>
+</html>
