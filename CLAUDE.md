@@ -21,6 +21,11 @@ python automobile_scraper.py
 
 # Run scraper for specific brands only
 python automobile_scraper.py --brands alfa-romeo,citroen
+
+# Run AutoScout24 scraper (multi-country)
+python autoscout24_scraper.py --countries de,fr,it,be --max-listings 100
+python autoscout24_scraper.py --countries de --makes bmw,audi --condition used --max-price 30000
+python autoscout24_scraper.py --countries de --use-playwright  # anti-bot fallback
 ```
 
 ## Architecture
@@ -33,6 +38,15 @@ python automobile_scraper.py --brands alfa-romeo,citroen
 - Extracts from `versions-item` divs and spec tables
 - Filters out non-car pages (Devis, Concessionnaires)
 - Output: `automobile_tn_new_cars.json`, `automobile_tn_new_cars.csv`
+
+**autoscout24_scraper.py** - AutoScout24 multi-country scraper (DE, FR, IT, BE)
+- Scrapes both new and used car listings across 4 European countries
+- `AutoScout24Car` dataclass with ~35 fields
+- Three-tier extraction: JSON-LD → localized HTML spec tables → regex fallback
+- Rate limiting: 5 concurrent, 0.5s delay + jitter, exponential backoff on 429/403
+- User-Agent rotation and per-country Accept-Language headers
+- Optional Playwright fallback for anti-bot protection (`--use-playwright`)
+- Output: `autoscout24_{country}.json/csv`, `autoscout24_all.json/csv`
 
 ### Data Flow
 
