@@ -1,8 +1,8 @@
-name: Weekly Car Data Scrape
+name: Daily Car Data Scrape
 
 on:
   schedule:
-    - cron: '0 2 * * 0'  # Sunday 2 AM UTC
+    - cron: '0 2 * * *'  # Daily at 2 AM UTC
   workflow_dispatch:      # Manual trigger
 
 permissions:
@@ -22,14 +22,18 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run scraper
+      - name: Run new cars scraper
         run: python automobile_scraper.py
+        timeout-minutes: 30
+
+      - name: Run used cars scraper
+        run: python used_cars_scraper.py
         timeout-minutes: 30
 
       - name: Commit updated data
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add automobile_tn_new_cars.json automobile_tn_new_cars.csv
+          git add automobile_tn_new_cars.json automobile_tn_new_cars.csv automobile_tn_used_cars.json automobile_tn_used_cars.csv
           git diff --staged --quiet || git commit -m "Update car data - $(date -u +%Y-%m-%d)"
           git push

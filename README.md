@@ -2,16 +2,21 @@
 
 [![Scraper](https://github.com/alabenkhlifa/automobile-tn-scrapper/actions/workflows/scrape.yml/badge.svg)](https://github.com/alabenkhlifa/automobile-tn-scrapper/actions/workflows/scrape.yml)
 [![GitHub Pages](https://img.shields.io/badge/demo-live-brightgreen)](https://alabenkhlifa.github.io/automobile-tn-scrapper/)
-[![Data](https://img.shields.io/badge/cars-543+-blue)](automobile_tn_new_cars.json)
+[![New Cars](https://img.shields.io/badge/new_cars-543+-blue)](automobile_tn_new_cars.json)
+[![Used Cars](https://img.shields.io/badge/used_cars-1000+-orange)](automobile_tn_used_cars.json)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-> **Live, auto-updating dashboard tracking new car prices in Tunisia** 🇹🇳
+> **Live, auto-updating dashboard tracking new and used car prices in Tunisia** 🇹🇳
 
-An interactive dashboard that visualizes the Tunisian new car market with **weekly automated data updates**. Explore prices, compare brands, and analyze the market — all powered by GitHub Actions and GitHub Pages.
+An interactive dashboard that visualizes the Tunisian car market with **daily automated data updates**. Explore prices for both new and used cars, compare brands, analyze mileage and depreciation — all powered by GitHub Actions and GitHub Pages.
 
 <p align="center">
   <a href="https://alabenkhlifa.github.io/automobile-tn-scrapper/">
-    <img src="https://img.shields.io/badge/🚀_VIEW_LIVE_DEMO-blue?style=for-the-badge" alt="Live Demo">
+    <img src="https://img.shields.io/badge/🚀_NEW_CARS_DASHBOARD-blue?style=for-the-badge" alt="New Cars Dashboard">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://alabenkhlifa.github.io/automobile-tn-scrapper/used_cars_dashboard.html">
+    <img src="https://img.shields.io/badge/🚗_USED_CARS_DASHBOARD-orange?style=for-the-badge" alt="Used Cars Dashboard">
   </a>
 </p>
 
@@ -19,21 +24,29 @@ An interactive dashboard that visualizes the Tunisian new car market with **week
 
 ## ✨ Features
 
+### New Cars Dashboard
 - **📊 Interactive Charts** — Price distributions, brand comparisons, fuel type breakdowns
 - **🔍 Smart Filtering** — Filter by brand, price range, fuel type, transmission
 - **📱 Fully Responsive** — Works on desktop, tablet, and mobile
-- **🤖 Auto-Updated** — GitHub Actions scrapes fresh data every week
+- **🤖 Auto-Updated** — GitHub Actions scrapes fresh data daily
 - **⚡ Zero Backend** — 100% static, hosted free on GitHub Pages
 - **🌙 Clean UI** — Modern design with smooth animations
 
+### Used Cars Dashboard
+- **📈 Market Analytics** — Price trends by mileage, age, and condition
+- **🗺️ Geographic Distribution** — Listings breakdown by governorate
+- **🔧 Equipment Analysis** — Track common features and options
+- **👤 Ownership Insights** — First-hand vs second-hand ownership data
+- **📅 Age & Mileage** — Depreciation analysis and value tracking
+
 ## 📈 What's Inside
 
-| Metric | Value |
-|--------|-------|
-| Total Cars | 543+ |
-| Brands | 30+ |
-| Data Points per Car | 40+ |
-| Update Frequency | Weekly |
+| Metric | New Cars | Used Cars |
+|--------|----------|-----------|
+| Total Listings | 543+ | 1000+ |
+| Brands | 30+ | 40+ |
+| Data Points per Car | 40+ | 25+ |
+| Update Frequency | Daily | Daily |
 
 ## 🛠️ Tech Stack
 
@@ -50,7 +63,7 @@ An interactive dashboard that visualizes the Tunisian new car market with **week
 ```
 ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
 │  GitHub Actions │────▶│  Python Scraper │────▶│   JSON Data     │
-│  (Weekly Cron)  │     │  (automobile.tn)│     │   (Auto-commit) │
+│  (Daily Cron)   │     │  (automobile.tn)│     │   (Auto-commit) │
 └─────────────────┘     └─────────────────┘     └────────┬────────┘
                                                          │
                                                          ▼
@@ -63,12 +76,16 @@ An interactive dashboard that visualizes the Tunisian new car market with **week
 ## 📦 Project Structure
 
 ```
-├── index.html                    # Interactive dashboard
-├── automobile_tn_new_cars.json   # Car data (auto-updated)
-├── automobile_tn_new_cars.csv    # CSV export
-├── automobile_scraper.py         # Lightweight scraper
-├── requirements.txt              # Python dependencies
-└── .github/workflows/scrape.yml  # Weekly automation
+├── index.html                      # New cars dashboard
+├── used_cars_dashboard.html        # Used cars dashboard
+├── automobile_tn_new_cars.json     # New cars data (auto-updated)
+├── automobile_tn_used_cars.json    # Used cars data (auto-updated)
+├── automobile_tn_new_cars.csv      # New cars CSV export
+├── automobile_tn_used_cars.csv     # Used cars CSV export
+├── automobile_scraper.py           # New cars scraper
+├── used_cars_scraper.py            # Used cars scraper
+├── requirements.txt                # Python dependencies
+└── .github/workflows/scrape.yml    # Daily automation
 ```
 
 ## 🏃 Run Locally
@@ -78,12 +95,14 @@ An interactive dashboard that visualizes the Tunisian new car market with **week
 git clone https://github.com/alabenkhlifa/automobile-tn-scrapper.git
 cd YOUR_REPO
 
-# Open dashboard (no server needed!)
-open index.html
+# Open dashboards (no server needed!)
+open index.html                    # New cars dashboard
+open used_cars_dashboard.html      # Used cars dashboard
 
-# Or run the scraper manually
+# Or run the scrapers manually
 pip install -r requirements.txt
-python automobile_scraper.py
+python automobile_scraper.py       # Scrape new cars
+python used_cars_scraper.py        # Scrape used cars
 ```
 
 ## 🔧 Deploy Your Own
@@ -91,11 +110,11 @@ python automobile_scraper.py
 1. **Fork** this repository
 2. Go to **Settings** → **Pages** → Set source to `main` branch
 3. Your dashboard is live at `https://alabenkhlifa.github.io/automobile-tn-scrapper/`
-4. GitHub Actions will auto-update data every Sunday at 2 AM UTC
+4. GitHub Actions will auto-update data daily at 2 AM UTC
 
 ## 📊 Data Fields
 
-Each car entry includes:
+### New Cars
 
 | Field | Description |
 |-------|-------------|
@@ -109,6 +128,24 @@ Each car entry includes:
 | `horsepower` | Power output |
 | `cv_fiscal` | Fiscal horsepower (tax rating) |
 | ... | 30+ more fields |
+
+### Used Cars
+
+| Field | Description |
+|-------|-------------|
+| `brand` | Manufacturer |
+| `model` | Model name |
+| `price_tnd` | Asking price in Tunisian Dinars |
+| `year` | Year of manufacture |
+| `mileage_km` | Odometer reading in kilometers |
+| `fuel_type` | Essence, Diesel, GPL, Hybrid, Electric |
+| `transmission` | Manual / Automatic |
+| `cv_fiscal` | Fiscal horsepower |
+| `governorate` | Seller location (e.g., Tunis, Sfax) |
+| `ownership` | First-hand / Second-hand |
+| `condition` | Vehicle condition |
+| `equipment` | List of features and options |
+| ... | 15+ more fields |
 
 ## 🤝 Contributing
 
