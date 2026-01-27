@@ -392,6 +392,99 @@
             font-size: 0.9rem;
         }
 
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                padding: 20px 15px;
+                margin-bottom: 20px;
+            }
+
+            header h1 {
+                font-size: 1.4rem;
+                padding-right: 0;
+                margin-top: 35px;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            .lang-toggle {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 0 auto 10px;
+                width: fit-content;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+                margin-bottom: 20px;
+            }
+
+            .stat-card {
+                padding: 14px;
+            }
+
+            .stat-card .value {
+                font-size: 1.3rem;
+            }
+
+            .stat-card h3 {
+                font-size: 0.7rem;
+            }
+
+            .stat-card .subtitle {
+                font-size: 0.75rem;
+            }
+
+            .charts-grid {
+                gap: 15px;
+                margin-bottom: 20px;
+            }
+
+            .chart-card {
+                padding: 15px;
+            }
+
+            .chart-card h2 {
+                font-size: 1rem;
+                margin-bottom: 12px;
+            }
+
+            .chart-container {
+                height: 250px;
+            }
+
+            .chart-container.tall {
+                height: 300px;
+            }
+
+            th, td {
+                padding: 8px 6px;
+                font-size: 0.8rem;
+            }
+
+            footer {
+                padding: 20px 10px;
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-card .value {
+                font-size: 1.5rem;
+            }
+        }
+
         .brand-logo {
             width: 24px;
             height: 24px;
@@ -657,6 +750,14 @@
             ['#5ee7df', '#b490ca'],
             ['#d299c2', '#fef9d7']
         ];
+
+        function isMobile() {
+            return window.innerWidth <= 768;
+        }
+
+        function legendPosition() {
+            return isMobile() ? 'bottom' : 'right';
+        }
 
         function formatPrice(price) {
             return new Intl.NumberFormat('fr-TN').format(price) + ' DT';
@@ -1029,7 +1130,7 @@
                     maintainAspectRatio: false,
                     plugins: {
                         legend: {
-                            position: 'right',
+                            position: legendPosition(),
                             labels: { padding: 15, usePointStyle: true }
                         }
                     },
@@ -1096,7 +1197,7 @@
                     maintainAspectRatio: false,
                     plugins: {
                         legend: {
-                            position: 'right',
+                            position: legendPosition(),
                             labels: { padding: 15, usePointStyle: true }
                         }
                     },
@@ -1125,7 +1226,7 @@
                     maintainAspectRatio: false,
                     plugins: {
                         legend: {
-                            position: 'right',
+                            position: legendPosition(),
                             labels: { padding: 15, usePointStyle: true }
                         }
                     }
@@ -1221,7 +1322,7 @@
                     maintainAspectRatio: false,
                     plugins: {
                         legend: {
-                            position: 'right',
+                            position: legendPosition(),
                             labels: { padding: 15, usePointStyle: true }
                         }
                     },
