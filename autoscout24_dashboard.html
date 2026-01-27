@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoScout24 European Cars Dashboard</title>
+    <style>
+        .lang-btn { padding: 6px 14px; border-radius: 8px; font-size: 0.8rem; font-weight: 600; cursor: pointer; border: 1px solid rgba(255,255,255,0.1); background: transparent; color: #94a3b8; transition: all 0.2s; }
+        .lang-btn:hover { background: rgba(255,255,255,0.05); color: #e2e8f0; }
+        .lang-btn.active { background: #3b82f6; color: white; border-color: #3b82f6; }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'grad-1': '#667eea',
+                        'grad-2': '#f5576c',
+                        'grad-3': '#4facfe',
+                        'grad-4': '#43e97b',
+                        'grad-5': '#fa709a',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-treemap@2.3.1/dist/chartjs-chart-treemap.min.js"></script>
+    <style>
+        /* Badges — dynamic class names from JS, can't use pure Tailwind */
+        .badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
+        .badge-petrol { background: rgba(249, 115, 22, 0.2); color: #f97316; }
+        .badge-diesel { background: rgba(100, 116, 139, 0.25); color: #94a3b8; }
+        .badge-electric { background: rgba(6, 182, 212, 0.2); color: #06b6d4; }
+        .badge-hybrid { background: rgba(139, 92, 246, 0.2); color: #8b5cf6; }
+        .badge-hybrid_rechargeable { background: rgba(16, 185, 129, 0.2); color: #10b981; }
+        .badge-lpg { background: rgba(234, 179, 8, 0.2); color: #eab308; }
+        .badge-cng { background: rgba(20, 184, 166, 0.2); color: #14b8a6; }
+        .badge-hydrogen { background: rgba(99, 102, 241, 0.2); color: #6366f1; }
+        .badge-new { background: rgba(59, 130, 246, 0.2); color: #3b82f6; }
+        .badge-used { background: rgba(245, 158, 11, 0.2); color: #f59e0b; }
+        .badge-default { background: rgba(148, 163, 184, 0.2); color: #94a3b8; }
+
+        /* Spinner animation */
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .loading::after {
+            content: ''; display: inline-block; width: 30px; height: 30px;
+            border: 3px solid #334155; border-top-color: #3b82f6;
+            border-radius: 50%; animation: spin 1s linear infinite;
+            margin-left: 15px; vertical-align: middle;
+        }
+
+        /* h2 gradient bar */
+        .chart-heading::before {
+            content: ''; width: 4px; height: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }
+
+        /* Sort icon opacity */
+        .sort-icon { margin-left: 4px; opacity: 0.4; }
+        .sorted .sort-icon { opacity: 1; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-50 min-h-screen p-4 md:p-5 font-sans">
+    <div class="max-w-screen-2xl mx-auto">
+        <header class="text-center mb-8 md:mb-10 p-6 md:p-8 bg-slate-800 rounded-2xl border border-white/10">
+            <h1 id="header-title" class="text-2xl md:text-4xl font-bold bg-gradient-to-br from-indigo-400 to-purple-500 bg-clip-text text-transparent mb-2">Tableau de Bord AutoScout24 Europe</h1>
+            <p id="header-subtitle" class="text-slate-400 text-base md:text-lg">Loading data...</p>
+            <div class="mt-3 flex justify-center gap-2">
+                <button class="lang-btn active" id="lang-fr" onclick="setLanguage('fr')">FR</button>
+                <button class="lang-btn" id="lang-en" onclick="setLanguage('en')">EN</button>
+            </div>
+        </header>
+
+        <div class="flex justify-center gap-2 mb-6 md:mb-8 flex-wrap" id="country-selector"></div>
+
+        <div id="content">
+            <div class="loading text-center py-16 text-slate-400">Loading data...</div>
+        </div>
+
+        <footer id="footer" class="text-center py-8 text-slate-400 text-sm">
+            Data sourced from AutoScout24 | Dashboard generated automatically
+        </footer>
+    </div>
+
+    <script>
+        Chart.defaults.color = '#94a3b8';
+        Chart.defaults.borderColor = 'rgba(255,255,255,0.1)';
+        Chart.defaults.font.family = "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+
+        const translations = {
+            fr: {
+                headerTitle: 'Tableau de Bord AutoScout24 Europe',
+                allMarkets: 'Tous les march\u00e9s',
+                selectMarket: 'March\u00e9 :',
+                totalListings: 'Total Annonces',
+                averagePrice: 'Prix Moyen',
+                medianMileage: 'Kilom\u00e9trage M\u00e9dian',
+                newVsUsed: 'Neuf vs Occasion',
+                mostCommonMake: 'Marque la + Fr\u00e9quente',
+                priceDistribution: 'Distribution des Prix',
+                top15Makes: 'Top 15 Marques',
+                fuelBreakdown: 'R\u00e9partition par Carburant',
+                bodyDistribution: 'Distribution par Carrosserie',
+                crossCountry: 'Comparaison des Prix entre March\u00e9s (Top 5)',
+                yearDistribution: 'Distribution par Ann\u00e9e',
+                mileageVsPrice: 'Kilom\u00e9trage vs Prix',
+                listingsData: 'Donn\u00e9es des Annonces',
+                searchPlaceholder: 'Rechercher par marque, mod\u00e8le, carburant...',
+                showMore: 'Afficher plus',
+                make: 'Marque',
+                model: 'Mod\u00e8le',
+                year: 'Ann\u00e9e',
+                price: 'Prix',
+                mileage: 'Kilom\u00e9trage',
+                fuel: 'Carburant',
+                country: 'March\u00e9',
+                condition: '\u00c9tat',
+                markets: 'march\u00e9s',
+                listings: 'annonces',
+                scraped: 'R\u00e9cup\u00e9r\u00e9 le',
+                carListings: 'annonces auto',
+                acrossAll: 'sur toutes les annonces',
+                medianOdometer: 'compteur m\u00e9dian',
+                newUsedRatio: 'ratio neuf / occasion',
+                footer: 'Donn\u00e9es issues de AutoScout24 | Tableau de bord g\u00e9n\u00e9r\u00e9 automatiquement'
+            },
+            en: {
+                headerTitle: 'AutoScout24 European Cars Dashboard',
+                allMarkets: 'All Markets',
+                selectMarket: 'Market:',
+                totalListings: 'Total Listings',
+                averagePrice: 'Average Price',
+                medianMileage: 'Median Mileage',
+                newVsUsed: 'New vs Used',
+                mostCommonMake: 'Most Common Make',
+                priceDistribution: 'Price Distribution',
+                top15Makes: 'Top 15 Makes',
+                fuelBreakdown: 'Fuel Type Breakdown',
+                bodyDistribution: 'Body Type Distribution',
+                crossCountry: 'Cross-Market Price Comparison (Top 5)',
+                yearDistribution: 'Year Distribution',
+                mileageVsPrice: 'Mileage vs Price',
+                listingsData: 'Listings Data',
+                searchPlaceholder: 'Search by make, model, fuel...',
+                showMore: 'Show more',
+                make: 'Make',
+                model: 'Model',
+                year: 'Year',
+                price: 'Price',
+                mileage: 'Mileage',
+                fuel: 'Fuel',
+                country: 'Market',
+                condition: 'Condition',
+                markets: 'markets',
+                listings: 'listings',
+                scraped: 'Scraped',
+                carListings: 'car listings',
+                acrossAll: 'across all listings',
+                medianOdometer: 'median odometer',
+                newUsedRatio: 'new / used ratio',
+                footer: 'Data sourced from AutoScout24 | Dashboard generated automatically'
+            }
+        };
+
+        const countryNames = {
+            fr: { 'DE': '\ud83c\udde9\ud83c\uddea Allemagne', 'FR': '\ud83c\uddeb\ud83c\uddf7 France', 'IT': '\ud83c\uddee\ud83c\uddf9 Italie', 'BE': '\ud83c\udde7\ud83c\uddea Belgique', 'NL': '\ud83c\uddf3\ud83c\uddf1 Pays-Bas', 'AT': '\ud83c\udde6\ud83c\uddf9 Autriche', 'ES': '\ud83c\uddea\ud83c\uddf8 Espagne' },
+            en: { 'DE': '\ud83c\udde9\ud83c\uddea Germany', 'FR': '\ud83c\uddeb\ud83c\uddf7 France', 'IT': '\ud83c\uddee\ud83c\uddf9 Italy', 'BE': '\ud83c\udde7\ud83c\uddea Belgium', 'NL': '\ud83c\uddf3\ud83c\uddf1 Netherlands', 'AT': '\ud83c\udde6\ud83c\uddf9 Austria', 'ES': '\ud83c\uddea\ud83c\uddf8 Spain' }
+        };
+
+        let currentLang = localStorage.getItem('as24_lang') || 'fr';
+
+        function t(key) { return (translations[currentLang] || translations.fr)[key] || key; }
+
+        function countryLabel(code) {
+            return (countryNames[currentLang] || countryNames.fr)[code.toUpperCase()] || code.toUpperCase();
+        }
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('as24_lang', lang);
+            document.getElementById('lang-fr').classList.toggle('active', lang === 'fr');
+            document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+            document.getElementById('header-title').textContent = t('headerTitle');
+            document.documentElement.lang = lang;
+            if (allData.length) {
+                updateHeaderSubtitle();
+                updateFooter();
+                destroyAllCharts();
+                renderCountrySelector(getCountries(allData));
+                renderDashboard();
+            }
+        }
+
+        function updateHeaderSubtitle() {
+            const countries = getCountries(allData);
+            const scrapedAt = _scrapedAt || 'Unknown';
+            document.getElementById('header-subtitle').textContent =
+                `${formatNumber(allData.length)} ${t('listings')} | ${countries.length} ${t('markets')} (${countries.map(c => countryLabel(c)).join(', ')}) | ${t('scraped')}: ${scrapedAt}`;
+        }
+
+        function updateFooter() {
+            const scrapedAt = _scrapedAt || 'Unknown';
+            document.getElementById('footer').textContent =
+                `${t('footer')} | ${t('scraped')}: ${scrapedAt}`;
+        }
+
+        let _scrapedAt = '';
+
+        const colorPalette = [
+            '#3b82f6', '#8b5cf6', '#10b981', '#f59e0b', '#ef4444',
+            '#ec4899', '#06b6d4', '#eab308', '#6366f1', '#14b8a6',
+            '#f97316', '#a855f7', '#22c55e', '#e11d48', '#0ea5e9'
+        ];
+
+        const countryColors = {
+            'DE': '#3b82f6',
+            'FR': '#8b5cf6',
+            'IT': '#10b981',
+            'BE': '#f59e0b',
+            'NL': '#ef4444',
+            'AT': '#ec4899',
+            'ES': '#06b6d4'
+        };
+
+        // Unified color map — used by badges, charts, and legends
+        const fuelColors = {
+            'Petrol':   '#f97316',
+            'Diesel':   '#94a3b8',
+            'Electric': '#06b6d4',
+            'Hybrid':   '#8b5cf6',
+            'Hybrid Rechargeable': '#10b981',
+            'LPG':      '#eab308',
+            'CNG':      '#14b8a6',
+            'Hydrogen': '#6366f1',
+            'Other':    '#64748b'
+        };
+
+        const conditionColors = {
+            'new':  '#3b82f6',
+            'used': '#f59e0b'
+        };
+
+        let allData = [];
+        let filteredData = [];
+        let activeCountry = 'ALL';
+        let chartInstances = {};
+        let tableLimit = 100;
+        let tableSortCol = null;
+        let tableSortAsc = true;
+        let tableSearchQuery = '';
+
+        function formatPrice(p) {
+            if (p == null) return '-';
+            return new Intl.NumberFormat('de-DE').format(Math.round(p)) + ' EUR';
+        }
+
+        function formatNumber(n) {
+            return new Intl.NumberFormat('de-DE').format(n);
+        }
+
+        function formatKm(km) {
+            if (km == null) return '-';
+            return new Intl.NumberFormat('de-DE').format(km) + ' km';
+        }
+
+        function median(arr) {
+            if (!arr.length) return 0;
+            const s = [...arr].sort((a, b) => a - b);
+            const mid = Math.floor(s.length / 2);
+            return s.length % 2 ? s[mid] : Math.round((s[mid - 1] + s[mid]) / 2);
+        }
+
+        function destroyAllCharts() {
+            Object.values(chartInstances).forEach(c => { if (c && c.destroy) c.destroy(); });
+            chartInstances = {};
+        }
+
+        function normalizeFuelLabel(raw) {
+            if (!raw) return 'Other';
+            const f = raw.toLowerCase();
+            if (f.includes('hybrid') && (f.includes('recharg') || f.includes('plug'))) return 'Hybrid Rechargeable';
+            if (f.includes('hybrid')) return 'Hybrid';
+            if (f.includes('electric') || f === 'elektro') return 'Electric';
+            if (f.includes('diesel')) return 'Diesel';
+            if (f.includes('petrol') || f.includes('benzin') || f.includes('essence')) return 'Petrol';
+            if (f.includes('lpg')) return 'LPG';
+            if (f.includes('cng')) return 'CNG';
+            if (f.includes('hydrogen')) return 'Hydrogen';
+            return 'Other';
+        }
+
+        function getFuelBadge(fuel) {
+            if (!fuel) return '<span class="badge badge-default">-</span>';
+            const label = normalizeFuelLabel(fuel);
+            const cssClass = 'badge-' + label.toLowerCase().replace(/\s+/g, '_');
+            return `<span class="badge ${cssClass}">${label}</span>`;
+        }
+
+        function getConditionBadge(cond) {
+            if (!cond) return '<span class="badge badge-default">-</span>';
+            const c = cond.toLowerCase();
+            if (c.includes('new') || c.includes('neuf') || c.includes('neu')) return `<span class="badge badge-new">${cond}</span>`;
+            return `<span class="badge badge-used">${cond}</span>`;
+        }
+
+        async function loadData() {
+            // Try combined file first, then individual country files
+            try {
+                const resp = await fetch('autoscout24_all.json');
+                if (resp.ok) {
+                    const data = await resp.json();
+                    return Array.isArray(data) ? data : (data.cars || data.listings || data.data || []);
+                }
+            } catch (e) {}
+
+            // Try individual country files
+            const countries = ['de', 'fr', 'it', 'be', 'nl', 'at', 'es'];
+            const results = [];
+            for (const c of countries) {
+                try {
+                    const resp = await fetch(`autoscout24_${c}.json`);
+                    if (resp.ok) {
+                        const data = await resp.json();
+                        const arr = Array.isArray(data) ? data : (data.cars || data.listings || data.data || []);
+                        results.push(...arr);
+                    }
+                } catch (e) {}
+            }
+            if (results.length === 0) throw new Error('No data files found. Expected autoscout24_all.json or autoscout24_{country}.json files.');
+            return results;
+        }
+
+        function getField(car, ...keys) {
+            for (const k of keys) {
+                if (car[k] !== undefined && car[k] !== null && car[k] !== '') return car[k];
+            }
+            return null;
+        }
+
+        function normalize(car) {
+            return {
+                make: getField(car, 'make', 'brand', 'marque', 'manufacturer') || 'Unknown',
+                model: getField(car, 'model', 'modele') || 'Unknown',
+                year: getField(car, 'year', 'registration_year', 'first_registration', 'annee'),
+                price: getField(car, 'price', 'price_eur', 'prix'),
+                mileage: getField(car, 'mileage', 'mileage_km', 'km', 'kilometrage'),
+                fuel: getField(car, 'fuel', 'fuel_type', 'carburant', 'energy'),
+                body: getField(car, 'body_type', 'body', 'carrosserie', 'type'),
+                country: getField(car, 'country', 'pays', 'country_code') || 'Unknown',
+                condition: getField(car, 'condition', 'etat', 'offer_type') || 'Used',
+                scraped_at: getField(car, 'scraped_at', 'scrape_date', 'date'),
+                url: getField(car, 'url', 'link')
+            };
+        }
+
+        function getCountries(data) {
+            const set = new Set(data.map(d => d.country).filter(c => c && c !== 'Unknown'));
+            return [...set].sort();
+        }
+
+        function renderCountrySelector(countries) {
+            const el = document.getElementById('country-selector');
+            const btnBase = 'px-4 md:px-6 py-2 md:py-2.5 border border-white/10 bg-slate-800 text-slate-400 rounded-lg cursor-pointer text-sm font-semibold transition-all hover:bg-slate-700 hover:text-slate-50';
+            const btnActive = '!bg-blue-500 !text-white !border-blue-500';
+            const label = `<span class="text-slate-500 text-xs uppercase tracking-wider self-center mr-1">${t('selectMarket')}</span>`;
+            const allBtn = `<button class="${btnBase} ${activeCountry === 'ALL' ? btnActive : ''}" onclick="selectCountry('ALL')">${t('allMarkets')}</button>`;
+            const btns = countries.map(c =>
+                `<button class="${btnBase} ${activeCountry === c ? btnActive : ''}" onclick="selectCountry('${c}')">${countryLabel(c)}</button>`
+            ).join('');
+            el.innerHTML = label + allBtn + btns;
+        }
+
+        function selectCountry(country) {
+            activeCountry = country;
+            filteredData = country === 'ALL' ? allData : allData.filter(d => d.country.toUpperCase() === country.toUpperCase());
+            tableLimit = 100;
+            destroyAllCharts();
+            renderCountrySelector(getCountries(allData));
+            renderDashboard();
+        }
+
+        function renderDashboard() {
+            const data = filteredData;
+            const prices = data.map(d => d.price).filter(p => p && p > 0);
+            const mileages = data.map(d => d.mileage).filter(m => m != null && m >= 0);
+            const avgPrice = prices.length ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : 0;
+            const medMileage = median(mileages);
+            const newCount = data.filter(d => {
+                const c = (d.condition || '').toLowerCase();
+                return c.includes('new') || c.includes('neuf') || c.includes('neu');
+            }).length;
+            const usedCount = data.length - newCount;
+
+            // Most common make
+            const makeCounts = {};
+            data.forEach(d => { makeCounts[d.make] = (makeCounts[d.make] || 0) + 1; });
+            const topMake = Object.entries(makeCounts).sort((a, b) => b[1] - a[1])[0];
+
+            const content = document.getElementById('content');
+            const sc = 'bg-slate-800 rounded-xl md:rounded-2xl p-4 md:p-6 border border-white/10 transition-all hover:-translate-y-1 hover:shadow-2xl';
+            const cc = 'bg-slate-800 rounded-xl md:rounded-2xl p-4 md:p-6 border border-white/10';
+            const h2c = 'chart-heading text-lg mb-5 text-slate-50 flex items-center gap-2.5';
+            content.innerHTML = `
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-5 mb-6 md:mb-8">
+                    <div class="${sc} border-l-4 border-l-grad-1">
+                        <h3 class="text-slate-400 text-xs uppercase tracking-wider mb-2">${t('totalListings')}</h3>
+                        <div class="text-xl md:text-2xl font-bold mb-1">${formatNumber(data.length)}</div>
+                        <div class="text-slate-400 text-sm">${t('carListings')}</div>
+                    </div>
+                    <div class="${sc} border-l-4 border-l-grad-2">
+                        <h3 class="text-slate-400 text-xs uppercase tracking-wider mb-2">${t('averagePrice')}</h3>
+                        <div class="text-xl md:text-2xl font-bold mb-1">${formatPrice(avgPrice)}</div>
+                        <div class="text-slate-400 text-sm">${t('acrossAll')}</div>
+                    </div>
+                    <div class="${sc} border-l-4 border-l-grad-3">
+                        <h3 class="text-slate-400 text-xs uppercase tracking-wider mb-2">${t('medianMileage')}</h3>
+                        <div class="text-xl md:text-2xl font-bold mb-1">${formatKm(medMileage)}</div>
+                        <div class="text-slate-400 text-sm">${t('medianOdometer')}</div>
+                    </div>
+                    <div class="${sc} border-l-4 border-l-grad-4">
+                        <h3 class="text-slate-400 text-xs uppercase tracking-wider mb-2">${t('newVsUsed')}</h3>
+                        <div class="text-xl md:text-2xl font-bold mb-1">${formatNumber(newCount)} / ${formatNumber(usedCount)}</div>
+                        <div class="text-slate-400 text-sm">${t('newUsedRatio')}</div>
+                    </div>
+                    <div class="${sc} border-l-4 border-l-grad-5">
+                        <h3 class="text-slate-400 text-xs uppercase tracking-wider mb-2">${t('mostCommonMake')}</h3>
+                        <div class="text-xl md:text-2xl font-bold mb-1">${topMake ? topMake[0] : '-'}</div>
+                        <div class="text-slate-400 text-sm">${topMake ? formatNumber(topMake[1]) + ' ' + t('listings') : ''}</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
+                    <div class="${cc}">
+                        <h2 class="${h2c}">${t('priceDistribution')}</h2>
+                        <div class="relative h-[250px] md:h-[300px]"><canvas id="priceDistChart"></canvas></div>
+                    </div>
+                    <div class="${cc}">
+                        <h2 class="${h2c}">${t('top15Makes')}</h2>
+                        <div class="relative h-[300px] md:h-[400px]"><canvas id="makesChart"></canvas></div>
+                    </div>
+                    <div class="${cc}">
+                        <h2 class="${h2c}">${t('fuelBreakdown')}</h2>
+                        <div class="relative h-[250px] md:h-[300px]"><canvas id="fuelChart"></canvas></div>
+                    </div>
+                    <div class="${cc}">
+                        <h2 class="${h2c}">${t('bodyDistribution')}</h2>
+                        <div class="relative h-[250px] md:h-[300px]"><canvas id="bodyChart"></canvas></div>
+                    </div>
+                    <div class="${cc} lg:col-span-2">
+                        <h2 class="${h2c}">${t('crossCountry')}</h2>
+                        <div class="relative h-[300px] md:h-[400px]"><canvas id="crossCountryChart"></canvas></div>
+                    </div>
+                    <div class="${cc}">
+                        <h2 class="${h2c}">${t('yearDistribution')}</h2>
+                        <div class="relative h-[250px] md:h-[300px]"><canvas id="yearChart"></canvas></div>
+                    </div>
+                    <div class="${cc}">
+                        <h2 class="${h2c}">${t('mileageVsPrice')}</h2>
+                        <div class="relative h-[250px] md:h-[300px]"><canvas id="scatterChart"></canvas></div>
+                    </div>
+
+                    <div class="${cc} lg:col-span-2">
+                        <h2 class="${h2c}">${t('listingsData')}</h2>
+                        <input type="text" class="w-full p-2.5 md:p-3 bg-slate-700 border border-white/10 rounded-lg text-slate-50 text-sm mb-3 md:mb-4 outline-none focus:border-blue-500 transition-colors" id="tableSearch" placeholder="${t('searchPlaceholder')}" oninput="onTableSearch(this.value)">
+                        <div class="overflow-x-auto">
+                            <table id="dataTable" class="w-full text-xs md:text-sm border-collapse"></table>
+                        </div>
+                        <button class="block w-full p-2.5 md:p-3 mt-3 md:mt-4 bg-slate-700 border border-white/10 rounded-lg text-blue-500 text-sm font-semibold cursor-pointer hover:bg-blue-500 hover:text-white transition-all" id="showMoreBtn" onclick="showMore()">${t('showMore')}</button>
+                    </div>
+                </div>
+            `;
+
+            renderPriceDistribution(prices);
+            renderMakesChart(makeCounts);
+            renderFuelChart(data);
+            renderBodyChart(data);
+            renderCrossCountryChart();
+            renderYearChart(data);
+            renderScatterChart(data);
+            renderDataTable();
+        }
+
+        function renderPriceDistribution(prices) {
+            const buckets = [
+                { label: '0-5K', min: 0, max: 5000 },
+                { label: '5-10K', min: 5000, max: 10000 },
+                { label: '10-20K', min: 10000, max: 20000 },
+                { label: '20-30K', min: 20000, max: 30000 },
+                { label: '30-50K', min: 30000, max: 50000 },
+                { label: '50-75K', min: 50000, max: 75000 },
+                { label: '75-100K', min: 75000, max: 100000 },
+                { label: '100K+', min: 100000, max: Infinity }
+            ];
+            const counts = buckets.map(b => prices.filter(p => p >= b.min && p < b.max).length);
+
+            chartInstances.priceDist = new Chart(document.getElementById('priceDistChart').getContext('2d'), {
+                type: 'bar',
+                data: {
+                    labels: buckets.map(b => b.label),
+                    datasets: [{ label: 'Listings', data: counts, backgroundColor: colorPalette, borderRadius: 8, borderSkipped: false }]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' } },
+                        x: { grid: { display: false } }
+                    }
+                }
+            });
+        }
+
+        function renderMakesChart(makeCounts) {
+            const sorted = Object.entries(makeCounts).sort((a, b) => b[1] - a[1]).slice(0, 15);
+            chartInstances.makes = new Chart(document.getElementById('makesChart').getContext('2d'), {
+                type: 'bar',
+                data: {
+                    labels: sorted.map(s => s[0]),
+                    datasets: [{ label: 'Listings', data: sorted.map(s => s[1]), backgroundColor: colorPalette, borderRadius: 6 }]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false, indexAxis: 'y',
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' } },
+                        y: { grid: { display: false } }
+                    }
+                }
+            });
+        }
+
+        function renderFuelChart(data) {
+            const counts = {};
+            data.forEach(d => {
+                const f = normalizeFuelLabel(d.fuel);
+                counts[f] = (counts[f] || 0) + 1;
+            });
+            const labels = Object.keys(counts);
+            const bgColors = labels.map(l => fuelColors[l] || fuelColors['Other']);
+            chartInstances.fuel = new Chart(document.getElementById('fuelChart').getContext('2d'), {
+                type: 'doughnut',
+                data: {
+                    labels,
+                    datasets: [{ data: Object.values(counts), backgroundColor: bgColors, borderWidth: 0, spacing: 2 }]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { position: 'right', labels: { padding: 15, usePointStyle: true } } },
+                    cutout: '60%'
+                }
+            });
+        }
+
+        function renderBodyChart(data) {
+            const counts = {};
+            data.forEach(d => { const b = d.body || 'Unknown'; counts[b] = (counts[b] || 0) + 1; });
+            const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 10);
+            chartInstances.body = new Chart(document.getElementById('bodyChart').getContext('2d'), {
+                type: 'bar',
+                data: {
+                    labels: sorted.map(s => s[0]),
+                    datasets: [{ data: sorted.map(s => s[1]), backgroundColor: colorPalette, borderRadius: 8, borderSkipped: false }]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' } },
+                        x: { grid: { display: false }, ticks: { maxRotation: 45 } }
+                    }
+                }
+            });
+        }
+
+        function renderCrossCountryChart() {
+            // Use ALL data for cross-country, not filtered
+            const countries = getCountries(allData);
+            if (countries.length < 2) {
+                document.getElementById('crossCountryChart').parentElement.parentElement.style.display = 'none';
+                return;
+            }
+
+            // Top 5 makes overall
+            const makeCounts = {};
+            allData.forEach(d => { makeCounts[d.make] = (makeCounts[d.make] || 0) + 1; });
+            const top5 = Object.entries(makeCounts).sort((a, b) => b[1] - a[1]).slice(0, 5).map(e => e[0]);
+
+            const datasets = countries.map((country, i) => {
+                const countryData = allData.filter(d => d.country.toUpperCase() === country.toUpperCase());
+                const avgPrices = top5.map(make => {
+                    const prices = countryData.filter(d => d.make === make && d.price > 0).map(d => d.price);
+                    return prices.length ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : 0;
+                });
+                return {
+                    label: countryLabel(country),
+                    data: avgPrices,
+                    backgroundColor: countryColors[country.toUpperCase()] || colorPalette[i % colorPalette.length],
+                    borderRadius: 4
+                };
+            });
+
+            chartInstances.crossCountry = new Chart(document.getElementById('crossCountryChart').getContext('2d'), {
+                type: 'bar',
+                data: { labels: top5, datasets },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'top' },
+                        tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + formatPrice(ctx.raw) } }
+                    },
+                    scales: {
+                        y: { beginAtZero: true, ticks: { callback: v => (v / 1000) + 'K' }, grid: { color: 'rgba(255,255,255,0.05)' } },
+                        x: { grid: { display: false } }
+                    }
+                }
+            });
+        }
+
+        function renderYearChart(data) {
+            const counts = {};
+            data.forEach(d => { if (d.year && d.year >= 1990 && d.year <= 2026) counts[d.year] = (counts[d.year] || 0) + 1; });
+            const years = Object.keys(counts).sort();
+            chartInstances.year = new Chart(document.getElementById('yearChart').getContext('2d'), {
+                type: 'bar',
+                data: {
+                    labels: years,
+                    datasets: [{
+                        label: 'Listings',
+                        data: years.map(y => counts[y]),
+                        backgroundColor: '#3b82f699',
+                        borderColor: '#3b82f6',
+                        borderWidth: 1,
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' } },
+                        x: { grid: { display: false }, ticks: { maxTicksLimit: 15 } }
+                    }
+                }
+            });
+        }
+
+        function renderScatterChart(data) {
+            const points = data
+                .filter(d => d.price > 0 && d.mileage != null && d.mileage >= 0 && d.price < 200000 && d.mileage < 500000)
+                .slice(0, 2000)
+                .map(d => ({ x: d.mileage, y: d.price }));
+
+            chartInstances.scatter = new Chart(document.getElementById('scatterChart').getContext('2d'), {
+                type: 'scatter',
+                data: {
+                    datasets: [{
+                        label: 'Price vs Mileage',
+                        data: points,
+                        backgroundColor: '#3b82f633',
+                        borderColor: '#3b82f6',
+                        pointRadius: 2.5,
+                        pointHoverRadius: 5
+                    }]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: { title: { display: true, text: 'Mileage (km)', color: '#94a3b8' }, ticks: { callback: v => (v/1000)+'K' }, grid: { color: 'rgba(255,255,255,0.05)' } },
+                        y: { title: { display: true, text: 'Price (EUR)', color: '#94a3b8' }, ticks: { callback: v => (v/1000)+'K' }, grid: { color: 'rgba(255,255,255,0.05)' } }
+                    }
+                }
+            });
+        }
+
+        function getFilteredTableData() {
+            let data = filteredData;
+            if (tableSearchQuery) {
+                const q = tableSearchQuery.toLowerCase();
+                data = data.filter(d =>
+                    d.make.toLowerCase().includes(q) ||
+                    d.model.toLowerCase().includes(q) ||
+                    (d.fuel || '').toLowerCase().includes(q) ||
+                    (d.country || '').toLowerCase().includes(q) ||
+                    (d.body || '').toLowerCase().includes(q)
+                );
+            }
+            if (tableSortCol) {
+                data = [...data].sort((a, b) => {
+                    let va = a[tableSortCol], vb = b[tableSortCol];
+                    if (va == null) va = tableSortAsc ? Infinity : -Infinity;
+                    if (vb == null) vb = tableSortAsc ? Infinity : -Infinity;
+                    if (typeof va === 'string') return tableSortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
+                    return tableSortAsc ? va - vb : vb - va;
+                });
+            }
+            return data;
+        }
+
+        function renderDataTable() {
+            const data = getFilteredTableData();
+            const shown = data.slice(0, tableLimit);
+            const table = document.getElementById('dataTable');
+            const cols = [
+                { key: 'make', label: t('make') },
+                { key: 'model', label: t('model') },
+                { key: 'year', label: t('year') },
+                { key: 'price', label: t('price') },
+                { key: 'mileage', label: t('mileage') },
+                { key: 'fuel', label: t('fuel') },
+                { key: 'country', label: t('country') },
+                { key: 'condition', label: t('condition') }
+            ];
+
+            const thCls = 'bg-slate-700 text-slate-400 text-xs uppercase tracking-wider px-3 md:px-4 py-2 md:py-3 text-left cursor-pointer select-none whitespace-nowrap';
+            const tdCls = 'px-3 md:px-4 py-2 md:py-3 border-b border-white/10';
+
+            const arrow = (key) => {
+                if (tableSortCol !== key) return '<span class="sort-icon">&#8597;</span>';
+                return `<span class="sort-icon">${tableSortAsc ? '&#9650;' : '&#9660;'}</span>`;
+            };
+
+            table.innerHTML = `
+                <thead><tr>${cols.map(c => `<th class="${thCls} ${tableSortCol === c.key ? 'sorted' : ''}" onclick="sortTable('${c.key}')">${c.label}${arrow(c.key)}</th>`).join('')}</tr></thead>
+                <tbody>
+                    ${shown.map(d => `<tr class="hover:bg-white/5">
+                        <td class="${tdCls}"><strong>${d.make}</strong></td>
+                        <td class="${tdCls}">${d.model}</td>
+                        <td class="${tdCls}">${d.year || '-'}</td>
+                        <td class="${tdCls} font-semibold text-emerald-500 whitespace-nowrap">${d.price ? formatPrice(d.price) : '-'}</td>
+                        <td class="${tdCls}">${d.mileage != null ? formatKm(d.mileage) : '-'}</td>
+                        <td class="${tdCls}">${getFuelBadge(d.fuel)}</td>
+                        <td class="${tdCls}">${d.country ? countryLabel(d.country) : '-'}</td>
+                        <td class="${tdCls}">${getConditionBadge(d.condition)}</td>
+                    </tr>`).join('')}
+                </tbody>
+            `;
+
+            const btn = document.getElementById('showMoreBtn');
+            if (btn) btn.style.display = tableLimit >= data.length ? 'none' : 'block';
+        }
+
+        function sortTable(col) {
+            if (tableSortCol === col) {
+                tableSortAsc = !tableSortAsc;
+            } else {
+                tableSortCol = col;
+                tableSortAsc = true;
+            }
+            renderDataTable();
+        }
+
+        function onTableSearch(val) {
+            tableSearchQuery = val;
+            tableLimit = 100;
+            renderDataTable();
+        }
+
+        function showMore() {
+            tableLimit += 100;
+            renderDataTable();
+        }
+
+        // Init — apply persisted language
+        document.getElementById('lang-fr').classList.toggle('active', currentLang === 'fr');
+        document.getElementById('lang-en').classList.toggle('active', currentLang === 'en');
+        document.getElementById('header-title').textContent = t('headerTitle');
+
+        loadData()
+            .then(raw => {
+                allData = raw.map(normalize);
+                filteredData = allData;
+
+                const rawDate = raw[0] && (raw[0].scraped_at || raw[0].scrape_date || raw[0].date) || 'Unknown';
+                _scrapedAt = rawDate !== 'Unknown' ? rawDate.slice(0, 16).replace('T', ' ') : rawDate;
+                updateHeaderSubtitle();
+                updateFooter();
+
+                renderCountrySelector(getCountries(allData));
+                renderDashboard();
+            })
+            .catch(error => {
+                document.getElementById('content').innerHTML = `
+                    <div class="bg-red-500/20 border border-red-500 p-5 rounded-lg text-center text-red-500">
+                        <h3>Error Loading Data</h3>
+                        <p>${error.message}</p>
+                        <p class="mt-2.5 text-slate-400">
+                            Please ensure <code>autoscout24_all.json</code> or <code>autoscout24_{country}.json</code> files exist in the same directory.
+                        </p>
+                    </div>
+                `;
+                document.getElementById('header-subtitle').textContent = 'Failed to load data';
+            });
+    </script>
+</body>
+</html>
