@@ -62,6 +62,14 @@
         /* Sort icon opacity */
         .sort-icon { margin-left: 4px; opacity: 0.4; }
         .sorted .sort-icon { opacity: 1; }
+
+        #tablePagination button {
+            padding: 6px 12px; background: rgb(51 65 85); border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 6px; color: #3b82f6; font-weight: 600; cursor: pointer; transition: all 0.2s;
+        }
+        #tablePagination button:hover:not(:disabled) { background: #3b82f6; color: white; }
+        #tablePagination button:disabled { opacity: 0.3; cursor: default; }
+        #tablePagination span { color: #94a3b8; }
     </style>
 </head>
 <body class="bg-slate-900 text-slate-50 min-h-screen p-4 md:p-5 font-sans">
@@ -119,6 +127,7 @@
                 fuel: 'Carburant',
                 country: 'March\u00e9',
                 condition: '\u00c9tat',
+                link: 'Lien',
                 markets: 'march\u00e9s',
                 listings: 'annonces',
                 scraped: 'R\u00e9cup\u00e9r\u00e9 le',
@@ -155,6 +164,7 @@
                 fuel: 'Fuel',
                 country: 'Market',
                 condition: 'Condition',
+                link: 'Link',
                 markets: 'markets',
                 listings: 'listings',
                 scraped: 'Scraped',
@@ -248,7 +258,9 @@
         let filteredData = [];
         let activeCountry = 'ALL';
         let chartInstances = {};
-        let tableLimit = 100;
+        let tableLimit = 20;
+        let tablePage = 1;
+        const tablePageSize = 20;
         let tableSortCol = null;
         let tableSortAsc = true;
         let tableSearchQuery = '';
@@ -303,8 +315,9 @@
         function getConditionBadge(cond) {
             if (!cond) return '<span class="badge badge-default">-</span>';
             const c = cond.toLowerCase();
-            if (c.includes('new') || c.includes('neuf') || c.includes('neu')) return `<span class="badge badge-new">${cond}</span>`;
-            return `<span class="badge badge-used">${cond}</span>`;
+            const isNew = c.includes('new') || c.includes('neuf') || c.includes('neu');
+            const label = currentLang === 'fr' ? (isNew ? 'Neuf' : 'Occasion') : (isNew ? 'New' : 'Used');
+            return `<span class="badge badge-${isNew ? 'new' : 'used'}">${label}</span>`;
         }
 
         async function loadData() {
@@ -353,7 +366,7 @@
                 country: getField(car, 'country', 'pays', 'country_code') || 'Unknown',
                 condition: getField(car, 'condition', 'etat', 'offer_type') || 'Used',
                 scraped_at: getField(car, 'scraped_at', 'scrape_date', 'date'),
-                url: getField(car, 'url', 'link')
+                url: getField(car, 'listing_url', 'url', 'link')
             };
         }
 
@@ -377,7 +390,7 @@
         function selectCountry(country) {
             activeCountry = country;
             filteredData = country === 'ALL' ? allData : allData.filter(d => d.country.toUpperCase() === country.toUpperCase());
-            tableLimit = 100;
+            tablePage = 1;
             destroyAllCharts();
             renderCountrySelector(getCountries(allData));
             renderDashboard();
@@ -469,7 +482,7 @@
                         <div class="overflow-x-auto">
                             <table id="dataTable" class="w-full text-xs md:text-sm border-collapse"></table>
                         </div>
-                        <button class="block w-full p-2.5 md:p-3 mt-3 md:mt-4 bg-slate-700 border border-white/10 rounded-lg text-blue-500 text-sm font-semibold cursor-pointer hover:bg-blue-500 hover:text-white transition-all" id="showMoreBtn" onclick="showMore()">${t('showMore')}</button>
+                        <div id="tablePagination" class="flex items-center justify-center gap-2 mt-3 md:mt-4 text-sm"></div>
                     </div>
                 </div>
             `;
@@ -703,7 +716,10 @@
 
         function renderDataTable() {
             const data = getFilteredTableData();
-            const shown = data.slice(0, tableLimit);
+            const totalPages = Math.max(1, Math.ceil(data.length / tablePageSize));
+            if (tablePage > totalPages) tablePage = totalPages;
+            const start = (tablePage - 1) * tablePageSize;
+            const shown = data.slice(start, start + tablePageSize);
             const table = document.getElementById('dataTable');
             const cols = [
                 { key: 'make', label: t('make') },
@@ -727,9 +743,9 @@
             table.innerHTML = `
                 <thead><tr>${cols.map(c => `<th class="${thCls} ${tableSortCol === c.key ? 'sorted' : ''}" onclick="sortTable('${c.key}')">${c.label}${arrow(c.key)}</th>`).join('')}</tr></thead>
                 <tbody>
-                    ${shown.map(d => `<tr class="hover:bg-white/5">
+                    ${shown.map(d => `<tr class="hover:bg-white/5 ${d.url ? 'cursor-pointer' : ''}" ${d.url ? `onclick="window.open('${d.url}', '_blank')"` : ''}>
                         <td class="${tdCls}"><strong>${d.make}</strong></td>
-                        <td class="${tdCls}">${d.model}</td>
+                        <td class="${tdCls} capitalize">${d.model}</td>
                         <td class="${tdCls}">${d.year || '-'}</td>
                         <td class="${tdCls} font-semibold text-emerald-500 whitespace-nowrap">${d.price ? formatPrice(d.price) : '-'}</td>
                         <td class="${tdCls}">${d.mileage != null ? formatKm(d.mileage) : '-'}</td>
@@ -740,8 +756,16 @@
                 </tbody>
             `;
 
-            const btn = document.getElementById('showMoreBtn');
-            if (btn) btn.style.display = tableLimit >= data.length ? 'none' : 'block';
+            const pag = document.getElementById('tablePagination');
+            if (pag) {
+                pag.innerHTML = `
+                    <button onclick="goToPage(1)" ${tablePage <= 1 ? 'disabled' : ''}>«</button>
+                    <button onclick="goToPage(${tablePage - 1})" ${tablePage <= 1 ? 'disabled' : ''}>‹</button>
+                    <span>${tablePage} / ${totalPages}</span>
+                    <button onclick="goToPage(${tablePage + 1})" ${tablePage >= totalPages ? 'disabled' : ''}>›</button>
+                    <button onclick="goToPage(${totalPages})" ${tablePage >= totalPages ? 'disabled' : ''}>»</button>
+                `;
+            }
         }
 
         function sortTable(col) {
@@ -756,12 +780,12 @@
 
         function onTableSearch(val) {
             tableSearchQuery = val;
-            tableLimit = 100;
+            tablePage = 1;
             renderDataTable();
         }
 
-        function showMore() {
-            tableLimit += 100;
+        function goToPage(p) {
+            tablePage = Math.max(1, p);
             renderDataTable();
         }
 
