@@ -38,6 +38,11 @@ from bs4 import BeautifulSoup
 import httpx
 
 
+class RateLimitStop(Exception):
+    """Raised when a 429 is hit to signal scraping should stop."""
+    pass
+
+
 # =============================================================================
 # LOGGING
 # =============================================================================
@@ -116,6 +121,10 @@ class AutoScout24Car:
     # Meta
     image_count: int = 0
     scraped_at: str = ""
+
+    # Computed (filled by _clean_data)
+    price_per_km: Optional[float] = None
+    age_years: Optional[int] = None
 
     def __post_init__(self):
         if not self.scraped_at:
@@ -266,6 +275,24 @@ FUEL_TYPE_NORMALIZE: Dict[str, str] = {
     "idrogeno": "hydrogen",
 }
 
+ALLOWED_FUEL_TYPES = {"petrol", "diesel", "electric", "hybrid", "plug-in hybrid", "hybrid_rechargeable"}
+
+MAKE_NORMALIZE = {
+    "mercedes-benz": "Mercedes-Benz",
+    "mercedes": "Mercedes-Benz",
+    "bmw": "BMW",
+    "vw": "Volkswagen",
+    "volkswagen": "Volkswagen",
+    "alfa-romeo": "Alfa Romeo",
+    "alfa romeo": "Alfa Romeo",
+    "land-rover": "Land Rover",
+    "land rover": "Land Rover",
+    "rolls-royce": "Rolls-Royce",
+    "rolls royce": "Rolls-Royce",
+    "aston-martin": "Aston Martin",
+    "aston martin": "Aston Martin",
+}
+
 # Transmission normalization
 TRANSMISSION_NORMALIZE: Dict[str, str] = {
     "automatik": "automatic",
@@ -369,12 +396,7 @@ class AutoScout24Scraper:
         self.request_timestamps: List[float] = []
         self.rate_limit_timestamps: List[float] = []
 
-        # Adaptive rate limiting state (per-country)
-        self._country_delay: Dict[str, float] = {}  # current delay multiplier
-        self._country_consecutive_429: Dict[str, int] = {}  # consecutive 429 count
-        self._country_recent_429_ts: Dict[str, List[float]] = {}  # recent 429 timestamps
-        self._concurrency_reduced = False
-        self._concurrency_restore_time: float = 0.0
+        self._country_delay: Dict[str, float] = {}  # current delay per country
 
     # -------------------------------------------------------------------------
     # HTTP / Fetch helpers
@@ -408,73 +430,21 @@ class AutoScout24Scraper:
         """Get the current adaptive delay for a country."""
         return self._country_delay.get(country, self.BASE_DELAY)
 
-    def _on_429(self, country: str):
-        """Update adaptive state when a 429 is received."""
-        now = time.monotonic()
-        # Increase per-country delay (double it, cap at 10s)
-        current = self._country_delay.get(country, self.BASE_DELAY)
-        self._country_delay[country] = min(current * 2, 10.0)
-
-        # Track consecutive 429s
-        self._country_consecutive_429[country] = self._country_consecutive_429.get(country, 0) + 1
-
-        # Track recent 429 timestamps
-        if country not in self._country_recent_429_ts:
-            self._country_recent_429_ts[country] = []
-        self._country_recent_429_ts[country].append(now)
-        # Keep only last 30s of timestamps
-        self._country_recent_429_ts[country] = [
-            t for t in self._country_recent_429_ts[country] if now - t < 30
-        ]
-
-        # Reduce concurrency after 3+ consecutive 429s
-        consecutive = self._country_consecutive_429[country]
-        if consecutive >= 3 and not self._concurrency_reduced:
-            self._concurrency_reduced = True
-            self._concurrency_restore_time = now + 60  # restore after 60s
-            # Replace semaphore with lower concurrency
-            self.semaphore = asyncio.Semaphore(2)
-            self._semaphore_value = 2
-            log.warning("[%s] Reducing concurrency to 2 after %d consecutive 429s",
-                        country.upper(), consecutive)
-
     def _on_success(self, country: str):
         """Update adaptive state on success."""
-        self._country_consecutive_429[country] = 0
         # Gradually restore delay (halve it, floor at BASE_DELAY)
         current = self._country_delay.get(country, self.BASE_DELAY)
         if current > self.BASE_DELAY:
             self._country_delay[country] = max(current * 0.75, self.BASE_DELAY)
 
-        # Restore concurrency if cooldown expired
-        now = time.monotonic()
-        if self._concurrency_reduced and now >= self._concurrency_restore_time:
-            self._concurrency_reduced = False
-            self.semaphore = asyncio.Semaphore(self.MAX_CONCURRENT)
-            self._semaphore_value = self.MAX_CONCURRENT
-            log.info("Restoring concurrency to %d", self.MAX_CONCURRENT)
-
-    def _had_recent_429(self, country: str, window: float = 15.0) -> bool:
-        """Check if this country had 429s in the recent window."""
-        now = time.monotonic()
-        timestamps = self._country_recent_429_ts.get(country, [])
-        return any(now - t < window for t in timestamps)
-
     async def _fetch(self, client: httpx.AsyncClient, url: str, country: str = "de") -> Optional[str]:
-        """Fetch a URL with adaptive rate limiting, jitter, UA rotation, and exponential backoff."""
-        max_retries_429 = 4  # extra retry budget for 429s
-        async with self.semaphore:
-            # Country-level cooldown: pause if too many consecutive 429s
-            consecutive = self._country_consecutive_429.get(country, 0)
-            if consecutive >= 5:
-                cooldown = 15.0
-                log.warning("[%s] Cooldown pause %.0fs after %d consecutive 429s",
-                            country.upper(), cooldown, consecutive)
-                await asyncio.sleep(cooldown)
+        """Fetch a URL with rate limiting, jitter, UA rotation, and retry on errors.
 
-            for attempt in range(1, max(self.MAX_RETRIES, max_retries_429) + 1):
+        Raises RateLimitStop on 429 to signal the caller to stop scraping.
+        """
+        async with self.semaphore:
+            for attempt in range(1, self.MAX_RETRIES + 1):
                 try:
-                    # Adaptive jitter: use per-country delay
                     delay = self._get_country_delay(country) + random.uniform(0, self.MAX_JITTER)
                     await asyncio.sleep(delay)
 
@@ -484,16 +454,8 @@ class AutoScout24Scraper:
                     if response.status_code == 429:
                         self._record_request(country, "rate_limited")
                         self.rate_limit_timestamps.append(time.monotonic())
-                        self._on_429(country)
-                        if attempt >= max_retries_429:
-                            log.error("429 retries exhausted for %s", url)
-                            return None
-                        # Backoff: 3^(attempt-1) + jitter
-                        wait = 3 ** (attempt - 1) + random.uniform(0, 1)
-                        log.warning("Got %d on %s – retrying in %.1fs (attempt %d/%d)",
-                                    response.status_code, url, wait, attempt, max_retries_429)
-                        await asyncio.sleep(wait)
-                        continue
+                        log.warning("[%s] Got 429 on %s – stopping scrape for this country", country.upper(), url)
+                        raise RateLimitStop(country)
 
                     if response.status_code == 403:
                         self._record_request(country, "blocked")
@@ -506,14 +468,6 @@ class AutoScout24Scraper:
                         continue
 
                     if response.status_code == 404:
-                        # Distinguish real 404 from soft-block after 429 burst
-                        if self._had_recent_429(country):
-                            self._record_request(country, "blocked")
-                            log.warning("Got 404 on %s after recent 429s – possible soft-block, "
-                                        "pausing before retry (attempt %d)", url, attempt)
-                            await asyncio.sleep(5.0 + random.uniform(0, 2))
-                            if attempt <= 2:
-                                continue
                         self._record_request(country, "errors")
                         log.debug("404 on %s", url)
                         return None
@@ -523,6 +477,8 @@ class AutoScout24Scraper:
                     self._on_success(country)
                     return response.text
 
+                except RateLimitStop:
+                    raise
                 except httpx.HTTPStatusError as exc:
                     self._record_request(country, "errors")
                     log.error("HTTP %d fetching %s: %s", exc.response.status_code, url, exc)
@@ -1364,6 +1320,65 @@ class AutoScout24Scraper:
         self._finalize_car(car)
         return car
 
+    def _clean_data(self, cars: List[AutoScout24Car], country: str) -> List[AutoScout24Car]:
+        """Apply data quality filters and enrichment."""
+        before = len(cars)
+
+        # 1. Fuel type filter — keep only standard fuel types
+        cars = [c for c in cars if c.fuel_type in ALLOWED_FUEL_TYPES]
+        log.info("[%s] Fuel filter: %d → %d", country.upper(), before, len(cars))
+
+        # 2. Price outlier filter — drop < €500 (placeholder/errors)
+        cars = [c for c in cars if c.price_eur is not None and c.price_eur >= 500]
+
+        # 3. Near-duplicate detection (same make+model+year+mileage+price)
+        seen_sigs: set = set()
+        unique = []
+        for c in cars:
+            sig = (c.make.lower(), c.model.lower(), c.year, c.mileage_km, c.price_eur)
+            if sig not in seen_sigs:
+                seen_sigs.add(sig)
+                unique.append(c)
+        cars = unique
+
+        # 4. Normalize make names
+        for c in cars:
+            key = c.make.lower().strip()
+            if key in MAKE_NORMALIZE:
+                c.make = MAKE_NORMALIZE[key]
+            elif c.make:
+                c.make = c.make.title()
+
+        # 5. Price per km ratio
+        for c in cars:
+            if c.price_eur and c.mileage_km and c.mileage_km > 0:
+                c.price_per_km = round(c.price_eur / c.mileage_km, 2)
+
+        # 6. Age calculation from first_registration or year
+        current_year = datetime.now().year
+        for c in cars:
+            if c.first_registration:
+                match = re.search(r"(\d{4})", c.first_registration)
+                if match:
+                    c.age_years = current_year - int(match.group(1))
+            if c.age_years is None and c.year:
+                c.age_years = current_year - c.year
+
+        # 7. Required fields — drop listings missing price, make, or model
+        cars = [c for c in cars if c.price_eur and c.make and c.model]
+
+        # 8. Mileage sanity — drop used cars with age ≥3 years but mileage < 100 km
+        def mileage_sane(c):
+            if c.condition == "new":
+                return True
+            if c.age_years is not None and c.age_years >= 3 and c.mileage_km is not None and c.mileage_km < 100:
+                return False
+            return True
+        cars = [c for c in cars if mileage_sane(c)]
+
+        log.info("[%s] After all cleaning: %d → %d cars", country.upper(), before, len(cars))
+        return cars
+
     async def _scrape_country_per_model(self, client: httpx.AsyncClient, country: str) -> List[AutoScout24Car]:
         """Scrape listings per model group (card data only, no detail pages)."""
         all_makes = await self._discover_makes(client, country)
@@ -1381,10 +1396,17 @@ class AutoScout24Scraper:
         all_cars: List[AutoScout24Car] = []
         seen_ids: set = set()
 
+        rate_limited = False
         for make_info in all_makes:
+            if rate_limited:
+                break
             make_slug = make_info["slug"]
             make_id = make_info["value"]
-            models = await self._discover_models(client, country, make_slug, make_id)
+            try:
+                models = await self._discover_models(client, country, make_slug, make_id)
+            except RateLimitStop:
+                log.warning("[%s] Rate limited – stopping per-model scrape", country.upper())
+                break
             if not models:
                 continue
 
@@ -1405,7 +1427,12 @@ class AutoScout24Scraper:
                 prefix = COUNTRY_PATH_PREFIX.get(country, "")
                 url = f"https://www.{domain}{prefix}/lst?{'&'.join(params)}"
 
-                html = await self.fetch(client, url, country)
+                try:
+                    html = await self.fetch(client, url, country)
+                except RateLimitStop:
+                    log.warning("[%s] Rate limited – stopping per-model scrape", country.upper())
+                    rate_limited = True
+                    break
                 if not html:
                     continue
 
@@ -1452,7 +1479,11 @@ class AutoScout24Scraper:
 
             while collected < self.max_listings:
                 url = self._build_search_url(country, make, page)
-                html = await self.fetch(client, url, country)
+                try:
+                    html = await self.fetch(client, url, country)
+                except RateLimitStop:
+                    log.warning("[%s] Rate limited – stopping pagination for %s", country.upper(), make_label)
+                    break
                 if not html:
                     log.warning("[%s] Failed to fetch page %d for %s", country.upper(), page, make_label)
                     break
@@ -1490,6 +1521,8 @@ class AutoScout24Scraper:
         for result in results:
             if isinstance(result, AutoScout24Car):
                 cars.append(result)
+            elif isinstance(result, RateLimitStop):
+                log.warning("[%s] Rate limited during detail fetch – proceeding with collected data", country.upper())
             elif isinstance(result, Exception):
                 log.error("Error fetching detail: %s", result)
 
@@ -1504,7 +1537,8 @@ class AutoScout24Scraper:
                 deduped.append(car)
 
         log.info("[%s] Scraped %d unique cars", country.upper(), len(deduped))
-        return deduped
+        cleaned = self._clean_data(deduped, country)
+        return cleaned
 
     # -------------------------------------------------------------------------
     # Main scraping entry point
