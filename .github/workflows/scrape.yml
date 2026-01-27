@@ -22,7 +22,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run new cars scraper
+      - name: Get day of week
+        id: day
+        run: echo "day=$(date -u +%u)" >> "$GITHUB_OUTPUT"
+
+      - name: Run new cars scraper (weekly - Mondays only)
+        if: github.event_name == 'workflow_dispatch' || steps.day.outputs.day == '1'
         run: python automobile_scraper.py
         timeout-minutes: 30
 

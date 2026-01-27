@@ -3,6 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+    paths:
+      - '*.html'
+      - '*.json'
+      - '*.csv'
   workflow_dispatch:
 
 permissions:
