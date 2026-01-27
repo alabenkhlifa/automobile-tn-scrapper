@@ -664,8 +664,8 @@
         function renderScatterChart(data) {
             const points = data
                 .filter(d => d.price > 0 && d.mileage != null && d.mileage >= 0 && d.price < 200000 && d.mileage < 500000)
-                .slice(0, 2000)
-                .map(d => ({ x: d.mileage, y: d.price }));
+                .map(d => ({ x: d.mileage, y: d.price }))
+                .sort((a, b) => a.x - b.x);
 
             chartInstances.scatter = new Chart(document.getElementById('scatterChart').getContext('2d'), {
                 type: 'scatter',
@@ -675,15 +675,23 @@
                         data: points,
                         backgroundColor: '#3b82f633',
                         borderColor: '#3b82f6',
-                        pointRadius: 2.5,
-                        pointHoverRadius: 5
+                        pointRadius: 2,
+                        pointHoverRadius: 4
                     }]
                 },
                 options: {
                     responsive: true, maintainAspectRatio: false,
-                    plugins: { legend: { display: false } },
+                    animation: false,
+                    plugins: {
+                        legend: { display: false },
+                        decimation: {
+                            enabled: true,
+                            algorithm: 'lttb',
+                            samples: 300
+                        }
+                    },
                     scales: {
-                        x: { title: { display: true, text: 'Mileage (km)', color: '#94a3b8' }, ticks: { callback: v => (v/1000)+'K' }, grid: { color: 'rgba(255,255,255,0.05)' } },
+                        x: { type: 'linear', title: { display: true, text: 'Mileage (km)', color: '#94a3b8' }, ticks: { callback: v => (v/1000)+'K' }, grid: { color: 'rgba(255,255,255,0.05)' } },
                         y: { title: { display: true, text: 'Price (EUR)', color: '#94a3b8' }, ticks: { callback: v => (v/1000)+'K' }, grid: { color: 'rgba(255,255,255,0.05)' } }
                     }
                 }
