@@ -8,7 +8,7 @@ You are an expert at creating web scrapers and RAG (Retrieval-Augmented Generati
 
 ## Project Overview
 
-Tunisia car marketplace scraper for automobile.tn. Extracts used cars (`/fr/occasion`) and new cars (`/fr/neuf`) with specs, pricing, and FCR (French personal import) eligibility data.
+Tunisia car marketplace scraper for automobile.tn. Currently extracts new cars (`/fr/neuf`) with specs and pricing. Used cars scraper (`/fr/occasion`) is planned but not yet implemented.
 
 ## Commands
 
@@ -16,56 +16,42 @@ Tunisia car marketplace scraper for automobile.tn. Extracts used cars (`/fr/occa
 # Activate virtual environment
 source venv/bin/activate
 
-# Run used cars scraper
-python automobile-crawler.py
+# Run new cars scraper (all brands)
+python automobile_scraper.py
 
-# Run new cars scraper
-python automobile-new-crawler.py
-
-# Run connectivity test across multiple sites
-python crawl.py
+# Run scraper for specific brands only
+python automobile_scraper.py --brands alfa-romeo,citroen
 ```
 
 ## Architecture
 
 ### Scrapers
 
-**automobile-crawler.py** - Used cars scraper
-- Scrapes paginated listings from `/fr/occasion`
-- `CarListing` dataclass with 30+ fields
-- Computes FCR eligibility based on age and CV fiscal limits
-- Output: `automobile_tn_cars.json`, `automobile_tn_cars.csv`
-
-**automobile-new-crawler.py** - New cars scraper
+**automobile_scraper.py** - New cars scraper
 - Three-level hierarchy: Brands → Models → Trims
 - `CarTrim` dataclass with 40+ fields including full specs
 - Extracts from `versions-item` divs and spec tables
 - Filters out non-car pages (Devis, Concessionnaires)
 - Output: `automobile_tn_new_cars.json`, `automobile_tn_new_cars.csv`
 
-**crawl.py** - Multi-site connectivity test
-- Tests crawl4ai against automobile.tn, mobile.de, autoscout24.de, leboncoin.fr
-- Detects anti-bot protection
-
 ### Data Flow
 
 ```
-AsyncWebCrawler → BeautifulSoup parsing → Regex extraction → Dataclass population → JSON/CSV export
+httpx requests → BeautifulSoup parsing → Regex extraction → Dataclass population → JSON/CSV export
 ```
 
 ### Key Dependencies
 
-- `crawl4ai` - Async web crawler with headless browser
+- `httpx` - Async HTTP client
 - `beautifulsoup4` + `lxml` - HTML parsing
-- `patchright` - Browser automation (headless Chromium)
 
 ## Domain Knowledge
 
 ### URL Patterns
-- Used cars: `/fr/occasion/{brand}/{model}/{id}`
+- Used cars: `/fr/occasion/{brand}/{model}/{id}` (TODO)
 - New cars: `/fr/neuf/{brand}`, `/fr/neuf/{brand}/{model}`, `/fr/neuf/{brand}/{model}/{trim}`
 
-### FCR Eligibility Rules (Used Cars)
+### FCR Eligibility Rules (Used Cars - for future implementation)
 - Max 8 years old for FCR Famille
 - Essence: ≤9 CV fiscal
 - Diesel: ≤10 CV fiscal
@@ -83,7 +69,6 @@ Skip model slugs: `devis`, `comparateur`
 
 ## Conventions
 
-- Use 2-3 second delays before returning HTML to ensure JS completion
 - Handle non-breaking spaces (`\u00a0`) in French numeric formatting
 - Deduplicate by unique ID before export
 - Debug HTML saved to `debug_*.html` files for parser development
