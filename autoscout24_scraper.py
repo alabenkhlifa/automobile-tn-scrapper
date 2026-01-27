@@ -356,6 +356,7 @@ class AutoScout24Scraper:
         self.per_model_limit = per_model_limit
 
         self.semaphore = asyncio.Semaphore(self.MAX_CONCURRENT)
+        self._semaphore_value = self.MAX_CONCURRENT
         self.cars: List[AutoScout24Car] = []
         self.cars_by_country: Dict[str, List[AutoScout24Car]] = {}
         self.playwright_browser = None
@@ -367,6 +368,13 @@ class AutoScout24Scraper:
         self.request_stats_by_country: Dict[str, Dict[str, int]] = {}
         self.request_timestamps: List[float] = []
         self.rate_limit_timestamps: List[float] = []
+
+        # Adaptive rate limiting state (per-country)
+        self._country_delay: Dict[str, float] = {}  # current delay multiplier
+        self._country_consecutive_429: Dict[str, int] = {}  # consecutive 429 count
+        self._country_recent_429_ts: Dict[str, List[float]] = {}  # recent 429 timestamps
+        self._concurrency_reduced = False
+        self._concurrency_restore_time: float = 0.0
 
     # -------------------------------------------------------------------------
     # HTTP / Fetch helpers
@@ -396,13 +404,79 @@ class AutoScout24Scraper:
         self.request_stats_by_country[country]["total"] += 1
         self.request_stats_by_country[country][category] += 1
 
+    def _get_country_delay(self, country: str) -> float:
+        """Get the current adaptive delay for a country."""
+        return self._country_delay.get(country, self.BASE_DELAY)
+
+    def _on_429(self, country: str):
+        """Update adaptive state when a 429 is received."""
+        now = time.monotonic()
+        # Increase per-country delay (double it, cap at 10s)
+        current = self._country_delay.get(country, self.BASE_DELAY)
+        self._country_delay[country] = min(current * 2, 10.0)
+
+        # Track consecutive 429s
+        self._country_consecutive_429[country] = self._country_consecutive_429.get(country, 0) + 1
+
+        # Track recent 429 timestamps
+        if country not in self._country_recent_429_ts:
+            self._country_recent_429_ts[country] = []
+        self._country_recent_429_ts[country].append(now)
+        # Keep only last 30s of timestamps
+        self._country_recent_429_ts[country] = [
+            t for t in self._country_recent_429_ts[country] if now - t < 30
+        ]
+
+        # Reduce concurrency after 3+ consecutive 429s
+        consecutive = self._country_consecutive_429[country]
+        if consecutive >= 3 and not self._concurrency_reduced:
+            self._concurrency_reduced = True
+            self._concurrency_restore_time = now + 60  # restore after 60s
+            # Replace semaphore with lower concurrency
+            self.semaphore = asyncio.Semaphore(2)
+            self._semaphore_value = 2
+            log.warning("[%s] Reducing concurrency to 2 after %d consecutive 429s",
+                        country.upper(), consecutive)
+
+    def _on_success(self, country: str):
+        """Update adaptive state on success."""
+        self._country_consecutive_429[country] = 0
+        # Gradually restore delay (halve it, floor at BASE_DELAY)
+        current = self._country_delay.get(country, self.BASE_DELAY)
+        if current > self.BASE_DELAY:
+            self._country_delay[country] = max(current * 0.75, self.BASE_DELAY)
+
+        # Restore concurrency if cooldown expired
+        now = time.monotonic()
+        if self._concurrency_reduced and now >= self._concurrency_restore_time:
+            self._concurrency_reduced = False
+            self.semaphore = asyncio.Semaphore(self.MAX_CONCURRENT)
+            self._semaphore_value = self.MAX_CONCURRENT
+            log.info("Restoring concurrency to %d", self.MAX_CONCURRENT)
+
+    def _had_recent_429(self, country: str, window: float = 15.0) -> bool:
+        """Check if this country had 429s in the recent window."""
+        now = time.monotonic()
+        timestamps = self._country_recent_429_ts.get(country, [])
+        return any(now - t < window for t in timestamps)
+
     async def _fetch(self, client: httpx.AsyncClient, url: str, country: str = "de") -> Optional[str]:
-        """Fetch a URL with rate limiting, jitter, UA rotation, and exponential backoff."""
+        """Fetch a URL with adaptive rate limiting, jitter, UA rotation, and exponential backoff."""
+        max_retries_429 = 4  # extra retry budget for 429s
         async with self.semaphore:
-            for attempt in range(1, self.MAX_RETRIES + 1):
+            # Country-level cooldown: pause if too many consecutive 429s
+            consecutive = self._country_consecutive_429.get(country, 0)
+            if consecutive >= 5:
+                cooldown = 15.0
+                log.warning("[%s] Cooldown pause %.0fs after %d consecutive 429s",
+                            country.upper(), cooldown, consecutive)
+                await asyncio.sleep(cooldown)
+
+            for attempt in range(1, max(self.MAX_RETRIES, max_retries_429) + 1):
                 try:
-                    # Random jitter before each request
-                    await asyncio.sleep(self.BASE_DELAY + random.uniform(0, self.MAX_JITTER))
+                    # Adaptive jitter: use per-country delay
+                    delay = self._get_country_delay(country) + random.uniform(0, self.MAX_JITTER)
+                    await asyncio.sleep(delay)
 
                     headers = self._random_headers(country)
                     response = await client.get(url, headers=headers, follow_redirects=True)
@@ -410,22 +484,43 @@ class AutoScout24Scraper:
                     if response.status_code == 429:
                         self._record_request(country, "rate_limited")
                         self.rate_limit_timestamps.append(time.monotonic())
-                        wait = 2 ** (attempt - 1)
-                        log.warning("Got %d on %s – retrying in %ds (attempt %d/%d)",
-                                    response.status_code, url, wait, attempt, self.MAX_RETRIES)
+                        self._on_429(country)
+                        if attempt >= max_retries_429:
+                            log.error("429 retries exhausted for %s", url)
+                            return None
+                        # Backoff: 3^(attempt-1) + jitter
+                        wait = 3 ** (attempt - 1) + random.uniform(0, 1)
+                        log.warning("Got %d on %s – retrying in %.1fs (attempt %d/%d)",
+                                    response.status_code, url, wait, attempt, max_retries_429)
                         await asyncio.sleep(wait)
                         continue
 
                     if response.status_code == 403:
                         self._record_request(country, "blocked")
-                        wait = 2 ** (attempt - 1)
-                        log.warning("Got %d on %s – retrying in %ds (attempt %d/%d)",
+                        wait = 3 ** (attempt - 1) + random.uniform(0, 1)
+                        log.warning("Got %d on %s – retrying in %.1fs (attempt %d/%d)",
                                     response.status_code, url, wait, attempt, self.MAX_RETRIES)
+                        if attempt >= self.MAX_RETRIES:
+                            return None
                         await asyncio.sleep(wait)
                         continue
 
+                    if response.status_code == 404:
+                        # Distinguish real 404 from soft-block after 429 burst
+                        if self._had_recent_429(country):
+                            self._record_request(country, "blocked")
+                            log.warning("Got 404 on %s after recent 429s – possible soft-block, "
+                                        "pausing before retry (attempt %d)", url, attempt)
+                            await asyncio.sleep(5.0 + random.uniform(0, 2))
+                            if attempt <= 2:
+                                continue
+                        self._record_request(country, "errors")
+                        log.debug("404 on %s", url)
+                        return None
+
                     response.raise_for_status()
                     self._record_request(country, "success")
+                    self._on_success(country)
                     return response.text
 
                 except httpx.HTTPStatusError as exc:
