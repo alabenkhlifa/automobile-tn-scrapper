@@ -1,15 +1,142 @@
 {
-  "scraped_at": "2026-01-27T18:07:09.888875",
+  "scraped_at": "2026-01-27T18:51:22.185239",
   "stats": {
     "pages_scraped": 5,
     "listings_found": 60,
     "cars_scraped": 60,
     "with_price": 60,
-    "with_equipment": 47,
+    "with_equipment": 48,
     "with_phone": 60
   },
   "total": 60,
   "cars": [
+    {
+      "id": "122819",
+      "brand": "Hyundai",
+      "model": "Hyundai ix35",
+      "full_name": "Hyundai ix35",
+      "url": "https://www.automobile.tn/fr/occasion/hyundai/ix35/122819",
+      "price_tnd": 48000,
+      "price_evaluation": "",
+      "registration_date": "2012-10-01",
+      "year": 2012,
+      "mileage_km": 228000,
+      "ownership": "2ème main",
+      "condition": "Très bon",
+      "cv_fiscal": 6,
+      "cv_din": null,
+      "fuel_type": "Diesel",
+      "transmission": "Manuelle",
+      "drivetrain": "Traction",
+      "body_type": "SUV",
+      "color_exterior": "Noir",
+      "color_interior": "Noir",
+      "upholstery": "Cuir intégral",
+      "doors": 5,
+      "seats": 5,
+      "equipment_safety": [
+        "ABS",
+        "Airbags frontaux",
+        "Airbags latéraux",
+        "Airbags rideaux"
+      ],
+      "equipment_interior": [
+        "Accoudoir arrière",
+        "Accoudoir avant",
+        "Autoradio",
+        "Boîte à gants réfrigérée",
+        "Vitres teintées",
+        "Volant multi-fonctions",
+        "Volant réglable hauteur/profondeur"
+      ],
+      "equipment_exterior": [
+        "Jantes en alliage",
+        "Toit ouvrant",
+        "Toit panoramique",
+        "Vitres teintées"
+      ],
+      "equipment_functional": [
+        "Climatisation",
+        "Climatisation automatique",
+        "Direction assistée",
+        "Ordinateur de bord",
+        "Régulateur de vitesse",
+        "Rétroviseurs rabattables",
+        "Rétroviseurs électriques",
+        "Vitres électriques"
+      ],
+      "governorate": "Tunis",
+      "seller_phone": "20 207 447",
+      "listing_date": "",
+      "scraped_at": "2026-01-27T18:51:15.447747"
+    },
+    {
+      "id": "122818",
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-Benz Classe E",
+      "full_name": "Mercedes-Benz Classe E",
+      "url": "https://www.automobile.tn/fr/occasion/mercedes-benz/classe-e/122818",
+      "price_tnd": 99000,
+      "price_evaluation": "",
+      "registration_date": "2016-05-01",
+      "year": 2016,
+      "mileage_km": 224000,
+      "ownership": "1ère main",
+      "condition": "Très bon",
+      "cv_fiscal": 11,
+      "cv_din": null,
+      "fuel_type": "Essence",
+      "transmission": "Automatique",
+      "drivetrain": "Propulsion",
+      "body_type": "Berline",
+      "color_exterior": "Noir",
+      "color_interior": "Marron",
+      "upholstery": "Cuir partiel",
+      "doors": 4,
+      "seats": 5,
+      "equipment_safety": [
+        "ABS",
+        "Airbags frontaux",
+        "Airbags latéraux",
+        "Alarme anti-intrusion",
+        "Anti-démarrage électronique",
+        "Anti-patinage",
+        "Contrôle de pression des pneus",
+        "Fixations ISOFIX",
+        "Pneumatiques runflat"
+      ],
+      "equipment_interior": [
+        "3 appuis têtes arrières",
+        "Autoradio",
+        "Autoradio CD",
+        "Autoradio CD/Mp3",
+        "Bluetooth",
+        "Volant multi-fonctions",
+        "Volant réglable hauteur/profondeur",
+        "Volant/levier de vitesse en cuir"
+      ],
+      "equipment_exterior": [
+        "Jantes en alliage",
+        "Phares Full LED",
+        "Radar de recul"
+      ],
+      "equipment_functional": [
+        "Allumage automatique des feux",
+        "Bouton Start & Stop",
+        "Climatisation automatique",
+        "Direction assistée",
+        "Fermeture centralisée",
+        "Ordinateur de bord",
+        "Régulateur de vitesse",
+        "Rétroviseurs rabattables",
+        "Rétroviseurs électriques",
+        "Vitres électriques"
+      ],
+      "governorate": "Tunis",
+      "seller_phone": "21 431 431",
+      "listing_date": "",
+      "scraped_at": "2026-01-27T18:51:16.389461"
+    },
     {
       "id": "120343",
       "brand": "Audi",
@@ -75,7 +202,7 @@
       "governorate": "Tunis",
       "seller_phone": "55 355 766",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:03.199909"
+      "scraped_at": "2026-01-27T18:51:16.725344"
     },
     {
       "id": "119230",
@@ -155,7 +282,7 @@
       "governorate": "Tunis",
       "seller_phone": "55 355 766",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:04.106666"
+      "scraped_at": "2026-01-27T18:51:16.649446"
     },
     {
       "id": "120197",
@@ -235,7 +362,7 @@
       "governorate": "Tunis",
       "seller_phone": "29 810 654",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:03.956500"
+      "scraped_at": "2026-01-27T18:51:16.578791"
     },
     {
       "id": "121788",
@@ -280,7 +407,7 @@
       "governorate": "Sfax",
       "seller_phone": "27 181 238",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:04.251145"
+      "scraped_at": "2026-01-27T18:51:16.296547"
     },
     {
       "id": "122528",
@@ -313,7 +440,7 @@
       "governorate": "Sousse",
       "seller_phone": "55 589 535",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:04.320177"
+      "scraped_at": "2026-01-27T18:51:16.456296"
     },
     {
       "id": "122527",
@@ -346,7 +473,7 @@
       "governorate": "Sousse",
       "seller_phone": "55 589 535",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:03.849292"
+      "scraped_at": "2026-01-27T18:51:16.512267"
     },
     {
       "id": "122063",
@@ -379,7 +506,7 @@
       "governorate": "Sousse",
       "seller_phone": "55 589 535",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:04.046222"
+      "scraped_at": "2026-01-27T18:51:16.204822"
     },
     {
       "id": "122817",
@@ -472,7 +599,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:04.006534"
+      "scraped_at": "2026-01-27T18:51:16.163298"
     },
     {
       "id": "119471",
@@ -563,51 +690,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 200 330",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:04.179056"
-    },
-    {
-      "id": "122816",
-      "brand": "Fiat",
-      "model": "Fiat Grande Punto",
-      "full_name": "Fiat Grande Punto",
-      "url": "https://www.automobile.tn/fr/occasion/fiat/grande-punto/122816",
-      "price_tnd": 16500,
-      "price_evaluation": "",
-      "registration_date": "2013-11-01",
-      "year": 2013,
-      "mileage_km": 208000,
-      "ownership": "2ème main",
-      "condition": "Moyen",
-      "cv_fiscal": 4,
-      "cv_din": null,
-      "fuel_type": "Essence",
-      "transmission": "Manuelle",
-      "drivetrain": "Traction",
-      "body_type": "Citadine",
-      "color_exterior": "Noir",
-      "color_interior": "Beige",
-      "upholstery": "Tissu",
-      "doors": 4,
-      "seats": 5,
-      "equipment_safety": [
-        "ABS",
-        "Airbags frontaux",
-        "Airbags latéraux",
-        "Airbags rideaux",
-        "Anti-patinage"
-      ],
-      "equipment_interior": [
-        "Autoradio",
-        "Chargeur CD"
-      ],
-      "equipment_exterior": [],
-      "equipment_functional": [
-        "Climatisation"
-      ],
-      "governorate": "Nabeul",
-      "seller_phone": "99 434 206",
-      "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:04.429808"
+      "scraped_at": "2026-01-27T18:51:16.101279"
     },
     {
       "id": "122679",
@@ -682,7 +765,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:03.731379"
+      "scraped_at": "2026-01-27T18:51:16.981842"
     },
     {
       "id": "122678",
@@ -783,7 +866,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:04.595913"
+      "scraped_at": "2026-01-27T18:51:17.086311"
     },
     {
       "id": "122677",
@@ -854,7 +937,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:04.909706"
+      "scraped_at": "2026-01-27T18:51:17.155270"
     },
     {
       "id": "118015",
@@ -918,7 +1001,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:05.034077"
+      "scraped_at": "2026-01-27T18:51:17.422472"
     },
     {
       "id": "106073",
@@ -1012,7 +1095,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:05.179691"
+      "scraped_at": "2026-01-27T18:51:17.696621"
     },
     {
       "id": "79830",
@@ -1102,7 +1185,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:05.327088"
+      "scraped_at": "2026-01-27T18:51:17.548422"
     },
     {
       "id": "119568",
@@ -1181,7 +1264,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:05.489246"
+      "scraped_at": "2026-01-27T18:51:17.880313"
     },
     {
       "id": "116476",
@@ -1260,7 +1343,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:05.255621"
+      "scraped_at": "2026-01-27T18:51:17.800820"
     },
     {
       "id": "103089",
@@ -1354,7 +1437,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:04.968744"
+      "scraped_at": "2026-01-27T18:51:17.480844"
     },
     {
       "id": "107279",
@@ -1444,7 +1527,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:05.104823"
+      "scraped_at": "2026-01-27T18:51:17.621121"
     },
     {
       "id": "122552",
@@ -1514,7 +1597,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:05.420595"
+      "scraped_at": "2026-01-27T18:51:18.211347"
     },
     {
       "id": "122061",
@@ -1590,7 +1673,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:05.547923"
+      "scraped_at": "2026-01-27T18:51:18.265102"
     },
     {
       "id": "122060",
@@ -1670,7 +1753,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:05.823379"
+      "scraped_at": "2026-01-27T18:51:17.954164"
     },
     {
       "id": "122059",
@@ -1767,7 +1850,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:05.885272"
+      "scraped_at": "2026-01-27T18:51:18.320141"
     },
     {
       "id": "122058",
@@ -1842,7 +1925,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:06.152147"
+      "scraped_at": "2026-01-27T18:51:18.585048"
     },
     {
       "id": "122005",
@@ -1941,7 +2024,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:06.388549"
+      "scraped_at": "2026-01-27T18:51:18.963499"
     },
     {
       "id": "122004",
@@ -2036,7 +2119,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:06.534769"
+      "scraped_at": "2026-01-27T18:51:18.811580"
     },
     {
       "id": "121665",
@@ -2133,7 +2216,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:06.685027"
+      "scraped_at": "2026-01-27T18:51:18.889841"
     },
     {
       "id": "121088",
@@ -2223,7 +2306,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:06.206294"
+      "scraped_at": "2026-01-27T18:51:18.744692"
     },
     {
       "id": "120558",
@@ -2325,7 +2408,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:06.462412"
+      "scraped_at": "2026-01-27T18:51:18.653187"
     },
     {
       "id": "120544",
@@ -2423,7 +2506,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:06.609510"
+      "scraped_at": "2026-01-27T18:51:19.042415"
     },
     {
       "id": "120474",
@@ -2523,7 +2606,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:06.277204"
+      "scraped_at": "2026-01-27T18:51:19.394522"
     },
     {
       "id": "118779",
@@ -2620,7 +2703,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:06.962004"
+      "scraped_at": "2026-01-27T18:51:19.319568"
     },
     {
       "id": "118772",
@@ -2716,7 +2799,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:07.034735"
+      "scraped_at": "2026-01-27T18:51:19.506846"
     },
     {
       "id": "118648",
@@ -2815,7 +2898,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:07.153446"
+      "scraped_at": "2026-01-27T18:51:19.581312"
     },
     {
       "id": "118155",
@@ -2908,7 +2991,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:07.204842"
+      "scraped_at": "2026-01-27T18:51:19.834854"
     },
     {
       "id": "116899",
@@ -3005,7 +3088,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:07.691633"
+      "scraped_at": "2026-01-27T18:51:19.901166"
     },
     {
       "id": "116623",
@@ -3105,7 +3188,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:07.541284"
+      "scraped_at": "2026-01-27T18:51:20.216878"
     },
     {
       "id": "116615",
@@ -3208,7 +3291,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:07.874902"
+      "scraped_at": "2026-01-27T18:51:20.108334"
     },
     {
       "id": "116065",
@@ -3275,7 +3358,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:07.760132"
+      "scraped_at": "2026-01-27T18:51:20.039315"
     },
     {
       "id": "116063",
@@ -3369,7 +3452,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:07.469605"
+      "scraped_at": "2026-01-27T18:51:19.968681"
     },
     {
       "id": "114588",
@@ -3470,7 +3553,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:07.617241"
+      "scraped_at": "2026-01-27T18:51:20.616914"
     },
     {
       "id": "113840",
@@ -3569,7 +3652,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:08.316425"
+      "scraped_at": "2026-01-27T18:51:20.689309"
     },
     {
       "id": "112852",
@@ -3656,7 +3739,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:08.177728"
+      "scraped_at": "2026-01-27T18:51:20.474837"
     },
     {
       "id": "122815",
@@ -3720,7 +3803,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 431 431",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:08.245684"
+      "scraped_at": "2026-01-27T18:51:20.540563"
     },
     {
       "id": "122814",
@@ -3796,7 +3879,7 @@
       "governorate": "Tunis",
       "seller_phone": "22 682 051",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:08.128527"
+      "scraped_at": "2026-01-27T18:51:20.983338"
     },
     {
       "id": "121694",
@@ -3880,7 +3963,7 @@
       "governorate": "Tunis",
       "seller_phone": "99 752 220",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:08.598310"
+      "scraped_at": "2026-01-27T18:51:21.293517"
     },
     {
       "id": "122813",
@@ -3941,7 +4024,7 @@
       "governorate": "Ariana",
       "seller_phone": "23 660 066",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:08.704475"
+      "scraped_at": "2026-01-27T18:51:21.046590"
     },
     {
       "id": "122812",
@@ -3993,7 +4076,7 @@
       "governorate": "Gabès",
       "seller_phone": "55 142 657",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:08.643725"
+      "scraped_at": "2026-01-27T18:51:20.739677"
     },
     {
       "id": "122751",
@@ -4026,7 +4109,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:08.820865"
+      "scraped_at": "2026-01-27T18:51:21.221934"
     },
     {
       "id": "122279",
@@ -4059,7 +4142,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:08.890852"
+      "scraped_at": "2026-01-27T18:51:21.154598"
     },
     {
       "id": "121307",
@@ -4164,7 +4247,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:08.965069"
+      "scraped_at": "2026-01-27T18:51:21.684862"
     },
     {
       "id": "121302",
@@ -4197,7 +4280,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:09.224118"
+      "scraped_at": "2026-01-27T18:51:21.554823"
     },
     {
       "id": "121299",
@@ -4230,7 +4313,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:09.414210"
+      "scraped_at": "2026-01-27T18:51:21.612476"
     },
     {
       "id": "121282",
@@ -4263,7 +4346,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:09.282611"
+      "scraped_at": "2026-01-27T18:51:21.753916"
     },
     {
       "id": "121281",
@@ -4296,7 +4379,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:09.349872"
+      "scraped_at": "2026-01-27T18:51:21.819986"
     },
     {
       "id": "121280",
@@ -4329,7 +4412,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:09.699966"
+      "scraped_at": "2026-01-27T18:51:21.904736"
     },
     {
       "id": "120352",
@@ -4362,7 +4445,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:09.663097"
+      "scraped_at": "2026-01-27T18:51:22.067053"
     },
     {
       "id": "120292",
@@ -4395,40 +4478,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:09.869746"
-    },
-    {
-      "id": "120279",
-      "brand": "Volkswagen",
-      "model": "Volkswagen Golf 8",
-      "full_name": "Volkswagen Golf 8",
-      "url": "https://www.automobile.tn/fr/occasion/volkswagen/golf-8/120279",
-      "price_tnd": 76500,
-      "price_evaluation": "",
-      "registration_date": "2021-10-01",
-      "year": 2021,
-      "mileage_km": 153000,
-      "ownership": "1ère main",
-      "condition": "Très bon",
-      "cv_fiscal": 6,
-      "cv_din": null,
-      "fuel_type": "Essence",
-      "transmission": "Automatique",
-      "drivetrain": "Traction",
-      "body_type": "Compacte",
-      "color_exterior": "Blanc",
-      "color_interior": "Noir",
-      "upholstery": "Tissu",
-      "doors": 5,
-      "seats": 5,
-      "equipment_safety": [],
-      "equipment_interior": [],
-      "equipment_exterior": [],
-      "equipment_functional": [],
-      "governorate": "Nabeul",
-      "seller_phone": "21 912 839",
-      "listing_date": "",
-      "scraped_at": "2026-01-27T18:07:09.801092"
+      "scraped_at": "2026-01-27T18:51:22.166653"
     }
   ]
 }
