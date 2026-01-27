@@ -133,6 +133,14 @@ COUNTRIES_MAP: Dict[str, str] = {
     "be": "autoscout24.be",
 }
 
+# Belgium requires a language prefix in URLs (e.g. /fr/lst instead of /lst)
+COUNTRY_PATH_PREFIX: Dict[str, str] = {
+    "de": "",
+    "fr": "",
+    "it": "",
+    "be": "/fr",
+}
+
 ACCEPT_LANGUAGE_MAP: Dict[str, str] = {
     "de": "de-DE,de;q=0.9,en;q=0.5",
     "fr": "fr-FR,fr;q=0.9,en;q=0.5",
@@ -473,7 +481,8 @@ class AutoScout24Scraper:
     def _build_search_url(self, country: str, make: Optional[str], page: int) -> str:
         """Build a search results URL for AutoScout24."""
         domain = COUNTRIES_MAP[country]
-        base = f"https://www.{domain}/lst"
+        prefix = COUNTRY_PATH_PREFIX.get(country, "")
+        base = f"https://www.{domain}{prefix}/lst"
         if make:
             base += f"/{make}"
 
@@ -1162,7 +1171,8 @@ class AutoScout24Scraper:
         Returns list of {label, value, slug}.
         """
         domain = COUNTRIES_MAP[country]
-        url = f"https://www.{domain}/lst/"
+        prefix = COUNTRY_PATH_PREFIX.get(country, "")
+        url = f"https://www.{domain}{prefix}/lst/"
         html = await self.fetch(client, url, country)
         if not html:
             log.error("[%s] Failed to fetch taxonomy page", country.upper())
@@ -1202,7 +1212,8 @@ class AutoScout24Scraper:
         Returns list of {label, value}.
         """
         domain = COUNTRIES_MAP[country]
-        url = f"https://www.{domain}/lst/{make_slug}"
+        prefix = COUNTRY_PATH_PREFIX.get(country, "")
+        url = f"https://www.{domain}{prefix}/lst/{make_slug}"
         html = await self.fetch(client, url, country)
         if not html:
             log.warning("[%s] Failed to fetch models for %s", country.upper(), make_slug)
@@ -1296,7 +1307,8 @@ class AutoScout24Scraper:
                     params.append(f"pricefrom={self.min_price}")
                 if self.max_price is not None:
                     params.append(f"priceto={self.max_price}")
-                url = f"https://www.{domain}/lst?{'&'.join(params)}"
+                prefix = COUNTRY_PATH_PREFIX.get(country, "")
+                url = f"https://www.{domain}{prefix}/lst?{'&'.join(params)}"
 
                 html = await self.fetch(client, url, country)
                 if not html:

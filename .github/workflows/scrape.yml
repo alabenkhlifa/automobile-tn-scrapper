@@ -30,13 +30,9 @@ jobs:
         run: python used_cars_scraper.py
         timeout-minutes: 30
 
-      - name: Run AutoScout24 scraper
-        run: python autoscout24_scraper.py --countries de,fr --max-listings 500
-        timeout-minutes: 60
-
-      - name: Run AutoScout24 per-model scraper (BMW DE)
-        run: python autoscout24_scraper.py --countries de --per-model --makes bmw
-        timeout-minutes: 30
+      - name: Run AutoScout24 scraper (DE, FR, IT, BE - 2000/market)
+        run: python autoscout24_scraper.py --countries de,fr,it,be --max-listings 2000
+        timeout-minutes: 120
 
       - name: Commit updated data
         run: |
