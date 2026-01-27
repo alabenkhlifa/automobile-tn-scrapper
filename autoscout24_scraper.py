@@ -334,6 +334,8 @@ class AutoScout24Scraper:
         min_price: Optional[int] = None,
         max_price: Optional[int] = None,
         use_playwright: bool = False,
+        per_model: bool = False,
+        per_model_limit: int = 10,
     ):
         self.countries = countries or ["de"]
         self.condition = condition
@@ -342,6 +344,8 @@ class AutoScout24Scraper:
         self.min_price = min_price
         self.max_price = max_price
         self.use_playwright = use_playwright
+        self.per_model = per_model
+        self.per_model_limit = per_model_limit
 
         self.semaphore = asyncio.Semaphore(self.MAX_CONCURRENT)
         self.cars: List[AutoScout24Car] = []
@@ -1138,6 +1142,184 @@ class AutoScout24Scraper:
             car.id = f"{car.country}_{clean(car.make)}_{clean(car.model)}_{car.year or 'na'}_{id(car) % 10000}"
 
     # -------------------------------------------------------------------------
+    # Taxonomy discovery (per-model mode)
+    # -------------------------------------------------------------------------
+
+    def _parse_next_data(self, html: str) -> Optional[dict]:
+        """Extract __NEXT_DATA__ JSON from a Next.js page."""
+        soup = BeautifulSoup(html, "lxml")
+        script = soup.find("script", id="__NEXT_DATA__")
+        if script and script.string:
+            try:
+                return json.loads(script.string)
+            except json.JSONDecodeError:
+                return None
+        return None
+
+    async def _discover_makes(self, client: httpx.AsyncClient, country: str) -> List[Dict]:
+        """Discover all makes from the AutoScout24 taxonomy.
+
+        Returns list of {label, value, slug}.
+        """
+        domain = COUNTRIES_MAP[country]
+        url = f"https://www.{domain}/lst/"
+        html = await self.fetch(client, url, country)
+        if not html:
+            log.error("[%s] Failed to fetch taxonomy page", country.upper())
+            return []
+
+        data = self._parse_next_data(html)
+        if not data:
+            log.error("[%s] No __NEXT_DATA__ found on /lst/", country.upper())
+            return []
+
+        try:
+            page_props = data["props"]["pageProps"]
+            taxonomy = page_props.get("taxonomy") or page_props.get("taxonomies", {})
+            makes_sorted = taxonomy.get("makesSorted", [])
+        except (KeyError, TypeError):
+            log.error("[%s] Could not find taxonomy.makesSorted", country.upper())
+            return []
+
+        results = []
+        for make in makes_sorted:
+            label = make.get("label") or make.get("n", "")
+            value = make.get("value") or make.get("i", "")
+            slug = label.lower().replace(" ", "-") if label else str(value)
+            results.append({"label": label, "value": value, "slug": slug})
+
+        log.info("[%s] Discovered %d makes", country.upper(), len(results))
+        return results
+
+    async def _discover_models(self, client: httpx.AsyncClient, country: str,
+                                make_slug: str, make_id) -> List[Dict]:
+        """Discover all models for a make from the taxonomy.
+
+        Uses the `models` dict (keyed by make ID) which contains individual
+        models (e.g. 316, 318, 320, M3) rather than `modelGroups` which are
+        umbrella categories (e.g. 1er, 3er) that have no direct listings.
+
+        Returns list of {label, value}.
+        """
+        domain = COUNTRIES_MAP[country]
+        url = f"https://www.{domain}/lst/{make_slug}"
+        html = await self.fetch(client, url, country)
+        if not html:
+            log.warning("[%s] Failed to fetch models for %s", country.upper(), make_slug)
+            return []
+
+        data = self._parse_next_data(html)
+        if not data:
+            log.warning("[%s] No __NEXT_DATA__ for %s", country.upper(), make_slug)
+            return []
+
+        try:
+            page_props = data["props"]["pageProps"]
+            taxonomy = page_props.get("taxonomy") or page_props.get("taxonomies", {})
+            # models dict is keyed by make ID (string), each entry is a list of
+            # {value, label, makeId, modelLineId}
+            models_dict = taxonomy.get("models", {})
+            models = models_dict.get(str(make_id)) or models_dict.get(make_id, [])
+        except (KeyError, TypeError):
+            log.warning("[%s] Could not find models for %s", country.upper(), make_slug)
+            return []
+
+        results = []
+        for model in models:
+            label = model.get("label") or model.get("n", "")
+            value = model.get("value") or model.get("i", "")
+            results.append({"label": label, "value": value})
+
+        log.info("[%s] %s: %d models", country.upper(), make_slug, len(results))
+        return results
+
+    def _card_to_car(self, card: Dict) -> AutoScout24Car:
+        """Convert a listing card dict to an AutoScout24Car (no detail page fetch)."""
+        car = AutoScout24Car(
+            id=card.get("id", ""),
+            listing_url=card.get("listing_url", ""),
+            country=card.get("country", ""),
+            make=card.get("make", ""),
+            model=card.get("model", ""),
+            full_name=card.get("full_name", ""),
+            price_eur=card.get("price_eur"),
+            first_registration=card.get("first_registration", ""),
+            mileage_km=card.get("mileage_km"),
+            year=card.get("year"),
+            fuel_type=card.get("fuel_type", ""),
+            power_kw=card.get("power_kw"),
+            power_hp=card.get("power_hp"),
+            transmission=card.get("transmission", ""),
+            seller_type=card.get("seller_type", ""),
+            seller_name=card.get("seller_name", ""),
+            seller_location=card.get("seller_location", ""),
+            image_count=card.get("image_count", 0),
+        )
+        self._finalize_car(car)
+        return car
+
+    async def _scrape_country_per_model(self, client: httpx.AsyncClient, country: str) -> List[AutoScout24Car]:
+        """Scrape listings per model group (card data only, no detail pages)."""
+        all_makes = await self._discover_makes(client, country)
+        if not all_makes:
+            log.error("[%s] No makes discovered, aborting per-model scrape", country.upper())
+            return []
+
+        # Filter by --makes if specified
+        if self.makes:
+            makes_set = {m.lower() for m in self.makes}
+            all_makes = [m for m in all_makes if m["slug"] in makes_set]
+            log.info("[%s] Filtered to %d makes", country.upper(), len(all_makes))
+
+        domain = COUNTRIES_MAP[country]
+        all_cars: List[AutoScout24Car] = []
+        seen_ids: set = set()
+
+        for make_info in all_makes:
+            make_slug = make_info["slug"]
+            make_id = make_info["value"]
+            models = await self._discover_models(client, country, make_slug, make_id)
+            if not models:
+                continue
+
+            for model_info in models:
+                model_label = model_info.get("label", "")
+                model_id = model_info.get("value", "")
+                # Use query params (mmvmk0/mmvmd0) instead of URL path slugs
+                # to avoid 404s from label-to-slug mismatches
+                params = [f"atype=C", f"page=1", f"mmvmk0={make_id}", f"mmvmd0={model_id}"]
+                if self.condition == "new":
+                    params.append("ustate=N")
+                elif self.condition == "used":
+                    params.append("ustate=U")
+                if self.min_price is not None:
+                    params.append(f"pricefrom={self.min_price}")
+                if self.max_price is not None:
+                    params.append(f"priceto={self.max_price}")
+                url = f"https://www.{domain}/lst?{'&'.join(params)}"
+
+                html = await self.fetch(client, url, country)
+                if not html:
+                    continue
+
+                cards = self._parse_listing_cards(html, country)
+                added = 0
+                for card in cards[:self.per_model_limit]:
+                    car = self._card_to_car(card)
+                    if car.id and car.id in seen_ids:
+                        continue
+                    if car.id:
+                        seen_ids.add(car.id)
+                    all_cars.append(car)
+                    added += 1
+
+                if added > 0:
+                    log.info("[%s] %s/%s: %d listings", country.upper(), make_slug, model_label, added)
+
+        log.info("[%s] Per-model scrape: %d total cars", country.upper(), len(all_cars))
+        return all_cars
+
+    # -------------------------------------------------------------------------
     # Country-level scraping orchestration
     # -------------------------------------------------------------------------
 
@@ -1147,6 +1329,9 @@ class AutoScout24Scraper:
         if not domain:
             log.error("Unknown country code: %s", country)
             return []
+
+        if self.per_model:
+            return await self._scrape_country_per_model(client, country)
 
         makes_list = self.makes or [None]  # None means no make filter
         all_cards: List[Dict] = []
@@ -1232,6 +1417,8 @@ class AutoScout24Scraper:
         if self.min_price or self.max_price:
             price_range = f"{self.min_price or '...'} - {self.max_price or '...'} EUR"
             print(f"Price:      {price_range}")
+        if self.per_model:
+            print(f"Mode:       Per-model ({self.per_model_limit} listings/model)")
         if self.use_playwright:
             print("Mode:       Playwright (headless browser)")
         print()
@@ -1522,6 +1709,14 @@ async def main():
         "--use-playwright", action="store_true",
         help="Use Playwright for JS rendering (anti-bot fallback)",
     )
+    parser.add_argument(
+        "--per-model", action="store_true",
+        help="Discover all makes/models from taxonomy and scrape per model group",
+    )
+    parser.add_argument(
+        "--per-model-limit", type=int, default=10,
+        help="Max listings per model group in per-model mode (default: 10)",
+    )
     args = parser.parse_args()
 
     countries = [c.strip().lower() for c in args.countries.split(",")]
@@ -1535,6 +1730,8 @@ async def main():
         min_price=args.min_price,
         max_price=args.max_price,
         use_playwright=args.use_playwright,
+        per_model=args.per_model,
+        per_model_limit=args.per_model_limit,
     )
 
     await scraper.scrape_all()
