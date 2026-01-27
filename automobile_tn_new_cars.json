@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-01-27T17:54:06.410794",
+  "scraped_at": "2026-01-27T18:06:44.817286",
   "stats": {
     "brands": 54,
     "models": 545,
@@ -54,7 +54,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:26.157302"
+      "scraped_at": "2026-01-27T18:06:03.872080"
     },
     {
       "id": "alfa_romeo_stelvio_2_0_turbo_bva_q4",
@@ -99,7 +99,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:26.906322"
+      "scraped_at": "2026-01-27T18:06:04.545167"
     },
     {
       "id": "audi_a3_berline_35_tfsi_dynamic_edition",
@@ -144,7 +144,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:26.771451"
+      "scraped_at": "2026-01-27T18:06:04.775968"
     },
     {
       "id": "audi_q2_35_tfsi_black_limited_bva",
@@ -189,7 +189,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:26.675483"
+      "scraped_at": "2026-01-27T18:06:04.604037"
     },
     {
       "id": "audi_q3_35_tfsi_advanced_line_s_tronic",
@@ -234,7 +234,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:26.706532"
+      "scraped_at": "2026-01-27T18:06:04.741574"
     },
     {
       "id": "audi_q3_sportback_35_tfsi_business_limited_plus_s_tronic",
@@ -279,7 +279,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:26.645263"
+      "scraped_at": "2026-01-27T18:06:04.575413"
     },
     {
       "id": "audi_a5_tfsi_advanced",
@@ -324,7 +324,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:26.735743"
+      "scraped_at": "2026-01-27T18:06:04.509381"
     },
     {
       "id": "audi_a6_sportback_e_tron_100_kwh_performance",
@@ -369,7 +369,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:26.832930"
+      "scraped_at": "2026-01-27T18:06:04.671060"
     },
     {
       "id": "audi_q6_e_tron_100_kwh_quattro_s_line",
@@ -414,7 +414,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:26.802002"
+      "scraped_at": "2026-01-27T18:06:04.635175"
     },
     {
       "id": "audi_q6_sportback_e_tron_100_kwh_quattro_s_line",
@@ -459,7 +459,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:27.174960"
+      "scraped_at": "2026-01-27T18:06:05.007946"
     },
     {
       "id": "audi_e_tron_gt_quattro",
@@ -504,7 +504,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:26.941965"
+      "scraped_at": "2026-01-27T18:06:04.391852"
     },
     {
       "id": "audi_q8_55_tfsi_quattro",
@@ -549,7 +549,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:27.278123"
+      "scraped_at": "2026-01-27T18:06:05.037950"
     },
     {
       "id": "audi_a3_sportback_35_tfsi_iconic_line",
@@ -594,7 +594,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:27.596465"
+      "scraped_at": "2026-01-27T18:06:05.127162"
     },
     {
       "id": "audi_a3_sportback_35_tfsi_tech_line",
@@ -639,7 +639,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:27.542321"
+      "scraped_at": "2026-01-27T18:06:05.328355"
     },
     {
       "id": "audi_a3_sportback_35_tfsi_s_line",
@@ -684,7 +684,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:27.693813"
+      "scraped_at": "2026-01-27T18:06:05.446538"
     },
     {
       "id": "avantier_avantier_c_14_kwh",
@@ -729,7 +729,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:27.657385"
+      "scraped_at": "2026-01-27T18:06:05.357894"
     },
     {
       "id": "avantier_commuter_31_kwh_lfp",
@@ -774,7 +774,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:27.625029"
+      "scraped_at": "2026-01-27T18:06:05.189183"
     },
     {
       "id": "avantier_commuter_31_kwh_nmc",
@@ -819,7 +819,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:27.740533"
+      "scraped_at": "2026-01-27T18:06:05.407373"
     },
     {
       "id": "bako_bee_wave",
@@ -864,7 +864,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:27.568466"
+      "scraped_at": "2026-01-27T18:06:05.270142"
     },
     {
       "id": "bako_bee_horizons",
@@ -909,7 +909,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:27.508600"
+      "scraped_at": "2026-01-27T18:06:05.295247"
     },
     {
       "id": "bako_b_van_start",
@@ -954,7 +954,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:27.769132"
+      "scraped_at": "2026-01-27T18:06:05.537292"
     },
     {
       "id": "bako_b_van_wave",
@@ -999,7 +999,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:28.036352"
+      "scraped_at": "2026-01-27T18:06:05.476645"
     },
     {
       "id": "bako_b_van_horizons",
@@ -1044,7 +1044,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:28.065197"
+      "scraped_at": "2026-01-27T18:06:05.677661"
     },
     {
       "id": "bmw_s_rie_3_hybride_330e_pack_m_pro",
@@ -1089,7 +1089,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:28.315277"
+      "scraped_at": "2026-01-27T18:06:05.708796"
     },
     {
       "id": "bmw_s_rie_4_coup__420i_pack_m_pro",
@@ -1134,7 +1134,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:28.381222"
+      "scraped_at": "2026-01-27T18:06:05.774854"
     },
     {
       "id": "bmw_x3_20i_xdrive_pack_m",
@@ -1179,7 +1179,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:28.506755"
+      "scraped_at": "2026-01-27T18:06:05.839377"
     },
     {
       "id": "bmw_x4_20i_xdrive_pack_m",
@@ -1224,7 +1224,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:28.413236"
+      "scraped_at": "2026-01-27T18:06:06.105513"
     },
     {
       "id": "bmw_s_rie_1_118_business_line",
@@ -1269,7 +1269,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:28.474837"
+      "scraped_at": "2026-01-27T18:06:06.168858"
     },
     {
       "id": "bmw_s_rie_1_118_lounge",
@@ -1314,7 +1314,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:28.346909"
+      "scraped_at": "2026-01-27T18:06:06.074295"
     },
     {
       "id": "bmw_s_rie_1_118_pack_m",
@@ -1359,7 +1359,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:28.443962"
+      "scraped_at": "2026-01-27T18:06:06.200048"
     },
     {
       "id": "bmw_s_rie_1_118_pack_m_pro",
@@ -1404,7 +1404,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:28.554757"
+      "scraped_at": "2026-01-27T18:06:06.021250"
     },
     {
       "id": "bmw_s_rie_2_gran_coup__218_collection_edition_sp_ciale",
@@ -1449,7 +1449,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:28.771782"
+      "scraped_at": "2026-01-27T18:06:06.138962"
     },
     {
       "id": "bmw_s_rie_2_gran_coup__218_business_line",
@@ -1494,7 +1494,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:28.740456"
+      "scraped_at": "2026-01-27T18:06:06.267766"
     },
     {
       "id": "bmw_s_rie_2_gran_coup__218_lounge",
@@ -1539,7 +1539,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:29.008991"
+      "scraped_at": "2026-01-27T18:06:06.234839"
     },
     {
       "id": "bmw_s_rie_2_gran_coup__218_pack_m",
@@ -1584,7 +1584,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:29.178035"
+      "scraped_at": "2026-01-27T18:06:06.512807"
     },
     {
       "id": "bmw_s_rie_2_gran_coup__218_pack_m_pro",
@@ -1629,7 +1629,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:29.312047"
+      "scraped_at": "2026-01-27T18:06:06.472331"
     },
     {
       "id": "bmw_s_rie_3_320i_business_line",
@@ -1674,7 +1674,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:29.093809"
+      "scraped_at": "2026-01-27T18:06:06.545279"
     },
     {
       "id": "bmw_s_rie_3_320i_lounge",
@@ -1719,7 +1719,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:29.210999"
+      "scraped_at": "2026-01-27T18:06:06.812061"
     },
     {
       "id": "bmw_s_rie_3_320i_pack_m",
@@ -1764,7 +1764,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:29.246579"
+      "scraped_at": "2026-01-27T18:06:06.955252"
     },
     {
       "id": "bmw_s_rie_3_320i_pack_m_pro",
@@ -1809,7 +1809,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:29.138250"
+      "scraped_at": "2026-01-27T18:06:06.886500"
     },
     {
       "id": "bmw_s_rie_4_gran_coup__420i_business_line",
@@ -1854,7 +1854,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:29.279111"
+      "scraped_at": "2026-01-27T18:06:06.986681"
     },
     {
       "id": "bmw_s_rie_4_gran_coup__420i_pack_m",
@@ -1899,7 +1899,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:29.477050"
+      "scraped_at": "2026-01-27T18:06:06.922497"
     },
     {
       "id": "bmw_s_rie_5_520i_lounge",
@@ -1944,7 +1944,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:29.445077"
+      "scraped_at": "2026-01-27T18:06:06.778489"
     },
     {
       "id": "bmw_s_rie_5_520i_pack_m",
@@ -1989,7 +1989,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:29.545322"
+      "scraped_at": "2026-01-27T18:06:06.844166"
     },
     {
       "id": "bmw_s_rie_5_520i_pack_m__",
@@ -2034,7 +2034,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:29.712233"
+      "scraped_at": "2026-01-27T18:06:07.220874"
     },
     {
       "id": "bmw_s_rie_5_hybride_530e_lounge",
@@ -2079,7 +2079,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:29.905571"
+      "scraped_at": "2026-01-27T18:06:07.052111"
     },
     {
       "id": "bmw_s_rie_5_hybride_530e_pack_m",
@@ -2124,7 +2124,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:29.873674"
+      "scraped_at": "2026-01-27T18:06:07.021390"
     },
     {
       "id": "bmw_s_rie_5_hybride_530e_pack_m__",
@@ -2169,7 +2169,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:29.805905"
+      "scraped_at": "2026-01-27T18:06:07.347611"
     },
     {
       "id": "bmw_x1_18i_sdrive_collection__edition_sp_ciale_",
@@ -2214,7 +2214,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:29.744818"
+      "scraped_at": "2026-01-27T18:06:07.583390"
     },
     {
       "id": "bmw_x1_18i_sdrive_lounge",
@@ -2259,7 +2259,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:29.937722"
+      "scraped_at": "2026-01-27T18:06:07.716330"
     },
     {
       "id": "bmw_x1_18i_sdrive_xline",
@@ -2304,7 +2304,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:29.983738"
+      "scraped_at": "2026-01-27T18:06:07.758280"
     },
     {
       "id": "bmw_x1_18i_sdrive_pack_sport_m",
@@ -2349,7 +2349,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:30.084285"
+      "scraped_at": "2026-01-27T18:06:07.618921"
     },
     {
       "id": "bmw_x1_hybride_xdrive_25e_lounge",
@@ -2394,7 +2394,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:30.016032"
+      "scraped_at": "2026-01-27T18:06:07.790260"
     },
     {
       "id": "bmw_x1_hybride_xdrive_25e_xline",
@@ -2439,7 +2439,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:30.049606"
+      "scraped_at": "2026-01-27T18:06:07.682054"
     },
     {
       "id": "bmw_x1_hybride_xdrive_25e_pack_m",
@@ -2484,7 +2484,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:30.251741"
+      "scraped_at": "2026-01-27T18:06:07.511475"
     },
     {
       "id": "bmw_x2_18i_sdrive__collection",
@@ -2529,7 +2529,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:30.284396"
+      "scraped_at": "2026-01-27T18:06:07.650068"
     },
     {
       "id": "bmw_x2_18i_sdrive__lounge",
@@ -2574,7 +2574,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:30.403766"
+      "scraped_at": "2026-01-27T18:06:07.822840"
     },
     {
       "id": "bmw_x2_18i_sdrive__pack_m",
@@ -2619,7 +2619,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:30.556656"
+      "scraped_at": "2026-01-27T18:06:07.916565"
     },
     {
       "id": "bmw_x2_18i_sdrive__pack_m_pro",
@@ -2664,7 +2664,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:30.732660"
+      "scraped_at": "2026-01-27T18:06:08.061387"
     },
     {
       "id": "bmw_x3_hybride_xdrive_30e_pack_m",
@@ -2709,7 +2709,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:30.765099"
+      "scraped_at": "2026-01-27T18:06:08.275534"
     },
     {
       "id": "bmw_x3_hybride_xdrive_30e_pack_m_pro",
@@ -2754,7 +2754,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:30.665883"
+      "scraped_at": "2026-01-27T18:06:08.587828"
     },
     {
       "id": "bmw_x5_hybride_50e_x_drive_pack_m",
@@ -2799,7 +2799,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:30.699689"
+      "scraped_at": "2026-01-27T18:06:08.417980"
     },
     {
       "id": "bmw_x5_hybride_50e_x_drive_pack_m_pro",
@@ -2844,7 +2844,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:30.523335"
+      "scraped_at": "2026-01-27T18:06:08.626328"
     },
     {
       "id": "bmw_i4_edrive40__business_line",
@@ -2889,7 +2889,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:30.624212"
+      "scraped_at": "2026-01-27T18:06:08.352007"
     },
     {
       "id": "bmw_i4_edrive40_pack_m",
@@ -2934,7 +2934,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:30.801283"
+      "scraped_at": "2026-01-27T18:06:08.312245"
     },
     {
       "id": "bmw_i4_edrive40_pack_m_pro",
@@ -2979,7 +2979,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:30.832929"
+      "scraped_at": "2026-01-27T18:06:08.689286"
     },
     {
       "id": "bmw_ix1_xdrive30_xline",
@@ -3024,7 +3024,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:31.066704"
+      "scraped_at": "2026-01-27T18:06:08.384426"
     },
     {
       "id": "bmw_ix1_xdrive30__pack_m",
@@ -3069,7 +3069,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:31.228712"
+      "scraped_at": "2026-01-27T18:06:08.545842"
     },
     {
       "id": "bmw_ix2_xdrive30_pack_m",
@@ -3114,7 +3114,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:31.558921"
+      "scraped_at": "2026-01-27T18:06:08.658836"
     },
     {
       "id": "bmw_ix2_xdrive30_pack_m_pro",
@@ -3159,7 +3159,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:31.492323"
+      "scraped_at": "2026-01-27T18:06:08.724966"
     },
     {
       "id": "bmw_ix_xdrive40_impressive",
@@ -3204,7 +3204,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:31.600281"
+      "scraped_at": "2026-01-27T18:06:08.770368"
     },
     {
       "id": "bmw_ix_xdrive50_pack_m",
@@ -3249,7 +3249,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:31.372407"
+      "scraped_at": "2026-01-27T18:06:08.960168"
     },
     {
       "id": "byd_qin_plus_1_5_l_dm_i",
@@ -3294,7 +3294,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:31.415711"
+      "scraped_at": "2026-01-27T18:06:09.039272"
     },
     {
       "id": "byd_dolphin_44_9_kwh",
@@ -3339,7 +3339,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:31.458510"
+      "scraped_at": "2026-01-27T18:06:09.087260"
     },
     {
       "id": "byd_atto_3_60_48_kwh",
@@ -3384,7 +3384,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:31.688939"
+      "scraped_at": "2026-01-27T18:06:09.470869"
     },
     {
       "id": "byd_song_plus_1_5_l_dm_i",
@@ -3429,7 +3429,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:31.756478"
+      "scraped_at": "2026-01-27T18:06:09.415298"
     },
     {
       "id": "byd_tang_ev_108_8_kwh",
@@ -3474,7 +3474,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:31.638914"
+      "scraped_at": "2026-01-27T18:06:09.131625"
     },
     {
       "id": "byd_dolphin_surf_30_08_kwh",
@@ -3519,7 +3519,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:31.795898"
+      "scraped_at": "2026-01-27T18:06:09.546172"
     },
     {
       "id": "byd_dolphin_surf_38_88_kwh",
@@ -3564,7 +3564,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:32.002579"
+      "scraped_at": "2026-01-27T18:06:09.511676"
     },
     {
       "id": "cenntro_logistar_100_16_kwh",
@@ -3609,7 +3609,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:32.172893"
+      "scraped_at": "2026-01-27T18:06:09.323005"
     },
     {
       "id": "cenntro_logistar_210_41_85_kwh",
@@ -3654,7 +3654,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:32.319956"
+      "scraped_at": "2026-01-27T18:06:09.352138"
     },
     {
       "id": "cenntro_logistar_260_43_5_kwh",
@@ -3699,7 +3699,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:32.137272"
+      "scraped_at": "2026-01-27T18:06:09.580435"
     },
     {
       "id": "changan_new_star_van_1_2_l",
@@ -3744,7 +3744,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:32.234448"
+      "scraped_at": "2026-01-27T18:06:09.775045"
     },
     {
       "id": "changan_star_truck_double_cabine_1_2_l",
@@ -3789,7 +3789,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:32.431319"
+      "scraped_at": "2026-01-27T18:06:09.657687"
     },
     {
       "id": "changan_hunter_1_9_l_turbo_diesel_4x4",
@@ -3834,7 +3834,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:32.473013"
+      "scraped_at": "2026-01-27T18:06:09.902108"
     },
     {
       "id": "chery_tiggo_1x_populaire_1_0_l_turbo_cvt",
@@ -3879,7 +3879,7 @@
       "is_new": false,
       "is_populaire": true,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:32.548805"
+      "scraped_at": "2026-01-27T18:06:10.115137"
     },
     {
       "id": "chery_tiggo_4_pro_1_5_l_cvt",
@@ -3924,7 +3924,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:32.356538"
+      "scraped_at": "2026-01-27T18:06:10.156039"
     },
     {
       "id": "chery_tiggo_7_pro_1_5_t_cvt",
@@ -3969,7 +3969,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:32.404422"
+      "scraped_at": "2026-01-27T18:06:10.268484"
     },
     {
       "id": "chery_arrizo_8_1_6_t_gdi_luxury_bva",
@@ -4014,7 +4014,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:32.592702"
+      "scraped_at": "2026-01-27T18:06:10.193029"
     },
     {
       "id": "chery_tiggo_3x_1_5_l_comfort_bvm",
@@ -4059,7 +4059,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:32.630192"
+      "scraped_at": "2026-01-27T18:06:10.305759"
     },
     {
       "id": "chery_tiggo_3x_1_0_l_turbo_cvt_luxury",
@@ -4104,7 +4104,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:32.821770"
+      "scraped_at": "2026-01-27T18:06:10.456834"
     },
     {
       "id": "chery_arrizo_5_1_5_l_comfort_bvm",
@@ -4149,7 +4149,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:32.865509"
+      "scraped_at": "2026-01-27T18:06:10.235482"
     },
     {
       "id": "chery_arrizo_5_1_5_l_cvt_luxury",
@@ -4194,7 +4194,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:33.005217"
+      "scraped_at": "2026-01-27T18:06:10.347084"
     },
     {
       "id": "chevrolet_groove_1_5_l_premier",
@@ -4239,7 +4239,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:32.963425"
+      "scraped_at": "2026-01-27T18:06:10.518209"
     },
     {
       "id": "chevrolet_captiva_1_5_turbo_cvt_5_places",
@@ -4284,7 +4284,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:33.049032"
+      "scraped_at": "2026-01-27T18:06:10.558867"
     },
     {
       "id": "chevrolet_captiva_1_5_turbo_cvt_7_places",
@@ -4329,7 +4329,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:33.088955"
+      "scraped_at": "2026-01-27T18:06:10.801455"
     },
     {
       "id": "citroen_c3_populaire_1_2_l",
@@ -4374,7 +4374,7 @@
       "is_new": false,
       "is_populaire": true,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:33.267500"
+      "scraped_at": "2026-01-27T18:06:10.862772"
     },
     {
       "id": "citroen_berlingo_1_6_l_hdi",
@@ -4419,7 +4419,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:33.322285"
+      "scraped_at": "2026-01-27T18:06:10.928431"
     },
     {
       "id": "citroen_jumpy_combi_2_0_l_hdi_9_places",
@@ -4464,7 +4464,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:33.295396"
+      "scraped_at": "2026-01-27T18:06:11.258483"
     },
     {
       "id": "citroen_berlingo_van_1_6_l_hdi_630_kg_pro_edition_3_places",
@@ -4509,7 +4509,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:33.365372"
+      "scraped_at": "2026-01-27T18:06:11.231736"
     },
     {
       "id": "citroen_jumpy_fourgon_2_0_l_hdi",
@@ -4554,7 +4554,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:33.396291"
+      "scraped_at": "2026-01-27T18:06:11.125283"
     },
     {
       "id": "citroen_c4_x_1_2_l__plus_eat8",
@@ -4599,7 +4599,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:33.726600"
+      "scraped_at": "2026-01-27T18:06:11.153342"
     },
     {
       "id": "citroen_c4_x_1_2_l__max_eat8",
@@ -4644,7 +4644,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:33.630658"
+      "scraped_at": "2026-01-27T18:06:11.001161"
     },
     {
       "id": "citroen_c4_x_1_2_l__max___eat8",
@@ -4689,7 +4689,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:33.755039"
+      "scraped_at": "2026-01-27T18:06:10.963952"
     },
     {
       "id": "citroen_jumper_2_2_l_hdi__l2h2_11_5m3",
@@ -4734,7 +4734,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:33.595132"
+      "scraped_at": "2026-01-27T18:06:11.099852"
     },
     {
       "id": "citroen_jumper_2_2_l_hdi__l3h3_15m3",
@@ -4779,7 +4779,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:33.698828"
+      "scraped_at": "2026-01-27T18:06:11.290245"
     },
     {
       "id": "cupra_leon_1_4_tsi",
@@ -4824,7 +4824,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:33.787688"
+      "scraped_at": "2026-01-27T18:06:11.319693"
     },
     {
       "id": "cupra_leon_1_4_tsi_sport",
@@ -4869,7 +4869,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:33.890663"
+      "scraped_at": "2026-01-27T18:06:11.560643"
     },
     {
       "id": "cupra_terramar_1_4_tsi",
@@ -4914,7 +4914,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:33.850926"
+      "scraped_at": "2026-01-27T18:06:11.595789"
     },
     {
       "id": "cupra_terramar_1_4_tsi_sport",
@@ -4959,7 +4959,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:33.817832"
+      "scraped_at": "2026-01-27T18:06:11.626912"
     },
     {
       "id": "dacia_sandero_1_0_l_tce",
@@ -5004,7 +5004,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:34.125229"
+      "scraped_at": "2026-01-27T18:06:11.767055"
     },
     {
       "id": "dacia_logan_1_0_l_tce__cran_tactile",
@@ -5049,7 +5049,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:34.154661"
+      "scraped_at": "2026-01-27T18:06:11.735875"
     },
     {
       "id": "dacia_duster_1_5_l_dci_4x2",
@@ -5094,7 +5094,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:34.418271"
+      "scraped_at": "2026-01-27T18:06:11.859389"
     },
     {
       "id": "dacia_sandero_stepway_1_0_l",
@@ -5139,7 +5139,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:34.660154"
+      "scraped_at": "2026-01-27T18:06:11.905459"
     },
     {
       "id": "dacia_sandero_stepway_1_0_l_bva",
@@ -5184,7 +5184,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:34.447913"
+      "scraped_at": "2026-01-27T18:06:11.934525"
     },
     {
       "id": "dfsk_ec75_50_38_kwh",
@@ -5229,7 +5229,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:34.538979"
+      "scraped_at": "2026-01-27T18:06:11.793799"
     },
     {
       "id": "dfsk_glory_580_1_5_t_luxury_cvt",
@@ -5274,7 +5274,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:34.583911"
+      "scraped_at": "2026-01-27T18:06:12.009257"
     },
     {
       "id": "dfsk_glory_ix5_1_5_t_deluxe_cvt",
@@ -5319,7 +5319,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:34.617115"
+      "scraped_at": "2026-01-27T18:06:12.055944"
     },
     {
       "id": "dfsk_c31_1_5_l_simple_cabine_dlx",
@@ -5364,7 +5364,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:34.479311"
+      "scraped_at": "2026-01-27T18:06:12.088783"
     },
     {
       "id": "dfsk_c32_1_5_l_double_cabine_dlx",
@@ -5409,7 +5409,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:34.387312"
+      "scraped_at": "2026-01-27T18:06:12.122648"
     },
     {
       "id": "dfsk_e5_phev_1_5_l_confort",
@@ -5454,7 +5454,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:34.944926"
+      "scraped_at": "2026-01-27T18:06:12.362038"
     },
     {
       "id": "dfsk_e5_phev_1_5_l_prestige",
@@ -5499,7 +5499,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:34.702324"
+      "scraped_at": "2026-01-27T18:06:12.411924"
     },
     {
       "id": "dfsk_glory_500_1_5__mt",
@@ -5544,7 +5544,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:35.036434"
+      "scraped_at": "2026-01-27T18:06:12.512682"
     },
     {
       "id": "dfsk_glory_500_1_5_cvt",
@@ -5589,7 +5589,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:35.204407"
+      "scraped_at": "2026-01-27T18:06:12.611290"
     },
     {
       "id": "dfsk_k01s_simple_cabine_std",
@@ -5634,7 +5634,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:35.425852"
+      "scraped_at": "2026-01-27T18:06:12.444954"
     },
     {
       "id": "dfsk_k01s_simple_cabine_dlx",
@@ -5679,7 +5679,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:35.261325"
+      "scraped_at": "2026-01-27T18:06:12.472816"
     },
     {
       "id": "dfsk_k01h_large_cabine_1_1_l_std",
@@ -5724,7 +5724,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:35.127163"
+      "scraped_at": "2026-01-27T18:06:12.540597"
     },
     {
       "id": "dfsk_k01h_large_cabine_1_1_l_dlx",
@@ -5769,7 +5769,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:35.232006"
+      "scraped_at": "2026-01-27T18:06:12.688784"
     },
     {
       "id": "dfsk_k02s_1_0_l_double_cabine_std",
@@ -5814,7 +5814,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:35.401140"
+      "scraped_at": "2026-01-27T18:06:12.740877"
     },
     {
       "id": "dfsk_k02s_1_0_l_double_cabine_dlx",
@@ -5859,7 +5859,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:35.289345"
+      "scraped_at": "2026-01-27T18:06:12.569436"
     },
     {
       "id": "dongfeng_shine_max_hybride_1_5_t_hev_e_cvt",
@@ -5904,7 +5904,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:35.369076"
+      "scraped_at": "2026-01-27T18:06:12.857111"
     },
     {
       "id": "dongfeng_forthing_t5_evo_1_5_l_turbo",
@@ -5949,7 +5949,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:35.727406"
+      "scraped_at": "2026-01-27T18:06:13.081402"
     },
     {
       "id": "dongfeng_box_31_4_kwh",
@@ -5994,7 +5994,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:35.655539"
+      "scraped_at": "2026-01-27T18:06:13.114765"
     },
     {
       "id": "dongfeng_box_42_3_kwh_style_",
@@ -6039,7 +6039,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:35.769841"
+      "scraped_at": "2026-01-27T18:06:13.186299"
     },
     {
       "id": "dongfeng_shine_1_5_mach_power",
@@ -6084,7 +6084,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:36.009716"
+      "scraped_at": "2026-01-27T18:06:13.302389"
     },
     {
       "id": "dongfeng_shine_1_5_mach_power_bva",
@@ -6129,7 +6129,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:36.231815"
+      "scraped_at": "2026-01-27T18:06:13.151370"
     },
     {
       "id": "dongfeng_rich_6_2_5_turbo_diesel_4x2_thunder",
@@ -6174,7 +6174,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:36.156772"
+      "scraped_at": "2026-01-27T18:06:13.002870"
     },
     {
       "id": "dongfeng_rich_6_2_5_turbo_diesel_4x4_thunder",
@@ -6219,7 +6219,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:36.087366"
+      "scraped_at": "2026-01-27T18:06:13.265034"
     },
     {
       "id": "faw_bestune_b70_1_5_l_turbo_luxury_bva",
@@ -6264,7 +6264,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:36.127912"
+      "scraped_at": "2026-01-27T18:06:13.225723"
     },
     {
       "id": "faw_bestune_t90_1_5_l_turbo_premium_bva",
@@ -6309,7 +6309,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:36.048335"
+      "scraped_at": "2026-01-27T18:06:13.379769"
     },
     {
       "id": "faw_bestune_t77_pro_1_5_l_luxury_bva",
@@ -6354,7 +6354,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:36.306886"
+      "scraped_at": "2026-01-27T18:06:13.457267"
     },
     {
       "id": "faw_bestune_t77_pro_1_5_l_premium_bva",
@@ -6399,7 +6399,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:36.622093"
+      "scraped_at": "2026-01-27T18:06:13.632499"
     },
     {
       "id": "fiat_fiorino_combi_1_3_l_multijet",
@@ -6444,7 +6444,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:36.338607"
+      "scraped_at": "2026-01-27T18:06:13.728299"
     },
     {
       "id": "fiat_doblo_combi_1_6_l_hdi",
@@ -6489,7 +6489,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:36.371435"
+      "scraped_at": "2026-01-27T18:06:13.700273"
     },
     {
       "id": "fiat_ducato_2_2_hdi_11_5_m3_l2h2",
@@ -6534,7 +6534,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:36.653411"
+      "scraped_at": "2026-01-27T18:06:13.926088"
     },
     {
       "id": "fiat_scudo_fourgon_2_0_l_hdi",
@@ -6579,7 +6579,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:37.067368"
+      "scraped_at": "2026-01-27T18:06:13.957916"
     },
     {
       "id": "fiat_tipo_berline_1_4_l_entry",
@@ -6624,7 +6624,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:36.886799"
+      "scraped_at": "2026-01-27T18:06:13.898275"
     },
     {
       "id": "fiat_tipo_berline_1_4_l_mid",
@@ -6669,7 +6669,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:37.126198"
+      "scraped_at": "2026-01-27T18:06:14.091796"
     },
     {
       "id": "fiat_scudo_combi_2_0_l_hdi__9_places",
@@ -6714,7 +6714,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:36.941727"
+      "scraped_at": "2026-01-27T18:06:13.987742"
     },
     {
       "id": "fiat_scudo_combi_2_0_l_hdi__ulysse_9_places",
@@ -6759,7 +6759,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:36.968758"
+      "scraped_at": "2026-01-27T18:06:13.869247"
     },
     {
       "id": "fiat_doblo_1_6_l_hdi_van_business",
@@ -6804,7 +6804,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:37.096714"
+      "scraped_at": "2026-01-27T18:06:14.016169"
     },
     {
       "id": "fiat_doblo_1_6_l_hdi_van_maxi_business",
@@ -6849,7 +6849,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:36.996448"
+      "scraped_at": "2026-01-27T18:06:14.254585"
     },
     {
       "id": "foday_f22_s_1_9_t_4wd",
@@ -6894,7 +6894,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:36.915231"
+      "scraped_at": "2026-01-27T18:06:14.184980"
     },
     {
       "id": "foday_f22_d_1_9_l_tid4_luxury",
@@ -6939,7 +6939,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:37.168013"
+      "scraped_at": "2026-01-27T18:06:14.224101"
     },
     {
       "id": "foday_f22_max_1_9_l_tid4_luxury",
@@ -6984,7 +6984,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:38.038370"
+      "scraped_at": "2026-01-27T18:06:14.370331"
     },
     {
       "id": "ford_ranger_raptor_2_0_l_tdci_210_ch_4x4_bva",
@@ -7029,7 +7029,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:37.423199"
+      "scraped_at": "2026-01-27T18:06:14.621600"
     },
     {
       "id": "ford_territory_1_5_l_ecoboost_titanium",
@@ -7074,7 +7074,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:37.715007"
+      "scraped_at": "2026-01-27T18:06:14.793870"
     },
     {
       "id": "ford_territory_1_5_l_ecoboost_titanium_x",
@@ -7119,7 +7119,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:37.995306"
+      "scraped_at": "2026-01-27T18:06:14.757370"
     },
     {
       "id": "ford_everest_2_0_l_bi_turbo_xlt_7_places",
@@ -7164,7 +7164,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:37.750949"
+      "scraped_at": "2026-01-27T18:06:14.510185"
     },
     {
       "id": "ford_everest_2_0_l_bi_turbo_limited_7_places",
@@ -7209,7 +7209,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:37.792379"
+      "scraped_at": "2026-01-27T18:06:14.703383"
     },
     {
       "id": "ford_ranger_2_0_l_170_ch_4x4_xlt_bvm",
@@ -7254,7 +7254,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:37.862189"
+      "scraped_at": "2026-01-27T18:06:14.661664"
     },
     {
       "id": "ford_ranger_2_0_l_170_ch_4x4_xlt_bva",
@@ -7299,7 +7299,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:37.901485"
+      "scraped_at": "2026-01-27T18:06:14.886488"
     },
     {
       "id": "ford_ranger_2_0_l_tdci_210_ch_4x4_wildtrak_bva",
@@ -7344,7 +7344,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:37.676822"
+      "scraped_at": "2026-01-27T18:06:14.992088"
     },
     {
       "id": "foton_tunland_g7_simple_cabine_2_0_l_turbo_4x2",
@@ -7389,7 +7389,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:37.821625"
+      "scraped_at": "2026-01-27T18:06:14.915508"
     },
     {
       "id": "foton_tunland_g7_double_cabine_2_0_l_turbo_4x4",
@@ -7434,7 +7434,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:38.072641"
+      "scraped_at": "2026-01-27T18:06:14.945500"
     },
     {
       "id": "foton_tm5_3_4t_chassis_cabine_2_2_l_turbo",
@@ -7479,7 +7479,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:38.301223"
+      "scraped_at": "2026-01-27T18:06:15.222175"
     },
     {
       "id": "foton_view_cs2_van_16_places_2_0_l_turbo",
@@ -7524,7 +7524,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:38.572958"
+      "scraped_at": "2026-01-27T18:06:15.250975"
     },
     {
       "id": "gac_motor_emkoo_1_5t_gdi_gl_bva",
@@ -7569,7 +7569,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:38.936724"
+      "scraped_at": "2026-01-27T18:06:15.872946"
     },
     {
       "id": "gac_motor_ga4_1_5_l_bva",
@@ -7614,7 +7614,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:38.697403"
+      "scraped_at": "2026-01-27T18:06:15.571641"
     },
     {
       "id": "gac_motor_emzoom_1_5t_gdi_lifestyle_bva",
@@ -7659,7 +7659,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:38.728463"
+      "scraped_at": "2026-01-27T18:06:15.603467"
     },
     {
       "id": "gac_motor_emzoom_1_5t_gdi_gl_bva",
@@ -7704,7 +7704,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:38.605812"
+      "scraped_at": "2026-01-27T18:06:15.485442"
     },
     {
       "id": "gac_motor_emzoom_1_5t_gdi_r_style_bva",
@@ -7749,7 +7749,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:38.865542"
+      "scraped_at": "2026-01-27T18:06:15.761536"
     },
     {
       "id": "geely_ex2_39_4_kwh__max",
@@ -7794,7 +7794,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:38.807311"
+      "scraped_at": "2026-01-27T18:06:15.806087"
     },
     {
       "id": "geely_ex5_60_2_kwh__max",
@@ -7839,7 +7839,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:38.651990"
+      "scraped_at": "2026-01-27T18:06:15.649286"
     },
     {
       "id": "geely_cityray_1_5_l_turbo",
@@ -7884,7 +7884,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:38.543676"
+      "scraped_at": "2026-01-27T18:06:15.527763"
     },
     {
       "id": "geely_geometry_c_70_kwh",
@@ -7929,7 +7929,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:39.044476"
+      "scraped_at": "2026-01-27T18:06:15.969106"
     },
     {
       "id": "geely_azkarra_1_5_l_turbo_mild_hybrid_4wd",
@@ -7974,7 +7974,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:39.195266"
+      "scraped_at": "2026-01-27T18:06:15.927796"
     },
     {
       "id": "geely_starray_1_5_l_turbo_gf_",
@@ -8019,7 +8019,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:39.249274"
+      "scraped_at": "2026-01-27T18:06:16.224249"
     },
     {
       "id": "geely_tugella_2_0_l_turbo_4wd_gf_",
@@ -8064,7 +8064,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:39.330835"
+      "scraped_at": "2026-01-27T18:06:16.261071"
     },
     {
       "id": "geely_monjaro_2_0_l_turbo_4wd_gf_",
@@ -8109,7 +8109,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:39.490985"
+      "scraped_at": "2026-01-27T18:06:16.501153"
     },
     {
       "id": "geely_gx3_pro_1_5_l_bvm",
@@ -8154,7 +8154,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:39.525057"
+      "scraped_at": "2026-01-27T18:06:16.690036"
     },
     {
       "id": "geely_gx3_pro_1_5_l_cvt",
@@ -8199,7 +8199,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:39.660792"
+      "scraped_at": "2026-01-27T18:06:16.733614"
     },
     {
       "id": "geely_emgrand_1_5_l_gl",
@@ -8244,7 +8244,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:39.694041"
+      "scraped_at": "2026-01-27T18:06:16.617077"
     },
     {
       "id": "geely_emgrand_1_5_l_gf_bva",
@@ -8289,7 +8289,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:39.613437"
+      "scraped_at": "2026-01-27T18:06:16.776195"
     },
     {
       "id": "geely_coolray_1_5_l",
@@ -8334,7 +8334,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:39.733278"
+      "scraped_at": "2026-01-27T18:06:16.657884"
     },
     {
       "id": "geely_coolray_1_5_l_turbo_gs",
@@ -8379,7 +8379,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:39.765714"
+      "scraped_at": "2026-01-27T18:06:16.583911"
     },
     {
       "id": "geely_coolray_1_5_l_turbo_gf_",
@@ -8424,7 +8424,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:40.008859"
+      "scraped_at": "2026-01-27T18:06:16.408878"
     },
     {
       "id": "great_wall_tank_300_hev_2_0_l",
@@ -8469,7 +8469,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:40.053872"
+      "scraped_at": "2026-01-27T18:06:16.869746"
     },
     {
       "id": "great_wall_tank_500_hev_2_0_l",
@@ -8514,7 +8514,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:40.096282"
+      "scraped_at": "2026-01-27T18:06:16.822894"
     },
     {
       "id": "great_wall_haval_jolion_1_5_t",
@@ -8559,7 +8559,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:40.341418"
+      "scraped_at": "2026-01-27T18:06:17.110422"
     },
     {
       "id": "great_wall_haval_h6_hybride_1_5_t_hev",
@@ -8604,7 +8604,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:40.523539"
+      "scraped_at": "2026-01-27T18:06:17.327749"
     },
     {
       "id": "great_wall_wingle_5_simple_cabine_2_0_l_diesel_4x4",
@@ -8649,7 +8649,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:40.561794"
+      "scraped_at": "2026-01-27T18:06:17.769758"
     },
     {
       "id": "great_wall_wingle_5_double_cabine_2_0_l_diesel_4x2",
@@ -8694,7 +8694,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:40.376703"
+      "scraped_at": "2026-01-27T18:06:17.477028"
     },
     {
       "id": "great_wall_poer_mt_2_0_l_diesel_4x4",
@@ -8739,7 +8739,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:40.615588"
+      "scraped_at": "2026-01-27T18:06:17.621239"
     },
     {
       "id": "great_wall_poer_at_2_0_l_diesel_4x4",
@@ -8784,7 +8784,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:40.417905"
+      "scraped_at": "2026-01-27T18:06:17.733017"
     },
     {
       "id": "honda_jazz_1_5_l_e_hev",
@@ -8829,7 +8829,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:40.688073"
+      "scraped_at": "2026-01-27T18:06:17.934275"
     },
     {
       "id": "honda_civic_1_5_l_cvt",
@@ -8874,7 +8874,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:40.880688"
+      "scraped_at": "2026-01-27T18:06:17.686631"
     },
     {
       "id": "honda_civic_hybride_2_0_l_e_hev",
@@ -8919,7 +8919,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:40.778043"
+      "scraped_at": "2026-01-27T18:06:17.565944"
     },
     {
       "id": "honda_civic_type_r_2_0_l_turbo",
@@ -8964,7 +8964,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:40.732086"
+      "scraped_at": "2026-01-27T18:06:17.519212"
     },
     {
       "id": "honda_accord_1_5_l_cvt",
@@ -9009,7 +9009,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:41.068104"
+      "scraped_at": "2026-01-27T18:06:17.813308"
     },
     {
       "id": "honda_hr_v_1_5_l_cvt_ex",
@@ -9054,7 +9054,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:41.562730"
+      "scraped_at": "2026-01-27T18:06:18.204593"
     },
     {
       "id": "honda_zr_v_1_5_l_cvt",
@@ -9099,7 +9099,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:41.406775"
+      "scraped_at": "2026-01-27T18:06:18.396767"
     },
     {
       "id": "honda_cr_v_1_5_t_cvt",
@@ -9144,7 +9144,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:41.455813"
+      "scraped_at": "2026-01-27T18:06:18.743088"
     },
     {
       "id": "honda_cr_v_hybride_2_0_l_e_hev",
@@ -9189,7 +9189,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:41.347746"
+      "scraped_at": "2026-01-27T18:06:18.862487"
     },
     {
       "id": "honda_city_1_5_l_cvt_lx",
@@ -9234,7 +9234,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:41.493496"
+      "scraped_at": "2026-01-27T18:06:18.780651"
     },
     {
       "id": "honda_city_1_5_l_cvt_lx_sport",
@@ -9279,7 +9279,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:41.670766"
+      "scraped_at": "2026-01-27T18:06:18.597497"
     },
     {
       "id": "hyundai_grand_i10_populaire_1_0_l",
@@ -9324,7 +9324,7 @@
       "is_new": false,
       "is_populaire": true,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:41.630810"
+      "scraped_at": "2026-01-27T18:06:18.927556"
     },
     {
       "id": "hyundai_grand_i10_sedan_1_2_l",
@@ -9369,7 +9369,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:41.315601"
+      "scraped_at": "2026-01-27T18:06:18.557886"
     },
     {
       "id": "hyundai_venue_1_0_l_turbo_bva",
@@ -9414,7 +9414,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:41.775767"
+      "scraped_at": "2026-01-27T18:06:18.646699"
     },
     {
       "id": "hyundai_creta_1_5_l_bva",
@@ -9459,7 +9459,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:41.827231"
+      "scraped_at": "2026-01-27T18:06:18.695680"
     },
     {
       "id": "hyundai_kona_electric_39_kwh",
@@ -9504,7 +9504,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:42.083110"
+      "scraped_at": "2026-01-27T18:06:19.185085"
     },
     {
       "id": "hyundai_tucson_1_6_l_t_gdi_7_dct_4wd_top_grade",
@@ -9549,7 +9549,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:42.138900"
+      "scraped_at": "2026-01-27T18:06:19.238503"
     },
     {
       "id": "hyundai_ioniq_5_n_84_kwh_4wd",
@@ -9594,7 +9594,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:42.264414"
+      "scraped_at": "2026-01-27T18:06:19.282836"
     },
     {
       "id": "hyundai_azera_hybride_1_6_l_t_gdi_2wd_calligraphy_bva_6",
@@ -9639,7 +9639,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:42.595828"
+      "scraped_at": "2026-01-27T18:06:19.620065"
     },
     {
       "id": "hyundai_staria_11_places_2_2_crdi",
@@ -9684,7 +9684,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:42.387205"
+      "scraped_at": "2026-01-27T18:06:19.571868"
     },
     {
       "id": "hyundai_grand_i10_1_2_l_gls",
@@ -9729,7 +9729,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:42.417045"
+      "scraped_at": "2026-01-27T18:06:19.748049"
     },
     {
       "id": "hyundai_grand_i10_1_2_l_high_grade",
@@ -9774,7 +9774,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:42.459112"
+      "scraped_at": "2026-01-27T18:06:19.830418"
     },
     {
       "id": "hyundai_grand_i10_1_2_l_high_grade_bva",
@@ -9819,7 +9819,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:42.501002"
+      "scraped_at": "2026-01-27T18:06:19.659580"
     },
     {
       "id": "hyundai_i20_1_2_l_gls_plus",
@@ -9864,7 +9864,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:42.679537"
+      "scraped_at": "2026-01-27T18:06:19.787846"
     },
     {
       "id": "hyundai_i20_1_2_l_high_grade",
@@ -9909,7 +9909,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:42.638104"
+      "scraped_at": "2026-01-27T18:06:19.530999"
     },
     {
       "id": "hyundai_i20_1_0_l_t_gdi_bva",
@@ -9954,7 +9954,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:42.713517"
+      "scraped_at": "2026-01-27T18:06:20.062989"
     },
     {
       "id": "hyundai_i20_1_0_l_t_mhev_bva",
@@ -9999,7 +9999,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:42.912624"
+      "scraped_at": "2026-01-27T18:06:20.093294"
     },
     {
       "id": "hyundai_bayon_1_2_l_top_grade",
@@ -10044,7 +10044,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:42.949590"
+      "scraped_at": "2026-01-27T18:06:19.897701"
     },
     {
       "id": "hyundai_bayon_1_0_l_t_gdi_top_grade_bva",
@@ -10089,7 +10089,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:43.191976"
+      "scraped_at": "2026-01-27T18:06:20.181049"
     },
     {
       "id": "hyundai_i30_fastback_1_0_t_intuitive_bva",
@@ -10134,7 +10134,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:43.253821"
+      "scraped_at": "2026-01-27T18:06:20.467164"
     },
     {
       "id": "hyundai_i30_fastback_1_0_t_bva",
@@ -10179,7 +10179,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:43.445347"
+      "scraped_at": "2026-01-27T18:06:20.348003"
     },
     {
       "id": "hyundai_kona_1_6_l_t_gdi_7_dct_4wd",
@@ -10224,7 +10224,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:43.305578"
+      "scraped_at": "2026-01-27T18:06:20.437639"
     },
     {
       "id": "hyundai_kona_1_6_l_t_gdi_7_dct_4wd_n_line",
@@ -10269,7 +10269,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:43.533015"
+      "scraped_at": "2026-01-27T18:06:20.585500"
     },
     {
       "id": "hyundai_tucson_hybride_1_6_l_t_gdi_2wd_intuitive_bva_6",
@@ -10314,7 +10314,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:43.225169"
+      "scraped_at": "2026-01-27T18:06:20.498490"
     },
     {
       "id": "hyundai_tucson_hybride_1_6_l_t_gdi_2wd_top_grade_bva_6",
@@ -10359,7 +10359,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:43.356950"
+      "scraped_at": "2026-01-27T18:06:20.639931"
     },
     {
       "id": "hyundai_ioniq_5_58_kwh_2wd_hg",
@@ -10404,7 +10404,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:43.486402"
+      "scraped_at": "2026-01-27T18:06:20.684117"
     },
     {
       "id": "hyundai_ioniq_5_77_kwh_4wd_hg",
@@ -10449,7 +10449,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:43.812234"
+      "scraped_at": "2026-01-27T18:06:20.804190"
     },
     {
       "id": "hyundai_ioniq_6_77_kwh_2wd_large_range",
@@ -10494,7 +10494,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:43.563193"
+      "scraped_at": "2026-01-27T18:06:20.757497"
     },
     {
       "id": "hyundai_ioniq_6_77_kwh_4wd_large_range",
@@ -10539,7 +10539,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:43.856897"
+      "scraped_at": "2026-01-27T18:06:20.726387"
     },
     {
       "id": "hyundai_palisade_calligraphy_2_2_l_tci_4x4_bva",
@@ -10584,7 +10584,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:44.369292"
+      "scraped_at": "2026-01-27T18:06:21.050977"
     },
     {
       "id": "hyundai_palisade_calligraphy_3_5_l_gdi_4x4_bva",
@@ -10629,7 +10629,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:44.219847"
+      "scraped_at": "2026-01-27T18:06:21.507727"
     },
     {
       "id": "hyundai_staria_9_places_2_2_crdi",
@@ -10674,7 +10674,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:44.156672"
+      "scraped_at": "2026-01-27T18:06:21.345704"
     },
     {
       "id": "hyundai_staria_9_places_2_2_crdi_4wd_bva",
@@ -10719,7 +10719,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:44.084233"
+      "scraped_at": "2026-01-27T18:06:21.406028"
     },
     {
       "id": "hyundai_staria_9_places_2_2_crdi_4wd_luxe_bva",
@@ -10764,7 +10764,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:44.182494"
+      "scraped_at": "2026-01-27T18:06:21.432557"
     },
     {
       "id": "im_motors_im5_standard_75_kwh_rwd",
@@ -10809,7 +10809,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:44.119024"
+      "scraped_at": "2026-01-27T18:06:21.580140"
     },
     {
       "id": "im_motors_im5_autonomie_100_kwh_rwd",
@@ -10854,7 +10854,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:44.291942"
+      "scraped_at": "2026-01-27T18:06:21.545166"
     },
     {
       "id": "im_motors_im5_performance_100_kwh_awd",
@@ -10899,7 +10899,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:44.329909"
+      "scraped_at": "2026-01-27T18:06:21.647660"
     },
     {
       "id": "im_motors_im6_standard_75_kwh_rwd",
@@ -10944,7 +10944,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:44.526772"
+      "scraped_at": "2026-01-27T18:06:21.378463"
     },
     {
       "id": "im_motors_im6_autonomie_100_kwh_rwd",
@@ -10989,7 +10989,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:44.401807"
+      "scraped_at": "2026-01-27T18:06:21.612716"
     },
     {
       "id": "im_motors_im6_performance_100_kwh_awd",
@@ -11034,7 +11034,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:44.635277"
+      "scraped_at": "2026-01-27T18:06:21.885394"
     },
     {
       "id": "jac_t8_pro_double_cabine_2_0_l_cti_diesel_4x4",
@@ -11079,7 +11079,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:44.765022"
+      "scraped_at": "2026-01-27T18:06:21.921827"
     },
     {
       "id": "jaguar_e_pace_2_0_d_163_r_dynamic_s",
@@ -11124,7 +11124,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:44.897417"
+      "scraped_at": "2026-01-27T18:06:21.986143"
     },
     {
       "id": "jaguar_f_pace_2_0_t_250_r_dynamic_s",
@@ -11169,7 +11169,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:44.926448"
+      "scraped_at": "2026-01-27T18:06:22.155680"
     },
     {
       "id": "jeep_renegade_1_4_turbo_4x2_limited_bva",
@@ -11214,7 +11214,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:45.047921"
+      "scraped_at": "2026-01-27T18:06:22.267363"
     },
     {
       "id": "jeep_wrangler_2_0_l_rubicon",
@@ -11259,7 +11259,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:44.867926"
+      "scraped_at": "2026-01-27T18:06:22.186827"
     },
     {
       "id": "jeep_wrangler_unlimited_2_0_l_rubicon",
@@ -11304,7 +11304,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:44.797388"
+      "scraped_at": "2026-01-27T18:06:22.216123"
     },
     {
       "id": "jeep_wrangler_unlimited_3_6_l_v6_rubicon",
@@ -11349,7 +11349,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:44.958150"
+      "scraped_at": "2026-01-27T18:06:22.342950"
     },
     {
       "id": "jetour_dashing_1_5_turbo_bva",
@@ -11394,7 +11394,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:45.122671"
+      "scraped_at": "2026-01-27T18:06:22.468397"
     },
     {
       "id": "jetour_x70_plus_1_5_turbo",
@@ -11439,7 +11439,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:45.174325"
+      "scraped_at": "2026-01-27T18:06:22.391847"
     },
     {
       "id": "jetour_t2_2_0_turbo",
@@ -11484,7 +11484,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:45.224709"
+      "scraped_at": "2026-01-27T18:06:22.721994"
     },
     {
       "id": "jmc_vigus_simple_cabine_2_5_l_diesel_4x2",
@@ -11529,7 +11529,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:45.485321"
+      "scraped_at": "2026-01-27T18:06:22.653342"
     },
     {
       "id": "jmc_vigus_double_cabine_2_5_l_diesel_4x2",
@@ -11574,7 +11574,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:45.457597"
+      "scraped_at": "2026-01-27T18:06:22.624976"
     },
     {
       "id": "jmc_vigus_double_cabine_2_5_l_diesel_4x4",
@@ -11619,7 +11619,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:45.518147"
+      "scraped_at": "2026-01-27T18:06:22.756406"
     },
     {
       "id": "jmev_ev3_31_kwh",
@@ -11664,7 +11664,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:45.553322"
+      "scraped_at": "2026-01-27T18:06:22.899020"
     },
     {
       "id": "jmev_elight_63_kwh_comfort",
@@ -11709,7 +11709,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:45.784925"
+      "scraped_at": "2026-01-27T18:06:23.092344"
     },
     {
       "id": "kia_picanto_populaire_1_0_l",
@@ -11754,7 +11754,7 @@
       "is_new": false,
       "is_populaire": true,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:45.924500"
+      "scraped_at": "2026-01-27T18:06:23.191630"
     },
     {
       "id": "kia_seltos_1_4_t_gdi_top_grade",
@@ -11799,7 +11799,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:45.996201"
+      "scraped_at": "2026-01-27T18:06:23.364049"
     },
     {
       "id": "kia_ev6_gt_awd",
@@ -11844,7 +11844,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:45.753236"
+      "scraped_at": "2026-01-27T18:06:23.015140"
     },
     {
       "id": "kia_sorento_hybride_1_6_t_gdi_hev",
@@ -11889,7 +11889,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:45.633471"
+      "scraped_at": "2026-01-27T18:06:23.057939"
     },
     {
       "id": "kia_picanto_1_2_l_smart_bvm",
@@ -11934,7 +11934,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:45.865039"
+      "scraped_at": "2026-01-27T18:06:23.226148"
     },
     {
       "id": "kia_picanto_1_2_l_smart_bva",
@@ -11979,7 +11979,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:46.039359"
+      "scraped_at": "2026-01-27T18:06:23.262729"
     },
     {
       "id": "kia_picanto_1_2_l_gt_line_bva",
@@ -12024,7 +12024,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:46.260601"
+      "scraped_at": "2026-01-27T18:06:23.292939"
     },
     {
       "id": "kia_picanto_1_2_l_gt_line___bva",
@@ -12069,7 +12069,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:46.068776"
+      "scraped_at": "2026-01-27T18:06:23.424715"
     },
     {
       "id": "kia_sonet_1_5_l_ex_bvm",
@@ -12114,7 +12114,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:46.108115"
+      "scraped_at": "2026-01-27T18:06:23.608682"
     },
     {
       "id": "kia_sonet_1_5_l_cvt_ex_plus",
@@ -12159,7 +12159,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:46.231393"
+      "scraped_at": "2026-01-27T18:06:23.775775"
     },
     {
       "id": "kia_sonet_1_5_l_cvt_sx",
@@ -12204,7 +12204,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:46.385487"
+      "scraped_at": "2026-01-27T18:06:24.094412"
     },
     {
       "id": "kia_niro_hybride_1_6_l_ex",
@@ -12249,7 +12249,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:46.881828"
+      "scraped_at": "2026-01-27T18:06:24.225432"
     },
     {
       "id": "kia_niro_hybride_1_6_l_sx",
@@ -12294,7 +12294,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:46.781813"
+      "scraped_at": "2026-01-27T18:06:24.062651"
     },
     {
       "id": "kia_sportage_1_6_l_t_gdi_7_dct_ex",
@@ -12339,7 +12339,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:46.628149"
+      "scraped_at": "2026-01-27T18:06:23.925145"
     },
     {
       "id": "kia_sportage_1_6_l_t_gdi_7_dct_sx",
@@ -12384,7 +12384,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:46.955250"
+      "scraped_at": "2026-01-27T18:06:24.362017"
     },
     {
       "id": "kia_sportage_hybride_1_6_l_t_gdi_4x2_gt_line",
@@ -12429,7 +12429,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:46.708691"
+      "scraped_at": "2026-01-27T18:06:24.194187"
     },
     {
       "id": "kia_sportage_hybride_1_6_l_t_gdi_4x4_gt_line",
@@ -12474,7 +12474,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:46.846983"
+      "scraped_at": "2026-01-27T18:06:24.129572"
     },
     {
       "id": "kia_ev3_58_3_kwh_air",
@@ -12519,7 +12519,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:46.811484"
+      "scraped_at": "2026-01-27T18:06:24.158585"
     },
     {
       "id": "kia_ev3_81_4_kwh_earth",
@@ -12564,7 +12564,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:46.738065"
+      "scraped_at": "2026-01-27T18:06:24.254366"
     },
     {
       "id": "kia_ev3_81_4_kwh_earth_plus",
@@ -12609,7 +12609,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:46.987228"
+      "scraped_at": "2026-01-27T18:06:24.288207"
     },
     {
       "id": "kia_ev3_81_4_kwh_gt_line",
@@ -12654,7 +12654,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:47.077849"
+      "scraped_at": "2026-01-27T18:06:24.597045"
     },
     {
       "id": "kia_ev6_standard_range_gt_line",
@@ -12699,7 +12699,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:47.321634"
+      "scraped_at": "2026-01-27T18:06:24.718394"
     },
     {
       "id": "kia_ev6_long_range_gt_line",
@@ -12744,7 +12744,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:47.572264"
+      "scraped_at": "2026-01-27T18:06:25.114682"
     },
     {
       "id": "kia_ev6_dual_power_4wd_gt_line",
@@ -12789,7 +12789,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:47.762936"
+      "scraped_at": "2026-01-27T18:06:25.182116"
     },
     {
       "id": "kia_ev9_99_8_kwh_gt_line_7_places",
@@ -12834,7 +12834,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:47.682956"
+      "scraped_at": "2026-01-27T18:06:25.228375"
     },
     {
       "id": "kia_ev9_99_8_kwh_gt_line_6_places",
@@ -12879,7 +12879,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:47.632722"
+      "scraped_at": "2026-01-27T18:06:24.907930"
     },
     {
       "id": "land_rover_discovery_sport_1_5_l_p300e_phev_dynamic_se",
@@ -12924,7 +12924,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:47.724581"
+      "scraped_at": "2026-01-27T18:06:25.038978"
     },
     {
       "id": "land_rover_range_rover_velar_2_0_l_p250_dynamic_se",
@@ -12969,7 +12969,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:47.602492"
+      "scraped_at": "2026-01-27T18:06:24.999262"
     },
     {
       "id": "land_rover_range_rover_3_0_l_p460_phev_se",
@@ -13014,7 +13014,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:47.539152"
+      "scraped_at": "2026-01-27T18:06:25.080751"
     },
     {
       "id": "land_rover_defender_110_2_0_l_p400e_phev_s",
@@ -13059,7 +13059,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:47.460449"
+      "scraped_at": "2026-01-27T18:06:25.145113"
     },
     {
       "id": "land_rover_defender_110_2_0_l_p400e_phev_x_dynamic_se",
@@ -13104,7 +13104,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:47.793759"
+      "scraped_at": "2026-01-27T18:06:25.259070"
     },
     {
       "id": "land_rover_defender_110_2_0_l_p400e_phev_x_dynamic_hse",
@@ -13149,7 +13149,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:48.025030"
+      "scraped_at": "2026-01-27T18:06:25.492692"
     },
     {
       "id": "land_rover_defender_110_2_0_l_p400e_phev_x",
@@ -13194,7 +13194,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:48.094186"
+      "scraped_at": "2026-01-27T18:06:25.524210"
     },
     {
       "id": "land_rover_defender_110_3_0_l_p400_x_dynamic_se",
@@ -13239,7 +13239,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:48.387750"
+      "scraped_at": "2026-01-27T18:06:26.080666"
     },
     {
       "id": "land_rover_range_rover_evoque_1_5_l_p300e_phev_s",
@@ -13284,7 +13284,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:48.512386"
+      "scraped_at": "2026-01-27T18:06:25.937207"
     },
     {
       "id": "land_rover_range_rover_evoque_1_5_l_p300e_phev_dynamic_se",
@@ -13329,7 +13329,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:48.480097"
+      "scraped_at": "2026-01-27T18:06:25.968186"
     },
     {
       "id": "land_rover_range_rover_evoque_2_0_l_d163_dynamic_se__",
@@ -13374,7 +13374,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:48.449340"
+      "scraped_at": "2026-01-27T18:06:25.832352"
     },
     {
       "id": "land_rover_range_rover_sport_3_0_l_p460_phev_s",
@@ -13419,7 +13419,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:48.417963"
+      "scraped_at": "2026-01-27T18:06:26.110334"
     },
     {
       "id": "land_rover_range_rover_sport_3_0_l_p460_phev_se",
@@ -13464,7 +13464,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:48.304341"
+      "scraped_at": "2026-01-27T18:06:25.997416"
     },
     {
       "id": "land_rover_range_rover_sport_3_0_l_p460_phev_dynamic_se",
@@ -13509,7 +13509,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:48.552086"
+      "scraped_at": "2026-01-27T18:06:26.041121"
     },
     {
       "id": "land_rover_range_rover_sport_3_0_l_p460_phev_dynamic_hse",
@@ -13554,7 +13554,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:48.271474"
+      "scraped_at": "2026-01-27T18:06:25.864558"
     },
     {
       "id": "land_rover_range_rover_sport_3_0_l_p460_phev_autobiography",
@@ -13599,7 +13599,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:48.588233"
+      "scraped_at": "2026-01-27T18:06:26.144755"
     },
     {
       "id": "mahindra_kuv_100_1_2_l_k8",
@@ -13644,7 +13644,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:48.849757"
+      "scraped_at": "2026-01-27T18:06:26.407262"
     },
     {
       "id": "mahindra_pick_up_sc_2_2_l_diesel_4x4_plateau_simple",
@@ -13689,7 +13689,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:48.880920"
+      "scraped_at": "2026-01-27T18:06:26.438489"
     },
     {
       "id": "mahindra_xuv_300_1_2_l_w8",
@@ -13734,7 +13734,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:49.124724"
+      "scraped_at": "2026-01-27T18:06:26.532153"
     },
     {
       "id": "mahindra_xuv_300_1_2_l_w8_0",
@@ -13779,7 +13779,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:49.190846"
+      "scraped_at": "2026-01-27T18:06:26.670849"
     },
     {
       "id": "mahindra_pick_up_dc_2_2_l_diesel_4x2",
@@ -13824,7 +13824,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:49.009248"
+      "scraped_at": "2026-01-27T18:06:26.875083"
     },
     {
       "id": "mahindra_pick_up_dc_2_2_l_diesel_4x4",
@@ -13869,7 +13869,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:49.335929"
+      "scraped_at": "2026-01-27T18:06:26.844291"
     },
     {
       "id": "mercedes_benz_cle_coup__200_amg__",
@@ -13914,7 +13914,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:49.306635"
+      "scraped_at": "2026-01-27T18:06:26.776628"
     },
     {
       "id": "mercedes_benz_eqe_berline_350__amg",
@@ -13959,7 +13959,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:49.225080"
+      "scraped_at": "2026-01-27T18:06:26.814710"
     },
     {
       "id": "mercedes_benz_eqs_berline_450_4matic_amg",
@@ -14004,7 +14004,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:49.264196"
+      "scraped_at": "2026-01-27T18:06:26.911968"
     },
     {
       "id": "mercedes_benz_classe_s_450_4matic_limousine",
@@ -14049,7 +14049,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:48.965122"
+      "scraped_at": "2026-01-27T18:06:26.699945"
     },
     {
       "id": "mercedes_benz_glb_200_amg",
@@ -14094,7 +14094,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:49.363876"
+      "scraped_at": "2026-01-27T18:06:27.143885"
     },
     {
       "id": "mercedes_benz_eqb_250__amg",
@@ -14139,7 +14139,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:49.397464"
+      "scraped_at": "2026-01-27T18:06:26.947781"
     },
     {
       "id": "mercedes_benz_glc_coup__200_4matic_amg",
@@ -14184,7 +14184,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:49.603651"
+      "scraped_at": "2026-01-27T18:06:27.188475"
     },
     {
       "id": "mercedes_benz_glc_coup__plug_in_hybride_350e_4matic_amg",
@@ -14229,7 +14229,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:49.640913"
+      "scraped_at": "2026-01-27T18:06:27.225293"
     },
     {
       "id": "mercedes_benz_eqe_suv_350_4matic_amg",
@@ -14274,7 +14274,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:50.079043"
+      "scraped_at": "2026-01-27T18:06:27.670829"
     },
     {
       "id": "mercedes_benz_gle_300d_4matic_amg",
@@ -14319,7 +14319,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:49.912536"
+      "scraped_at": "2026-01-27T18:06:27.491561"
     },
     {
       "id": "mercedes_benz_gle_coup__300d_4matic_amg",
@@ -14364,7 +14364,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:50.111715"
+      "scraped_at": "2026-01-27T18:06:27.704395"
     },
     {
       "id": "mercedes_benz_classe_v_250_d",
@@ -14409,7 +14409,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:49.881115"
+      "scraped_at": "2026-01-27T18:06:27.531401"
     },
     {
       "id": "mercedes_benz_classe_a_200_progressive",
@@ -14454,7 +14454,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:49.792515"
+      "scraped_at": "2026-01-27T18:06:27.603087"
     },
     {
       "id": "mercedes_benz_classe_a_200_premium",
@@ -14499,7 +14499,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:49.983892"
+      "scraped_at": "2026-01-27T18:06:27.459019"
     },
     {
       "id": "mercedes_benz_classe_a_200_amg",
@@ -14544,7 +14544,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:50.044415"
+      "scraped_at": "2026-01-27T18:06:27.636634"
     },
     {
       "id": "mercedes_benz_classe_a_berline_200_premium",
@@ -14589,7 +14589,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:50.014053"
+      "scraped_at": "2026-01-27T18:06:27.770393"
     },
     {
       "id": "mercedes_benz_classe_a_berline_200_amg",
@@ -14634,7 +14634,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:50.148455"
+      "scraped_at": "2026-01-27T18:06:27.969428"
     },
     {
       "id": "mercedes_benz_cla_200_progressive",
@@ -14679,7 +14679,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:50.179210"
+      "scraped_at": "2026-01-27T18:06:27.735933"
     },
     {
       "id": "mercedes_benz_cla_200_amg",
@@ -14724,7 +14724,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:50.412734"
+      "scraped_at": "2026-01-27T18:06:28.033302"
     },
     {
       "id": "mercedes_benz_classe_c_180_avantgarde",
@@ -14769,7 +14769,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:50.615874"
+      "scraped_at": "2026-01-27T18:06:28.622640"
     },
     {
       "id": "mercedes_benz_classe_c_180_premium",
@@ -14814,7 +14814,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:50.957225"
+      "scraped_at": "2026-01-27T18:06:28.531311"
     },
     {
       "id": "mercedes_benz_classe_c_180_amg",
@@ -14859,7 +14859,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:50.924705"
+      "scraped_at": "2026-01-27T18:06:28.581917"
     },
     {
       "id": "mercedes_benz_classe_c_180_amg__",
@@ -14904,7 +14904,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:50.707054"
+      "scraped_at": "2026-01-27T18:06:28.369392"
     },
     {
       "id": "mercedes_benz_classe_c_plug_in_hybride_350e_avantgarde",
@@ -14949,7 +14949,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:50.737376"
+      "scraped_at": "2026-01-27T18:06:28.463281"
     },
     {
       "id": "mercedes_benz_classe_c_plug_in_hybride_350e_premium",
@@ -14994,7 +14994,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:50.838470"
+      "scraped_at": "2026-01-27T18:06:28.336316"
     },
     {
       "id": "mercedes_benz_classe_c_plug_in_hybride_350e_amg",
@@ -15039,7 +15039,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:50.768841"
+      "scraped_at": "2026-01-27T18:06:28.432117"
     },
     {
       "id": "mercedes_benz_classe_c_plug_in_hybride_350e_amg__",
@@ -15084,7 +15084,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:50.873618"
+      "scraped_at": "2026-01-27T18:06:28.401024"
     },
     {
       "id": "mercedes_benz_classe_e_200_avantgarde",
@@ -15129,7 +15129,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:50.674155"
+      "scraped_at": "2026-01-27T18:06:28.660489"
     },
     {
       "id": "mercedes_benz_classe_e_200_exclusive",
@@ -15174,7 +15174,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:50.993781"
+      "scraped_at": "2026-01-27T18:06:28.702530"
     },
     {
       "id": "mercedes_benz_classe_e_200_amg",
@@ -15219,7 +15219,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:51.234248"
+      "scraped_at": "2026-01-27T18:06:28.977567"
     },
     {
       "id": "mercedes_benz_gla_200_progressive",
@@ -15264,7 +15264,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:51.306405"
+      "scraped_at": "2026-01-27T18:06:29.213687"
     },
     {
       "id": "mercedes_benz_gla_200_amg",
@@ -15309,7 +15309,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:51.619970"
+      "scraped_at": "2026-01-27T18:06:29.288097"
     },
     {
       "id": "mercedes_benz_glc_200_4matic_avantgarde",
@@ -15354,7 +15354,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:51.768045"
+      "scraped_at": "2026-01-27T18:06:29.354812"
     },
     {
       "id": "mercedes_benz_glc_200_4matic_amg",
@@ -15399,7 +15399,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:51.736959"
+      "scraped_at": "2026-01-27T18:06:29.457322"
     },
     {
       "id": "mercedes_benz_classe_g_electrique_580_eq_amg_line",
@@ -15444,7 +15444,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:51.650353"
+      "scraped_at": "2026-01-27T18:06:29.151994"
     },
     {
       "id": "mercedes_benz_classe_g_electrique_580_eq_amg_line_superior",
@@ -15489,7 +15489,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:51.588028"
+      "scraped_at": "2026-01-27T18:06:29.255162"
     },
     {
       "id": "mg_3_hybrid__1_5_l_cvt__luxury",
@@ -15534,7 +15534,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:51.891292"
+      "scraped_at": "2026-01-27T18:06:29.522634"
     },
     {
       "id": "mg_zs_hybrid__1_5_l_cvt_luxury",
@@ -15579,7 +15579,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:51.546838"
+      "scraped_at": "2026-01-27T18:06:29.322848"
     },
     {
       "id": "mg_s5_64_kwh",
@@ -15624,7 +15624,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:51.825774"
+      "scraped_at": "2026-01-27T18:06:29.581909"
     },
     {
       "id": "mg_hs_1_5l_turbo_luxury",
@@ -15669,7 +15669,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:51.935114"
+      "scraped_at": "2026-01-27T18:06:29.824553"
     },
     {
       "id": "mg_hs_hybrid__1_5l_turbo",
@@ -15714,7 +15714,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:52.143543"
+      "scraped_at": "2026-01-27T18:06:29.874258"
     },
     {
       "id": "mg_rx9_2_0_t_ultimate",
@@ -15759,7 +15759,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:52.178128"
+      "scraped_at": "2026-01-27T18:06:29.907377"
     },
     {
       "id": "mg_cyberster_77_kwh_rwd",
@@ -15804,7 +15804,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:52.261834"
+      "scraped_at": "2026-01-27T18:06:30.142361"
     },
     {
       "id": "mg_3_1_5_l_standard",
@@ -15849,7 +15849,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:52.635626"
+      "scraped_at": "2026-01-27T18:06:30.237706"
     },
     {
       "id": "mg_3_1_5_l_confort",
@@ -15894,7 +15894,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:52.668634"
+      "scraped_at": "2026-01-27T18:06:30.172989"
     },
     {
       "id": "mg_3_1_5_l_luxe_bva",
@@ -15939,7 +15939,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:52.419221"
+      "scraped_at": "2026-01-27T18:06:30.347362"
     },
     {
       "id": "mg_5_1_5_l_confort",
@@ -15984,7 +15984,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:52.574429"
+      "scraped_at": "2026-01-27T18:06:30.206106"
     },
     {
       "id": "mg_5_1_5_l_confort_plus",
@@ -16029,7 +16029,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:52.606473"
+      "scraped_at": "2026-01-27T18:06:30.380204"
     },
     {
       "id": "mg_5_1_5_l_luxe_plus_bva",
@@ -16074,7 +16074,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:52.455982"
+      "scraped_at": "2026-01-27T18:06:30.316864"
     },
     {
       "id": "mg_zs_1_5_l_luxury",
@@ -16119,7 +16119,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:52.494583"
+      "scraped_at": "2026-01-27T18:06:30.682501"
     },
     {
       "id": "mg_zs_1_5_l_luxury_bva",
@@ -16164,7 +16164,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:52.898023"
+      "scraped_at": "2026-01-27T18:06:30.647523"
     },
     {
       "id": "mg_7_1_5_l_turbo_luxury_bva",
@@ -16209,7 +16209,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:52.926492"
+      "scraped_at": "2026-01-27T18:06:30.413740"
     },
     {
       "id": "mg_7_2_0_l_turbo_trophy___bva",
@@ -16254,7 +16254,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:52.866168"
+      "scraped_at": "2026-01-27T18:06:30.837893"
     },
     {
       "id": "mini_cooper_3_portes_1_5_l_john_cooper_works",
@@ -16299,7 +16299,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:53.162104"
+      "scraped_at": "2026-01-27T18:06:31.099267"
     },
     {
       "id": "mini_cooper_electric_36_6_kwh_classic",
@@ -16344,7 +16344,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:53.322680"
+      "scraped_at": "2026-01-27T18:06:31.067163"
     },
     {
       "id": "mini_aceman_electric_42_5_kwh_classic",
@@ -16389,7 +16389,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:53.083790"
+      "scraped_at": "2026-01-27T18:06:31.129890"
     },
     {
       "id": "mini_countryman_electric_42_5_kwh_favoured",
@@ -16434,7 +16434,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:53.252761"
+      "scraped_at": "2026-01-27T18:06:31.002330"
     },
     {
       "id": "mini_cooper_cabriolet_2_0_l_favoured",
@@ -16479,7 +16479,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:53.222108"
+      "scraped_at": "2026-01-27T18:06:31.199128"
     },
     {
       "id": "mini_cooper_5_portes_1_5_l_favoured",
@@ -16524,7 +16524,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:53.191225"
+      "scraped_at": "2026-01-27T18:06:30.970366"
     },
     {
       "id": "mini_cooper_5_portes_1_5_l_jcw",
@@ -16569,7 +16569,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:53.052135"
+      "scraped_at": "2026-01-27T18:06:31.032464"
     },
     {
       "id": "mini_countryman_1_5_l_classic_bva",
@@ -16614,7 +16614,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:53.356501"
+      "scraped_at": "2026-01-27T18:06:31.464640"
     },
     {
       "id": "mini_countryman_1_5_l_favoured_bva",
@@ -16659,7 +16659,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:53.386206"
+      "scraped_at": "2026-01-27T18:06:31.432496"
     },
     {
       "id": "mitsubishi_attrage_populaire_1_2_l_glx_bvm",
@@ -16704,7 +16704,7 @@
       "is_new": false,
       "is_populaire": true,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:53.443357"
+      "scraped_at": "2026-01-27T18:06:31.520970"
     },
     {
       "id": "mitsubishi_eclipse_cross_1_5_t_mivec_cvt",
@@ -16749,7 +16749,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:53.689841"
+      "scraped_at": "2026-01-27T18:06:31.801559"
     },
     {
       "id": "mitsubishi_asx_2_0_l_bva",
@@ -16794,7 +16794,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:53.749875"
+      "scraped_at": "2026-01-27T18:06:31.987762"
     },
     {
       "id": "mitsubishi_l200_double_cabine_2_5_l_did_gl",
@@ -16839,7 +16839,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:53.798126"
+      "scraped_at": "2026-01-27T18:06:31.894370"
     },
     {
       "id": "mitsubishi_pajero_2_8_l",
@@ -16884,7 +16884,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:54.012565"
+      "scraped_at": "2026-01-27T18:06:31.759103"
     },
     {
       "id": "mitsubishi_pajero_sport_2_4_l_did_business",
@@ -16929,7 +16929,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:54.077486"
+      "scraped_at": "2026-01-27T18:06:31.858419"
     },
     {
       "id": "mitsubishi_pajero_sport_2_4_l_did_premium_bva",
@@ -16974,7 +16974,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:53.826336"
+      "scraped_at": "2026-01-27T18:06:31.829139"
     },
     {
       "id": "nissan_juke_1_0_l_dig_t_dct",
@@ -17019,7 +17019,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:54.142931"
+      "scraped_at": "2026-01-27T18:06:31.924702"
     },
     {
       "id": "nissan_qashqai_e_power_1_5_l_n_connecta",
@@ -17064,7 +17064,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:53.864313"
+      "scraped_at": "2026-01-27T18:06:32.276294"
     },
     {
       "id": "nissan_navara_2_5_dci_4x4_double_cabine_bva",
@@ -17109,7 +17109,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:54.111286"
+      "scraped_at": "2026-01-27T18:06:32.237162"
     },
     {
       "id": "nissan_magnite_1_0t_acenta",
@@ -17154,7 +17154,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:53.980673"
+      "scraped_at": "2026-01-27T18:06:32.201263"
     },
     {
       "id": "nissan_magnite_1_0t_cvt_tekna",
@@ -17199,7 +17199,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:54.181004"
+      "scraped_at": "2026-01-27T18:06:32.325472"
     },
     {
       "id": "omoda_jaecoo_e5_61_kwh_premium",
@@ -17244,7 +17244,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:54.447485"
+      "scraped_at": "2026-01-27T18:06:32.703960"
     },
     {
       "id": "omoda_jaecoo_c5_1_5_tgdi_hev",
@@ -17289,7 +17289,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:54.413625"
+      "scraped_at": "2026-01-27T18:06:32.591022"
     },
     {
       "id": "omoda_jaecoo_j7_1_5_tgdi_shs",
@@ -17334,7 +17334,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:54.511472"
+      "scraped_at": "2026-01-27T18:06:32.795657"
     },
     {
       "id": "omoda_jaecoo_j8_1_5_tgdi_shs_4wd",
@@ -17379,7 +17379,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:54.587020"
+      "scraped_at": "2026-01-27T18:06:32.872419"
     },
     {
       "id": "opel_crossland_1_2_l_110_ch_at6_edition",
@@ -17424,7 +17424,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:54.835588"
+      "scraped_at": "2026-01-27T18:06:32.669623"
     },
     {
       "id": "opel_mokka_1_2_l_turbo_130_ch_at8_gs_special_edition",
@@ -17469,7 +17469,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:54.871229"
+      "scraped_at": "2026-01-27T18:06:32.631089"
     },
     {
       "id": "opel_astra_1_2_l_gs_limited",
@@ -17514,7 +17514,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:55.061520"
+      "scraped_at": "2026-01-27T18:06:32.997498"
     },
     {
       "id": "opel_grandland_1_6_l_turbo_gs_line_bva",
@@ -17559,7 +17559,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:55.023455"
+      "scraped_at": "2026-01-27T18:06:33.109609"
     },
     {
       "id": "opel_corsa_1_2_turbo_edition",
@@ -17604,7 +17604,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:54.985729"
+      "scraped_at": "2026-01-27T18:06:33.033509"
     },
     {
       "id": "opel_corsa_1_2_turbo_gs",
@@ -17649,7 +17649,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:54.950589"
+      "scraped_at": "2026-01-27T18:06:33.070548"
     },
     {
       "id": "opel_combo_cargo_1_6_l_diesel_confort_l1h1_650_kg",
@@ -17694,7 +17694,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:55.291952"
+      "scraped_at": "2026-01-27T18:06:33.413631"
     },
     {
       "id": "opel_combo_cargo_xl_1_6_l_diesel_confort_l2h1_1000_kg",
@@ -17739,7 +17739,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:55.129958"
+      "scraped_at": "2026-01-27T18:06:33.385542"
     },
     {
       "id": "peugeot_208_1_2_l_style",
@@ -17784,7 +17784,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:55.163222"
+      "scraped_at": "2026-01-27T18:06:33.352509"
     },
     {
       "id": "peugeot_rifter_1_6_l_hdi_92ch",
@@ -17829,7 +17829,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:55.098057"
+      "scraped_at": "2026-01-27T18:06:33.451550"
     },
     {
       "id": "peugeot_expert_combi_2_0_l_hdi__9_places",
@@ -17874,7 +17874,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:55.429998"
+      "scraped_at": "2026-01-27T18:06:33.477928"
     },
     {
       "id": "peugeot_expert_2_0_l_hdi",
@@ -17919,7 +17919,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:55.688305"
+      "scraped_at": "2026-01-27T18:06:33.505987"
     },
     {
       "id": "peugeot_boxer_double_cabine_plateau_350_l2",
@@ -17964,7 +17964,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:55.885461"
+      "scraped_at": "2026-01-27T18:06:33.807040"
     },
     {
       "id": "peugeot_traveller_2_0_l_hdi__9_places",
@@ -18009,7 +18009,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:55.860462"
+      "scraped_at": "2026-01-27T18:06:33.775636"
     },
     {
       "id": "peugeot_2008_1_2_l_puretech_130_active_bva",
@@ -18054,7 +18054,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:55.955253"
+      "scraped_at": "2026-01-27T18:06:33.890601"
     },
     {
       "id": "peugeot_2008_1_2_l_puretech_130_allure_bva",
@@ -18099,7 +18099,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:55.829019"
+      "scraped_at": "2026-01-27T18:06:33.746657"
     },
     {
       "id": "peugeot_408_1_6_l_allure_eat8",
@@ -18144,7 +18144,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:55.922417"
+      "scraped_at": "2026-01-27T18:06:34.234871"
     },
     {
       "id": "peugeot_408_1_6_l_allure_pack_eat8",
@@ -18189,7 +18189,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:55.659992"
+      "scraped_at": "2026-01-27T18:06:34.263985"
     },
     {
       "id": "peugeot_landtrek_simple_cabine_1_9_l_diesel_4x2_benne_t_le_pli_e",
@@ -18234,7 +18234,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:55.751046"
+      "scraped_at": "2026-01-27T18:06:34.120879"
     },
     {
       "id": "peugeot_landtrek_simple_cabine_1_9_l_diesel_4x2",
@@ -18279,7 +18279,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:55.724761"
+      "scraped_at": "2026-01-27T18:06:34.158419"
     },
     {
       "id": "peugeot_landtrek_double_cabine_1_9_l_diesel_4x2",
@@ -18324,7 +18324,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:56.191006"
+      "scraped_at": "2026-01-27T18:06:34.196280"
     },
     {
       "id": "peugeot_landtrek_double_cabine_1_9_l_diesel_4x4_pro_plus",
@@ -18369,7 +18369,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:56.221715"
+      "scraped_at": "2026-01-27T18:06:34.294066"
     },
     {
       "id": "peugeot_partner_1_6_l_hdi_650_kg",
@@ -18414,7 +18414,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:56.545168"
+      "scraped_at": "2026-01-27T18:06:34.584645"
     },
     {
       "id": "peugeot_partner_1_6_l_hdi_1000_kg",
@@ -18459,7 +18459,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:56.718912"
+      "scraped_at": "2026-01-27T18:06:34.618174"
     },
     {
       "id": "peugeot_boxer_2_2_l_hdi_l2h2_11_5m3",
@@ -18504,7 +18504,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:56.486251"
+      "scraped_at": "2026-01-27T18:06:34.552661"
     },
     {
       "id": "peugeot_boxer_2_2_l_hdi_l3h2_13m3",
@@ -18549,7 +18549,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:56.571260"
+      "scraped_at": "2026-01-27T18:06:34.524396"
     },
     {
       "id": "porsche_taycan_cross_turismo_4",
@@ -18594,7 +18594,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:56.457403"
+      "scraped_at": "2026-01-27T18:06:34.993161"
     },
     {
       "id": "porsche_panamera_4_e_hybrid_panamera_4_e_hybrid",
@@ -18639,7 +18639,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:56.600223"
+      "scraped_at": "2026-01-27T18:06:34.849538"
     },
     {
       "id": "porsche_911_carrera",
@@ -18684,7 +18684,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:56.682935"
+      "scraped_at": "2026-01-27T18:06:35.068027"
     },
     {
       "id": "porsche_macan_electric_macan",
@@ -18729,7 +18729,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:56.516179"
+      "scraped_at": "2026-01-27T18:06:34.880625"
     },
     {
       "id": "porsche_macan_electric_macan_4",
@@ -18774,7 +18774,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:56.951762"
+      "scraped_at": "2026-01-27T18:06:35.025029"
     },
     {
       "id": "porsche_macan_electric_macan_4s",
@@ -18819,7 +18819,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:56.983845"
+      "scraped_at": "2026-01-27T18:06:34.961884"
     },
     {
       "id": "porsche_macan_electric_macan_turbo",
@@ -18864,7 +18864,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:57.444152"
+      "scraped_at": "2026-01-27T18:06:35.369583"
     },
     {
       "id": "porsche_cayenne_e_hybrid_cayenne_e_hybrid_black_edition",
@@ -18909,7 +18909,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:57.281389"
+      "scraped_at": "2026-01-27T18:06:35.301671"
     },
     {
       "id": "porsche_cayenne_e_hybrid_cayenne_s_e_hybrid",
@@ -18954,7 +18954,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:57.378589"
+      "scraped_at": "2026-01-27T18:06:35.335454"
     },
     {
       "id": "porsche_cayenne_electric_cayenne",
@@ -18999,7 +18999,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:57.410383"
+      "scraped_at": "2026-01-27T18:06:35.401392"
     },
     {
       "id": "porsche_cayenne_electric_cayenne_turbo",
@@ -19044,7 +19044,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:57.314908"
+      "scraped_at": "2026-01-27T18:06:35.704992"
     },
     {
       "id": "porsche_cayenne_e_hybrid_coup__cayenne_e_hybrid_coup__black_edition",
@@ -19089,7 +19089,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:57.346646"
+      "scraped_at": "2026-01-27T18:06:35.639666"
     },
     {
       "id": "porsche_cayenne_e_hybrid_coup__cayenne_s_e_hybrid_coup__black_edition",
@@ -19134,7 +19134,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:57.219087"
+      "scraped_at": "2026-01-27T18:06:35.671432"
     },
     {
       "id": "porsche_taycan_taycan",
@@ -19179,7 +19179,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:57.250972"
+      "scraped_at": "2026-01-27T18:06:35.502041"
     },
     {
       "id": "porsche_taycan_taycan_4s",
@@ -19224,7 +19224,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:57.779861"
+      "scraped_at": "2026-01-27T18:06:35.792814"
     },
     {
       "id": "renault_kwid_populaire_1_0_l",
@@ -19269,7 +19269,7 @@
       "is_new": false,
       "is_populaire": true,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:57.545212"
+      "scraped_at": "2026-01-27T18:06:35.849325"
     },
     {
       "id": "renault_megane_1_3_l_tce_140",
@@ -19314,7 +19314,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:57.838701"
+      "scraped_at": "2026-01-27T18:06:35.888179"
     },
     {
       "id": "renault_austral_1_3_l",
@@ -19359,7 +19359,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:58.156595"
+      "scraped_at": "2026-01-27T18:06:36.178036"
     },
     {
       "id": "renault_express_van_1_5_l_dci",
@@ -19404,7 +19404,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:58.228846"
+      "scraped_at": "2026-01-27T18:06:36.089678"
     },
     {
       "id": "renault_express_combi_1_5_l_dci",
@@ -19449,7 +19449,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:58.070924"
+      "scraped_at": "2026-01-27T18:06:35.915203"
     },
     {
       "id": "renault_clio_1_0_l_tce_100_bvm",
@@ -19494,7 +19494,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:58.258017"
+      "scraped_at": "2026-01-27T18:06:36.119965"
     },
     {
       "id": "renault_clio_1_0_l_tce_100_bva",
@@ -19539,7 +19539,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:58.289116"
+      "scraped_at": "2026-01-27T18:06:36.415274"
     },
     {
       "id": "renault_clio_1_0_l_tce_100_esprit_alpine_bva",
@@ -19584,7 +19584,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:58.100737"
+      "scraped_at": "2026-01-27T18:06:36.541929"
     },
     {
       "id": "renault_megane_sedan_1_3_l_tce_140",
@@ -19629,7 +19629,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:58.188135"
+      "scraped_at": "2026-01-27T18:06:36.478433"
     },
     {
       "id": "renault_megane_sedan_1_3_l_tce_140_bva",
@@ -19674,7 +19674,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:58.021254"
+      "scraped_at": "2026-01-27T18:06:36.448109"
     },
     {
       "id": "renault_master_2_3_l_8m3",
@@ -19719,7 +19719,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:58.316170"
+      "scraped_at": "2026-01-27T18:06:36.621344"
     },
     {
       "id": "renault_master_2_3_l_10_8_m3",
@@ -19764,7 +19764,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:58.383213"
+      "scraped_at": "2026-01-27T18:06:36.506056"
     },
     {
       "id": "renault_master_2_3_l_13_m3",
@@ -19809,7 +19809,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:58.609835"
+      "scraped_at": "2026-01-27T18:06:36.645843"
     },
     {
       "id": "seat_ibiza_1_0_l_mpi_reference",
@@ -19854,7 +19854,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:58.917339"
+      "scraped_at": "2026-01-27T18:06:36.878217"
     },
     {
       "id": "seat_ibiza_1_0_l_mpi_style",
@@ -19899,7 +19899,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:59.081973"
+      "scraped_at": "2026-01-27T18:06:36.736160"
     },
     {
       "id": "seat_ibiza_1_0_l_tsi_reference_bva",
@@ -19944,7 +19944,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:58.886235"
+      "scraped_at": "2026-01-27T18:06:36.676901"
     },
     {
       "id": "seat_ibiza_1_0_l_tsi__style_bva",
@@ -19989,7 +19989,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:59.051606"
+      "scraped_at": "2026-01-27T18:06:36.997129"
     },
     {
       "id": "seat_ibiza_1_0_l_tsi__fr_bva",
@@ -20034,7 +20034,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:58.785891"
+      "scraped_at": "2026-01-27T18:06:37.160125"
     },
     {
       "id": "seat_arona_1_0_tsi_style",
@@ -20079,7 +20079,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:59.116851"
+      "scraped_at": "2026-01-27T18:06:37.290426"
     },
     {
       "id": "seat_arona_1_0_tsi_xperience",
@@ -20124,7 +20124,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:58.955320"
+      "scraped_at": "2026-01-27T18:06:37.396998"
     },
     {
       "id": "seat_arona_1_0_tsi_fr",
@@ -20169,7 +20169,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:58.989360"
+      "scraped_at": "2026-01-27T18:06:37.324938"
     },
     {
       "id": "seat_leon_1_4_tsi_dynamic",
@@ -20214,7 +20214,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:59.022430"
+      "scraped_at": "2026-01-27T18:06:37.358172"
     },
     {
       "id": "seat_leon_1_4_tsi_fr_black_edition",
@@ -20259,7 +20259,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:59.147600"
+      "scraped_at": "2026-01-27T18:06:37.253201"
     },
     {
       "id": "seat_ateca_1_4_l_tsi_style",
@@ -20304,7 +20304,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:59.395255"
+      "scraped_at": "2026-01-27T18:06:37.541788"
     },
     {
       "id": "seat_ateca_1_4_l_tsi_fr",
@@ -20349,7 +20349,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:59.541702"
+      "scraped_at": "2026-01-27T18:06:37.443118"
     },
     {
       "id": "seat_ateca_1_4_l_tsi_fr_black_edition",
@@ -20394,7 +20394,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:59.701074"
+      "scraped_at": "2026-01-27T18:06:37.575648"
     },
     {
       "id": "skoda_fabia_1_0_l_mpi_essence",
@@ -20439,7 +20439,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:59.767210"
+      "scraped_at": "2026-01-27T18:06:37.811096"
     },
     {
       "id": "skoda_fabia_1_0_l_mpi_selection",
@@ -20484,7 +20484,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:59.880923"
+      "scraped_at": "2026-01-27T18:06:37.678426"
     },
     {
       "id": "skoda_fabia_1_0_l_mpi_monte_carlo",
@@ -20529,7 +20529,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:59.637707"
+      "scraped_at": "2026-01-27T18:06:37.995955"
     },
     {
       "id": "skoda_kushaq_1_0_tsi_ambition",
@@ -20574,7 +20574,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:59.736139"
+      "scraped_at": "2026-01-27T18:06:38.186584"
     },
     {
       "id": "skoda_kushaq_1_0_tsi_ambition_bva",
@@ -20619,7 +20619,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:59.802889"
+      "scraped_at": "2026-01-27T18:06:38.257110"
     },
     {
       "id": "skoda_kushaq_1_0_tsi_style_bva",
@@ -20664,7 +20664,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:59.845867"
+      "scraped_at": "2026-01-27T18:06:38.300850"
     },
     {
       "id": "skoda_scala_1_0_l_tsi_essence_dsg",
@@ -20709,7 +20709,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:59.666508"
+      "scraped_at": "2026-01-27T18:06:38.151378"
     },
     {
       "id": "skoda_scala_1_0_l_tsi_selection_dsg",
@@ -20754,7 +20754,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:53:59.909704"
+      "scraped_at": "2026-01-27T18:06:38.109945"
     },
     {
       "id": "skoda_scala_1_0_l_tsi_monte_carlo_dsg",
@@ -20799,7 +20799,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:00.140611"
+      "scraped_at": "2026-01-27T18:06:38.057104"
     },
     {
       "id": "skoda_kamiq_1_0_l_tsi_essence_dsg",
@@ -20844,7 +20844,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:00.330633"
+      "scraped_at": "2026-01-27T18:06:38.218690"
     },
     {
       "id": "skoda_kamiq_1_0_l_tsi_selection_dsg",
@@ -20889,7 +20889,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:00.587752"
+      "scraped_at": "2026-01-27T18:06:38.417261"
     },
     {
       "id": "skoda_kamiq_1_0_l_tsi_monte_carlo_dsg",
@@ -20934,7 +20934,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:00.554308"
+      "scraped_at": "2026-01-27T18:06:38.384005"
     },
     {
       "id": "skoda_octavia_1_4_tsi_essence_bva",
@@ -20979,7 +20979,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:00.654506"
+      "scraped_at": "2026-01-27T18:06:38.683217"
     },
     {
       "id": "skoda_octavia_1_4_tsi_selection_bva",
@@ -21024,7 +21024,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:00.486534"
+      "scraped_at": "2026-01-27T18:06:38.650992"
     },
     {
       "id": "skoda_octavia_1_4_tsi_sportline_bva",
@@ -21069,7 +21069,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:00.454933"
+      "scraped_at": "2026-01-27T18:06:38.714885"
     },
     {
       "id": "skoda_superb_1_5_tsi_essence_dsg",
@@ -21114,7 +21114,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:00.688815"
+      "scraped_at": "2026-01-27T18:06:38.759475"
     },
     {
       "id": "skoda_superb_1_5_tsi_selection_dsg",
@@ -21159,7 +21159,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:00.521766"
+      "scraped_at": "2026-01-27T18:06:38.983366"
     },
     {
       "id": "ssangyong_tivoli_1_5_t_ilovit_bva",
@@ -21204,7 +21204,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:00.623697"
+      "scraped_at": "2026-01-27T18:06:39.103233"
     },
     {
       "id": "ssangyong_korando_1_5_l_gdi_limited_bva",
@@ -21249,7 +21249,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:00.743635"
+      "scraped_at": "2026-01-27T18:06:39.197046"
     },
     {
       "id": "ssangyong_torres_1_5_l_t_gdi_4wd_bva",
@@ -21294,7 +21294,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:00.985617"
+      "scraped_at": "2026-01-27T18:06:39.062208"
     },
     {
       "id": "ssangyong_rexton_2_2_l_diesel_5_places_bva",
@@ -21339,7 +21339,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:01.092313"
+      "scraped_at": "2026-01-27T18:06:39.021979"
     },
     {
       "id": "ssangyong_musso_2_2_l_diesel_4wd_crm",
@@ -21384,7 +21384,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:01.401556"
+      "scraped_at": "2026-01-27T18:06:38.946546"
     },
     {
       "id": "ssangyong_musso_2_2_l_diesel_4wd_bva",
@@ -21429,7 +21429,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:01.431404"
+      "scraped_at": "2026-01-27T18:06:39.431169"
     },
     {
       "id": "suzuki_celerio_populaire_1_0_l_gl",
@@ -21474,7 +21474,7 @@
       "is_new": false,
       "is_populaire": true,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:01.559749"
+      "scraped_at": "2026-01-27T18:06:39.501313"
     },
     {
       "id": "suzuki_jimny_5_portes_1_5_l_4x4__glx_bva",
@@ -21519,7 +21519,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:01.313003"
+      "scraped_at": "2026-01-27T18:06:39.550603"
     },
     {
       "id": "suzuki_swift_1_2_l_gl",
@@ -21564,7 +21564,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:01.343366"
+      "scraped_at": "2026-01-27T18:06:39.581032"
     },
     {
       "id": "suzuki_swift_1_2_l_cvt_gl",
@@ -21609,7 +21609,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:01.464512"
+      "scraped_at": "2026-01-27T18:06:39.615871"
     },
     {
       "id": "suzuki_swift_1_2_l_glx",
@@ -21654,7 +21654,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:01.373334"
+      "scraped_at": "2026-01-27T18:06:39.849057"
     },
     {
       "id": "suzuki_swift_1_2_l_cvt_glx",
@@ -21699,7 +21699,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:01.266796"
+      "scraped_at": "2026-01-27T18:06:39.974919"
     },
     {
       "id": "suzuki_dzire_1_2_l_gl_",
@@ -21744,7 +21744,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:01.492304"
+      "scraped_at": "2026-01-27T18:06:39.877138"
     },
     {
       "id": "suzuki_dzire_1_2_l_glx",
@@ -21789,7 +21789,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:01.662008"
+      "scraped_at": "2026-01-27T18:06:39.905132"
     },
     {
       "id": "suzuki_dzire_1_2_l_cvt_gl_",
@@ -21834,7 +21834,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:01.804897"
+      "scraped_at": "2026-01-27T18:06:39.937239"
     },
     {
       "id": "suzuki_dzire_1_2_l_cvt_glx",
@@ -21879,7 +21879,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:01.955902"
+      "scraped_at": "2026-01-27T18:06:40.347715"
     },
     {
       "id": "suzuki_baleno_1_5_l_gl_bvm",
@@ -21924,7 +21924,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:02.224658"
+      "scraped_at": "2026-01-27T18:06:40.426324"
     },
     {
       "id": "suzuki_baleno_1_5_l_glx_bva",
@@ -21969,7 +21969,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:02.186729"
+      "scraped_at": "2026-01-27T18:06:40.213901"
     },
     {
       "id": "suzuki_ertiga_1_5_l_glx_7_places",
@@ -22014,7 +22014,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:02.107316"
+      "scraped_at": "2026-01-27T18:06:40.305148"
     },
     {
       "id": "suzuki_ertiga_1_5_l_glx_7_places_bva",
@@ -22059,7 +22059,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:02.264167"
+      "scraped_at": "2026-01-27T18:06:40.387901"
     },
     {
       "id": "suzuki_fronx_1_5_l_gl_bvm",
@@ -22104,7 +22104,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:02.147762"
+      "scraped_at": "2026-01-27T18:06:40.809990"
     },
     {
       "id": "suzuki_fronx_1_5_l_glx_bva",
@@ -22149,7 +22149,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:02.302799"
+      "scraped_at": "2026-01-27T18:06:40.694558"
     },
     {
       "id": "tata_super_ace_simple_cabine_1_4_l_turbo_diesel",
@@ -22194,7 +22194,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:02.033602"
+      "scraped_at": "2026-01-27T18:06:40.762191"
     },
     {
       "id": "tata_xenon_x2_simple_cabine_2_2l_turbo",
@@ -22239,7 +22239,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:02.065819"
+      "scraped_at": "2026-01-27T18:06:40.728129"
     },
     {
       "id": "tata_xenon_x2_double_cabine_4x2_2_2_l_turbo",
@@ -22284,7 +22284,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:02.335899"
+      "scraped_at": "2026-01-27T18:06:40.656116"
     },
     {
       "id": "tata_xenon_x2_double_cabine_4x4_2_2_l_turbo",
@@ -22329,7 +22329,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:02.564179"
+      "scraped_at": "2026-01-27T18:06:41.108780"
     },
     {
       "id": "toyota_yaris_hybride_1_5_l_cvt_france",
@@ -22374,7 +22374,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:02.636481"
+      "scraped_at": "2026-01-27T18:06:41.247492"
     },
     {
       "id": "toyota_corolla_sedan_1_6_l_cvt_active_bva",
@@ -22419,7 +22419,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:02.816569"
+      "scraped_at": "2026-01-27T18:06:41.077120"
     },
     {
       "id": "toyota_yaris_cross_hybride_1_5_l_cvt",
@@ -22464,7 +22464,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:02.944382"
+      "scraped_at": "2026-01-27T18:06:41.043690"
     },
     {
       "id": "toyota_corolla_sedan_hybride_1_8_l",
@@ -22509,7 +22509,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:03.038628"
+      "scraped_at": "2026-01-27T18:06:41.198957"
     },
     {
       "id": "toyota_rav_4_hybride_2_5_l",
@@ -22554,7 +22554,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:03.135134"
+      "scraped_at": "2026-01-27T18:06:41.640495"
     },
     {
       "id": "toyota_land_cruiser_76_4_2_l",
@@ -22599,7 +22599,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:02.996585"
+      "scraped_at": "2026-01-27T18:06:41.572685"
     },
     {
       "id": "toyota_fortuner_2_4_l_d_4d_7_places_bva",
@@ -22644,7 +22644,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:02.884662"
+      "scraped_at": "2026-01-27T18:06:41.520547"
     },
     {
       "id": "toyota_land_cruiser_79_4_2_l_diesel_4x4_simple_cabine",
@@ -22689,7 +22689,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:02.916332"
+      "scraped_at": "2026-01-27T18:06:41.284428"
     },
     {
       "id": "toyota_hilux_simple_cabine_2_4_l_diesel_d_4d_4x4",
@@ -22734,7 +22734,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:02.782744"
+      "scraped_at": "2026-01-27T18:06:41.478182"
     },
     {
       "id": "toyota_hiace_16_places_2_5_l_diesel",
@@ -22779,7 +22779,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:03.068431"
+      "scraped_at": "2026-01-27T18:06:41.677201"
     },
     {
       "id": "toyota_coaster_4_2_l_diesel_23_places",
@@ -22824,7 +22824,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:03.164323"
+      "scraped_at": "2026-01-27T18:06:41.871842"
     },
     {
       "id": "toyota_hiace_van_3_0_l_diesel",
@@ -22869,7 +22869,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:03.395025"
+      "scraped_at": "2026-01-27T18:06:42.026311"
     },
     {
       "id": "toyota_prado_2_8_l_tx_business_bva",
@@ -22914,7 +22914,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:03.467245"
+      "scraped_at": "2026-01-27T18:06:42.060594"
     },
     {
       "id": "toyota_prado_2_8_l_wx_adventure_bva",
@@ -22959,7 +22959,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:03.548460"
+      "scraped_at": "2026-01-27T18:06:41.996625"
     },
     {
       "id": "toyota_land_cruiser_300_3_5_l_v6_bi_turbo_essence_4wd_vx",
@@ -23004,7 +23004,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:03.578406"
+      "scraped_at": "2026-01-27T18:06:41.899813"
     },
     {
       "id": "toyota_land_cruiser_300_3_3_l_v6_bi_turbo_diesel_4wd_vx",
@@ -23049,7 +23049,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:03.747941"
+      "scraped_at": "2026-01-27T18:06:42.307000"
     },
     {
       "id": "toyota_hilux_double_cabine_2_4_l_diesel_d_4d_4x4",
@@ -23094,7 +23094,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:03.710408"
+      "scraped_at": "2026-01-27T18:06:42.342618"
     },
     {
       "id": "toyota_hilux_double_cabine_2_4_l_diesel_d_4d_4x4_bva",
@@ -23139,7 +23139,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:03.901208"
+      "scraped_at": "2026-01-27T18:06:42.467081"
     },
     {
       "id": "volkswagen_polo_1_0_l_tsi_drive",
@@ -23184,7 +23184,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:03.862594"
+      "scraped_at": "2026-01-27T18:06:42.422441"
     },
     {
       "id": "volkswagen_virtus_1_0_l_tsi_confortline",
@@ -23229,7 +23229,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:03.789777"
+      "scraped_at": "2026-01-27T18:06:42.385755"
     },
     {
       "id": "volkswagen_virtus_1_0_l_tsi_highline_bva",
@@ -23274,7 +23274,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:03.827075"
+      "scraped_at": "2026-01-27T18:06:42.841383"
     },
     {
       "id": "volkswagen_virtus_1_0_l_tsi_topline_bva",
@@ -23319,7 +23319,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:04.182954"
+      "scraped_at": "2026-01-27T18:06:42.660672"
     },
     {
       "id": "volkswagen_t_cross_1_0_l_confortline",
@@ -23364,7 +23364,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:03.944956"
+      "scraped_at": "2026-01-27T18:06:42.706878"
     },
     {
       "id": "volkswagen_t_cross_1_0_l_highline_bva",
@@ -23409,7 +23409,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:04.266045"
+      "scraped_at": "2026-01-27T18:06:42.746965"
     },
     {
       "id": "volkswagen_t_cross_1_0_l_topline_bva",
@@ -23454,7 +23454,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:04.306842"
+      "scraped_at": "2026-01-27T18:06:42.882151"
     },
     {
       "id": "volkswagen_golf_8_1_4_l_tsi_drive",
@@ -23499,7 +23499,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:04.773781"
+      "scraped_at": "2026-01-27T18:06:43.258215"
     },
     {
       "id": "volkswagen_golf_8_1_4_l_tsi_life",
@@ -23544,7 +23544,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:04.556745"
+      "scraped_at": "2026-01-27T18:06:42.925039"
     },
     {
       "id": "volkswagen_golf_8_1_4_l_tsi_r_line",
@@ -23589,7 +23589,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:04.599714"
+      "scraped_at": "2026-01-27T18:06:43.174809"
     },
     {
       "id": "volkswagen_tiguan_1_4_l_tsi_life",
@@ -23634,7 +23634,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:04.643347"
+      "scraped_at": "2026-01-27T18:06:43.219785"
     },
     {
       "id": "volkswagen_tiguan_1_4_l_tsi_exclusive",
@@ -23679,7 +23679,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:04.689206"
+      "scraped_at": "2026-01-27T18:06:43.128655"
     },
     {
       "id": "volkswagen_tiguan_1_4_l_tsi_r_line",
@@ -23724,7 +23724,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:04.735463"
+      "scraped_at": "2026-01-27T18:06:43.310126"
     },
     {
       "id": "volkswagen_amarok_2_0_l_tdi_170_ch_4x4_life_bva",
@@ -23769,7 +23769,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:04.808648"
+      "scraped_at": "2026-01-27T18:06:43.496401"
     },
     {
       "id": "volkswagen_amarok_2_0_l_tdi_210_ch_4x4_aventura_bva",
@@ -23814,7 +23814,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:05.171060"
+      "scraped_at": "2026-01-27T18:06:43.719295"
     },
     {
       "id": "volvo_ex30_single_motor_core",
@@ -23859,7 +23859,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:04.925103"
+      "scraped_at": "2026-01-27T18:06:43.641987"
     },
     {
       "id": "volvo_ex30_single_motor_extended_range_plus",
@@ -23904,7 +23904,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:04.846080"
+      "scraped_at": "2026-01-27T18:06:43.675521"
     },
     {
       "id": "volvo_ex30_twin_motor_ultra",
@@ -23949,7 +23949,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:05.765743"
+      "scraped_at": "2026-01-27T18:06:43.546723"
     },
     {
       "id": "volvo_xc40_2_0_l_plus_dark",
@@ -23994,7 +23994,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:05.693086"
+      "scraped_at": "2026-01-27T18:06:44.071097"
     },
     {
       "id": "volvo_xc40_2_0_l_ultimate_dark",
@@ -24039,7 +24039,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:05.659058"
+      "scraped_at": "2026-01-27T18:06:44.111702"
     },
     {
       "id": "volvo_xc40_2_0_l_black_edition",
@@ -24084,7 +24084,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:05.542950"
+      "scraped_at": "2026-01-27T18:06:43.953995"
     },
     {
       "id": "volvo_ec40_single_motor_ultra",
@@ -24129,7 +24129,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:05.731451"
+      "scraped_at": "2026-01-27T18:06:44.038473"
     },
     {
       "id": "volvo_ec40_twin_motor_performance_ultra_black_edition",
@@ -24174,7 +24174,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:05.477011"
+      "scraped_at": "2026-01-27T18:06:43.994758"
     },
     {
       "id": "volvo_xc60_2_0_l_t8_recharge_ultra_dark",
@@ -24219,7 +24219,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:05.511391"
+      "scraped_at": "2026-01-27T18:06:44.147467"
     },
     {
       "id": "volvo_xc60_2_0_l_t8_recharge_ultra_black_edition",
@@ -24264,7 +24264,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:05.576376"
+      "scraped_at": "2026-01-27T18:06:44.500400"
     },
     {
       "id": "volvo_xc90_2_0_l_recharge_ultra_bright",
@@ -24309,7 +24309,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:05.618436"
+      "scraped_at": "2026-01-27T18:06:44.357378"
     },
     {
       "id": "volvo_xc90_2_0_l_recharge_ultra_black_edition",
@@ -24354,7 +24354,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:06.403693"
+      "scraped_at": "2026-01-27T18:06:44.387756"
     },
     {
       "id": "wallyscar_annibal_2_5_l_diesel_4x2",
@@ -24399,7 +24399,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:06.131986"
+      "scraped_at": "2026-01-27T18:06:44.420011"
     },
     {
       "id": "wallyscar_annibal_2_5_l_diesel_4x4",
@@ -24444,7 +24444,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:06.307288"
+      "scraped_at": "2026-01-27T18:06:44.810692"
     },
     {
       "id": "wallyscar_annibal_xxl_2_3_l_turbo_diesel_4x4_bva",
@@ -24489,7 +24489,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:06.345702"
+      "scraped_at": "2026-01-27T18:06:44.775679"
     },
     {
       "id": "wallyscar_annibal_xxl_2_0_l_turbo_essence_4x4_bva",
@@ -24534,7 +24534,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "scraped_at": "2026-01-27T17:54:06.274085"
+      "scraped_at": "2026-01-27T18:06:44.736897"
     }
   ]
 }

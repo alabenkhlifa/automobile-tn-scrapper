@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-01-27T17:54:29.923286",
+  "scraped_at": "2026-01-27T18:07:09.888875",
   "stats": {
     "pages_scraped": 5,
     "listings_found": 60,
@@ -75,7 +75,7 @@
       "governorate": "Tunis",
       "seller_phone": "55 355 766",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:23.540907"
+      "scraped_at": "2026-01-27T18:07:03.199909"
     },
     {
       "id": "119230",
@@ -155,7 +155,7 @@
       "governorate": "Tunis",
       "seller_phone": "55 355 766",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:24.461164"
+      "scraped_at": "2026-01-27T18:07:04.106666"
     },
     {
       "id": "120197",
@@ -235,7 +235,7 @@
       "governorate": "Tunis",
       "seller_phone": "29 810 654",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:24.597412"
+      "scraped_at": "2026-01-27T18:07:03.956500"
     },
     {
       "id": "121788",
@@ -280,7 +280,7 @@
       "governorate": "Sfax",
       "seller_phone": "27 181 238",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:24.335496"
+      "scraped_at": "2026-01-27T18:07:04.251145"
     },
     {
       "id": "122528",
@@ -313,7 +313,7 @@
       "governorate": "Sousse",
       "seller_phone": "55 589 535",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:24.527933"
+      "scraped_at": "2026-01-27T18:07:04.320177"
     },
     {
       "id": "122527",
@@ -346,7 +346,7 @@
       "governorate": "Sousse",
       "seller_phone": "55 589 535",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:24.394896"
+      "scraped_at": "2026-01-27T18:07:03.849292"
     },
     {
       "id": "122063",
@@ -379,7 +379,7 @@
       "governorate": "Sousse",
       "seller_phone": "55 589 535",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:24.044391"
+      "scraped_at": "2026-01-27T18:07:04.046222"
     },
     {
       "id": "122817",
@@ -472,7 +472,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:24.116016"
+      "scraped_at": "2026-01-27T18:07:04.006534"
     },
     {
       "id": "119471",
@@ -563,7 +563,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 200 330",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:24.265626"
+      "scraped_at": "2026-01-27T18:07:04.179056"
     },
     {
       "id": "122816",
@@ -607,7 +607,7 @@
       "governorate": "Nabeul",
       "seller_phone": "99 434 206",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:24.644464"
+      "scraped_at": "2026-01-27T18:07:04.429808"
     },
     {
       "id": "122679",
@@ -682,7 +682,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:24.166909"
+      "scraped_at": "2026-01-27T18:07:03.731379"
     },
     {
       "id": "122678",
@@ -783,7 +783,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:24.913480"
+      "scraped_at": "2026-01-27T18:07:04.595913"
     },
     {
       "id": "122677",
@@ -854,7 +854,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:25.015443"
+      "scraped_at": "2026-01-27T18:07:04.909706"
     },
     {
       "id": "118015",
@@ -918,7 +918,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:25.408667"
+      "scraped_at": "2026-01-27T18:07:05.034077"
     },
     {
       "id": "106073",
@@ -1012,7 +1012,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:25.609748"
+      "scraped_at": "2026-01-27T18:07:05.179691"
     },
     {
       "id": "79830",
@@ -1102,7 +1102,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:25.785973"
+      "scraped_at": "2026-01-27T18:07:05.327088"
     },
     {
       "id": "119568",
@@ -1181,7 +1181,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:25.715788"
+      "scraped_at": "2026-01-27T18:07:05.489246"
     },
     {
       "id": "116476",
@@ -1260,7 +1260,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:25.287615"
+      "scraped_at": "2026-01-27T18:07:05.255621"
     },
     {
       "id": "103089",
@@ -1354,7 +1354,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:25.465355"
+      "scraped_at": "2026-01-27T18:07:04.968744"
     },
     {
       "id": "107279",
@@ -1444,7 +1444,7 @@
       "governorate": "Tunis",
       "seller_phone": "98 214 267",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:25.534610"
+      "scraped_at": "2026-01-27T18:07:05.104823"
     },
     {
       "id": "122552",
@@ -1514,7 +1514,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:25.343074"
+      "scraped_at": "2026-01-27T18:07:05.420595"
     },
     {
       "id": "122061",
@@ -1590,7 +1590,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:26.044907"
+      "scraped_at": "2026-01-27T18:07:05.547923"
     },
     {
       "id": "122060",
@@ -1670,7 +1670,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:25.863027"
+      "scraped_at": "2026-01-27T18:07:05.823379"
     },
     {
       "id": "122059",
@@ -1767,7 +1767,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:26.305115"
+      "scraped_at": "2026-01-27T18:07:05.885272"
     },
     {
       "id": "122058",
@@ -1842,7 +1842,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:26.713063"
+      "scraped_at": "2026-01-27T18:07:06.152147"
     },
     {
       "id": "122005",
@@ -1941,7 +1941,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:26.533136"
+      "scraped_at": "2026-01-27T18:07:06.388549"
     },
     {
       "id": "122004",
@@ -2036,7 +2036,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:26.783684"
+      "scraped_at": "2026-01-27T18:07:06.534769"
     },
     {
       "id": "121665",
@@ -2133,7 +2133,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:26.458932"
+      "scraped_at": "2026-01-27T18:07:06.685027"
     },
     {
       "id": "121088",
@@ -2223,7 +2223,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:26.387675"
+      "scraped_at": "2026-01-27T18:07:06.206294"
     },
     {
       "id": "120558",
@@ -2325,7 +2325,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:26.852083"
+      "scraped_at": "2026-01-27T18:07:06.462412"
     },
     {
       "id": "120544",
@@ -2423,7 +2423,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:26.925013"
+      "scraped_at": "2026-01-27T18:07:06.609510"
     },
     {
       "id": "120474",
@@ -2523,7 +2523,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:26.643858"
+      "scraped_at": "2026-01-27T18:07:06.277204"
     },
     {
       "id": "118779",
@@ -2620,7 +2620,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:27.005208"
+      "scraped_at": "2026-01-27T18:07:06.962004"
     },
     {
       "id": "118772",
@@ -2716,7 +2716,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:27.279448"
+      "scraped_at": "2026-01-27T18:07:07.034735"
     },
     {
       "id": "118648",
@@ -2815,7 +2815,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:27.381856"
+      "scraped_at": "2026-01-27T18:07:07.153446"
     },
     {
       "id": "118155",
@@ -2908,7 +2908,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:27.635933"
+      "scraped_at": "2026-01-27T18:07:07.204842"
     },
     {
       "id": "116899",
@@ -3005,7 +3005,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:27.821878"
+      "scraped_at": "2026-01-27T18:07:07.691633"
     },
     {
       "id": "116623",
@@ -3105,7 +3105,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:28.037679"
+      "scraped_at": "2026-01-27T18:07:07.541284"
     },
     {
       "id": "116615",
@@ -3208,7 +3208,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:28.226129"
+      "scraped_at": "2026-01-27T18:07:07.874902"
     },
     {
       "id": "116065",
@@ -3275,7 +3275,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:27.745786"
+      "scraped_at": "2026-01-27T18:07:07.760132"
     },
     {
       "id": "116063",
@@ -3369,7 +3369,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:27.889892"
+      "scraped_at": "2026-01-27T18:07:07.469605"
     },
     {
       "id": "114588",
@@ -3470,7 +3470,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:27.963790"
+      "scraped_at": "2026-01-27T18:07:07.617241"
     },
     {
       "id": "113840",
@@ -3569,7 +3569,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:28.153116"
+      "scraped_at": "2026-01-27T18:07:08.316425"
     },
     {
       "id": "112852",
@@ -3656,7 +3656,7 @@
       "governorate": "Sfax",
       "seller_phone": "22 500 300",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:28.295872"
+      "scraped_at": "2026-01-27T18:07:08.177728"
     },
     {
       "id": "122815",
@@ -3720,7 +3720,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 431 431",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:28.499808"
+      "scraped_at": "2026-01-27T18:07:08.245684"
     },
     {
       "id": "122814",
@@ -3796,7 +3796,7 @@
       "governorate": "Tunis",
       "seller_phone": "22 682 051",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:28.549840"
+      "scraped_at": "2026-01-27T18:07:08.128527"
     },
     {
       "id": "121694",
@@ -3880,7 +3880,7 @@
       "governorate": "Tunis",
       "seller_phone": "99 752 220",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:28.821132"
+      "scraped_at": "2026-01-27T18:07:08.598310"
     },
     {
       "id": "122813",
@@ -3941,7 +3941,7 @@
       "governorate": "Ariana",
       "seller_phone": "23 660 066",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:29.099919"
+      "scraped_at": "2026-01-27T18:07:08.704475"
     },
     {
       "id": "122812",
@@ -3993,7 +3993,7 @@
       "governorate": "Gabès",
       "seller_phone": "55 142 657",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:28.871940"
+      "scraped_at": "2026-01-27T18:07:08.643725"
     },
     {
       "id": "122751",
@@ -4026,7 +4026,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:29.245690"
+      "scraped_at": "2026-01-27T18:07:08.820865"
     },
     {
       "id": "122279",
@@ -4059,7 +4059,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:28.985973"
+      "scraped_at": "2026-01-27T18:07:08.890852"
     },
     {
       "id": "121307",
@@ -4164,7 +4164,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:29.320040"
+      "scraped_at": "2026-01-27T18:07:08.965069"
     },
     {
       "id": "121302",
@@ -4197,7 +4197,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:28.917840"
+      "scraped_at": "2026-01-27T18:07:09.224118"
     },
     {
       "id": "121299",
@@ -4230,7 +4230,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:29.177777"
+      "scraped_at": "2026-01-27T18:07:09.414210"
     },
     {
       "id": "121282",
@@ -4263,7 +4263,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:29.389296"
+      "scraped_at": "2026-01-27T18:07:09.282611"
     },
     {
       "id": "121281",
@@ -4296,7 +4296,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:29.456728"
+      "scraped_at": "2026-01-27T18:07:09.349872"
     },
     {
       "id": "121280",
@@ -4329,7 +4329,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:29.741380"
+      "scraped_at": "2026-01-27T18:07:09.699966"
     },
     {
       "id": "120352",
@@ -4362,7 +4362,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:29.704296"
+      "scraped_at": "2026-01-27T18:07:09.663097"
     },
     {
       "id": "120292",
@@ -4395,7 +4395,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:29.904153"
+      "scraped_at": "2026-01-27T18:07:09.869746"
     },
     {
       "id": "120279",
@@ -4428,7 +4428,7 @@
       "governorate": "Nabeul",
       "seller_phone": "21 912 839",
       "listing_date": "",
-      "scraped_at": "2026-01-27T17:54:29.835742"
+      "scraped_at": "2026-01-27T18:07:09.801092"
     }
   ]
 }
