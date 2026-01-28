@@ -405,6 +405,7 @@ class AutoScout24Scraper:
         self.rate_limit_timestamps: List[float] = []
 
         self._country_delay: Dict[str, float] = {}  # current delay per country
+        self._stop_country: Dict[str, bool] = {}  # stop flag per country
 
     # -------------------------------------------------------------------------
     # HTTP / Fetch helpers
@@ -450,7 +451,15 @@ class AutoScout24Scraper:
 
         Raises RateLimitStop on 429 to signal the caller to stop scraping.
         """
+        # Check if scraping was already stopped for this country
+        if self._stop_country.get(country, False):
+            raise RateLimitStop(country)
+
         async with self.semaphore:
+            # Check again after acquiring semaphore (another task may have set the flag)
+            if self._stop_country.get(country, False):
+                raise RateLimitStop(country)
+
             for attempt in range(1, self.MAX_RETRIES + 1):
                 try:
                     delay = self._get_country_delay(country) + random.uniform(0, self.MAX_JITTER)
@@ -462,6 +471,8 @@ class AutoScout24Scraper:
                     if response.status_code == 429:
                         self._record_request(country, "rate_limited")
                         self.rate_limit_timestamps.append(time.monotonic())
+                        # Set stop flag to prevent other concurrent tasks from making requests
+                        self._stop_country[country] = True
                         log.warning("[%s] Got 429 on %s – stopping scrape for this country", country.upper(), url)
                         raise RateLimitStop(country)
 
@@ -1478,6 +1489,9 @@ class AutoScout24Scraper:
             log.error("Unknown country code: %s", country)
             return []
 
+        # Reset stop flag for this country
+        self._stop_country[country] = False
+
         if self.per_model:
             return await self._scrape_country_per_model(client, country)
 
@@ -1532,11 +1546,14 @@ class AutoScout24Scraper:
         results = await asyncio.gather(*tasks, return_exceptions=True)
 
         cars: List[AutoScout24Car] = []
+        rate_limit_logged = False
         for result in results:
             if isinstance(result, AutoScout24Car):
                 cars.append(result)
             elif isinstance(result, RateLimitStop):
-                log.warning("[%s] Rate limited during detail fetch – proceeding with collected data", country.upper())
+                if not rate_limit_logged:
+                    log.warning("[%s] Rate limited during detail fetch – proceeding with collected data", country.upper())
+                    rate_limit_logged = True
             elif isinstance(result, Exception):
                 log.error("Error fetching detail: %s", result)
 
