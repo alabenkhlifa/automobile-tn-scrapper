@@ -652,7 +652,7 @@ class AutoScout24Scraper:
                 # Must contain the country's detail path and NOT be a dealer/garage link
                 if f"/{detail_path}/" in href:
                     excluded = ("/garages/", "/professional/", "/haendler/",
-                                "/concessionnaire/", "/concessionario/")
+                                "/concessionnaire/", "/concessionario/", "/concessionari/")
                     if not any(ex in href for ex in excluded):
                         link = a
                         break
