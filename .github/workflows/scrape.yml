@@ -22,6 +22,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Install Playwright browsers
+        run: playwright install chromium
+
       - name: Get day of week
         id: day
         run: echo "day=$(date -u +%u)" >> "$GITHUB_OUTPUT"
@@ -36,7 +39,7 @@ jobs:
         timeout-minutes: 30
 
       - name: Run AutoScout24 scraper (DE, FR, IT, BE - 500/market)
-        run: python autoscout24_scraper.py --countries de,fr,it,be --max-listings 500
+        run: python autoscout24_scraper.py --countries de,fr,it,be --max-listings 500 --use-playwright
         timeout-minutes: 120
 
       - name: Commit updated data
