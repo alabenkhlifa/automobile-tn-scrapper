@@ -153,7 +153,7 @@ COUNTRY_PATH_PREFIX: Dict[str, str] = {
 # Localized path for detail/offer pages per country
 COUNTRY_DETAIL_PATH: Dict[str, str] = {
     "de": "angebote",
-    "fr": "annonces",
+    "fr": "offres",
     "it": "annunci",
     "be": "annonces",  # Belgian site uses French
 }
