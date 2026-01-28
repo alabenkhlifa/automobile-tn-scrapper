@@ -150,6 +150,14 @@ COUNTRY_PATH_PREFIX: Dict[str, str] = {
     "be": "/fr",
 }
 
+# Localized path for detail/offer pages per country
+COUNTRY_DETAIL_PATH: Dict[str, str] = {
+    "de": "angebote",
+    "fr": "annonces",
+    "it": "annunci",
+    "be": "annonces",  # Belgian site uses French
+}
+
 ACCEPT_LANGUAGE_MAP: Dict[str, str] = {
     "de": "de-DE,de;q=0.9,en;q=0.5",
     "fr": "fr-FR,fr;q=0.9,en;q=0.5",
@@ -624,7 +632,9 @@ class AutoScout24Scraper:
             guid = article.get("data-guid", "")
             if guid:
                 card["id"] = guid
-                card["listing_url"] = f"https://www.{domain}/angebote/{guid}"
+                detail_path = COUNTRY_DETAIL_PATH.get(country, "angebote")
+                prefix = COUNTRY_PATH_PREFIX.get(country, "")
+                card["listing_url"] = f"https://www.{domain}{prefix}/{detail_path}/{guid}"
             else:
                 # Fallback: find any link
                 link = article.find("a", href=True)
