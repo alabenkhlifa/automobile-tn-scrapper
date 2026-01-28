@@ -8,18 +8,15 @@ Features:
 - JSON-LD extraction with HTML spec table and regex fallback
 - Rate limiting with semaphore, jitter, and exponential backoff
 - User-Agent rotation and Accept-Language matching per country
-- Optional Playwright fallback for JS-rendered pages
 - Per-country and combined JSON/CSV output
 
 Run:
     python autoscout24_scraper.py
     python autoscout24_scraper.py --countries de,fr --condition used --max-listings 200
     python autoscout24_scraper.py --makes bmw,audi --min-price 5000 --max-price 30000
-    python autoscout24_scraper.py --use-playwright
 
 Requirements:
     pip install httpx beautifulsoup4 lxml
-    pip install playwright  # optional, for --use-playwright
 """
 
 import asyncio
@@ -390,7 +387,6 @@ class AutoScout24Scraper:
         makes: List[str] = None,
         min_price: Optional[int] = None,
         max_price: Optional[int] = None,
-        use_playwright: bool = False,
         per_model: bool = False,
         per_model_limit: int = 10,
         max_age: Optional[int] = None,
@@ -402,7 +398,6 @@ class AutoScout24Scraper:
         self.makes = makes
         self.min_price = min_price
         self.max_price = max_price
-        self.use_playwright = use_playwright
         self.per_model = per_model
         self.per_model_limit = per_model_limit
 
@@ -427,7 +422,6 @@ class AutoScout24Scraper:
         self._semaphore_value = self.MAX_CONCURRENT
         self.cars: List[AutoScout24Car] = []
         self.cars_by_country: Dict[str, List[AutoScout24Car]] = {}
-        self.playwright_browser = None
 
         # Request metrics
         self.request_stats: Dict[str, int] = {
@@ -550,36 +544,8 @@ class AutoScout24Scraper:
 
         return None
 
-    async def _fetch_playwright(self, url: str, country: str = "de") -> Optional[str]:
-        """Fetch a page using Playwright for JS-rendered content."""
-        if self.playwright_browser is None:
-            return None
-
-        try:
-            context = await self.playwright_browser.new_context(
-                user_agent=random.choice(USER_AGENTS),
-                locale=ACCEPT_LANGUAGE_MAP.get(country, "en-US").split(",")[0],
-                viewport={"width": 1920, "height": 1080},
-                java_script_enabled=True,
-            )
-            page = await context.new_page()
-
-            # Disable webdriver detection
-            await page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-
-            await page.goto(url, wait_until="domcontentloaded", timeout=30000)
-            await asyncio.sleep(1.5 + random.uniform(0, 0.5))
-            content = await page.content()
-            await context.close()
-            return content
-        except Exception as exc:
-            log.error("Playwright error on %s: %s", url, exc)
-            return None
-
     async def fetch(self, client: httpx.AsyncClient, url: str, country: str = "de") -> Optional[str]:
-        """Unified fetch: use Playwright if enabled, otherwise httpx."""
-        if self.use_playwright and self.playwright_browser is not None:
-            return await self._fetch_playwright(url, country)
+        """Fetch a URL using httpx."""
         return await self._fetch(client, url, country)
 
     # -------------------------------------------------------------------------
@@ -1653,12 +1619,6 @@ class AutoScout24Scraper:
             log.info("Price: %s", price_range)
         if self.per_model:
             log.info("Mode: Per-model (%d listings/model)", self.per_model_limit)
-        if self.use_playwright:
-            log.info("Mode: Playwright (headless browser)")
-
-        # Initialize Playwright if requested
-        if self.use_playwright:
-            await self._init_playwright()
 
         async with httpx.AsyncClient(timeout=30.0) as client:
             for i, country in enumerate(self.countries):
@@ -1676,32 +1636,6 @@ class AutoScout24Scraper:
                     # Reset semaphore for fresh start
                     self._semaphore_value = self.MAX_CONCURRENT
                     self.semaphore = asyncio.Semaphore(self._semaphore_value)
-
-        # Cleanup Playwright
-        if self.use_playwright:
-            await self._close_playwright()
-
-    async def _init_playwright(self):
-        """Initialize Playwright browser if available."""
-        try:
-            from playwright.async_api import async_playwright
-            pw = await async_playwright().start()
-            self.playwright_browser = await pw.chromium.launch(headless=True)
-            log.info("Playwright browser launched")
-        except ImportError:
-            log.warning("Playwright not installed, falling back to httpx")
-            self.use_playwright = False
-        except Exception as exc:
-            log.warning("Failed to launch Playwright: %s — falling back to httpx", exc)
-            self.use_playwright = False
-
-    async def _close_playwright(self):
-        """Close Playwright browser."""
-        if self.playwright_browser:
-            try:
-                await self.playwright_browser.close()
-            except Exception:
-                pass
 
     # -------------------------------------------------------------------------
     # Output: JSON
@@ -1894,10 +1828,6 @@ async def main():
         help="Comma-separated: petrol,diesel,electric,hybrid,plug-in hybrid,hydrogen",
     )
     parser.add_argument(
-        "--use-playwright", action="store_true",
-        help="Use Playwright for JS rendering (anti-bot fallback)",
-    )
-    parser.add_argument(
         "--per-model", action="store_true",
         help="Discover all makes/models from taxonomy and scrape per model group",
     )
@@ -1926,7 +1856,6 @@ async def main():
         makes=makes,
         min_price=args.min_price,
         max_price=args.max_price,
-        use_playwright=args.use_playwright,
         per_model=args.per_model,
         per_model_limit=args.per_model_limit,
         max_age=args.max_age,
