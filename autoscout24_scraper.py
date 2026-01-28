@@ -1546,11 +1546,14 @@ class AutoScout24Scraper:
         results = await asyncio.gather(*tasks, return_exceptions=True)
 
         cars: List[AutoScout24Car] = []
+        rate_limit_logged = False
         for result in results:
             if isinstance(result, AutoScout24Car):
                 cars.append(result)
             elif isinstance(result, RateLimitStop):
-                log.warning("[%s] Rate limited during detail fetch – proceeding with collected data", country.upper())
+                if not rate_limit_logged:
+                    log.warning("[%s] Rate limited during detail fetch – proceeding with collected data", country.upper())
+                    rate_limit_logged = True
             elif isinstance(result, Exception):
                 log.error("Error fetching detail: %s", result)
 
