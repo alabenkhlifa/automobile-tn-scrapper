@@ -628,26 +628,30 @@ class AutoScout24Scraper:
         for article in articles:
             card: Dict = {"country": country}
 
-            # --- ID and URL from data-guid ---
+            # --- ID and URL: prefer full link URL to avoid 308 redirects ---
             guid = article.get("data-guid", "")
-            if guid:
+            link = article.find("a", href=True)
+
+            if link:
+                # Use full URL from link (includes slug, avoids redirect)
+                href = link["href"]
+                if href.startswith("/"):
+                    href = f"https://www.{domain}{href}"
+                card["listing_url"] = href
+                # Extract ID from URL or use data-guid
+                id_match = re.search(r"([a-f0-9-]{36})", href)
+                if id_match:
+                    card["id"] = id_match.group(1)
+                elif guid:
+                    card["id"] = guid
+            elif guid:
+                # Fallback: construct URL from guid (may cause 308 redirect)
                 card["id"] = guid
                 detail_path = COUNTRY_DETAIL_PATH.get(country, "angebote")
                 prefix = COUNTRY_PATH_PREFIX.get(country, "")
                 card["listing_url"] = f"https://www.{domain}{prefix}/{detail_path}/{guid}"
             else:
-                # Fallback: find any link
-                link = article.find("a", href=True)
-                if link:
-                    href = link["href"]
-                    if href.startswith("/"):
-                        href = f"https://www.{domain}{href}"
-                    card["listing_url"] = href
-                    id_match = re.search(r"([a-f0-9-]{36})", href)
-                    if id_match:
-                        card["id"] = id_match.group(1)
-                else:
-                    continue
+                continue
 
             # --- Structured data attributes (most reliable) ---
             data_make = article.get("data-make", "").strip()
