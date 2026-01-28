@@ -641,7 +641,21 @@ class AutoScout24Scraper:
 
             # --- ID and URL: prefer full link URL to avoid 308 redirects ---
             guid = article.get("data-guid", "")
-            link = article.find("a", href=True)
+
+            # Find the actual car listing link, not dealer/garage links
+            # Car listings use: /angebote/ (DE), /offres/ (FR/BE), /annunci/ (IT)
+            # Exclude: /garages/, /professional/, /haendler/, /concessionnaire/
+            detail_path = COUNTRY_DETAIL_PATH.get(country, "angebote")
+            link = None
+            for a in article.find_all("a", href=True):
+                href = a["href"]
+                # Must contain the country's detail path and NOT be a dealer/garage link
+                if f"/{detail_path}/" in href:
+                    excluded = ("/garages/", "/professional/", "/haendler/",
+                                "/concessionnaire/", "/concessionario/")
+                    if not any(ex in href for ex in excluded):
+                        link = a
+                        break
 
             if link:
                 # Use full URL from link (includes slug, avoids redirect)
