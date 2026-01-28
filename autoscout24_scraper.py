@@ -289,6 +289,16 @@ FUEL_TYPE_NORMALIZE: Dict[str, str] = {
 
 ALLOWED_FUEL_TYPES = {"petrol", "diesel", "electric", "hybrid", "plug-in hybrid", "hybrid_rechargeable"}
 
+# Fuel type codes for URL filtering (comma-separated in fuel= param)
+FUEL_TYPE_URL_CODES = {
+    "petrol": "B",
+    "diesel": "D",
+    "electric": "E",
+    "hybrid": "2",
+    "plug-in hybrid": "3",
+    "hydrogen": "H",
+}
+
 MAKE_NORMALIZE = {
     "mercedes-benz": "Mercedes-Benz",
     "mercedes": "Mercedes-Benz",
@@ -383,6 +393,8 @@ class AutoScout24Scraper:
         use_playwright: bool = False,
         per_model: bool = False,
         per_model_limit: int = 10,
+        max_age: Optional[int] = None,
+        fuel_types: Optional[str] = None,
     ):
         self.countries = countries or ["de"]
         self.condition = condition
@@ -393,6 +405,23 @@ class AutoScout24Scraper:
         self.use_playwright = use_playwright
         self.per_model = per_model
         self.per_model_limit = per_model_limit
+
+        # Max age filter (converted to fregfrom year)
+        self.max_age = max_age
+        self.fregfrom = None
+        if max_age is not None:
+            self.fregfrom = datetime.now().year - max_age
+
+        # Fuel type URL filter codes
+        self.fuel_type_codes = None
+        if fuel_types:
+            codes = []
+            for ft in fuel_types.split(","):
+                ft = ft.strip().lower()
+                if ft in FUEL_TYPE_URL_CODES:
+                    codes.append(FUEL_TYPE_URL_CODES[ft])
+            if codes:
+                self.fuel_type_codes = ",".join(codes)
 
         self.semaphore = asyncio.Semaphore(self.MAX_CONCURRENT)
         self._semaphore_value = self.MAX_CONCURRENT
@@ -579,6 +608,14 @@ class AutoScout24Scraper:
             params.append(f"pricefrom={self.min_price}")
         if self.max_price is not None:
             params.append(f"priceto={self.max_price}")
+
+        # Year filter (first registration from)
+        if self.fregfrom:
+            params.append(f"fregfrom={self.fregfrom}")
+
+        # Fuel type filter (comma-separated codes)
+        if self.fuel_type_codes:
+            params.append(f"fuel={self.fuel_type_codes}")
 
         return f"{base}?{'&'.join(params)}"
 
@@ -1472,6 +1509,10 @@ class AutoScout24Scraper:
                     params.append(f"pricefrom={self.min_price}")
                 if self.max_price is not None:
                     params.append(f"priceto={self.max_price}")
+                if self.fregfrom:
+                    params.append(f"fregfrom={self.fregfrom}")
+                if self.fuel_type_codes:
+                    params.append(f"fuel={self.fuel_type_codes}")
                 prefix = COUNTRY_PATH_PREFIX.get(country, "")
                 url = f"https://www.{domain}{prefix}/lst?{'&'.join(params)}"
 
@@ -1845,6 +1886,14 @@ async def main():
         help="Maximum price EUR",
     )
     parser.add_argument(
+        "--max-age", type=int, default=None,
+        help="Maximum car age in years (e.g., 8 means 2018+ in 2026)",
+    )
+    parser.add_argument(
+        "--fuel-types", type=str, default=None,
+        help="Comma-separated: petrol,diesel,electric,hybrid,plug-in hybrid,hydrogen",
+    )
+    parser.add_argument(
         "--use-playwright", action="store_true",
         help="Use Playwright for JS rendering (anti-bot fallback)",
     )
@@ -1880,6 +1929,8 @@ async def main():
         use_playwright=args.use_playwright,
         per_model=args.per_model,
         per_model_limit=args.per_model_limit,
+        max_age=args.max_age,
+        fuel_types=args.fuel_types,
     )
 
     await scraper.scrape_all()
