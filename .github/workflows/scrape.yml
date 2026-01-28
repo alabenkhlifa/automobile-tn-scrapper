@@ -36,7 +36,7 @@ jobs:
         timeout-minutes: 30
 
       - name: Run AutoScout24 scraper (DE, FR, IT, BE - 500/market)
-        run: python autoscout24_scraper.py --countries de,fr,it,be --max-listings 500
+        run: python autoscout24_scraper.py --countries de,fr,it,be --max-listings 500 --max-age 8 --max-price 100000 --fuel-types "petrol,diesel,electric,hybrid,plug-in hybrid"
         timeout-minutes: 120
 
       - name: Commit updated data
