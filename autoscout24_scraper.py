@@ -54,6 +54,10 @@ logging.basicConfig(
 )
 log = logging.getLogger("autoscout24")
 
+# Suppress noisy HTTP client logs by default
+logging.getLogger("httpx").setLevel(logging.WARNING)
+logging.getLogger("httpcore").setLevel(logging.WARNING)
+
 
 # =============================================================================
 # DATA MODEL
@@ -362,8 +366,8 @@ def parse_eur_price(text: str) -> Optional[int]:
 class AutoScout24Scraper:
     """Async multi-country scraper for AutoScout24 car listings."""
 
-    MAX_CONCURRENT = 5
-    BASE_DELAY = 0.5
+    MAX_CONCURRENT = 3  # Reduced from 5 to avoid rate limiting
+    BASE_DELAY = 0.8    # Increased from 0.5 for more conservative pacing
     MAX_JITTER = 0.3
     MAX_RETRIES = 3
     LISTINGS_PER_PAGE = 20  # AutoScout24 default page size
@@ -471,9 +475,14 @@ class AutoScout24Scraper:
                     if response.status_code == 429:
                         self._record_request(country, "rate_limited")
                         self.rate_limit_timestamps.append(time.monotonic())
+                        # Reduce concurrency dynamically for future requests
+                        if self._semaphore_value > 1:
+                            self._semaphore_value -= 1
+                            self.semaphore = asyncio.Semaphore(self._semaphore_value)
+                            log.warning("[%s] Rate limited - reducing concurrency to %d", country.upper(), self._semaphore_value)
                         # Set stop flag to prevent other concurrent tasks from making requests
                         self._stop_country[country] = True
-                        log.warning("[%s] Got 429 on %s – stopping scrape for this country", country.upper(), url)
+                        log.warning("[%s] Rate limited - stopping scrape for this country", country.upper())
                         raise RateLimitStop(country)
 
                     if response.status_code == 403:
@@ -1365,7 +1374,6 @@ class AutoScout24Scraper:
 
         # 1. Fuel type filter — keep only standard fuel types
         cars = [c for c in cars if c.fuel_type in ALLOWED_FUEL_TYPES]
-        log.info("[%s] Fuel filter: %d → %d", country.upper(), before, len(cars))
 
         # 2. Price outlier filter — drop < €500 (placeholder/errors)
         cars = [c for c in cars if c.price_eur is not None and c.price_eur >= 500]
@@ -1415,7 +1423,8 @@ class AutoScout24Scraper:
             return True
         cars = [c for c in cars if mileage_sane(c)]
 
-        log.info("[%s] After all cleaning: %d → %d cars", country.upper(), before, len(cars))
+        if before != len(cars):
+            log.info("[%s] Cleaned: %d → %d cars", country.upper(), before, len(cars))
         return cars
 
     async def _scrape_country_per_model(self, client: httpx.AsyncClient, country: str) -> List[AutoScout24Car]:
@@ -1546,14 +1555,15 @@ class AutoScout24Scraper:
                         if collected >= self.max_listings:
                             break
 
-                log.info("[%s] Page %d: %d new listings (total: %d)", country.upper(), page, new_cards, collected)
+                # Log progress every 50 items or at completion
+                if collected % 50 == 0 or collected >= self.max_listings or new_cards == 0:
+                    pct = collected * 100 // self.max_listings if self.max_listings > 0 else 100
+                    log.info("[%s] Progress: %d/%d (%d%%)", country.upper(), collected, self.max_listings, pct)
 
                 if new_cards == 0:
                     break  # No new results, stop paging
 
                 page += 1
-
-        log.info("[%s] Collected %d listing cards, fetching details...", country.upper(), len(all_cards))
 
         # Fetch detail pages concurrently
         tasks = [self._fetch_detail(client, card) for card in all_cards]
@@ -1591,39 +1601,44 @@ class AutoScout24Scraper:
 
     async def scrape_all(self):
         """Run the full scraping pipeline across all configured countries."""
-        print("=" * 70)
-        print("AUTOSCOUT24 MULTI-COUNTRY CAR SCRAPER")
-        print("=" * 70)
-        print(f"Started:    {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-        print(f"Countries:  {', '.join(c.upper() for c in self.countries)}")
-        print(f"Condition:  {self.condition}")
-        print(f"Max/country:{self.max_listings}")
+        log.info("=" * 58)
+        countries_str = ", ".join(c.upper() for c in self.countries)
+        log.info("AUTOSCOUT24 SCRAPER | %s | Max: %d/country", countries_str, self.max_listings)
+        log.info("=" * 58)
         if self.makes:
-            print(f"Makes:      {', '.join(self.makes)}")
+            log.info("Makes: %s", ", ".join(self.makes))
         if self.min_price or self.max_price:
             price_range = f"{self.min_price or '...'} - {self.max_price or '...'} EUR"
-            print(f"Price:      {price_range}")
+            log.info("Price: %s", price_range)
         if self.per_model:
-            print(f"Mode:       Per-model ({self.per_model_limit} listings/model)")
+            log.info("Mode: Per-model (%d listings/model)", self.per_model_limit)
         if self.use_playwright:
-            print("Mode:       Playwright (headless browser)")
-        print()
+            log.info("Mode: Playwright (headless browser)")
 
         # Initialize Playwright if requested
         if self.use_playwright:
             await self._init_playwright()
 
         async with httpx.AsyncClient(timeout=30.0) as client:
-            for country in self.countries:
+            for i, country in enumerate(self.countries):
+                log.info("[%s] Starting scrape...", country.upper())
                 cars = await self._scrape_country(client, country)
                 self.cars_by_country[country] = cars
                 self.cars.extend(cars)
+                log.info("[%s] Complete: %d cars", country.upper(), len(cars))
+
+                # Cooldown between countries if any 429s occurred
+                country_stats = self.request_stats_by_country.get(country, {})
+                if country_stats.get("rate_limited", 0) > 0 and i < len(self.countries) - 1:
+                    log.info("Cooldown: waiting 15s before next country...")
+                    await asyncio.sleep(15)
+                    # Reset semaphore for fresh start
+                    self._semaphore_value = self.MAX_CONCURRENT
+                    self.semaphore = asyncio.Semaphore(self._semaphore_value)
 
         # Cleanup Playwright
         if self.use_playwright:
             await self._close_playwright()
-
-        print(f"\nTotal cars scraped: {len(self.cars)}")
 
     async def _init_playwright(self):
         """Initialize Playwright browser if available."""
@@ -1668,7 +1683,7 @@ class AutoScout24Scraper:
             }
             with open(filename, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
-            print(f"Saved {len(cars)} cars to {filename}")
+            log.info("Saved %d cars to %s", len(cars), filename)
 
         # Combined file (if multiple countries)
         if len(self.countries) > 1:
@@ -1683,7 +1698,7 @@ class AutoScout24Scraper:
             }
             with open(filename, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
-            print(f"Saved {len(self.cars)} cars to {filename}")
+            log.info("Saved %d cars to %s", len(self.cars), filename)
 
     def _build_stats(self, countries: List[str]) -> dict:
         """Build statistics dict for the given countries."""
@@ -1716,7 +1731,7 @@ class AutoScout24Scraper:
     def save_csv(self):
         """Save per-country CSV files."""
         if not self.cars:
-            print("No cars to save to CSV")
+            log.warning("No cars to save to CSV")
             return
 
         fieldnames = list(AutoScout24Car.__dataclass_fields__.keys())
@@ -1735,7 +1750,7 @@ class AutoScout24Scraper:
                         if isinstance(row.get(key), list):
                             row[key] = "; ".join(row[key])
                     writer.writerow(row)
-            print(f"Saved {len(cars)} cars to {filename}")
+            log.info("Saved %d cars to %s", len(cars), filename)
 
         # Combined CSV
         if len(self.countries) > 1:
@@ -1749,7 +1764,7 @@ class AutoScout24Scraper:
                         if isinstance(row.get(key), list):
                             row[key] = "; ".join(row[key])
                     writer.writerow(row)
-            print(f"Saved {len(self.cars)} cars to {filename}")
+            log.info("Saved %d cars to %s", len(self.cars), filename)
 
     # -------------------------------------------------------------------------
     # Summary
@@ -1757,48 +1772,25 @@ class AutoScout24Scraper:
 
     def print_summary(self):
         """Print a human-readable summary of scraping results."""
-        print("\n" + "=" * 70)
-        print("SUMMARY")
-        print("=" * 70)
+        log.info("=" * 58)
+        log.info("SUMMARY")
+        log.info("=" * 58)
 
         stats = self._build_stats(self.countries)
-        print(f"\nTotal cars: {stats['total']}")
 
-        # Per-country breakdown
-        if stats["by_country"]:
-            print("\nBy country:")
-            for country, count in sorted(stats["by_country"].items()):
-                print(f"   {country.upper()}: {count}")
+        # Per-country breakdown in one line
+        country_parts = [f"{c.upper()}:{stats['by_country'].get(c, 0)}" for c in self.countries]
+        log.info("SUMMARY: %d cars | %s", stats['total'], " ".join(country_parts))
 
         # By condition
         if stats["by_condition"]:
-            print("\nBy condition:")
-            for cond, count in sorted(stats["by_condition"].items()):
-                print(f"   {cond}: {count}")
-
-        # Top makes
-        if stats["by_make"]:
-            print("\nTop makes:")
-            for make, count in list(stats["by_make"].items())[:15]:
-                # Price range for this make
-                make_prices = [c.price_eur for c in self.cars if c.make == make and c.price_eur]
-                if make_prices:
-                    print(f"   {make}: {count} cars ({min(make_prices):,} - {max(make_prices):,} EUR)")
-                else:
-                    print(f"   {make}: {count} cars")
+            cond_parts = [f"{cond}:{count}" for cond, count in sorted(stats["by_condition"].items())]
+            log.info("Condition: %s", " ".join(cond_parts))
 
         # Overall price range
         all_prices = [c.price_eur for c in self.cars if c.price_eur]
         if all_prices:
-            print(f"\nPrices: {min(all_prices):,} - {max(all_prices):,} EUR (avg: {sum(all_prices) // len(all_prices):,})")
-
-        # Per-country price ranges
-        if len(self.countries) > 1:
-            print("\nPrice ranges by country:")
-            for country in self.countries:
-                prices = [c.price_eur for c in self.cars_by_country.get(country, []) if c.price_eur]
-                if prices:
-                    print(f"   {country.upper()}: {min(prices):,} - {max(prices):,} EUR (avg: {sum(prices) // len(prices):,})")
+            log.info("Prices: %s - %s EUR (avg: %s)", f"{min(all_prices):,}", f"{max(all_prices):,}", f"{sum(all_prices) // len(all_prices):,}")
 
         # Fuel type breakdown
         fuel_counts: Dict[str, int] = {}
@@ -1806,9 +1798,8 @@ class AutoScout24Scraper:
             ft = car.fuel_type or "unknown"
             fuel_counts[ft] = fuel_counts.get(ft, 0) + 1
         if fuel_counts:
-            print("\nBy fuel type:")
-            for ft, count in sorted(fuel_counts.items(), key=lambda x: -x[1]):
-                print(f"   {ft}: {count}")
+            fuel_parts = [f"{ft}:{count}" for ft, count in sorted(fuel_counts.items(), key=lambda x: -x[1])]
+            log.info("Fuel: %s", " ".join(fuel_parts))
 
     def print_rate_limit_report(self):
         """Print a rate-limit and request metrics report."""
@@ -1816,49 +1807,11 @@ class AutoScout24Scraper:
         if total == 0:
             return
 
-        success = self.request_stats["success"]
         rate_limited = self.request_stats["rate_limited"]
-        blocked = self.request_stats["blocked"]
-        errors = self.request_stats["errors"]
 
-        pct = lambda n: f"{n / total * 100:.1f}%" if total else "0%"
-
-        print("\n" + "=" * 70)
-        print("RATE LIMIT REPORT")
-        print("=" * 70)
-        print(f"  Total requests:       {total}")
-        print(f"  Success (2xx):        {success} ({pct(success)})")
-        print(f"  Rate limited (429):   {rate_limited} ({pct(rate_limited)})")
-        print(f"  Blocked (403):        {blocked} ({pct(blocked)})")
-        print(f"  Errors:               {errors} ({pct(errors)})")
-
-        # Average delay between requests
-        if len(self.request_timestamps) >= 2:
-            ts = sorted(self.request_timestamps)
-            deltas = [ts[i + 1] - ts[i] for i in range(len(ts) - 1)]
-            avg_delay = sum(deltas) / len(deltas)
-            print(f"  Avg delay between requests: {avg_delay:.2f}s")
-
-        # Per-country breakdown
-        if len(self.request_stats_by_country) > 1:
-            print("\n  Per-country breakdown:")
-            for country, stats in sorted(self.request_stats_by_country.items()):
-                ct = stats["total"]
-                print(f"    {country.upper()}: {ct} total, "
-                      f"{stats['success']} ok, "
-                      f"{stats['rate_limited']} 429, "
-                      f"{stats['blocked']} 403, "
-                      f"{stats['errors']} err")
-
-        # Auto-tuning suggestion
-        ratio_429 = rate_limited / total if total else 0
-        print()
-        if ratio_429 == 0:
-            print(f"  → You can likely increase MAX_CONCURRENT or reduce BASE_DELAY")
-        elif ratio_429 < 0.05:
-            print(f"  → Current settings are near the limit ({rate_limited} 429s detected)")
-        else:
-            print(f"  → Reduce MAX_CONCURRENT or increase BASE_DELAY ({rate_limited} 429s = {ratio_429 * 100:.1f}%)")
+        # Compact rate limit summary
+        pct = f"{rate_limited / total * 100:.1f}%" if total else "0%"
+        log.info("Rate limits: %d/%d (%s)", rate_limited, total, pct)
 
 
 # =============================================================================
@@ -1903,7 +1856,16 @@ async def main():
         "--per-model-limit", type=int, default=10,
         help="Max listings per model group in per-model mode (default: 10)",
     )
+    parser.add_argument(
+        "--verbose", "-v", action="store_true",
+        help="Show HTTP request logs",
+    )
     args = parser.parse_args()
+
+    # Enable verbose HTTP logging if requested
+    if args.verbose:
+        logging.getLogger("httpx").setLevel(logging.INFO)
+        logging.getLogger("httpcore").setLevel(logging.INFO)
 
     countries = [c.strip().lower() for c in args.countries.split(",")]
     makes = [m.strip().lower() for m in args.makes.split(",")] if args.makes else None
@@ -1925,8 +1887,7 @@ async def main():
     scraper.save_csv()
     scraper.print_summary()
     scraper.print_rate_limit_report()
-
-    print("\nDone!")
+    log.info("=" * 58)
 
 
 if __name__ == "__main__":
