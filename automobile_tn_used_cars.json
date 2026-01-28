@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-01-28T21:10:20.292946",
+  "scraped_at": "2026-01-28T21:42:39.024005",
   "stats": {
     "pages_scraped": 5,
     "listings_found": 60,
@@ -10,6 +10,82 @@
   },
   "total": 60,
   "cars": [
+    {
+      "id": "105914",
+      "brand": "Opel",
+      "model": "Opel Calibra",
+      "full_name": "Opel Calibra",
+      "url": "https://www.automobile.tn/fr/occasion/opel/calibra/105914",
+      "price_tnd": 46000,
+      "price_evaluation": "",
+      "registration_date": "1994-03-01",
+      "year": 1994,
+      "mileage_km": 76000,
+      "ownership": "2ème main",
+      "condition": "Très bon",
+      "cv_fiscal": 8,
+      "cv_din": null,
+      "fuel_type": "Essence",
+      "transmission": "Manuelle",
+      "drivetrain": "Intégrale",
+      "body_type": "Coupé",
+      "color_exterior": "Vert",
+      "color_interior": "Noir",
+      "upholstery": "Cuir intégral",
+      "doors": 3,
+      "seats": 5,
+      "equipment_safety": [],
+      "equipment_interior": [],
+      "equipment_exterior": [],
+      "equipment_functional": [],
+      "governorate": "Ariana",
+      "seller_phone": "98 143 847",
+      "listing_date": "",
+      "scraped_at": "2026-01-28T21:42:32.700345"
+    },
+    {
+      "id": "117181",
+      "brand": "Toyota",
+      "model": "Toyota Land Cruiser",
+      "full_name": "Toyota Land Cruiser GR",
+      "url": "https://www.automobile.tn/fr/occasion/toyota/land-cruiser/117181",
+      "price_tnd": 56000,
+      "price_evaluation": "",
+      "registration_date": "1996-07-01",
+      "year": 1996,
+      "mileage_km": 300000,
+      "ownership": "3 et +",
+      "condition": "Normal",
+      "cv_fiscal": 17,
+      "cv_din": null,
+      "fuel_type": "Diesel",
+      "transmission": "Manuelle",
+      "drivetrain": "Intégrale",
+      "body_type": "SUV",
+      "color_exterior": "Vert",
+      "color_interior": "Gris",
+      "upholstery": "Similicuir",
+      "doors": 5,
+      "seats": 5,
+      "equipment_safety": [],
+      "equipment_interior": [
+        "Android Auto",
+        "Autoradio",
+        "Bluetooth"
+      ],
+      "equipment_exterior": [
+        "Caméra de recul",
+        "Radar de recul"
+      ],
+      "equipment_functional": [
+        "Direction assistée",
+        "Fermeture centralisée"
+      ],
+      "governorate": "Ariana",
+      "seller_phone": "98 143 847",
+      "listing_date": "",
+      "scraped_at": "2026-01-28T21:42:33.546342"
+    },
     {
       "id": "122856",
       "brand": "Mercedes-Benz",
@@ -76,7 +152,7 @@
       "governorate": "Ariana",
       "seller_phone": "27 386 309",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:14.083705"
+      "scraped_at": "2026-01-28T21:42:33.502081"
     },
     {
       "id": "117335",
@@ -146,7 +222,7 @@
       "governorate": "Ariana",
       "seller_phone": "24 400 250",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:14.642148"
+      "scraped_at": "2026-01-28T21:42:33.996491"
     },
     {
       "id": "121353",
@@ -219,7 +295,7 @@
       "governorate": "Tunis",
       "seller_phone": "97 422 800",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:14.572706"
+      "scraped_at": "2026-01-28T21:42:33.807362"
     },
     {
       "id": "121657",
@@ -297,7 +373,7 @@
       "governorate": "Tunis",
       "seller_phone": "97 422 800",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:14.470112"
+      "scraped_at": "2026-01-28T21:42:33.922658"
     },
     {
       "id": "122855",
@@ -378,7 +454,7 @@
       "governorate": "Gabès",
       "seller_phone": "98 203 560",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:14.399176"
+      "scraped_at": "2026-01-28T21:42:33.685120"
     },
     {
       "id": "118394",
@@ -459,7 +535,7 @@
       "governorate": "Tunis",
       "seller_phone": "22 421 244",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:14.330595"
+      "scraped_at": "2026-01-28T21:42:33.589133"
     },
     {
       "id": "122703",
@@ -528,7 +604,7 @@
       "governorate": "Kasserine",
       "seller_phone": "29 687 101",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:14.942062"
+      "scraped_at": "2026-01-28T21:42:33.861922"
     },
     {
       "id": "122221",
@@ -619,7 +695,7 @@
       "governorate": "Nabeul",
       "seller_phone": "24 309 250",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:15.047691"
+      "scraped_at": "2026-01-28T21:42:33.741562"
     },
     {
       "id": "122220",
@@ -709,7 +785,7 @@
       "governorate": "Nabeul",
       "seller_phone": "24 309 250",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:14.994491"
+      "scraped_at": "2026-01-28T21:42:33.214629"
     },
     {
       "id": "120925",
@@ -805,7 +881,7 @@
       "governorate": "Nabeul",
       "seller_phone": "24 309 250",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:15.095596"
+      "scraped_at": "2026-01-28T21:42:34.047760"
     },
     {
       "id": "122784",
@@ -852,7 +928,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:14.893147"
+      "scraped_at": "2026-01-28T21:42:34.291578"
     },
     {
       "id": "122778",
@@ -899,7 +975,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:15.157208"
+      "scraped_at": "2026-01-28T21:42:34.488764"
     },
     {
       "id": "107786",
@@ -999,7 +1075,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:15.504944"
+      "scraped_at": "2026-01-28T21:42:34.795623"
     },
     {
       "id": "121858",
@@ -1040,7 +1116,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:15.567141"
+      "scraped_at": "2026-01-28T21:42:34.857603"
     },
     {
       "id": "116122",
@@ -1088,7 +1164,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:15.641807"
+      "scraped_at": "2026-01-28T21:42:35.071302"
     },
     {
       "id": "113603",
@@ -1169,7 +1245,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:15.407498"
+      "scraped_at": "2026-01-28T21:42:34.632085"
     },
     {
       "id": "122670",
@@ -1227,7 +1303,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:16.026050"
+      "scraped_at": "2026-01-28T21:42:34.733864"
     },
     {
       "id": "116712",
@@ -1292,7 +1368,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:15.980071"
+      "scraped_at": "2026-01-28T21:42:34.688144"
     },
     {
       "id": "115975",
@@ -1353,7 +1429,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:16.164935"
+      "scraped_at": "2026-01-28T21:42:34.928992"
     },
     {
       "id": "116473",
@@ -1409,7 +1485,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:16.271063"
+      "scraped_at": "2026-01-28T21:42:35.001309"
     },
     {
       "id": "113992",
@@ -1479,7 +1555,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:15.914729"
+      "scraped_at": "2026-01-28T21:42:35.172640"
     },
     {
       "id": "119268",
@@ -1542,7 +1618,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:16.092253"
+      "scraped_at": "2026-01-28T21:42:35.452885"
     },
     {
       "id": "118197",
@@ -1587,7 +1663,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:16.565671"
+      "scraped_at": "2026-01-28T21:42:35.503003"
     },
     {
       "id": "119609",
@@ -1653,7 +1729,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:16.688144"
+      "scraped_at": "2026-01-28T21:42:36.196498"
     },
     {
       "id": "118168",
@@ -1710,7 +1786,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:16.522812"
+      "scraped_at": "2026-01-28T21:42:35.907774"
     },
     {
       "id": "120327",
@@ -1771,7 +1847,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:16.614313"
+      "scraped_at": "2026-01-28T21:42:35.759562"
     },
     {
       "id": "120514",
@@ -1830,7 +1906,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:17.035509"
+      "scraped_at": "2026-01-28T21:42:36.125359"
     },
     {
       "id": "115453",
@@ -1881,7 +1957,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:17.264168"
+      "scraped_at": "2026-01-28T21:42:35.807454"
     },
     {
       "id": "121162",
@@ -1939,7 +2015,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:17.215549"
+      "scraped_at": "2026-01-28T21:42:35.858370"
     },
     {
       "id": "119033",
@@ -2010,7 +2086,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:16.963016"
+      "scraped_at": "2026-01-28T21:42:35.972027"
     },
     {
       "id": "121686",
@@ -2056,7 +2132,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:17.164387"
+      "scraped_at": "2026-01-28T21:42:36.027563"
     },
     {
       "id": "120010",
@@ -2095,7 +2171,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:17.085930"
+      "scraped_at": "2026-01-28T21:42:36.517985"
     },
     {
       "id": "121848",
@@ -2168,7 +2244,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:17.742901"
+      "scraped_at": "2026-01-28T21:42:36.472110"
     },
     {
       "id": "121417",
@@ -2221,7 +2297,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:17.591087"
+      "scraped_at": "2026-01-28T21:42:36.918492"
     },
     {
       "id": "120689",
@@ -2287,7 +2363,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:17.531622"
+      "scraped_at": "2026-01-28T21:42:37.221236"
     },
     {
       "id": "122019",
@@ -2341,7 +2417,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:17.661443"
+      "scraped_at": "2026-01-28T21:42:37.150662"
     },
     {
       "id": "110176",
@@ -2410,7 +2486,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:18.239968"
+      "scraped_at": "2026-01-28T21:42:36.787196"
     },
     {
       "id": "117616",
@@ -2465,7 +2541,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:18.161922"
+      "scraped_at": "2026-01-28T21:42:37.080263"
     },
     {
       "id": "120516",
@@ -2509,7 +2585,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:18.304531"
+      "scraped_at": "2026-01-28T21:42:37.283533"
     },
     {
       "id": "118886",
@@ -2560,7 +2636,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:18.371670"
+      "scraped_at": "2026-01-28T21:42:36.860159"
     },
     {
       "id": "121254",
@@ -2616,7 +2692,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:18.055809"
+      "scraped_at": "2026-01-28T21:42:37.010391"
     },
     {
       "id": "120528",
@@ -2688,7 +2764,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:17.995424"
+      "scraped_at": "2026-01-28T21:42:37.532745"
     },
     {
       "id": "121529",
@@ -2759,7 +2835,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:18.684642"
+      "scraped_at": "2026-01-28T21:42:37.599671"
     },
     {
       "id": "118424",
@@ -2807,7 +2883,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:18.417837"
+      "scraped_at": "2026-01-28T21:42:37.851158"
     },
     {
       "id": "116714",
@@ -2875,7 +2951,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:18.757833"
+      "scraped_at": "2026-01-28T21:42:38.133901"
     },
     {
       "id": "121416",
@@ -2935,7 +3011,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:18.864556"
+      "scraped_at": "2026-01-28T21:42:38.262186"
     },
     {
       "id": "118806",
@@ -2993,7 +3069,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:19.307808"
+      "scraped_at": "2026-01-28T21:42:38.191886"
     },
     {
       "id": "121590",
@@ -3049,7 +3125,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:19.498075"
+      "scraped_at": "2026-01-28T21:42:37.948505"
     },
     {
       "id": "120859",
@@ -3101,7 +3177,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:19.358746"
+      "scraped_at": "2026-01-28T21:42:38.007288"
     },
     {
       "id": "119301",
@@ -3153,7 +3229,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:19.140324"
+      "scraped_at": "2026-01-28T21:42:38.065632"
     },
     {
       "id": "120869",
@@ -3218,7 +3294,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:19.425833"
+      "scraped_at": "2026-01-28T21:42:38.338096"
     },
     {
       "id": "120513",
@@ -3266,7 +3342,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:19.253548"
+      "scraped_at": "2026-01-28T21:42:38.441678"
     },
     {
       "id": "118268",
@@ -3342,7 +3418,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:19.202548"
+      "scraped_at": "2026-01-28T21:42:38.534760"
     },
     {
       "id": "121247",
@@ -3409,7 +3485,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:19.771502"
+      "scraped_at": "2026-01-28T21:42:38.613667"
     },
     {
       "id": "122307",
@@ -3471,7 +3547,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:19.846690"
+      "scraped_at": "2026-01-28T21:42:38.890242"
     },
     {
       "id": "121251",
@@ -3524,7 +3600,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:19.605937"
+      "scraped_at": "2026-01-28T21:42:39.004928"
     },
     {
       "id": "117675",
@@ -3579,7 +3655,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:20.163055"
+      "scraped_at": "2026-01-28T21:42:38.796682"
     },
     {
       "id": "121253",
@@ -3644,115 +3720,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:20.211564"
-    },
-    {
-      "id": "121833",
-      "brand": "KIA",
-      "model": "KIA Sportage",
-      "full_name": "KIA Sportage",
-      "url": "https://www.automobile.tn/fr/occasion/kia/sportage/121833",
-      "price_tnd": 118000,
-      "price_evaluation": "",
-      "registration_date": "2023-11-01",
-      "year": 2023,
-      "mileage_km": 45000,
-      "ownership": "1ère main",
-      "condition": "Très bon",
-      "cv_fiscal": 10,
-      "cv_din": null,
-      "fuel_type": "Hybride essence",
-      "transmission": "Automatique",
-      "drivetrain": "Intégrale",
-      "body_type": "SUV",
-      "color_exterior": "Gris argent",
-      "color_interior": "Noir",
-      "upholstery": "Cuir intégral",
-      "doors": 5,
-      "seats": 5,
-      "equipment_safety": [],
-      "equipment_interior": [],
-      "equipment_exterior": [],
-      "equipment_functional": [],
-      "governorate": "Tunis",
-      "seller_phone": "92 829 999",
-      "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:20.274917"
-    },
-    {
-      "id": "122679",
-      "brand": "Volvo",
-      "model": "Volvo EX30",
-      "full_name": "Volvo EX30",
-      "url": "https://www.automobile.tn/fr/occasion/volvo/ex30/122679",
-      "price_tnd": 109000,
-      "price_evaluation": "",
-      "registration_date": "2025-11-01",
-      "year": 2025,
-      "mileage_km": 0,
-      "ownership": "1ère main",
-      "condition": "Très bon",
-      "cv_fiscal": 5,
-      "cv_din": null,
-      "fuel_type": "Electrique",
-      "transmission": "Automatique",
-      "drivetrain": "Propulsion",
-      "body_type": "SUV",
-      "color_exterior": "Blanc",
-      "color_interior": "Autre",
-      "upholstery": "Tissu",
-      "doors": 4,
-      "seats": 5,
-      "equipment_safety": [
-        "ABS",
-        "Airbags frontaux",
-        "Airbags latéraux",
-        "Airbags rideaux",
-        "Alarme anti-intrusion",
-        "Anti-démarrage électronique",
-        "Anti-patinage",
-        "Contrôle de pression des pneus",
-        "Fixations ISOFIX",
-        "Pneumatiques runflat",
-        "Radiateur tropicalisé"
-      ],
-      "equipment_interior": [
-        "Accoudoir avant",
-        "Android Auto",
-        "Apple Carplay",
-        "Autoradio CD/Mp3",
-        "Bluetooth",
-        "Connectivité Aux, usb, iPod",
-        "Volant/levier de vitesse en cuir"
-      ],
-      "equipment_exterior": [
-        "Caméra de recul",
-        "Feux à LED",
-        "Jantes en alliage",
-        "Lave Phares",
-        "Peinture métallisée",
-        "Phares Full LED",
-        "Phares au xénon",
-        "Radar de recul",
-        "Vitres teintées"
-      ],
-      "equipment_functional": [
-        "Accès sans clé",
-        "Allumage automatique des feux",
-        "Bouton Start & Stop",
-        "Climatisation automatique",
-        "Direction assistée",
-        "Détecteur de pluie",
-        "Fermeture centralisée",
-        "Ordinateur de bord",
-        "Rétroviseurs rabattables",
-        "Rétroviseurs électriques",
-        "Vitres électriques"
-      ],
-      "governorate": "Tunis",
-      "seller_phone": "98 214 267",
-      "listing_date": "",
-      "scraped_at": "2026-01-28T21:10:20.106025"
+      "scraped_at": "2026-01-28T21:42:38.942160"
     }
   ]
 }
