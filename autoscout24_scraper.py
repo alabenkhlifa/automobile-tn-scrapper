@@ -155,7 +155,7 @@ COUNTRY_DETAIL_PATH: Dict[str, str] = {
     "de": "angebote",
     "fr": "offres",
     "it": "annunci",
-    "be": "annonces",  # Belgian site uses French
+    "be": "offres",  # Belgian site uses French
 }
 
 ACCEPT_LANGUAGE_MAP: Dict[str, str] = {
