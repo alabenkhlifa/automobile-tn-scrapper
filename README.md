@@ -49,10 +49,10 @@ Interactive dashboards that visualize car markets with **daily automated data up
 
 | Metric | TN New Cars | TN Used Cars | EU AutoScout24 |
 |--------|-------------|--------------|----------------|
-| Total Listings | 543+ | 1000+ | 100+ per country |
+| Total Listings | 543+ | 1000+ | 500+ per country |
 | Brands | 30+ | 40+ | All makes |
 | Data Points per Car | 40+ | 25+ | 35+ |
-| Update Frequency | Weekly | Daily | On demand |
+| Update Frequency | Weekly | Daily | Daily |
 
 ## 🛠️ Tech Stack
 
