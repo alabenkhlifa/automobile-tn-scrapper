@@ -1,15 +1,578 @@
 {
-  "scraped_at": "2026-01-28T21:42:39.024005",
+  "scraped_at": "2026-01-29T01:52:36.877218",
   "stats": {
     "pages_scraped": 5,
     "listings_found": 60,
     "cars_scraped": 60,
     "with_price": 60,
-    "with_equipment": 59,
+    "with_equipment": 58,
     "with_phone": 60
   },
   "total": 60,
   "cars": [
+    {
+      "id": "121831",
+      "brand": "Hyundai",
+      "model": "Hyundai Veloster",
+      "full_name": "Hyundai Veloster",
+      "url": "https://www.automobile.tn/fr/occasion/hyundai/veloster/121831",
+      "price_tnd": 39000,
+      "price_evaluation": "",
+      "registration_date": "2014-10-01",
+      "year": 2014,
+      "mileage_km": 157000,
+      "ownership": "2ème main",
+      "condition": "Normal",
+      "cv_fiscal": 8,
+      "cv_din": null,
+      "fuel_type": "Essence",
+      "transmission": "Automatique",
+      "drivetrain": "Traction",
+      "body_type": "Compacte",
+      "color_exterior": "Blanc",
+      "color_interior": "Noir",
+      "upholstery": "Similicuir",
+      "doors": 4,
+      "seats": 4,
+      "equipment_safety": [
+        "ABS",
+        "Airbags frontaux",
+        "Airbags latéraux",
+        "Airbags rideaux",
+        "Alarme anti-intrusion",
+        "Anti-démarrage électronique",
+        "Anti-patinage",
+        "Fixations ISOFIX"
+      ],
+      "equipment_interior": [
+        "Accoudoir avant",
+        "Autoradio",
+        "Autoradio CD",
+        "Autoradio CD/Mp3",
+        "Bluetooth",
+        "Sièges sport",
+        "Sièges électriques",
+        "Vitres teintées",
+        "Volant multi-fonctions",
+        "Volant réglable hauteur/profondeur"
+      ],
+      "equipment_exterior": [
+        "Antibrouillards",
+        "Caméra de recul",
+        "Feux à LED",
+        "Jantes en alliage",
+        "Radar de recul",
+        "Vitres teintées"
+      ],
+      "equipment_functional": [
+        "Accès sans clé",
+        "Allumage automatique des feux",
+        "Bouton Start & Stop",
+        "Climatisation automatique",
+        "Direction assistée",
+        "Fermeture centralisée",
+        "Ordinateur de bord",
+        "Régulateur de vitesse",
+        "Rétroviseurs rabattables",
+        "Rétroviseurs électriques",
+        "Vitres électriques"
+      ],
+      "governorate": "Ben Arous",
+      "seller_phone": "99 899 671",
+      "listing_date": "",
+      "scraped_at": "2026-01-29T01:52:30.542956"
+    },
+    {
+      "id": "121832",
+      "brand": "Chery",
+      "model": "Chery Tiggo 3X",
+      "full_name": "Chery Tiggo 3X",
+      "url": "https://www.automobile.tn/fr/occasion/chery/tiggo-3x/121832",
+      "price_tnd": 56000,
+      "price_evaluation": "",
+      "registration_date": "2023-11-01",
+      "year": 2023,
+      "mileage_km": 53000,
+      "ownership": "1ère main",
+      "condition": "Très bon",
+      "cv_fiscal": 6,
+      "cv_din": null,
+      "fuel_type": "Essence",
+      "transmission": "Automatique",
+      "drivetrain": "Traction",
+      "body_type": "SUV",
+      "color_exterior": "Gris Shark",
+      "color_interior": "Noir",
+      "upholstery": "Similicuir",
+      "doors": 4,
+      "seats": 5,
+      "equipment_safety": [
+        "ABS",
+        "Airbags frontaux",
+        "Airbags latéraux",
+        "Alarme anti-intrusion",
+        "Contrôle de pression des pneus"
+      ],
+      "equipment_interior": [
+        "Accoudoir avant",
+        "Android Auto",
+        "Apple Carplay",
+        "Autoradio",
+        "Bluetooth",
+        "Connectivité Aux, usb, iPod",
+        "Sièges réglables en hauteur",
+        "Sièges sport",
+        "Vitres teintées",
+        "Volant multi-fonctions",
+        "Volant/levier de vitesse en cuir"
+      ],
+      "equipment_exterior": [
+        "Antibrouillards",
+        "Caméra de recul",
+        "Jantes en alliage",
+        "Radar de recul",
+        "Toit ouvrant"
+      ],
+      "equipment_functional": [
+        "Accès sans clé",
+        "Allumage automatique des feux",
+        "Bouton Start & Stop",
+        "Climatisation",
+        "Direction assistée",
+        "Fermeture centralisée",
+        "Ordinateur de bord",
+        "Régulateur de vitesse",
+        "Rétroviseurs rabattables",
+        "Rétroviseurs électriques",
+        "Suspension pneumatique",
+        "Vitres électriques"
+      ],
+      "governorate": "Ben Arous",
+      "seller_phone": "99 899 671",
+      "listing_date": "",
+      "scraped_at": "2026-01-29T01:52:31.326192"
+    },
+    {
+      "id": "122801",
+      "brand": "Toyota",
+      "model": "Toyota Agya",
+      "full_name": "Toyota Agya",
+      "url": "https://www.automobile.tn/fr/occasion/toyota/agya/122801",
+      "price_tnd": 36000,
+      "price_evaluation": "",
+      "registration_date": "2022-01-01",
+      "year": 2022,
+      "mileage_km": 98000,
+      "ownership": "2ème main",
+      "condition": "Très bon",
+      "cv_fiscal": 5,
+      "cv_din": null,
+      "fuel_type": "Essence",
+      "transmission": "Automatique",
+      "drivetrain": "Traction",
+      "body_type": "Citadine",
+      "color_exterior": "Gris Shark",
+      "color_interior": "Noir",
+      "upholstery": "Tissu",
+      "doors": 5,
+      "seats": 5,
+      "equipment_safety": [
+        "ABS",
+        "Airbags frontaux",
+        "Alarme anti-intrusion",
+        "Anti-démarrage électronique",
+        "Contrôle de pression des pneus",
+        "Fixations ISOFIX"
+      ],
+      "equipment_interior": [
+        "3 appuis têtes arrières",
+        "Affichage tête haute",
+        "Autoradio",
+        "Autoradio CD",
+        "Autoradio CD/Mp3",
+        "Bluetooth",
+        "Connectivité Aux, usb, iPod",
+        "Sièges réglables en hauteur",
+        "Volant multi-fonctions",
+        "Volant réglable hauteur/profondeur",
+        "Volant/levier de vitesse en cuir"
+      ],
+      "equipment_exterior": [
+        "Antibrouillards",
+        "Caméra de recul",
+        "Feux à LED",
+        "Jantes en alliage",
+        "Peinture métallisée",
+        "Phares Full LED"
+      ],
+      "equipment_functional": [
+        "Accès sans clé",
+        "Allumage automatique des feux",
+        "Bouton Start & Stop",
+        "Climatisation",
+        "Climatisation automatique",
+        "Direction assistée",
+        "Détecteur de pluie",
+        "Fermeture centralisée",
+        "Ordinateur de bord",
+        "Rétroviseurs rabattables",
+        "Rétroviseurs électriques",
+        "Vitres électriques"
+      ],
+      "governorate": "Tunis",
+      "seller_phone": "26 841 220",
+      "listing_date": "",
+      "scraped_at": "2026-01-29T01:52:31.165412"
+    },
+    {
+      "id": "122738",
+      "brand": "Skoda",
+      "model": "Skoda Fabia",
+      "full_name": "Skoda Fabia",
+      "url": "https://www.automobile.tn/fr/occasion/skoda/fabia/122738",
+      "price_tnd": 43500,
+      "price_evaluation": "",
+      "registration_date": "2022-12-01",
+      "year": 2022,
+      "mileage_km": 83000,
+      "ownership": "2ème main",
+      "condition": "Très bon",
+      "cv_fiscal": 4,
+      "cv_din": null,
+      "fuel_type": "Essence",
+      "transmission": "Manuelle",
+      "drivetrain": "Traction",
+      "body_type": "Citadine",
+      "color_exterior": "Gris Shark",
+      "color_interior": "Noir",
+      "upholstery": "Tissu",
+      "doors": 5,
+      "seats": 5,
+      "equipment_safety": [
+        "ABS",
+        "Airbags frontaux",
+        "Airbags latéraux",
+        "Airbags rideaux",
+        "Anti-démarrage électronique"
+      ],
+      "equipment_interior": [
+        "3 appuis têtes arrières",
+        "Accoudoir avant",
+        "Android Auto",
+        "Autoradio",
+        "Autoradio CD",
+        "Autoradio CD/Mp3",
+        "Bluetooth",
+        "Connectivité Aux, usb, iPod",
+        "Sièges réglables en hauteur",
+        "Volant multi-fonctions",
+        "Volant réglable hauteur/profondeur",
+        "Volant/levier de vitesse en cuir"
+      ],
+      "equipment_exterior": [
+        "Antibrouillards",
+        "Caméra de recul",
+        "Feux à LED",
+        "Jantes en alliage",
+        "Phares Full LED",
+        "Radar de recul"
+      ],
+      "equipment_functional": [
+        "Allumage automatique des feux",
+        "Bouton Start & Stop",
+        "Climatisation",
+        "Direction assistée",
+        "Détecteur de pluie",
+        "Fermeture centralisée",
+        "Ordinateur de bord",
+        "Régulateur de vitesse",
+        "Rétroviseurs électriques",
+        "Vitres électriques"
+      ],
+      "governorate": "Tunis",
+      "seller_phone": "26 841 220",
+      "listing_date": "",
+      "scraped_at": "2026-01-29T01:52:31.025353"
+    },
+    {
+      "id": "121967",
+      "brand": "Volkswagen",
+      "model": "Volkswagen Amarok",
+      "full_name": "Volkswagen Amarok",
+      "url": "https://www.automobile.tn/fr/occasion/volkswagen/amarok/121967",
+      "price_tnd": 115000,
+      "price_evaluation": "",
+      "registration_date": "2019-05-01",
+      "year": 2019,
+      "mileage_km": 252000,
+      "ownership": "1ère main",
+      "condition": "Très bon",
+      "cv_fiscal": 7,
+      "cv_din": null,
+      "fuel_type": "Diesel",
+      "transmission": "Automatique",
+      "drivetrain": "Intégrale",
+      "body_type": "Pick up",
+      "color_exterior": "Noir",
+      "color_interior": "Noir",
+      "upholstery": "Tissu",
+      "doors": 4,
+      "seats": 5,
+      "equipment_safety": [
+        "ABS",
+        "Airbags frontaux",
+        "Airbags latéraux",
+        "Airbags rideaux",
+        "Alarme anti-intrusion",
+        "Anti-démarrage électronique",
+        "Anti-patinage",
+        "Fixations ISOFIX",
+        "Radiateur tropicalisé"
+      ],
+      "equipment_interior": [
+        "3 appuis têtes arrières",
+        "Accoudoir avant",
+        "Android Auto",
+        "Apple Carplay",
+        "Autoradio",
+        "Autoradio CD",
+        "Autoradio CD/Mp3",
+        "Bluetooth",
+        "Volant multi-fonctions",
+        "Volant réglable hauteur/profondeur",
+        "Volant/levier de vitesse en cuir"
+      ],
+      "equipment_exterior": [
+        "Antibrouillards",
+        "Caméra de recul",
+        "Feux à LED",
+        "Jantes en alliage",
+        "Peinture métallisée",
+        "Radar de recul"
+      ],
+      "equipment_functional": [
+        "Climatisation automatique",
+        "Direction assistée",
+        "Fermeture centralisée",
+        "Ordinateur de bord",
+        "Régulateur de vitesse",
+        "Rétroviseurs électriques",
+        "Vitres électriques"
+      ],
+      "governorate": "Tunis",
+      "seller_phone": "20 212 030",
+      "listing_date": "",
+      "scraped_at": "2026-01-29T01:52:31.273305"
+    },
+    {
+      "id": "108101",
+      "brand": "Land Rover",
+      "model": "Land Rover Discovery Sport",
+      "full_name": "Land Rover Discovery Sport",
+      "url": "https://www.automobile.tn/fr/occasion/land-rover/discovery-sport/108101",
+      "price_tnd": 109000,
+      "price_evaluation": "",
+      "registration_date": "2017-09-01",
+      "year": 2017,
+      "mileage_km": 177000,
+      "ownership": "1ère main",
+      "condition": "Très bon",
+      "cv_fiscal": 8,
+      "cv_din": null,
+      "fuel_type": "Diesel",
+      "transmission": "Automatique",
+      "drivetrain": "Intégrale",
+      "body_type": "SUV",
+      "color_exterior": "Noir",
+      "color_interior": "Beige",
+      "upholstery": "Cuir intégral",
+      "doors": 5,
+      "seats": 5,
+      "equipment_safety": [
+        "ABS",
+        "Airbags frontaux",
+        "Airbags latéraux",
+        "Airbags rideaux",
+        "Alarme anti-intrusion",
+        "Anti-démarrage électronique",
+        "Anti-patinage",
+        "Contrôle de pression des pneus",
+        "Fixations ISOFIX",
+        "Pneumatiques runflat",
+        "Radiateur tropicalisé"
+      ],
+      "equipment_interior": [
+        "3 appuis têtes arrières",
+        "Accoudoir arrière",
+        "Accoudoir avant",
+        "Affichage tête haute",
+        "Android Auto",
+        "Autoradio",
+        "Autoradio CD",
+        "Autoradio CD/Mp3",
+        "Bluetooth",
+        "Boîte à gants réfrigérée",
+        "Chargeur CD",
+        "Connectivité Aux, usb, iPod",
+        "Instrumentation numérique",
+        "Navigation",
+        "Palettes au volant",
+        "Sièges chauffants",
+        "Sièges massants",
+        "Sièges réglables en hauteur",
+        "Sièges sport",
+        "Sièges électriques",
+        "Vitres teintées",
+        "Volant chauffant",
+        "Volant multi-fonctions",
+        "Volant réglable hauteur/profondeur",
+        "Volant/levier de vitesse en cuir"
+      ],
+      "equipment_exterior": [
+        "Antibrouillards",
+        "Caméra de recul",
+        "Caméras 360",
+        "Coffre électrique",
+        "Feux à LED",
+        "Jantes en alliage",
+        "Lave Phares",
+        "Peinture métallisée",
+        "Phares Full LED",
+        "Phares au xénon",
+        "Radar de recul",
+        "Toit ouvrant",
+        "Toit panoramique",
+        "Vitres teintées"
+      ],
+      "equipment_functional": [
+        "Accès sans clé",
+        "Allumage automatique des feux",
+        "Bouton Start & Stop",
+        "Climatisation",
+        "Climatisation automatique",
+        "Conduite semi-autonome",
+        "Direction assistée",
+        "Détecteur de pluie",
+        "Fermeture centralisée",
+        "Ordinateur de bord",
+        "Parkassist",
+        "Régulateur de vitesse",
+        "Rétroviseurs rabattables",
+        "Rétroviseurs électriques",
+        "Suspension pneumatique",
+        "Vitres électriques"
+      ],
+      "governorate": "Ariana",
+      "seller_phone": "98 754 817",
+      "listing_date": "",
+      "scraped_at": "2026-01-29T01:52:31.387561"
+    },
+    {
+      "id": "119569",
+      "brand": "Nissan",
+      "model": "Nissan Qashqai",
+      "full_name": "Nissan Qashqai",
+      "url": "https://www.automobile.tn/fr/occasion/nissan/qashqai/119569",
+      "price_tnd": 72000,
+      "price_evaluation": "",
+      "registration_date": "2020-12-01",
+      "year": 2020,
+      "mileage_km": 33000,
+      "ownership": "1ère main",
+      "condition": "Très bon",
+      "cv_fiscal": 6,
+      "cv_din": null,
+      "fuel_type": "Essence",
+      "transmission": "Automatique",
+      "drivetrain": "Traction",
+      "body_type": "SUV",
+      "color_exterior": "Noir",
+      "color_interior": "Noir",
+      "upholstery": "Cuir intégral",
+      "doors": 5,
+      "seats": 5,
+      "equipment_safety": [
+        "ABS",
+        "Airbags frontaux",
+        "Airbags latéraux",
+        "Airbags rideaux",
+        "Anti-démarrage électronique",
+        "Anti-patinage",
+        "Fixations ISOFIX"
+      ],
+      "equipment_interior": [
+        "Accoudoir arrière",
+        "Accoudoir avant",
+        "Autoradio",
+        "Autoradio CD",
+        "Autoradio CD/Mp3",
+        "Bluetooth",
+        "Vitres teintées",
+        "Volant réglable hauteur/profondeur",
+        "Volant/levier de vitesse en cuir"
+      ],
+      "equipment_exterior": [
+        "Antibrouillards",
+        "Caméra de recul",
+        "Caméras 360",
+        "Feux à LED",
+        "Jantes en alliage",
+        "Peinture métallisée",
+        "Radar de recul",
+        "Toit panoramique",
+        "Vitres teintées"
+      ],
+      "equipment_functional": [
+        "Accès sans clé",
+        "Allumage automatique des feux",
+        "Bouton Start & Stop",
+        "Climatisation automatique",
+        "Direction assistée",
+        "Détecteur de pluie",
+        "Fermeture centralisée",
+        "Ordinateur de bord",
+        "Rétroviseurs rabattables",
+        "Rétroviseurs électriques",
+        "Vitres électriques"
+      ],
+      "governorate": "Nabeul",
+      "seller_phone": "98 422 055",
+      "listing_date": "",
+      "scraped_at": "2026-01-29T01:52:31.223816"
+    },
+    {
+      "id": "121975",
+      "brand": "Volkswagen",
+      "model": "Volkswagen Passat",
+      "full_name": "Volkswagen Passat",
+      "url": "https://www.automobile.tn/fr/occasion/volkswagen/passat/121975",
+      "price_tnd": 55000,
+      "price_evaluation": "",
+      "registration_date": "2014-09-01",
+      "year": 2014,
+      "mileage_km": 260000,
+      "ownership": "2ème main",
+      "condition": "Très bon",
+      "cv_fiscal": 5,
+      "cv_din": null,
+      "fuel_type": "Diesel",
+      "transmission": "Manuelle",
+      "drivetrain": "Traction",
+      "body_type": "Berline",
+      "color_exterior": "Noir",
+      "color_interior": "Noir",
+      "upholstery": "Tissu",
+      "doors": 5,
+      "seats": 5,
+      "equipment_safety": [],
+      "equipment_interior": [],
+      "equipment_exterior": [],
+      "equipment_functional": [],
+      "governorate": "Nabeul",
+      "seller_phone": "98 422 055",
+      "listing_date": "",
+      "scraped_at": "2026-01-29T01:52:31.458362"
+    },
     {
       "id": "105914",
       "brand": "Opel",
@@ -41,7 +604,7 @@
       "governorate": "Ariana",
       "seller_phone": "98 143 847",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:32.700345"
+      "scraped_at": "2026-01-29T01:52:30.968475"
     },
     {
       "id": "117181",
@@ -84,7 +647,7 @@
       "governorate": "Ariana",
       "seller_phone": "98 143 847",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:33.546342"
+      "scraped_at": "2026-01-29T01:52:31.076656"
     },
     {
       "id": "122856",
@@ -152,7 +715,7 @@
       "governorate": "Ariana",
       "seller_phone": "27 386 309",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:33.502081"
+      "scraped_at": "2026-01-29T01:52:31.501041"
     },
     {
       "id": "117335",
@@ -222,7 +785,7 @@
       "governorate": "Ariana",
       "seller_phone": "24 400 250",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:33.996491"
+      "scraped_at": "2026-01-29T01:52:31.768309"
     },
     {
       "id": "121353",
@@ -295,7 +858,7 @@
       "governorate": "Tunis",
       "seller_phone": "97 422 800",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:33.807362"
+      "scraped_at": "2026-01-29T01:52:32.131253"
     },
     {
       "id": "121657",
@@ -373,7 +936,7 @@
       "governorate": "Tunis",
       "seller_phone": "97 422 800",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:33.922658"
+      "scraped_at": "2026-01-29T01:52:32.377609"
     },
     {
       "id": "122855",
@@ -454,7 +1017,7 @@
       "governorate": "Gabès",
       "seller_phone": "98 203 560",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:33.685120"
+      "scraped_at": "2026-01-29T01:52:32.499012"
     },
     {
       "id": "118394",
@@ -535,7 +1098,7 @@
       "governorate": "Tunis",
       "seller_phone": "22 421 244",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:33.589133"
+      "scraped_at": "2026-01-29T01:52:32.317994"
     },
     {
       "id": "122703",
@@ -604,7 +1167,7 @@
       "governorate": "Kasserine",
       "seller_phone": "29 687 101",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:33.861922"
+      "scraped_at": "2026-01-29T01:52:32.027593"
     },
     {
       "id": "122221",
@@ -695,7 +1258,7 @@
       "governorate": "Nabeul",
       "seller_phone": "24 309 250",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:33.741562"
+      "scraped_at": "2026-01-29T01:52:32.188362"
     },
     {
       "id": "122220",
@@ -785,7 +1348,7 @@
       "governorate": "Nabeul",
       "seller_phone": "24 309 250",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:33.214629"
+      "scraped_at": "2026-01-29T01:52:32.432709"
     },
     {
       "id": "120925",
@@ -881,7 +1444,7 @@
       "governorate": "Nabeul",
       "seller_phone": "24 309 250",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:34.047760"
+      "scraped_at": "2026-01-29T01:52:32.275614"
     },
     {
       "id": "122784",
@@ -928,7 +1491,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:34.291578"
+      "scraped_at": "2026-01-29T01:52:32.232316"
     },
     {
       "id": "122778",
@@ -975,7 +1538,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:34.488764"
+      "scraped_at": "2026-01-29T01:52:32.765516"
     },
     {
       "id": "107786",
@@ -1075,7 +1638,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:34.795623"
+      "scraped_at": "2026-01-29T01:52:32.863945"
     },
     {
       "id": "121858",
@@ -1116,7 +1679,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:34.857603"
+      "scraped_at": "2026-01-29T01:52:33.293377"
     },
     {
       "id": "116122",
@@ -1164,7 +1727,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:35.071302"
+      "scraped_at": "2026-01-29T01:52:33.508728"
     },
     {
       "id": "113603",
@@ -1245,7 +1808,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:34.632085"
+      "scraped_at": "2026-01-29T01:52:33.135426"
     },
     {
       "id": "122670",
@@ -1303,7 +1866,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:34.733864"
+      "scraped_at": "2026-01-29T01:52:33.180506"
     },
     {
       "id": "116712",
@@ -1368,7 +1931,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:34.688144"
+      "scraped_at": "2026-01-29T01:52:33.234723"
     },
     {
       "id": "115975",
@@ -1429,7 +1992,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:34.928992"
+      "scraped_at": "2026-01-29T01:52:33.435590"
     },
     {
       "id": "116473",
@@ -1485,7 +2048,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:35.001309"
+      "scraped_at": "2026-01-29T01:52:33.617782"
     },
     {
       "id": "113992",
@@ -1555,7 +2118,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:35.172640"
+      "scraped_at": "2026-01-29T01:52:33.362823"
     },
     {
       "id": "119268",
@@ -1618,7 +2181,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:35.452885"
+      "scraped_at": "2026-01-29T01:52:33.936007"
     },
     {
       "id": "118197",
@@ -1663,7 +2226,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:35.503003"
+      "scraped_at": "2026-01-29T01:52:33.870798"
     },
     {
       "id": "119609",
@@ -1729,7 +2292,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:36.196498"
+      "scraped_at": "2026-01-29T01:52:34.262947"
     },
     {
       "id": "118168",
@@ -1786,7 +2349,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:35.907774"
+      "scraped_at": "2026-01-29T01:52:34.315633"
     },
     {
       "id": "120327",
@@ -1847,7 +2410,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:35.759562"
+      "scraped_at": "2026-01-29T01:52:34.466220"
     },
     {
       "id": "120514",
@@ -1906,7 +2469,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:36.125359"
+      "scraped_at": "2026-01-29T01:52:34.569211"
     },
     {
       "id": "115453",
@@ -1957,7 +2520,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:35.807454"
+      "scraped_at": "2026-01-29T01:52:34.362081"
     },
     {
       "id": "121162",
@@ -2015,7 +2578,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:35.858370"
+      "scraped_at": "2026-01-29T01:52:34.414035"
     },
     {
       "id": "119033",
@@ -2086,7 +2649,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:35.972027"
+      "scraped_at": "2026-01-29T01:52:34.644624"
     },
     {
       "id": "121686",
@@ -2132,7 +2695,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:36.027563"
+      "scraped_at": "2026-01-29T01:52:34.196017"
     },
     {
       "id": "120010",
@@ -2171,7 +2734,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:36.517985"
+      "scraped_at": "2026-01-29T01:52:34.891768"
     },
     {
       "id": "121848",
@@ -2244,7 +2807,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:36.472110"
+      "scraped_at": "2026-01-29T01:52:34.844116"
     },
     {
       "id": "121417",
@@ -2297,7 +2860,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:36.918492"
+      "scraped_at": "2026-01-29T01:52:35.200751"
     },
     {
       "id": "120689",
@@ -2363,7 +2926,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:37.221236"
+      "scraped_at": "2026-01-29T01:52:35.602200"
     },
     {
       "id": "122019",
@@ -2417,7 +2980,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:37.150662"
+      "scraped_at": "2026-01-29T01:52:35.672132"
     },
     {
       "id": "110176",
@@ -2486,7 +3049,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:36.787196"
+      "scraped_at": "2026-01-29T01:52:35.749337"
     },
     {
       "id": "117616",
@@ -2541,7 +3104,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:37.080263"
+      "scraped_at": "2026-01-29T01:52:35.425252"
     },
     {
       "id": "120516",
@@ -2585,7 +3148,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:37.283533"
+      "scraped_at": "2026-01-29T01:52:35.289616"
     },
     {
       "id": "118886",
@@ -2636,7 +3199,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:36.860159"
+      "scraped_at": "2026-01-29T01:52:35.531936"
     },
     {
       "id": "121254",
@@ -2692,7 +3255,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:37.010391"
+      "scraped_at": "2026-01-29T01:52:35.354417"
     },
     {
       "id": "120528",
@@ -2764,7 +3327,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:37.532745"
+      "scraped_at": "2026-01-29T01:52:35.799305"
     },
     {
       "id": "121529",
@@ -2835,7 +3398,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:37.599671"
+      "scraped_at": "2026-01-29T01:52:35.946215"
     },
     {
       "id": "118424",
@@ -2883,7 +3446,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:37.851158"
+      "scraped_at": "2026-01-29T01:52:36.041138"
     },
     {
       "id": "116714",
@@ -2951,7 +3514,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:38.133901"
+      "scraped_at": "2026-01-29T01:52:36.399398"
     },
     {
       "id": "121416",
@@ -3011,7 +3574,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:38.262186"
+      "scraped_at": "2026-01-29T01:52:36.857093"
     },
     {
       "id": "118806",
@@ -3069,7 +3632,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:38.191886"
+      "scraped_at": "2026-01-29T01:52:36.293605"
     },
     {
       "id": "121590",
@@ -3125,7 +3688,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:37.948505"
+      "scraped_at": "2026-01-29T01:52:36.583124"
     },
     {
       "id": "120859",
@@ -3177,7 +3740,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:38.007288"
+      "scraped_at": "2026-01-29T01:52:36.516815"
     },
     {
       "id": "119301",
@@ -3229,498 +3792,7 @@
       "governorate": "Tunis",
       "seller_phone": "21 363 636",
       "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:38.065632"
-    },
-    {
-      "id": "120869",
-      "brand": "Mercedes-Benz",
-      "model": "Mercedes-Benz Classe A",
-      "full_name": "Mercedes-Benz Classe A",
-      "url": "https://www.automobile.tn/fr/occasion/mercedes-benz/classe-a/120869",
-      "price_tnd": 98000,
-      "price_evaluation": "",
-      "registration_date": "2019-05-01",
-      "year": 2019,
-      "mileage_km": 121000,
-      "ownership": "1ère main",
-      "condition": "Très bon",
-      "cv_fiscal": 7,
-      "cv_din": null,
-      "fuel_type": "Diesel",
-      "transmission": "Automatique",
-      "drivetrain": "Intégrale",
-      "body_type": "Compacte",
-      "color_exterior": "Noir",
-      "color_interior": "Noir",
-      "upholstery": "Similicuir",
-      "doors": 5,
-      "seats": 5,
-      "equipment_safety": [],
-      "equipment_interior": [
-        "Apple Carplay",
-        "Bluetooth",
-        "Connectivité Aux, usb, iPod",
-        "Navigation",
-        "Palettes au volant",
-        "Sièges chauffants",
-        "Sièges réglables en hauteur",
-        "Sièges électriques",
-        "Vitres teintées",
-        "Volant multi-fonctions",
-        "Volant réglable hauteur/profondeur"
-      ],
-      "equipment_exterior": [
-        "Caméra de recul",
-        "Caméras 360",
-        "Feux à LED",
-        "Radar de recul",
-        "Toit ouvrant",
-        "Toit panoramique",
-        "Vitres teintées"
-      ],
-      "equipment_functional": [
-        "Allumage automatique des feux",
-        "Bouton Start & Stop",
-        "Climatisation",
-        "Climatisation automatique",
-        "Direction assistée",
-        "Fermeture centralisée",
-        "Ordinateur de bord",
-        "Régulateur de vitesse",
-        "Rétroviseurs rabattables",
-        "Rétroviseurs électriques",
-        "Vitres électriques"
-      ],
-      "governorate": "Tunis",
-      "seller_phone": "21 363 636",
-      "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:38.338096"
-    },
-    {
-      "id": "120513",
-      "brand": "Citroën",
-      "model": "Citroën C4 Cactus",
-      "full_name": "Citroën C4 Cactus",
-      "url": "https://www.automobile.tn/fr/occasion/citroen/c4-cactus/120513",
-      "price_tnd": 42000,
-      "price_evaluation": "",
-      "registration_date": "2019-05-01",
-      "year": 2019,
-      "mileage_km": 98000,
-      "ownership": "1ère main",
-      "condition": "Très bon",
-      "cv_fiscal": 5,
-      "cv_din": null,
-      "fuel_type": "Essence",
-      "transmission": "Manuelle",
-      "drivetrain": "Traction",
-      "body_type": "Compacte",
-      "color_exterior": "Gris argent",
-      "color_interior": "Gris",
-      "upholstery": "Tissu",
-      "doors": 5,
-      "seats": 5,
-      "equipment_safety": [],
-      "equipment_interior": [
-        "3 appuis têtes arrières",
-        "Bluetooth",
-        "Connectivité Aux, usb, iPod",
-        "Palettes au volant",
-        "Volant multi-fonctions"
-      ],
-      "equipment_exterior": [
-        "Feux à LED",
-        "Radar de recul"
-      ],
-      "equipment_functional": [
-        "Climatisation automatique",
-        "Fermeture centralisée",
-        "Ordinateur de bord",
-        "Rétroviseurs électriques",
-        "Vitres électriques"
-      ],
-      "governorate": "Tunis",
-      "seller_phone": "21 363 636",
-      "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:38.441678"
-    },
-    {
-      "id": "118268",
-      "brand": "Nissan",
-      "model": "Nissan Juke",
-      "full_name": "Nissan Juke",
-      "url": "https://www.automobile.tn/fr/occasion/nissan/juke/118268",
-      "price_tnd": 78000,
-      "price_evaluation": "",
-      "registration_date": "2022-05-01",
-      "year": 2022,
-      "mileage_km": 84000,
-      "ownership": "1ère main",
-      "condition": "Très bon",
-      "cv_fiscal": 6,
-      "cv_din": null,
-      "fuel_type": "Essence",
-      "transmission": "Automatique",
-      "drivetrain": "Traction",
-      "body_type": "SUV",
-      "color_exterior": "Noir",
-      "color_interior": "Noir",
-      "upholstery": "Similicuir",
-      "doors": 5,
-      "seats": 5,
-      "equipment_safety": [
-        "ABS",
-        "Airbags frontaux",
-        "Airbags latéraux",
-        "Airbags rideaux",
-        "Anti-démarrage électronique",
-        "Anti-patinage",
-        "Fixations ISOFIX"
-      ],
-      "equipment_interior": [
-        "3 appuis têtes arrières",
-        "Accoudoir avant",
-        "Android Auto",
-        "Apple Carplay",
-        "Autoradio",
-        "Autoradio CD",
-        "Autoradio CD/Mp3",
-        "Bluetooth",
-        "Palettes au volant",
-        "Sièges réglables en hauteur",
-        "Volant multi-fonctions",
-        "Volant réglable hauteur/profondeur",
-        "Volant/levier de vitesse en cuir"
-      ],
-      "equipment_exterior": [
-        "Antibrouillards",
-        "Caméra de recul",
-        "Caméras 360",
-        "Feux à LED",
-        "Jantes en alliage",
-        "Peinture métallisée",
-        "Radar de recul"
-      ],
-      "equipment_functional": [
-        "Accès sans clé",
-        "Allumage automatique des feux",
-        "Bouton Start & Stop",
-        "Climatisation automatique",
-        "Direction assistée",
-        "Détecteur de pluie",
-        "Fermeture centralisée",
-        "Ordinateur de bord",
-        "Régulateur de vitesse",
-        "Rétroviseurs rabattables",
-        "Rétroviseurs électriques",
-        "Vitres électriques"
-      ],
-      "governorate": "Tunis",
-      "seller_phone": "21 363 636",
-      "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:38.534760"
-    },
-    {
-      "id": "121247",
-      "brand": "Peugeot",
-      "model": "Peugeot 308",
-      "full_name": "Peugeot 308",
-      "url": "https://www.automobile.tn/fr/occasion/peugeot/308/121247",
-      "price_tnd": 44000,
-      "price_evaluation": "",
-      "registration_date": "2022-05-01",
-      "year": 2022,
-      "mileage_km": 138000,
-      "ownership": "1ère main",
-      "condition": "Très bon",
-      "cv_fiscal": 6,
-      "cv_din": null,
-      "fuel_type": "Essence",
-      "transmission": "Manuelle",
-      "drivetrain": "Traction",
-      "body_type": "Compacte",
-      "color_exterior": "Noir",
-      "color_interior": "Noir",
-      "upholstery": "Tissu",
-      "doors": 5,
-      "seats": 5,
-      "equipment_safety": [
-        "ABS",
-        "Airbags frontaux",
-        "Airbags latéraux",
-        "Anti-démarrage électronique",
-        "Anti-patinage",
-        "Fixations ISOFIX"
-      ],
-      "equipment_interior": [
-        "3 appuis têtes arrières",
-        "Accoudoir arrière",
-        "Accoudoir avant",
-        "Android Auto",
-        "Apple Carplay",
-        "Autoradio",
-        "Autoradio CD",
-        "Autoradio CD/Mp3",
-        "Bluetooth",
-        "Vitres teintées",
-        "Volant réglable hauteur/profondeur",
-        "Volant/levier de vitesse en cuir"
-      ],
-      "equipment_exterior": [
-        "Antibrouillards",
-        "Feux à LED",
-        "Jantes en alliage",
-        "Peinture métallisée",
-        "Vitres teintées"
-      ],
-      "equipment_functional": [
-        "Climatisation automatique",
-        "Direction assistée",
-        "Fermeture centralisée",
-        "Ordinateur de bord",
-        "Rétroviseurs rabattables",
-        "Rétroviseurs électriques",
-        "Vitres électriques"
-      ],
-      "governorate": "Tunis",
-      "seller_phone": "21 363 636",
-      "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:38.613667"
-    },
-    {
-      "id": "122307",
-      "brand": "Mercedes-Benz",
-      "model": "Mercedes-Benz Classe A",
-      "full_name": "Mercedes-Benz Classe A",
-      "url": "https://www.automobile.tn/fr/occasion/mercedes-benz/classe-a/122307",
-      "price_tnd": 123000,
-      "price_evaluation": "",
-      "registration_date": "2022-05-01",
-      "year": 2022,
-      "mileage_km": 63000,
-      "ownership": "1ère main",
-      "condition": "Très bon",
-      "cv_fiscal": 7,
-      "cv_din": null,
-      "fuel_type": "Essence",
-      "transmission": "Automatique",
-      "drivetrain": "Traction",
-      "body_type": "Compacte",
-      "color_exterior": "Blanc",
-      "color_interior": "Noir",
-      "upholstery": "Cuir intégral",
-      "doors": 5,
-      "seats": 5,
-      "equipment_safety": [],
-      "equipment_interior": [
-        "Accoudoir arrière",
-        "Accoudoir avant",
-        "Bluetooth",
-        "Connectivité Aux, usb, iPod",
-        "Navigation",
-        "Palettes au volant",
-        "Sièges sport",
-        "Sièges électriques",
-        "Volant multi-fonctions"
-      ],
-      "equipment_exterior": [
-        "Caméra de recul",
-        "Caméras 360",
-        "Phares Full LED",
-        "Radar de recul",
-        "Toit ouvrant",
-        "Toit panoramique"
-      ],
-      "equipment_functional": [
-        "Accès sans clé",
-        "Bouton Start & Stop",
-        "Climatisation",
-        "Climatisation automatique",
-        "Direction assistée",
-        "Fermeture centralisée",
-        "Ordinateur de bord",
-        "Régulateur de vitesse",
-        "Rétroviseurs rabattables",
-        "Rétroviseurs électriques",
-        "Vitres électriques"
-      ],
-      "governorate": "Tunis",
-      "seller_phone": "21 363 636",
-      "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:38.890242"
-    },
-    {
-      "id": "121251",
-      "brand": "Volkswagen",
-      "model": "Volkswagen Golf 7",
-      "full_name": "Volkswagen Golf 7",
-      "url": "https://www.automobile.tn/fr/occasion/volkswagen/golf-7/121251",
-      "price_tnd": 74000,
-      "price_evaluation": "",
-      "registration_date": "2018-05-01",
-      "year": 2018,
-      "mileage_km": 170000,
-      "ownership": "1ère main",
-      "condition": "Très bon",
-      "cv_fiscal": 6,
-      "cv_din": null,
-      "fuel_type": "Diesel",
-      "transmission": "Automatique",
-      "drivetrain": "Traction",
-      "body_type": "Compacte",
-      "color_exterior": "Noir",
-      "color_interior": "Gris",
-      "upholstery": "Similicuir",
-      "doors": 5,
-      "seats": 5,
-      "equipment_safety": [],
-      "equipment_interior": [
-        "3 appuis têtes arrières",
-        "Accoudoir arrière",
-        "Accoudoir avant",
-        "Bluetooth",
-        "Navigation",
-        "Palettes au volant",
-        "Volant multi-fonctions",
-        "Volant réglable hauteur/profondeur",
-        "Volant/levier de vitesse en cuir"
-      ],
-      "equipment_exterior": [
-        "Radar de recul",
-        "Vitres teintées"
-      ],
-      "equipment_functional": [
-        "Climatisation",
-        "Climatisation automatique",
-        "Fermeture centralisée",
-        "Ordinateur de bord",
-        "Régulateur de vitesse",
-        "Vitres électriques"
-      ],
-      "governorate": "Tunis",
-      "seller_phone": "21 363 636",
-      "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:39.004928"
-    },
-    {
-      "id": "117675",
-      "brand": "BMW",
-      "model": "BMW X3",
-      "full_name": "BMW X3",
-      "url": "https://www.automobile.tn/fr/occasion/bmw/x3/117675",
-      "price_tnd": 82000,
-      "price_evaluation": "",
-      "registration_date": "2014-05-01",
-      "year": 2014,
-      "mileage_km": 185000,
-      "ownership": "1ère main",
-      "condition": "Très bon",
-      "cv_fiscal": 10,
-      "cv_din": null,
-      "fuel_type": "Diesel",
-      "transmission": "Automatique",
-      "drivetrain": "Intégrale",
-      "body_type": "SUV",
-      "color_exterior": "Noir",
-      "color_interior": "Gris",
-      "upholstery": "Cuir intégral",
-      "doors": 5,
-      "seats": 4,
-      "equipment_safety": [],
-      "equipment_interior": [
-        "3 appuis têtes arrières",
-        "Accoudoir avant",
-        "Bluetooth",
-        "Palettes au volant",
-        "Sièges sport",
-        "Sièges électriques",
-        "Volant multi-fonctions",
-        "Volant réglable hauteur/profondeur"
-      ],
-      "equipment_exterior": [
-        "Feux à LED",
-        "Radar de recul",
-        "Toit ouvrant",
-        "Toit panoramique"
-      ],
-      "equipment_functional": [
-        "Climatisation",
-        "Climatisation automatique",
-        "Direction assistée",
-        "Fermeture centralisée",
-        "Ordinateur de bord",
-        "Rétroviseurs électriques",
-        "Vitres électriques"
-      ],
-      "governorate": "Tunis",
-      "seller_phone": "21 363 636",
-      "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:38.796682"
-    },
-    {
-      "id": "121253",
-      "brand": "Suzuki",
-      "model": "Suzuki Baleno",
-      "full_name": "Suzuki Baleno",
-      "url": "https://www.automobile.tn/fr/occasion/suzuki/baleno/121253",
-      "price_tnd": 39000,
-      "price_evaluation": "",
-      "registration_date": "2018-05-01",
-      "year": 2018,
-      "mileage_km": 89000,
-      "ownership": "1ère main",
-      "condition": "Très bon",
-      "cv_fiscal": 5,
-      "cv_din": null,
-      "fuel_type": "Essence",
-      "transmission": "Automatique",
-      "drivetrain": "Traction",
-      "body_type": "Compacte",
-      "color_exterior": "Bleu",
-      "color_interior": "Noir",
-      "upholstery": "Tissu",
-      "doors": 5,
-      "seats": 5,
-      "equipment_safety": [
-        "ABS",
-        "Airbags frontaux",
-        "Airbags latéraux",
-        "Airbags rideaux",
-        "Alarme anti-intrusion"
-      ],
-      "equipment_interior": [
-        "Accoudoir avant",
-        "Autoradio",
-        "Autoradio CD",
-        "Autoradio CD/Mp3",
-        "Bluetooth",
-        "Sièges réglables en hauteur",
-        "Vitres teintées",
-        "Volant multi-fonctions",
-        "Volant réglable hauteur/profondeur",
-        "Volant/levier de vitesse en cuir"
-      ],
-      "equipment_exterior": [
-        "Antibrouillards",
-        "Jantes en alliage",
-        "Radar de recul",
-        "Vitres teintées"
-      ],
-      "equipment_functional": [
-        "Accès sans clé",
-        "Bouton Start & Stop",
-        "Climatisation automatique",
-        "Direction assistée",
-        "Fermeture centralisée",
-        "Ordinateur de bord",
-        "Régulateur de vitesse",
-        "Rétroviseurs électriques",
-        "Vitres électriques"
-      ],
-      "governorate": "Tunis",
-      "seller_phone": "21 363 636",
-      "listing_date": "",
-      "scraped_at": "2026-01-28T21:42:38.942160"
+      "scraped_at": "2026-01-29T01:52:36.464540"
     }
   ]
 }
