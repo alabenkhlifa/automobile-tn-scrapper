@@ -47,6 +47,13 @@ jobs:
           git diff --staged --quiet || git commit -m "Update car data - $(date -u +%Y-%m-%d)"
           git push
 
+      - name: Trigger Supabase ingestion
+        if: success()
+        run: |
+          curl -X POST "${{ secrets.SUPABASE_URL }}" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_KEY }}" \
+            --fail
+
   deploy:
     needs: scrape
     uses: ./.github/workflows/pages.yml
