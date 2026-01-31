@@ -51,7 +51,7 @@ jobs:
         if: success()
         run: |
           curl -X POST "${{ secrets.SUPABASE_URL }}" \
-            -H "Authorization: Bearer ${{ secrets.SUPABASE_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_TOKEN }}" \
             --fail
 
   deploy:
