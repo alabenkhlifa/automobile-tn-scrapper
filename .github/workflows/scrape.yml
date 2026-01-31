@@ -47,8 +47,11 @@ jobs:
           git diff --staged --quiet || git commit -m "Update car data - $(date -u +%Y-%m-%d)"
           git push
 
+  ingest:
+    needs: scrape
+    runs-on: ubuntu-latest
+    steps:
       - name: Trigger Supabase ingestion
-        if: success()
         run: |
           curl -X POST "${{ secrets.SUPABASE_URL }}" \
             -H "Authorization: Bearer ${{ secrets.SUPABASE_TOKEN }}" \
