@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Cars History - automobile.tn</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            fontFamily: {
+                sans: ["'Segoe UI'", 'Tahoma', 'Geneva', 'Verdana', 'sans-serif']
+            }
+        }
+    }
+    </script>
+    <style type="text/tailwindcss">
+        body { @apply font-sans bg-slate-900 text-slate-50 min-h-screen p-2.5 md:p-5; }
+        .container { @apply max-w-[1600px] mx-auto; }
+
+        header { @apply text-center mb-5 md:mb-10 py-5 px-4 md:p-8 bg-slate-800 rounded-2xl border border-white/10 relative; }
+
+        .lang-toggle {
+            @apply relative md:absolute md:top-5 md:right-5 flex bg-slate-700 rounded-lg overflow-hidden border border-white/10 w-fit mx-auto md:mx-0 mb-2.5 md:mb-0;
+        }
+        .lang-toggle button {
+            @apply py-2 px-4 border-none bg-transparent text-slate-400 cursor-pointer text-sm font-medium transition-all duration-200;
+        }
+        .lang-toggle button:hover { @apply bg-white/5; }
+        .lang-toggle button.active { @apply bg-teal-500 text-slate-50; }
+
+        header h1 {
+            @apply text-2xl md:text-4xl font-bold mb-2.5 bg-clip-text bg-gradient-to-br from-[#06b6d4] to-[#10b981];
+            -webkit-text-fill-color: transparent;
+        }
+        header p { @apply text-slate-400 text-sm md:text-lg; }
+
+        .date-selector {
+            @apply mt-4 flex items-center justify-center gap-3 flex-wrap;
+        }
+        .date-selector label { @apply text-slate-400 text-sm; }
+        .date-selector select {
+            @apply bg-slate-700 border border-white/10 text-slate-50 rounded-lg py-2 px-4 text-sm cursor-pointer focus:outline-none focus:border-teal-500;
+        }
+
+        .stats-grid { @apply grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-2.5 md:gap-5 mb-5 md:mb-8; }
+        .stat-card {
+            @apply bg-slate-800 rounded-2xl p-3.5 md:p-6 border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)];
+        }
+        .stat-card.gradient-1 { @apply border-l-4 border-l-[#06b6d4]; }
+        .stat-card.gradient-2 { @apply border-l-4 border-l-[#10b981]; }
+        .stat-card.gradient-3 { @apply border-l-4 border-l-[#22c55e]; }
+        .stat-card.gradient-4 { @apply border-l-4 border-l-[#ef4444]; }
+        .stat-card.gradient-5 { @apply border-l-4 border-l-[#f59e0b]; }
+        .stat-card.gradient-6 { @apply border-l-4 border-l-[#8b5cf6]; }
+        .stat-card h3 { @apply text-slate-400 text-[0.7rem] md:text-[0.85rem] uppercase tracking-widest mb-2; }
+        .stat-card .value { @apply text-xl md:text-[2rem] font-bold mb-1; }
+        .stat-card .subtitle { @apply text-slate-400 text-xs md:text-sm; }
+
+        .charts-grid { @apply grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 mb-5 md:mb-8; }
+        .chart-card { @apply bg-slate-800 rounded-2xl p-4 md:p-6 border border-white/10; }
+        .chart-card.full-width { @apply lg:col-span-2; }
+        .chart-card h2 {
+            @apply text-base md:text-xl mb-3 md:mb-5 text-slate-50 flex items-center gap-2.5;
+        }
+        .chart-card h2::before {
+            content: '';
+            @apply w-1 h-5 rounded-sm block shrink-0;
+            background: linear-gradient(135deg, #06b6d4, #10b981);
+        }
+
+        .chart-container { @apply relative h-[250px] md:h-[300px]; }
+        .chart-container.tall { @apply h-[300px] md:h-[400px]; }
+
+        .table-container { @apply overflow-x-auto; }
+        table { @apply w-full border-collapse; }
+        th, td {
+            @apply py-2 px-1.5 md:py-3 md:px-4 text-left text-xs md:text-sm;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        th { @apply bg-slate-700 text-slate-400 text-xs uppercase tracking-wider; }
+        tr:hover { @apply bg-white/5; }
+
+        .price { @apply font-semibold text-emerald-500 whitespace-nowrap; }
+        .price-up { @apply font-semibold text-red-400 whitespace-nowrap; }
+        .price-down { @apply font-semibold text-emerald-400 whitespace-nowrap; }
+
+        .badge { @apply inline-block py-1 px-2.5 rounded-full text-xs font-semibold; }
+        .badge-added { background: rgba(16, 185, 129, 0.2); @apply text-emerald-400; }
+        .badge-removed { background: rgba(239, 68, 68, 0.2); @apply text-red-400; }
+        .badge-price-drop { background: rgba(16, 185, 129, 0.2); @apply text-emerald-400; }
+        .badge-price-up { background: rgba(239, 68, 68, 0.2); @apply text-red-400; }
+        .badge-spec { background: rgba(245, 158, 11, 0.2); @apply text-amber-400; }
+        .badge-brand { background: rgba(99, 102, 241, 0.2); @apply text-indigo-400; }
+        .badge-model { background: rgba(139, 92, 246, 0.2); @apply text-violet-400; }
+        .badge-initial { background: rgba(6, 182, 212, 0.2); @apply text-cyan-400; }
+
+        .badge-essence { background: rgba(249, 115, 22, 0.2); @apply text-orange-500; }
+        .badge-diesel { background: rgba(100, 116, 139, 0.2); @apply text-slate-400; }
+        .badge-electrique { background: rgba(6, 182, 212, 0.2); @apply text-cyan-500; }
+        .badge-hybride { background: rgba(139, 92, 246, 0.2); @apply text-violet-500; }
+        .badge-default { background: rgba(148, 163, 184, 0.2); @apply text-slate-400; }
+        .badge-automatique { background: rgba(59, 130, 246, 0.2); @apply text-blue-500; }
+        .badge-manuelle { background: rgba(250, 204, 21, 0.2); @apply text-yellow-300; }
+
+        .badge-suv { background: rgba(16, 185, 129, 0.2); @apply text-emerald-500; }
+        .badge-berline { background: rgba(99, 102, 241, 0.2); @apply text-indigo-400; }
+        .badge-citadine { background: rgba(236, 72, 153, 0.2); @apply text-pink-500; }
+        .badge-compacte { background: rgba(20, 184, 166, 0.2); @apply text-teal-500; }
+
+        .change-arrow { @apply inline-block text-lg leading-none align-middle mr-1; }
+        .change-arrow.up { @apply text-red-400; }
+        .change-arrow.down { @apply text-emerald-400; }
+
+        .pagination {
+            @apply flex items-center justify-center gap-2 mt-4 flex-wrap;
+        }
+        .pagination button {
+            @apply px-3 py-1.5 bg-slate-700 border border-white/10 rounded-lg text-sm text-slate-300 cursor-pointer transition-all duration-200;
+        }
+        .pagination button:hover:not(:disabled) { @apply bg-slate-600; }
+        .pagination button:disabled { @apply opacity-40 cursor-not-allowed; }
+        .pagination button.active { @apply bg-teal-600 text-white border-teal-500; }
+        .pagination .page-info { @apply text-slate-400 text-sm px-2; }
+
+        .entry-summary-bar {
+            @apply flex flex-wrap items-center justify-center gap-3 my-4 py-3 px-4 bg-slate-800/50 rounded-xl border border-white/5;
+        }
+        .entry-summary-bar .pill {
+            @apply flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-medium;
+        }
+        .pill-add { background: rgba(16,185,129,0.15); @apply text-emerald-400; }
+        .pill-remove { background: rgba(239,68,68,0.15); @apply text-red-400; }
+        .pill-price { background: rgba(245,158,11,0.15); @apply text-amber-400; }
+        .pill-spec { background: rgba(139,92,246,0.15); @apply text-violet-400; }
+
+        .empty-state {
+            @apply text-center py-12 text-slate-500;
+        }
+        .empty-state p { @apply text-lg mb-2; }
+        .empty-state .sub { @apply text-sm text-slate-600; }
+
+        .loading { @apply text-center py-16 text-slate-400; }
+        .loading::after {
+            content: '';
+            @apply inline-block w-8 h-8 rounded-full animate-spin ml-4 align-middle;
+            border: 3px solid #334155;
+            border-top-color: #14b8a6;
+        }
+
+        .error { @apply bg-red-500/20 border border-red-500 p-5 rounded-xl text-center text-red-500; }
+        footer { @apply text-center py-5 md:py-8 px-2.5 text-slate-400 text-xs md:text-sm; }
+
+        .section-divider {
+            @apply flex items-center gap-4 my-6;
+        }
+        .section-divider .line { @apply flex-1 h-px bg-white/10; }
+        .section-divider .label { @apply text-slate-500 text-xs uppercase tracking-widest; }
+
+        .brand-pills { @apply flex flex-wrap gap-2 mt-2; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-toggle">
+                <button id="lang-en" onclick="setLanguage('en')">EN</button>
+                <button id="lang-fr" class="active" onclick="setLanguage('fr')">FR</button>
+            </div>
+            <h1 id="header-title">Historique Voitures Neuves</h1>
+            <p id="header-subtitle">Suivez l'evolution du marche automobile tunisien</p>
+            <div class="date-selector" id="date-selector-container" style="display:none;">
+                <label id="date-label" for="entry-select">Snapshot :</label>
+                <select id="entry-select" onchange="onEntryChange()"></select>
+            </div>
+        </header>
+
+        <div id="content">
+            <div class="loading" id="loading-text">Chargement de l'historique...</div>
+        </div>
+
+        <footer>
+            Donnees extraites de automobile.tn | Historique genere automatiquement
+        </footer>
+    </div>
+
+    <script>
+        Chart.defaults.color = '#94a3b8';
+        Chart.defaults.borderColor = 'rgba(255,255,255,0.1)';
+        Chart.defaults.font.family = "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+
+        // ── State ──────────────────────────────────────────────
+        let currentLang = localStorage.getItem('dashboardLang') || 'fr';
+        let historyData = null;
+        let selectedIdx = 0;
+        let chartInstances = {};
+        const PER_PAGE = 15;
+        let pages = { added: 1, removed: 1, prices: 1, specs: 1 };
+
+        // ── Translations ───────────────────────────────────────
+        const translations = {
+            en: {
+                headerTitle: "New Cars Market History",
+                headerSubtitle: "Track changes in the Tunisian new car market",
+                footerText: "Historical data from automobile.tn | Dashboard generated automatically",
+                loading: "Loading history...",
+                errorTitle: "Error Loading History",
+                errorHelp: "Please run the scraper and history generator first:",
+                dateLabel: "Snapshot:",
+
+                // Stats
+                historyEntries: "Snapshots",
+                historyEntriesSub: "history records",
+                catalogSize: "Catalog Size",
+                catalogSizeSub: "current trims",
+                totalAdded: "All-Time Added",
+                totalAddedSub: "trims added",
+                totalRemoved: "All-Time Removed",
+                totalRemovedSub: "trims removed",
+                totalPriceDrops: "Price Drops",
+                totalPriceDropsSub: "detected across history",
+                totalPriceIncreases: "Price Increases",
+                totalPriceIncreasesSub: "detected across history",
+
+                // Charts
+                changesTimeline: "Changes Over Time",
+                changeBreakdown: "Change Breakdown (Selected Snapshot)",
+                mostAffectedBrands: "Most Active Brands",
+                priceChangeChart: "Price Change Magnitude",
+
+                // Section headers
+                snapshotSummary: "Snapshot Details",
+                priceChanges: "Price Changes",
+                trimsAdded: "Trims Added",
+                trimsRemoved: "Trims Removed",
+                specChanges: "Specification Changes",
+                brandsAdded: "Brands Added",
+                brandsRemoved: "Brands Removed",
+                modelsAdded: "Models Added",
+                modelsRemoved: "Models Removed",
+
+                // Table headers
+                rank: "#",
+                car: "Car",
+                brand: "Brand",
+                model: "Model",
+                oldPrice: "Old Price",
+                newPrice: "New Price",
+                change: "Change",
+                changePct: "%",
+                price: "Price",
+                fuel: "Fuel",
+                bodyType: "Body",
+                transmission: "Trans.",
+                field: "Field",
+                oldValue: "Old Value",
+                newValue: "New Value",
+
+                // Labels
+                added: "Added",
+                removed: "Removed",
+                priceChange: "Price",
+                specChange: "Specs",
+                additions: "Additions",
+                removals: "Removals",
+                noChanges: "No changes in this category",
+                noHistory: "No history data available yet. Run the scraper then generate_history.py to create the first snapshot.",
+                initialSnapshot: "Initial Snapshot",
+                before: "before",
+                after: "after",
+                trims: "trims",
+                changes: "changes",
+                brands: "brands",
+                models: "models",
+                page: "Page",
+                of: "of",
+                totalBefore: "Before",
+                totalAfter: "After",
+                netChange: "Net",
+            },
+            fr: {
+                headerTitle: "Historique Voitures Neuves",
+                headerSubtitle: "Suivez l'\u00e9volution du march\u00e9 automobile tunisien",
+                footerText: "Donn\u00e9es extraites de automobile.tn | Historique g\u00e9n\u00e9r\u00e9 automatiquement",
+                loading: "Chargement de l'historique...",
+                errorTitle: "Erreur de Chargement",
+                errorHelp: "Veuillez d'abord ex\u00e9cuter le scraper puis generate_history.py :",
+                dateLabel: "Snapshot :",
+
+                historyEntries: "Snapshots",
+                historyEntriesSub: "enregistrements d'historique",
+                catalogSize: "Taille du Catalogue",
+                catalogSizeSub: "finitions actuelles",
+                totalAdded: "Total Ajout\u00e9es",
+                totalAddedSub: "finitions ajout\u00e9es",
+                totalRemoved: "Total Supprim\u00e9es",
+                totalRemovedSub: "finitions supprim\u00e9es",
+                totalPriceDrops: "Baisses de Prix",
+                totalPriceDropsSub: "d\u00e9tect\u00e9es dans l'historique",
+                totalPriceIncreases: "Hausses de Prix",
+                totalPriceIncreasesSub: "d\u00e9tect\u00e9es dans l'historique",
+
+                changesTimeline: "\u00c9volution dans le Temps",
+                changeBreakdown: "R\u00e9partition des Changements (Snapshot s\u00e9lectionn\u00e9)",
+                mostAffectedBrands: "Marques les Plus Actives",
+                priceChangeChart: "Amplitude des Changements de Prix",
+
+                snapshotSummary: "D\u00e9tails du Snapshot",
+                priceChanges: "Changements de Prix",
+                trimsAdded: "Finitions Ajout\u00e9es",
+                trimsRemoved: "Finitions Supprim\u00e9es",
+                specChanges: "Changements de Sp\u00e9cifications",
+                brandsAdded: "Marques Ajout\u00e9es",
+                brandsRemoved: "Marques Supprim\u00e9es",
+                modelsAdded: "Mod\u00e8les Ajout\u00e9s",
+                modelsRemoved: "Mod\u00e8les Supprim\u00e9s",
+
+                rank: "#",
+                car: "Voiture",
+                brand: "Marque",
+                model: "Mod\u00e8le",
+                oldPrice: "Ancien Prix",
+                newPrice: "Nouveau Prix",
+                change: "Variation",
+                changePct: "%",
+                price: "Prix",
+                fuel: "Carburant",
+                bodyType: "Type",
+                transmission: "Trans.",
+                field: "Champ",
+                oldValue: "Ancienne Valeur",
+                newValue: "Nouvelle Valeur",
+
+                added: "Ajout\u00e9",
+                removed: "Supprim\u00e9",
+                priceChange: "Prix",
+                specChange: "Specs",
+                additions: "Ajouts",
+                removals: "Suppressions",
+                noChanges: "Aucun changement dans cette cat\u00e9gorie",
+                noHistory: "Aucun historique disponible. Ex\u00e9cutez le scraper puis generate_history.py pour cr\u00e9er le premier snapshot.",
+                initialSnapshot: "Snapshot Initial",
+                before: "avant",
+                after: "apr\u00e8s",
+                trims: "finitions",
+                changes: "changements",
+                brands: "marques",
+                models: "mod\u00e8les",
+                page: "Page",
+                of: "sur",
+                totalBefore: "Avant",
+                totalAfter: "Apr\u00e8s",
+                netChange: "Net",
+            }
+        };
+
+        function t(key) { return translations[currentLang][key] || key; }
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('dashboardLang', lang);
+            document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+            document.getElementById('lang-fr').classList.toggle('active', lang === 'fr');
+            document.getElementById('header-title').textContent = t('headerTitle');
+            document.getElementById('header-subtitle').textContent = t('headerSubtitle');
+            document.querySelector('footer').textContent = t('footerText');
+            if (historyData) {
+                destroyAllCharts();
+                renderDashboard(historyData);
+            }
+        }
+
+        function destroyAllCharts() {
+            Object.values(chartInstances).forEach(c => { if (c && c.destroy) c.destroy(); });
+            chartInstances = {};
+        }
+
+        function initLanguage() {
+            document.getElementById('lang-en').classList.toggle('active', currentLang === 'en');
+            document.getElementById('lang-fr').classList.toggle('active', currentLang === 'fr');
+            document.getElementById('header-title').textContent = t('headerTitle');
+            document.getElementById('header-subtitle').textContent = t('headerSubtitle');
+            document.querySelector('footer').textContent = t('footerText');
+            const el = document.getElementById('loading-text');
+            if (el) el.textContent = t('loading');
+        }
+
+        // ── Helpers ────────────────────────────────────────────
+        const colors = {
+            blue: '#3b82f6', purple: '#8b5cf6', green: '#10b981',
+            orange: '#f59e0b', red: '#ef4444', pink: '#ec4899',
+            cyan: '#06b6d4', yellow: '#eab308', indigo: '#6366f1', teal: '#14b8a6'
+        };
+        const colorPalette = [
+            colors.blue, colors.purple, colors.green, colors.orange, colors.red,
+            colors.pink, colors.cyan, colors.yellow, colors.indigo, colors.teal
+        ];
+
+        function isMobile() { return window.innerWidth <= 768; }
+        function legendPosition() { return isMobile() ? 'bottom' : 'right'; }
+
+        function formatPrice(p) {
+            if (p == null) return '-';
+            return new Intl.NumberFormat('fr-TN').format(p) + ' DT';
+        }
+        function formatNumber(n) { return new Intl.NumberFormat('fr-TN').format(n); }
+        function formatChange(c) {
+            const sign = c > 0 ? '+' : '';
+            return sign + new Intl.NumberFormat('fr-TN').format(c) + ' DT';
+        }
+        function formatPct(p) {
+            const sign = p > 0 ? '+' : '';
+            return sign + p.toFixed(2) + '%';
+        }
+
+        function getFuelBadge(fuel) {
+            if (!fuel) return '<span class="badge badge-default">-</span>';
+            const fl = fuel.toLowerCase();
+            if (fl.includes('electrique') || fl.includes('lectrique')) return `<span class="badge badge-electrique">${fuel}</span>`;
+            if (fl.includes('hybride')) return `<span class="badge badge-hybride">${fuel}</span>`;
+            if (fl.includes('diesel')) return `<span class="badge badge-diesel">${fuel}</span>`;
+            if (fl.includes('essence')) return `<span class="badge badge-essence">${fuel}</span>`;
+            return `<span class="badge badge-default">${fuel}</span>`;
+        }
+
+        function getTransBadge(tr) {
+            if (!tr) return '<span class="badge badge-default">-</span>';
+            const tl = tr.toLowerCase();
+            if (tl.includes('auto')) return `<span class="badge badge-automatique">${tr}</span>`;
+            if (tl.includes('manuel') || tl.includes('manual')) return `<span class="badge badge-manuelle">${tr}</span>`;
+            return `<span class="badge badge-default">${tr}</span>`;
+        }
+
+        function getBodyBadge(b) {
+            if (!b) return '<span class="badge badge-default">-</span>';
+            const bl = b.toLowerCase();
+            const map = { suv:'suv', crossover:'suv', berline:'berline', citadine:'citadine', compacte:'compacte' };
+            for (const [k, v] of Object.entries(map)) {
+                if (bl.includes(k)) return `<span class="badge badge-${v}">${b}</span>`;
+            }
+            return `<span class="badge badge-default">${b}</span>`;
+        }
+
+        // ── Data loading ───────────────────────────────────────
+        async function loadHistory() {
+            const r = await fetch('new_cars_history.json');
+            if (!r.ok) throw new Error('History file not found');
+            return r.json();
+        }
+
+        function onEntryChange() {
+            selectedIdx = parseInt(document.getElementById('entry-select').value, 10);
+            pages = { added: 1, removed: 1, prices: 1, specs: 1 };
+            destroyAllCharts();
+            renderDashboard(historyData);
+        }
+
+        // ── Aggregate stats across all entries ─────────────────
+        function aggregateStats(data) {
+            const entries = data.entries || [];
+            let totalAdded = 0, totalRemoved = 0, totalDrops = 0, totalIncreases = 0;
+            entries.forEach(e => {
+                const s = e.summary || {};
+                totalAdded += s.trims_added || 0;
+                totalRemoved += s.trims_removed || 0;
+                totalDrops += s.price_drops || 0;
+                totalIncreases += s.price_increases || 0;
+            });
+            const latest = entries[0] || {};
+            const latestSummary = latest.summary || {};
+            return {
+                count: entries.length,
+                catalogSize: latestSummary.total_after || 0,
+                totalAdded,
+                totalRemoved,
+                totalDrops,
+                totalIncreases,
+            };
+        }
+
+        // ── Render ─────────────────────────────────────────────
+        function renderDashboard(data) {
+            historyData = data;
+            const entries = data.entries || [];
+
+            if (entries.length === 0) {
+                document.getElementById('content').innerHTML =
+                    `<div class="empty-state"><p>${t('noHistory')}</p></div>`;
+                document.getElementById('date-selector-container').style.display = 'none';
+                return;
+            }
+
+            // Date selector
+            const sel = document.getElementById('entry-select');
+            sel.innerHTML = entries.map((e, i) => {
+                const isInitial = e.previous_scrape === null;
+                const label = isInitial ? `${e.date} (${t('initialSnapshot')})` : e.date;
+                return `<option value="${i}" ${i === selectedIdx ? 'selected' : ''}>${label}</option>`;
+            }).join('');
+            document.getElementById('date-label').textContent = t('dateLabel');
+            document.getElementById('date-selector-container').style.display = '';
+
+            const agg = aggregateStats(data);
+            const entry = entries[selectedIdx];
+            const s = entry.summary;
+            const ch = entry.changes;
+            const isInitial = entry.previous_scrape === null;
+            const totalChanges = s.trims_added + s.trims_removed + s.price_changes + s.spec_changes;
+
+            const content = document.getElementById('content');
+            content.innerHTML = `
+                <!-- Stats -->
+                <div class="stats-grid">
+                    <div class="stat-card gradient-1">
+                        <h3>${t('historyEntries')}</h3>
+                        <div class="value">${agg.count}</div>
+                        <div class="subtitle">${t('historyEntriesSub')}</div>
+                    </div>
+                    <div class="stat-card gradient-2">
+                        <h3>${t('catalogSize')}</h3>
+                        <div class="value">${formatNumber(agg.catalogSize)}</div>
+                        <div class="subtitle">${t('catalogSizeSub')}</div>
+                    </div>
+                    <div class="stat-card gradient-3">
+                        <h3>${t('totalAdded')}</h3>
+                        <div class="value" style="color:#10b981">+${formatNumber(agg.totalAdded)}</div>
+                        <div class="subtitle">${t('totalAddedSub')}</div>
+                    </div>
+                    <div class="stat-card gradient-4">
+                        <h3>${t('totalRemoved')}</h3>
+                        <div class="value" style="color:#ef4444">-${formatNumber(agg.totalRemoved)}</div>
+                        <div class="subtitle">${t('totalRemovedSub')}</div>
+                    </div>
+                    <div class="stat-card gradient-5">
+                        <h3>${t('totalPriceDrops')}</h3>
+                        <div class="value" style="color:#10b981">${formatNumber(agg.totalDrops)}</div>
+                        <div class="subtitle">${t('totalPriceDropsSub')}</div>
+                    </div>
+                    <div class="stat-card gradient-6">
+                        <h3>${t('totalPriceIncreases')}</h3>
+                        <div class="value" style="color:#f59e0b">${formatNumber(agg.totalIncreases)}</div>
+                        <div class="subtitle">${t('totalPriceIncreasesSub')}</div>
+                    </div>
+                </div>
+
+                <!-- Charts -->
+                <div class="charts-grid">
+                    <div class="chart-card">
+                        <h2>${t('changesTimeline')}</h2>
+                        <div class="chart-container">
+                            <canvas id="timelineChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <h2>${t('changeBreakdown')}</h2>
+                        <div class="chart-container">
+                            <canvas id="breakdownChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <h2>${t('mostAffectedBrands')}</h2>
+                        <div class="chart-container tall">
+                            <canvas id="brandsChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <h2>${t('priceChangeChart')}</h2>
+                        <div class="chart-container">
+                            <canvas id="priceChangeChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Snapshot summary bar -->
+                <div class="entry-summary-bar">
+                    <span class="text-slate-400 text-xs">${entry.date} &mdash;</span>
+                    <span class="pill pill-add">+${s.trims_added} ${t('additions')}</span>
+                    <span class="pill pill-remove">-${s.trims_removed} ${t('removals')}</span>
+                    <span class="pill pill-price">${s.price_changes} ${t('priceChange')}</span>
+                    <span class="pill pill-spec">${s.spec_changes} ${t('specChange')}</span>
+                    <span class="text-slate-500 text-xs">${s.total_before} &rarr; ${s.total_after} ${t('trims')}</span>
+                </div>
+
+                <!-- Brands & Models added/removed -->
+                ${(ch.brands_added.length || ch.brands_removed.length || ch.models_added.length || ch.models_removed.length) ? `
+                <div class="charts-grid" style="margin-bottom:1.5rem;">
+                    ${ch.brands_added.length ? `
+                    <div class="chart-card">
+                        <h2>${t('brandsAdded')}</h2>
+                        <div class="brand-pills">${ch.brands_added.map(b => `<span class="badge badge-added">${b}</span>`).join('')}</div>
+                    </div>` : ''}
+                    ${ch.brands_removed.length ? `
+                    <div class="chart-card">
+                        <h2>${t('brandsRemoved')}</h2>
+                        <div class="brand-pills">${ch.brands_removed.map(b => `<span class="badge badge-removed">${b}</span>`).join('')}</div>
+                    </div>` : ''}
+                    ${ch.models_added.length ? `
+                    <div class="chart-card">
+                        <h2>${t('modelsAdded')}</h2>
+                        <div class="brand-pills">${ch.models_added.map(m => `<span class="badge badge-added">${m.brand} ${m.model}</span>`).join('')}</div>
+                    </div>` : ''}
+                    ${ch.models_removed.length ? `
+                    <div class="chart-card">
+                        <h2>${t('modelsRemoved')}</h2>
+                        <div class="brand-pills">${ch.models_removed.map(m => `<span class="badge badge-removed">${m.brand} ${m.model}</span>`).join('')}</div>
+                    </div>` : ''}
+                </div>` : ''}
+
+                <!-- Price Changes Table -->
+                <div class="chart-card full-width" style="margin-bottom:1.5rem;">
+                    <h2>${t('priceChanges')} <span class="text-sm text-slate-500 ml-2">(${s.price_changes})</span></h2>
+                    <div class="table-container" id="price-table-container"></div>
+                    <div class="pagination" id="price-pagination"></div>
+                </div>
+
+                <!-- Trims Added Table -->
+                <div class="chart-card full-width" style="margin-bottom:1.5rem;">
+                    <h2>${t('trimsAdded')} <span class="text-sm text-slate-500 ml-2">(${s.trims_added})</span></h2>
+                    <div class="table-container" id="added-table-container"></div>
+                    <div class="pagination" id="added-pagination"></div>
+                </div>
+
+                <!-- Trims Removed Table -->
+                <div class="chart-card full-width" style="margin-bottom:1.5rem;">
+                    <h2>${t('trimsRemoved')} <span class="text-sm text-slate-500 ml-2">(${s.trims_removed})</span></h2>
+                    <div class="table-container" id="removed-table-container"></div>
+                    <div class="pagination" id="removed-pagination"></div>
+                </div>
+
+                <!-- Spec Changes Table -->
+                <div class="chart-card full-width" style="margin-bottom:1.5rem;">
+                    <h2>${t('specChanges')} <span class="text-sm text-slate-500 ml-2">(${s.spec_changes})</span></h2>
+                    <div class="table-container" id="spec-table-container"></div>
+                    <div class="pagination" id="spec-pagination"></div>
+                </div>
+            `;
+
+            // Render charts
+            renderTimelineChart(data);
+            renderBreakdownChart(entry);
+            renderBrandsChart(entry);
+            renderPriceChangeDistChart(entry);
+
+            // Render tables
+            renderPriceTable(ch.price_changes);
+            renderAddedTable(ch.trims_added);
+            renderRemovedTable(ch.trims_removed);
+            renderSpecTable(ch.spec_changes);
+        }
+
+        // ── Charts ─────────────────────────────────────────────
+        function renderTimelineChart(data) {
+            const ctx = document.getElementById('timelineChart').getContext('2d');
+            const entries = [...data.entries].reverse(); // chronological order
+
+            chartInstances.timeline = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: entries.map(e => e.date),
+                    datasets: [
+                        {
+                            label: t('additions'),
+                            data: entries.map(e => e.summary.trims_added),
+                            backgroundColor: colors.green + 'cc',
+                            borderRadius: 4,
+                        },
+                        {
+                            label: t('removals'),
+                            data: entries.map(e => e.summary.trims_removed),
+                            backgroundColor: colors.red + 'cc',
+                            borderRadius: 4,
+                        },
+                        {
+                            label: t('priceChange'),
+                            data: entries.map(e => e.summary.price_changes),
+                            backgroundColor: colors.orange + 'cc',
+                            borderRadius: 4,
+                        },
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'top', labels: { usePointStyle: true, padding: 12 } }
+                    },
+                    scales: {
+                        y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' } },
+                        x: { grid: { display: false } }
+                    }
+                }
+            });
+        }
+
+        function renderBreakdownChart(entry) {
+            const ctx = document.getElementById('breakdownChart').getContext('2d');
+            const s = entry.summary;
+            const labels = [t('additions'), t('removals'), t('priceChange'), t('specChange')];
+            const data = [s.trims_added, s.trims_removed, s.price_changes, s.spec_changes];
+            const bgColors = [colors.green, colors.red, colors.orange, colors.purple];
+
+            chartInstances.breakdown = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels,
+                    datasets: [{ data, backgroundColor: bgColors, borderWidth: 0, spacing: 2 }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: legendPosition(), labels: { padding: 15, usePointStyle: true } }
+                    },
+                    cutout: '60%'
+                }
+            });
+        }
+
+        function renderBrandsChart(entry) {
+            const ctx = document.getElementById('brandsChart').getContext('2d');
+            const ch = entry.changes;
+
+            // Count changes per brand
+            const brandCounts = {};
+            const addCounts = (items, key) => {
+                items.forEach(item => {
+                    const b = item.brand || item;
+                    brandCounts[b] = (brandCounts[b] || 0) + 1;
+                });
+            };
+            addCounts(ch.trims_added);
+            addCounts(ch.trims_removed);
+            addCounts(ch.price_changes);
+            // spec changes
+            ch.spec_changes.forEach(s => { brandCounts[s.brand] = (brandCounts[s.brand] || 0) + 1; });
+
+            const sorted = Object.entries(brandCounts).sort((a, b) => b[1] - a[1]).slice(0, 12);
+
+            if (sorted.length === 0) {
+                document.getElementById('brandsChart').parentElement.innerHTML =
+                    `<div class="empty-state"><p class="sub">${t('noChanges')}</p></div>`;
+                return;
+            }
+
+            chartInstances.brands = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: sorted.map(s => s[0]),
+                    datasets: [{
+                        label: t('changes'),
+                        data: sorted.map(s => s[1]),
+                        backgroundColor: colorPalette.slice(0, sorted.length),
+                        borderRadius: 6,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' } },
+                        y: { grid: { display: false } }
+                    }
+                }
+            });
+        }
+
+        function renderPriceChangeDistChart(entry) {
+            const ctx = document.getElementById('priceChangeChart').getContext('2d');
+            const pcs = entry.changes.price_changes || [];
+
+            if (pcs.length === 0) {
+                document.getElementById('priceChangeChart').parentElement.innerHTML =
+                    `<div class="empty-state"><p class="sub">${t('noChanges')}</p></div>`;
+                return;
+            }
+
+            const buckets = [
+                { label: '< -10K', min: -Infinity, max: -10000 },
+                { label: '-10K..-5K', min: -10000, max: -5000 },
+                { label: '-5K..-1K', min: -5000, max: -1000 },
+                { label: '-1K..0', min: -1000, max: 0 },
+                { label: '0..+1K', min: 0, max: 1000 },
+                { label: '+1K..+5K', min: 1000, max: 5000 },
+                { label: '+5K..+10K', min: 5000, max: 10000 },
+                { label: '> +10K', min: 10000, max: Infinity },
+            ];
+
+            const counts = buckets.map(b =>
+                pcs.filter(p => p.change >= b.min && p.change < b.max).length
+            );
+            const bgColors = [
+                '#10b981', '#34d399', '#6ee7b7', '#a7f3d0',
+                '#fca5a5', '#f87171', '#ef4444', '#dc2626'
+            ];
+
+            chartInstances.priceChangeDist = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: buckets.map(b => b.label),
+                    datasets: [{
+                        data: counts,
+                        backgroundColor: bgColors,
+                        borderRadius: 6,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' } },
+                        x: { grid: { display: false } }
+                    }
+                }
+            });
+        }
+
+        // ── Pagination helpers ─────────────────────────────────
+        function renderPagination(containerId, currentPage, totalPages, onPageFn) {
+            const container = document.getElementById(containerId);
+            if (totalPages <= 1) { container.innerHTML = ''; return; }
+
+            let html = '';
+            html += `<button onclick="${onPageFn}(1)" ${currentPage === 1 ? 'disabled' : ''}>&laquo;</button>`;
+            html += `<button onclick="${onPageFn}(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>&lsaquo;</button>`;
+
+            // Show page numbers around current page
+            const start = Math.max(1, currentPage - 2);
+            const end = Math.min(totalPages, currentPage + 2);
+
+            if (start > 1) html += `<button onclick="${onPageFn}(1)">1</button>`;
+            if (start > 2) html += `<span class="page-info">...</span>`;
+
+            for (let i = start; i <= end; i++) {
+                html += `<button onclick="${onPageFn}(${i})" class="${i === currentPage ? 'active' : ''}">${i}</button>`;
+            }
+
+            if (end < totalPages - 1) html += `<span class="page-info">...</span>`;
+            if (end < totalPages) html += `<button onclick="${onPageFn}(${totalPages})">${totalPages}</button>`;
+
+            html += `<button onclick="${onPageFn}(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>&rsaquo;</button>`;
+            html += `<button onclick="${onPageFn}(${totalPages})" ${currentPage === totalPages ? 'disabled' : ''}>&raquo;</button>`;
+            html += `<span class="page-info">${t('page')} ${currentPage} ${t('of')} ${totalPages}</span>`;
+
+            container.innerHTML = html;
+        }
+
+        // ── Tables ─────────────────────────────────────────────
+
+        // Price Changes
+        function renderPriceTable(items) {
+            const container = document.getElementById('price-table-container');
+            if (!items || items.length === 0) {
+                container.innerHTML = `<div class="empty-state"><p class="sub">${t('noChanges')}</p></div>`;
+                return;
+            }
+            const totalPages = Math.ceil(items.length / PER_PAGE);
+            const page = pages.prices;
+            const start = (page - 1) * PER_PAGE;
+            const pageItems = items.slice(start, start + PER_PAGE);
+
+            container.innerHTML = `<table>
+                <thead><tr>
+                    <th>${t('rank')}</th>
+                    <th>${t('car')}</th>
+                    <th>${t('oldPrice')}</th>
+                    <th>${t('newPrice')}</th>
+                    <th>${t('change')}</th>
+                    <th>${t('changePct')}</th>
+                </tr></thead>
+                <tbody>${pageItems.map((p, i) => {
+                    const isDown = p.change < 0;
+                    const arrow = isDown ? '<span class="change-arrow down">\u2193</span>' : '<span class="change-arrow up">\u2191</span>';
+                    const cls = isDown ? 'price-down' : 'price-up';
+                    return `<tr>
+                        <td>${start + i + 1}</td>
+                        <td><strong>${p.full_name}</strong></td>
+                        <td class="price">${formatPrice(p.old_price)}</td>
+                        <td class="price">${formatPrice(p.new_price)}</td>
+                        <td class="${cls}">${arrow}${formatChange(p.change)}</td>
+                        <td class="${cls}">${formatPct(p.change_pct)}</td>
+                    </tr>`;
+                }).join('')}</tbody>
+            </table>`;
+            renderPagination('price-pagination', page, totalPages, 'goToPricePage');
+        }
+
+        window.goToPricePage = function(p) {
+            const entry = historyData.entries[selectedIdx];
+            const totalPages = Math.ceil(entry.changes.price_changes.length / PER_PAGE);
+            pages.prices = Math.max(1, Math.min(p, totalPages));
+            renderPriceTable(entry.changes.price_changes);
+        };
+
+        // Trims Added
+        function renderAddedTable(items) {
+            const container = document.getElementById('added-table-container');
+            if (!items || items.length === 0) {
+                container.innerHTML = `<div class="empty-state"><p class="sub">${t('noChanges')}</p></div>`;
+                return;
+            }
+            const totalPages = Math.ceil(items.length / PER_PAGE);
+            const page = pages.added;
+            const start = (page - 1) * PER_PAGE;
+            const pageItems = items.slice(start, start + PER_PAGE);
+
+            container.innerHTML = `<table>
+                <thead><tr>
+                    <th>${t('rank')}</th>
+                    <th>${t('car')}</th>
+                    <th>${t('price')}</th>
+                    <th>${t('fuel')}</th>
+                    <th>${t('bodyType')}</th>
+                    <th>${t('transmission')}</th>
+                </tr></thead>
+                <tbody>${pageItems.map((c, i) => `<tr>
+                    <td>${start + i + 1}</td>
+                    <td><strong>${c.full_name}</strong></td>
+                    <td class="price">${formatPrice(c.price_tnd)}</td>
+                    <td>${getFuelBadge(c.fuel_type)}</td>
+                    <td>${getBodyBadge(c.body_type)}</td>
+                    <td>${getTransBadge(c.transmission)}</td>
+                </tr>`).join('')}</tbody>
+            </table>`;
+            renderPagination('added-pagination', page, totalPages, 'goToAddedPage');
+        }
+
+        window.goToAddedPage = function(p) {
+            const entry = historyData.entries[selectedIdx];
+            const totalPages = Math.ceil(entry.changes.trims_added.length / PER_PAGE);
+            pages.added = Math.max(1, Math.min(p, totalPages));
+            renderAddedTable(entry.changes.trims_added);
+        };
+
+        // Trims Removed
+        function renderRemovedTable(items) {
+            const container = document.getElementById('removed-table-container');
+            if (!items || items.length === 0) {
+                container.innerHTML = `<div class="empty-state"><p class="sub">${t('noChanges')}</p></div>`;
+                return;
+            }
+            const totalPages = Math.ceil(items.length / PER_PAGE);
+            const page = pages.removed;
+            const start = (page - 1) * PER_PAGE;
+            const pageItems = items.slice(start, start + PER_PAGE);
+
+            container.innerHTML = `<table>
+                <thead><tr>
+                    <th>${t('rank')}</th>
+                    <th>${t('car')}</th>
+                    <th>${t('price')}</th>
+                    <th>${t('fuel')}</th>
+                    <th>${t('bodyType')}</th>
+                    <th>${t('transmission')}</th>
+                </tr></thead>
+                <tbody>${pageItems.map((c, i) => `<tr>
+                    <td>${start + i + 1}</td>
+                    <td><strong>${c.full_name}</strong></td>
+                    <td class="price">${formatPrice(c.price_tnd)}</td>
+                    <td>${getFuelBadge(c.fuel_type)}</td>
+                    <td>${getBodyBadge(c.body_type)}</td>
+                    <td>${getTransBadge(c.transmission)}</td>
+                </tr>`).join('')}</tbody>
+            </table>`;
+            renderPagination('removed-pagination', page, totalPages, 'goToRemovedPage');
+        }
+
+        window.goToRemovedPage = function(p) {
+            const entry = historyData.entries[selectedIdx];
+            const totalPages = Math.ceil(entry.changes.trims_removed.length / PER_PAGE);
+            pages.removed = Math.max(1, Math.min(p, totalPages));
+            renderRemovedTable(entry.changes.trims_removed);
+        };
+
+        // Spec Changes
+        function renderSpecTable(items) {
+            const container = document.getElementById('spec-table-container');
+            if (!items || items.length === 0) {
+                container.innerHTML = `<div class="empty-state"><p class="sub">${t('noChanges')}</p></div>`;
+                return;
+            }
+            const totalPages = Math.ceil(items.length / PER_PAGE);
+            const page = pages.specs;
+            const start = (page - 1) * PER_PAGE;
+            const pageItems = items.slice(start, start + PER_PAGE);
+
+            container.innerHTML = `<table>
+                <thead><tr>
+                    <th>${t('rank')}</th>
+                    <th>${t('car')}</th>
+                    <th>${t('field')}</th>
+                    <th>${t('oldValue')}</th>
+                    <th>${t('newValue')}</th>
+                </tr></thead>
+                <tbody>${pageItems.map((s, i) => `<tr>
+                    <td>${start + i + 1}</td>
+                    <td><strong>${s.full_name}</strong></td>
+                    <td><span class="badge badge-spec">${s.field}</span></td>
+                    <td>${s.old_value != null ? s.old_value : '-'}</td>
+                    <td>${s.new_value != null ? s.new_value : '-'}</td>
+                </tr>`).join('')}</tbody>
+            </table>`;
+            renderPagination('spec-pagination', page, totalPages, 'goToSpecPage');
+        }
+
+        window.goToSpecPage = function(p) {
+            const entry = historyData.entries[selectedIdx];
+            const totalPages = Math.ceil(entry.changes.spec_changes.length / PER_PAGE);
+            pages.specs = Math.max(1, Math.min(p, totalPages));
+            renderSpecTable(entry.changes.spec_changes);
+        };
+
+        // ── Init ───────────────────────────────────────────────
+        initLanguage();
+        loadHistory()
+            .then(data => renderDashboard(data))
+            .catch(error => {
+                document.getElementById('content').innerHTML = `
+                    <div class="error">
+                        <h3>${t('errorTitle')}</h3>
+                        <p>${error.message}</p>
+                        <p style="margin-top:10px;color:#94a3b8;">
+                            ${t('errorHelp')} <code>python generate_history.py</code>
+                        </p>
+                    </div>
+                `;
+            });
+    </script>
+</body>
+</html>
