@@ -20,6 +20,9 @@ debug_*.md
 .vscode/
 *.swp
 
+# Transient history comparison file (created during CI)
+automobile_tn_new_cars_previous.json
+
 # OS
 .DS_Store
 Thumbs.db

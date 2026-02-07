@@ -26,10 +26,18 @@ jobs:
         id: day
         run: echo "day=$(date -u +%u)" >> "$GITHUB_OUTPUT"
 
+      - name: Save previous new cars data for history
+        if: github.event_name == 'workflow_dispatch' || steps.day.outputs.day == '1'
+        run: cp automobile_tn_new_cars.json automobile_tn_new_cars_previous.json 2>/dev/null || true
+
       - name: Run new cars scraper (weekly - Mondays only)
         if: github.event_name == 'workflow_dispatch' || steps.day.outputs.day == '1'
         run: python automobile_scraper.py
         timeout-minutes: 30
+
+      - name: Generate new cars history
+        if: github.event_name == 'workflow_dispatch' || steps.day.outputs.day == '1'
+        run: python generate_history.py
 
       - name: Run used cars scraper
         run: python used_cars_scraper.py
@@ -43,7 +51,7 @@ jobs:
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add automobile_tn_new_cars.json automobile_tn_new_cars.csv automobile_tn_used_cars.json automobile_tn_used_cars.csv autoscout24_*.json autoscout24_*.csv
+          git add automobile_tn_new_cars.json automobile_tn_new_cars.csv automobile_tn_used_cars.json automobile_tn_used_cars.csv autoscout24_*.json autoscout24_*.csv new_cars_history.json
           git diff --staged --quiet || git commit -m "Update car data - $(date -u +%Y-%m-%d)"
           git push
 
