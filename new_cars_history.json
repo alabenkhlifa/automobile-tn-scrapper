@@ -1,6 +1,598 @@
 {
   "entries": [
     {
+      "date": "2026-02-09",
+      "previous_scrape": "2026-02-02T04:14:45.118684",
+      "current_scrape": "2026-02-09T04:17:37.215555",
+      "summary": {
+        "total_before": 553,
+        "total_after": 554,
+        "brands_added": 2,
+        "brands_removed": 0,
+        "models_added": 8,
+        "models_removed": 6,
+        "trims_added": 11,
+        "trims_removed": 10,
+        "price_changes": 6,
+        "price_drops": 5,
+        "price_increases": 1,
+        "spec_changes": 20
+      },
+      "changes": {
+        "brands_added": [
+          "Deepal",
+          "Lynk Co"
+        ],
+        "brands_removed": [],
+        "models_added": [
+          {
+            "brand": "Bmw",
+            "model": "i5"
+          },
+          {
+            "brand": "Deepal",
+            "model": "G318"
+          },
+          {
+            "brand": "Deepal",
+            "model": "S05"
+          },
+          {
+            "brand": "Deepal",
+            "model": "S07"
+          },
+          {
+            "brand": "Lynk Co",
+            "model": "01"
+          },
+          {
+            "brand": "Lynk Co",
+            "model": "02"
+          },
+          {
+            "brand": "Lynk Co",
+            "model": "08"
+          },
+          {
+            "brand": "Mercedes Benz",
+            "model": "GLC Plug-in Hybride"
+          }
+        ],
+        "models_removed": [
+          {
+            "brand": "Hyundai",
+            "model": "Azera Hybride"
+          },
+          {
+            "brand": "Ssangyong",
+            "model": "Torres"
+          },
+          {
+            "brand": "Toyota",
+            "model": "Corolla Sedan"
+          },
+          {
+            "brand": "Toyota",
+            "model": "Corolla Sedan Hybride"
+          },
+          {
+            "brand": "Toyota",
+            "model": "Land Cruiser 76"
+          },
+          {
+            "brand": "Toyota",
+            "model": "Land Cruiser 79"
+          }
+        ],
+        "trims_added": [
+          {
+            "id": "bmw_i5_edrive40_lounge",
+            "full_name": "BMW i5 eDrive40 Lounge",
+            "brand": "Bmw",
+            "model": "i5",
+            "trim": "eDrive40 Lounge",
+            "price_tnd": 290900,
+            "fuel_type": "electric",
+            "body_type": "Berline",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/bmw/i5/edrive40-lounge"
+          },
+          {
+            "id": "bmw_i5_edrive40_pack_m",
+            "full_name": "BMW i5 eDrive40 Pack M",
+            "brand": "Bmw",
+            "model": "i5",
+            "trim": "eDrive40 Pack M",
+            "price_tnd": 302900,
+            "fuel_type": "electric",
+            "body_type": "Berline",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/bmw/i5/edrive40-pack-m"
+          },
+          {
+            "id": "bmw_i5_edrive40_pack_m__",
+            "full_name": "BMW i5 eDrive40 Pack M +",
+            "brand": "Bmw",
+            "model": "i5",
+            "trim": "eDrive40 Pack M +",
+            "price_tnd": 322900,
+            "fuel_type": "electric",
+            "body_type": "Berline",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/bmw/i5/edrive40-pack-m-plus"
+          },
+          {
+            "id": "deepal_g318_1_5_l_reev_35_07_kwh",
+            "full_name": "Deepal G318 1.5 L Reev 35.07 kWh",
+            "brand": "Deepal",
+            "model": "G318",
+            "trim": "1.5 L Reev 35.07 kWh",
+            "price_tnd": 125980,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/deepal/g318/1.5-l-reev-35.07-kwh"
+          },
+          {
+            "id": "deepal_s05_1_5_l_reev_27_28_kwh",
+            "full_name": "Deepal S05 1.5 L Reev 27.28 kWh",
+            "brand": "Deepal",
+            "model": "S05",
+            "trim": "1.5 L Reev 27.28 kWh",
+            "price_tnd": 79980,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/deepal/s05/1.5-l-reev-27.28-kwh"
+          },
+          {
+            "id": "deepal_s07_1_5_l_reev_31_73_kwh",
+            "full_name": "Deepal S07 1.5 L Reev 31.73 kWh",
+            "brand": "Deepal",
+            "model": "S07",
+            "trim": "1.5 L Reev 31.73 kWh",
+            "price_tnd": 103980,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/deepal/s07/1.5-l-reev-31.73-kwh"
+          },
+          {
+            "id": "lynk_co_01_1_5_l_more",
+            "full_name": "Lynk & Co 01 1.5 L More",
+            "brand": "Lynk Co",
+            "model": "01",
+            "trim": "1.5 L More",
+            "price_tnd": 99900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/lynk-co/01/1.5-l-more"
+          },
+          {
+            "id": "lynk_co_02_66_kwh_more",
+            "full_name": "Lynk & Co 02 66 kWh More",
+            "brand": "Lynk Co",
+            "model": "02",
+            "trim": "66 kWh More",
+            "price_tnd": 96900,
+            "fuel_type": "electric",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/lynk-co/02/66-kwh-more"
+          },
+          {
+            "id": "lynk_co_08_1_5_l_more",
+            "full_name": "Lynk & Co 08 1.5 L More",
+            "brand": "Lynk Co",
+            "model": "08",
+            "trim": "1.5 L More",
+            "price_tnd": 129900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/lynk-co/08/1.5-l-more"
+          },
+          {
+            "id": "mercedes_benz_glc_plug_in_hybride_350e_4matic_amg",
+            "full_name": "Mercedes-Benz GLC Plug-in Hybride 350e 4Matic AMG",
+            "brand": "Mercedes Benz",
+            "model": "GLC Plug-in Hybride",
+            "trim": "350e 4Matic AMG",
+            "price_tnd": 260000,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/mercedes-benz/glc-hybride/350e-4matic-amg"
+          },
+          {
+            "id": "suzuki_jimny_5_portes_1_5_l_4x4__raid_edition_bva",
+            "full_name": "Suzuki Jimny 5 portes 1.5 L 4x4  Raid Edition BVA",
+            "brand": "Suzuki",
+            "model": "Jimny 5 portes",
+            "trim": "1.5 L 4x4  Raid Edition BVA",
+            "price_tnd": 117900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/suzuki/jimny-5p/1.5-l-4x4-bva-raid-edition"
+          }
+        ],
+        "trims_removed": [
+          {
+            "id": "hyundai_azera_hybride_1_6_l_t_gdi_2wd_calligraphy_bva_6",
+            "full_name": "Hyundai Azera Hybride 1.6 l T-GDI 2WD Calligraphy BVA 6",
+            "brand": "Hyundai",
+            "model": "Azera Hybride",
+            "trim": "1.6 l T-GDI 2WD Calligraphy BVA 6",
+            "price_tnd": 249950,
+            "fuel_type": "essence",
+            "body_type": "Berline",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/hyundai/azera-hybride/1.6-l-t-gdi-bva-6-2wd-calligraphy"
+          },
+          {
+            "id": "hyundai_i20_1_0_l_t_mhev_bva",
+            "full_name": "Hyundai i20 1.0 L T MHEV BVA",
+            "brand": "Hyundai",
+            "model": "i20",
+            "trim": "1.0 L T MHEV BVA",
+            "price_tnd": 85950,
+            "fuel_type": "essence",
+            "body_type": "Citadine",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/hyundai/i20/1.0-l-t-mhev"
+          },
+          {
+            "id": "ssangyong_musso_2_2_l_diesel_4wd_bva",
+            "full_name": "Ssangyong Musso 2.2 l Diesel 4WD BVA",
+            "brand": "Ssangyong",
+            "model": "Musso",
+            "trim": "2.2 l Diesel 4WD BVA",
+            "price_tnd": 158645,
+            "fuel_type": "diesel",
+            "body_type": "Pick up",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/ssangyong/musso/2.2-l-diesel-4wd-bva"
+          },
+          {
+            "id": "ssangyong_torres_1_5_l_t_gdi_4wd_bva",
+            "full_name": "Ssangyong Torres 1.5 L T-GDI 4WD BVA",
+            "brand": "Ssangyong",
+            "model": "Torres",
+            "trim": "1.5 L T-GDI 4WD BVA",
+            "price_tnd": 184580,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/ssangyong/torres/1.5-l-t-gdi-bva"
+          },
+          {
+            "id": "suzuki_jimny_5_portes_1_5_l_4x4__glx_bva",
+            "full_name": "Suzuki Jimny 5 portes 1.5 L 4x4  GLX BVA",
+            "brand": "Suzuki",
+            "model": "Jimny 5 portes",
+            "trim": "1.5 L 4x4  GLX BVA",
+            "price_tnd": 129900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/suzuki/jimny-5p/1.5-l-gl-4x4-bva"
+          },
+          {
+            "id": "toyota_corolla_sedan_1_6_l_cvt_active_bva",
+            "full_name": "Toyota Corolla Sedan 1.6 L CVT Active BVA",
+            "brand": "Toyota",
+            "model": "Corolla Sedan",
+            "trim": "1.6 L CVT Active BVA",
+            "price_tnd": 108900,
+            "fuel_type": "essence",
+            "body_type": "Berline",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/toyota/corolla/1.6-l-cvt-bva-active"
+          },
+          {
+            "id": "toyota_corolla_sedan_hybride_1_8_l",
+            "full_name": "Toyota Corolla Sedan Hybride 1.8 L",
+            "brand": "Toyota",
+            "model": "Corolla Sedan Hybride",
+            "trim": "1.8 L",
+            "price_tnd": 124800,
+            "fuel_type": "essence",
+            "body_type": "Berline",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/toyota/corolla-sedan-hybride/1.8-l-hybride"
+          },
+          {
+            "id": "toyota_land_cruiser_76_4_2_l",
+            "full_name": "Toyota Land Cruiser 76 4.2 l",
+            "brand": "Toyota",
+            "model": "Land Cruiser 76",
+            "trim": "4.2 l",
+            "price_tnd": 244000,
+            "fuel_type": "diesel",
+            "body_type": "SUV",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/toyota/land-cruiser-76/4.2-l"
+          },
+          {
+            "id": "toyota_land_cruiser_79_4_2_l_diesel_4x4_simple_cabine",
+            "full_name": "Toyota Land Cruiser 79 4.2 l Diesel 4x4 Simple Cabine",
+            "brand": "Toyota",
+            "model": "Land Cruiser 79",
+            "trim": "4.2 l Diesel 4x4 Simple Cabine",
+            "price_tnd": 149800,
+            "fuel_type": "diesel",
+            "body_type": "Pick up",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/toyota/land-cruiser-79/4.2-l-diesel-4x4-simple-cabine"
+          },
+          {
+            "id": "volvo_es90_twin_motor_ultra",
+            "full_name": "Volvo ES90 Twin Motor Ultra",
+            "brand": "Volvo",
+            "model": "ES90",
+            "trim": "Twin Motor Ultra",
+            "price_tnd": 289900,
+            "fuel_type": "electric",
+            "body_type": "Berline",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/volvo/es90/twin-motor-106-kwh-ultra"
+          }
+        ],
+        "price_changes": [
+          {
+            "id": "ssangyong_musso_2_2_l_diesel_4wd_crm",
+            "full_name": "Ssangyong Musso 2.2 l Diesel 4WD CRM",
+            "brand": "Ssangyong",
+            "model": "Musso",
+            "trim": "2.2 l Diesel 4WD CRM",
+            "old_price": 139800,
+            "new_price": 119000,
+            "change": -20800,
+            "change_pct": -14.88
+          },
+          {
+            "id": "ssangyong_rexton_2_2_l_diesel_5_places_bva",
+            "full_name": "Ssangyong Rexton 2.2 L Diesel 5 places BVA",
+            "brand": "Ssangyong",
+            "model": "Rexton",
+            "trim": "2.2 L Diesel 5 places BVA",
+            "old_price": 302300,
+            "new_price": 290000,
+            "change": -12300,
+            "change_pct": -4.07
+          },
+          {
+            "id": "mahindra_pick_up_dc_2_2_l_diesel_4x4",
+            "full_name": "Mahindra Pick-up DC 2.2 l Diesel 4x4",
+            "brand": "Mahindra",
+            "model": "Pick-up DC",
+            "trim": "2.2 l Diesel 4x4",
+            "old_price": 78046,
+            "new_price": 76900,
+            "change": -1146,
+            "change_pct": -1.47
+          },
+          {
+            "id": "mahindra_pick_up_dc_2_2_l_diesel_4x2",
+            "full_name": "Mahindra Pick-up DC 2.2 l Diesel 4x2",
+            "brand": "Mahindra",
+            "model": "Pick-up DC",
+            "trim": "2.2 l Diesel 4x2",
+            "old_price": 69046,
+            "new_price": 69900,
+            "change": 854,
+            "change_pct": 1.24
+          },
+          {
+            "id": "mahindra_kuv_100_1_2_l_k8",
+            "full_name": "Mahindra KUV 100 1.2 l K8",
+            "brand": "Mahindra",
+            "model": "KUV 100",
+            "trim": "1.2 l K8",
+            "old_price": 43960,
+            "new_price": 43900,
+            "change": -60,
+            "change_pct": -0.14
+          },
+          {
+            "id": "mahindra_pick_up_sc_2_2_l_diesel_4x4_plateau_simple",
+            "full_name": "Mahindra Pick-up SC 2.2 l Diesel 4x4 Plateau Simple",
+            "brand": "Mahindra",
+            "model": "Pick-up SC",
+            "trim": "2.2 l Diesel 4x4 Plateau Simple",
+            "old_price": 63071,
+            "new_price": 63055,
+            "change": -16,
+            "change_pct": -0.03
+          }
+        ],
+        "spec_changes": [
+          {
+            "id": "bmw_ix_xdrive40_impressive",
+            "full_name": "BMW iX xDrive40 Impressive",
+            "brand": "Bmw",
+            "model": "iX",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "bmw_ix_xdrive50_pack_m",
+            "full_name": "BMW iX xDrive50 Pack M",
+            "brand": "Bmw",
+            "model": "iX",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "ford_transit_minibus_2_0_l_d_18_places",
+            "full_name": "Ford Transit Minibus 2.0 l D 18 Places",
+            "brand": "Ford",
+            "model": "Transit Minibus",
+            "field": "body_type",
+            "old_value": "Utilitaire",
+            "new_value": "Minibus"
+          },
+          {
+            "id": "foton_view_cs2_van_16_places_2_0_l_turbo",
+            "full_name": "Foton View CS2 Van 16 places 2.0 l Turbo",
+            "brand": "Foton",
+            "model": "View CS2 Van 16 places",
+            "field": "body_type",
+            "old_value": "Monospace",
+            "new_value": "Minibus"
+          },
+          {
+            "id": "hyundai_tucson_hybride_1_6_l_t_gdi_2wd_intuitive_bva_6",
+            "full_name": "Hyundai Tucson Hybride 1.6 l T-GDI 2WD Intuitive BVA 6",
+            "brand": "Hyundai",
+            "model": "Tucson Hybride",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "hyundai_tucson_hybride_1_6_l_t_gdi_2wd_top_grade_bva_6",
+            "full_name": "Hyundai Tucson Hybride 1.6 l T-GDI 2WD Top Grade BVA 6",
+            "brand": "Hyundai",
+            "model": "Tucson Hybride",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "mahindra_xuv_3xo_1_2_l__turbo_ax5",
+            "full_name": "Mahindra XUV 3XO 1.2 L  Turbo AX5",
+            "brand": "Mahindra",
+            "model": "XUV 3XO",
+            "field": "warranty_years",
+            "old_value": 3,
+            "new_value": 5
+          },
+          {
+            "id": "mahindra_xuv_3xo_1_2_l__turbo_ax5_bva",
+            "full_name": "Mahindra XUV 3XO 1.2 L  Turbo AX5 BVA",
+            "brand": "Mahindra",
+            "model": "XUV 3XO",
+            "field": "warranty_years",
+            "old_value": 3,
+            "new_value": 5
+          },
+          {
+            "id": "mahindra_xuv_3xo_1_2_l__turbo_ax7_luxury_bva",
+            "full_name": "Mahindra XUV 3XO 1.2 L  Turbo AX7 Luxury BVA",
+            "brand": "Mahindra",
+            "model": "XUV 3XO",
+            "field": "warranty_years",
+            "old_value": 3,
+            "new_value": 5
+          },
+          {
+            "id": "mahindra_xuv_3xo_1_2_l__turbo_mx3",
+            "full_name": "Mahindra XUV 3XO 1.2 L  Turbo MX3",
+            "brand": "Mahindra",
+            "model": "XUV 3XO",
+            "field": "warranty_years",
+            "old_value": 3,
+            "new_value": 5
+          },
+          {
+            "id": "tata_super_ace_simple_cabine_1_4_l_turbo_diesel",
+            "full_name": "Tata Super Ace Simple Cabine 1.4 L Turbo Diesel",
+            "brand": "Tata",
+            "model": "Super Ace Simple Cabine",
+            "field": "warranty_years",
+            "old_value": 3,
+            "new_value": 5
+          },
+          {
+            "id": "tata_xenon_x2_double_cabine_4x2_2_2_l_turbo",
+            "full_name": "Tata Xenon X2 Double Cabine 4x2 2.2 l Turbo",
+            "brand": "Tata",
+            "model": "Xenon X2 Double Cabine 4x2",
+            "field": "warranty_years",
+            "old_value": 3,
+            "new_value": 5
+          },
+          {
+            "id": "tata_xenon_x2_double_cabine_4x4_2_2_l_turbo",
+            "full_name": "Tata Xenon X2 Double Cabine 4x4 2.2 l Turbo",
+            "brand": "Tata",
+            "model": "Xenon X2 Double Cabine 4x4",
+            "field": "warranty_years",
+            "old_value": 3,
+            "new_value": 5
+          },
+          {
+            "id": "tata_xenon_x2_simple_cabine_2_2l_turbo",
+            "full_name": "Tata Xenon X2 Simple Cabine 2.2l Turbo",
+            "brand": "Tata",
+            "model": "Xenon X2 Simple Cabine",
+            "field": "warranty_years",
+            "old_value": 3,
+            "new_value": 5
+          },
+          {
+            "id": "toyota_coaster_4_2_l_diesel_23_places",
+            "full_name": "Toyota Coaster 4.2 L Diesel 23 places",
+            "brand": "Toyota",
+            "model": "Coaster",
+            "field": "body_type",
+            "old_value": "Utilitaire",
+            "new_value": "Minibus"
+          },
+          {
+            "id": "toyota_hiace_16_places_2_5_l_diesel",
+            "full_name": "Toyota Hiace 16 places 2.5 L Diesel",
+            "brand": "Toyota",
+            "model": "Hiace 16 places",
+            "field": "body_type",
+            "old_value": "Utilitaire",
+            "new_value": "Minibus"
+          },
+          {
+            "id": "volvo_es90_single_motor_extended_range_plus",
+            "full_name": "Volvo ES90 Single Motor Extended range Plus",
+            "brand": "Volvo",
+            "model": "ES90",
+            "field": "width_mm",
+            "old_value": 2120,
+            "new_value": 1942
+          },
+          {
+            "id": "volvo_es90_single_motor_extended_range_ultra",
+            "full_name": "Volvo ES90 Single Motor Extended range Ultra",
+            "brand": "Volvo",
+            "model": "ES90",
+            "field": "width_mm",
+            "old_value": 2120,
+            "new_value": 1942
+          },
+          {
+            "id": "volvo_ex90_single_motor_plus",
+            "full_name": "Volvo EX90 Single Motor Plus",
+            "brand": "Volvo",
+            "model": "EX90",
+            "field": "width_mm",
+            "old_value": 2113,
+            "new_value": 1964
+          },
+          {
+            "id": "volvo_ex90_twin_motor_performance_ultra",
+            "full_name": "Volvo EX90 Twin Motor Performance Ultra",
+            "brand": "Volvo",
+            "model": "EX90",
+            "field": "width_mm",
+            "old_value": 2113,
+            "new_value": 1964
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-02-07",
       "previous_scrape": null,
       "current_scrape": "2026-02-02T04:14:45.118684",
