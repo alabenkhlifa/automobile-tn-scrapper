@@ -1,6 +1,466 @@
 {
   "entries": [
     {
+      "date": "2026-02-16",
+      "previous_scrape": "2026-02-09T04:17:37.215555",
+      "current_scrape": "2026-02-16T04:15:33.020991",
+      "summary": {
+        "total_before": 554,
+        "total_after": 551,
+        "brands_added": 0,
+        "brands_removed": 0,
+        "models_added": 1,
+        "models_removed": 3,
+        "trims_added": 1,
+        "trims_removed": 4,
+        "price_changes": 8,
+        "price_drops": 5,
+        "price_increases": 3,
+        "spec_changes": 29
+      },
+      "changes": {
+        "brands_added": [],
+        "brands_removed": [],
+        "models_added": [
+          {
+            "brand": "Geely",
+            "model": "EX5 Hybride"
+          }
+        ],
+        "models_removed": [
+          {
+            "brand": "Hyundai",
+            "model": "Palisade Calligraphy"
+          },
+          {
+            "brand": "Mercedes Benz",
+            "model": "GLE"
+          },
+          {
+            "brand": "Mercedes Benz",
+            "model": "GLE Coupé"
+          }
+        ],
+        "trims_added": [
+          {
+            "id": "geely_ex5_hybride_1_5_em_i",
+            "full_name": "Geely EX5 Hybride 1.5 EM-i",
+            "brand": "Geely",
+            "model": "EX5 Hybride",
+            "trim": "1.5 EM-i",
+            "price_tnd": 86800,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/geely/ex5-hybride/1.5-l-em-i"
+          }
+        ],
+        "trims_removed": [
+          {
+            "id": "hyundai_palisade_calligraphy_2_2_l_tci_4x4_bva",
+            "full_name": "Hyundai Palisade Calligraphy 2.2 L TCi 4x4 BVA",
+            "brand": "Hyundai",
+            "model": "Palisade Calligraphy",
+            "trim": "2.2 L TCi 4x4 BVA",
+            "price_tnd": 350000,
+            "fuel_type": "diesel",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/hyundai/palisade-calligraphy/2.2-l-tci-bva-4x4"
+          },
+          {
+            "id": "hyundai_palisade_calligraphy_3_5_l_gdi_4x4_bva",
+            "full_name": "Hyundai Palisade Calligraphy 3.5 L GDI 4x4 BVA",
+            "brand": "Hyundai",
+            "model": "Palisade Calligraphy",
+            "trim": "3.5 L GDI 4x4 BVA",
+            "price_tnd": 350100,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/hyundai/palisade-calligraphy/3.5-l-gdi-bva-4x4"
+          },
+          {
+            "id": "mercedes_benz_gle_300d_4matic_amg",
+            "full_name": "Mercedes-Benz GLE 300d 4Matic AMG",
+            "brand": "Mercedes Benz",
+            "model": "GLE",
+            "trim": "300d 4Matic AMG",
+            "price_tnd": 592000,
+            "fuel_type": "diesel",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/mercedes-benz/gle/300d-4matic-amg-2023"
+          },
+          {
+            "id": "mercedes_benz_gle_coup__300d_4matic_amg",
+            "full_name": "Mercedes-Benz GLE Coupé 300d 4Matic AMG",
+            "brand": "Mercedes Benz",
+            "model": "GLE Coupé",
+            "trim": "300d 4Matic AMG",
+            "price_tnd": 612000,
+            "fuel_type": "diesel",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/mercedes-benz/gle-coupe/300d-4matic-amg-2023"
+          }
+        ],
+        "price_changes": [
+          {
+            "id": "mercedes_benz_glc_coup__plug_in_hybride_350e_4matic_amg",
+            "full_name": "Mercedes-Benz GLC Coupé Plug-in Hybride 350e 4Matic AMG",
+            "brand": "Mercedes Benz",
+            "model": "GLC Coupé Plug-in Hybride",
+            "trim": "350e 4Matic AMG",
+            "old_price": 369900,
+            "new_price": 299900,
+            "change": -70000,
+            "change_pct": -18.92
+          },
+          {
+            "id": "mercedes_benz_glc_plug_in_hybride_350e_4matic_amg",
+            "full_name": "Mercedes-Benz GLC Plug-in Hybride 350e 4Matic AMG",
+            "brand": "Mercedes Benz",
+            "model": "GLC Plug-in Hybride",
+            "trim": "350e 4Matic AMG",
+            "old_price": 260000,
+            "new_price": 279900,
+            "change": 19900,
+            "change_pct": 7.65
+          },
+          {
+            "id": "seat_ateca_1_4_l_tsi_fr",
+            "full_name": "Seat Ateca 1.4 L TSI FR",
+            "brand": "Seat",
+            "model": "Ateca",
+            "trim": "1.4 L TSI FR",
+            "old_price": 142980,
+            "new_price": 137980,
+            "change": -5000,
+            "change_pct": -3.5
+          },
+          {
+            "id": "seat_ateca_1_4_l_tsi_fr_black_edition",
+            "full_name": "Seat Ateca 1.4 L TSI FR Black Edition",
+            "brand": "Seat",
+            "model": "Ateca",
+            "trim": "1.4 L TSI FR Black Edition",
+            "old_price": 144980,
+            "new_price": 139980,
+            "change": -5000,
+            "change_pct": -3.45
+          },
+          {
+            "id": "seat_ateca_1_4_l_tsi_style",
+            "full_name": "Seat Ateca 1.4 L TSI Style",
+            "brand": "Seat",
+            "model": "Ateca",
+            "trim": "1.4 L TSI Style",
+            "old_price": 127980,
+            "new_price": 122980,
+            "change": -5000,
+            "change_pct": -3.91
+          },
+          {
+            "id": "hyundai_grand_i10_populaire_1_0_l",
+            "full_name": "Hyundai Grand i10 Populaire 1.0 L",
+            "brand": "Hyundai",
+            "model": "Grand i10 Populaire",
+            "trim": "1.0 L",
+            "old_price": 31803,
+            "new_price": 32343,
+            "change": 540,
+            "change_pct": 1.7
+          },
+          {
+            "id": "foton_tm5_3_4t_chassis_cabine_2_2_l_turbo",
+            "full_name": "Foton TM5 3.4T Chassis Cabine 2.2 l Turbo",
+            "brand": "Foton",
+            "model": "TM5 3.4T Chassis Cabine",
+            "trim": "2.2 l Turbo",
+            "old_price": 58270,
+            "new_price": 58300,
+            "change": 30,
+            "change_pct": 0.05
+          },
+          {
+            "id": "foton_view_cs2_van_16_places_2_0_l_turbo",
+            "full_name": "Foton View CS2 Van 16 places 2.0 l Turbo",
+            "brand": "Foton",
+            "model": "View CS2 Van 16 places",
+            "trim": "2.0 l Turbo",
+            "old_price": 127501,
+            "new_price": 127500,
+            "change": -1,
+            "change_pct": -0.0
+          }
+        ],
+        "spec_changes": [
+          {
+            "id": "dacia_duster_1_5_l_dci_4x2",
+            "full_name": "Dacia Duster 1.5 L dCi 4x2",
+            "brand": "Dacia",
+            "model": "Duster",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "dacia_logan_1_0_l_tce__cran_tactile",
+            "full_name": "Dacia Logan 1.0 L TCE Écran tactile",
+            "brand": "Dacia",
+            "model": "Logan",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "dacia_sandero_1_0_l_tce",
+            "full_name": "Dacia Sandero 1.0 L TCE",
+            "brand": "Dacia",
+            "model": "Sandero",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "dacia_sandero_stepway_1_0_l",
+            "full_name": "Dacia Sandero Stepway 1.0 L",
+            "brand": "Dacia",
+            "model": "Sandero Stepway",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "dacia_sandero_stepway_1_0_l_bva",
+            "full_name": "Dacia Sandero Stepway 1.0 L BVA",
+            "brand": "Dacia",
+            "model": "Sandero Stepway",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "lynk_co_08_1_5_l_more",
+            "full_name": "Lynk & Co 08 1.5 L More",
+            "brand": "Lynk Co",
+            "model": "08",
+            "field": "torque_nm",
+            "old_value": 905,
+            "new_value": 580
+          },
+          {
+            "id": "nissan_juke_1_0_l_dig_t_dct",
+            "full_name": "Nissan Juke 1.0 L DIG-T DCT",
+            "brand": "Nissan",
+            "model": "Juke",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "nissan_magnite_1_0t_acenta",
+            "full_name": "Nissan Magnite 1.0T Acenta",
+            "brand": "Nissan",
+            "model": "Magnite",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "nissan_magnite_1_0t_cvt_tekna",
+            "full_name": "Nissan Magnite 1.0T CVT Tekna",
+            "brand": "Nissan",
+            "model": "Magnite",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "nissan_navara_2_5_dci_4x4_double_cabine_bva",
+            "full_name": "Nissan Navara 2.5 dCi 4X4 Double Cabine BVA",
+            "brand": "Nissan",
+            "model": "Navara",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "nissan_qashqai_e_power_1_5_l_n_connecta",
+            "full_name": "Nissan Qashqai e-Power 1.5 L N-Connecta",
+            "brand": "Nissan",
+            "model": "Qashqai e-Power",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "renault_austral_1_3_l",
+            "full_name": "Renault Austral 1.3 L",
+            "brand": "Renault",
+            "model": "Austral",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "renault_clio_1_0_l_tce_100_bva",
+            "full_name": "Renault Clio 1.0 L TCe 100 BVA",
+            "brand": "Renault",
+            "model": "Clio",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "renault_clio_1_0_l_tce_100_bvm",
+            "full_name": "Renault Clio 1.0 L TCe 100 BVM",
+            "brand": "Renault",
+            "model": "Clio",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "renault_clio_1_0_l_tce_100_esprit_alpine_bva",
+            "full_name": "Renault Clio 1.0 L TCe 100 Esprit Alpine BVA",
+            "brand": "Renault",
+            "model": "Clio",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "renault_express_combi_1_5_l_dci",
+            "full_name": "Renault Express Combi 1.5 L dCi",
+            "brand": "Renault",
+            "model": "Express Combi",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "renault_express_van_1_5_l_dci",
+            "full_name": "Renault Express Van 1.5 L dCi",
+            "brand": "Renault",
+            "model": "Express Van",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "renault_kwid_populaire_1_0_l",
+            "full_name": "Renault Kwid Populaire 1.0 L",
+            "brand": "Renault",
+            "model": "Kwid Populaire",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "renault_master_2_3_l_10_8_m3",
+            "full_name": "Renault Master 2.3 L 10.8 m3",
+            "brand": "Renault",
+            "model": "Master",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "renault_master_2_3_l_13_m3",
+            "full_name": "Renault Master 2.3 L 13 m3",
+            "brand": "Renault",
+            "model": "Master",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "renault_master_2_3_l_8m3",
+            "full_name": "Renault Master 2.3 L 8m3",
+            "brand": "Renault",
+            "model": "Master",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "renault_megane_1_3_l_tce_140",
+            "full_name": "Renault Megane 1.3 L TCE 140",
+            "brand": "Renault",
+            "model": "Megane",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "renault_megane_sedan_1_3_l_tce_140",
+            "full_name": "Renault Megane Sedan 1.3 L TCE 140",
+            "brand": "Renault",
+            "model": "Megane Sedan",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "renault_megane_sedan_1_3_l_tce_140_bva",
+            "full_name": "Renault Megane Sedan 1.3 L TCE 140 BVA",
+            "brand": "Renault",
+            "model": "Megane Sedan",
+            "field": "warranty_years",
+            "old_value": 2,
+            "new_value": 3
+          },
+          {
+            "id": "toyota_hiace_16_places_2_5_l_diesel",
+            "full_name": "Toyota Hiace 16 places 2.5 L Diesel",
+            "brand": "Toyota",
+            "model": "Hiace 16 places",
+            "field": "top_speed_kmh",
+            "old_value": 145,
+            "new_value": 140
+          },
+          {
+            "id": "toyota_hiace_16_places_2_5_l_diesel",
+            "full_name": "Toyota Hiace 16 places 2.5 L Diesel",
+            "brand": "Toyota",
+            "model": "Hiace 16 places",
+            "field": "consumption_mixed",
+            "old_value": 9.3,
+            "new_value": 8.8
+          },
+          {
+            "id": "toyota_hiace_16_places_2_5_l_diesel",
+            "full_name": "Toyota Hiace 16 places 2.5 L Diesel",
+            "brand": "Toyota",
+            "model": "Hiace 16 places",
+            "field": "consumption_city",
+            "old_value": 8.0,
+            "new_value": 10.6
+          },
+          {
+            "id": "toyota_hiace_16_places_2_5_l_diesel",
+            "full_name": "Toyota Hiace 16 places 2.5 L Diesel",
+            "brand": "Toyota",
+            "model": "Hiace 16 places",
+            "field": "consumption_highway",
+            "old_value": 11.6,
+            "new_value": 7.8
+          },
+          {
+            "id": "toyota_hiace_16_places_2_5_l_diesel",
+            "full_name": "Toyota Hiace 16 places 2.5 L Diesel",
+            "brand": "Toyota",
+            "model": "Hiace 16 places",
+            "field": "doors",
+            "old_value": 5,
+            "new_value": 4
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-02-09",
       "previous_scrape": "2026-02-02T04:14:45.118684",
       "current_scrape": "2026-02-09T04:17:37.215555",
