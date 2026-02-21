@@ -653,7 +653,8 @@
         // ── Charts ─────────────────────────────────────────────
         function renderTimelineChart(data) {
             const ctx = document.getElementById('timelineChart').getContext('2d');
-            const entries = [...data.entries].reverse(); // chronological order
+            const entries = [...data.entries].reverse() // chronological order
+                .filter((_, i, arr) => i > 0 || arr.length === 1); // skip initial snapshot
 
             chartInstances.timeline = new Chart(ctx, {
                 type: 'bar',
