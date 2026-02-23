@@ -1,6 +1,492 @@
 {
   "entries": [
     {
+      "date": "2026-02-23",
+      "previous_scrape": "2026-02-16T04:15:33.020991",
+      "current_scrape": "2026-02-23T04:14:29.144497",
+      "summary": {
+        "total_before": 551,
+        "total_after": 556,
+        "brands_added": 0,
+        "brands_removed": 0,
+        "models_added": 2,
+        "models_removed": 0,
+        "trims_added": 6,
+        "trims_removed": 1,
+        "price_changes": 18,
+        "price_drops": 17,
+        "price_increases": 1,
+        "spec_changes": 18
+      },
+      "changes": {
+        "brands_added": [],
+        "brands_removed": [],
+        "models_added": [
+          {
+            "brand": "Jeep",
+            "model": "Compass"
+          },
+          {
+            "brand": "Mercedes Benz",
+            "model": "Classe E Plug-in Hybride"
+          }
+        ],
+        "models_removed": [],
+        "trims_added": [
+          {
+            "id": "gac_motor_emzoom_1_5t_gdi_citystyle_bva",
+            "full_name": "GAC Emzoom 1.5T GDI CityStyle BVA",
+            "brand": "Gac Motor",
+            "model": "Emzoom",
+            "trim": "1.5T GDI CityStyle BVA",
+            "price_tnd": 76900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/gac-motor/emzoom/1.5t-gdi-bva-citystyle"
+          },
+          {
+            "id": "jeep_compass_1_3_t_4x2_limited_bva",
+            "full_name": "Jeep Compass 1.3 T 4X2 Limited BVA",
+            "brand": "Jeep",
+            "model": "Compass",
+            "trim": "1.3 T 4X2 Limited BVA",
+            "price_tnd": 136500,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/jeep/compass/1.3-t-4x2-bva-limited"
+          },
+          {
+            "id": "mercedes_benz_classe_e_plug_in_hybride_350e_amg",
+            "full_name": "Mercedes-Benz Classe E Plug-in Hybride 350e AMG",
+            "brand": "Mercedes Benz",
+            "model": "Classe E Plug-in Hybride",
+            "trim": "350e AMG",
+            "price_tnd": 284900,
+            "fuel_type": "essence",
+            "body_type": "Berline",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/mercedes-benz/classe-e-plug-in-hybride/350e-amg"
+          },
+          {
+            "id": "mercedes_benz_classe_e_plug_in_hybride_350e_amg_",
+            "full_name": "Mercedes-Benz Classe E Plug-in Hybride 350e AMG+",
+            "brand": "Mercedes Benz",
+            "model": "Classe E Plug-in Hybride",
+            "trim": "350e AMG+",
+            "price_tnd": 299900,
+            "fuel_type": "essence",
+            "body_type": "Berline",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/mercedes-benz/classe-e-plug-in-hybride/350e-amgplus"
+          },
+          {
+            "id": "mercedes_benz_classe_e_plug_in_hybride_350e_avantgarde",
+            "full_name": "Mercedes-Benz Classe E Plug-in Hybride 350e Avantgarde",
+            "brand": "Mercedes Benz",
+            "model": "Classe E Plug-in Hybride",
+            "trim": "350e Avantgarde",
+            "price_tnd": 269900,
+            "fuel_type": "essence",
+            "body_type": "Berline",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/mercedes-benz/classe-e-plug-in-hybride/350e-avantgarde"
+          },
+          {
+            "id": "mercedes_benz_classe_e_plug_in_hybride_350e_exclusive",
+            "full_name": "Mercedes-Benz Classe E Plug-in Hybride 350e Exclusive",
+            "brand": "Mercedes Benz",
+            "model": "Classe E Plug-in Hybride",
+            "trim": "350e Exclusive",
+            "price_tnd": 274900,
+            "fuel_type": "essence",
+            "body_type": "Berline",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/mercedes-benz/classe-e-plug-in-hybride/350e-exclusive"
+          }
+        ],
+        "trims_removed": [
+          {
+            "id": "gac_motor_emzoom_1_5t_gdi_gl_bva",
+            "full_name": "GAC Emzoom 1.5T GDI GL BVA",
+            "brand": "Gac Motor",
+            "model": "Emzoom",
+            "trim": "1.5T GDI GL BVA",
+            "price_tnd": 105900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/gac-motor/emzoom/1.5t-gdi-bva-gl"
+          }
+        ],
+        "price_changes": [
+          {
+            "id": "gac_motor_emkoo_1_5t_gdi_gl_bva",
+            "full_name": "GAC Emkoo 1.5T GDI GL BVA",
+            "brand": "Gac Motor",
+            "model": "Emkoo",
+            "trim": "1.5T GDI GL BVA",
+            "old_price": 118900,
+            "new_price": 106900,
+            "change": -12000,
+            "change_pct": -10.09
+          },
+          {
+            "id": "gac_motor_emzoom_1_5t_gdi_r_style_bva",
+            "full_name": "GAC Emzoom 1.5T GDI R-Style BVA",
+            "brand": "Gac Motor",
+            "model": "Emzoom",
+            "trim": "1.5T GDI R-Style BVA",
+            "old_price": 108900,
+            "new_price": 98900,
+            "change": -10000,
+            "change_pct": -9.18
+          },
+          {
+            "id": "gac_motor_ga4_1_5_l_bva",
+            "full_name": "GAC GA4 1.5 L BVA",
+            "brand": "Gac Motor",
+            "model": "GA4",
+            "trim": "1.5 L BVA",
+            "old_price": 69900,
+            "new_price": 62900,
+            "change": -7000,
+            "change_pct": -10.01
+          },
+          {
+            "id": "peugeot_2008_1_2_l_puretech_130_allure_bva",
+            "full_name": "Peugeot 2008 1.2 L Puretech 130 Allure BVA",
+            "brand": "Peugeot",
+            "model": "2008",
+            "trim": "1.2 L Puretech 130 Allure BVA",
+            "old_price": 104900,
+            "new_price": 98900,
+            "change": -6000,
+            "change_pct": -5.72
+          },
+          {
+            "id": "peugeot_boxer_double_cabine_plateau_350_l2",
+            "full_name": "Peugeot Boxer Double Cabine Plateau 350 L2",
+            "brand": "Peugeot",
+            "model": "Boxer Double Cabine",
+            "trim": "Plateau 350 L2",
+            "old_price": 109900,
+            "new_price": 114900,
+            "change": 5000,
+            "change_pct": 4.55
+          },
+          {
+            "id": "citroen_berlingo_1_6_l_hdi",
+            "full_name": "Citroën Berlingo 1.6 L HDI",
+            "brand": "Citroen",
+            "model": "Berlingo",
+            "trim": "1.6 L HDI",
+            "old_price": 101900,
+            "new_price": 97900,
+            "change": -4000,
+            "change_pct": -3.93
+          },
+          {
+            "id": "great_wall_haval_jolion_1_5_t",
+            "full_name": "GWM Haval Jolion 1.5 T",
+            "brand": "Great Wall",
+            "model": "Haval Jolion",
+            "trim": "1.5 T",
+            "old_price": 102900,
+            "new_price": 98900,
+            "change": -4000,
+            "change_pct": -3.89
+          },
+          {
+            "id": "peugeot_2008_1_2_l_puretech_130_active_bva",
+            "full_name": "Peugeot 2008 1.2 L Puretech 130 Active BVA",
+            "brand": "Peugeot",
+            "model": "2008",
+            "trim": "1.2 L Puretech 130 Active BVA",
+            "old_price": 92900,
+            "new_price": 89400,
+            "change": -3500,
+            "change_pct": -3.77
+          },
+          {
+            "id": "opel_crossland_1_2_l_110_ch_at6_edition",
+            "full_name": "Opel Crossland 1.2 L 110 ch AT6 Edition",
+            "brand": "Opel",
+            "model": "Crossland",
+            "trim": "1.2 L 110 ch AT6 Edition",
+            "old_price": 75900,
+            "new_price": 72900,
+            "change": -3000,
+            "change_pct": -3.95
+          },
+          {
+            "id": "peugeot_landtrek_simple_cabine_1_9_l_diesel_4x2",
+            "full_name": "Peugeot Landtrek Simple Cabine 1.9 L Diesel 4x2",
+            "brand": "Peugeot",
+            "model": "Landtrek Simple Cabine",
+            "trim": "1.9 L Diesel 4x2",
+            "old_price": 79490,
+            "new_price": 76490,
+            "change": -3000,
+            "change_pct": -3.77
+          },
+          {
+            "id": "peugeot_landtrek_simple_cabine_1_9_l_diesel_4x2_benne_t_le_pli_e",
+            "full_name": "Peugeot Landtrek Simple Cabine 1.9 L Diesel 4x2 Benne tôle pliée",
+            "brand": "Peugeot",
+            "model": "Landtrek Simple Cabine",
+            "trim": "1.9 L Diesel 4x2 Benne tôle pliée",
+            "old_price": 75490,
+            "new_price": 72490,
+            "change": -3000,
+            "change_pct": -3.97
+          },
+          {
+            "id": "opel_combo_cargo_xl_1_6_l_diesel_confort_l2h1_1000_kg",
+            "full_name": "Opel Combo Cargo XL 1.6 L Diesel Confort L2H1 1000 kg",
+            "brand": "Opel",
+            "model": "Combo Cargo",
+            "trim": "XL 1.6 L Diesel Confort L2H1 1000 kg",
+            "old_price": 66490,
+            "new_price": 64990,
+            "change": -1500,
+            "change_pct": -2.26
+          },
+          {
+            "id": "citroen_jumpy_combi_2_0_l_hdi_9_places",
+            "full_name": "Citroën Jumpy Combi 2.0 L HDI 9 places",
+            "brand": "Citroen",
+            "model": "Jumpy Combi",
+            "trim": "2.0 L HDI 9 places",
+            "old_price": 152900,
+            "new_price": 151900,
+            "change": -1000,
+            "change_pct": -0.65
+          },
+          {
+            "id": "gac_motor_emzoom_1_5t_gdi_lifestyle_bva",
+            "full_name": "GAC Emzoom 1.5T GDI Lifestyle BVA",
+            "brand": "Gac Motor",
+            "model": "Emzoom",
+            "trim": "1.5T GDI Lifestyle BVA",
+            "old_price": 95900,
+            "new_price": 94900,
+            "change": -1000,
+            "change_pct": -1.04
+          },
+          {
+            "id": "opel_corsa_1_2_turbo_edition",
+            "full_name": "Opel Corsa 1.2 Turbo Edition",
+            "brand": "Opel",
+            "model": "Corsa",
+            "trim": "1.2 Turbo Edition",
+            "old_price": 66900,
+            "new_price": 65900,
+            "change": -1000,
+            "change_pct": -1.49
+          },
+          {
+            "id": "peugeot_expert_combi_2_0_l_hdi__9_places",
+            "full_name": "Peugeot Expert Combi 2.0 L HDI  9 places",
+            "brand": "Peugeot",
+            "model": "Expert Combi",
+            "trim": "2.0 L HDI  9 places",
+            "old_price": 152900,
+            "new_price": 151900,
+            "change": -1000,
+            "change_pct": -0.65
+          },
+          {
+            "id": "peugeot_landtrek_double_cabine_1_9_l_diesel_4x2",
+            "full_name": "Peugeot Landtrek Double Cabine 1.9 L Diesel 4x2",
+            "brand": "Peugeot",
+            "model": "Landtrek Double Cabine",
+            "trim": "1.9 L Diesel 4x2",
+            "old_price": 88990,
+            "new_price": 87990,
+            "change": -1000,
+            "change_pct": -1.12
+          },
+          {
+            "id": "peugeot_rifter_1_6_l_hdi_92ch",
+            "full_name": "Peugeot Rifter 1.6 L HDI 92ch",
+            "brand": "Peugeot",
+            "model": "Rifter",
+            "trim": "1.6 L HDI 92ch",
+            "old_price": 105900,
+            "new_price": 104900,
+            "change": -1000,
+            "change_pct": -0.94
+          }
+        ],
+        "spec_changes": [
+          {
+            "id": "bako_b_van_horizons",
+            "full_name": "Bako B-Van Horizons",
+            "brand": "Bako",
+            "model": "B-Van",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 8
+          },
+          {
+            "id": "bako_b_van_start",
+            "full_name": "Bako B-Van Start",
+            "brand": "Bako",
+            "model": "B-Van",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 8
+          },
+          {
+            "id": "bako_b_van_wave",
+            "full_name": "Bako B-Van Wave",
+            "brand": "Bako",
+            "model": "B-Van",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 8
+          },
+          {
+            "id": "bmw_ix_xdrive50_pack_m",
+            "full_name": "BMW iX xDrive50 Pack M",
+            "brand": "Bmw",
+            "model": "iX",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 8
+          },
+          {
+            "id": "deepal_g318_1_5_l_reev_35_07_kwh",
+            "full_name": "Deepal G318 1.5 L Reev 35.07 kWh",
+            "brand": "Deepal",
+            "model": "G318",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 10
+          },
+          {
+            "id": "geely_gx3_pro_1_5_l_cvt",
+            "full_name": "Geely GX3 Pro 1.5 L CVT",
+            "brand": "Geely",
+            "model": "GX3 Pro",
+            "field": "cv_fiscal",
+            "old_value": 6,
+            "new_value": 5
+          },
+          {
+            "id": "jmc_vigus_double_cabine_2_5_l_diesel_4x2",
+            "full_name": "JMC Vigus Double Cabine 2.5 l Diesel 4x2",
+            "brand": "Jmc",
+            "model": "Vigus Double Cabine",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "jmc_vigus_double_cabine_2_5_l_diesel_4x4",
+            "full_name": "JMC Vigus Double Cabine 2.5 l Diesel 4x4",
+            "brand": "Jmc",
+            "model": "Vigus Double Cabine",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "mercedes_benz_eqb_250__amg",
+            "full_name": "Mercedes-Benz EQB 250+ AMG",
+            "brand": "Mercedes Benz",
+            "model": "EQB",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 8
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_cayenne_e_hybrid_black_edition",
+            "full_name": "Porsche Cayenne E-Hybrid Cayenne E-Hybrid Black Edition",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 8
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_cayenne_s_e_hybrid",
+            "full_name": "Porsche Cayenne E-Hybrid Cayenne S E-Hybrid",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 8
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_coup__cayenne_e_hybrid_coup__black_edition",
+            "full_name": "Porsche Cayenne E-Hybrid Coupé Cayenne E-Hybrid Coupé Black Edition",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid Coupé",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 8
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_coup__cayenne_s_e_hybrid_coup__black_edition",
+            "full_name": "Porsche Cayenne E-Hybrid Coupé Cayenne S E-Hybrid Coupé Black Edition",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid Coupé",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 8
+          },
+          {
+            "id": "porsche_cayenne_electric_cayenne",
+            "full_name": "Porsche Cayenne Electric Cayenne",
+            "brand": "Porsche",
+            "model": "Cayenne Electric",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 8
+          },
+          {
+            "id": "porsche_cayenne_electric_cayenne_turbo",
+            "full_name": "Porsche Cayenne Electric Cayenne Turbo",
+            "brand": "Porsche",
+            "model": "Cayenne Electric",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 8
+          },
+          {
+            "id": "porsche_macan_electric_macan_turbo",
+            "full_name": "Porsche Macan Electric Macan Turbo",
+            "brand": "Porsche",
+            "model": "Macan Electric",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 8
+          },
+          {
+            "id": "porsche_panamera_4_e_hybrid_panamera_4_e_hybrid",
+            "full_name": "Porsche Panamera 4 E-Hybrid Panamera 4 E-Hybrid",
+            "brand": "Porsche",
+            "model": "Panamera 4 E-Hybrid",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 8
+          },
+          {
+            "id": "volvo_ex90_twin_motor_performance_ultra",
+            "full_name": "Volvo EX90 Twin Motor Performance Ultra",
+            "brand": "Volvo",
+            "model": "EX90",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 8
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-02-16",
       "previous_scrape": "2026-02-09T04:17:37.215555",
       "current_scrape": "2026-02-16T04:15:33.020991",
