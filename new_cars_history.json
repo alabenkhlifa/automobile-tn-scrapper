@@ -1,6 +1,593 @@
 {
   "entries": [
     {
+      "date": "2026-03-02",
+      "previous_scrape": "2026-02-23T04:14:29.144497",
+      "current_scrape": "2026-03-02T04:05:37.469216",
+      "summary": {
+        "total_before": 556,
+        "total_after": 554,
+        "brands_added": 0,
+        "brands_removed": 1,
+        "models_added": 1,
+        "models_removed": 2,
+        "trims_added": 1,
+        "trims_removed": 3,
+        "price_changes": 29,
+        "price_drops": 23,
+        "price_increases": 6,
+        "spec_changes": 19
+      },
+      "changes": {
+        "brands_added": [],
+        "brands_removed": [
+          "Alfa Romeo"
+        ],
+        "models_added": [
+          {
+            "brand": "Volkswagen",
+            "model": "Caddy Cargo"
+          }
+        ],
+        "models_removed": [
+          {
+            "brand": "Alfa Romeo",
+            "model": "Giulia"
+          },
+          {
+            "brand": "Alfa Romeo",
+            "model": "Stelvio"
+          }
+        ],
+        "trims_added": [
+          {
+            "id": "volkswagen_caddy_cargo_2_0_l_tdi_business",
+            "full_name": "Volkswagen Caddy Cargo 2.0 L TDI Business",
+            "brand": "Volkswagen",
+            "model": "Caddy Cargo",
+            "trim": "2.0 L TDI Business",
+            "price_tnd": 84980,
+            "fuel_type": "diesel",
+            "body_type": "Utilitaire",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/volkswagen/caddy-cargo/2021-2.0-l-tdi-business"
+          }
+        ],
+        "trims_removed": [
+          {
+            "id": "alfa_romeo_giulia_2_0_turbo_super_bva",
+            "full_name": "Alfa Romeo Giulia 2.0 Turbo Super BVA",
+            "brand": "Alfa Romeo",
+            "model": "Giulia",
+            "trim": "2.0 Turbo Super BVA",
+            "price_tnd": 198000,
+            "fuel_type": "essence",
+            "body_type": "Berline",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/alfa-romeo/giulia/2.0-turbo-bva-super"
+          },
+          {
+            "id": "alfa_romeo_stelvio_2_0_turbo_bva_q4",
+            "full_name": "Alfa Romeo Stelvio 2.0 Turbo BVA Q4",
+            "brand": "Alfa Romeo",
+            "model": "Stelvio",
+            "trim": "2.0 Turbo BVA Q4",
+            "price_tnd": 265000,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/alfa-romeo/stelvio/2.0-turbo-q4-bva"
+          },
+          {
+            "id": "audi_a3_sportback_35_tfsi_s_line",
+            "full_name": "Audi A3 Sportback 35 TFSI S-Line",
+            "brand": "Audi",
+            "model": "A3 Sportback",
+            "trim": "35 TFSI S-Line",
+            "price_tnd": 179990,
+            "fuel_type": "essence",
+            "body_type": "Compacte",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/audi/a3-sportback/35-tfsi-s-line"
+          }
+        ],
+        "price_changes": [
+          {
+            "id": "hyundai_tucson_1_6_l_t_gdi_7_dct_4wd_top_grade",
+            "full_name": "Hyundai Tucson 1.6 l T-GDI 7-DCT 4WD Top Grade",
+            "brand": "Hyundai",
+            "model": "Tucson",
+            "trim": "1.6 l T-GDI 7-DCT 4WD Top Grade",
+            "old_price": 180000,
+            "new_price": 170000,
+            "change": -10000,
+            "change_pct": -5.56
+          },
+          {
+            "id": "hyundai_tucson_hybride_1_6_l_t_gdi_2wd_intuitive_bva_6",
+            "full_name": "Hyundai Tucson Hybride 1.6 l T-GDI 2WD Intuitive BVA 6",
+            "brand": "Hyundai",
+            "model": "Tucson Hybride",
+            "trim": "1.6 l T-GDI 2WD Intuitive BVA 6",
+            "old_price": 169950,
+            "new_price": 159950,
+            "change": -10000,
+            "change_pct": -5.88
+          },
+          {
+            "id": "hyundai_tucson_hybride_1_6_l_t_gdi_2wd_top_grade_bva_6",
+            "full_name": "Hyundai Tucson Hybride 1.6 l T-GDI 2WD Top Grade BVA 6",
+            "brand": "Hyundai",
+            "model": "Tucson Hybride",
+            "trim": "1.6 l T-GDI 2WD Top Grade BVA 6",
+            "old_price": 185000,
+            "new_price": 175000,
+            "change": -10000,
+            "change_pct": -5.41
+          },
+          {
+            "id": "kia_ev9_99_8_kwh_gt_line_6_places",
+            "full_name": "KIA EV9 99.8 kWh GT-Line 6 places",
+            "brand": "Kia",
+            "model": "EV9",
+            "trim": "99.8 kWh GT-Line 6 places",
+            "old_price": 304980,
+            "new_price": 294980,
+            "change": -10000,
+            "change_pct": -3.28
+          },
+          {
+            "id": "kia_ev9_99_8_kwh_gt_line_7_places",
+            "full_name": "KIA EV9 99.8 kWh GT-Line 7 places",
+            "brand": "Kia",
+            "model": "EV9",
+            "trim": "99.8 kWh GT-Line 7 places",
+            "old_price": 299980,
+            "new_price": 289980,
+            "change": -10000,
+            "change_pct": -3.33
+          },
+          {
+            "id": "dongfeng_rich_6_2_5_turbo_diesel_4x2_thunder",
+            "full_name": "Dongfeng Rich 6 2.5 Turbo Diesel 4X2 Thunder",
+            "brand": "Dongfeng",
+            "model": "Rich 6",
+            "trim": "2.5 Turbo Diesel 4X2 Thunder",
+            "old_price": 93900,
+            "new_price": 88700,
+            "change": -5200,
+            "change_pct": -5.54
+          },
+          {
+            "id": "dongfeng_rich_6_2_5_turbo_diesel_4x4_thunder",
+            "full_name": "Dongfeng Rich 6 2.5 Turbo Diesel 4X4 Thunder",
+            "brand": "Dongfeng",
+            "model": "Rich 6",
+            "trim": "2.5 Turbo Diesel 4X4 Thunder",
+            "old_price": 103900,
+            "new_price": 98700,
+            "change": -5200,
+            "change_pct": -5.0
+          },
+          {
+            "id": "dongfeng_shine_max_hybride_1_5_t_hev_e_cvt",
+            "full_name": "Dongfeng Shine Max Hybride 1.5 T HEV E-CVT",
+            "brand": "Dongfeng",
+            "model": "Shine Max Hybride",
+            "trim": "1.5 T HEV E-CVT",
+            "old_price": 90990,
+            "new_price": 85900,
+            "change": -5090,
+            "change_pct": -5.59
+          },
+          {
+            "id": "hyundai_bayon_1_0_l_t_gdi_top_grade_bva",
+            "full_name": "Hyundai Bayon 1.0 L T-GDI Top Grade BVA",
+            "brand": "Hyundai",
+            "model": "Bayon",
+            "trim": "1.0 L T-GDI Top Grade BVA",
+            "old_price": 95950,
+            "new_price": 90950,
+            "change": -5000,
+            "change_pct": -5.21
+          },
+          {
+            "id": "hyundai_bayon_1_2_l_top_grade",
+            "full_name": "Hyundai Bayon 1.2 L Top Grade",
+            "brand": "Hyundai",
+            "model": "Bayon",
+            "trim": "1.2 L Top Grade",
+            "old_price": 84950,
+            "new_price": 79950,
+            "change": -5000,
+            "change_pct": -5.89
+          },
+          {
+            "id": "kia_sorento_hybride_1_6_t_gdi_hev",
+            "full_name": "KIA Sorento Hybride 1.6 T-GDi HEV",
+            "brand": "Kia",
+            "model": "Sorento Hybride",
+            "trim": "1.6 T-GDi HEV",
+            "old_price": 249980,
+            "new_price": 244980,
+            "change": -5000,
+            "change_pct": -2.0
+          },
+          {
+            "id": "volkswagen_t_cross_1_0_l_topline_bva",
+            "full_name": "Volkswagen T-Cross 1.0 L Topline BVA",
+            "brand": "Volkswagen",
+            "model": "T-Cross",
+            "trim": "1.0 L Topline BVA",
+            "old_price": 103980,
+            "new_price": 99980,
+            "change": -4000,
+            "change_pct": -3.85
+          },
+          {
+            "id": "kia_niro_hybride_1_6_l_ex",
+            "full_name": "KIA Niro Hybride 1.6 L EX",
+            "brand": "Kia",
+            "model": "Niro Hybride",
+            "trim": "1.6 L EX",
+            "old_price": 129980,
+            "new_price": 126980,
+            "change": -3000,
+            "change_pct": -2.31
+          },
+          {
+            "id": "kia_niro_hybride_1_6_l_sx",
+            "full_name": "KIA Niro Hybride 1.6 L SX",
+            "brand": "Kia",
+            "model": "Niro Hybride",
+            "trim": "1.6 L SX",
+            "old_price": 139980,
+            "new_price": 136980,
+            "change": -3000,
+            "change_pct": -2.14
+          },
+          {
+            "id": "kia_seltos_1_4_t_gdi_top_grade",
+            "full_name": "KIA Seltos 1.4 T-GDI Top Grade",
+            "brand": "Kia",
+            "model": "Seltos",
+            "trim": "1.4 T-GDI Top Grade",
+            "old_price": 120980,
+            "new_price": 117980,
+            "change": -3000,
+            "change_pct": -2.48
+          },
+          {
+            "id": "volkswagen_t_cross_1_0_l_highline_bva",
+            "full_name": "Volkswagen T-Cross 1.0 L Highline BVA",
+            "brand": "Volkswagen",
+            "model": "T-Cross",
+            "trim": "1.0 L Highline BVA",
+            "old_price": 92980,
+            "new_price": 89980,
+            "change": -3000,
+            "change_pct": -3.23
+          },
+          {
+            "id": "skoda_fabia_1_0_l_mpi_essence",
+            "full_name": "Skoda Fabia 1.0 L MPI Essence",
+            "brand": "Skoda",
+            "model": "Fabia",
+            "trim": "1.0 L MPI Essence",
+            "old_price": 66980,
+            "new_price": 68980,
+            "change": 2000,
+            "change_pct": 2.99
+          },
+          {
+            "id": "skoda_fabia_1_0_l_mpi_monte_carlo",
+            "full_name": "Skoda Fabia 1.0 L MPI Monte Carlo",
+            "brand": "Skoda",
+            "model": "Fabia",
+            "trim": "1.0 L MPI Monte Carlo",
+            "old_price": 85980,
+            "new_price": 87980,
+            "change": 2000,
+            "change_pct": 2.33
+          },
+          {
+            "id": "skoda_fabia_1_0_l_mpi_selection",
+            "full_name": "Skoda Fabia 1.0 L MPI Selection",
+            "brand": "Skoda",
+            "model": "Fabia",
+            "trim": "1.0 L MPI Selection",
+            "old_price": 72980,
+            "new_price": 74980,
+            "change": 2000,
+            "change_pct": 2.74
+          },
+          {
+            "id": "skoda_kushaq_1_0_tsi_style_bva",
+            "full_name": "Skoda Kushaq 1.0 TSI Style BVA",
+            "brand": "Skoda",
+            "model": "Kushaq",
+            "trim": "1.0 TSI Style BVA",
+            "old_price": 90980,
+            "new_price": 92980,
+            "change": 2000,
+            "change_pct": 2.2
+          },
+          {
+            "id": "kia_sonet_1_5_l_cvt_ex_plus",
+            "full_name": "KIA Sonet 1.5 L CVT EX Plus",
+            "brand": "Kia",
+            "model": "Sonet",
+            "trim": "1.5 L CVT EX Plus",
+            "old_price": 95480,
+            "new_price": 93980,
+            "change": -1500,
+            "change_pct": -1.57
+          },
+          {
+            "id": "kia_sonet_1_5_l_cvt_sx",
+            "full_name": "KIA Sonet 1.5 L CVT SX",
+            "brand": "Kia",
+            "model": "Sonet",
+            "trim": "1.5 L CVT SX",
+            "old_price": 101480,
+            "new_price": 99980,
+            "change": -1500,
+            "change_pct": -1.48
+          },
+          {
+            "id": "kia_sonet_1_5_l_ex_bvm",
+            "full_name": "KIA Sonet 1.5 L EX BVM",
+            "brand": "Kia",
+            "model": "Sonet",
+            "trim": "1.5 L EX BVM",
+            "old_price": 89480,
+            "new_price": 87980,
+            "change": -1500,
+            "change_pct": -1.68
+          },
+          {
+            "id": "kia_picanto_1_2_l_gt_line___bva",
+            "full_name": "KIA Picanto 1.2 L GT-Line + BVA",
+            "brand": "Kia",
+            "model": "Picanto",
+            "trim": "1.2 L GT-Line + BVA",
+            "old_price": 66480,
+            "new_price": 65480,
+            "change": -1000,
+            "change_pct": -1.5
+          },
+          {
+            "id": "kia_picanto_1_2_l_gt_line_bva",
+            "full_name": "KIA Picanto 1.2 L GT-Line BVA",
+            "brand": "Kia",
+            "model": "Picanto",
+            "trim": "1.2 L GT-Line BVA",
+            "old_price": 63480,
+            "new_price": 62480,
+            "change": -1000,
+            "change_pct": -1.58
+          },
+          {
+            "id": "kia_picanto_1_2_l_smart_bva",
+            "full_name": "KIA Picanto 1.2 L Smart BVA",
+            "brand": "Kia",
+            "model": "Picanto",
+            "trim": "1.2 L Smart BVA",
+            "old_price": 56980,
+            "new_price": 55980,
+            "change": -1000,
+            "change_pct": -1.76
+          },
+          {
+            "id": "kia_picanto_1_2_l_smart_bvm",
+            "full_name": "KIA Picanto 1.2 L Smart BVM",
+            "brand": "Kia",
+            "model": "Picanto",
+            "trim": "1.2 L Smart BVM",
+            "old_price": 53480,
+            "new_price": 52480,
+            "change": -1000,
+            "change_pct": -1.87
+          },
+          {
+            "id": "skoda_kushaq_1_0_tsi_ambition",
+            "full_name": "Skoda Kushaq 1.0 TSI Ambition",
+            "brand": "Skoda",
+            "model": "Kushaq",
+            "trim": "1.0 TSI Ambition",
+            "old_price": 77980,
+            "new_price": 78980,
+            "change": 1000,
+            "change_pct": 1.28
+          },
+          {
+            "id": "skoda_kushaq_1_0_tsi_ambition_bva",
+            "full_name": "Skoda Kushaq 1.0 TSI Ambition BVA",
+            "brand": "Skoda",
+            "model": "Kushaq",
+            "trim": "1.0 TSI Ambition BVA",
+            "old_price": 84980,
+            "new_price": 85980,
+            "change": 1000,
+            "change_pct": 1.18
+          }
+        ],
+        "spec_changes": [
+          {
+            "id": "bako_b_van_horizons",
+            "full_name": "Bako B-Van Horizons",
+            "brand": "Bako",
+            "model": "B-Van",
+            "field": "cv_fiscal",
+            "old_value": 8,
+            "new_value": null
+          },
+          {
+            "id": "bako_b_van_start",
+            "full_name": "Bako B-Van Start",
+            "brand": "Bako",
+            "model": "B-Van",
+            "field": "cv_fiscal",
+            "old_value": 8,
+            "new_value": null
+          },
+          {
+            "id": "bako_b_van_wave",
+            "full_name": "Bako B-Van Wave",
+            "brand": "Bako",
+            "model": "B-Van",
+            "field": "cv_fiscal",
+            "old_value": 8,
+            "new_value": null
+          },
+          {
+            "id": "bmw_ix_xdrive50_pack_m",
+            "full_name": "BMW iX xDrive50 Pack M",
+            "brand": "Bmw",
+            "model": "iX",
+            "field": "cv_fiscal",
+            "old_value": 8,
+            "new_value": null
+          },
+          {
+            "id": "gac_motor_emzoom_1_5t_gdi_citystyle_bva",
+            "full_name": "GAC Emzoom 1.5T GDI CityStyle BVA",
+            "brand": "Gac Motor",
+            "model": "Emzoom",
+            "field": "is_new",
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "id": "gac_motor_emzoom_1_5t_gdi_lifestyle_bva",
+            "full_name": "GAC Emzoom 1.5T GDI Lifestyle BVA",
+            "brand": "Gac Motor",
+            "model": "Emzoom",
+            "field": "is_new",
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "id": "gac_motor_emzoom_1_5t_gdi_r_style_bva",
+            "full_name": "GAC Emzoom 1.5T GDI R-Style BVA",
+            "brand": "Gac Motor",
+            "model": "Emzoom",
+            "field": "is_new",
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "id": "mercedes_benz_eqb_250__amg",
+            "full_name": "Mercedes-Benz EQB 250+ AMG",
+            "brand": "Mercedes Benz",
+            "model": "EQB",
+            "field": "cv_fiscal",
+            "old_value": 8,
+            "new_value": null
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_cayenne_e_hybrid_black_edition",
+            "full_name": "Porsche Cayenne E-Hybrid Cayenne E-Hybrid Black Edition",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid",
+            "field": "cv_fiscal",
+            "old_value": 8,
+            "new_value": null
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_cayenne_s_e_hybrid",
+            "full_name": "Porsche Cayenne E-Hybrid Cayenne S E-Hybrid",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid",
+            "field": "cv_fiscal",
+            "old_value": 8,
+            "new_value": null
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_coup__cayenne_e_hybrid_coup__black_edition",
+            "full_name": "Porsche Cayenne E-Hybrid Coupé Cayenne E-Hybrid Coupé Black Edition",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid Coupé",
+            "field": "cv_fiscal",
+            "old_value": 8,
+            "new_value": null
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_coup__cayenne_s_e_hybrid_coup__black_edition",
+            "full_name": "Porsche Cayenne E-Hybrid Coupé Cayenne S E-Hybrid Coupé Black Edition",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid Coupé",
+            "field": "cv_fiscal",
+            "old_value": 8,
+            "new_value": null
+          },
+          {
+            "id": "porsche_cayenne_electric_cayenne",
+            "full_name": "Porsche Cayenne Electric Cayenne",
+            "brand": "Porsche",
+            "model": "Cayenne Electric",
+            "field": "cv_fiscal",
+            "old_value": 8,
+            "new_value": null
+          },
+          {
+            "id": "porsche_cayenne_electric_cayenne_turbo",
+            "full_name": "Porsche Cayenne Electric Cayenne Turbo",
+            "brand": "Porsche",
+            "model": "Cayenne Electric",
+            "field": "cv_fiscal",
+            "old_value": 8,
+            "new_value": null
+          },
+          {
+            "id": "porsche_macan_electric_macan_turbo",
+            "full_name": "Porsche Macan Electric Macan Turbo",
+            "brand": "Porsche",
+            "model": "Macan Electric",
+            "field": "cv_fiscal",
+            "old_value": 8,
+            "new_value": null
+          },
+          {
+            "id": "porsche_panamera_4_e_hybrid_panamera_4_e_hybrid",
+            "full_name": "Porsche Panamera 4 E-Hybrid Panamera 4 E-Hybrid",
+            "brand": "Porsche",
+            "model": "Panamera 4 E-Hybrid",
+            "field": "cv_fiscal",
+            "old_value": 8,
+            "new_value": null
+          },
+          {
+            "id": "skoda_superb_1_5_tsi_essence_dsg",
+            "full_name": "Skoda Superb 1.5 TSI Essence DSG",
+            "brand": "Skoda",
+            "model": "Superb",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "skoda_superb_1_5_tsi_selection_dsg",
+            "full_name": "Skoda Superb 1.5 TSI Selection DSG",
+            "brand": "Skoda",
+            "model": "Superb",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "volvo_ex90_twin_motor_performance_ultra",
+            "full_name": "Volvo EX90 Twin Motor Performance Ultra",
+            "brand": "Volvo",
+            "model": "EX90",
+            "field": "cv_fiscal",
+            "old_value": 8,
+            "new_value": null
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-02-23",
       "previous_scrape": "2026-02-16T04:15:33.020991",
       "current_scrape": "2026-02-23T04:14:29.144497",
