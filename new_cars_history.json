@@ -1,6 +1,517 @@
 {
   "entries": [
     {
+      "date": "2026-03-09",
+      "previous_scrape": "2026-03-02T04:05:37.469216",
+      "current_scrape": "2026-03-09T04:08:19.119180",
+      "summary": {
+        "total_before": 554,
+        "total_after": 551,
+        "brands_added": 0,
+        "brands_removed": 0,
+        "models_added": 0,
+        "models_removed": 1,
+        "trims_added": 1,
+        "trims_removed": 4,
+        "price_changes": 31,
+        "price_drops": 30,
+        "price_increases": 1,
+        "spec_changes": 8
+      },
+      "changes": {
+        "brands_added": [],
+        "brands_removed": [],
+        "models_added": [],
+        "models_removed": [
+          {
+            "brand": "Seat",
+            "model": "Arona"
+          }
+        ],
+        "trims_added": [
+          {
+            "id": "bmw_ix1_xdrive30_lounge",
+            "full_name": "BMW iX1 xDrive30 Lounge",
+            "brand": "Bmw",
+            "model": "iX1",
+            "trim": "xDrive30 Lounge",
+            "price_tnd": 214900,
+            "fuel_type": "electric",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/bmw/ix1/xdrive30-lounge"
+          }
+        ],
+        "trims_removed": [
+          {
+            "id": "hyundai_tucson_hybride_1_6_l_t_gdi_2wd_top_grade_bva_6",
+            "full_name": "Hyundai Tucson Hybride 1.6 l T-GDI 2WD Top Grade BVA 6",
+            "brand": "Hyundai",
+            "model": "Tucson Hybride",
+            "trim": "1.6 l T-GDI 2WD Top Grade BVA 6",
+            "price_tnd": 175000,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/hyundai/tucson-hybride/1.6-l-t-gdi-bva-6-2wd-top-grade"
+          },
+          {
+            "id": "seat_arona_1_0_tsi_fr",
+            "full_name": "Seat Arona 1.0 TSI FR",
+            "brand": "Seat",
+            "model": "Arona",
+            "trim": "1.0 TSI FR",
+            "price_tnd": 99980,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/seat/arona/1.0-tsi-fr"
+          },
+          {
+            "id": "seat_arona_1_0_tsi_style",
+            "full_name": "Seat Arona 1.0 TSI Style",
+            "brand": "Seat",
+            "model": "Arona",
+            "trim": "1.0 TSI Style",
+            "price_tnd": 90980,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/seat/arona/1.0-tsi-style-plus"
+          },
+          {
+            "id": "seat_arona_1_0_tsi_xperience",
+            "full_name": "Seat Arona 1.0 TSI Xperience",
+            "brand": "Seat",
+            "model": "Arona",
+            "trim": "1.0 TSI Xperience",
+            "price_tnd": 97980,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/seat/arona/1.0-tsi-xperience"
+          }
+        ],
+        "price_changes": [
+          {
+            "id": "bmw_x3_20i_xdrive_pack_m",
+            "full_name": "BMW X3 20i xDrive Pack M",
+            "brand": "Bmw",
+            "model": "X3",
+            "trim": "20i xDrive Pack M",
+            "old_price": 373000,
+            "new_price": 248900,
+            "change": -124100,
+            "change_pct": -33.27
+          },
+          {
+            "id": "bmw_x4_20i_xdrive_pack_m",
+            "full_name": "BMW X4 20i xDrive Pack M",
+            "brand": "Bmw",
+            "model": "X4",
+            "trim": "20i xDrive Pack M",
+            "old_price": 399900,
+            "new_price": 299900,
+            "change": -100000,
+            "change_pct": -25.01
+          },
+          {
+            "id": "bmw_s_rie_5_520i_pack_m__",
+            "full_name": "BMW Série 5 520i Pack M +",
+            "brand": "Bmw",
+            "model": "Série 5",
+            "trim": "520i Pack M +",
+            "old_price": 384900,
+            "new_price": 294900,
+            "change": -90000,
+            "change_pct": -23.38
+          },
+          {
+            "id": "bmw_s_rie_5_520i_pack_m",
+            "full_name": "BMW Série 5 520i Pack M",
+            "brand": "Bmw",
+            "model": "Série 5",
+            "trim": "520i Pack M",
+            "old_price": 359900,
+            "new_price": 279900,
+            "change": -80000,
+            "change_pct": -22.23
+          },
+          {
+            "id": "bmw_s_rie_5_520i_lounge",
+            "full_name": "BMW Série 5 520i Lounge",
+            "brand": "Bmw",
+            "model": "Série 5",
+            "trim": "520i Lounge",
+            "old_price": 334900,
+            "new_price": 259900,
+            "change": -75000,
+            "change_pct": -22.39
+          },
+          {
+            "id": "bmw_s_rie_4_coup__420i_pack_m_pro",
+            "full_name": "BMW Série 4 Coupé 420i Pack M Pro",
+            "brand": "Bmw",
+            "model": "Série 4 Coupé",
+            "trim": "420i Pack M Pro",
+            "old_price": 366900,
+            "new_price": 335900,
+            "change": -31000,
+            "change_pct": -8.45
+          },
+          {
+            "id": "bmw_s_rie_4_gran_coup__420i_pack_m",
+            "full_name": "BMW Série 4 Gran Coupé 420i Pack M",
+            "brand": "Bmw",
+            "model": "Série 4 Gran Coupé",
+            "trim": "420i Pack M",
+            "old_price": 329900,
+            "new_price": 299900,
+            "change": -30000,
+            "change_pct": -9.09
+          },
+          {
+            "id": "bmw_s_rie_2_gran_coup__218_pack_m_pro",
+            "full_name": "BMW Série 2 Gran Coupé 218 Pack M Pro",
+            "brand": "Bmw",
+            "model": "Série 2 Gran Coupé",
+            "trim": "218 Pack M Pro",
+            "old_price": 223900,
+            "new_price": 197900,
+            "change": -26000,
+            "change_pct": -11.61
+          },
+          {
+            "id": "bmw_x1_18i_sdrive_xline",
+            "full_name": "BMW X1 18i sDrive xLine",
+            "brand": "Bmw",
+            "model": "X1",
+            "trim": "18i sDrive xLine",
+            "old_price": 224900,
+            "new_price": 199900,
+            "change": -25000,
+            "change_pct": -11.12
+          },
+          {
+            "id": "bmw_s_rie_1_118_pack_m_pro",
+            "full_name": "BMW Série 1 118 Pack M Pro",
+            "brand": "Bmw",
+            "model": "Série 1",
+            "trim": "118 Pack M Pro",
+            "old_price": 209900,
+            "new_price": 185900,
+            "change": -24000,
+            "change_pct": -11.43
+          },
+          {
+            "id": "bmw_s_rie_2_gran_coup__218_pack_m",
+            "full_name": "BMW Série 2 Gran Coupé 218 Pack M",
+            "brand": "Bmw",
+            "model": "Série 2 Gran Coupé",
+            "trim": "218 Pack M",
+            "old_price": 203900,
+            "new_price": 183900,
+            "change": -20000,
+            "change_pct": -9.81
+          },
+          {
+            "id": "bmw_s_rie_2_gran_coup__218_lounge",
+            "full_name": "BMW Série 2 Gran Coupé 218 Lounge",
+            "brand": "Bmw",
+            "model": "Série 2 Gran Coupé",
+            "trim": "218 Lounge",
+            "old_price": 197900,
+            "new_price": 178900,
+            "change": -19000,
+            "change_pct": -9.6
+          },
+          {
+            "id": "bmw_x2_18i_sdrive__pack_m_pro",
+            "full_name": "BMW X2 18i sDrive  Pack M Pro",
+            "brand": "Bmw",
+            "model": "X2",
+            "trim": "18i sDrive  Pack M Pro",
+            "old_price": 258900,
+            "new_price": 239900,
+            "change": -19000,
+            "change_pct": -7.34
+          },
+          {
+            "id": "bmw_s_rie_1_118_pack_m",
+            "full_name": "BMW Série 1 118 Pack M",
+            "brand": "Bmw",
+            "model": "Série 1",
+            "trim": "118 Pack M",
+            "old_price": 187900,
+            "new_price": 169900,
+            "change": -18000,
+            "change_pct": -9.58
+          },
+          {
+            "id": "bmw_x2_18i_sdrive__pack_m",
+            "full_name": "BMW X2 18i sDrive  Pack M",
+            "brand": "Bmw",
+            "model": "X2",
+            "trim": "18i sDrive  Pack M",
+            "old_price": 237900,
+            "new_price": 219900,
+            "change": -18000,
+            "change_pct": -7.57
+          },
+          {
+            "id": "bmw_s_rie_3_320i_pack_m",
+            "full_name": "BMW Série 3 320i Pack M",
+            "brand": "Bmw",
+            "model": "Série 3",
+            "trim": "320i Pack M",
+            "old_price": 251900,
+            "new_price": 234900,
+            "change": -17000,
+            "change_pct": -6.75
+          },
+          {
+            "id": "bmw_s_rie_1_118_lounge",
+            "full_name": "BMW Série 1 118 Lounge",
+            "brand": "Bmw",
+            "model": "Série 1",
+            "trim": "118 Lounge",
+            "old_price": 174900,
+            "new_price": 159900,
+            "change": -15000,
+            "change_pct": -8.58
+          },
+          {
+            "id": "bmw_s_rie_2_gran_coup__218_business_line",
+            "full_name": "BMW Série 2 Gran Coupé 218 Business Line",
+            "brand": "Bmw",
+            "model": "Série 2 Gran Coupé",
+            "trim": "218 Business Line",
+            "old_price": 181900,
+            "new_price": 166900,
+            "change": -15000,
+            "change_pct": -8.25
+          },
+          {
+            "id": "bmw_x1_18i_sdrive_lounge",
+            "full_name": "BMW X1 18i sDrive Lounge",
+            "brand": "Bmw",
+            "model": "X1",
+            "trim": "18i sDrive Lounge",
+            "old_price": 199900,
+            "new_price": 184900,
+            "change": -15000,
+            "change_pct": -7.5
+          },
+          {
+            "id": "bmw_s_rie_3_320i_pack_m_pro",
+            "full_name": "BMW Série 3 320i Pack M Pro",
+            "brand": "Bmw",
+            "model": "Série 3",
+            "trim": "320i Pack M Pro",
+            "old_price": 268900,
+            "new_price": 254900,
+            "change": -14000,
+            "change_pct": -5.21
+          },
+          {
+            "id": "mercedes_benz_classe_a_200_progressive",
+            "full_name": "Mercedes-Benz Classe A 200 Progressive",
+            "brand": "Mercedes Benz",
+            "model": "Classe A",
+            "trim": "200 Progressive",
+            "old_price": 154000,
+            "new_price": 140000,
+            "change": -14000,
+            "change_pct": -9.09
+          },
+          {
+            "id": "bmw_s_rie_3_320i_business_line",
+            "full_name": "BMW Série 3 320i Business Line",
+            "brand": "Bmw",
+            "model": "Série 3",
+            "trim": "320i Business Line",
+            "old_price": 207900,
+            "new_price": 194900,
+            "change": -13000,
+            "change_pct": -6.25
+          },
+          {
+            "id": "bmw_s_rie_1_118_business_line",
+            "full_name": "BMW Série 1 118 Business Line",
+            "brand": "Bmw",
+            "model": "Série 1",
+            "trim": "118 Business Line",
+            "old_price": 155900,
+            "new_price": 144900,
+            "change": -11000,
+            "change_pct": -7.06
+          },
+          {
+            "id": "bmw_s_rie_3_320i_lounge",
+            "full_name": "BMW Série 3 320i Lounge",
+            "brand": "Bmw",
+            "model": "Série 3",
+            "trim": "320i Lounge",
+            "old_price": 225900,
+            "new_price": 214900,
+            "change": -11000,
+            "change_pct": -4.87
+          },
+          {
+            "id": "bmw_s_rie_2_gran_coup__218_collection_edition_sp_ciale",
+            "full_name": "BMW Série 2 Gran Coupé 218 Collection Edition Spéciale",
+            "brand": "Bmw",
+            "model": "Série 2 Gran Coupé",
+            "trim": "218 Collection Edition Spéciale",
+            "old_price": 165900,
+            "new_price": 155900,
+            "change": -10000,
+            "change_pct": -6.03
+          },
+          {
+            "id": "bmw_s_rie_4_gran_coup__420i_business_line",
+            "full_name": "BMW Série 4 Gran Coupé 420i Business Line",
+            "brand": "Bmw",
+            "model": "Série 4 Gran Coupé",
+            "trim": "420i Business Line",
+            "old_price": 279900,
+            "new_price": 269900,
+            "change": -10000,
+            "change_pct": -3.57
+          },
+          {
+            "id": "bmw_x2_18i_sdrive__lounge",
+            "full_name": "BMW X2 18i sDrive  Lounge",
+            "brand": "Bmw",
+            "model": "X2",
+            "trim": "18i sDrive  Lounge",
+            "old_price": 209900,
+            "new_price": 199900,
+            "change": -10000,
+            "change_pct": -4.76
+          },
+          {
+            "id": "honda_cr_v_hybride_2_0_l_e_hev",
+            "full_name": "Honda CR-V Hybride 2.0 L e-HEV",
+            "brand": "Honda",
+            "model": "CR-V Hybride",
+            "trim": "2.0 L e-HEV",
+            "old_price": 204980,
+            "new_price": 194990,
+            "change": -9990,
+            "change_pct": -4.87
+          },
+          {
+            "id": "toyota_rav_4_hybride_2_5_l",
+            "full_name": "Toyota RAV 4 Hybride 2.5 L",
+            "brand": "Toyota",
+            "model": "RAV 4 Hybride",
+            "trim": "2.5 L",
+            "old_price": 189800,
+            "new_price": 184800,
+            "change": -5000,
+            "change_pct": -2.63
+          },
+          {
+            "id": "toyota_yaris_cross_hybride_1_5_l_cvt",
+            "full_name": "Toyota Yaris Cross Hybride 1.5 L CVT",
+            "brand": "Toyota",
+            "model": "Yaris Cross Hybride",
+            "trim": "1.5 L CVT",
+            "old_price": 116900,
+            "new_price": 112800,
+            "change": -4100,
+            "change_pct": -3.51
+          },
+          {
+            "id": "toyota_hilux_simple_cabine_2_4_l_diesel_d_4d_4x4",
+            "full_name": "Toyota Hilux Simple Cabine 2.4 L Diesel D-4D 4x4",
+            "brand": "Toyota",
+            "model": "Hilux Simple Cabine",
+            "trim": "2.4 L Diesel D-4D 4x4",
+            "old_price": 123800,
+            "new_price": 124800,
+            "change": 1000,
+            "change_pct": 0.81
+          }
+        ],
+        "spec_changes": [
+          {
+            "id": "geely_coolray_1_5_l",
+            "full_name": "Geely Coolray 1.5 L",
+            "brand": "Geely",
+            "model": "Coolray",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "geely_coolray_1_5_l_turbo_gf_",
+            "full_name": "Geely Coolray 1.5 L Turbo GF+",
+            "brand": "Geely",
+            "model": "Coolray",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "geely_coolray_1_5_l_turbo_gs",
+            "full_name": "Geely Coolray 1.5 L Turbo GS",
+            "brand": "Geely",
+            "model": "Coolray",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "nissan_juke_1_0_l_dig_t_dct",
+            "full_name": "Nissan Juke 1.0 L DIG-T DCT",
+            "brand": "Nissan",
+            "model": "Juke",
+            "field": "warranty_years",
+            "old_value": 3,
+            "new_value": 2
+          },
+          {
+            "id": "nissan_magnite_1_0t_acenta",
+            "full_name": "Nissan Magnite 1.0T Acenta",
+            "brand": "Nissan",
+            "model": "Magnite",
+            "field": "warranty_years",
+            "old_value": 3,
+            "new_value": 2
+          },
+          {
+            "id": "nissan_magnite_1_0t_cvt_tekna",
+            "full_name": "Nissan Magnite 1.0T CVT Tekna",
+            "brand": "Nissan",
+            "model": "Magnite",
+            "field": "warranty_years",
+            "old_value": 3,
+            "new_value": 2
+          },
+          {
+            "id": "nissan_navara_2_5_dci_4x4_double_cabine_bva",
+            "full_name": "Nissan Navara 2.5 dCi 4X4 Double Cabine BVA",
+            "brand": "Nissan",
+            "model": "Navara",
+            "field": "warranty_years",
+            "old_value": 3,
+            "new_value": 2
+          },
+          {
+            "id": "nissan_qashqai_e_power_1_5_l_n_connecta",
+            "full_name": "Nissan Qashqai e-Power 1.5 L N-Connecta",
+            "brand": "Nissan",
+            "model": "Qashqai e-Power",
+            "field": "warranty_years",
+            "old_value": 3,
+            "new_value": 2
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-03-02",
       "previous_scrape": "2026-02-23T04:14:29.144497",
       "current_scrape": "2026-03-02T04:05:37.469216",
