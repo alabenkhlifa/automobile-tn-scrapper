@@ -1,6 +1,398 @@
 {
   "entries": [
     {
+      "date": "2026-03-16",
+      "previous_scrape": "2026-03-09T04:08:19.119180",
+      "current_scrape": "2026-03-16T04:32:10.718526",
+      "summary": {
+        "total_before": 551,
+        "total_after": 552,
+        "brands_added": 0,
+        "brands_removed": 0,
+        "models_added": 2,
+        "models_removed": 2,
+        "trims_added": 7,
+        "trims_removed": 6,
+        "price_changes": 16,
+        "price_drops": 15,
+        "price_increases": 1,
+        "spec_changes": 1
+      },
+      "changes": {
+        "brands_added": [],
+        "brands_removed": [],
+        "models_added": [
+          {
+            "brand": "Seat",
+            "model": "Arona"
+          },
+          {
+            "brand": "Volkswagen",
+            "model": "Crafter"
+          }
+        ],
+        "models_removed": [
+          {
+            "brand": "Bmw",
+            "model": "X4"
+          },
+          {
+            "brand": "Geely",
+            "model": "Geometry C"
+          }
+        ],
+        "trims_added": [
+          {
+            "id": "citroen_berlingo_1_6_l_hdi_you",
+            "full_name": "Citroën Berlingo 1.6 L HDI You",
+            "brand": "Citroen",
+            "model": "Berlingo",
+            "trim": "1.6 L HDI You",
+            "price_tnd": 97900,
+            "fuel_type": "diesel",
+            "body_type": "Monospace",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/citroen/berlingo-multispace/1.6-l-hdi"
+          },
+          {
+            "id": "faw_bestune_t77_pro_1_5_l_essentiel_bva",
+            "full_name": "Faw Bestune T77 Pro 1.5 l Essentiel BVA",
+            "brand": "Faw",
+            "model": "Bestune T77 Pro",
+            "trim": "1.5 l Essentiel BVA",
+            "price_tnd": 95777,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/faw/bestune-t77/1.5-l-bva-essentiel"
+          },
+          {
+            "id": "seat_arona_1_0_tsi_fr",
+            "full_name": "Seat Arona 1.0 TSI FR",
+            "brand": "Seat",
+            "model": "Arona",
+            "trim": "1.0 TSI FR",
+            "price_tnd": 97980,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/seat/arona/1.0-tsi-fr"
+          },
+          {
+            "id": "seat_arona_1_0_tsi_move",
+            "full_name": "Seat Arona 1.0 TSI Move",
+            "brand": "Seat",
+            "model": "Arona",
+            "trim": "1.0 TSI Move",
+            "price_tnd": 92980,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/seat/arona/1.0-tsi-move"
+          },
+          {
+            "id": "seat_arona_1_0_tsi_r_f_rence",
+            "full_name": "Seat Arona 1.0 TSI Référence",
+            "brand": "Seat",
+            "model": "Arona",
+            "trim": "1.0 TSI Référence",
+            "price_tnd": 79980,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/seat/arona/1.0-tsi-reference"
+          },
+          {
+            "id": "volkswagen_crafter_11_3_m3_l3h3",
+            "full_name": "Volkswagen Crafter 11.3 m3 L3H3",
+            "brand": "Volkswagen",
+            "model": "Crafter",
+            "trim": "11.3 m3 L3H3",
+            "price_tnd": 124980,
+            "fuel_type": "diesel",
+            "body_type": "Utilitaire",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/volkswagen/crafter/2026-11.3-m3-l3h3"
+          },
+          {
+            "id": "volkswagen_polo_1_0_l_tsi_life",
+            "full_name": "Volkswagen Polo 1.0 L TSI Life",
+            "brand": "Volkswagen",
+            "model": "Polo",
+            "trim": "1.0 L TSI Life",
+            "price_tnd": 94980,
+            "fuel_type": "essence",
+            "body_type": "Citadine",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/volkswagen/polo/1.0-l-life"
+          }
+        ],
+        "trims_removed": [
+          {
+            "id": "bmw_x4_20i_xdrive_pack_m",
+            "full_name": "BMW X4 20i xDrive Pack M",
+            "brand": "Bmw",
+            "model": "X4",
+            "trim": "20i xDrive Pack M",
+            "price_tnd": 299900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/bmw/x4/20i-xdrive-pack-m"
+          },
+          {
+            "id": "citroen_berlingo_1_6_l_hdi",
+            "full_name": "Citroën Berlingo 1.6 L HDI",
+            "brand": "Citroen",
+            "model": "Berlingo",
+            "trim": "1.6 L HDI",
+            "price_tnd": 97900,
+            "fuel_type": "diesel",
+            "body_type": "Monospace",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/citroen/berlingo-multispace/1.6-l-hdi"
+          },
+          {
+            "id": "faw_bestune_t77_pro_1_5_l_luxury_bva",
+            "full_name": "Faw Bestune T77 Pro 1.5 l Luxury BVA",
+            "brand": "Faw",
+            "model": "Bestune T77 Pro",
+            "trim": "1.5 l Luxury BVA",
+            "price_tnd": 113777,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/faw/bestune-t77/1.5-l-160-ch"
+          },
+          {
+            "id": "faw_bestune_t77_pro_1_5_l_premium_bva",
+            "full_name": "Faw Bestune T77 Pro 1.5 l Premium BVA",
+            "brand": "Faw",
+            "model": "Bestune T77 Pro",
+            "trim": "1.5 l Premium BVA",
+            "price_tnd": 118777,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/faw/bestune-t77/1.5-l-bva-premium"
+          },
+          {
+            "id": "geely_geometry_c_70_kwh",
+            "full_name": "Geely Geometry C 70 kWh",
+            "brand": "Geely",
+            "model": "Geometry C",
+            "trim": "70 kWh",
+            "price_tnd": 104000,
+            "fuel_type": "electric",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/geely/geometry/70-kwh"
+          },
+          {
+            "id": "volkswagen_amarok_2_0_l_tdi_170_ch_4x4_life_bva",
+            "full_name": "Volkswagen Amarok 2.0 L TDI 170 ch 4x4 Life BVA",
+            "brand": "Volkswagen",
+            "model": "Amarok",
+            "trim": "2.0 L TDI 170 ch 4x4 Life BVA",
+            "price_tnd": 199980,
+            "fuel_type": "diesel",
+            "body_type": "Pick up",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/volkswagen/amarok/2.0-l-tdi-4x4-bva-life-double-cabine"
+          }
+        ],
+        "price_changes": [
+          {
+            "id": "foton_tunland_g7_double_cabine_2_0_l_turbo_4x4",
+            "full_name": "Foton Tunland G7 Double Cabine 2.0 l Turbo 4x4",
+            "brand": "Foton",
+            "model": "Tunland G7 Double Cabine",
+            "trim": "2.0 l Turbo 4x4",
+            "old_price": 107200,
+            "new_price": 99900,
+            "change": -7300,
+            "change_pct": -6.81
+          },
+          {
+            "id": "volkswagen_golf_8_1_4_l_tsi_r_line",
+            "full_name": "Volkswagen Golf 8 1.4 L TSI R-Line",
+            "brand": "Volkswagen",
+            "model": "Golf 8",
+            "trim": "1.4 L TSI R-Line",
+            "old_price": 159980,
+            "new_price": 152980,
+            "change": -7000,
+            "change_pct": -4.38
+          },
+          {
+            "id": "volkswagen_tiguan_1_4_l_tsi_r_line",
+            "full_name": "Volkswagen Tiguan 1.4 L TSI R-Line",
+            "brand": "Volkswagen",
+            "model": "Tiguan",
+            "trim": "1.4 L TSI R-Line",
+            "old_price": 203980,
+            "new_price": 196980,
+            "change": -7000,
+            "change_pct": -3.43
+          },
+          {
+            "id": "volkswagen_tiguan_1_4_l_tsi_exclusive",
+            "full_name": "Volkswagen Tiguan 1.4 L TSI Exclusive",
+            "brand": "Volkswagen",
+            "model": "Tiguan",
+            "trim": "1.4 L TSI Exclusive",
+            "old_price": 184980,
+            "new_price": 178980,
+            "change": -6000,
+            "change_pct": -3.24
+          },
+          {
+            "id": "great_wall_poer_mt_2_0_l_diesel_4x4",
+            "full_name": "GWM Poer MT 2.0 L Diesel 4x4",
+            "brand": "Great Wall",
+            "model": "Poer MT",
+            "trim": "2.0 L Diesel 4x4",
+            "old_price": 112900,
+            "new_price": 107900,
+            "change": -5000,
+            "change_pct": -4.43
+          },
+          {
+            "id": "volkswagen_golf_8_1_4_l_tsi_life",
+            "full_name": "Volkswagen Golf 8 1.4 L TSI Life",
+            "brand": "Volkswagen",
+            "model": "Golf 8",
+            "trim": "1.4 L TSI Life",
+            "old_price": 134980,
+            "new_price": 129980,
+            "change": -5000,
+            "change_pct": -3.7
+          },
+          {
+            "id": "volkswagen_tiguan_1_4_l_tsi_life",
+            "full_name": "Volkswagen Tiguan 1.4 L TSI Life",
+            "brand": "Volkswagen",
+            "model": "Tiguan",
+            "trim": "1.4 L TSI Life",
+            "old_price": 159980,
+            "new_price": 154980,
+            "change": -5000,
+            "change_pct": -3.13
+          },
+          {
+            "id": "volkswagen_golf_8_1_4_l_tsi_drive",
+            "full_name": "Volkswagen Golf 8 1.4 L TSI Drive",
+            "brand": "Volkswagen",
+            "model": "Golf 8",
+            "trim": "1.4 L TSI Drive",
+            "old_price": 120980,
+            "new_price": 117980,
+            "change": -3000,
+            "change_pct": -2.48
+          },
+          {
+            "id": "volkswagen_polo_1_0_l_tsi_drive",
+            "full_name": "Volkswagen Polo 1.0 L TSI Drive",
+            "brand": "Volkswagen",
+            "model": "Polo",
+            "trim": "1.0 L TSI Drive",
+            "old_price": 89980,
+            "new_price": 86980,
+            "change": -3000,
+            "change_pct": -3.33
+          },
+          {
+            "id": "great_wall_poer_at_2_0_l_diesel_4x4",
+            "full_name": "GWM Poer AT 2.0 L Diesel 4x4",
+            "brand": "Great Wall",
+            "model": "Poer AT",
+            "trim": "2.0 L Diesel 4x4",
+            "old_price": 138900,
+            "new_price": 136900,
+            "change": -2000,
+            "change_pct": -1.44
+          },
+          {
+            "id": "volkswagen_virtus_1_0_l_tsi_highline_bva",
+            "full_name": "Volkswagen Virtus 1.0 L TSI Highline BVA",
+            "brand": "Volkswagen",
+            "model": "Virtus",
+            "trim": "1.0 L TSI Highline BVA",
+            "old_price": 79980,
+            "new_price": 77980,
+            "change": -2000,
+            "change_pct": -2.5
+          },
+          {
+            "id": "volkswagen_t_cross_1_0_l_confortline",
+            "full_name": "Volkswagen T-Cross 1.0 L Confortline",
+            "brand": "Volkswagen",
+            "model": "T-Cross",
+            "trim": "1.0 L Confortline",
+            "old_price": 75980,
+            "new_price": 74980,
+            "change": -1000,
+            "change_pct": -1.32
+          },
+          {
+            "id": "volkswagen_t_cross_1_0_l_highline_bva",
+            "full_name": "Volkswagen T-Cross 1.0 L Highline BVA",
+            "brand": "Volkswagen",
+            "model": "T-Cross",
+            "trim": "1.0 L Highline BVA",
+            "old_price": 89980,
+            "new_price": 88980,
+            "change": -1000,
+            "change_pct": -1.11
+          },
+          {
+            "id": "volkswagen_t_cross_1_0_l_topline_bva",
+            "full_name": "Volkswagen T-Cross 1.0 L Topline BVA",
+            "brand": "Volkswagen",
+            "model": "T-Cross",
+            "trim": "1.0 L Topline BVA",
+            "old_price": 99980,
+            "new_price": 98980,
+            "change": -1000,
+            "change_pct": -1.0
+          },
+          {
+            "id": "volkswagen_virtus_1_0_l_tsi_confortline",
+            "full_name": "Volkswagen Virtus 1.0 L TSI Confortline",
+            "brand": "Volkswagen",
+            "model": "Virtus",
+            "trim": "1.0 L TSI Confortline",
+            "old_price": 68980,
+            "new_price": 67980,
+            "change": -1000,
+            "change_pct": -1.45
+          },
+          {
+            "id": "suzuki_dzire_1_2_l_glx",
+            "full_name": "Suzuki Dzire 1.2 L GLX",
+            "brand": "Suzuki",
+            "model": "Dzire",
+            "trim": "1.2 L GLX",
+            "old_price": 60400,
+            "new_price": 60900,
+            "change": 500,
+            "change_pct": 0.83
+          }
+        ],
+        "spec_changes": [
+          {
+            "id": "great_wall_haval_jolion_1_5_t",
+            "full_name": "GWM Haval Jolion 1.5 T",
+            "brand": "Great Wall",
+            "model": "Haval Jolion",
+            "field": "warranty_years",
+            "old_value": 5,
+            "new_value": 7
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-03-09",
       "previous_scrape": "2026-03-02T04:05:37.469216",
       "current_scrape": "2026-03-09T04:08:19.119180",
