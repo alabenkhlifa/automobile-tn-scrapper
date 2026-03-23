@@ -1,6 +1,106 @@
 {
   "entries": [
     {
+      "date": "2026-03-23",
+      "previous_scrape": "2026-03-16T04:32:10.718526",
+      "current_scrape": "2026-03-23T04:18:53.434909",
+      "summary": {
+        "total_before": 552,
+        "total_after": 552,
+        "brands_added": 0,
+        "brands_removed": 0,
+        "models_added": 0,
+        "models_removed": 0,
+        "trims_added": 0,
+        "trims_removed": 0,
+        "price_changes": 3,
+        "price_drops": 3,
+        "price_increases": 0,
+        "spec_changes": 4
+      },
+      "changes": {
+        "brands_added": [],
+        "brands_removed": [],
+        "models_added": [],
+        "models_removed": [],
+        "trims_added": [],
+        "trims_removed": [],
+        "price_changes": [
+          {
+            "id": "chery_tiggo_4_pro_1_5_l_cvt",
+            "full_name": "Chery Tiggo 4 Pro 1.5 L CVT",
+            "brand": "Chery",
+            "model": "Tiggo 4 Pro",
+            "trim": "1.5 L CVT",
+            "old_price": 79900,
+            "new_price": 75000,
+            "change": -4900,
+            "change_pct": -6.13
+          },
+          {
+            "id": "skoda_fabia_1_0_l_mpi_essence",
+            "full_name": "Skoda Fabia 1.0 L MPI Essence",
+            "brand": "Skoda",
+            "model": "Fabia",
+            "trim": "1.0 L MPI Essence",
+            "old_price": 68980,
+            "new_price": 66980,
+            "change": -2000,
+            "change_pct": -2.9
+          },
+          {
+            "id": "skoda_fabia_1_0_l_mpi_selection",
+            "full_name": "Skoda Fabia 1.0 L MPI Selection",
+            "brand": "Skoda",
+            "model": "Fabia",
+            "trim": "1.0 L MPI Selection",
+            "old_price": 74980,
+            "new_price": 72980,
+            "change": -2000,
+            "change_pct": -2.67
+          }
+        ],
+        "spec_changes": [
+          {
+            "id": "avantier_commuter_31_kwh_lfp",
+            "full_name": "Avantier Commuter 31 KWH LFP",
+            "brand": "Avantier",
+            "model": "Commuter",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "avantier_commuter_31_kwh_nmc",
+            "full_name": "Avantier Commuter 31 KWH NMC",
+            "brand": "Avantier",
+            "model": "Commuter",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "dfsk_e5_phev_1_5_l_confort",
+            "full_name": "DFSK E5 PHEV 1.5 L Confort",
+            "brand": "Dfsk",
+            "model": "E5 PHEV",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "dfsk_e5_phev_1_5_l_prestige",
+            "full_name": "DFSK E5 PHEV 1.5 L Prestige",
+            "brand": "Dfsk",
+            "model": "E5 PHEV",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-03-16",
       "previous_scrape": "2026-03-09T04:08:19.119180",
       "current_scrape": "2026-03-16T04:32:10.718526",
