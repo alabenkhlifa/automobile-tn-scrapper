@@ -1,6 +1,284 @@
 {
   "entries": [
     {
+      "date": "2026-03-30",
+      "previous_scrape": "2026-03-23T04:18:53.434909",
+      "current_scrape": "2026-03-30T04:37:57.731976",
+      "summary": {
+        "total_before": 552,
+        "total_after": 552,
+        "brands_added": 0,
+        "brands_removed": 0,
+        "models_added": 0,
+        "models_removed": 0,
+        "trims_added": 2,
+        "trims_removed": 2,
+        "price_changes": 18,
+        "price_drops": 6,
+        "price_increases": 12,
+        "spec_changes": 0
+      },
+      "changes": {
+        "brands_added": [],
+        "brands_removed": [],
+        "models_added": [],
+        "models_removed": [],
+        "trims_added": [
+          {
+            "id": "citroen_c3_populaire_1_2_l_you",
+            "full_name": "Citroën C3 Populaire 1.2 L You",
+            "brand": "Citroen",
+            "model": "C3 Populaire",
+            "trim": "1.2 L You",
+            "price_tnd": 35000,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/citroen/c3-populaire/1.2-l-you"
+          },
+          {
+            "id": "ford_transit_minibus_2_0_l_d_ecoblue_18_places",
+            "full_name": "Ford Transit Minibus 2.0 l D Ecoblue 18 Places",
+            "brand": "Ford",
+            "model": "Transit Minibus",
+            "trim": "2.0 l D Ecoblue 18 Places",
+            "price_tnd": 175000,
+            "fuel_type": "diesel",
+            "body_type": "Minibus",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/ford/transit-bus/2.0-l-d-18-places"
+          }
+        ],
+        "trims_removed": [
+          {
+            "id": "citroen_c3_populaire_1_2_l",
+            "full_name": "Citroën C3 Populaire 1.2 L",
+            "brand": "Citroen",
+            "model": "C3 Populaire",
+            "trim": "1.2 L",
+            "price_tnd": 34626,
+            "fuel_type": "essence",
+            "body_type": "Citadine",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/citroen/c3-populaire/1.2-l"
+          },
+          {
+            "id": "ford_transit_minibus_2_0_l_d_18_places",
+            "full_name": "Ford Transit Minibus 2.0 l D 18 Places",
+            "brand": "Ford",
+            "model": "Transit Minibus",
+            "trim": "2.0 l D 18 Places",
+            "price_tnd": 175000,
+            "fuel_type": "diesel",
+            "body_type": "Minibus",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/ford/transit-bus/2.0-l-d-18-places"
+          }
+        ],
+        "price_changes": [
+          {
+            "id": "bmw_x2_18i_sdrive__lounge",
+            "full_name": "BMW X2 18i sDrive  Lounge",
+            "brand": "Bmw",
+            "model": "X2",
+            "trim": "18i sDrive  Lounge",
+            "old_price": 199900,
+            "new_price": 214900,
+            "change": 15000,
+            "change_pct": 7.5
+          },
+          {
+            "id": "mercedes_benz_classe_a_200_progressive",
+            "full_name": "Mercedes-Benz Classe A 200 Progressive",
+            "brand": "Mercedes Benz",
+            "model": "Classe A",
+            "trim": "200 Progressive",
+            "old_price": 140000,
+            "new_price": 154000,
+            "change": 14000,
+            "change_pct": 10.0
+          },
+          {
+            "id": "mercedes_benz_classe_c_180_amg",
+            "full_name": "Mercedes-Benz Classe C 180 AMG",
+            "brand": "Mercedes Benz",
+            "model": "Classe C",
+            "trim": "180 AMG",
+            "old_price": 241900,
+            "new_price": 227900,
+            "change": -14000,
+            "change_pct": -5.79
+          },
+          {
+            "id": "mercedes_benz_classe_c_180_amg__",
+            "full_name": "Mercedes-Benz Classe C 180 AMG +",
+            "brand": "Mercedes Benz",
+            "model": "Classe C",
+            "trim": "180 AMG +",
+            "old_price": 259900,
+            "new_price": 245900,
+            "change": -14000,
+            "change_pct": -5.39
+          },
+          {
+            "id": "mercedes_benz_classe_c_180_avantgarde",
+            "full_name": "Mercedes-Benz Classe C 180 Avantgarde",
+            "brand": "Mercedes Benz",
+            "model": "Classe C",
+            "trim": "180 Avantgarde",
+            "old_price": 209900,
+            "new_price": 195900,
+            "change": -14000,
+            "change_pct": -6.67
+          },
+          {
+            "id": "mercedes_benz_classe_c_180_premium",
+            "full_name": "Mercedes-Benz Classe C 180 Premium",
+            "brand": "Mercedes Benz",
+            "model": "Classe C",
+            "trim": "180 Premium",
+            "old_price": 239900,
+            "new_price": 225900,
+            "change": -14000,
+            "change_pct": -5.84
+          },
+          {
+            "id": "mini_cooper_cabriolet_2_0_l_favoured",
+            "full_name": "Mini Cooper Cabriolet 2.0 l Favoured",
+            "brand": "Mini",
+            "model": "Cooper Cabriolet",
+            "trim": "2.0 l Favoured",
+            "old_price": 227900,
+            "new_price": 216900,
+            "change": -11000,
+            "change_pct": -4.83
+          },
+          {
+            "id": "bmw_s_rie_3_hybride_330e_pack_m_pro",
+            "full_name": "BMW Série 3 Hybride 330e Pack M Pro",
+            "brand": "Bmw",
+            "model": "Série 3 Hybride",
+            "trim": "330e Pack M Pro",
+            "old_price": 229900,
+            "new_price": 234900,
+            "change": 5000,
+            "change_pct": 2.17
+          },
+          {
+            "id": "bmw_x3_hybride_xdrive_30e_pack_m_pro",
+            "full_name": "BMW X3 Hybride xDrive 30e Pack M Pro",
+            "brand": "Bmw",
+            "model": "X3 Hybride",
+            "trim": "xDrive 30e Pack M Pro",
+            "old_price": 279900,
+            "new_price": 284900,
+            "change": 5000,
+            "change_pct": 1.79
+          },
+          {
+            "id": "hyundai_creta_1_5_l_bva",
+            "full_name": "Hyundai Creta 1.5 l BVA",
+            "brand": "Hyundai",
+            "model": "Creta",
+            "trim": "1.5 l BVA",
+            "old_price": 118950,
+            "new_price": 114950,
+            "change": -4000,
+            "change_pct": -3.36
+          },
+          {
+            "id": "kia_sonet_1_5_l_cvt_ex_plus",
+            "full_name": "KIA Sonet 1.5 L CVT EX Plus",
+            "brand": "Kia",
+            "model": "Sonet",
+            "trim": "1.5 L CVT EX Plus",
+            "old_price": 93980,
+            "new_price": 95480,
+            "change": 1500,
+            "change_pct": 1.6
+          },
+          {
+            "id": "kia_sonet_1_5_l_cvt_sx",
+            "full_name": "KIA Sonet 1.5 L CVT SX",
+            "brand": "Kia",
+            "model": "Sonet",
+            "trim": "1.5 L CVT SX",
+            "old_price": 99980,
+            "new_price": 101480,
+            "change": 1500,
+            "change_pct": 1.5
+          },
+          {
+            "id": "kia_sonet_1_5_l_ex_bvm",
+            "full_name": "KIA Sonet 1.5 L EX BVM",
+            "brand": "Kia",
+            "model": "Sonet",
+            "trim": "1.5 L EX BVM",
+            "old_price": 87980,
+            "new_price": 89480,
+            "change": 1500,
+            "change_pct": 1.7
+          },
+          {
+            "id": "kia_picanto_1_2_l_gt_line___bva",
+            "full_name": "KIA Picanto 1.2 L GT-Line + BVA",
+            "brand": "Kia",
+            "model": "Picanto",
+            "trim": "1.2 L GT-Line + BVA",
+            "old_price": 65480,
+            "new_price": 66480,
+            "change": 1000,
+            "change_pct": 1.53
+          },
+          {
+            "id": "kia_picanto_1_2_l_gt_line_bva",
+            "full_name": "KIA Picanto 1.2 L GT-Line BVA",
+            "brand": "Kia",
+            "model": "Picanto",
+            "trim": "1.2 L GT-Line BVA",
+            "old_price": 62480,
+            "new_price": 63480,
+            "change": 1000,
+            "change_pct": 1.6
+          },
+          {
+            "id": "kia_picanto_1_2_l_smart_bva",
+            "full_name": "KIA Picanto 1.2 L Smart BVA",
+            "brand": "Kia",
+            "model": "Picanto",
+            "trim": "1.2 L Smart BVA",
+            "old_price": 55980,
+            "new_price": 56980,
+            "change": 1000,
+            "change_pct": 1.79
+          },
+          {
+            "id": "kia_picanto_1_2_l_smart_bvm",
+            "full_name": "KIA Picanto 1.2 L Smart BVM",
+            "brand": "Kia",
+            "model": "Picanto",
+            "trim": "1.2 L Smart BVM",
+            "old_price": 52480,
+            "new_price": 53480,
+            "change": 1000,
+            "change_pct": 1.91
+          },
+          {
+            "id": "kia_picanto_populaire_1_0_l",
+            "full_name": "KIA Picanto Populaire 1.0 L",
+            "brand": "Kia",
+            "model": "Picanto Populaire",
+            "trim": "1.0 L",
+            "old_price": 32190,
+            "new_price": 32287,
+            "change": 97,
+            "change_pct": 0.3
+          }
+        ],
+        "spec_changes": []
+      }
+    },
+    {
       "date": "2026-03-23",
       "previous_scrape": "2026-03-16T04:32:10.718526",
       "current_scrape": "2026-03-23T04:18:53.434909",
