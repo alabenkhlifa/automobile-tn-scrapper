@@ -1,6 +1,225 @@
 {
   "entries": [
     {
+      "date": "2026-04-06",
+      "previous_scrape": "2026-03-30T04:37:57.731976",
+      "current_scrape": "2026-04-06T04:36:58.049978",
+      "summary": {
+        "total_before": 552,
+        "total_after": 553,
+        "brands_added": 0,
+        "brands_removed": 0,
+        "models_added": 1,
+        "models_removed": 0,
+        "trims_added": 1,
+        "trims_removed": 0,
+        "price_changes": 13,
+        "price_drops": 5,
+        "price_increases": 8,
+        "spec_changes": 3
+      },
+      "changes": {
+        "brands_added": [],
+        "brands_removed": [],
+        "models_added": [
+          {
+            "brand": "Chery",
+            "model": "Tiggo 7 PHEV"
+          }
+        ],
+        "models_removed": [],
+        "trims_added": [
+          {
+            "id": "chery_tiggo_7_phev_1_5_t_dht_hybrid",
+            "full_name": "Chery Tiggo 7 PHEV 1.5 T DHT Hybrid",
+            "brand": "Chery",
+            "model": "Tiggo 7 PHEV",
+            "trim": "1.5 T DHT Hybrid",
+            "price_tnd": 88900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/chery/tiggo-7-pro-phev/1.5-t-cvt"
+          }
+        ],
+        "trims_removed": [],
+        "price_changes": [
+          {
+            "id": "audi_a6_sportback_e_tron_100_kwh_performance",
+            "full_name": "Audi A6 Sportback e-tron 100 kWh Performance",
+            "brand": "Audi",
+            "model": "A6 Sportback e-tron",
+            "trim": "100 kWh Performance",
+            "old_price": 259000,
+            "new_price": 239000,
+            "change": -20000,
+            "change_pct": -7.72
+          },
+          {
+            "id": "kia_ev9_99_8_kwh_gt_line_6_places",
+            "full_name": "KIA EV9 99.8 kWh GT-Line 6 places",
+            "brand": "Kia",
+            "model": "EV9",
+            "trim": "99.8 kWh GT-Line 6 places",
+            "old_price": 294980,
+            "new_price": 304980,
+            "change": 10000,
+            "change_pct": 3.39
+          },
+          {
+            "id": "kia_ev9_99_8_kwh_gt_line_7_places",
+            "full_name": "KIA EV9 99.8 kWh GT-Line 7 places",
+            "brand": "Kia",
+            "model": "EV9",
+            "trim": "99.8 kWh GT-Line 7 places",
+            "old_price": 289980,
+            "new_price": 299980,
+            "change": 10000,
+            "change_pct": 3.45
+          },
+          {
+            "id": "great_wall_tank_300_hev_2_0_l",
+            "full_name": "GWM Tank 300 HEV 2.0 L",
+            "brand": "Great Wall",
+            "model": "Tank 300 HEV",
+            "trim": "2.0 L",
+            "old_price": 194900,
+            "new_price": 187900,
+            "change": -7000,
+            "change_pct": -3.59
+          },
+          {
+            "id": "great_wall_tank_500_hev_2_0_l",
+            "full_name": "GWM Tank 500 HEV 2.0 L",
+            "brand": "Great Wall",
+            "model": "Tank 500 HEV",
+            "trim": "2.0 L",
+            "old_price": 239900,
+            "new_price": 232900,
+            "change": -7000,
+            "change_pct": -2.92
+          },
+          {
+            "id": "kia_sorento_hybride_1_6_t_gdi_hev",
+            "full_name": "KIA Sorento Hybride 1.6 T-GDi HEV",
+            "brand": "Kia",
+            "model": "Sorento Hybride",
+            "trim": "1.6 T-GDi HEV",
+            "old_price": 244980,
+            "new_price": 249980,
+            "change": 5000,
+            "change_pct": 2.04
+          },
+          {
+            "id": "kia_niro_hybride_1_6_l_ex",
+            "full_name": "KIA Niro Hybride 1.6 L EX",
+            "brand": "Kia",
+            "model": "Niro Hybride",
+            "trim": "1.6 L EX",
+            "old_price": 126980,
+            "new_price": 129980,
+            "change": 3000,
+            "change_pct": 2.36
+          },
+          {
+            "id": "kia_niro_hybride_1_6_l_sx",
+            "full_name": "KIA Niro Hybride 1.6 L SX",
+            "brand": "Kia",
+            "model": "Niro Hybride",
+            "trim": "1.6 L SX",
+            "old_price": 136980,
+            "new_price": 139980,
+            "change": 3000,
+            "change_pct": 2.19
+          },
+          {
+            "id": "kia_seltos_1_4_t_gdi_top_grade",
+            "full_name": "KIA Seltos 1.4 T-GDI Top Grade",
+            "brand": "Kia",
+            "model": "Seltos",
+            "trim": "1.4 T-GDI Top Grade",
+            "old_price": 117980,
+            "new_price": 120980,
+            "change": 3000,
+            "change_pct": 2.54
+          },
+          {
+            "id": "wallyscar_annibal_2_5_l_diesel_4x2",
+            "full_name": "Wallyscar Annibal 2.5 l Diesel 4x2",
+            "brand": "Wallyscar",
+            "model": "Annibal",
+            "trim": "2.5 l Diesel 4x2",
+            "old_price": 89700,
+            "new_price": 91700,
+            "change": 2000,
+            "change_pct": 2.23
+          },
+          {
+            "id": "wallyscar_annibal_2_5_l_diesel_4x4",
+            "full_name": "Wallyscar Annibal 2.5 l Diesel 4x4",
+            "brand": "Wallyscar",
+            "model": "Annibal",
+            "trim": "2.5 l Diesel 4x4",
+            "old_price": 102900,
+            "new_price": 104900,
+            "change": 2000,
+            "change_pct": 1.94
+          },
+          {
+            "id": "opel_grandland_1_6_l_turbo_gs_line_bva",
+            "full_name": "Opel Grandland 1.6 L Turbo GS Line BVA",
+            "brand": "Opel",
+            "model": "Grandland",
+            "trim": "1.6 L Turbo GS Line BVA",
+            "old_price": 99900,
+            "new_price": 98900,
+            "change": -1000,
+            "change_pct": -1.0
+          },
+          {
+            "id": "opel_mokka_1_2_l_turbo_130_ch_at8_gs_special_edition",
+            "full_name": "Opel Mokka 1.2 L Turbo 130 ch AT8 GS Special Edition",
+            "brand": "Opel",
+            "model": "Mokka",
+            "trim": "1.2 L Turbo 130 ch AT8 GS Special Edition",
+            "old_price": 91900,
+            "new_price": 90900,
+            "change": -1000,
+            "change_pct": -1.09
+          }
+        ],
+        "spec_changes": [
+          {
+            "id": "toyota_yaris_hybride_1_5_l_cvt_france",
+            "full_name": "Toyota Yaris Hybride 1.5 L CVT France",
+            "brand": "Toyota",
+            "model": "Yaris Hybride",
+            "field": "consumption_mixed",
+            "old_value": 2.8,
+            "new_value": 3.2
+          },
+          {
+            "id": "toyota_yaris_hybride_1_5_l_cvt_france",
+            "full_name": "Toyota Yaris Hybride 1.5 L CVT France",
+            "brand": "Toyota",
+            "model": "Yaris Hybride",
+            "field": "consumption_city",
+            "old_value": 2.2,
+            "new_value": 2.7
+          },
+          {
+            "id": "toyota_yaris_hybride_1_5_l_cvt_france",
+            "full_name": "Toyota Yaris Hybride 1.5 L CVT France",
+            "brand": "Toyota",
+            "model": "Yaris Hybride",
+            "field": "consumption_highway",
+            "old_value": 3.2,
+            "new_value": 3.5
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-03-30",
       "previous_scrape": "2026-03-23T04:18:53.434909",
       "current_scrape": "2026-03-30T04:37:57.731976",
