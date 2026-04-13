@@ -1,6 +1,745 @@
 {
   "entries": [
     {
+      "date": "2026-04-13",
+      "previous_scrape": "2026-04-06T04:36:58.049978",
+      "current_scrape": "2026-04-13T04:51:51.777776",
+      "summary": {
+        "total_before": 553,
+        "total_after": 557,
+        "brands_added": 0,
+        "brands_removed": 0,
+        "models_added": 1,
+        "models_removed": 0,
+        "trims_added": 4,
+        "trims_removed": 0,
+        "price_changes": 48,
+        "price_drops": 38,
+        "price_increases": 10,
+        "spec_changes": 14
+      },
+      "changes": {
+        "brands_added": [],
+        "brands_removed": [],
+        "models_added": [
+          {
+            "brand": "Chery",
+            "model": "Tiggo 2 Pro Max"
+          }
+        ],
+        "models_removed": [],
+        "trims_added": [
+          {
+            "id": "bmw_s_rie_3_hybride_330e_lounge",
+            "full_name": "BMW Série 3 Hybride 330e Lounge",
+            "brand": "Bmw",
+            "model": "Série 3 Hybride",
+            "trim": "330e Lounge",
+            "price_tnd": 204900,
+            "fuel_type": "essence",
+            "body_type": "Berline",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/bmw/serie-3-hybride/330e-lounge"
+          },
+          {
+            "id": "bmw_s_rie_3_hybride_330e_pack_m",
+            "full_name": "BMW Série 3 Hybride 330e Pack M",
+            "brand": "Bmw",
+            "model": "Série 3 Hybride",
+            "trim": "330e Pack M",
+            "price_tnd": 219900,
+            "fuel_type": "essence",
+            "body_type": "Berline",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/bmw/serie-3-hybride/330e-pack-m"
+          },
+          {
+            "id": "chery_tiggo_2_pro_max_1_0_t_cvt",
+            "full_name": "Chery Tiggo 2 Pro Max 1.0 T CVT",
+            "brand": "Chery",
+            "model": "Tiggo 2 Pro Max",
+            "trim": "1.0 T CVT",
+            "price_tnd": 66990,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/chery/tiggo-2-pro/1.0-t-cvt"
+          },
+          {
+            "id": "renault_express_van_1_5_l_dci_luxe",
+            "full_name": "Renault Express Van 1.5 L dCi Luxe",
+            "brand": "Renault",
+            "model": "Express Van",
+            "trim": "1.5 L dCi Luxe",
+            "price_tnd": 59950,
+            "fuel_type": "diesel",
+            "body_type": "Utilitaire",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/renault/express-van/1.5-l-dci-luxe"
+          }
+        ],
+        "trims_removed": [],
+        "price_changes": [
+          {
+            "id": "bmw_ix_xdrive40_impressive",
+            "full_name": "BMW iX xDrive40 Impressive",
+            "brand": "Bmw",
+            "model": "iX",
+            "trim": "xDrive40 Impressive",
+            "old_price": 369900,
+            "new_price": 269900,
+            "change": -100000,
+            "change_pct": -27.03
+          },
+          {
+            "id": "bmw_ix1_xdrive30_lounge",
+            "full_name": "BMW iX1 xDrive30 Lounge",
+            "brand": "Bmw",
+            "model": "iX1",
+            "trim": "xDrive30 Lounge",
+            "old_price": 214900,
+            "new_price": 139900,
+            "change": -75000,
+            "change_pct": -34.9
+          },
+          {
+            "id": "bmw_ix1_xdrive30_xline",
+            "full_name": "BMW iX1 xDrive30 xLine",
+            "brand": "Bmw",
+            "model": "iX1",
+            "trim": "xDrive30 xLine",
+            "old_price": 223900,
+            "new_price": 149900,
+            "change": -74000,
+            "change_pct": -33.05
+          },
+          {
+            "id": "bmw_i5_edrive40_pack_m__",
+            "full_name": "BMW i5 eDrive40 Pack M +",
+            "brand": "Bmw",
+            "model": "i5",
+            "trim": "eDrive40 Pack M +",
+            "old_price": 322900,
+            "new_price": 289900,
+            "change": -33000,
+            "change_pct": -10.22
+          },
+          {
+            "id": "bmw_i4_edrive40_pack_m",
+            "full_name": "BMW i4 eDrive40 Pack M",
+            "brand": "Bmw",
+            "model": "i4",
+            "trim": "eDrive40 Pack M",
+            "old_price": 266900,
+            "new_price": 239900,
+            "change": -27000,
+            "change_pct": -10.12
+          },
+          {
+            "id": "bmw_i4_edrive40__business_line",
+            "full_name": "BMW i4 eDrive40  Business Line",
+            "brand": "Bmw",
+            "model": "i4",
+            "trim": "eDrive40  Business Line",
+            "old_price": 245900,
+            "new_price": 219900,
+            "change": -26000,
+            "change_pct": -10.57
+          },
+          {
+            "id": "bmw_s_rie_4_gran_coup__420i_pack_m",
+            "full_name": "BMW Série 4 Gran Coupé 420i Pack M",
+            "brand": "Bmw",
+            "model": "Série 4 Gran Coupé",
+            "trim": "420i Pack M",
+            "old_price": 299900,
+            "new_price": 279900,
+            "change": -20000,
+            "change_pct": -6.67
+          },
+          {
+            "id": "mini_countryman_1_5_l_classic_bva",
+            "full_name": "Mini Countryman 1.5 L Classic BVA",
+            "brand": "Mini",
+            "model": "Countryman",
+            "trim": "1.5 L Classic BVA",
+            "old_price": 169900,
+            "new_price": 149900,
+            "change": -20000,
+            "change_pct": -11.77
+          },
+          {
+            "id": "mini_countryman_1_5_l_favoured_bva",
+            "full_name": "Mini Countryman 1.5 L Favoured BVA",
+            "brand": "Mini",
+            "model": "Countryman",
+            "trim": "1.5 L Favoured BVA",
+            "old_price": 199900,
+            "new_price": 179900,
+            "change": -20000,
+            "change_pct": -10.01
+          },
+          {
+            "id": "mini_cooper_5_portes_1_5_l_favoured",
+            "full_name": "Mini Cooper 5 portes 1.5 l Favoured",
+            "brand": "Mini",
+            "model": "Cooper 5 portes",
+            "trim": "1.5 l Favoured",
+            "old_price": 166900,
+            "new_price": 149900,
+            "change": -17000,
+            "change_pct": -10.19
+          },
+          {
+            "id": "mini_cooper_cabriolet_2_0_l_favoured",
+            "full_name": "Mini Cooper Cabriolet 2.0 l Favoured",
+            "brand": "Mini",
+            "model": "Cooper Cabriolet",
+            "trim": "2.0 l Favoured",
+            "old_price": 216900,
+            "new_price": 199900,
+            "change": -17000,
+            "change_pct": -7.84
+          },
+          {
+            "id": "mini_cooper_3_portes_1_5_l_john_cooper_works",
+            "full_name": "Mini Cooper 3 portes 1.5 l John Cooper Works",
+            "brand": "Mini",
+            "model": "Cooper 3 portes",
+            "trim": "1.5 l John Cooper Works",
+            "old_price": 185900,
+            "new_price": 169900,
+            "change": -16000,
+            "change_pct": -8.61
+          },
+          {
+            "id": "mini_cooper_5_portes_1_5_l_jcw",
+            "full_name": "Mini Cooper 5 portes 1.5 l JCW",
+            "brand": "Mini",
+            "model": "Cooper 5 portes",
+            "trim": "1.5 l JCW",
+            "old_price": 175900,
+            "new_price": 159900,
+            "change": -16000,
+            "change_pct": -9.1
+          },
+          {
+            "id": "bmw_s_rie_3_320i_lounge",
+            "full_name": "BMW Série 3 320i Lounge",
+            "brand": "Bmw",
+            "model": "Série 3",
+            "trim": "320i Lounge",
+            "old_price": 214900,
+            "new_price": 199900,
+            "change": -15000,
+            "change_pct": -6.98
+          },
+          {
+            "id": "bmw_s_rie_5_520i_pack_m",
+            "full_name": "BMW Série 5 520i Pack M",
+            "brand": "Bmw",
+            "model": "Série 5",
+            "trim": "520i Pack M",
+            "old_price": 279900,
+            "new_price": 264900,
+            "change": -15000,
+            "change_pct": -5.36
+          },
+          {
+            "id": "bmw_s_rie_5_520i_pack_m__",
+            "full_name": "BMW Série 5 520i Pack M +",
+            "brand": "Bmw",
+            "model": "Série 5",
+            "trim": "520i Pack M +",
+            "old_price": 294900,
+            "new_price": 279900,
+            "change": -15000,
+            "change_pct": -5.09
+          },
+          {
+            "id": "bmw_x2_18i_sdrive__pack_m_pro",
+            "full_name": "BMW X2 18i sDrive  Pack M Pro",
+            "brand": "Bmw",
+            "model": "X2",
+            "trim": "18i sDrive  Pack M Pro",
+            "old_price": 239900,
+            "new_price": 224900,
+            "change": -15000,
+            "change_pct": -6.25
+          },
+          {
+            "id": "mini_aceman_electric_38_5_kwh_classic",
+            "full_name": "Mini Aceman Electric 38.5 kWh Classic",
+            "brand": "Mini",
+            "model": "Aceman Electric",
+            "trim": "38.5 kWh Classic",
+            "old_price": 139900,
+            "new_price": 124900,
+            "change": -15000,
+            "change_pct": -10.72
+          },
+          {
+            "id": "mini_cooper_electric_36_6_kwh_classic",
+            "full_name": "Mini Cooper Electric 36.6 kWh Classic",
+            "brand": "Mini",
+            "model": "Cooper Electric",
+            "trim": "36.6 kWh Classic",
+            "old_price": 129900,
+            "new_price": 114900,
+            "change": -15000,
+            "change_pct": -11.55
+          },
+          {
+            "id": "bmw_s_rie_2_gran_coup__218_pack_m_pro",
+            "full_name": "BMW Série 2 Gran Coupé 218 Pack M Pro",
+            "brand": "Bmw",
+            "model": "Série 2 Gran Coupé",
+            "trim": "218 Pack M Pro",
+            "old_price": 197900,
+            "new_price": 184900,
+            "change": -13000,
+            "change_pct": -6.57
+          },
+          {
+            "id": "bmw_s_rie_2_gran_coup__218_business_line",
+            "full_name": "BMW Série 2 Gran Coupé 218 Business Line",
+            "brand": "Bmw",
+            "model": "Série 2 Gran Coupé",
+            "trim": "218 Business Line",
+            "old_price": 166900,
+            "new_price": 154900,
+            "change": -12000,
+            "change_pct": -7.19
+          },
+          {
+            "id": "bmw_s_rie_3_320i_business_line",
+            "full_name": "BMW Série 3 320i Business Line",
+            "brand": "Bmw",
+            "model": "Série 3",
+            "trim": "320i Business Line",
+            "old_price": 194900,
+            "new_price": 184900,
+            "change": -10000,
+            "change_pct": -5.13
+          },
+          {
+            "id": "bmw_s_rie_4_gran_coup__420i_business_line",
+            "full_name": "BMW Série 4 Gran Coupé 420i Business Line",
+            "brand": "Bmw",
+            "model": "Série 4 Gran Coupé",
+            "trim": "420i Business Line",
+            "old_price": 269900,
+            "new_price": 259900,
+            "change": -10000,
+            "change_pct": -3.71
+          },
+          {
+            "id": "bmw_s_rie_5_520i_lounge",
+            "full_name": "BMW Série 5 520i Lounge",
+            "brand": "Bmw",
+            "model": "Série 5",
+            "trim": "520i Lounge",
+            "old_price": 259900,
+            "new_price": 249900,
+            "change": -10000,
+            "change_pct": -3.85
+          },
+          {
+            "id": "bmw_x2_18i_sdrive__pack_m",
+            "full_name": "BMW X2 18i sDrive  Pack M",
+            "brand": "Bmw",
+            "model": "X2",
+            "trim": "18i sDrive  Pack M",
+            "old_price": 219900,
+            "new_price": 209900,
+            "change": -10000,
+            "change_pct": -4.55
+          },
+          {
+            "id": "mini_aceman_electric_49_2_kwh_se_classic",
+            "full_name": "Mini Aceman Electric 49.2 kWh SE Classic",
+            "brand": "Mini",
+            "model": "Aceman Electric",
+            "trim": "49.2 kWh SE Classic",
+            "old_price": 149900,
+            "new_price": 139900,
+            "change": -10000,
+            "change_pct": -6.67
+          },
+          {
+            "id": "mini_countryman_electric_42_5_kwh_favoured",
+            "full_name": "Mini Countryman Electric 42.5 kWh Favoured",
+            "brand": "Mini",
+            "model": "Countryman Electric",
+            "trim": "42.5 kWh Favoured",
+            "old_price": 189900,
+            "new_price": 179900,
+            "change": -10000,
+            "change_pct": -5.27
+          },
+          {
+            "id": "bmw_s_rie_2_gran_coup__218_lounge",
+            "full_name": "BMW Série 2 Gran Coupé 218 Lounge",
+            "brand": "Bmw",
+            "model": "Série 2 Gran Coupé",
+            "trim": "218 Lounge",
+            "old_price": 178900,
+            "new_price": 169900,
+            "change": -9000,
+            "change_pct": -5.03
+          },
+          {
+            "id": "bmw_s_rie_2_gran_coup__218_pack_m",
+            "full_name": "BMW Série 2 Gran Coupé 218 Pack M",
+            "brand": "Bmw",
+            "model": "Série 2 Gran Coupé",
+            "trim": "218 Pack M",
+            "old_price": 183900,
+            "new_price": 174900,
+            "change": -9000,
+            "change_pct": -4.89
+          },
+          {
+            "id": "bmw_s_rie_3_320i_pack_m_pro",
+            "full_name": "BMW Série 3 320i Pack M Pro",
+            "brand": "Bmw",
+            "model": "Série 3",
+            "trim": "320i Pack M Pro",
+            "old_price": 254900,
+            "new_price": 245900,
+            "change": -9000,
+            "change_pct": -3.53
+          },
+          {
+            "id": "bmw_s_rie_1_118_pack_m_pro",
+            "full_name": "BMW Série 1 118 Pack M Pro",
+            "brand": "Bmw",
+            "model": "Série 1",
+            "trim": "118 Pack M Pro",
+            "old_price": 185900,
+            "new_price": 179900,
+            "change": -6000,
+            "change_pct": -3.23
+          },
+          {
+            "id": "bmw_s_rie_2_gran_coup__218_collection_edition_sp_ciale",
+            "full_name": "BMW Série 2 Gran Coupé 218 Collection Edition Spéciale",
+            "brand": "Bmw",
+            "model": "Série 2 Gran Coupé",
+            "trim": "218 Collection Edition Spéciale",
+            "old_price": 155900,
+            "new_price": 149900,
+            "change": -6000,
+            "change_pct": -3.85
+          },
+          {
+            "id": "bmw_s_rie_1_118_business_line",
+            "full_name": "BMW Série 1 118 Business Line",
+            "brand": "Bmw",
+            "model": "Série 1",
+            "trim": "118 Business Line",
+            "old_price": 144900,
+            "new_price": 139900,
+            "change": -5000,
+            "change_pct": -3.45
+          },
+          {
+            "id": "bmw_s_rie_1_118_lounge",
+            "full_name": "BMW Série 1 118 Lounge",
+            "brand": "Bmw",
+            "model": "Série 1",
+            "trim": "118 Lounge",
+            "old_price": 159900,
+            "new_price": 154900,
+            "change": -5000,
+            "change_pct": -3.13
+          },
+          {
+            "id": "bmw_s_rie_1_118_pack_m",
+            "full_name": "BMW Série 1 118 Pack M",
+            "brand": "Bmw",
+            "model": "Série 1",
+            "trim": "118 Pack M",
+            "old_price": 169900,
+            "new_price": 164900,
+            "change": -5000,
+            "change_pct": -2.94
+          },
+          {
+            "id": "bmw_s_rie_3_320i_pack_m",
+            "full_name": "BMW Série 3 320i Pack M",
+            "brand": "Bmw",
+            "model": "Série 3",
+            "trim": "320i Pack M",
+            "old_price": 234900,
+            "new_price": 229900,
+            "change": -5000,
+            "change_pct": -2.13
+          },
+          {
+            "id": "peugeot_landtrek_simple_cabine_1_9_l_diesel_4x2",
+            "full_name": "Peugeot Landtrek Simple Cabine 1.9 L Diesel 4x2",
+            "brand": "Peugeot",
+            "model": "Landtrek Simple Cabine",
+            "trim": "1.9 L Diesel 4x2",
+            "old_price": 76490,
+            "new_price": 79490,
+            "change": 3000,
+            "change_pct": 3.92
+          },
+          {
+            "id": "peugeot_landtrek_simple_cabine_1_9_l_diesel_4x2_benne_t_le_pli_e",
+            "full_name": "Peugeot Landtrek Simple Cabine 1.9 L Diesel 4x2 Benne tôle pliée",
+            "brand": "Peugeot",
+            "model": "Landtrek Simple Cabine",
+            "trim": "1.9 L Diesel 4x2 Benne tôle pliée",
+            "old_price": 72490,
+            "new_price": 75490,
+            "change": 3000,
+            "change_pct": 4.14
+          },
+          {
+            "id": "ford_everest_2_0_l_bi_turbo_limited_7_places",
+            "full_name": "Ford Everest 2.0 L Bi-Turbo Limited 7 places",
+            "brand": "Ford",
+            "model": "Everest",
+            "trim": "2.0 L Bi-Turbo Limited 7 places",
+            "old_price": 285000,
+            "new_price": 287000,
+            "change": 2000,
+            "change_pct": 0.7
+          },
+          {
+            "id": "ford_everest_2_0_l_bi_turbo_xlt_7_places",
+            "full_name": "Ford Everest 2.0 L Bi-Turbo XLT 7 places",
+            "brand": "Ford",
+            "model": "Everest",
+            "trim": "2.0 L Bi-Turbo XLT 7 places",
+            "old_price": 260000,
+            "new_price": 262000,
+            "change": 2000,
+            "change_pct": 0.77
+          },
+          {
+            "id": "ford_ranger_2_0_l_tdci_210_ch_4x4_wildtrak_bva",
+            "full_name": "Ford Ranger 2.0 L TDCI 210 ch 4x4 Wildtrak BVA",
+            "brand": "Ford",
+            "model": "Ranger",
+            "trim": "2.0 L TDCI 210 ch 4x4 Wildtrak BVA",
+            "old_price": 230000,
+            "new_price": 232000,
+            "change": 2000,
+            "change_pct": 0.87
+          },
+          {
+            "id": "ford_ranger_2_0_l_170_ch_4x4_xlt_bva",
+            "full_name": "Ford Ranger 2.0 L 170 ch 4x4 XLT BVA",
+            "brand": "Ford",
+            "model": "Ranger",
+            "trim": "2.0 L 170 ch 4x4 XLT BVA",
+            "old_price": 170000,
+            "new_price": 171500,
+            "change": 1500,
+            "change_pct": 0.88
+          },
+          {
+            "id": "ford_ranger_2_0_l_170_ch_4x4_xlt_bvm",
+            "full_name": "Ford Ranger 2.0 L 170 ch 4x4 XLT BVM",
+            "brand": "Ford",
+            "model": "Ranger",
+            "trim": "2.0 L 170 ch 4x4 XLT BVM",
+            "old_price": 155000,
+            "new_price": 156500,
+            "change": 1500,
+            "change_pct": 0.97
+          },
+          {
+            "id": "ford_transit_minibus_2_0_l_d_ecoblue_18_places",
+            "full_name": "Ford Transit Minibus 2.0 l D Ecoblue 18 Places",
+            "brand": "Ford",
+            "model": "Transit Minibus",
+            "trim": "2.0 l D Ecoblue 18 Places",
+            "old_price": 175000,
+            "new_price": 176500,
+            "change": 1500,
+            "change_pct": 0.86
+          },
+          {
+            "id": "ford_territory_1_5_l_ecoboost_titanium_x",
+            "full_name": "Ford Territory 1.5 L EcoBoost Titanium X",
+            "brand": "Ford",
+            "model": "Territory",
+            "trim": "1.5 L EcoBoost Titanium X",
+            "old_price": 139900,
+            "new_price": 141000,
+            "change": 1100,
+            "change_pct": 0.79
+          },
+          {
+            "id": "ford_territory_1_5_l_ecoboost_titanium",
+            "full_name": "Ford Territory 1.5 L EcoBoost Titanium",
+            "brand": "Ford",
+            "model": "Territory",
+            "trim": "1.5 L EcoBoost Titanium",
+            "old_price": 124900,
+            "new_price": 125900,
+            "change": 1000,
+            "change_pct": 0.8
+          },
+          {
+            "id": "renault_express_van_1_5_l_dci",
+            "full_name": "Renault Express Van 1.5 L dCi",
+            "brand": "Renault",
+            "model": "Express Van",
+            "trim": "1.5 L dCi",
+            "old_price": 59950,
+            "new_price": 59200,
+            "change": -750,
+            "change_pct": -1.25
+          },
+          {
+            "id": "suzuki_celerio_populaire_1_0_l_gl",
+            "full_name": "Suzuki Celerio Populaire 1.0 L GL",
+            "brand": "Suzuki",
+            "model": "Celerio Populaire",
+            "trim": "1.0 L GL",
+            "old_price": 28935,
+            "new_price": 28457,
+            "change": -478,
+            "change_pct": -1.65
+          }
+        ],
+        "spec_changes": [
+          {
+            "id": "bmw_x1_18i_sdrive_collection__edition_sp_ciale_",
+            "full_name": "BMW X1 18i sDrive Collection \"Edition Spéciale\"",
+            "brand": "Bmw",
+            "model": "X1",
+            "field": "acceleration_0_100",
+            "old_value": 8.1,
+            "new_value": 9.0
+          },
+          {
+            "id": "bmw_x1_18i_sdrive_lounge",
+            "full_name": "BMW X1 18i sDrive Lounge",
+            "brand": "Bmw",
+            "model": "X1",
+            "field": "acceleration_0_100",
+            "old_value": 8.1,
+            "new_value": 9.0
+          },
+          {
+            "id": "bmw_x1_18i_sdrive_pack_sport_m",
+            "full_name": "BMW X1 18i sDrive Pack Sport M",
+            "brand": "Bmw",
+            "model": "X1",
+            "field": "acceleration_0_100",
+            "old_value": 8.1,
+            "new_value": 9.0
+          },
+          {
+            "id": "bmw_x1_18i_sdrive_xline",
+            "full_name": "BMW X1 18i sDrive xLine",
+            "brand": "Bmw",
+            "model": "X1",
+            "field": "acceleration_0_100",
+            "old_value": 8.1,
+            "new_value": 9.0
+          },
+          {
+            "id": "bmw_x2_18i_sdrive__collection",
+            "full_name": "BMW X2 18i sDrive  Collection",
+            "brand": "Bmw",
+            "model": "X2",
+            "field": "acceleration_0_100",
+            "old_value": 8.3,
+            "new_value": 9.0
+          },
+          {
+            "id": "bmw_x2_18i_sdrive__lounge",
+            "full_name": "BMW X2 18i sDrive  Lounge",
+            "brand": "Bmw",
+            "model": "X2",
+            "field": "acceleration_0_100",
+            "old_value": 8.3,
+            "new_value": 9.0
+          },
+          {
+            "id": "bmw_x2_18i_sdrive__pack_m",
+            "full_name": "BMW X2 18i sDrive  Pack M",
+            "brand": "Bmw",
+            "model": "X2",
+            "field": "acceleration_0_100",
+            "old_value": 8.3,
+            "new_value": 9.0
+          },
+          {
+            "id": "bmw_x2_18i_sdrive__pack_m_pro",
+            "full_name": "BMW X2 18i sDrive  Pack M Pro",
+            "brand": "Bmw",
+            "model": "X2",
+            "field": "acceleration_0_100",
+            "old_value": 8.3,
+            "new_value": 9.0
+          },
+          {
+            "id": "mini_aceman_electric_38_5_kwh_classic",
+            "full_name": "Mini Aceman Electric 38.5 kWh Classic",
+            "brand": "Mini",
+            "model": "Aceman Electric",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "mini_aceman_electric_49_2_kwh_se_classic",
+            "full_name": "Mini Aceman Electric 49.2 kWh SE Classic",
+            "brand": "Mini",
+            "model": "Aceman Electric",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_cayenne_e_hybrid_black_edition",
+            "full_name": "Porsche Cayenne E-Hybrid Cayenne E-Hybrid Black Edition",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_cayenne_s_e_hybrid",
+            "full_name": "Porsche Cayenne E-Hybrid Cayenne S E-Hybrid",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "porsche_cayenne_electric_cayenne",
+            "full_name": "Porsche Cayenne Electric Cayenne",
+            "brand": "Porsche",
+            "model": "Cayenne Electric",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "porsche_cayenne_electric_cayenne_turbo",
+            "full_name": "Porsche Cayenne Electric Cayenne Turbo",
+            "brand": "Porsche",
+            "model": "Cayenne Electric",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-04-06",
       "previous_scrape": "2026-03-30T04:37:57.731976",
       "current_scrape": "2026-04-06T04:36:58.049978",
