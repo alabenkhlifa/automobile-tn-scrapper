@@ -102,6 +102,9 @@ class CarTrim:
     # Dealer
     concessionnaire: str = ""
 
+    # Image
+    thumbnail: str = ""
+
     # Metadata
     scraped_at: str = ""
 
@@ -410,6 +413,13 @@ class AutomobileScraper:
                     car.price_tnd = int(float(price))
                 except (ValueError, TypeError):
                     pass
+
+        # Thumbnail image
+        image_field = data.get('image')
+        if isinstance(image_field, str):
+            car.thumbnail = image_field
+        elif isinstance(image_field, list) and image_field:
+            car.thumbnail = image_field[0] if isinstance(image_field[0], str) else ""
 
         # Body and fuel type
         car.body_type = data.get('bodyType', '')
