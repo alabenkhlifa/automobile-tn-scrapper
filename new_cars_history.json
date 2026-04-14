@@ -2,20 +2,20 @@
   "entries": [
     {
       "date": "2026-04-14",
-      "previous_scrape": "2026-04-13T04:51:51.777776",
-      "current_scrape": "2026-04-14T14:08:55.447033",
+      "previous_scrape": "2026-04-14T14:08:55.447033",
+      "current_scrape": "2026-04-14T22:23:01.211260",
       "summary": {
-        "total_before": 557,
-        "total_after": 552,
+        "total_before": 552,
+        "total_after": 551,
         "brands_added": 0,
         "brands_removed": 0,
         "models_added": 0,
-        "models_removed": 2,
+        "models_removed": 1,
         "trims_added": 0,
-        "trims_removed": 5,
-        "price_changes": 0,
+        "trims_removed": 1,
+        "price_changes": 3,
         "price_drops": 0,
-        "price_increases": 0,
+        "price_increases": 3,
         "spec_changes": 0
       },
       "changes": {
@@ -24,78 +24,60 @@
         "models_added": [],
         "models_removed": [
           {
-            "brand": "Bmw",
-            "model": "X3"
-          },
-          {
-            "brand": "Bmw",
-            "model": "iX1"
+            "brand": "Chery",
+            "model": "Tiggo 4 Pro"
           }
         ],
         "trims_added": [],
         "trims_removed": [
           {
-            "id": "bmw_ix1_xdrive30__pack_m",
-            "full_name": "BMW iX1 xDrive30  Pack M",
-            "brand": "Bmw",
-            "model": "iX1",
-            "trim": "xDrive30  Pack M",
-            "price_tnd": 229900,
-            "fuel_type": "electric",
-            "body_type": "SUV",
-            "transmission": "automatic",
-            "url": "https://www.automobile.tn/fr/neuf/bmw/ix1/xdrive30-pack-m"
-          },
-          {
-            "id": "bmw_ix1_xdrive30_lounge",
-            "full_name": "BMW iX1 xDrive30 Lounge",
-            "brand": "Bmw",
-            "model": "iX1",
-            "trim": "xDrive30 Lounge",
-            "price_tnd": 139900,
-            "fuel_type": "electric",
-            "body_type": "SUV",
-            "transmission": "automatic",
-            "url": "https://www.automobile.tn/fr/neuf/bmw/ix1/xdrive30-lounge"
-          },
-          {
-            "id": "bmw_ix1_xdrive30_xline",
-            "full_name": "BMW iX1 xDrive30 xLine",
-            "brand": "Bmw",
-            "model": "iX1",
-            "trim": "xDrive30 xLine",
-            "price_tnd": 149900,
-            "fuel_type": "electric",
-            "body_type": "SUV",
-            "transmission": "automatic",
-            "url": "https://www.automobile.tn/fr/neuf/bmw/ix1/xdrive30-xline"
-          },
-          {
-            "id": "bmw_x2_18i_sdrive__lounge",
-            "full_name": "BMW X2 18i sDrive  Lounge",
-            "brand": "Bmw",
-            "model": "X2",
-            "trim": "18i sDrive  Lounge",
-            "price_tnd": 214900,
+            "id": "chery_tiggo_4_pro_1_5_l_cvt",
+            "full_name": "Chery Tiggo 4 Pro 1.5 L CVT",
+            "brand": "Chery",
+            "model": "Tiggo 4 Pro",
+            "trim": "1.5 L CVT",
+            "price_tnd": 75000,
             "fuel_type": "essence",
             "body_type": "SUV",
             "transmission": "automatic",
-            "url": "https://www.automobile.tn/fr/neuf/bmw/x2/18i-sdrive-lounge"
-          },
-          {
-            "id": "bmw_x3_20i_xdrive_pack_m",
-            "full_name": "BMW X3 20i xDrive Pack M",
-            "brand": "Bmw",
-            "model": "X3",
-            "trim": "20i xDrive Pack M",
-            "price_tnd": 248900,
-            "fuel_type": "essence",
-            "body_type": "SUV",
-            "transmission": "automatic",
-            "url": "https://www.automobile.tn/fr/neuf/bmw/x3/20i-xdrive-pack-m"
+            "url": "https://www.automobile.tn/fr/neuf/chery/tiggo-4-pro/1.5-t-cvt"
           }
         ],
-        "price_changes": [],
+        "price_changes": [
+          {
+            "id": "lynk_co_01_1_5_l_more",
+            "full_name": "Lynk & Co 01 1.5 L More",
+            "brand": "Lynk Co",
+            "model": "01",
+            "trim": "1.5 L More",
+            "old_price": 99900,
+            "new_price": 102900,
+            "change": 3000,
+            "change_pct": 3.0
+          },
+          {
+            "id": "lynk_co_02_66_kwh_more",
+            "full_name": "Lynk & Co 02 66 kWh More",
+            "brand": "Lynk Co",
+            "model": "02",
+            "trim": "66 kWh More",
+            "old_price": 96900,
+            "new_price": 99900,
+            "change": 3000,
+            "change_pct": 3.1
+          },
+          {
+            "id": "lynk_co_08_1_5_l_more",
+            "full_name": "Lynk & Co 08 1.5 L More",
+            "brand": "Lynk Co",
+            "model": "08",
+            "trim": "1.5 L More",
+            "old_price": 129900,
+            "new_price": 132900,
+            "change": 3000,
+            "change_pct": 2.31
+          }
+        ],
         "spec_changes": []
       }
     },
