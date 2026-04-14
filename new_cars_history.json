@@ -1,6 +1,105 @@
 {
   "entries": [
     {
+      "date": "2026-04-14",
+      "previous_scrape": "2026-04-13T04:51:51.777776",
+      "current_scrape": "2026-04-14T14:08:55.447033",
+      "summary": {
+        "total_before": 557,
+        "total_after": 552,
+        "brands_added": 0,
+        "brands_removed": 0,
+        "models_added": 0,
+        "models_removed": 2,
+        "trims_added": 0,
+        "trims_removed": 5,
+        "price_changes": 0,
+        "price_drops": 0,
+        "price_increases": 0,
+        "spec_changes": 0
+      },
+      "changes": {
+        "brands_added": [],
+        "brands_removed": [],
+        "models_added": [],
+        "models_removed": [
+          {
+            "brand": "Bmw",
+            "model": "X3"
+          },
+          {
+            "brand": "Bmw",
+            "model": "iX1"
+          }
+        ],
+        "trims_added": [],
+        "trims_removed": [
+          {
+            "id": "bmw_ix1_xdrive30__pack_m",
+            "full_name": "BMW iX1 xDrive30  Pack M",
+            "brand": "Bmw",
+            "model": "iX1",
+            "trim": "xDrive30  Pack M",
+            "price_tnd": 229900,
+            "fuel_type": "electric",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/bmw/ix1/xdrive30-pack-m"
+          },
+          {
+            "id": "bmw_ix1_xdrive30_lounge",
+            "full_name": "BMW iX1 xDrive30 Lounge",
+            "brand": "Bmw",
+            "model": "iX1",
+            "trim": "xDrive30 Lounge",
+            "price_tnd": 139900,
+            "fuel_type": "electric",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/bmw/ix1/xdrive30-lounge"
+          },
+          {
+            "id": "bmw_ix1_xdrive30_xline",
+            "full_name": "BMW iX1 xDrive30 xLine",
+            "brand": "Bmw",
+            "model": "iX1",
+            "trim": "xDrive30 xLine",
+            "price_tnd": 149900,
+            "fuel_type": "electric",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/bmw/ix1/xdrive30-xline"
+          },
+          {
+            "id": "bmw_x2_18i_sdrive__lounge",
+            "full_name": "BMW X2 18i sDrive  Lounge",
+            "brand": "Bmw",
+            "model": "X2",
+            "trim": "18i sDrive  Lounge",
+            "price_tnd": 214900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/bmw/x2/18i-sdrive-lounge"
+          },
+          {
+            "id": "bmw_x3_20i_xdrive_pack_m",
+            "full_name": "BMW X3 20i xDrive Pack M",
+            "brand": "Bmw",
+            "model": "X3",
+            "trim": "20i xDrive Pack M",
+            "price_tnd": 248900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/bmw/x3/20i-xdrive-pack-m"
+          }
+        ],
+        "price_changes": [],
+        "spec_changes": []
+      }
+    },
+    {
       "date": "2026-04-13",
       "previous_scrape": "2026-04-06T04:36:58.049978",
       "current_scrape": "2026-04-13T04:51:51.777776",
