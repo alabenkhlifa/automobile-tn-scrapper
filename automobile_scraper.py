@@ -105,6 +105,14 @@ class CarTrim:
     # Image
     thumbnail: str = ""
 
+    # Equipment (parsed from technical-details spec tables)
+    equipment_safety: List[str] = field(default_factory=list)
+    equipment_driving_aids: List[str] = field(default_factory=list)
+    equipment_exterior: List[str] = field(default_factory=list)
+    equipment_audio: List[str] = field(default_factory=list)
+    equipment_interior: List[str] = field(default_factory=list)
+    equipment_functional: List[str] = field(default_factory=list)
+
     # Metadata
     scraped_at: str = ""
 
@@ -354,6 +362,9 @@ class AutomobileScraper:
         # Priority 3: Parse spec table (Fiche technique)
         self._parse_spec_table(car, soup)
 
+        # Equipment categories from technical-details tables
+        self._parse_equipment(car, soup)
+
         # Priority 4: Fallback regex extraction from page text
         self._extract_from_text(car, page_text)
 
@@ -559,6 +570,58 @@ class AutomobileScraper:
                         else:
                             setattr(car, attr, int(float(val)))
                 break
+
+    # Map of French category heading -> CarTrim attribute
+    EQUIPMENT_CATEGORIES = {
+        "equipements de sécurité": "equipment_safety",
+        "equipements de securité": "equipment_safety",
+        "aides à la conduite": "equipment_driving_aids",
+        "aides a la conduite": "equipment_driving_aids",
+        "equipements extérieurs": "equipment_exterior",
+        "equipements exterieurs": "equipment_exterior",
+        "audio et communication": "equipment_audio",
+        "equipements intérieurs": "equipment_interior",
+        "equipements interieurs": "equipment_interior",
+        "equipements fonctionnels": "equipment_functional",
+    }
+
+    def _parse_equipment(self, car: CarTrim, soup: BeautifulSoup):
+        """Parse equipment category tables from the technical-details section."""
+        td = soup.find('div', class_='technical-details')
+        if not td:
+            return
+
+        for table in td.find_all('table'):
+            rows = table.find_all('tr')
+            if not rows:
+                continue
+
+            # First row contains the category heading
+            first_cells = rows[0].find_all(['td', 'th'])
+            if not first_cells:
+                continue
+            heading = first_cells[0].get_text(strip=True).lower()
+
+            attr = self.EQUIPMENT_CATEGORIES.get(heading)
+            if not attr:
+                continue
+
+            items = []
+            for tr in rows[1:]:
+                cells = [c.get_text(strip=True) for c in tr.find_all(['td', 'th'])]
+                if not cells or not cells[0]:
+                    continue
+                key = cells[0]
+                value = cells[1] if len(cells) >= 2 else ""
+                if value:
+                    # Convert pipe-separated sub-items to comma-separated
+                    value_clean = ", ".join(p.strip() for p in value.split('|') if p.strip())
+                    items.append(f"{key}: {value_clean}")
+                else:
+                    items.append(key)
+
+            if items:
+                setattr(car, attr, items)
 
     def _extract_from_text(self, car: CarTrim, text: str):
         """Fallback regex extraction from page text"""
@@ -777,11 +840,19 @@ class AutomobileScraper:
 
         fieldnames = list(CarTrim.__dataclass_fields__.keys())
 
+        equipment_keys = [
+            "equipment_safety", "equipment_driving_aids", "equipment_exterior",
+            "equipment_audio", "equipment_interior", "equipment_functional",
+        ]
+
         with open(filename, 'w', newline='', encoding='utf-8') as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             for car in self.cars:
-                writer.writerow(asdict(car))
+                row = asdict(car)
+                for key in equipment_keys:
+                    row[key] = '; '.join(row[key]) if row[key] else ''
+                writer.writerow(row)
 
         print(f"Saved {len(self.cars)} cars to {filename}")
 
