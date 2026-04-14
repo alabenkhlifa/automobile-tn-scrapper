@@ -121,6 +121,7 @@ class AutoScout24Car:
 
     # Meta
     image_count: int = 0
+    thumbnail: str = ""
     scraped_at: str = ""
 
     # Computed (filled by _clean_data)
@@ -775,6 +776,13 @@ class AutoScout24Scraper:
             else:
                 card["image_count"] = len(article.find_all("img"))
 
+            # Thumbnail: first non-placeholder img src
+            for img in article.find_all("img"):
+                src = img.get("src") or img.get("data-src") or ""
+                if src.startswith("http") and "prod.pictures.autoscout24" in src:
+                    card["thumbnail"] = src
+                    break
+
             # Seller info from data-testid elements
             dealer_el = article.find(attrs={"data-testid": "dealer-company-name"})
             if dealer_el:
@@ -1194,6 +1202,7 @@ class AutoScout24Scraper:
             seller_name=card_data.get("seller_name", ""),
             seller_location=card_data.get("seller_location", ""),
             image_count=card_data.get("image_count", 0),
+            thumbnail=card_data.get("thumbnail", ""),
         )
 
         # Fetch detail page
@@ -1367,6 +1376,7 @@ class AutoScout24Scraper:
             seller_name=card.get("seller_name", ""),
             seller_location=card.get("seller_location", ""),
             image_count=card.get("image_count", 0),
+            thumbnail=card.get("thumbnail", ""),
         )
         self._finalize_car(car)
         return car
