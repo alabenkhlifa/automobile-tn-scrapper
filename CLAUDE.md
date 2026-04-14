@@ -8,7 +8,12 @@ You are an expert at creating web scrapers and RAG (Retrieval-Augmented Generati
 
 ## Project Overview
 
-Tunisia car marketplace scraper for automobile.tn. Currently extracts new cars (`/fr/neuf`) with specs and pricing. Used cars scraper (`/fr/occasion`) is planned but not yet implemented.
+Multi-source car marketplace scraper. Covers:
+- **automobile.tn** new cars (`/fr/neuf`) and used cars (`/fr/occasion`)
+- **9annas.tn** used cars via JSON API (~12k listings, aggregates from Tayara)
+- **AutoScout24** multi-country used/new listings (DE, FR, IT, BE)
+
+Data is exported to JSON + CSV and used by downstream projects via GitHub Actions daily runs.
 
 ## Commands
 
@@ -26,6 +31,12 @@ python automobile_scraper.py --brands alfa-romeo,citroen
 python autoscout24_scraper.py --countries de,fr,it,be --max-listings 100
 python autoscout24_scraper.py --countries de --makes bmw,audi --condition used --max-price 30000
 python autoscout24_scraper.py --countries de --use-playwright  # anti-bot fallback
+
+# Run 9annas.tn used cars scraper
+python 9annas_scraper.py                    # incremental (default, stops at known listings)
+python 9annas_scraper.py --full             # full scrape
+python 9annas_scraper.py --max-pages 5      # limit pages (20 ads/page)
+python 9annas_scraper.py --skip-images      # skip image URL fetching
 ```
 
 ## Architecture
@@ -48,6 +59,16 @@ python autoscout24_scraper.py --countries de --use-playwright  # anti-bot fallba
 - Optional Playwright fallback for anti-bot protection (`--use-playwright`)
 - Output: `autoscout24_{country}.json/csv`, `autoscout24_all.json/csv`
 
+**9annas_scraper.py** - 9annas.tn used cars scraper (JSON API)
+- Uses `/search` + `/searchmore` + `/images/?ad={id}` endpoints (no HTML parsing)
+- `NineannasCar` dataclass with car specs + thumbnail + list of image URLs
+- Reverse-engineered cursor pagination: offset encoded as `num_to_letters(id+99) + "A" + num_to_letters(timestamp-1420070400)` where digit d → chr(98+d) uppercase
+- Parses specs from description field (French `Key: Value` format)
+- Incremental mode (default): loads existing JSON, stops pagination at known ad IDs
+- Data cleaning: drops empty/`Autres` brands + Arabic-only titles, price fallback to French-formatted title ("28.500" → 28500), discards implausible mileage (<10km, >500k km, or <100km on 2+ year old cars), dedupes by ID and title+brand
+- Rate limiting: 0.3s between search pages, semaphore(10) for images, exp backoff on 429/403
+- Output: `9annas_tn_used_cars.json/csv`
+
 ### Data Flow
 
 ```
@@ -62,8 +83,15 @@ httpx requests → BeautifulSoup parsing → Regex extraction → Dataclass popu
 ## Domain Knowledge
 
 ### URL Patterns
-- Used cars: `/fr/occasion/{brand}/{model}/{id}` (TODO)
-- New cars: `/fr/neuf/{brand}`, `/fr/neuf/{brand}/{model}`, `/fr/neuf/{brand}/{model}/{trim}`
+- automobile.tn used cars: `/fr/occasion/{brand}/{model}/{id}`
+- automobile.tn new cars: `/fr/neuf/{brand}`, `/fr/neuf/{brand}/{model}`, `/fr/neuf/{brand}/{model}/{trim}`
+- 9annas.tn ad page: `https://9annas.tn/ad/{id}`
+
+### 9annas.tn API
+- `POST /search` — initial search, returns 20 ads + total `hits` count
+- `POST /searchmore` — paginated, takes `{searchQuery, offset}`, returns plain array of 20 ads
+- `GET /images/?ad={id}` — returns array of full-resolution image URLs (WebP, hosted on GCS)
+- Cars category: `categoryId: 1`, broad query: `"voiture"` (~12k results)
 
 ### FCR Eligibility Rules (Used Cars - for future implementation)
 - Max 8 years old for FCR Famille
