@@ -1,6 +1,35 @@
 {
   "entries": [
     {
+      "date": "2026-04-15",
+      "previous_scrape": "2026-04-14T23:30:02.496583",
+      "current_scrape": "2026-04-15T01:32:14.595923",
+      "summary": {
+        "total_before": 551,
+        "total_after": 551,
+        "brands_added": 0,
+        "brands_removed": 0,
+        "models_added": 0,
+        "models_removed": 0,
+        "trims_added": 0,
+        "trims_removed": 0,
+        "price_changes": 0,
+        "price_drops": 0,
+        "price_increases": 0,
+        "spec_changes": 0
+      },
+      "changes": {
+        "brands_added": [],
+        "brands_removed": [],
+        "models_added": [],
+        "models_removed": [],
+        "trims_added": [],
+        "trims_removed": [],
+        "price_changes": [],
+        "spec_changes": []
+      }
+    },
+    {
       "date": "2026-04-14",
       "previous_scrape": "2026-04-14T22:23:01.211260",
       "current_scrape": "2026-04-14T23:30:02.496583",
