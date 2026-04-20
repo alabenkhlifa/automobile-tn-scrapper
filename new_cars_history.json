@@ -1,6 +1,499 @@
 {
   "entries": [
     {
+      "date": "2026-04-20",
+      "previous_scrape": "2026-04-15T01:32:14.595923",
+      "current_scrape": "2026-04-20T04:51:50.336644",
+      "summary": {
+        "total_before": 551,
+        "total_after": 551,
+        "brands_added": 0,
+        "brands_removed": 0,
+        "models_added": 2,
+        "models_removed": 0,
+        "trims_added": 3,
+        "trims_removed": 3,
+        "price_changes": 5,
+        "price_drops": 3,
+        "price_increases": 2,
+        "spec_changes": 36
+      },
+      "changes": {
+        "brands_added": [],
+        "brands_removed": [],
+        "models_added": [
+          {
+            "brand": "Chery",
+            "model": "I03"
+          },
+          {
+            "brand": "Citroen",
+            "model": "C3"
+          }
+        ],
+        "models_removed": [],
+        "trims_added": [
+          {
+            "id": "chery_i03_65_7_kwh_4x2",
+            "full_name": "Chery I03 65.7 kWh 4x2",
+            "brand": "Chery",
+            "model": "I03",
+            "trim": "65.7 kWh 4x2",
+            "price_tnd": 76900,
+            "fuel_type": "electric",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/chery/i03/65.7-kwh-4x2"
+          },
+          {
+            "id": "chery_i03_69_77_kwh_4x4",
+            "full_name": "Chery I03 69.77 kWh 4x4",
+            "brand": "Chery",
+            "model": "I03",
+            "trim": "69.77 kWh 4x4",
+            "price_tnd": 84900,
+            "fuel_type": "electric",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/chery/i03/69.77-kwh-4x4"
+          },
+          {
+            "id": "citroen_c3_1_2_l_plus",
+            "full_name": "Citroën C3 1.2 L Plus",
+            "brand": "Citroen",
+            "model": "C3",
+            "trim": "1.2 L Plus",
+            "price_tnd": 59900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/citroen/c3/1.2-l-plus"
+          }
+        ],
+        "trims_removed": [
+          {
+            "id": "bmw_ix_xdrive50_pack_m",
+            "full_name": "BMW iX xDrive50 Pack M",
+            "brand": "Bmw",
+            "model": "iX",
+            "trim": "xDrive50 Pack M",
+            "price_tnd": 399900,
+            "fuel_type": "electric",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/bmw/ix/xdrive50-pack-m"
+          },
+          {
+            "id": "skoda_kamiq_1_0_l_tsi_selection_dsg",
+            "full_name": "Skoda Kamiq 1.0 L TSI Selection DSG",
+            "brand": "Skoda",
+            "model": "Kamiq",
+            "trim": "1.0 L TSI Selection DSG",
+            "price_tnd": 102980,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/skoda/kamiq/1.0-l-tsi-dsg-selection"
+          },
+          {
+            "id": "volvo_ex90_single_motor_plus",
+            "full_name": "Volvo EX90 Single Motor Plus",
+            "brand": "Volvo",
+            "model": "EX90",
+            "trim": "Single Motor Plus",
+            "price_tnd": 295900,
+            "fuel_type": "electric",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/volvo/ex90/single-motor-92-kwh-plus"
+          }
+        ],
+        "price_changes": [
+          {
+            "id": "geely_ex5_hybride_1_5_em_i",
+            "full_name": "Geely EX5 Hybride 1.5 EM-i",
+            "brand": "Geely",
+            "model": "EX5 Hybride",
+            "trim": "1.5 EM-i",
+            "old_price": 86800,
+            "new_price": 89800,
+            "change": 3000,
+            "change_pct": 3.46
+          },
+          {
+            "id": "geely_ex2_39_4_kwh__max",
+            "full_name": "Geely EX2 39.4 kWh  Max",
+            "brand": "Geely",
+            "model": "EX2",
+            "trim": "39.4 kWh  Max",
+            "old_price": 52000,
+            "new_price": 54000,
+            "change": 2000,
+            "change_pct": 3.85
+          },
+          {
+            "id": "skoda_kushaq_1_0_tsi_style_bva",
+            "full_name": "Skoda Kushaq 1.0 TSI Style BVA",
+            "brand": "Skoda",
+            "model": "Kushaq",
+            "trim": "1.0 TSI Style BVA",
+            "old_price": 92980,
+            "new_price": 90980,
+            "change": -2000,
+            "change_pct": -2.15
+          },
+          {
+            "id": "skoda_kushaq_1_0_tsi_ambition",
+            "full_name": "Skoda Kushaq 1.0 TSI Ambition",
+            "brand": "Skoda",
+            "model": "Kushaq",
+            "trim": "1.0 TSI Ambition",
+            "old_price": 78980,
+            "new_price": 77980,
+            "change": -1000,
+            "change_pct": -1.27
+          },
+          {
+            "id": "skoda_kushaq_1_0_tsi_ambition_bva",
+            "full_name": "Skoda Kushaq 1.0 TSI Ambition BVA",
+            "brand": "Skoda",
+            "model": "Kushaq",
+            "trim": "1.0 TSI Ambition BVA",
+            "old_price": 85980,
+            "new_price": 84980,
+            "change": -1000,
+            "change_pct": -1.16
+          }
+        ],
+        "spec_changes": [
+          {
+            "id": "bako_b_van_horizons",
+            "full_name": "Bako B-Van Horizons",
+            "brand": "Bako",
+            "model": "B-Van",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 13
+          },
+          {
+            "id": "bako_b_van_start",
+            "full_name": "Bako B-Van Start",
+            "brand": "Bako",
+            "model": "B-Van",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 13
+          },
+          {
+            "id": "bako_b_van_wave",
+            "full_name": "Bako B-Van Wave",
+            "brand": "Bako",
+            "model": "B-Van",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 13
+          },
+          {
+            "id": "byd_dolphin_surf_30_08_kwh",
+            "full_name": "BYD Dolphin Surf 30.08 KWH",
+            "brand": "Byd",
+            "model": "Dolphin Surf",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "byd_dolphin_surf_38_88_kwh",
+            "full_name": "BYD Dolphin Surf 38.88 KWH",
+            "brand": "Byd",
+            "model": "Dolphin Surf",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "im_motors_im5_autonomie_100_kwh_rwd",
+            "full_name": "IM Motors IM5 Autonomie 100 kwh RWD",
+            "brand": "Im Motors",
+            "model": "IM5",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "im_motors_im5_performance_100_kwh_awd",
+            "full_name": "IM Motors IM5 Performance 100 kwh AWD",
+            "brand": "Im Motors",
+            "model": "IM5",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "im_motors_im5_standard_75_kwh_rwd",
+            "full_name": "IM Motors IM5 Standard 75 kwh RWD",
+            "brand": "Im Motors",
+            "model": "IM5",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "im_motors_im6_autonomie_100_kwh_rwd",
+            "full_name": "IM Motors IM6 Autonomie 100 kwh RWD",
+            "brand": "Im Motors",
+            "model": "IM6",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "im_motors_im6_performance_100_kwh_awd",
+            "full_name": "IM Motors IM6 Performance 100 kwh AWD",
+            "brand": "Im Motors",
+            "model": "IM6",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "im_motors_im6_standard_75_kwh_rwd",
+            "full_name": "IM Motors IM6 Standard 75 kwh RWD",
+            "brand": "Im Motors",
+            "model": "IM6",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "kia_ev3_58_3_kwh_air",
+            "full_name": "KIA EV3 58.3 kWh Air",
+            "brand": "Kia",
+            "model": "EV3",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "kia_ev3_81_4_kwh_earth",
+            "full_name": "KIA EV3 81.4 kWh Earth",
+            "brand": "Kia",
+            "model": "EV3",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "kia_ev3_81_4_kwh_earth_plus",
+            "full_name": "KIA EV3 81.4 kWh Earth Plus",
+            "brand": "Kia",
+            "model": "EV3",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "kia_ev3_81_4_kwh_gt_line",
+            "full_name": "KIA EV3 81.4 kWh GT-Line",
+            "brand": "Kia",
+            "model": "EV3",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "land_rover_defender_110_2_0_l_p400e_phev_s",
+            "full_name": "Land Rover Defender 110 2.0 L P400e PHEV S",
+            "brand": "Land Rover",
+            "model": "Defender 110",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "land_rover_defender_110_2_0_l_p400e_phev_x",
+            "full_name": "Land Rover Defender 110 2.0 L P400e PHEV X",
+            "brand": "Land Rover",
+            "model": "Defender 110",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "land_rover_defender_110_2_0_l_p400e_phev_x_dynamic_hse",
+            "full_name": "Land Rover Defender 110 2.0 L P400e PHEV X-Dynamic HSE",
+            "brand": "Land Rover",
+            "model": "Defender 110",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "land_rover_defender_110_2_0_l_p400e_phev_x_dynamic_se",
+            "full_name": "Land Rover Defender 110 2.0 L P400e PHEV X-Dynamic SE",
+            "brand": "Land Rover",
+            "model": "Defender 110",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "land_rover_defender_110_3_0_l_p400_x_dynamic_se",
+            "full_name": "Land Rover Defender 110 3.0 L P400 X-Dynamic SE",
+            "brand": "Land Rover",
+            "model": "Defender 110",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "land_rover_range_rover_evoque_1_5_l_p300e_phev_dynamic_se",
+            "full_name": "Land Rover Range Rover Evoque 1.5 l P300e PHEV Dynamic SE",
+            "brand": "Land Rover",
+            "model": "Range Rover Evoque",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "land_rover_range_rover_evoque_1_5_l_p300e_phev_s",
+            "full_name": "Land Rover Range Rover Evoque 1.5 l P300e PHEV S",
+            "brand": "Land Rover",
+            "model": "Range Rover Evoque",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "land_rover_range_rover_evoque_2_0_l_d163_dynamic_se__",
+            "full_name": "Land Rover Range Rover Evoque 2.0 l D163 Dynamic SE +",
+            "brand": "Land Rover",
+            "model": "Range Rover Evoque",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "mercedes_benz_eqb_250__amg",
+            "full_name": "Mercedes-Benz EQB 250+ AMG",
+            "brand": "Mercedes Benz",
+            "model": "EQB",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 13
+          },
+          {
+            "id": "omoda_jaecoo_c5_1_5_tgdi_hev",
+            "full_name": "Omoda & Jaecoo C5 1.5 TGDI HEV",
+            "brand": "Omoda Jaecoo",
+            "model": "C5",
+            "field": "acceleration_0_100",
+            "old_value": 9.0,
+            "new_value": 7.4
+          },
+          {
+            "id": "omoda_jaecoo_e5_61_kwh_premium",
+            "full_name": "Omoda & Jaecoo E5 61 kWh Premium",
+            "brand": "Omoda Jaecoo",
+            "model": "E5",
+            "field": "acceleration_0_100",
+            "old_value": 11.0,
+            "new_value": 7.0
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_cayenne_e_hybrid_black_edition",
+            "full_name": "Porsche Cayenne E-Hybrid Cayenne E-Hybrid Black Edition",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 13
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_cayenne_s_e_hybrid",
+            "full_name": "Porsche Cayenne E-Hybrid Cayenne S E-Hybrid",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 13
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_coup__cayenne_e_hybrid_coup__black_edition",
+            "full_name": "Porsche Cayenne E-Hybrid Coupé Cayenne E-Hybrid Coupé Black Edition",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid Coupé",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 13
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_coup__cayenne_s_e_hybrid_coup__black_edition",
+            "full_name": "Porsche Cayenne E-Hybrid Coupé Cayenne S E-Hybrid Coupé Black Edition",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid Coupé",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 13
+          },
+          {
+            "id": "porsche_cayenne_electric_cayenne",
+            "full_name": "Porsche Cayenne Electric Cayenne",
+            "brand": "Porsche",
+            "model": "Cayenne Electric",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 13
+          },
+          {
+            "id": "porsche_cayenne_electric_cayenne_turbo",
+            "full_name": "Porsche Cayenne Electric Cayenne Turbo",
+            "brand": "Porsche",
+            "model": "Cayenne Electric",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 13
+          },
+          {
+            "id": "porsche_macan_electric_macan_turbo",
+            "full_name": "Porsche Macan Electric Macan Turbo",
+            "brand": "Porsche",
+            "model": "Macan Electric",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 13
+          },
+          {
+            "id": "porsche_panamera_4_e_hybrid_panamera_4_e_hybrid",
+            "full_name": "Porsche Panamera 4 E-Hybrid Panamera 4 E-Hybrid",
+            "brand": "Porsche",
+            "model": "Panamera 4 E-Hybrid",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 13
+          },
+          {
+            "id": "volvo_ex90_twin_motor_performance_ultra",
+            "full_name": "Volvo EX90 Twin Motor Performance Ultra",
+            "brand": "Volvo",
+            "model": "EX90",
+            "field": "cv_fiscal",
+            "old_value": null,
+            "new_value": 13
+          },
+          {
+            "id": "volvo_ex90_twin_motor_performance_ultra",
+            "full_name": "Volvo EX90 Twin Motor Performance Ultra",
+            "brand": "Volvo",
+            "model": "EX90",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-04-15",
       "previous_scrape": "2026-04-14T23:30:02.496583",
       "current_scrape": "2026-04-15T01:32:14.595923",
