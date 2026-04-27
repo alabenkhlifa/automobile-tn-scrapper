@@ -1,6 +1,419 @@
 {
   "entries": [
     {
+      "date": "2026-04-27",
+      "previous_scrape": "2026-04-20T04:51:50.336644",
+      "current_scrape": "2026-04-27T05:00:45.636489",
+      "summary": {
+        "total_before": 551,
+        "total_after": 549,
+        "brands_added": 0,
+        "brands_removed": 0,
+        "models_added": 0,
+        "models_removed": 1,
+        "trims_added": 0,
+        "trims_removed": 2,
+        "price_changes": 14,
+        "price_drops": 14,
+        "price_increases": 0,
+        "spec_changes": 22
+      },
+      "changes": {
+        "brands_added": [],
+        "brands_removed": [],
+        "models_added": [],
+        "models_removed": [
+          {
+            "brand": "Audi",
+            "model": "Q3 Sportback"
+          }
+        ],
+        "trims_added": [],
+        "trims_removed": [
+          {
+            "id": "audi_q3_sportback_35_tfsi_business_limited_plus_s_tronic",
+            "full_name": "Audi Q3 Sportback 35 TFSI Business Limited Plus S-tronic",
+            "brand": "Audi",
+            "model": "Q3 Sportback",
+            "trim": "35 TFSI Business Limited Plus S-tronic",
+            "price_tnd": 199000,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/audi/q3-sportback/35-tfsi-s-tronic-business-limited-plus"
+          },
+          {
+            "id": "avantier_commuter_31_kwh_nmc",
+            "full_name": "Avantier Commuter 31 KWH NMC",
+            "brand": "Avantier",
+            "model": "Commuter",
+            "trim": "31 KWH NMC",
+            "price_tnd": 45000,
+            "fuel_type": "electric",
+            "body_type": "Citadine",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/avantier/commuter/31-kwh"
+          }
+        ],
+        "price_changes": [
+          {
+            "id": "volvo_ex90_twin_motor_performance_ultra",
+            "full_name": "Volvo EX90 Twin Motor Performance Ultra",
+            "brand": "Volvo",
+            "model": "EX90",
+            "trim": "Twin Motor Performance Ultra",
+            "old_price": 349900,
+            "new_price": 329900,
+            "change": -20000,
+            "change_pct": -5.72
+          },
+          {
+            "id": "volvo_ec40_single_motor_ultra",
+            "full_name": "Volvo EC40 Single Motor Ultra",
+            "brand": "Volvo",
+            "model": "EC40",
+            "trim": "Single Motor Ultra",
+            "old_price": 189900,
+            "new_price": 179900,
+            "change": -10000,
+            "change_pct": -5.27
+          },
+          {
+            "id": "volvo_es90_single_motor_extended_range_plus",
+            "full_name": "Volvo ES90 Single Motor Extended range Plus",
+            "brand": "Volvo",
+            "model": "ES90",
+            "trim": "Single Motor Extended range Plus",
+            "old_price": 239900,
+            "new_price": 229900,
+            "change": -10000,
+            "change_pct": -4.17
+          },
+          {
+            "id": "volvo_es90_single_motor_extended_range_ultra",
+            "full_name": "Volvo ES90 Single Motor Extended range Ultra",
+            "brand": "Volvo",
+            "model": "ES90",
+            "trim": "Single Motor Extended range Ultra",
+            "old_price": 269900,
+            "new_price": 259900,
+            "change": -10000,
+            "change_pct": -3.71
+          },
+          {
+            "id": "volvo_ex30_twin_motor_ultra",
+            "full_name": "Volvo EX30 Twin Motor Ultra",
+            "brand": "Volvo",
+            "model": "EX30",
+            "trim": "Twin Motor Ultra",
+            "old_price": 159900,
+            "new_price": 149900,
+            "change": -10000,
+            "change_pct": -6.25
+          },
+          {
+            "id": "volvo_xc60_2_0_l_t8_recharge_ultra_black_edition",
+            "full_name": "Volvo XC60 2.0 l T8 Recharge Ultra Black Edition",
+            "brand": "Volvo",
+            "model": "XC60",
+            "trim": "2.0 l T8 Recharge Ultra Black Edition",
+            "old_price": 259900,
+            "new_price": 249900,
+            "change": -10000,
+            "change_pct": -3.85
+          },
+          {
+            "id": "volvo_xc60_2_0_l_t8_recharge_ultra_dark",
+            "full_name": "Volvo XC60 2.0 l T8 Recharge Ultra Dark",
+            "brand": "Volvo",
+            "model": "XC60",
+            "trim": "2.0 l T8 Recharge Ultra Dark",
+            "old_price": 239900,
+            "new_price": 229900,
+            "change": -10000,
+            "change_pct": -4.17
+          },
+          {
+            "id": "volvo_xc90_2_0_l_recharge_ultra_black_edition",
+            "full_name": "Volvo XC90 2.0 l Recharge Ultra Black Edition",
+            "brand": "Volvo",
+            "model": "XC90",
+            "trim": "2.0 l Recharge Ultra Black Edition",
+            "old_price": 359900,
+            "new_price": 349900,
+            "change": -10000,
+            "change_pct": -2.78
+          },
+          {
+            "id": "volvo_ex30_single_motor_extended_range_plus",
+            "full_name": "Volvo EX30 Single Motor Extended Range Plus",
+            "brand": "Volvo",
+            "model": "EX30",
+            "trim": "Single Motor Extended Range Plus",
+            "old_price": 139900,
+            "new_price": 132900,
+            "change": -7000,
+            "change_pct": -5.0
+          },
+          {
+            "id": "volvo_ex30_single_motor_core",
+            "full_name": "Volvo EX30 Single Motor Core",
+            "brand": "Volvo",
+            "model": "EX30",
+            "trim": "Single Motor Core",
+            "old_price": 115900,
+            "new_price": 109900,
+            "change": -6000,
+            "change_pct": -5.18
+          },
+          {
+            "id": "volvo_xc40_2_0_l_black_edition",
+            "full_name": "Volvo XC40 2.0 L Black Edition",
+            "brand": "Volvo",
+            "model": "XC40",
+            "trim": "2.0 L Black Edition",
+            "old_price": 219900,
+            "new_price": 214900,
+            "change": -5000,
+            "change_pct": -2.27
+          },
+          {
+            "id": "volvo_xc40_2_0_l_plus_dark",
+            "full_name": "Volvo XC40 2.0 L Plus Dark",
+            "brand": "Volvo",
+            "model": "XC40",
+            "trim": "2.0 L Plus Dark",
+            "old_price": 189900,
+            "new_price": 184900,
+            "change": -5000,
+            "change_pct": -2.63
+          },
+          {
+            "id": "volvo_xc40_2_0_l_ultimate_dark",
+            "full_name": "Volvo XC40 2.0 L Ultimate Dark",
+            "brand": "Volvo",
+            "model": "XC40",
+            "trim": "2.0 L Ultimate Dark",
+            "old_price": 209900,
+            "new_price": 204900,
+            "change": -5000,
+            "change_pct": -2.38
+          },
+          {
+            "id": "great_wall_haval_jolion_1_5_t",
+            "full_name": "GWM Haval Jolion 1.5 T",
+            "brand": "Great Wall",
+            "model": "Haval Jolion",
+            "trim": "1.5 T",
+            "old_price": 98900,
+            "new_price": 95900,
+            "change": -3000,
+            "change_pct": -3.03
+          }
+        ],
+        "spec_changes": [
+          {
+            "id": "bako_b_van_horizons",
+            "full_name": "Bako B-Van Horizons",
+            "brand": "Bako",
+            "model": "B-Van",
+            "field": "cv_fiscal",
+            "old_value": 13,
+            "new_value": null
+          },
+          {
+            "id": "bako_b_van_start",
+            "full_name": "Bako B-Van Start",
+            "brand": "Bako",
+            "model": "B-Van",
+            "field": "cv_fiscal",
+            "old_value": 13,
+            "new_value": null
+          },
+          {
+            "id": "bako_b_van_wave",
+            "full_name": "Bako B-Van Wave",
+            "brand": "Bako",
+            "model": "B-Van",
+            "field": "cv_fiscal",
+            "old_value": 13,
+            "new_value": null
+          },
+          {
+            "id": "chery_i03_65_7_kwh_4x2",
+            "full_name": "Chery I03 65.7 kWh 4x2",
+            "brand": "Chery",
+            "model": "I03",
+            "field": "acceleration_0_100",
+            "old_value": 10.5,
+            "new_value": 9.0
+          },
+          {
+            "id": "mercedes_benz_eqb_250__amg",
+            "full_name": "Mercedes-Benz EQB 250+ AMG",
+            "brand": "Mercedes Benz",
+            "model": "EQB",
+            "field": "cv_fiscal",
+            "old_value": 13,
+            "new_value": null
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_cayenne_e_hybrid_black_edition",
+            "full_name": "Porsche Cayenne E-Hybrid Cayenne E-Hybrid Black Edition",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid",
+            "field": "cv_fiscal",
+            "old_value": 13,
+            "new_value": null
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_cayenne_s_e_hybrid",
+            "full_name": "Porsche Cayenne E-Hybrid Cayenne S E-Hybrid",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid",
+            "field": "cv_fiscal",
+            "old_value": 13,
+            "new_value": null
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_coup__cayenne_e_hybrid_coup__black_edition",
+            "full_name": "Porsche Cayenne E-Hybrid Coupé Cayenne E-Hybrid Coupé Black Edition",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid Coupé",
+            "field": "cv_fiscal",
+            "old_value": 13,
+            "new_value": null
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_coup__cayenne_e_hybrid_coup__black_edition",
+            "full_name": "Porsche Cayenne E-Hybrid Coupé Cayenne E-Hybrid Coupé Black Edition",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid Coupé",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_coup__cayenne_s_e_hybrid_coup__black_edition",
+            "full_name": "Porsche Cayenne E-Hybrid Coupé Cayenne S E-Hybrid Coupé Black Edition",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid Coupé",
+            "field": "cv_fiscal",
+            "old_value": 13,
+            "new_value": null
+          },
+          {
+            "id": "porsche_cayenne_e_hybrid_coup__cayenne_s_e_hybrid_coup__black_edition",
+            "full_name": "Porsche Cayenne E-Hybrid Coupé Cayenne S E-Hybrid Coupé Black Edition",
+            "brand": "Porsche",
+            "model": "Cayenne E-Hybrid Coupé",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "porsche_cayenne_electric_cayenne",
+            "full_name": "Porsche Cayenne Electric Cayenne",
+            "brand": "Porsche",
+            "model": "Cayenne Electric",
+            "field": "cv_fiscal",
+            "old_value": 13,
+            "new_value": null
+          },
+          {
+            "id": "porsche_cayenne_electric_cayenne_turbo",
+            "full_name": "Porsche Cayenne Electric Cayenne Turbo",
+            "brand": "Porsche",
+            "model": "Cayenne Electric",
+            "field": "cv_fiscal",
+            "old_value": 13,
+            "new_value": null
+          },
+          {
+            "id": "porsche_macan_electric_macan_turbo",
+            "full_name": "Porsche Macan Electric Macan Turbo",
+            "brand": "Porsche",
+            "model": "Macan Electric",
+            "field": "cv_fiscal",
+            "old_value": 13,
+            "new_value": null
+          },
+          {
+            "id": "porsche_panamera_4_e_hybrid_panamera_4_e_hybrid",
+            "full_name": "Porsche Panamera 4 E-Hybrid Panamera 4 E-Hybrid",
+            "brand": "Porsche",
+            "model": "Panamera 4 E-Hybrid",
+            "field": "cv_fiscal",
+            "old_value": 13,
+            "new_value": null
+          },
+          {
+            "id": "suzuki_dzire_1_2_l_cvt_gl_",
+            "full_name": "Suzuki Dzire 1.2 L CVT GL+",
+            "brand": "Suzuki",
+            "model": "Dzire",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "suzuki_dzire_1_2_l_cvt_glx",
+            "full_name": "Suzuki Dzire 1.2 L CVT GLX",
+            "brand": "Suzuki",
+            "model": "Dzire",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "suzuki_dzire_1_2_l_gl_",
+            "full_name": "Suzuki Dzire 1.2 L GL+",
+            "brand": "Suzuki",
+            "model": "Dzire",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "suzuki_dzire_1_2_l_glx",
+            "full_name": "Suzuki Dzire 1.2 L GLX",
+            "brand": "Suzuki",
+            "model": "Dzire",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "volvo_es90_single_motor_extended_range_plus",
+            "full_name": "Volvo ES90 Single Motor Extended range Plus",
+            "brand": "Volvo",
+            "model": "ES90",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "volvo_es90_single_motor_extended_range_ultra",
+            "full_name": "Volvo ES90 Single Motor Extended range Ultra",
+            "brand": "Volvo",
+            "model": "ES90",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "volvo_ex90_twin_motor_performance_ultra",
+            "full_name": "Volvo EX90 Twin Motor Performance Ultra",
+            "brand": "Volvo",
+            "model": "EX90",
+            "field": "cv_fiscal",
+            "old_value": 13,
+            "new_value": null
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-04-20",
       "previous_scrape": "2026-04-15T01:32:14.595923",
       "current_scrape": "2026-04-20T04:51:50.336644",
