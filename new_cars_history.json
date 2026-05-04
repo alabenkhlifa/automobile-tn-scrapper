@@ -1,6 +1,428 @@
 {
   "entries": [
     {
+      "date": "2026-05-04",
+      "previous_scrape": "2026-04-27T05:00:45.636489",
+      "current_scrape": "2026-05-04T05:26:30.413500",
+      "summary": {
+        "total_before": 549,
+        "total_after": 548,
+        "brands_added": 0,
+        "brands_removed": 0,
+        "models_added": 2,
+        "models_removed": 2,
+        "trims_added": 4,
+        "trims_removed": 5,
+        "price_changes": 10,
+        "price_drops": 4,
+        "price_increases": 6,
+        "spec_changes": 17
+      },
+      "changes": {
+        "brands_added": [],
+        "brands_removed": [],
+        "models_added": [
+          {
+            "brand": "Audi",
+            "model": "Q3"
+          },
+          {
+            "brand": "Audi",
+            "model": "Q3 Sportback"
+          }
+        ],
+        "models_removed": [
+          {
+            "brand": "Chery",
+            "model": "Arrizo 5"
+          },
+          {
+            "brand": "Chery",
+            "model": "Tiggo 3X"
+          }
+        ],
+        "trims_added": [
+          {
+            "id": "audi_q3_1_4_tfsi_advanced_line_s_tronic",
+            "full_name": "Audi Q3 1.4 TFSI Advanced Line S-tronic",
+            "brand": "Audi",
+            "model": "Q3",
+            "trim": "1.4 TFSI Advanced Line S-tronic",
+            "price_tnd": 209000,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/audi/q3/tfsi-s-tronic-advanced-line"
+          },
+          {
+            "id": "audi_q3_sportback_1_4_tfsi_s_line_s_tronic",
+            "full_name": "Audi Q3 Sportback 1.4 TFSI S-Line S-tronic",
+            "brand": "Audi",
+            "model": "Q3 Sportback",
+            "trim": "1.4 TFSI S-Line S-tronic",
+            "price_tnd": 229000,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/audi/q3-sportback/tfsi-s-tronic-s-line"
+          },
+          {
+            "id": "foton_tunland_g7_double_cabine_2_0_l_turbo_4x4__edition_limit_e",
+            "full_name": "Foton Tunland G7 Double Cabine 2.0 l Turbo 4x4  Edition Limitée",
+            "brand": "Foton",
+            "model": "Tunland G7 Double Cabine",
+            "trim": "2.0 l Turbo 4x4  Edition Limitée",
+            "price_tnd": 105500,
+            "fuel_type": "diesel",
+            "body_type": "Pick up",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/foton/tunland-g7-double-cabine/2.0-l-turbo-4x4-edition-limitee"
+          },
+          {
+            "id": "suzuki_jimny_5_portes_1_5_l_4x4__glx_bva",
+            "full_name": "Suzuki Jimny 5 portes 1.5 L 4x4  GLX BVA",
+            "brand": "Suzuki",
+            "model": "Jimny 5 portes",
+            "trim": "1.5 L 4x4  GLX BVA",
+            "price_tnd": 114900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/suzuki/jimny-5p/1.5-l-gl-4x4-bva"
+          }
+        ],
+        "trims_removed": [
+          {
+            "id": "chery_arrizo_5_1_5_l_comfort_bvm",
+            "full_name": "Chery Arrizo 5 1.5 L Comfort BVM",
+            "brand": "Chery",
+            "model": "Arrizo 5",
+            "trim": "1.5 L Comfort BVM",
+            "price_tnd": 59490,
+            "fuel_type": "essence",
+            "body_type": "Berline",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/chery/arrizo-5/1.5-l-bvm"
+          },
+          {
+            "id": "chery_arrizo_5_1_5_l_cvt_luxury",
+            "full_name": "Chery Arrizo 5 1.5 L CVT Luxury",
+            "brand": "Chery",
+            "model": "Arrizo 5",
+            "trim": "1.5 L CVT Luxury",
+            "price_tnd": 69490,
+            "fuel_type": "essence",
+            "body_type": "Berline",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/chery/arrizo-5/1.5-l-cvt-luxury"
+          },
+          {
+            "id": "chery_tiggo_3x_1_0_l_turbo_cvt_luxury",
+            "full_name": "Chery Tiggo 3X 1.0 L Turbo CVT Luxury",
+            "brand": "Chery",
+            "model": "Tiggo 3X",
+            "trim": "1.0 L Turbo CVT Luxury",
+            "price_tnd": 66990,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/chery/tiggo-3x/1.0-l-turbo-cvt-luxury"
+          },
+          {
+            "id": "chery_tiggo_3x_1_5_l_comfort_bvm",
+            "full_name": "Chery Tiggo 3X 1.5 L Comfort BVM",
+            "brand": "Chery",
+            "model": "Tiggo 3X",
+            "trim": "1.5 L Comfort BVM",
+            "price_tnd": 57900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/chery/tiggo-3x/1.5-l-bvm-comfort"
+          },
+          {
+            "id": "suzuki_jimny_5_portes_1_5_l_4x4__raid_edition_bva",
+            "full_name": "Suzuki Jimny 5 portes 1.5 L 4x4  Raid Edition BVA",
+            "brand": "Suzuki",
+            "model": "Jimny 5 portes",
+            "trim": "1.5 L 4x4  Raid Edition BVA",
+            "price_tnd": 117900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/suzuki/jimny-5p/1.5-l-4x4-bva-raid-edition"
+          }
+        ],
+        "price_changes": [
+          {
+            "id": "mini_cooper_3_portes_1_5_l_john_cooper_works",
+            "full_name": "Mini Cooper 3 portes 1.5 l John Cooper Works",
+            "brand": "Mini",
+            "model": "Cooper 3 portes",
+            "trim": "1.5 l John Cooper Works",
+            "old_price": 169900,
+            "new_price": 185900,
+            "change": 16000,
+            "change_pct": 9.42
+          },
+          {
+            "id": "foton_view_cs2_van_16_places_2_0_l_turbo",
+            "full_name": "Foton View CS2 Van 16 places 2.0 l Turbo",
+            "brand": "Foton",
+            "model": "View CS2 Van 16 places",
+            "trim": "2.0 l Turbo",
+            "old_price": 127500,
+            "new_price": 130700,
+            "change": 3200,
+            "change_pct": 2.51
+          },
+          {
+            "id": "peugeot_landtrek_simple_cabine_1_9_l_diesel_4x2",
+            "full_name": "Peugeot Landtrek Simple Cabine 1.9 L Diesel 4x2",
+            "brand": "Peugeot",
+            "model": "Landtrek Simple Cabine",
+            "trim": "1.9 L Diesel 4x2",
+            "old_price": 79490,
+            "new_price": 76490,
+            "change": -3000,
+            "change_pct": -3.77
+          },
+          {
+            "id": "peugeot_landtrek_simple_cabine_1_9_l_diesel_4x2_benne_t_le_pli_e",
+            "full_name": "Peugeot Landtrek Simple Cabine 1.9 L Diesel 4x2 Benne tôle pliée",
+            "brand": "Peugeot",
+            "model": "Landtrek Simple Cabine",
+            "trim": "1.9 L Diesel 4x2 Benne tôle pliée",
+            "old_price": 75490,
+            "new_price": 72490,
+            "change": -3000,
+            "change_pct": -3.97
+          },
+          {
+            "id": "mini_countryman_1_5_l_favoured_bva",
+            "full_name": "Mini Countryman 1.5 L Favoured BVA",
+            "brand": "Mini",
+            "model": "Countryman",
+            "trim": "1.5 L Favoured BVA",
+            "old_price": 179900,
+            "new_price": 177900,
+            "change": -2000,
+            "change_pct": -1.11
+          },
+          {
+            "id": "mahindra_xuv_3xo_1_2_l__turbo_ax5",
+            "full_name": "Mahindra XUV 3XO 1.2 L  Turbo AX5",
+            "brand": "Mahindra",
+            "model": "XUV 3XO",
+            "trim": "1.2 L  Turbo AX5",
+            "old_price": 60800,
+            "new_price": 61800,
+            "change": 1000,
+            "change_pct": 1.64
+          },
+          {
+            "id": "mahindra_xuv_3xo_1_2_l__turbo_ax5_bva",
+            "full_name": "Mahindra XUV 3XO 1.2 L  Turbo AX5 BVA",
+            "brand": "Mahindra",
+            "model": "XUV 3XO",
+            "trim": "1.2 L  Turbo AX5 BVA",
+            "old_price": 65800,
+            "new_price": 66800,
+            "change": 1000,
+            "change_pct": 1.52
+          },
+          {
+            "id": "mahindra_xuv_3xo_1_2_l__turbo_ax7_luxury_bva",
+            "full_name": "Mahindra XUV 3XO 1.2 L  Turbo AX7 Luxury BVA",
+            "brand": "Mahindra",
+            "model": "XUV 3XO",
+            "trim": "1.2 L  Turbo AX7 Luxury BVA",
+            "old_price": 73800,
+            "new_price": 74800,
+            "change": 1000,
+            "change_pct": 1.36
+          },
+          {
+            "id": "mahindra_xuv_3xo_1_2_l__turbo_mx3",
+            "full_name": "Mahindra XUV 3XO 1.2 L  Turbo MX3",
+            "brand": "Mahindra",
+            "model": "XUV 3XO",
+            "trim": "1.2 L  Turbo MX3",
+            "old_price": 56800,
+            "new_price": 57800,
+            "change": 1000,
+            "change_pct": 1.76
+          },
+          {
+            "id": "geely_coolray_1_5_l_turbo_gs",
+            "full_name": "Geely Coolray 1.5 L Turbo GS",
+            "brand": "Geely",
+            "model": "Coolray",
+            "trim": "1.5 L Turbo GS",
+            "old_price": 79900,
+            "new_price": 79800,
+            "change": -100,
+            "change_pct": -0.13
+          }
+        ],
+        "spec_changes": [
+          {
+            "id": "audi_a6_sportback_e_tron_100_kwh_performance",
+            "full_name": "Audi A6 Sportback e-tron 100 kWh Performance",
+            "brand": "Audi",
+            "model": "A6 Sportback e-tron",
+            "field": "range_km",
+            "old_value": 673,
+            "new_value": 757
+          },
+          {
+            "id": "bako_bee_horizons",
+            "full_name": "Bako Bee Horizons",
+            "brand": "Bako",
+            "model": "Bee",
+            "field": "battery_kwh",
+            "old_value": 2.0,
+            "new_value": 6.0
+          },
+          {
+            "id": "bako_bee_wave",
+            "full_name": "Bako Bee Wave",
+            "brand": "Bako",
+            "model": "Bee",
+            "field": "battery_kwh",
+            "old_value": 2.0,
+            "new_value": 3.0
+          },
+          {
+            "id": "chery_tiggo_7_phev_1_5_t_dht_hybrid",
+            "full_name": "Chery Tiggo 7 PHEV 1.5 T DHT Hybrid",
+            "brand": "Chery",
+            "model": "Tiggo 7 PHEV",
+            "field": "battery_kwh",
+            "old_value": 18.3,
+            "new_value": 18.4
+          },
+          {
+            "id": "foton_tunland_g7_double_cabine_2_0_l_turbo_4x4",
+            "full_name": "Foton Tunland G7 Double Cabine 2.0 l Turbo 4x4",
+            "brand": "Foton",
+            "model": "Tunland G7 Double Cabine",
+            "field": "is_new",
+            "old_value": false,
+            "new_value": true
+          },
+          {
+            "id": "jetour_x70_plus_1_5_turbo",
+            "full_name": "Jetour X70 Plus 1.5 Turbo",
+            "brand": "Jetour",
+            "model": "X70 Plus",
+            "field": "cv_fiscal",
+            "old_value": 9,
+            "new_value": 8
+          },
+          {
+            "id": "mahindra_xuv_3xo_1_2_l__turbo_ax5",
+            "full_name": "Mahindra XUV 3XO 1.2 L  Turbo AX5",
+            "brand": "Mahindra",
+            "model": "XUV 3XO",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "mahindra_xuv_3xo_1_2_l__turbo_ax5_bva",
+            "full_name": "Mahindra XUV 3XO 1.2 L  Turbo AX5 BVA",
+            "brand": "Mahindra",
+            "model": "XUV 3XO",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "mahindra_xuv_3xo_1_2_l__turbo_ax7_luxury_bva",
+            "full_name": "Mahindra XUV 3XO 1.2 L  Turbo AX7 Luxury BVA",
+            "brand": "Mahindra",
+            "model": "XUV 3XO",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "mahindra_xuv_3xo_1_2_l__turbo_mx3",
+            "full_name": "Mahindra XUV 3XO 1.2 L  Turbo MX3",
+            "brand": "Mahindra",
+            "model": "XUV 3XO",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "nissan_magnite_1_0t_acenta",
+            "full_name": "Nissan Magnite 1.0T Acenta",
+            "brand": "Nissan",
+            "model": "Magnite",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "nissan_magnite_1_0t_cvt_tekna",
+            "full_name": "Nissan Magnite 1.0T CVT Tekna",
+            "brand": "Nissan",
+            "model": "Magnite",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "seat_ibiza_1_0_l_mpi_reference",
+            "full_name": "Seat Ibiza 1.0 L MPI Reference",
+            "brand": "Seat",
+            "model": "Ibiza",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "seat_ibiza_1_0_l_mpi_style",
+            "full_name": "Seat Ibiza 1.0 L MPI Style",
+            "brand": "Seat",
+            "model": "Ibiza",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "seat_ibiza_1_0_l_tsi__fr_bva",
+            "full_name": "Seat Ibiza 1.0 L TSI  FR BVA",
+            "brand": "Seat",
+            "model": "Ibiza",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "seat_ibiza_1_0_l_tsi__move_bva",
+            "full_name": "Seat Ibiza 1.0 L TSI  Move BVA",
+            "brand": "Seat",
+            "model": "Ibiza",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "seat_ibiza_1_0_l_tsi_reference_bva",
+            "full_name": "Seat Ibiza 1.0 L TSI Reference BVA",
+            "brand": "Seat",
+            "model": "Ibiza",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-04-27",
       "previous_scrape": "2026-04-20T04:51:50.336644",
       "current_scrape": "2026-04-27T05:00:45.636489",
