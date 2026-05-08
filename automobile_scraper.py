@@ -7,7 +7,7 @@ Features:
 - Extracts JSON-LD schema data from car detail pages
 - Handles multi-trim model pages
 - Detects "Nouveau" badge and "Populaire" cars
-- 10 concurrent requests with 0.2s delay
+- 5 concurrent requests with 1s delay
 
 Run:
     python automobile_scraper.py
@@ -132,8 +132,8 @@ class AutomobileScraper:
     NEUF_URL = "https://www.automobile.tn/fr/neuf"
 
     # Rate limiting
-    MAX_CONCURRENT = 10
-    DELAY_BETWEEN_REQUESTS = 0.2
+    MAX_CONCURRENT = 5
+    DELAY_BETWEEN_REQUESTS = 1
 
     # Slugs to skip
     SKIP_BRAND_SLUGS = {'electrique', 'comparateur', 'concessionnaires'}
