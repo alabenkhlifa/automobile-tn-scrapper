@@ -62,11 +62,15 @@ jobs:
   ingest:
     needs: scrape
     runs-on: ubuntu-latest
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_TOKEN: ${{ secrets.SUPABASE_TOKEN }}
     steps:
       - name: Trigger Supabase ingestion
+        if: env.SUPABASE_URL != ''  # skipped until SUPABASE_URL secret is set
         run: |
-          curl -X POST "${{ secrets.SUPABASE_URL }}" \
-            -H "Authorization: Bearer ${{ secrets.SUPABASE_TOKEN }}" \
+          curl -X POST "$SUPABASE_URL" \
+            -H "Authorization: Bearer $SUPABASE_TOKEN" \
             --fail
 
   deploy:

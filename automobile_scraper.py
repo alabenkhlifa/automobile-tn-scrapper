@@ -918,8 +918,12 @@ async def main():
     scraper = AutomobileScraper(specific_brands=specific_brands)
     await scraper.scrape_all()
 
-    scraper.save_to_json()
-    scraper.save_to_csv()
+    # Keep the last good data when the site blocks us or returns nothing
+    if scraper.cars:
+        scraper.save_to_json()
+        scraper.save_to_csv()
+    else:
+        print("::warning::No new cars scraped from automobile.tn - keeping existing data files")
     scraper.print_summary()
 
     print("\nDone!")
