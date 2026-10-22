@@ -7,6 +7,8 @@ on:
       - '*.html'
       - '*.json'
       - '*.csv'
+      - 'assets/**'
+      - 'data/**'
   workflow_dispatch:
   workflow_call:  # Allow other workflows to trigger this
 

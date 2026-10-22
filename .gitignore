@@ -26,3 +26,10 @@ automobile_tn_new_cars_previous.json
 # OS
 .DS_Store
 Thumbs.db
+
+# Impeccable design-session artifacts (mocks, screenshots, build state)
+.impeccable/mocks/
+.impeccable/questions/
+.impeccable/review/
+.impeccable/build/
+.impeccable/config.local.json
