@@ -36,6 +36,8 @@ USED_YEAR_MIN, USED_YEAR_MAX = 1995, datetime.now().year + 1
 
 # A source whose last scrape is older than this is shown as frozen
 STALE_DAYS = 10
+# automobile.tn new cars are scraped on the Pi on the 1st and 15th (gaps up to 17 days)
+NEW_STALE_DAYS = 18
 
 COUNTRIES = ["de", "fr", "it", "be"]
 
@@ -98,12 +100,12 @@ def day(iso):
     return (iso or "")[:10]
 
 
-def is_stale(iso):
+def is_stale(iso, max_days=STALE_DAYS):
     try:
         scraped = datetime.fromisoformat(iso.replace("Z", "")).replace(tzinfo=None)
     except (AttributeError, ValueError):
         return True
-    return (datetime.now() - scraped).days > STALE_DAYS
+    return (datetime.now() - scraped).days > max_days
 
 
 def normalize_fuel(value):
@@ -383,7 +385,7 @@ def main():
     dashboard = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "sources": {
-            "new": {"name": "automobile.tn", "scraped_at": new.get("scraped_at"), "stale": is_stale(new.get("scraped_at"))},
+            "new": {"name": "automobile.tn", "scraped_at": new.get("scraped_at"), "stale": is_stale(new.get("scraped_at"), NEW_STALE_DAYS)},
             "used": {"name": "9annas.tn", "scraped_at": used.get("scraped_at"), "stale": is_stale(used.get("scraped_at"))},
             "eu": {"name": "AutoScout24", "scraped_at": eu.get("scraped_at"), "stale": is_stale(eu.get("scraped_at"))},
         },

@@ -49,7 +49,7 @@ python 9annas_scraper.py --skip-images      # skip image URL fetching
 - Extracts from `versions-item` divs and spec tables
 - Filters out non-car pages (Devis, Concessionnaires)
 - Output: `automobile_tn_new_cars.json`, `automobile_tn_new_cars.csv`
-- Runs on the Pi via cron (1st and 15th, `deploy/pi/scrape_new_cars.sh`), not in GitHub Actions: automobile.tn returns 403 to GitHub runner IPs since 2026-05. The `check-new-cars` CI job fails if the data is >18 days old
+- Runs on the Pi via cron (1st and 15th, `deploy/pi/scrape_new_cars.sh`), not in GitHub Actions: automobile.tn returns 403 to GitHub runner IPs since 2026-05. The script also rebuilds `data/` so the dashboard updates on push. The `check-new-cars` CI job fails if the data is >18 days old
 
 **autoscout24_scraper.py** - AutoScout24 multi-country scraper (DE, FR, IT, BE)
 - Scrapes both new and used car listings across 4 European countries

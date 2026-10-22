@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Scrape automobile.tn new cars on the Pi and push the data to GitHub.
+# Scrape automobile.tn new cars on the Pi, rebuild the dashboard data and push both.
 #
 # automobile.tn (Cloudflare) returns 403 to GitHub runner IPs since 2026-05,
 # so this runs from the home IP via cron on the 1st and 15th of each month,
@@ -13,7 +13,7 @@ set -euo pipefail
 # Wrapped in a function so bash parses it fully before git reset rewrites this file
 main() {
   cd "$(dirname "$0")/../.."
-  local files=(automobile_tn_new_cars.json automobile_tn_new_cars.csv new_cars_history.json)
+  local files=(automobile_tn_new_cars.json automobile_tn_new_cars.csv new_cars_history.json data/)
 
   git rebase --abort 2>/dev/null || true
   git fetch --quiet origin main
@@ -22,6 +22,8 @@ main() {
   cp automobile_tn_new_cars.json automobile_tn_new_cars_previous.json
   venv/bin/python -u automobile_scraper.py
   venv/bin/python -u generate_history.py
+  # The dashboard reads data/, not the raw files; the push redeploys GitHub Pages
+  venv/bin/python -u build_dashboard_data.py
 
   git add "${files[@]}"
   if git diff --staged --quiet; then
