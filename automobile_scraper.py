@@ -7,7 +7,8 @@ Features:
 - Extracts JSON-LD schema data from car detail pages
 - Handles multi-trim model pages
 - Detects "Nouveau" badge and "Populaire" cars
-- 10 concurrent requests with 0.2s delay
+- Polite rate limit for the home IP it runs from: ~1 req/s with jitter, 2 in flight,
+  backoff on 429/5xx (honors Retry-After), aborts after 3 blocked responses in a row
 
 Run:
     python automobile_scraper.py
@@ -21,6 +22,9 @@ import asyncio
 import json
 import csv
 import re
+import sys
+import time
+import random
 import argparse
 from datetime import datetime
 from dataclasses import dataclass, asdict, field
@@ -131,9 +135,15 @@ class AutomobileScraper:
     BASE_URL = "https://www.automobile.tn"
     NEUF_URL = "https://www.automobile.tn/fr/neuf"
 
-    # Rate limiting
-    MAX_CONCURRENT = 10
-    DELAY_BETWEEN_REQUESTS = 0.2
+    # Rate limiting (kept low: a block here would hit the home IP the Pi scrapes from)
+    MAX_CONCURRENT = 2
+    MIN_INTERVAL = 1.0  # seconds between request starts, shared by all tasks
+    JITTER = 0.4  # extra random 0-0.4s per request
+    MAX_RETRIES = 3
+    MAX_RETRY_AFTER = 300
+    RETRY_STATUSES = {429, 500, 502, 503, 504}
+    BLOCK_STATUSES = {403, 429}
+    MAX_CONSECUTIVE_BLOCKS = 3
 
     # Slugs to skip
     SKIP_BRAND_SLUGS = {'electrique', 'comparateur', 'concessionnaires'}
@@ -143,6 +153,10 @@ class AutomobileScraper:
         self.cars: List[CarTrim] = []
         self.specific_brands = specific_brands
         self.semaphore = asyncio.Semaphore(self.MAX_CONCURRENT)
+        self.rate_lock = asyncio.Lock()
+        self.next_request_at = 0.0
+        self.consecutive_blocks = 0
+        self.blocked = False
         self.stats = {
             "brands": 0,
             "models": 0,
@@ -153,17 +167,55 @@ class AutomobileScraper:
             "nouveau": 0
         }
 
+    async def _wait_turn(self):
+        """Space request starts MIN_INTERVAL (+ jitter) apart across all tasks"""
+        async with self.rate_lock:
+            wait = self.next_request_at - time.monotonic()
+            if wait > 0:
+                await asyncio.sleep(wait)
+            self.next_request_at = time.monotonic() + self.MIN_INTERVAL + random.uniform(0, self.JITTER)
+
+    def _retry_delay(self, error: httpx.HTTPError, attempt: int) -> float:
+        """Retry-After seconds when the server sends them, else exponential backoff"""
+        if isinstance(error, httpx.HTTPStatusError):
+            retry_after = error.response.headers.get('Retry-After', '')
+            if retry_after.isdigit():
+                return min(int(retry_after), self.MAX_RETRY_AFTER)
+        return 2 ** (attempt + 1)
+
     async def fetch(self, client: httpx.AsyncClient, url: str) -> Optional[str]:
-        """Fetch URL with rate limiting"""
+        """Fetch URL with rate limiting; back off on throttling, server and network errors.
+        403 is not retried, and after MAX_CONSECUTIVE_BLOCKS blocked responses in a row
+        the whole run stops so we don't keep hitting a site that is refusing us."""
         async with self.semaphore:
-            try:
-                response = await client.get(url, follow_redirects=True)
-                response.raise_for_status()
-                await asyncio.sleep(self.DELAY_BETWEEN_REQUESTS)
-                return response.text
-            except httpx.HTTPError as e:
-                print(f"    Error fetching {url}: {e}")
-                return None
+            for attempt in range(self.MAX_RETRIES + 1):
+                # Checked on both sides of the wait: skip queued work fast once blocked,
+                # and don't send if the breaker tripped while we waited
+                if self.blocked:
+                    return None
+                await self._wait_turn()
+                if self.blocked:
+                    return None
+                try:
+                    response = await client.get(url, follow_redirects=True)
+                    response.raise_for_status()
+                    self.consecutive_blocks = 0
+                    return response.text
+                except httpx.HTTPError as e:
+                    status = e.response.status_code if isinstance(e, httpx.HTTPStatusError) else None
+                    if status in self.BLOCK_STATUSES:
+                        self.consecutive_blocks += 1
+                        if self.consecutive_blocks >= self.MAX_CONSECUTIVE_BLOCKS:
+                            if not self.blocked:
+                                print(f"    Blocked ({status}) {self.consecutive_blocks} times in a row - stopping")
+                            self.blocked = True
+                            return None
+                    retryable = isinstance(e, httpx.TransportError) or status in self.RETRY_STATUSES
+                    if retryable and attempt < self.MAX_RETRIES:
+                        await asyncio.sleep(self._retry_delay(e, attempt))
+                        continue
+                    print(f"    Error fetching {url}: {e}")
+                    return None
 
     async def fetch_brands(self, client: httpx.AsyncClient) -> List[dict]:
         """Get all brands from /fr/neuf"""
@@ -918,15 +970,18 @@ async def main():
     scraper = AutomobileScraper(specific_brands=specific_brands)
     await scraper.scrape_all()
 
-    # Keep the last good data when the site blocks us or returns nothing
-    if scraper.cars:
+    # Keep the last good data when the site blocks us (even part-way) or returns nothing
+    ok = bool(scraper.cars) and not scraper.blocked
+    if ok:
         scraper.save_to_json()
         scraper.save_to_csv()
     else:
-        print("::warning::No new cars scraped from automobile.tn - keeping existing data files")
+        print("::warning::automobile.tn new cars scrape blocked or empty - keeping existing data files")
     scraper.print_summary()
 
     print("\nDone!")
+    if not ok:
+        sys.exit(1)
 
 
 if __name__ == "__main__":
