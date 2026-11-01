@@ -1,6 +1,172 @@
 {
   "entries": [
     {
+      "date": "2026-11-01",
+      "previous_scrape": "2026-10-22T17:42:26.058754",
+      "current_scrape": "2026-11-01T01:15:29.292495",
+      "summary": {
+        "total_before": 565,
+        "total_after": 564,
+        "brands_added": 0,
+        "brands_removed": 0,
+        "models_added": 1,
+        "models_removed": 0,
+        "trims_added": 1,
+        "trims_removed": 2,
+        "price_changes": 1,
+        "price_drops": 0,
+        "price_increases": 1,
+        "spec_changes": 9
+      },
+      "changes": {
+        "brands_added": [],
+        "brands_removed": [],
+        "models_added": [
+          {
+            "brand": "Omoda Jaecoo",
+            "model": "J5"
+          }
+        ],
+        "models_removed": [],
+        "trims_added": [
+          {
+            "id": "omoda_jaecoo_j5_61_kwh_premium",
+            "full_name": "Omoda & Jaecoo J5 61 kWh Premium",
+            "brand": "Omoda Jaecoo",
+            "model": "J5",
+            "trim": "61 kWh Premium",
+            "price_tnd": 74900,
+            "fuel_type": "electric",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/omoda-jaecoo/j5/61-kwh-premium"
+          }
+        ],
+        "trims_removed": [
+          {
+            "id": "bmw_ix2_xdrive30_pack_m_pro",
+            "full_name": "BMW iX2 xDrive30 Pack M Pro",
+            "brand": "Bmw",
+            "model": "iX2",
+            "trim": "xDrive30 Pack M Pro",
+            "price_tnd": 246900,
+            "fuel_type": "electric",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/bmw/ix2/xdrive30-pack-m-pro"
+          },
+          {
+            "id": "bmw_x1_18i_sdrive_collection__edition_sp_ciale_",
+            "full_name": "BMW X1 18i sDrive Collection \"Edition Spéciale\"",
+            "brand": "Bmw",
+            "model": "X1",
+            "trim": "18i sDrive Collection \"Edition Spéciale\"",
+            "price_tnd": 169900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/bmw/x1/18i-sdrive-collection-edition-speciale"
+          }
+        ],
+        "price_changes": [
+          {
+            "id": "bmw_s_rie_1_118_pack_m",
+            "full_name": "BMW Série 1 118 Pack M",
+            "brand": "Bmw",
+            "model": "Série 1",
+            "trim": "118 Pack M",
+            "old_price": 164900,
+            "new_price": 187900,
+            "change": 23000,
+            "change_pct": 13.95
+          }
+        ],
+        "spec_changes": [
+          {
+            "id": "kia_ev9_99_8_kwh_gt_line_6_places",
+            "full_name": "KIA EV9 99.8 kWh GT-Line 6 places",
+            "brand": "Kia",
+            "model": "EV9",
+            "field": "range_km",
+            "old_value": 485,
+            "new_value": 505
+          },
+          {
+            "id": "kia_ev9_99_8_kwh_gt_line_7_places",
+            "full_name": "KIA EV9 99.8 kWh GT-Line 7 places",
+            "brand": "Kia",
+            "model": "EV9",
+            "field": "range_km",
+            "old_value": 485,
+            "new_value": 505
+          },
+          {
+            "id": "peugeot_landtrek_double_cabine_1_9_l_diesel_4x2",
+            "full_name": "Peugeot Landtrek Double Cabine 1.9 L Diesel 4x2",
+            "brand": "Peugeot",
+            "model": "Landtrek Double Cabine",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "peugeot_landtrek_double_cabine_1_9_l_diesel_4x4_pro_plus",
+            "full_name": "Peugeot Landtrek Double Cabine 1.9 L Diesel 4x4 Pro Plus",
+            "brand": "Peugeot",
+            "model": "Landtrek Double Cabine",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "peugeot_landtrek_simple_cabine_1_9_l_diesel_4x2",
+            "full_name": "Peugeot Landtrek Simple Cabine 1.9 L Diesel 4x2",
+            "brand": "Peugeot",
+            "model": "Landtrek Simple Cabine",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "peugeot_landtrek_simple_cabine_1_9_l_diesel_4x2_benne_t_le_pli_e",
+            "full_name": "Peugeot Landtrek Simple Cabine 1.9 L Diesel 4x2 Benne tôle pliée",
+            "brand": "Peugeot",
+            "model": "Landtrek Simple Cabine",
+            "field": "is_new",
+            "old_value": true,
+            "new_value": false
+          },
+          {
+            "id": "renault_express_van_1_5_l_dci",
+            "full_name": "Renault Express Van 1.5 L dCi",
+            "brand": "Renault",
+            "model": "Express Van",
+            "field": "consumption_mixed",
+            "old_value": 6.1,
+            "new_value": 5.0
+          },
+          {
+            "id": "renault_express_van_1_5_l_dci_luxe",
+            "full_name": "Renault Express Van 1.5 L dCi Luxe",
+            "brand": "Renault",
+            "model": "Express Van",
+            "field": "consumption_mixed",
+            "old_value": 6.1,
+            "new_value": 5.0
+          },
+          {
+            "id": "voyah_free_1_5_l_reev_43_kwh_awd_flagship",
+            "full_name": "Voyah Free 1.5 L Reev 43 kWh AWD Flagship",
+            "brand": "Voyah",
+            "model": "Free",
+            "field": "cv_fiscal",
+            "old_value": 8,
+            "new_value": 11
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-10-22",
       "previous_scrape": "2026-05-04T05:26:30.413500",
       "current_scrape": "2026-10-22T17:42:26.058754",

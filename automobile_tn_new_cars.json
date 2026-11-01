@@ -1,15 +1,15 @@
 {
-  "scraped_at": "2026-10-22T17:42:26.058754",
+  "scraped_at": "2026-11-01T01:15:29.292495",
   "stats": {
     "brands": 59,
-    "models": 565,
-    "trims": 565,
-    "with_price": 565,
+    "models": 564,
+    "trims": 564,
+    "with_price": 564,
     "with_discount": 0,
     "populaire": 7,
-    "nouveau": 20
+    "nouveau": 16
   },
-  "total": 565,
+  "total": 564,
   "cars": [
     {
       "id": "audi_a3_sportback_35_tfsi_tech_line",
@@ -118,7 +118,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:00.557575"
+      "scraped_at": "2026-11-01T01:04:11.510332"
     },
     {
       "id": "audi_a3_berline_35_tfsi_dynamic_edition",
@@ -227,7 +227,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:01.910529"
+      "scraped_at": "2026-11-01T01:04:12.524230"
     },
     {
       "id": "audi_q2_35_tfsi_black_limited_bva",
@@ -328,7 +328,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:02.947669"
+      "scraped_at": "2026-11-01T01:04:13.598306"
     },
     {
       "id": "audi_q3_1_4_tfsi_advanced_line_s_tronic",
@@ -444,7 +444,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:04.053480"
+      "scraped_at": "2026-11-01T01:04:14.623926"
     },
     {
       "id": "audi_q3_sportback_1_4_tfsi_s_line_s_tronic",
@@ -561,7 +561,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:05.011517"
+      "scraped_at": "2026-11-01T01:04:15.993505"
     },
     {
       "id": "audi_a5_tfsi_advanced",
@@ -673,7 +673,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:06.108160"
+      "scraped_at": "2026-11-01T01:04:17.347933"
     },
     {
       "id": "audi_a6_sportback_e_tron_100_kwh_performance",
@@ -793,7 +793,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:07.413187"
+      "scraped_at": "2026-11-01T01:04:18.782898"
     },
     {
       "id": "audi_q6_e_tron_100_kwh_quattro_s_line",
@@ -911,7 +911,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:08.688122"
+      "scraped_at": "2026-11-01T01:04:19.996709"
     },
     {
       "id": "audi_q6_sportback_e_tron_100_kwh_quattro_s_line",
@@ -1032,7 +1032,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:10.070269"
+      "scraped_at": "2026-11-01T01:04:21.061093"
     },
     {
       "id": "audi_q8_55_tfsi_quattro",
@@ -1146,7 +1146,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:11.234087"
+      "scraped_at": "2026-11-01T01:04:22.215671"
     },
     {
       "id": "avantier_avantier_c_14_kwh",
@@ -1223,7 +1223,7 @@
         "Instrumentation digitale: 8 pouces",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:31:12.283783"
+      "scraped_at": "2026-11-01T01:04:23.267487"
     },
     {
       "id": "avantier_commuter_31_kwh_lfp",
@@ -1311,7 +1311,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:13.598509"
+      "scraped_at": "2026-11-01T01:04:24.603077"
     },
     {
       "id": "baic_u5_plus_1_5_l__luxury",
@@ -1407,7 +1407,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:14.722956"
+      "scraped_at": "2026-11-01T01:04:25.801859"
     },
     {
       "id": "baic_x7_1_5_l__dct_flagship",
@@ -1527,7 +1527,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:16.102040"
+      "scraped_at": "2026-11-01T01:04:26.908023"
     },
     {
       "id": "baic_x55_1_5_l__dct_lv2_sport",
@@ -1636,7 +1636,7 @@
         "Instrumentation digitale: 10 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:17.220352"
+      "scraped_at": "2026-11-01T01:04:28.064053"
     },
     {
       "id": "baic_x55_1_5_l__dct_lv4_sport_plus",
@@ -1755,7 +1755,7 @@
         "Instrumentation digitale: 10 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:18.437010"
+      "scraped_at": "2026-11-01T01:04:29.100807"
     },
     {
       "id": "bako_bee_wave",
@@ -1823,7 +1823,7 @@
         "Climatisation: En option (+ 3242 DT)",
         "Fermeture centralisée: À distance"
       ],
-      "scraped_at": "2026-10-22T17:31:19.408138"
+      "scraped_at": "2026-11-01T01:04:30.160076"
     },
     {
       "id": "bako_bee_horizons",
@@ -1891,7 +1891,7 @@
         "Climatisation: En option (+ 3242 DT)",
         "Fermeture centralisée: À distance"
       ],
-      "scraped_at": "2026-10-22T17:31:20.761597"
+      "scraped_at": "2026-11-01T01:04:31.253625"
     },
     {
       "id": "bako_b_van_start",
@@ -1958,7 +1958,7 @@
       "equipment_functional": [
         "Climatisation: Manuelle"
       ],
-      "scraped_at": "2026-10-22T17:31:21.976949"
+      "scraped_at": "2026-11-01T01:04:32.456403"
     },
     {
       "id": "bako_b_van_wave",
@@ -2025,7 +2025,7 @@
       "equipment_functional": [
         "Climatisation: Manuelle"
       ],
-      "scraped_at": "2026-10-22T17:31:23.292891"
+      "scraped_at": "2026-11-01T01:04:33.684619"
     },
     {
       "id": "bako_b_van_horizons",
@@ -2092,7 +2092,7 @@
       "equipment_functional": [
         "Climatisation: Manuelle"
       ],
-      "scraped_at": "2026-10-22T17:31:24.638961"
+      "scraped_at": "2026-11-01T01:04:34.703043"
     },
     {
       "id": "bmw_s_rie_4_coup__420i_pack_m_pro",
@@ -2218,7 +2218,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:31:25.824171"
+      "scraped_at": "2026-11-01T01:04:35.973499"
     },
     {
       "id": "bmw_z4_sdrive_20i_pack_m",
@@ -2334,7 +2334,121 @@
         "Instrumentation digitale: Live Cockpit Professional, 10.25 pouces",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:31:26.983737"
+      "scraped_at": "2026-11-01T01:04:37.279252"
+    },
+    {
+      "id": "bmw_ix2_xdrive30_pack_m",
+      "brand": "Bmw",
+      "model": "iX2",
+      "trim": "xDrive30 Pack M",
+      "full_name": "BMW iX2 xDrive30 Pack M",
+      "url": "https://www.automobile.tn/fr/neuf/bmw/ix2/xdrive30-pack-m",
+      "price_tnd": 232900,
+      "price_original": null,
+      "discount_tnd": null,
+      "has_discount": false,
+      "engine_cc": null,
+      "cv_fiscal": 7,
+      "cv_din": 306,
+      "torque_nm": 494,
+      "top_speed_kmh": 180,
+      "acceleration_0_100": 5.6,
+      "fuel_type": "electric",
+      "consumption_mixed": null,
+      "consumption_city": null,
+      "consumption_highway": null,
+      "co2_emissions": null,
+      "fuel_tank_liters": null,
+      "transmission": "automatic",
+      "gearbox_speeds": null,
+      "drivetrain": "AWD",
+      "length_mm": 4554,
+      "width_mm": 1845,
+      "height_mm": 1560,
+      "wheelbase_mm": null,
+      "trunk_liters": 525,
+      "weight_kg": null,
+      "body_type": "SUV",
+      "doors": 5,
+      "seats": 5,
+      "warranty_years": 5,
+      "is_electric": true,
+      "is_hybrid": false,
+      "battery_kwh": 64.8,
+      "range_km": 449,
+      "is_new": false,
+      "is_populaire": false,
+      "concessionnaire": "",
+      "thumbnail": "https://catalogue.automobile.tn/big/2026/09/47457.jpg?t=1789382284",
+      "equipment_safety": [
+        "ABS",
+        "Airbags: Frontaux, Latéraux, Rideaux, Genoux, Centraux",
+        "Allumage automatique des feux",
+        "Anti-démarrage électronique",
+        "Anti-patinage: ESP, DSC",
+        "Assistance au freinage: AFU, DBC, Freinage automatique anti-collision (AEB)",
+        "Contrôle de pression des pneus",
+        "Fixations ISOFIX",
+        "Kit sécurité: Triangle de présignalisation, Trousse de premiers secours"
+      ],
+      "equipment_driving_aids": [
+        "Aide au stationnement: Radar de recul, Radar avant, Système de caméras 360, Parkassist",
+        "Assistant de feux de route",
+        "Détecteur de fatigue",
+        "Détection des piétons",
+        "Direction assistée",
+        "Limiteur de vitesse",
+        "Régulateur de vitesse: Avec fonction freinage"
+      ],
+      "equipment_exterior": [
+        "Baguettes extérieures d'encadrement des vitres: Shadow Line",
+        "Barres de toit: M Shadow Line à haute brillance",
+        "Boulons de roues protégés",
+        "Feux à LED: Feux de jour, Avant, Arrières",
+        "Jantes: En aluminium, 19'', Bi-ton",
+        "Kit carrosserie: Pack Sport M",
+        "Peinture: Métallisée",
+        "Phares: Adaptatifs, LED"
+      ],
+      "equipment_audio": [
+        "Autoradio: Commandes au volant",
+        "Connectivité: Apple Carplay, Bluetooth, Chargeur de téléphone sans fil",
+        "Ecran central: Tactile, 10.7 pouces, Curved Display",
+        "Services connectés: eSim, Teleservices, Connected+ Unlimited"
+      ],
+      "equipment_interior": [
+        "Accoudoirs: Avant",
+        "Ciel de pavillon: M anthracite",
+        "Finition intérieure: Noir brillant",
+        "Kit rangement",
+        "Sellerie: Alcantara, Surpiqûre contrastée Bleue, Veganza",
+        "Sièges: Électriques, Fonction mémoire, Sport",
+        "Sièges réglables en hauteur: Conducteur et passager",
+        "Tapis de sol: Velours",
+        "Tableau de bord: Luxury",
+        "Toit: Panoramique, En verre",
+        "Vitres: Calorifuges, Acoustiques",
+        "Volant: Cuir, Multi-fonctions, M, Sport, Avec palettes",
+        "Volant réglable: En hauteur et en profondeur"
+      ],
+      "equipment_functional": [
+        "Affichage tête haute",
+        "Alimentation électrique: 1 prise 12 V",
+        "Bouton Start & Stop: Démarrage mains libres",
+        "Clé intelligente: Accès mains libres",
+        "Climatisation: Automatique",
+        "Détecteur de pluie",
+        "Fermeture centralisée: À distance",
+        "Frein de stationnement: Éléctrique",
+        "Ordinateur de bord",
+        "Rétroviseurs extérieurs: Électriques, Rabattables, Mémoire de position",
+        "Rétroviseur intérieur: Anti-éblouissement",
+        "Instrumentation digitale: 10.25 pouces, BMW Live Plus",
+        "Suspension: Adaptative",
+        "Version pays chauds",
+        "Vitres électriques: Avant/Arrière"
+      ],
+      "scraped_at": "2026-11-01T01:04:38.548418"
     },
     {
       "id": "bmw_ix3_50_xdrive_pack_m_pro",
@@ -2379,7 +2493,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "thumbnail": "https://catalogue.automobile.tn/big/2026/09/47667.jpg?t=1789382325",
+      "thumbnail": "https://catalogue.automobile.tn/big/2026/09/47667.jpg?t=1792762392",
       "equipment_safety": [
         "ABS",
         "Airbags: Frontaux, Latéraux, Rideaux, Genoux, Centraux",
@@ -2444,6 +2558,7 @@
         "Affichage tête haute: Avec réalité augmentée",
         "Alimentation électrique: 1 prise 12 V",
         "Bouton Start & Stop: Démarrage mains libres",
+        "Caméra d'enregistrement de conduite",
         "Clé intelligente: Accès mains libres, Digital Key Card",
         "Coffre à bagages: Ouverture et fermeture motorisées, Ouverture à distance",
         "Climatisation: Automatique, 3 zones, Ventilation arrière",
@@ -2460,7 +2575,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:28.499947"
+      "scraped_at": "2026-11-01T01:04:40.095007"
     },
     {
       "id": "bmw_x5_hybride_50e_x_drive_pack_m",
@@ -2596,7 +2711,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:29.618459"
+      "scraped_at": "2026-11-01T01:04:41.212944"
     },
     {
       "id": "bmw_s_rie_1_118_lounge",
@@ -2712,7 +2827,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:30.841661"
+      "scraped_at": "2026-11-01T01:04:42.560893"
     },
     {
       "id": "bmw_s_rie_1_118_pack_m",
@@ -2721,7 +2836,7 @@
       "trim": "118 Pack M",
       "full_name": "BMW Série 1 118 Pack M",
       "url": "https://www.automobile.tn/fr/neuf/bmw/serie-1-5p/118i-pack-m",
-      "price_tnd": 164900,
+      "price_tnd": 187900,
       "price_original": null,
       "discount_tnd": null,
       "has_discount": false,
@@ -2757,7 +2872,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "thumbnail": "https://catalogue.automobile.tn/big/2026/09/47351.jpg?t=1789983316",
+      "thumbnail": "https://catalogue.automobile.tn/big/2026/09/47351.jpg?t=1793341164",
       "equipment_safety": [
         "ABS",
         "Airbags: Frontaux, Latéraux, Rideaux",
@@ -2833,7 +2948,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:32.190728"
+      "scraped_at": "2026-11-01T01:04:43.679565"
     },
     {
       "id": "bmw_s_rie_2_gran_coup__218_collection_edition_sp_ciale",
@@ -2945,7 +3060,7 @@
         "Instrumentation digitale: 10.25 pouces, BMW Live Plus",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:33.418964"
+      "scraped_at": "2026-11-01T01:04:44.697413"
     },
     {
       "id": "bmw_s_rie_2_gran_coup__218_business_line",
@@ -3058,7 +3173,7 @@
         "Instrumentation digitale: 10.25 pouces, BMW Live Plus",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:34.627735"
+      "scraped_at": "2026-11-01T01:04:45.890507"
     },
     {
       "id": "bmw_s_rie_2_gran_coup__218_pack_m_pro",
@@ -3182,7 +3297,7 @@
         "Instrumentation digitale: Live Cockpit Professional, 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:35.663467"
+      "scraped_at": "2026-11-01T01:04:47.074452"
     },
     {
       "id": "bmw_s_rie_3_320i_business_line",
@@ -3298,7 +3413,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:36.706936"
+      "scraped_at": "2026-11-01T01:04:48.227428"
     },
     {
       "id": "bmw_s_rie_3_320i_pack_m",
@@ -3423,7 +3538,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:37.987494"
+      "scraped_at": "2026-11-01T01:04:49.213468"
     },
     {
       "id": "bmw_s_rie_3_320i_lounge",
@@ -3543,7 +3658,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:39.358563"
+      "scraped_at": "2026-11-01T01:04:50.413180"
     },
     {
       "id": "bmw_s_rie_3_320i_pack_m_pro",
@@ -3669,7 +3784,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:40.935553"
+      "scraped_at": "2026-11-01T01:04:51.460650"
     },
     {
       "id": "bmw_s_rie_3_hybride_330e_lounge",
@@ -3714,7 +3829,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "thumbnail": "https://catalogue.automobile.tn/big/2026/09/47499.jpg?t=1789382528",
+      "thumbnail": "https://catalogue.automobile.tn/big/2026/09/47499.jpg?t=1792762318",
       "equipment_safety": [
         "ABS",
         "Airbags: Frontaux, Latéraux, Rideaux",
@@ -3788,7 +3903,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:41.881999"
+      "scraped_at": "2026-11-01T01:04:52.654106"
     },
     {
       "id": "bmw_s_rie_3_hybride_330e_pack_m",
@@ -3913,7 +4028,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:43.040715"
+      "scraped_at": "2026-11-01T01:04:53.750676"
     },
     {
       "id": "bmw_s_rie_3_hybride_330e_pack_m_pro",
@@ -4041,7 +4156,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:44.179405"
+      "scraped_at": "2026-11-01T01:04:54.815617"
     },
     {
       "id": "bmw_s_rie_4_gran_coup__420i_business_line",
@@ -4160,7 +4275,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:45.351861"
+      "scraped_at": "2026-11-01T01:04:56.125284"
     },
     {
       "id": "bmw_s_rie_4_gran_coup__420i_pack_m",
@@ -4286,7 +4401,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:46.463960"
+      "scraped_at": "2026-11-01T01:04:57.333125"
     },
     {
       "id": "bmw_i4_edrive40_pack_m",
@@ -4408,7 +4523,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:47.796552"
+      "scraped_at": "2026-11-01T01:04:58.358900"
     },
     {
       "id": "bmw_i4_edrive40__business_line",
@@ -4453,7 +4568,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "thumbnail": "https://catalogue.automobile.tn/big/2026/09/47456.jpg?t=1790240593",
+      "thumbnail": "https://catalogue.automobile.tn/big/2026/09/47456.jpg?t=1792762420",
       "equipment_safety": [
         "ABS",
         "Airbags: Frontaux, Latéraux, Rideaux",
@@ -4483,7 +4598,7 @@
         "Feux à LED: Feux de jour, Avant, Arrières",
         "Jantes: En aluminium, 18'', Bi-ton",
         "Peinture: Métallisée",
-        "Phares: LED"
+        "Phares: Adaptatifs, LED"
       ],
       "equipment_audio": [
         "Autoradio: Commandes au volant",
@@ -4524,7 +4639,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:48.807246"
+      "scraped_at": "2026-11-01T01:04:59.660189"
     },
     {
       "id": "bmw_i4_edrive40_pack_m_pro",
@@ -4647,7 +4762,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:49.908693"
+      "scraped_at": "2026-11-01T01:05:00.720514"
     },
     {
       "id": "bmw_s_rie_5_520i_lounge",
@@ -4766,7 +4881,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:51.268085"
+      "scraped_at": "2026-11-01T01:05:02.043226"
     },
     {
       "id": "bmw_s_rie_5_520i_pack_m__",
@@ -4890,7 +5005,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:52.668058"
+      "scraped_at": "2026-11-01T01:05:03.121583"
     },
     {
       "id": "bmw_s_rie_5_hybride_530e_lounge",
@@ -5011,7 +5126,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:53.792123"
+      "scraped_at": "2026-11-01T01:05:04.287545"
     },
     {
       "id": "bmw_s_rie_5_hybride_530e_pack_m",
@@ -5137,7 +5252,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:54.926916"
+      "scraped_at": "2026-11-01T01:05:05.579819"
     },
     {
       "id": "bmw_s_rie_5_hybride_530e_pack_m__",
@@ -5263,7 +5378,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:56.241044"
+      "scraped_at": "2026-11-01T01:05:06.944953"
     },
     {
       "id": "bmw_s_rie_5_hybride_530e_pack_m_pro",
@@ -5392,7 +5507,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:57.384200"
+      "scraped_at": "2026-11-01T01:05:07.958346"
     },
     {
       "id": "bmw_i5_edrive40_pack_m__",
@@ -5518,7 +5633,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:31:58.688867"
+      "scraped_at": "2026-11-01T01:05:09.127675"
     },
     {
       "id": "bmw_i5_edrive40_lounge",
@@ -5638,7 +5753,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:00.040419"
+      "scraped_at": "2026-11-01T01:05:10.245765"
     },
     {
       "id": "bmw_i5_edrive40_pack_m",
@@ -5763,116 +5878,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:01.271949"
-    },
-    {
-      "id": "bmw_x1_18i_sdrive_collection__edition_sp_ciale_",
-      "brand": "Bmw",
-      "model": "X1",
-      "trim": "18i sDrive Collection \"Edition Spéciale\"",
-      "full_name": "BMW X1 18i sDrive Collection \"Edition Spéciale\"",
-      "url": "https://www.automobile.tn/fr/neuf/bmw/x1/18i-sdrive-collection-edition-speciale",
-      "price_tnd": 169900,
-      "price_original": null,
-      "discount_tnd": null,
-      "has_discount": false,
-      "engine_cc": 1499,
-      "cv_fiscal": 9,
-      "cv_din": 156,
-      "torque_nm": 240,
-      "top_speed_kmh": 221,
-      "acceleration_0_100": 9.0,
-      "fuel_type": "essence",
-      "consumption_mixed": 5.9,
-      "consumption_city": 7.1,
-      "consumption_highway": 5.2,
-      "co2_emissions": null,
-      "fuel_tank_liters": null,
-      "transmission": "automatic",
-      "gearbox_speeds": null,
-      "drivetrain": "FWD",
-      "length_mm": 4500,
-      "width_mm": 1845,
-      "height_mm": 1642,
-      "wheelbase_mm": null,
-      "trunk_liters": 540,
-      "weight_kg": null,
-      "body_type": "SUV",
-      "doors": 5,
-      "seats": 5,
-      "warranty_years": 5,
-      "is_electric": false,
-      "is_hybrid": false,
-      "battery_kwh": null,
-      "range_km": null,
-      "is_new": false,
-      "is_populaire": false,
-      "concessionnaire": "",
-      "thumbnail": "https://catalogue.automobile.tn/big/2025/09/47434.jpg?t=1775567934",
-      "equipment_safety": [
-        "ABS",
-        "Airbags: Frontaux, Latéraux, Rideaux",
-        "Alerte de franchissement de ligne",
-        "Alerte de risque de collision: FCW",
-        "Allumage automatique des feux",
-        "Anti-démarrage électronique",
-        "Anti-patinage: TCS, DSC",
-        "Fixations ISOFIX",
-        "Kit sécurité: Triangle de présignalisation"
-      ],
-      "equipment_driving_aids": [
-        "Aide au démarrage en côte: Autohold",
-        "Aide au stationnement: Radar de recul, Radar avant, Caméra de recul, Parkassist",
-        "Assistant de feux de route",
-        "Détecteur de fatigue",
-        "Direction assistée",
-        "Régulateur de vitesse"
-      ],
-      "equipment_exterior": [
-        "Baguettes extérieures d'encadrement des vitres: Noir Brillant",
-        "Barres de toit: Alu satiné",
-        "Boulons de roues protégés",
-        "Feux à LED: Feux de jour, Avant, Arrières",
-        "Jantes: En aluminium, 17''",
-        "Peinture: Métallisée, +5000 DT",
-        "Phares: Adaptatifs, LED"
-      ],
-      "equipment_audio": [
-        "Autoradio: Commandes au volant",
-        "Connectivité: Apple Carplay, Bluetooth, Chargeur de téléphone sans fil",
-        "Ecran central: Tactile, 10.7 pouces, Curved Display"
-      ],
-      "equipment_interior": [
-        "Accoudoirs: Avant",
-        "Appuis têtes arrières: 3",
-        "Finition intérieure: Noir brillant",
-        "Kit rangement",
-        "Lumières d'ambiance",
-        "Sellerie: Tissu, Arktur anthrazit",
-        "Sièges réglables en hauteur: Conducteur et passager",
-        "Tapis de sol: Velours",
-        "Vitres: Lunette et vitres arrières sur-teintées, Calorifuges",
-        "Volant: Cuir, Multi-fonctions",
-        "Volant réglable: En hauteur et en profondeur"
-      ],
-      "equipment_functional": [
-        "Clé intelligente: Accès mains libres",
-        "Coffre à bagages: Ouverture et fermeture motorisées",
-        "Climatisation: Automatique",
-        "Détecteur de pluie",
-        "Fermeture centralisée: À distance",
-        "Frein de stationnement: Éléctrique",
-        "Modes de conduite: Sport, Personal, Efficient",
-        "Ordinateur de bord",
-        "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants",
-        "Rétroviseur intérieur: Anti-éblouissement",
-        "Préparation pour téléphone",
-        "Système Start & Stop",
-        "Instrumentation digitale: 10.25 pouces, BMW Live Plus",
-        "Version pays chauds",
-        "Vitres électriques: Avant/Arrière"
-      ],
-      "scraped_at": "2026-10-22T17:32:02.604094"
+      "scraped_at": "2026-11-01T01:05:11.522629"
     },
     {
       "id": "bmw_x1_18i_sdrive_lounge",
@@ -5987,7 +5993,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:03.824469"
+      "scraped_at": "2026-11-01T01:05:12.687153"
     },
     {
       "id": "bmw_x1_18i_sdrive_xline",
@@ -6106,7 +6112,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:05.030899"
+      "scraped_at": "2026-11-01T01:05:13.829879"
     },
     {
       "id": "bmw_x1_18i_sdrive_pack_sport_m",
@@ -6227,7 +6233,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:06.437016"
+      "scraped_at": "2026-11-01T01:05:15.151976"
     },
     {
       "id": "bmw_x1_hybride_xdrive_25e_lounge",
@@ -6342,7 +6348,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:07.782465"
+      "scraped_at": "2026-11-01T01:05:16.317247"
     },
     {
       "id": "bmw_x1_hybride_xdrive_25e_xline",
@@ -6461,7 +6467,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:08.895692"
+      "scraped_at": "2026-11-01T01:05:17.447529"
     },
     {
       "id": "bmw_x1_hybride_xdrive_25e_pack_m",
@@ -6582,7 +6588,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:10.221689"
+      "scraped_at": "2026-11-01T01:05:18.576213"
     },
     {
       "id": "bmw_x1_hybride_xdrive_30e_pack_m",
@@ -6703,7 +6709,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:11.610686"
+      "scraped_at": "2026-11-01T01:05:19.581972"
     },
     {
       "id": "bmw_x2_18i_sdrive__collection",
@@ -6816,7 +6822,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:12.942056"
+      "scraped_at": "2026-11-01T01:05:20.815151"
     },
     {
       "id": "bmw_x2_18i_sdrive__pack_m",
@@ -6941,239 +6947,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:14.126310"
-    },
-    {
-      "id": "bmw_ix2_xdrive30_pack_m",
-      "brand": "Bmw",
-      "model": "iX2",
-      "trim": "xDrive30 Pack M",
-      "full_name": "BMW iX2 xDrive30 Pack M",
-      "url": "https://www.automobile.tn/fr/neuf/bmw/ix2/xdrive30-pack-m",
-      "price_tnd": 232900,
-      "price_original": null,
-      "discount_tnd": null,
-      "has_discount": false,
-      "engine_cc": null,
-      "cv_fiscal": 7,
-      "cv_din": 306,
-      "torque_nm": 494,
-      "top_speed_kmh": 180,
-      "acceleration_0_100": 5.6,
-      "fuel_type": "electric",
-      "consumption_mixed": null,
-      "consumption_city": null,
-      "consumption_highway": null,
-      "co2_emissions": null,
-      "fuel_tank_liters": null,
-      "transmission": "automatic",
-      "gearbox_speeds": null,
-      "drivetrain": "AWD",
-      "length_mm": 4554,
-      "width_mm": 1845,
-      "height_mm": 1560,
-      "wheelbase_mm": null,
-      "trunk_liters": 525,
-      "weight_kg": null,
-      "body_type": "SUV",
-      "doors": 5,
-      "seats": 5,
-      "warranty_years": 5,
-      "is_electric": true,
-      "is_hybrid": false,
-      "battery_kwh": 64.8,
-      "range_km": 449,
-      "is_new": false,
-      "is_populaire": false,
-      "concessionnaire": "",
-      "thumbnail": "https://catalogue.automobile.tn/big/2026/09/47457.jpg?t=1789382284",
-      "equipment_safety": [
-        "ABS",
-        "Airbags: Frontaux, Latéraux, Rideaux, Genoux, Centraux",
-        "Allumage automatique des feux",
-        "Anti-démarrage électronique",
-        "Anti-patinage: ESP, DSC",
-        "Assistance au freinage: AFU, DBC, Freinage automatique anti-collision (AEB)",
-        "Contrôle de pression des pneus",
-        "Fixations ISOFIX",
-        "Kit sécurité: Triangle de présignalisation, Trousse de premiers secours"
-      ],
-      "equipment_driving_aids": [
-        "Aide au stationnement: Radar de recul, Radar avant, Système de caméras 360, Parkassist",
-        "Assistant de feux de route",
-        "Détecteur de fatigue",
-        "Détection des piétons",
-        "Direction assistée",
-        "Limiteur de vitesse",
-        "Régulateur de vitesse: Avec fonction freinage"
-      ],
-      "equipment_exterior": [
-        "Baguettes extérieures d'encadrement des vitres: Shadow Line",
-        "Barres de toit: M Shadow Line à haute brillance",
-        "Boulons de roues protégés",
-        "Feux à LED: Feux de jour, Avant, Arrières",
-        "Jantes: En aluminium, 19'', Bi-ton",
-        "Kit carrosserie: Pack Sport M",
-        "Peinture: Métallisée",
-        "Phares: Adaptatifs, LED"
-      ],
-      "equipment_audio": [
-        "Autoradio: Commandes au volant",
-        "Connectivité: Apple Carplay, Bluetooth, Chargeur de téléphone sans fil",
-        "Ecran central: Tactile, 10.7 pouces, Curved Display",
-        "Services connectés: eSim, Teleservices, Connected+ Unlimited"
-      ],
-      "equipment_interior": [
-        "Accoudoirs: Avant",
-        "Ciel de pavillon: M anthracite",
-        "Finition intérieure: Noir brillant",
-        "Kit rangement",
-        "Sellerie: Alcantara, Surpiqûre contrastée Bleue, Veganza",
-        "Sièges: Électriques, Fonction mémoire, Sport",
-        "Sièges réglables en hauteur: Conducteur et passager",
-        "Tapis de sol: Velours",
-        "Tableau de bord: Luxury",
-        "Toit: Panoramique, En verre",
-        "Vitres: Calorifuges, Acoustiques",
-        "Volant: Cuir, Multi-fonctions, M, Sport, Avec palettes",
-        "Volant réglable: En hauteur et en profondeur"
-      ],
-      "equipment_functional": [
-        "Affichage tête haute",
-        "Alimentation électrique: 1 prise 12 V",
-        "Bouton Start & Stop: Démarrage mains libres",
-        "Clé intelligente: Accès mains libres",
-        "Climatisation: Automatique",
-        "Détecteur de pluie",
-        "Fermeture centralisée: À distance",
-        "Frein de stationnement: Éléctrique",
-        "Ordinateur de bord",
-        "Rétroviseurs extérieurs: Électriques, Rabattables, Mémoire de position",
-        "Rétroviseur intérieur: Anti-éblouissement",
-        "Instrumentation digitale: 10.25 pouces, BMW Live Plus",
-        "Suspension: Adaptative",
-        "Version pays chauds",
-        "Vitres électriques: Avant/Arrière"
-      ],
-      "scraped_at": "2026-10-22T17:32:15.444980"
-    },
-    {
-      "id": "bmw_ix2_xdrive30_pack_m_pro",
-      "brand": "Bmw",
-      "model": "iX2",
-      "trim": "xDrive30 Pack M Pro",
-      "full_name": "BMW iX2 xDrive30 Pack M Pro",
-      "url": "https://www.automobile.tn/fr/neuf/bmw/ix2/xdrive30-pack-m-pro",
-      "price_tnd": 246900,
-      "price_original": null,
-      "discount_tnd": null,
-      "has_discount": false,
-      "engine_cc": null,
-      "cv_fiscal": 7,
-      "cv_din": 306,
-      "torque_nm": 494,
-      "top_speed_kmh": 180,
-      "acceleration_0_100": 5.6,
-      "fuel_type": "electric",
-      "consumption_mixed": null,
-      "consumption_city": null,
-      "consumption_highway": null,
-      "co2_emissions": null,
-      "fuel_tank_liters": null,
-      "transmission": "automatic",
-      "gearbox_speeds": null,
-      "drivetrain": "AWD",
-      "length_mm": 4554,
-      "width_mm": 1845,
-      "height_mm": 1560,
-      "wheelbase_mm": null,
-      "trunk_liters": 525,
-      "weight_kg": null,
-      "body_type": "SUV",
-      "doors": 5,
-      "seats": 5,
-      "warranty_years": 5,
-      "is_electric": true,
-      "is_hybrid": false,
-      "battery_kwh": 64.8,
-      "range_km": 449,
-      "is_new": false,
-      "is_populaire": false,
-      "concessionnaire": "",
-      "thumbnail": "https://catalogue.automobile.tn/big/2026/09/47290.jpg?t=1789382296",
-      "equipment_safety": [
-        "ABS",
-        "Airbags: Frontaux, Latéraux, Rideaux, Genoux, Centraux",
-        "Allumage automatique des feux",
-        "Anti-démarrage électronique",
-        "Anti-patinage: ESP, DSC",
-        "Assistance au freinage: AFU, DBC, Freinage automatique anti-collision (AEB)",
-        "Contrôle de pression des pneus",
-        "Fixations ISOFIX",
-        "Kit sécurité: Triangle de présignalisation, Trousse de premiers secours"
-      ],
-      "equipment_driving_aids": [
-        "Aide au stationnement: Radar de recul, Radar avant, Système de caméras 360, Parkassist",
-        "Assistant de feux de route",
-        "Détecteur de fatigue",
-        "Détection des piétons",
-        "Direction assistée",
-        "Limiteur de vitesse",
-        "Régulateur de vitesse: Avec fonction freinage"
-      ],
-      "equipment_exterior": [
-        "Baguettes extérieures d'encadrement des vitres: Shadow Line",
-        "Calandre: BMW Iconic Glow",
-        "Barres de toit: M Shadow Line à haute brillance",
-        "Boulons de roues protégés",
-        "Feux à LED: Feux de jour, Avant, Arrières",
-        "Jantes: En aluminium, 20'', Bi-ton",
-        "Kit carrosserie: Pack Sport M",
-        "Peinture: Métallisée",
-        "Phares: Adaptatifs, LED, Shadow Line M",
-        "Spoiler arrière"
-      ],
-      "equipment_audio": [
-        "Autoradio: Commandes au volant",
-        "Connectivité: Apple Carplay, Bluetooth, Chargeur de téléphone sans fil",
-        "Ecran central: Tactile, 10.7 pouces, Curved Display",
-        "Services connectés: eSim, Teleservices, Connected+ Unlimited"
-      ],
-      "equipment_interior": [
-        "Accoudoirs: Avant",
-        "Ciel de pavillon: M anthracite",
-        "Finition intérieure: M Aluminium Hexacube",
-        "Kit rangement",
-        "Sellerie: Alcantara, Surpiqûre contrastée Bleue, Veganza",
-        "Sièges: Électriques, Fonction mémoire, Sport",
-        "Sièges réglables en hauteur: Conducteur et passager",
-        "Tapis de sol: Velours",
-        "Tableau de bord: Luxury",
-        "Toit: Panoramique, En verre",
-        "Vitres: Calorifuges, Acoustiques",
-        "Volant: Cuir, Multi-fonctions, M, Sport, Avec palettes",
-        "Volant réglable: En hauteur et en profondeur"
-      ],
-      "equipment_functional": [
-        "Affichage tête haute",
-        "Alimentation électrique: 1 prise 12 V",
-        "Bouton Start & Stop: Démarrage mains libres",
-        "Clé intelligente: Accès mains libres",
-        "Climatisation: Automatique",
-        "Détecteur de pluie",
-        "Freinage: Étriers rouges",
-        "Fermeture centralisée: À distance",
-        "Frein de stationnement: Éléctrique",
-        "Ordinateur de bord",
-        "Rétroviseurs extérieurs: Électriques, Rabattables, Mémoire de position",
-        "Rétroviseur intérieur: Anti-éblouissement",
-        "Train roulant: Sport M, Régulation adaptative",
-        "Instrumentation digitale: Live Cockpit Professional, 10.25 pouces",
-        "Suspension: Adaptative",
-        "Version pays chauds",
-        "Vitres électriques: Avant/Arrière"
-      ],
-      "scraped_at": "2026-10-22T17:32:16.685575"
+      "scraped_at": "2026-11-01T01:05:22.352426"
     },
     {
       "id": "bmw_x3_hybride_xdrive_30e_pack_m",
@@ -7299,7 +7073,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:18.045742"
+      "scraped_at": "2026-11-01T01:05:23.581993"
     },
     {
       "id": "bmw_x3_hybride_xdrive_30e_pack_m_pro",
@@ -7429,7 +7203,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:19.112563"
+      "scraped_at": "2026-11-01T01:05:24.862999"
     },
     {
       "id": "byd_dolphin_44_9_kwh",
@@ -7529,7 +7303,7 @@
         "Instrumentation digitale: 5 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:20.137334"
+      "scraped_at": "2026-11-01T01:05:26.175490"
     },
     {
       "id": "byd_atto_3_60_48_kwh",
@@ -7640,7 +7414,7 @@
         "Instrumentation digitale: 5 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:21.239809"
+      "scraped_at": "2026-11-01T01:05:27.460249"
     },
     {
       "id": "byd_song_plus_1_5_l_dm_i",
@@ -7751,7 +7525,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:22.700077"
+      "scraped_at": "2026-11-01T01:05:28.602485"
     },
     {
       "id": "byd_tang_ev_108_8_kwh",
@@ -7873,7 +7647,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:23.974803"
+      "scraped_at": "2026-11-01T01:05:29.611143"
     },
     {
       "id": "byd_dolphin_surf_30_08_kwh",
@@ -7975,7 +7749,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:25.214241"
+      "scraped_at": "2026-11-01T01:05:30.810441"
     },
     {
       "id": "byd_dolphin_surf_38_88_kwh",
@@ -8078,7 +7852,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:26.468439"
+      "scraped_at": "2026-11-01T01:05:32.149247"
     },
     {
       "id": "cenntro_logistar_100_16_kwh",
@@ -8155,7 +7929,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:32:27.629354"
+      "scraped_at": "2026-11-01T01:05:33.206907"
     },
     {
       "id": "cenntro_logistar_210_pickup_41_85_kwh",
@@ -8226,7 +8000,7 @@
         "Ordinateur de bord",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:32:28.807573"
+      "scraped_at": "2026-11-01T01:05:34.345035"
     },
     {
       "id": "cenntro_logistar_210_41_85_kwh",
@@ -8304,7 +8078,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:32:30.094011"
+      "scraped_at": "2026-11-01T01:05:35.798472"
     },
     {
       "id": "cenntro_logistar_260_43_5_kwh",
@@ -8384,7 +8158,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:32:31.435418"
+      "scraped_at": "2026-11-01T01:05:36.998894"
     },
     {
       "id": "changan_new_star_van_1_2_l",
@@ -8455,7 +8229,7 @@
         "Fermeture centralisée: À distance",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:32:32.794341"
+      "scraped_at": "2026-11-01T01:05:38.048482"
     },
     {
       "id": "changan_star_truck_double_cabine_1_2_l",
@@ -8523,7 +8297,7 @@
         "Fermeture centralisée",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:32:34.123576"
+      "scraped_at": "2026-11-01T01:05:39.382021"
     },
     {
       "id": "changan_hunter_1_9_l_turbo_diesel_4x4",
@@ -8625,7 +8399,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:35.280688"
+      "scraped_at": "2026-11-01T01:05:40.495595"
     },
     {
       "id": "chery_tiggo_1x_populaire_1_0_l_turbo_cvt",
@@ -8720,7 +8494,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:36.688141"
+      "scraped_at": "2026-11-01T01:05:41.881780"
     },
     {
       "id": "chery_tiggo_2_pro_max_1_0_t_cvt",
@@ -8822,7 +8596,7 @@
         "Rétroviseurs extérieurs: Électriques, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:37.964293"
+      "scraped_at": "2026-11-01T01:05:42.806113"
     },
     {
       "id": "chery_tiggo_4_hev_1_5_l",
@@ -8931,7 +8705,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:39.059152"
+      "scraped_at": "2026-11-01T01:05:44.192654"
     },
     {
       "id": "chery_tiggo_7_phev_1_5_t_dht_hybrid",
@@ -9047,7 +8821,7 @@
         "Instrumentation digitale: 12.3 pouces, Ecran incurvé",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:40.174284"
+      "scraped_at": "2026-11-01T01:05:45.457435"
     },
     {
       "id": "chery_tiggo_8_phev_1_5_t_dht",
@@ -9164,7 +8938,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:41.361565"
+      "scraped_at": "2026-11-01T01:05:46.580522"
     },
     {
       "id": "chery_arrizo_8_phev_1_5_t_dht",
@@ -9280,7 +9054,7 @@
         "Instrumentation digitale: 12 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:42.522738"
+      "scraped_at": "2026-11-01T01:05:47.693450"
     },
     {
       "id": "chery_arrizo_8_1_6_t_gdi_luxury_bva",
@@ -9383,7 +9157,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:43.957090"
+      "scraped_at": "2026-11-01T01:05:48.994581"
     },
     {
       "id": "chery_tiggo_9_phev_1_5_t_dht_awd",
@@ -9502,7 +9276,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:45.021871"
+      "scraped_at": "2026-11-01T01:05:50.324148"
     },
     {
       "id": "chery_i03_65_7_kwh_4x2",
@@ -9614,7 +9388,7 @@
         "Instrumentation digitale: 9.2 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:46.142542"
+      "scraped_at": "2026-11-01T01:05:51.553317"
     },
     {
       "id": "chery_i03_69_77_kwh_4x4",
@@ -9729,7 +9503,7 @@
         "Instrumentation digitale: 9.2 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:47.516450"
+      "scraped_at": "2026-11-01T01:05:52.945975"
     },
     {
       "id": "chery_himla_2_3_l_turbo_4x2",
@@ -9822,7 +9596,7 @@
         "Instrumentation digitale: 9.2 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:48.751114"
+      "scraped_at": "2026-11-01T01:05:54.043807"
     },
     {
       "id": "chery_himla_2_3_l_turbo_4x4",
@@ -9915,7 +9689,7 @@
         "Rétroviseurs extérieurs: Électriques, Dégivrants",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:49.895799"
+      "scraped_at": "2026-11-01T01:05:55.375016"
     },
     {
       "id": "chery_himla_2_3_l_turbo_4x4_bva",
@@ -10013,7 +9787,7 @@
         "Instrumentation digitale: 9.2 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:51.103278"
+      "scraped_at": "2026-11-01T01:05:56.484943"
     },
     {
       "id": "chevrolet_spark_euv_42_kwh",
@@ -10107,7 +9881,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:52.510187"
+      "scraped_at": "2026-11-01T01:05:57.526431"
     },
     {
       "id": "chevrolet_captiva_ev_60_kwh",
@@ -10218,7 +9992,7 @@
         "Instrumentation digitale: 8.8 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:53.685229"
+      "scraped_at": "2026-11-01T01:05:58.642773"
     },
     {
       "id": "chevrolet_groove_1_5_l_lt",
@@ -10304,7 +10078,7 @@
         "Rétroviseurs extérieurs: Électriques, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:54.855357"
+      "scraped_at": "2026-11-01T01:05:59.878382"
     },
     {
       "id": "chevrolet_groove_1_5_turbo_rs",
@@ -10399,7 +10173,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:56.101459"
+      "scraped_at": "2026-11-01T01:06:00.968309"
     },
     {
       "id": "chevrolet_captiva_1_5_turbo_cvt_5_places",
@@ -10498,7 +10272,7 @@
         "Rétroviseurs extérieurs: Électriques, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:57.257689"
+      "scraped_at": "2026-11-01T01:06:02.077264"
     },
     {
       "id": "chevrolet_captiva_1_5_turbo_cvt_7_places",
@@ -10597,7 +10371,7 @@
         "Rétroviseurs extérieurs: Électriques, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:32:58.624746"
+      "scraped_at": "2026-11-01T01:06:03.415110"
     },
     {
       "id": "citroen_c3_populaire_1_2_l_you",
@@ -10687,7 +10461,7 @@
         "Suspension: Citroën Advanced Comfort",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:33:00.093780"
+      "scraped_at": "2026-11-01T01:06:04.696388"
     },
     {
       "id": "citroen_c3_1_2_l_plus",
@@ -10784,7 +10558,7 @@
         "Suspension: Citroën Advanced Comfort",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:01.009768"
+      "scraped_at": "2026-11-01T01:06:05.889454"
     },
     {
       "id": "citroen_berlingo_1_6_l_hdi_you",
@@ -10867,7 +10641,7 @@
         "Rétroviseurs extérieurs: Électriques, Dégivrants",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:33:02.250387"
+      "scraped_at": "2026-11-01T01:06:06.997074"
     },
     {
       "id": "citroen_jumpy_combi_2_0_l_hdi_9_places",
@@ -10951,7 +10725,7 @@
         "Rétroviseurs extérieurs: Électriques, Dégivrants",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:33:03.483603"
+      "scraped_at": "2026-11-01T01:06:08.345122"
     },
     {
       "id": "citroen_berlingo_van_1_6_l_hdi_630_kg_pro_edition_3_places",
@@ -11043,7 +10817,7 @@
         "Rétroviseurs extérieurs: Électriques, Dégivrants",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:33:04.844194"
+      "scraped_at": "2026-11-01T01:06:09.459016"
     },
     {
       "id": "citroen_jumpy_fourgon_2_0_l_hdi",
@@ -11121,7 +10895,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:33:06.221787"
+      "scraped_at": "2026-11-01T01:06:10.539070"
     },
     {
       "id": "citroen_c4_x_1_2_l__plus_eat8",
@@ -11214,7 +10988,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants, Noirs, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:07.585174"
+      "scraped_at": "2026-11-01T01:06:11.673951"
     },
     {
       "id": "citroen_c4_x_1_2_l__max_eat8",
@@ -11311,7 +11085,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants, Noirs, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:08.847311"
+      "scraped_at": "2026-11-01T01:06:12.858000"
     },
     {
       "id": "citroen_c4_x_1_2_l__max___eat8",
@@ -11409,7 +11183,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:10.042581"
+      "scraped_at": "2026-11-01T01:06:14.030363"
     },
     {
       "id": "citroen_jumper_2_2_l_hdi__l2h2_11_5m3",
@@ -11489,7 +11263,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:33:11.182257"
+      "scraped_at": "2026-11-01T01:06:15.138378"
     },
     {
       "id": "citroen_jumper_2_2_l_hdi__l3h3_15m3",
@@ -11569,7 +11343,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:33:12.463764"
+      "scraped_at": "2026-11-01T01:06:16.143759"
     },
     {
       "id": "cupra_formentor_hybride_1_5_dsg",
@@ -11676,7 +11450,7 @@
         "Instrumentation digitale: Digital Cockpit",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:13.483703"
+      "scraped_at": "2026-11-01T01:06:17.338857"
     },
     {
       "id": "cupra_terramar_vz_hybride_1_5_tsi_phev",
@@ -11793,7 +11567,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:14.530249"
+      "scraped_at": "2026-11-01T01:06:18.640081"
     },
     {
       "id": "cupra_leon_1_4_tsi",
@@ -11902,7 +11676,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:15.559301"
+      "scraped_at": "2026-11-01T01:06:19.836382"
     },
     {
       "id": "cupra_leon_1_4_tsi_sport",
@@ -12011,7 +11785,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:16.904662"
+      "scraped_at": "2026-11-01T01:06:21.035070"
     },
     {
       "id": "cupra_terramar_1_4_tsi",
@@ -12122,7 +11896,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:17.970845"
+      "scraped_at": "2026-11-01T01:06:22.396450"
     },
     {
       "id": "cupra_terramar_1_4_tsi_sport",
@@ -12233,7 +12007,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:19.184487"
+      "scraped_at": "2026-11-01T01:06:23.589316"
     },
     {
       "id": "dacia_sandero_1_0_l_tce",
@@ -12306,7 +12080,7 @@
         "Fermeture centralisée: À distance",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:33:20.066138"
+      "scraped_at": "2026-11-01T01:06:24.820716"
     },
     {
       "id": "dacia_logan_1_0_l_tce__cran_tactile",
@@ -12380,7 +12154,7 @@
         "Ordinateur de bord",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:33:21.129851"
+      "scraped_at": "2026-11-01T01:06:26.076304"
     },
     {
       "id": "dacia_duster_1_5_l_dci_4x2",
@@ -12477,7 +12251,7 @@
         "Système Start & Stop",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:22.332146"
+      "scraped_at": "2026-11-01T01:06:27.121536"
     },
     {
       "id": "dacia_sandero_stepway_1_0_l",
@@ -12560,7 +12334,7 @@
         "Ordinateur de bord",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:33:23.494439"
+      "scraped_at": "2026-11-01T01:06:28.225583"
     },
     {
       "id": "dacia_sandero_stepway_1_0_l_bva",
@@ -12644,7 +12418,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:24.644822"
+      "scraped_at": "2026-11-01T01:06:29.246965"
     },
     {
       "id": "deepal_s05_1_5_l_reev_27_28_kwh",
@@ -12751,7 +12525,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:25.931778"
+      "scraped_at": "2026-11-01T01:06:30.689324"
     },
     {
       "id": "deepal_s07_1_5_l_reev_31_73_kwh",
@@ -12859,7 +12633,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:27.257788"
+      "scraped_at": "2026-11-01T01:06:31.693837"
     },
     {
       "id": "deepal_g318_1_5_l_reev_35_07_kwh",
@@ -12966,7 +12740,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:28.348598"
+      "scraped_at": "2026-11-01T01:06:33.147133"
     },
     {
       "id": "dfsk_glory_580_1_5_t_luxury_cvt",
@@ -13067,7 +12841,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:29.743386"
+      "scraped_at": "2026-11-01T01:06:34.213670"
     },
     {
       "id": "dfsk_glory_ix5_1_5_t_deluxe_cvt",
@@ -13176,7 +12950,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:30.749138"
+      "scraped_at": "2026-11-01T01:06:35.257120"
     },
     {
       "id": "dfsk_c31_1_5_l_simple_cabine_dlx",
@@ -13251,7 +13025,7 @@
         "Fermeture centralisée",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:33:31.985167"
+      "scraped_at": "2026-11-01T01:06:36.271178"
     },
     {
       "id": "dfsk_c35_1_5_l",
@@ -13325,7 +13099,7 @@
         "Fermeture centralisée",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:33:33.356287"
+      "scraped_at": "2026-11-01T01:06:37.292673"
     },
     {
       "id": "dfsk_c32_1_5_l_double_cabine_dlx",
@@ -13400,7 +13174,7 @@
         "Fermeture centralisée",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:33:34.270808"
+      "scraped_at": "2026-11-01T01:06:38.493781"
     },
     {
       "id": "dfsk_ec75_50_38_kwh",
@@ -13491,7 +13265,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:33:35.626464"
+      "scraped_at": "2026-11-01T01:06:39.880445"
     },
     {
       "id": "dfsk_e5_phev_1_5_l_confort",
@@ -13587,7 +13361,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:36.826694"
+      "scraped_at": "2026-11-01T01:06:41.017205"
     },
     {
       "id": "dfsk_e5_phev_1_5_l_prestige",
@@ -13693,7 +13467,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:38.012565"
+      "scraped_at": "2026-11-01T01:06:42.287590"
     },
     {
       "id": "dfsk_glory_500_1_5__mt",
@@ -13789,7 +13563,7 @@
         "Rétroviseurs extérieurs: Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:39.191725"
+      "scraped_at": "2026-11-01T01:06:43.343262"
     },
     {
       "id": "dfsk_glory_500_1_5_cvt",
@@ -13892,7 +13666,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:40.381243"
+      "scraped_at": "2026-11-01T01:06:44.430231"
     },
     {
       "id": "dfsk_k01s_simple_cabine_std",
@@ -13958,7 +13732,7 @@
       "equipment_functional": [
         "Fermeture centralisée"
       ],
-      "scraped_at": "2026-10-22T17:33:41.459634"
+      "scraped_at": "2026-11-01T01:06:45.598271"
     },
     {
       "id": "dfsk_k01s_simple_cabine_dlx",
@@ -14026,7 +13800,7 @@
         "Climatisation: Manuelle",
         "Fermeture centralisée"
       ],
-      "scraped_at": "2026-10-22T17:33:42.786730"
+      "scraped_at": "2026-11-01T01:06:46.632562"
     },
     {
       "id": "dfsk_k01h_large_cabine_1_1_l_std",
@@ -14090,7 +13864,7 @@
       "equipment_functional": [
         "Fermeture centralisée"
       ],
-      "scraped_at": "2026-10-22T17:33:43.979397"
+      "scraped_at": "2026-11-01T01:06:47.713056"
     },
     {
       "id": "dfsk_k01h_large_cabine_1_1_l_dlx",
@@ -14157,7 +13931,7 @@
         "Climatisation: Manuelle",
         "Fermeture centralisée"
       ],
-      "scraped_at": "2026-10-22T17:33:45.173171"
+      "scraped_at": "2026-11-01T01:06:48.798930"
     },
     {
       "id": "dfsk_k02s_1_0_l_double_cabine_std",
@@ -14223,7 +13997,7 @@
       "equipment_functional": [
         "Fermeture centralisée"
       ],
-      "scraped_at": "2026-10-22T17:33:46.504839"
+      "scraped_at": "2026-11-01T01:06:50.174948"
     },
     {
       "id": "dfsk_k02s_1_0_l_double_cabine_dlx",
@@ -14291,7 +14065,7 @@
         "Climatisation: Manuelle",
         "Fermeture centralisée"
       ],
-      "scraped_at": "2026-10-22T17:33:47.679519"
+      "scraped_at": "2026-11-01T01:06:51.363514"
     },
     {
       "id": "dongfeng_shine_max_hybride_1_5_t_hev_e_cvt",
@@ -14394,7 +14168,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:48.950149"
+      "scraped_at": "2026-11-01T01:06:52.777952"
     },
     {
       "id": "dongfeng_forthing_t5_evo_1_5_l_turbo",
@@ -14508,7 +14282,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:50.240705"
+      "scraped_at": "2026-11-01T01:06:54.002359"
     },
     {
       "id": "dongfeng_box_31_4_kwh",
@@ -14599,7 +14373,7 @@
         "Instrumentation digitale: 5 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:51.216777"
+      "scraped_at": "2026-11-01T01:06:54.965421"
     },
     {
       "id": "dongfeng_box_42_3_kwh_style_",
@@ -14703,7 +14477,7 @@
         "Instrumentation digitale: 5 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:52.574006"
+      "scraped_at": "2026-11-01T01:06:56.195720"
     },
     {
       "id": "dongfeng_shine_1_5_mach_power",
@@ -14795,7 +14569,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:53.982982"
+      "scraped_at": "2026-11-01T01:06:57.615862"
     },
     {
       "id": "dongfeng_shine_1_5_mach_power_bva",
@@ -14891,7 +14665,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:55.065840"
+      "scraped_at": "2026-11-01T01:06:58.820375"
     },
     {
       "id": "dongfeng_rich_6_2_5_turbo_diesel_4x2_thunder",
@@ -14987,7 +14761,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:56.033113"
+      "scraped_at": "2026-11-01T01:07:00.007860"
     },
     {
       "id": "dongfeng_rich_6_2_5_turbo_diesel_4x4_thunder",
@@ -15083,7 +14857,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:57.387248"
+      "scraped_at": "2026-11-01T01:07:01.351179"
     },
     {
       "id": "faw_bestune_t77_pro_1_5_l_essentiel_bva",
@@ -15204,7 +14978,7 @@
         "Instrumentation digitale: i-cockpit, 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:33:58.799395"
+      "scraped_at": "2026-11-01T01:07:02.508747"
     },
     {
       "id": "faw_bestune_b70_1_5_l_turbo_luxury_bva",
@@ -15321,7 +15095,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:00.054486"
+      "scraped_at": "2026-11-01T01:07:03.802467"
     },
     {
       "id": "faw_bestune_t90_1_5_l_turbo_premium_bva",
@@ -15441,7 +15215,7 @@
         "Instrumentation digitale: 9 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:01.353266"
+      "scraped_at": "2026-11-01T01:07:05.063820"
     },
     {
       "id": "fiat_doblo_combi_1_6_l_hdi",
@@ -15530,7 +15304,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:34:02.373502"
+      "scraped_at": "2026-11-01T01:07:06.358563"
     },
     {
       "id": "fiat_ducato_2_2_hdi_11_5_m3_l2h2",
@@ -15615,7 +15389,7 @@
         "Rétroviseurs extérieurs: Électriques, Avec clignotants intégrés",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:34:03.379682"
+      "scraped_at": "2026-11-01T01:07:07.407064"
     },
     {
       "id": "fiat_scudo_fourgon_2_0_l_hdi",
@@ -15702,7 +15476,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:34:04.747735"
+      "scraped_at": "2026-11-01T01:07:08.712945"
     },
     {
       "id": "fiat_scudo_combi_2_0_l_hdi__9_places",
@@ -15791,7 +15565,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:34:05.963162"
+      "scraped_at": "2026-11-01T01:07:09.805741"
     },
     {
       "id": "fiat_scudo_combi_2_0_l_hdi__ulysse_9_places",
@@ -15880,7 +15654,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:34:07.254121"
+      "scraped_at": "2026-11-01T01:07:10.791140"
     },
     {
       "id": "fiat_doblo_1_6_l_hdi_van_business",
@@ -15925,7 +15699,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "thumbnail": "https://catalogue.automobile.tn/big/2025/08/47412.jpg?t=1780306800",
+      "thumbnail": "https://catalogue.automobile.tn/big/2025/08/47412.jpg?t=1792762622",
       "equipment_safety": [
         "ABS",
         "Airbags: Frontaux",
@@ -15967,7 +15741,7 @@
         "Rétroviseurs extérieurs: Électriques, Dégivrants",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:34:08.600367"
+      "scraped_at": "2026-11-01T01:07:11.949296"
     },
     {
       "id": "fiat_doblo_1_6_l_hdi_van_maxi_business",
@@ -16053,7 +15827,7 @@
         "Rétroviseurs extérieurs: Électriques, Dégivrants",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:34:09.897159"
+      "scraped_at": "2026-11-01T01:07:13.307744"
     },
     {
       "id": "foday_f22_s_1_9_t_4wd",
@@ -16137,7 +15911,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:34:10.918295"
+      "scraped_at": "2026-11-01T01:07:14.544993"
     },
     {
       "id": "foday_f22_d_1_9_l_tid4_luxury",
@@ -16223,7 +15997,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:12.015291"
+      "scraped_at": "2026-11-01T01:07:15.689402"
     },
     {
       "id": "foday_f22_max_1_9_l_tid4_luxury",
@@ -16309,7 +16083,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:13.033853"
+      "scraped_at": "2026-11-01T01:07:16.742165"
     },
     {
       "id": "ford_ranger_raptor_2_0_l_tdci_210_ch_4x4_bva",
@@ -16425,7 +16199,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:14.144388"
+      "scraped_at": "2026-11-01T01:07:17.810454"
     },
     {
       "id": "ford_territory_1_5_l_ecoboost_titanium",
@@ -16535,7 +16309,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:15.377062"
+      "scraped_at": "2026-11-01T01:07:19.033252"
     },
     {
       "id": "ford_territory_1_5_l_ecoboost_titanium_x",
@@ -16650,7 +16424,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:16.798896"
+      "scraped_at": "2026-11-01T01:07:20.213320"
     },
     {
       "id": "ford_everest_2_0_l_bi_turbo_xlt_7_places",
@@ -16762,7 +16536,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:17.911236"
+      "scraped_at": "2026-11-01T01:07:21.361202"
     },
     {
       "id": "ford_everest_2_0_l_bi_turbo_limited_7_places",
@@ -16880,7 +16654,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:19.262278"
+      "scraped_at": "2026-11-01T01:07:22.618150"
     },
     {
       "id": "ford_ranger_2_0_l_170_ch_4x4_xlt_bvm",
@@ -16974,7 +16748,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:20.489688"
+      "scraped_at": "2026-11-01T01:07:23.965790"
     },
     {
       "id": "ford_ranger_2_0_l_170_ch_4x4_xlt_bva",
@@ -17068,7 +16842,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:21.800510"
+      "scraped_at": "2026-11-01T01:07:25.264271"
     },
     {
       "id": "ford_ranger_2_0_l_tdci_210_ch_4x4_wildtrak_bva",
@@ -17180,7 +16954,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:23.221477"
+      "scraped_at": "2026-11-01T01:07:26.469203"
     },
     {
       "id": "ford_transit_minibus_2_0_l_d_ecoblue_15_places",
@@ -17277,7 +17051,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:34:24.275753"
+      "scraped_at": "2026-11-01T01:07:27.750248"
     },
     {
       "id": "ford_transit_minibus_2_0_l_d_ecoblue_18_places",
@@ -17375,7 +17149,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:34:25.591661"
+      "scraped_at": "2026-11-01T01:07:28.924568"
     },
     {
       "id": "foton_tunland_g7_simple_cabine_2_0_l_turbo_4x2",
@@ -17466,7 +17240,7 @@
         "Rétroviseurs extérieurs: Électriques, Avec clignotants intégrés",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:34:26.978816"
+      "scraped_at": "2026-11-01T01:07:30.259362"
     },
     {
       "id": "foton_tm5_3_4t_chassis_cabine_2_2_l_turbo",
@@ -17537,7 +17311,7 @@
         "Climatisation: Manuelle",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:34:28.039718"
+      "scraped_at": "2026-11-01T01:07:31.271123"
     },
     {
       "id": "foton_view_cs2_van_16_places_2_0_l_turbo",
@@ -17618,7 +17392,7 @@
         "Rétroviseurs extérieurs: Électriques, Chromés",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:34:29.338864"
+      "scraped_at": "2026-11-01T01:07:32.548062"
     },
     {
       "id": "foton_tunland_g7_double_cabine_2_0_l_turbo_4x4",
@@ -17715,7 +17489,7 @@
         "Rétroviseurs extérieurs: Électriques, Dégivrants, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:30.644634"
+      "scraped_at": "2026-11-01T01:07:33.836952"
     },
     {
       "id": "foton_tunland_g7_double_cabine_2_0_l_turbo_4x4__edition_limit_e",
@@ -17815,7 +17589,7 @@
         "Rétroviseurs extérieurs: Électriques, Dégivrants, Chromés, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:31.759723"
+      "scraped_at": "2026-11-01T01:07:35.168153"
     },
     {
       "id": "gac_motor_emkoo_1_5t_gdi_gl_bva",
@@ -17929,7 +17703,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:32.868963"
+      "scraped_at": "2026-11-01T01:07:36.500899"
     },
     {
       "id": "gac_motor_emzoom_1_5t_gdi_citystyle_bva",
@@ -18033,7 +17807,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:33.941839"
+      "scraped_at": "2026-11-01T01:07:37.469263"
     },
     {
       "id": "gac_motor_emzoom_1_5t_gdi_lifestyle_bva",
@@ -18146,7 +17920,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:35.202961"
+      "scraped_at": "2026-11-01T01:07:38.644405"
     },
     {
       "id": "gac_motor_emzoom_1_5t_gdi_r_style_bva",
@@ -18260,7 +18034,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:36.626167"
+      "scraped_at": "2026-11-01T01:07:40.079237"
     },
     {
       "id": "geely_ex2_39_4_kwh__max",
@@ -18363,7 +18137,7 @@
         "Instrumentation digitale: 8.8 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:37.805497"
+      "scraped_at": "2026-11-01T01:07:41.126467"
     },
     {
       "id": "geely_ex5_hybride_1_5_em_i",
@@ -18478,7 +18252,7 @@
         "Instrumentation digitale: 10.2 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:39.223719"
+      "scraped_at": "2026-11-01T01:07:42.184017"
     },
     {
       "id": "geely_ex5_60_2_kwh__max",
@@ -18592,7 +18366,7 @@
         "Instrumentation digitale: 10.2 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:40.297454"
+      "scraped_at": "2026-11-01T01:07:43.247884"
     },
     {
       "id": "geely_cityray_1_5_l_turbo",
@@ -18710,7 +18484,7 @@
         "Instrumentation digitale: 10.2 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:41.446955"
+      "scraped_at": "2026-11-01T01:07:44.507876"
     },
     {
       "id": "geely_azkarra_1_5_l_turbo_mild_hybrid_4wd",
@@ -18822,7 +18596,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:42.780654"
+      "scraped_at": "2026-11-01T01:07:45.911603"
     },
     {
       "id": "geely_starray_1_5_l_turbo_gf_",
@@ -18936,7 +18710,7 @@
         "Instrumentation digitale: 10.2 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:43.949451"
+      "scraped_at": "2026-11-01T01:07:46.979502"
     },
     {
       "id": "geely_tugella_2_0_l_turbo_4wd_gf_",
@@ -19049,7 +18823,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:45.151608"
+      "scraped_at": "2026-11-01T01:07:48.272892"
     },
     {
       "id": "geely_monjaro_2_0_l_turbo_4wd_gf_",
@@ -19166,7 +18940,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:46.386877"
+      "scraped_at": "2026-11-01T01:07:49.496008"
     },
     {
       "id": "geely_emgrand_1_5_l_gl",
@@ -19255,7 +19029,7 @@
         "Rétroviseurs extérieurs: Électriques, Dégivrants, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:47.645392"
+      "scraped_at": "2026-11-01T01:07:50.596959"
     },
     {
       "id": "geely_emgrand_1_5_l_gf_bva",
@@ -19356,7 +19130,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:48.783673"
+      "scraped_at": "2026-11-01T01:07:52.065265"
     },
     {
       "id": "geely_coolray_1_5_l",
@@ -19452,7 +19226,7 @@
         "Rétroviseurs extérieurs: Électriques, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:50.138596"
+      "scraped_at": "2026-11-01T01:07:53.220509"
     },
     {
       "id": "geely_coolray_1_5_l_turbo_gs",
@@ -19550,7 +19324,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:51.392345"
+      "scraped_at": "2026-11-01T01:07:54.300105"
     },
     {
       "id": "geely_coolray_1_5_l_turbo_gf_",
@@ -19660,7 +19434,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:52.495886"
+      "scraped_at": "2026-11-01T01:07:55.691020"
     },
     {
       "id": "great_wall_tank_300_hev_2_0_l",
@@ -19771,7 +19545,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:53.548882"
+      "scraped_at": "2026-11-01T01:07:57.057003"
     },
     {
       "id": "great_wall_tank_500_hev_2_0_l",
@@ -19883,7 +19657,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:54.888083"
+      "scraped_at": "2026-11-01T01:07:58.138811"
     },
     {
       "id": "great_wall_haval_jolion_1_5_t",
@@ -19991,7 +19765,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:56.094195"
+      "scraped_at": "2026-11-01T01:07:59.194743"
     },
     {
       "id": "great_wall_haval_h6_hybride_1_5_t_hev",
@@ -20112,7 +19886,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:57.427498"
+      "scraped_at": "2026-11-01T01:08:00.584664"
     },
     {
       "id": "great_wall_wingle_5_simple_cabine_2_0_l_diesel_4x4",
@@ -20195,7 +19969,7 @@
         "Rétroviseurs extérieurs: Électriques, Avec clignotants intégrés",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:34:58.465214"
+      "scraped_at": "2026-11-01T01:08:01.557374"
     },
     {
       "id": "great_wall_wingle_5_double_cabine_2_0_l_diesel_4x2",
@@ -20274,7 +20048,7 @@
         "Rétroviseurs extérieurs: Électriques, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:34:59.877422"
+      "scraped_at": "2026-11-01T01:08:02.717311"
     },
     {
       "id": "great_wall_poer_mt_2_0_l_diesel_4x4",
@@ -20372,7 +20146,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:01.266722"
+      "scraped_at": "2026-11-01T01:08:04.220906"
     },
     {
       "id": "great_wall_poer_at_2_0_l_diesel_4x4",
@@ -20485,7 +20259,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:02.498888"
+      "scraped_at": "2026-11-01T01:08:05.235587"
     },
     {
       "id": "honda_jazz_1_5_l_e_hev",
@@ -20587,7 +20361,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:03.548471"
+      "scraped_at": "2026-11-01T01:08:06.356828"
     },
     {
       "id": "honda_civic_1_5_l_cvt",
@@ -20690,7 +20464,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:04.923847"
+      "scraped_at": "2026-11-01T01:08:07.692887"
     },
     {
       "id": "honda_civic_hybride_2_0_l_e_hev",
@@ -20793,7 +20567,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:06.034137"
+      "scraped_at": "2026-11-01T01:08:08.842080"
     },
     {
       "id": "honda_civic_type_r_2_0_l_turbo",
@@ -20911,7 +20685,7 @@
         "Suspension: Adaptative",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:07.313462"
+      "scraped_at": "2026-11-01T01:08:10.003811"
     },
     {
       "id": "honda_accord_1_5_l_cvt",
@@ -21019,7 +20793,7 @@
         "Instrumentation digitale: 10.2 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:08.444941"
+      "scraped_at": "2026-11-01T01:08:11.255516"
     },
     {
       "id": "honda_hr_v_1_5_l_cvt_ex",
@@ -21119,7 +20893,7 @@
         "Système Start & Stop",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:09.805788"
+      "scraped_at": "2026-11-01T01:08:12.547996"
     },
     {
       "id": "honda_hr_v_hybride_1_5_l_e_hev",
@@ -21225,7 +20999,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:10.783908"
+      "scraped_at": "2026-11-01T01:08:13.833763"
     },
     {
       "id": "honda_zr_v_1_5_l_cvt",
@@ -21334,7 +21108,7 @@
         "Instrumentation digitale: 10.2 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:11.879646"
+      "scraped_at": "2026-11-01T01:08:14.983139"
     },
     {
       "id": "honda_cr_v_1_5_t_cvt",
@@ -21443,7 +21217,7 @@
         "Instrumentation digitale: 10.2 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:13.200416"
+      "scraped_at": "2026-11-01T01:08:16.337462"
     },
     {
       "id": "honda_cr_v_hybride_2_0_l_e_hev",
@@ -21556,7 +21330,7 @@
         "Instrumentation digitale: 10.2 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:14.209823"
+      "scraped_at": "2026-11-01T01:08:17.398104"
     },
     {
       "id": "honda_city_1_5_l_cvt_lx",
@@ -21653,7 +21427,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:15.307588"
+      "scraped_at": "2026-11-01T01:08:18.394398"
     },
     {
       "id": "honda_city_1_5_l_cvt_lx_sport",
@@ -21751,7 +21525,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants, Noirs",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:16.481390"
+      "scraped_at": "2026-11-01T01:08:19.519387"
     },
     {
       "id": "hyundai_grand_i10_populaire_1_0_l",
@@ -21832,7 +21606,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:17.725566"
+      "scraped_at": "2026-11-01T01:08:20.957854"
     },
     {
       "id": "hyundai_grand_i10_sedan_1_2_l",
@@ -21913,7 +21687,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:18.916981"
+      "scraped_at": "2026-11-01T01:08:22.316167"
     },
     {
       "id": "hyundai_venue_1_0_l_turbo_bva",
@@ -22007,7 +21781,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:20.318896"
+      "scraped_at": "2026-11-01T01:08:23.431812"
     },
     {
       "id": "hyundai_creta_1_5_l_bva",
@@ -22111,7 +21885,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:21.557894"
+      "scraped_at": "2026-11-01T01:08:24.512899"
     },
     {
       "id": "hyundai_kona_electric_39_kwh",
@@ -22221,7 +21995,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:22.629135"
+      "scraped_at": "2026-11-01T01:08:25.719413"
     },
     {
       "id": "hyundai_tucson_hybride_1_6_l_t_gdi_2wd_intuitive_bva_6",
@@ -22340,7 +22114,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:23.994134"
+      "scraped_at": "2026-11-01T01:08:26.871077"
     },
     {
       "id": "hyundai_tucson_1_6_l_t_gdi_7_dct_4wd_top_grade",
@@ -22457,7 +22231,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:25.398500"
+      "scraped_at": "2026-11-01T01:08:28.108741"
     },
     {
       "id": "hyundai_ioniq_5_n_84_kwh_4wd",
@@ -22572,7 +22346,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:26.715024"
+      "scraped_at": "2026-11-01T01:08:29.119047"
     },
     {
       "id": "hyundai_staria_11_places_2_2_crdi",
@@ -22648,7 +22422,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:35:28.046937"
+      "scraped_at": "2026-11-01T01:08:30.460586"
     },
     {
       "id": "hyundai_grand_i10_1_2_l_gls",
@@ -22727,7 +22501,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:29.108093"
+      "scraped_at": "2026-11-01T01:08:31.784887"
     },
     {
       "id": "hyundai_grand_i10_1_2_l_high_grade",
@@ -22811,7 +22585,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:30.553451"
+      "scraped_at": "2026-11-01T01:08:33.071479"
     },
     {
       "id": "hyundai_grand_i10_1_2_l_high_grade_bva",
@@ -22895,7 +22669,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:31.638915"
+      "scraped_at": "2026-11-01T01:08:34.089974"
     },
     {
       "id": "hyundai_i20_1_2_l_gls_plus",
@@ -22991,7 +22765,7 @@
         "Instrumentation digitale: Digital Cockpit",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:32.913951"
+      "scraped_at": "2026-11-01T01:08:35.142243"
     },
     {
       "id": "hyundai_i20_1_2_l_high_grade",
@@ -23088,7 +22862,7 @@
         "Instrumentation digitale: 10.25 pouces, Supervision",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:34.062219"
+      "scraped_at": "2026-11-01T01:08:36.179297"
     },
     {
       "id": "hyundai_i20_1_0_l_t_gdi_bva",
@@ -23186,7 +22960,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:35.129415"
+      "scraped_at": "2026-11-01T01:08:37.181980"
     },
     {
       "id": "hyundai_bayon_1_2_l_top_grade",
@@ -23286,7 +23060,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:36.358650"
+      "scraped_at": "2026-11-01T01:08:38.410731"
     },
     {
       "id": "hyundai_bayon_1_0_l_t_gdi_top_grade_bva",
@@ -23387,7 +23161,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:37.350327"
+      "scraped_at": "2026-11-01T01:08:39.734013"
     },
     {
       "id": "hyundai_i30_fastback_1_0_t_intuitive_bva",
@@ -23483,7 +23257,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:38.715237"
+      "scraped_at": "2026-11-01T01:08:40.766687"
     },
     {
       "id": "hyundai_i30_fastback_1_0_t_bva",
@@ -23581,7 +23355,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:40.100840"
+      "scraped_at": "2026-11-01T01:08:41.846333"
     },
     {
       "id": "hyundai_kona_1_6_l_t_gdi_7_dct_4wd",
@@ -23678,7 +23452,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:41.420375"
+      "scraped_at": "2026-11-01T01:08:43.200744"
     },
     {
       "id": "hyundai_kona_1_6_l_t_gdi_7_dct_4wd_n_line",
@@ -23778,7 +23552,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:42.437238"
+      "scraped_at": "2026-11-01T01:08:44.497562"
     },
     {
       "id": "hyundai_ioniq_5_58_kwh_2wd_hg",
@@ -23892,7 +23666,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:43.680127"
+      "scraped_at": "2026-11-01T01:08:45.815734"
     },
     {
       "id": "hyundai_ioniq_5_77_kwh_4wd_hg",
@@ -24006,7 +23780,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:44.929347"
+      "scraped_at": "2026-11-01T01:08:47.027598"
     },
     {
       "id": "hyundai_ioniq_6_77_kwh_2wd_large_range",
@@ -24123,7 +23897,7 @@
         "Rétroviseurs extérieurs: Virtuels",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:46.280907"
+      "scraped_at": "2026-11-01T01:08:48.218458"
     },
     {
       "id": "hyundai_ioniq_6_77_kwh_4wd_large_range",
@@ -24240,7 +24014,7 @@
         "Rétroviseurs extérieurs: Virtuels",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:47.610591"
+      "scraped_at": "2026-11-01T01:08:49.362940"
     },
     {
       "id": "hyundai_staria_9_places_2_2_crdi",
@@ -24314,7 +24088,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:35:48.938791"
+      "scraped_at": "2026-11-01T01:08:50.538910"
     },
     {
       "id": "hyundai_staria_9_places_2_2_crdi_4wd_bva",
@@ -24388,7 +24162,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:35:50.125560"
+      "scraped_at": "2026-11-01T01:08:51.550168"
     },
     {
       "id": "hyundai_staria_9_places_2_2_crdi_4wd_luxe_bva",
@@ -24471,7 +24245,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:35:51.414224"
+      "scraped_at": "2026-11-01T01:08:52.596897"
     },
     {
       "id": "im_motors_im7_100_kwh_awd",
@@ -24583,7 +24357,7 @@
         "Instrumentation digitale: 26.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:52.593556"
+      "scraped_at": "2026-11-01T01:08:53.804620"
     },
     {
       "id": "im_motors_im5_standard_75_kwh_rwd",
@@ -24690,7 +24464,7 @@
         "Instrumentation digitale: 26.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:53.816453"
+      "scraped_at": "2026-11-01T01:08:55.135951"
     },
     {
       "id": "im_motors_im5_autonomie_100_kwh_rwd",
@@ -24797,7 +24571,7 @@
         "Instrumentation digitale: 26.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:55.074972"
+      "scraped_at": "2026-11-01T01:08:56.569927"
     },
     {
       "id": "im_motors_im5_performance_100_kwh_awd",
@@ -24904,7 +24678,7 @@
         "Instrumentation digitale: 26.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:56.213789"
+      "scraped_at": "2026-11-01T01:08:57.567696"
     },
     {
       "id": "im_motors_im6_standard_75_kwh_rwd",
@@ -25011,7 +24785,7 @@
         "Instrumentation digitale: 26.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:57.278755"
+      "scraped_at": "2026-11-01T01:08:58.634693"
     },
     {
       "id": "im_motors_im6_autonomie_100_kwh_rwd",
@@ -25118,7 +24892,7 @@
         "Instrumentation digitale: 26.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:58.637707"
+      "scraped_at": "2026-11-01T01:08:59.677044"
     },
     {
       "id": "im_motors_im6_performance_100_kwh_awd",
@@ -25225,7 +24999,7 @@
         "Instrumentation digitale: 26.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:35:59.742353"
+      "scraped_at": "2026-11-01T01:09:00.944811"
     },
     {
       "id": "jac_t8_2_0_l_cti_diesel_4x2",
@@ -25323,7 +25097,7 @@
         "Rétroviseurs extérieurs: Électriques, Dégivrants, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:00.797483"
+      "scraped_at": "2026-11-01T01:09:02.129955"
     },
     {
       "id": "jac_t8_pro_2_0_l_cti_diesel_4x4_all_black",
@@ -25431,7 +25205,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:02.024369"
+      "scraped_at": "2026-11-01T01:09:03.510994"
     },
     {
       "id": "jac_t9_2_0_l_cti_diesel_4x4_bva",
@@ -25535,7 +25309,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:03.368310"
+      "scraped_at": "2026-11-01T01:09:04.701634"
     },
     {
       "id": "jaguar_e_pace_2_0_d_163_r_dynamic_s",
@@ -25642,7 +25416,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:04.711802"
+      "scraped_at": "2026-11-01T01:09:05.960226"
     },
     {
       "id": "jaguar_f_pace_2_0_t_250_r_dynamic_s",
@@ -25752,7 +25526,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:05.907611"
+      "scraped_at": "2026-11-01T01:09:07.082798"
     },
     {
       "id": "jeep_renegade_1_4_turbo_4x2_limited_bva",
@@ -25848,7 +25622,7 @@
         "Rétroviseurs extérieurs: Électriques, Chromés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:07.108514"
+      "scraped_at": "2026-11-01T01:09:08.265095"
     },
     {
       "id": "jeep_compass_1_3_t_4x2_limited_bva",
@@ -25950,7 +25724,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:08.080146"
+      "scraped_at": "2026-11-01T01:09:09.276995"
     },
     {
       "id": "jeep_wrangler_2_0_l_rubicon",
@@ -26046,7 +25820,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:36:09.253977"
+      "scraped_at": "2026-11-01T01:09:10.377550"
     },
     {
       "id": "jeep_wrangler_unlimited_2_0_l_rubicon",
@@ -26146,7 +25920,7 @@
         "Système Start & Stop",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:10.606861"
+      "scraped_at": "2026-11-01T01:09:11.406708"
     },
     {
       "id": "jeep_wrangler_unlimited_3_6_l_v6_rubicon",
@@ -26247,7 +26021,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:11.897978"
+      "scraped_at": "2026-11-01T01:09:12.504542"
     },
     {
       "id": "jetour_dashing_1_5_turbo_bva",
@@ -26347,7 +26121,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:13.544157"
+      "scraped_at": "2026-11-01T01:09:13.628793"
     },
     {
       "id": "jetour_x70_plus_1_5_turbo",
@@ -26448,7 +26222,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:14.633382"
+      "scraped_at": "2026-11-01T01:09:14.595594"
     },
     {
       "id": "jetour_t2_2_0_turbo",
@@ -26555,7 +26329,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:15.868342"
+      "scraped_at": "2026-11-01T01:09:15.997902"
     },
     {
       "id": "jmc_vigus_simple_cabine_2_5_l_diesel_4x2",
@@ -26631,7 +26405,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:36:17.009788"
+      "scraped_at": "2026-11-01T01:09:17.167018"
     },
     {
       "id": "jmc_vigus_double_cabine_2_5_l_turbo_4x2",
@@ -26714,7 +26488,7 @@
         "Instrumentation digitale: 3.5 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:18.163770"
+      "scraped_at": "2026-11-01T01:09:18.220105"
     },
     {
       "id": "jmc_grand_avenue_2_3_l_turbo_4x4_plus_bva",
@@ -26825,7 +26599,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:19.349197"
+      "scraped_at": "2026-11-01T01:09:19.483807"
     },
     {
       "id": "jmc_vigus_plus_double_cabine_2_5_l_turbo_4x4_bvm",
@@ -26918,7 +26692,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:21.456831"
+      "scraped_at": "2026-11-01T01:09:20.478919"
     },
     {
       "id": "jmc_vigus_plus_double_cabine_2_5_l_turbo_4x4_bva",
@@ -27014,7 +26788,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:21.720548"
+      "scraped_at": "2026-11-01T01:09:21.885125"
     },
     {
       "id": "jmev_ev3_31_kwh",
@@ -27102,7 +26876,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:22.856982"
+      "scraped_at": "2026-11-01T01:09:22.916643"
     },
     {
       "id": "jmev_elight_63_kwh_comfort",
@@ -27208,7 +26982,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:24.026239"
+      "scraped_at": "2026-11-01T01:09:23.932316"
     },
     {
       "id": "kia_picanto_populaire_1_0_l",
@@ -27292,7 +27066,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:25.497725"
+      "scraped_at": "2026-11-01T01:09:25.334158"
     },
     {
       "id": "kia_seltos_1_4_t_gdi_top_grade",
@@ -27394,7 +27168,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:26.820912"
+      "scraped_at": "2026-11-01T01:09:26.569650"
     },
     {
       "id": "kia_sorento_hybride_1_6_t_gdi_hev",
@@ -27505,7 +27279,7 @@
         "Rétroviseur intérieur: Avec caméra arrière",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:27.899949"
+      "scraped_at": "2026-11-01T01:09:27.858555"
     },
     {
       "id": "kia_picanto_1_2_l_smart_bvm",
@@ -27590,7 +27364,7 @@
         "Instrumentation digitale: Supervision",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:29.213790"
+      "scraped_at": "2026-11-01T01:09:29.038845"
     },
     {
       "id": "kia_picanto_1_2_l_smart_bva",
@@ -27675,7 +27449,7 @@
         "Instrumentation digitale: Supervision",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:30.624039"
+      "scraped_at": "2026-11-01T01:09:30.256193"
     },
     {
       "id": "kia_picanto_1_2_l_gt_line_bva",
@@ -27764,7 +27538,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:31.626959"
+      "scraped_at": "2026-11-01T01:09:31.293646"
     },
     {
       "id": "kia_picanto_1_2_l_gt_line___bva",
@@ -27855,7 +27629,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:32.959367"
+      "scraped_at": "2026-11-01T01:09:32.467974"
     },
     {
       "id": "kia_sonet_1_5_l_ex_bvm",
@@ -27950,7 +27724,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:34.132165"
+      "scraped_at": "2026-11-01T01:09:33.619746"
     },
     {
       "id": "kia_sonet_1_5_l_cvt_ex_plus",
@@ -28046,7 +27820,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:35.286166"
+      "scraped_at": "2026-11-01T01:09:34.781491"
     },
     {
       "id": "kia_sonet_1_5_l_cvt_sx",
@@ -28144,7 +27918,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:36.307403"
+      "scraped_at": "2026-11-01T01:09:35.910962"
     },
     {
       "id": "kia_niro_hybride_1_6_l_ex",
@@ -28252,7 +28026,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:37.548431"
+      "scraped_at": "2026-11-01T01:09:37.109194"
     },
     {
       "id": "kia_niro_hybride_1_6_l_sx",
@@ -28361,7 +28135,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:38.691625"
+      "scraped_at": "2026-11-01T01:09:38.446613"
     },
     {
       "id": "kia_sportage_1_6_l_t_gdi_7_dct_motion",
@@ -28470,7 +28244,7 @@
         "Instrumentation digitale: 12.3 pouces, Supervision",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:39.986004"
+      "scraped_at": "2026-11-01T01:09:39.690708"
     },
     {
       "id": "kia_sportage_1_6_l_t_gdi_7_dct_signature",
@@ -28581,7 +28355,7 @@
         "Instrumentation digitale: 12.3 pouces, Supervision",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:41.240462"
+      "scraped_at": "2026-11-01T01:09:40.795229"
     },
     {
       "id": "kia_sportage_phev_1_6_t_gdi_2wd_prestige",
@@ -28694,7 +28468,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:42.531147"
+      "scraped_at": "2026-11-01T01:09:41.907632"
     },
     {
       "id": "kia_sportage_phev_1_6_t_gdi_2wd_gt_line",
@@ -28811,7 +28585,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:43.785707"
+      "scraped_at": "2026-11-01T01:09:42.992652"
     },
     {
       "id": "kia_sportage_phev_1_6_t_gdi_4wd_gt_line",
@@ -28929,7 +28703,7 @@
         "Suspension: ECS",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:45.147545"
+      "scraped_at": "2026-11-01T01:09:44.261471"
     },
     {
       "id": "kia_ev3_58_3_kwh_air",
@@ -29034,7 +28808,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:46.444025"
+      "scraped_at": "2026-11-01T01:09:45.459774"
     },
     {
       "id": "kia_ev3_81_4_kwh_earth",
@@ -29142,7 +28916,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:47.718838"
+      "scraped_at": "2026-11-01T01:09:46.791487"
     },
     {
       "id": "kia_ev3_81_4_kwh_earth_plus",
@@ -29251,7 +29025,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:48.784068"
+      "scraped_at": "2026-11-01T01:09:48.005457"
     },
     {
       "id": "kia_ev3_81_4_kwh_gt_line",
@@ -29362,7 +29136,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:50.049164"
+      "scraped_at": "2026-11-01T01:09:49.194002"
     },
     {
       "id": "kia_ev9_99_8_kwh_gt_line_7_places",
@@ -29403,11 +29177,11 @@
       "is_electric": true,
       "is_hybrid": false,
       "battery_kwh": 99.8,
-      "range_km": 485,
+      "range_km": 505,
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "thumbnail": "https://catalogue.automobile.tn/big/2025/05/47382.jpg?t=1774975648",
+      "thumbnail": "https://catalogue.automobile.tn/big/2025/05/47382.jpg?t=1793113328",
       "equipment_safety": [
         "ABS",
         "Airbags: Frontaux, Latéraux, Rideaux, Centraux",
@@ -29477,7 +29251,7 @@
         "Suspension: Amortissement piloté, ECS",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:51.372922"
+      "scraped_at": "2026-11-01T01:09:50.417057"
     },
     {
       "id": "kia_ev9_99_8_kwh_gt_line_6_places",
@@ -29518,11 +29292,11 @@
       "is_electric": true,
       "is_hybrid": false,
       "battery_kwh": 99.8,
-      "range_km": 485,
+      "range_km": 505,
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "thumbnail": "https://catalogue.automobile.tn/big/2025/05/47383.jpg?t=1774975680",
+      "thumbnail": "https://catalogue.automobile.tn/big/2025/05/47383.jpg?t=1793113335",
       "equipment_safety": [
         "ABS",
         "Airbags: Frontaux, Latéraux, Rideaux, Centraux",
@@ -29593,7 +29367,7 @@
         "Suspension: Amortissement piloté, ECS",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:52.482654"
+      "scraped_at": "2026-11-01T01:09:51.542265"
     },
     {
       "id": "land_rover_discovery_sport_1_5_l_p300e_phev_dynamic_se",
@@ -29698,7 +29472,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:53.849958"
+      "scraped_at": "2026-11-01T01:09:52.891638"
     },
     {
       "id": "land_rover_range_rover_velar_2_0_l_p250_dynamic_se",
@@ -29803,7 +29577,7 @@
         "Terrain Response",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:55.094836"
+      "scraped_at": "2026-11-01T01:09:53.906214"
     },
     {
       "id": "land_rover_range_rover_3_0_l_p460_phev_se",
@@ -29922,7 +29696,7 @@
         "Suspension: Pneumatique, Adaptative",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:56.375309"
+      "scraped_at": "2026-11-01T01:09:55.128539"
     },
     {
       "id": "land_rover_defender_110_2_0_l_p400e_phev_s",
@@ -30026,7 +29800,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:57.695323"
+      "scraped_at": "2026-11-01T01:09:56.429826"
     },
     {
       "id": "land_rover_defender_110_2_0_l_p400e_phev_x_dynamic_se",
@@ -30130,7 +29904,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:36:59.089152"
+      "scraped_at": "2026-11-01T01:09:57.795947"
     },
     {
       "id": "land_rover_defender_110_2_0_l_p400e_phev_x_dynamic_hse",
@@ -30234,7 +30008,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:00.349060"
+      "scraped_at": "2026-11-01T01:09:59.196420"
     },
     {
       "id": "land_rover_defender_110_2_0_l_p400e_phev_x",
@@ -30348,7 +30122,7 @@
         "Terrain Response: Configurable",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:01.722789"
+      "scraped_at": "2026-11-01T01:10:00.410181"
     },
     {
       "id": "land_rover_defender_110_3_0_l_p400_x_dynamic_se",
@@ -30459,7 +30233,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:03.038836"
+      "scraped_at": "2026-11-01T01:10:01.645740"
     },
     {
       "id": "land_rover_range_rover_evoque_1_5_l_p300e_phev_s",
@@ -30559,7 +30333,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:04.241934"
+      "scraped_at": "2026-11-01T01:10:02.607637"
     },
     {
       "id": "land_rover_range_rover_evoque_1_5_l_p300e_phev_dynamic_se",
@@ -30665,7 +30439,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:05.624278"
+      "scraped_at": "2026-11-01T01:10:03.990970"
     },
     {
       "id": "land_rover_range_rover_evoque_2_0_l_d163_dynamic_se__",
@@ -30774,7 +30548,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:06.982212"
+      "scraped_at": "2026-11-01T01:10:05.140521"
     },
     {
       "id": "land_rover_range_rover_sport_3_0_l_p460_phev_s",
@@ -30892,7 +30666,7 @@
         "Suspension: Pneumatique, Adaptative",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:08.032712"
+      "scraped_at": "2026-11-01T01:10:07.553955"
     },
     {
       "id": "land_rover_range_rover_sport_3_0_l_p460_phev_se",
@@ -31009,7 +30783,7 @@
         "Suspension: Pneumatique, Adaptative",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:09.351633"
+      "scraped_at": "2026-11-01T01:10:12.112509"
     },
     {
       "id": "land_rover_range_rover_sport_3_0_l_p460_phev_dynamic_se",
@@ -31127,7 +30901,7 @@
         "Suspension: Pneumatique, Adaptative",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:10.588618"
+      "scraped_at": "2026-11-01T01:10:13.431136"
     },
     {
       "id": "land_rover_range_rover_sport_3_0_l_p460_phev_dynamic_hse",
@@ -31247,7 +31021,7 @@
         "Suspension: Pneumatique, Adaptative",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:11.818504"
+      "scraped_at": "2026-11-01T01:10:12.492308"
     },
     {
       "id": "land_rover_range_rover_sport_3_0_l_p460_phev_autobiography",
@@ -31368,7 +31142,7 @@
         "Suspension: Pneumatique, Adaptative",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:13.370358"
+      "scraped_at": "2026-11-01T01:10:13.691877"
     },
     {
       "id": "lynk_co_02_66_kwh_more",
@@ -31493,7 +31267,7 @@
         "Rétroviseur intérieur: Sans Cadre",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:14.397515"
+      "scraped_at": "2026-11-01T01:10:14.837178"
     },
     {
       "id": "lynk_co_01_1_5_l_more",
@@ -31617,7 +31391,7 @@
         "Instrumentation digitale: 10.2 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:15.757434"
+      "scraped_at": "2026-11-01T01:10:16.143510"
     },
     {
       "id": "lynk_co_08_1_5_l_more",
@@ -31742,7 +31516,7 @@
         "Instrumentation digitale: 10.2 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:17.197679"
+      "scraped_at": "2026-11-01T01:10:17.334136"
     },
     {
       "id": "m_hero_917_1_5_l_reev_65_9_kwh_awd",
@@ -31866,7 +31640,7 @@
         "Rétroviseur intérieur: Avec caméra arrière",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:18.538830"
+      "scraped_at": "2026-11-01T01:10:18.737572"
     },
     {
       "id": "m_hero_817_1_5_l_phreev_31_7_kwh_awd_e0",
@@ -31975,7 +31749,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:19.876135"
+      "scraped_at": "2026-11-01T01:10:19.933430"
     },
     {
       "id": "m_hero_817_1_5_l_phreev_31_7_kwh_awd_e1",
@@ -32089,7 +31863,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:21.108855"
+      "scraped_at": "2026-11-01T01:10:21.062646"
     },
     {
       "id": "m_hero_817_1_5_l_phreev_31_7_kwh_awd_e1__lpha",
@@ -32205,7 +31979,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:22.317273"
+      "scraped_at": "2026-11-01T01:10:22.203819"
     },
     {
       "id": "mahindra_pick_up_sc_2_2_l_diesel_4x4_plateau_simple",
@@ -32292,7 +32066,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:37:23.625632"
+      "scraped_at": "2026-11-01T01:10:23.528533"
     },
     {
       "id": "mahindra_xuv_3xo_1_2_l__turbo_mx3",
@@ -32383,7 +32157,7 @@
         "Système Start & Stop",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:24.871069"
+      "scraped_at": "2026-11-01T01:10:24.869190"
     },
     {
       "id": "mahindra_xuv_3xo_1_2_l__turbo_ax5",
@@ -32483,7 +32257,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:25.925843"
+      "scraped_at": "2026-11-01T01:10:26.211816"
     },
     {
       "id": "mahindra_xuv_3xo_1_2_l__turbo_ax5_bva",
@@ -32583,7 +32357,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:27.284770"
+      "scraped_at": "2026-11-01T01:10:27.428428"
     },
     {
       "id": "mahindra_xuv_3xo_1_2_l__turbo_ax7_luxury_bva",
@@ -32688,7 +32462,7 @@
         "Système Start & Stop",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:28.312612"
+      "scraped_at": "2026-11-01T01:10:28.476768"
     },
     {
       "id": "mahindra_pick_up_dc_2_2_l_diesel_4x2",
@@ -32776,7 +32550,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:29.423920"
+      "scraped_at": "2026-11-01T01:10:29.615620"
     },
     {
       "id": "mahindra_pick_up_dc_2_2_l_diesel_4x4",
@@ -32864,7 +32638,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:30.770083"
+      "scraped_at": "2026-11-01T01:10:30.696037"
     },
     {
       "id": "mercedes_benz_classe_a_berline_200_amg",
@@ -32978,7 +32752,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:32.135214"
+      "scraped_at": "2026-11-01T01:10:31.905504"
     },
     {
       "id": "mercedes_benz_cle_coup__200_amg__",
@@ -33093,7 +32867,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:37:33.098492"
+      "scraped_at": "2026-11-01T01:10:33.136476"
     },
     {
       "id": "mercedes_benz_eqe_berline_300_amg",
@@ -33215,7 +32989,7 @@
         "Train roulant: Régulation adaptative",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:34.488920"
+      "scraped_at": "2026-11-01T01:10:34.442835"
     },
     {
       "id": "mercedes_benz_eqs_berline_450_4matic_amg",
@@ -33339,7 +33113,7 @@
         "Train roulant: Régulation adaptative",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:35.832103"
+      "scraped_at": "2026-11-01T01:10:35.638056"
     },
     {
       "id": "mercedes_benz_glb_200_amg",
@@ -33446,7 +33220,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:37.133406"
+      "scraped_at": "2026-11-01T01:10:36.605359"
     },
     {
       "id": "mercedes_benz_glc_200_4matic_amg",
@@ -33573,7 +33347,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:38.255577"
+      "scraped_at": "2026-11-01T01:10:37.949985"
     },
     {
       "id": "mercedes_benz_glc_coup__200_4matic_amg",
@@ -33699,7 +33473,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:39.298997"
+      "scraped_at": "2026-11-01T01:10:39.184037"
     },
     {
       "id": "mercedes_benz_eqe_suv_350_4matic_amg",
@@ -33825,7 +33599,7 @@
         "Train roulant: Régulation adaptative",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:40.616126"
+      "scraped_at": "2026-11-01T01:10:40.339414"
     },
     {
       "id": "mercedes_benz_classe_v_250_d",
@@ -33934,7 +33708,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:41.613487"
+      "scraped_at": "2026-11-01T01:10:41.642322"
     },
     {
       "id": "mercedes_benz_classe_a_200_progressive",
@@ -34048,7 +33822,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:42.714699"
+      "scraped_at": "2026-11-01T01:10:42.668749"
     },
     {
       "id": "mercedes_benz_classe_a_200_premium",
@@ -34164,7 +33938,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:43.820088"
+      "scraped_at": "2026-11-01T01:10:43.908214"
     },
     {
       "id": "mercedes_benz_classe_a_200_amg",
@@ -34280,7 +34054,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:45.152727"
+      "scraped_at": "2026-11-01T01:10:45.194083"
     },
     {
       "id": "mercedes_benz_cla_200_progressive",
@@ -34389,7 +34163,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:46.516124"
+      "scraped_at": "2026-11-01T01:10:46.387836"
     },
     {
       "id": "mercedes_benz_cla_200_amg",
@@ -34499,7 +34273,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:47.927029"
+      "scraped_at": "2026-11-01T01:10:47.652482"
     },
     {
       "id": "mercedes_benz_classe_c_180_avantgarde",
@@ -34610,7 +34384,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:49.238107"
+      "scraped_at": "2026-11-01T01:10:48.996505"
     },
     {
       "id": "mercedes_benz_classe_c_180_premium",
@@ -34724,7 +34498,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:50.435121"
+      "scraped_at": "2026-11-01T01:10:49.973623"
     },
     {
       "id": "mercedes_benz_classe_c_180_amg",
@@ -34837,7 +34611,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:51.726484"
+      "scraped_at": "2026-11-01T01:10:51.370479"
     },
     {
       "id": "mercedes_benz_classe_c_180_amg__",
@@ -34952,7 +34726,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:52.890888"
+      "scraped_at": "2026-11-01T01:10:52.661547"
     },
     {
       "id": "mercedes_benz_classe_c_plug_in_hybride_350e_avantgarde",
@@ -35065,7 +34839,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:53.995645"
+      "scraped_at": "2026-11-01T01:10:53.963767"
     },
     {
       "id": "mercedes_benz_classe_c_plug_in_hybride_350e_premium",
@@ -35180,7 +34954,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:55.380580"
+      "scraped_at": "2026-11-01T01:10:55.121332"
     },
     {
       "id": "mercedes_benz_classe_c_plug_in_hybride_350e_amg",
@@ -35294,7 +35068,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:56.440058"
+      "scraped_at": "2026-11-01T01:10:56.294908"
     },
     {
       "id": "mercedes_benz_classe_c_plug_in_hybride_350e_amg__",
@@ -35409,7 +35183,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:57.754204"
+      "scraped_at": "2026-11-01T01:10:57.733042"
     },
     {
       "id": "mercedes_benz_classe_e_200_avantgarde",
@@ -35521,7 +35295,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:37:58.899306"
+      "scraped_at": "2026-11-01T01:10:58.864622"
     },
     {
       "id": "mercedes_benz_classe_e_200_exclusive",
@@ -35634,7 +35408,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:00.068598"
+      "scraped_at": "2026-11-01T01:11:00.000644"
     },
     {
       "id": "mercedes_benz_classe_e_200_amg",
@@ -35747,7 +35521,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:01.201797"
+      "scraped_at": "2026-11-01T01:11:01.349601"
     },
     {
       "id": "mercedes_benz_classe_e_plug_in_hybride_350e_avantgarde",
@@ -35859,7 +35633,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:02.295208"
+      "scraped_at": "2026-11-01T01:11:02.692692"
     },
     {
       "id": "mercedes_benz_classe_e_plug_in_hybride_350e_exclusive",
@@ -35972,7 +35746,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:03.560639"
+      "scraped_at": "2026-11-01T01:11:03.791304"
     },
     {
       "id": "mercedes_benz_classe_e_plug_in_hybride_350e_amg",
@@ -36085,7 +35859,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:04.865408"
+      "scraped_at": "2026-11-01T01:11:05.018828"
     },
     {
       "id": "mercedes_benz_classe_e_plug_in_hybride_350e_amg_",
@@ -36199,7 +35973,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:06.190297"
+      "scraped_at": "2026-11-01T01:11:06.268886"
     },
     {
       "id": "mercedes_benz_gla_200_progressive",
@@ -36307,7 +36081,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:07.641301"
+      "scraped_at": "2026-11-01T01:11:07.589989"
     },
     {
       "id": "mercedes_benz_gla_200_amg",
@@ -36418,7 +36192,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:08.932975"
+      "scraped_at": "2026-11-01T01:11:08.791002"
     },
     {
       "id": "mercedes_benz_glc_plug_in_hybride_350e_4matic_amg",
@@ -36546,7 +36320,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:10.015224"
+      "scraped_at": "2026-11-01T01:11:09.876710"
     },
     {
       "id": "mercedes_benz_glc_plug_in_hybride_350e_4matic_amg__",
@@ -36674,7 +36448,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:11.028969"
+      "scraped_at": "2026-11-01T01:11:11.009320"
     },
     {
       "id": "mercedes_benz_glc_coup__plug_in_hybride_350e_4matic_amg",
@@ -36799,7 +36573,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:12.227322"
+      "scraped_at": "2026-11-01T01:11:12.205238"
     },
     {
       "id": "mercedes_benz_glc_coup__plug_in_hybride_350e_4matic_amg__",
@@ -36924,7 +36698,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:13.649549"
+      "scraped_at": "2026-11-01T01:11:13.268646"
     },
     {
       "id": "mercedes_benz_classe_g_electrique_580_eq_amg_line",
@@ -37051,7 +36825,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:14.706504"
+      "scraped_at": "2026-11-01T01:11:14.353562"
     },
     {
       "id": "mercedes_benz_classe_g_electrique_580_eq_amg_line_superior",
@@ -37178,7 +36952,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:15.881669"
+      "scraped_at": "2026-11-01T01:11:15.530269"
     },
     {
       "id": "mg_3_hybrid__1_5_l_cvt__luxury",
@@ -37281,7 +37055,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:17.268970"
+      "scraped_at": "2026-11-01T01:11:16.949026"
     },
     {
       "id": "mg_zs_hybrid__1_5_l_cvt_luxury",
@@ -37387,7 +37161,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Éclairage d'accueil à LED",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:18.375478"
+      "scraped_at": "2026-11-01T01:11:18.282039"
     },
     {
       "id": "mg_s5_64_kwh",
@@ -37496,7 +37270,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:19.765539"
+      "scraped_at": "2026-11-01T01:11:19.568573"
     },
     {
       "id": "mg_hs_1_5l_turbo_luxury",
@@ -37595,7 +37369,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:21.079579"
+      "scraped_at": "2026-11-01T01:11:20.657259"
     },
     {
       "id": "mg_hs_hybrid__1_5l_turbo",
@@ -37698,7 +37472,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:22.466259"
+      "scraped_at": "2026-11-01T01:11:21.957819"
     },
     {
       "id": "mg_rx9_2_0_t_ultimate",
@@ -37796,7 +37570,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:23.785258"
+      "scraped_at": "2026-11-01T01:11:23.095054"
     },
     {
       "id": "mg_cyberster_77_kwh_rwd",
@@ -37904,7 +37678,7 @@
         "Instrumentation digitale: 7 pouces, 10.25 pouces",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:38:24.893481"
+      "scraped_at": "2026-11-01T01:11:24.217244"
     },
     {
       "id": "mg_3_1_5_l_standard",
@@ -37985,7 +37759,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:25.936899"
+      "scraped_at": "2026-11-01T01:11:25.286025"
     },
     {
       "id": "mg_3_1_5_l_confort",
@@ -38070,7 +37844,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:27.058848"
+      "scraped_at": "2026-11-01T01:11:26.680788"
     },
     {
       "id": "mg_3_1_5_l_luxe_bva",
@@ -38165,7 +37939,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:28.080175"
+      "scraped_at": "2026-11-01T01:11:28.022887"
     },
     {
       "id": "mg_4_urban_43_kwh_confort",
@@ -38271,7 +38045,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:29.389139"
+      "scraped_at": "2026-11-01T01:11:29.394807"
     },
     {
       "id": "mg_4_urban_54_kwh_luxury",
@@ -38381,7 +38155,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:30.524223"
+      "scraped_at": "2026-11-01T01:11:30.797727"
     },
     {
       "id": "mg_5_1_5_l_confort",
@@ -38466,7 +38240,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:31.757338"
+      "scraped_at": "2026-11-01T01:11:32.153082"
     },
     {
       "id": "mg_5_1_5_l_confort_plus",
@@ -38552,7 +38326,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:32.803817"
+      "scraped_at": "2026-11-01T01:11:33.235617"
     },
     {
       "id": "mg_5_1_5_l_luxe_plus_bva",
@@ -38646,7 +38420,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:34.007180"
+      "scraped_at": "2026-11-01T01:11:34.362159"
     },
     {
       "id": "mg_zs_1_5_l_luxury",
@@ -38736,7 +38510,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:35.428069"
+      "scraped_at": "2026-11-01T01:11:35.522200"
     },
     {
       "id": "mg_zs_1_5_l_luxury_bva",
@@ -38831,7 +38605,7 @@
         "Rétroviseurs extérieurs: Électriques, Éclairage d'accueil à LED",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:36.296934"
+      "scraped_at": "2026-11-01T01:11:36.868122"
     },
     {
       "id": "mg_s6_77_kwh_luxury",
@@ -38946,7 +38720,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:37.681706"
+      "scraped_at": "2026-11-01T01:11:37.885753"
     },
     {
       "id": "mg_s6_77_kwh_awd_xpower",
@@ -39061,7 +38835,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:38.878913"
+      "scraped_at": "2026-11-01T01:11:39.313241"
     },
     {
       "id": "mg_7_1_5_l_turbo_luxury_bva",
@@ -39155,7 +38929,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:39.876063"
+      "scraped_at": "2026-11-01T01:11:40.335284"
     },
     {
       "id": "mg_7_2_0_l_turbo_trophy___bva",
@@ -39256,7 +39030,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:41.218926"
+      "scraped_at": "2026-11-01T01:11:41.538684"
     },
     {
       "id": "mini_cooper_3_portes_1_5_l_john_cooper_works",
@@ -39370,7 +39144,7 @@
         "Suspension: Adaptative",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:38:42.464650"
+      "scraped_at": "2026-11-01T01:11:42.670648"
     },
     {
       "id": "mini_cooper_electric_36_6_kwh_classic",
@@ -39472,7 +39246,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:38:43.585046"
+      "scraped_at": "2026-11-01T01:11:44.084298"
     },
     {
       "id": "mini_countryman_electric_65_2_kwh__favoured",
@@ -39588,7 +39362,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:44.952657"
+      "scraped_at": "2026-11-01T01:11:45.186877"
     },
     {
       "id": "mini_cooper_cabriolet_2_0_l_favoured",
@@ -39696,7 +39470,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:38:46.241239"
+      "scraped_at": "2026-11-01T01:11:46.409950"
     },
     {
       "id": "mini_cooper_5_portes_1_5_l_favoured",
@@ -39809,7 +39583,7 @@
         "Suspension: Adaptative",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:47.489729"
+      "scraped_at": "2026-11-01T01:11:47.529344"
     },
     {
       "id": "mini_cooper_5_portes_1_5_l_jcw",
@@ -39923,7 +39697,7 @@
         "Suspension: Adaptative",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:48.773349"
+      "scraped_at": "2026-11-01T01:11:48.683662"
     },
     {
       "id": "mini_aceman_electric_38_5_kwh_classic",
@@ -40030,7 +39804,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:49.885929"
+      "scraped_at": "2026-11-01T01:11:49.877510"
     },
     {
       "id": "mini_aceman_electric_49_2_kwh_se_classic",
@@ -40141,7 +39915,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:51.076156"
+      "scraped_at": "2026-11-01T01:11:51.200573"
     },
     {
       "id": "mini_countryman_1_5_l_classic_bva",
@@ -40250,7 +40024,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:52.484778"
+      "scraped_at": "2026-11-01T01:11:52.319839"
     },
     {
       "id": "mini_countryman_1_5_l_favoured_bva",
@@ -40365,7 +40139,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:53.519789"
+      "scraped_at": "2026-11-01T01:11:53.532585"
     },
     {
       "id": "mitsubishi_attrage_populaire_1_2_l_glx_bvm",
@@ -40439,7 +40213,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:54.773783"
+      "scraped_at": "2026-11-01T01:11:54.994551"
     },
     {
       "id": "mitsubishi_eclipse_cross_1_5_t_mivec_cvt",
@@ -40527,7 +40301,7 @@
         "Rétroviseurs extérieurs: Électriques, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:55.813805"
+      "scraped_at": "2026-11-01T01:11:56.010987"
     },
     {
       "id": "mitsubishi_asx_2_0_l_bva",
@@ -40621,7 +40395,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:57.240464"
+      "scraped_at": "2026-11-01T01:11:57.104843"
     },
     {
       "id": "mitsubishi_l200_double_cabine_2_5_l_did_gl",
@@ -40695,7 +40469,7 @@
         "Fermeture centralisée: À distance",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:38:58.446541"
+      "scraped_at": "2026-11-01T01:11:58.051716"
     },
     {
       "id": "mitsubishi_pajero_2_8_l",
@@ -40767,7 +40541,7 @@
         "Fermeture centralisée: À distance",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:38:59.759485"
+      "scraped_at": "2026-11-01T01:11:59.220544"
     },
     {
       "id": "mitsubishi_pajero_sport_2_4_l_did_business",
@@ -40848,7 +40622,7 @@
         "Rétroviseurs extérieurs: Électriques, Chromés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:00.853638"
+      "scraped_at": "2026-11-01T01:12:00.544874"
     },
     {
       "id": "mitsubishi_pajero_sport_2_4_l_did_premium_bva",
@@ -40934,7 +40708,7 @@
         "Système Start & Stop",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:01.962286"
+      "scraped_at": "2026-11-01T01:12:01.762916"
     },
     {
       "id": "nissan_juke_1_0_l_dig_t_dct",
@@ -41041,7 +40815,7 @@
         "Système Start & Stop",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:03.265425"
+      "scraped_at": "2026-11-01T01:12:02.903182"
     },
     {
       "id": "nissan_qashqai_e_power_1_5_l_n_connecta",
@@ -41152,7 +40926,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:04.305771"
+      "scraped_at": "2026-11-01T01:12:04.203555"
     },
     {
       "id": "nissan_navara_2_5_dci_4x4_double_cabine_bva",
@@ -41248,7 +41022,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:05.667831"
+      "scraped_at": "2026-11-01T01:12:05.439856"
     },
     {
       "id": "nissan_magnite_1_0t_acenta",
@@ -41343,7 +41117,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Noirs, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:06.851252"
+      "scraped_at": "2026-11-01T01:12:06.705965"
     },
     {
       "id": "nissan_magnite_1_0t_cvt_tekna",
@@ -41442,7 +41216,122 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Noirs, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:07.873406"
+      "scraped_at": "2026-11-01T01:12:08.118979"
+    },
+    {
+      "id": "omoda_jaecoo_j5_61_kwh_premium",
+      "brand": "Omoda Jaecoo",
+      "model": "J5",
+      "trim": "61 kWh Premium",
+      "full_name": "Omoda & Jaecoo J5 61 kWh Premium",
+      "url": "https://www.automobile.tn/fr/neuf/omoda-jaecoo/j5/61-kwh-premium",
+      "price_tnd": 74900,
+      "price_original": null,
+      "discount_tnd": null,
+      "has_discount": false,
+      "engine_cc": null,
+      "cv_fiscal": 5,
+      "cv_din": 211,
+      "torque_nm": 288,
+      "top_speed_kmh": 175,
+      "acceleration_0_100": 7.7,
+      "fuel_type": "electric",
+      "consumption_mixed": null,
+      "consumption_city": null,
+      "consumption_highway": null,
+      "co2_emissions": null,
+      "fuel_tank_liters": null,
+      "transmission": "automatic",
+      "gearbox_speeds": null,
+      "drivetrain": "FWD",
+      "length_mm": 4380,
+      "width_mm": 1860,
+      "height_mm": 1650,
+      "wheelbase_mm": null,
+      "trunk_liters": 480,
+      "weight_kg": null,
+      "body_type": "SUV",
+      "doors": 5,
+      "seats": 5,
+      "warranty_years": 7,
+      "is_electric": true,
+      "is_hybrid": false,
+      "battery_kwh": 61.0,
+      "range_km": 402,
+      "is_new": false,
+      "is_populaire": false,
+      "concessionnaire": "",
+      "thumbnail": "https://catalogue.automobile.tn/big/2026/10/47715.jpg?t=1793311408",
+      "equipment_safety": [
+        "ABS",
+        "Airbags: Frontaux, Latéraux, Rideaux",
+        "Alarme antivol",
+        "Alerte de franchissement de ligne: LDW",
+        "Alerte de risque de collision: FCW, RCW",
+        "Allumage automatique des feux",
+        "Anti-démarrage électronique",
+        "Anti-patinage: ESP",
+        "Assistance au freinage: Freinage automatique anti-collision (AEB), MCB, RCCB",
+        "Contrôle de pression des pneus: TPMS",
+        "Fixations ISOFIX"
+      ],
+      "equipment_driving_aids": [
+        "Aide au démarrage en côte: HAC",
+        "Aide au maintien dans la voie: LCA, LDP, ELK",
+        "Aide au stationnement: Radar de recul, Radar avant, Système de caméras 540°",
+        "Alerte de circulation transversale: RCTA",
+        "Assistant de feux de route: IHC",
+        "Conduite autonome: TJA",
+        "Contrôle de stabilité anti-retournement: RSC",
+        "Détecteur de fatigue: DMS",
+        "Direction assistée",
+        "Limiteur de vitesse",
+        "Régulateur de vitesse: Adaptatif (ACC)",
+        "Surveillance d’angle mort: BSD",
+        "Système de descente en côte: HDC"
+      ],
+      "equipment_exterior": [
+        "Antibrouillards: LED",
+        "Barres de toit",
+        "Feux à LED: Feux de jour, Avant, Arrières",
+        "Jantes: En aluminium, 18''",
+        "Phares: Full LED",
+        "Spoiler arrière"
+      ],
+      "equipment_audio": [
+        "Autoradio: 8 haut-parleurs, Commandes au volant",
+        "Connectivité: USB-C, 3 USB, Android Auto, Apple Carplay, Bluetooth, Commande vocale, Chargeur de téléphone sans fil",
+        "Ecran central: Tactile, 13.2 pouces"
+      ],
+      "equipment_interior": [
+        "Accoudoirs: Avant",
+        "Kit rangement: Poches aumônières",
+        "Lumières d'ambiance",
+        "Sellerie: Similicuir",
+        "Sièges: Électriques, 6 directions, Ventilés, Réglage lombaire",
+        "Sièges réglables en hauteur: Conducteur et passager",
+        "Tapis de sol",
+        "Toit: Panoramique",
+        "Volant: Cuir, 3 branches, Multi-fonctions",
+        "Volant réglable: En hauteur et en profondeur"
+      ],
+      "equipment_functional": [
+        "Alimentation électrique: 1 prise 12 V, 220 V",
+        "Bouton Start & Stop: Démarrage mains libres",
+        "Caméra d'enregistrement de conduite",
+        "Clé intelligente: Accès mains libres",
+        "Coffre à bagages: Ouverture et fermeture motorisées",
+        "Climatisation: Automatique, Bizone",
+        "Détecteur de pluie",
+        "Fermeture centralisée: À distance",
+        "Frein de stationnement: Éléctrique, EPB",
+        "Modes de conduite: Normal, Sport, Eco",
+        "Ordinateur de bord",
+        "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants, Avec clignotants intégrés",
+        "Rétroviseur intérieur: Anti-éblouissement",
+        "Vitres électriques: Avant/Arrière"
+      ],
+      "scraped_at": "2026-11-01T01:12:09.297903"
     },
     {
       "id": "omoda_jaecoo_e5_61_kwh_premium",
@@ -41559,7 +41448,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:09.209231"
+      "scraped_at": "2026-11-01T01:12:10.699539"
     },
     {
       "id": "omoda_jaecoo_c5_1_5_tgdi_hev",
@@ -41672,7 +41561,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:10.489314"
+      "scraped_at": "2026-11-01T01:12:12.061912"
     },
     {
       "id": "omoda_jaecoo_j7_1_5_tgdi_shs",
@@ -41786,7 +41675,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:11.617743"
+      "scraped_at": "2026-11-01T01:12:13.443339"
     },
     {
       "id": "omoda_jaecoo_j8_1_5_tgdi_shs_4wd",
@@ -41903,7 +41792,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:13.043562"
+      "scraped_at": "2026-11-01T01:12:14.575098"
     },
     {
       "id": "opel_crossland_1_2_l_110_ch_at6_elegance",
@@ -42000,7 +41889,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:13.996065"
+      "scraped_at": "2026-11-01T01:12:15.740265"
     },
     {
       "id": "opel_mokka_1_2_l_turbo_130_ch_at8_gs_special_edition",
@@ -42101,7 +41990,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:15.094683"
+      "scraped_at": "2026-11-01T01:12:17.082486"
     },
     {
       "id": "opel_grandland_1_6_l_turbo_gs_line_bva",
@@ -42191,7 +42080,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:16.334324"
+      "scraped_at": "2026-11-01T01:12:18.445795"
     },
     {
       "id": "opel_corsa_1_2_turbo_edition",
@@ -42287,7 +42176,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:17.344911"
+      "scraped_at": "2026-11-01T01:12:19.736092"
     },
     {
       "id": "opel_corsa_1_2_turbo_gs",
@@ -42391,7 +42280,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:18.600384"
+      "scraped_at": "2026-11-01T01:12:21.075255"
     },
     {
       "id": "opel_combo_cargo_1_6_l_diesel_confort_l1h1_650_kg",
@@ -42475,7 +42364,7 @@
         "Rétroviseurs extérieurs: Électriques, Dégivrants",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:39:19.967734"
+      "scraped_at": "2026-11-01T01:12:22.451384"
     },
     {
       "id": "opel_combo_cargo_xl_1_6_l_diesel_confort_l2h1_1000_kg",
@@ -42559,7 +42448,7 @@
         "Rétroviseurs extérieurs: Électriques, Dégivrants",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:39:21.068735"
+      "scraped_at": "2026-11-01T01:12:23.493836"
     },
     {
       "id": "peugeot_208_1_2_l_style",
@@ -42650,7 +42539,7 @@
         "Rétroviseurs extérieurs: Électriques, Dégivrants, Noirs, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:22.345554"
+      "scraped_at": "2026-11-01T01:12:24.680384"
     },
     {
       "id": "peugeot_rifter_1_6_l_hdi_92ch",
@@ -42737,7 +42626,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:39:23.492998"
+      "scraped_at": "2026-11-01T01:12:25.817202"
     },
     {
       "id": "peugeot_expert_combi_2_0_l_hdi__9_places",
@@ -42782,7 +42671,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "thumbnail": "https://catalogue.automobile.tn/big/2025/10/47476.jpg?t=1791017913",
+      "thumbnail": "https://catalogue.automobile.tn/big/2025/10/47476.jpg?t=1793264583",
       "equipment_safety": [
         "ABS",
         "Airbags: Frontaux",
@@ -42822,7 +42711,7 @@
         "Rétroviseurs extérieurs: Électriques, Dégivrants",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:39:24.545324"
+      "scraped_at": "2026-11-01T01:12:26.974762"
     },
     {
       "id": "peugeot_expert_2_0_l_hdi",
@@ -42901,7 +42790,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:39:25.652511"
+      "scraped_at": "2026-11-01T01:12:28.169685"
     },
     {
       "id": "peugeot_boxer_double_cabine_plateau_350_l2",
@@ -42971,7 +42860,7 @@
         "Fermeture centralisée: À distance",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:39:26.667334"
+      "scraped_at": "2026-11-01T01:12:29.429912"
     },
     {
       "id": "peugeot_traveller_2_0_l_hdi__9_places",
@@ -43061,7 +42950,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:39:27.688637"
+      "scraped_at": "2026-11-01T01:12:30.798129"
     },
     {
       "id": "peugeot_2008_1_2_l_puretech_130_active_bva",
@@ -43153,7 +43042,7 @@
         "Instrumentation digitale: i-cockpit",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:28.808358"
+      "scraped_at": "2026-11-01T01:12:31.970614"
     },
     {
       "id": "peugeot_2008_1_2_l_puretech_130_allure_bva",
@@ -43253,7 +43142,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:30.196946"
+      "scraped_at": "2026-11-01T01:12:33.053358"
     },
     {
       "id": "peugeot_landtrek_simple_cabine_1_9_l_diesel_4x2_benne_t_le_pli_e",
@@ -43295,7 +43184,7 @@
       "is_hybrid": false,
       "battery_kwh": null,
       "range_km": null,
-      "is_new": true,
+      "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
       "thumbnail": "https://catalogue.automobile.tn/big/2026/07/47674.jpg?t=1791017803",
@@ -43330,7 +43219,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Noirs",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:39:31.306021"
+      "scraped_at": "2026-11-01T01:12:34.149076"
     },
     {
       "id": "peugeot_landtrek_simple_cabine_1_9_l_diesel_4x2",
@@ -43372,7 +43261,7 @@
       "is_hybrid": false,
       "battery_kwh": null,
       "range_km": null,
-      "is_new": true,
+      "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
       "thumbnail": "https://catalogue.automobile.tn/big/2026/07/47675.jpg?t=1791017803",
@@ -43408,7 +43297,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Noirs",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:39:32.422959"
+      "scraped_at": "2026-11-01T01:12:35.491965"
     },
     {
       "id": "peugeot_landtrek_double_cabine_1_9_l_diesel_4x2",
@@ -43450,7 +43339,7 @@
       "is_hybrid": false,
       "battery_kwh": null,
       "range_km": null,
-      "is_new": true,
+      "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
       "thumbnail": "https://catalogue.automobile.tn/big/2026/07/47676.jpg?t=1791017803",
@@ -43490,7 +43379,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:33.558599"
+      "scraped_at": "2026-11-01T01:12:36.808698"
     },
     {
       "id": "peugeot_landtrek_double_cabine_1_9_l_diesel_4x4_pro_plus",
@@ -43532,7 +43421,7 @@
       "is_hybrid": false,
       "battery_kwh": null,
       "range_km": null,
-      "is_new": true,
+      "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
       "thumbnail": "https://catalogue.automobile.tn/big/2025/09/47461.jpg?t=1785226573",
@@ -43577,7 +43466,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:34.817093"
+      "scraped_at": "2026-11-01T01:12:38.149994"
     },
     {
       "id": "peugeot_partner_1_6_l_hdi_650_kg",
@@ -43657,7 +43546,7 @@
         "Rétroviseurs extérieurs: Électriques, Dégivrants",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:39:36.141212"
+      "scraped_at": "2026-11-01T01:12:39.523294"
     },
     {
       "id": "peugeot_partner_1_6_l_hdi_1000_kg",
@@ -43737,7 +43626,7 @@
         "Rétroviseurs extérieurs: Électriques, Dégivrants",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:39:37.484054"
+      "scraped_at": "2026-11-01T01:12:40.647359"
     },
     {
       "id": "peugeot_boxer_2_2_l_hdi_l2h2_11_5m3",
@@ -43817,7 +43706,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:39:38.657920"
+      "scraped_at": "2026-11-01T01:12:41.996902"
     },
     {
       "id": "peugeot_boxer_2_2_l_hdi_l3h2_13m3",
@@ -43897,7 +43786,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:39:39.840778"
+      "scraped_at": "2026-11-01T01:12:43.304371"
     },
     {
       "id": "porsche_taycan_cross_turismo_4",
@@ -44010,7 +43899,7 @@
         "Pack Sport Chrono",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:41.067292"
+      "scraped_at": "2026-11-01T01:12:44.402996"
     },
     {
       "id": "porsche_panamera_4_e_hybrid_panamera_4_e_hybrid",
@@ -44120,7 +44009,7 @@
         "Pack Sport Chrono",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:42.137602"
+      "scraped_at": "2026-11-01T01:12:45.387589"
     },
     {
       "id": "porsche_911_carrera",
@@ -44231,7 +44120,7 @@
         "Pack Sport Chrono",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:39:43.375017"
+      "scraped_at": "2026-11-01T01:12:46.561016"
     },
     {
       "id": "porsche_macan_electric_macan",
@@ -44340,7 +44229,7 @@
         "Pack Sport Chrono",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:44.589963"
+      "scraped_at": "2026-11-01T01:12:47.529029"
     },
     {
       "id": "porsche_macan_electric_macan_4",
@@ -44451,7 +44340,7 @@
         "Pack Sport Chrono",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:45.765539"
+      "scraped_at": "2026-11-01T01:12:48.645385"
     },
     {
       "id": "porsche_macan_electric_macan_4s",
@@ -44565,7 +44454,7 @@
         "Pack Sport Chrono",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:46.710724"
+      "scraped_at": "2026-11-01T01:12:49.946314"
     },
     {
       "id": "porsche_macan_electric_macan_turbo",
@@ -44684,7 +44573,7 @@
         "Pack Sport Chrono",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:47.736969"
+      "scraped_at": "2026-11-01T01:12:51.121830"
     },
     {
       "id": "porsche_cayenne_e_hybrid_cayenne_e_hybrid_black_edition",
@@ -44801,7 +44690,7 @@
         "Pack Sport Chrono",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:49.084329"
+      "scraped_at": "2026-11-01T01:12:52.418897"
     },
     {
       "id": "porsche_cayenne_e_hybrid_cayenne_s_e_hybrid",
@@ -44919,7 +44808,7 @@
         "Pack Sport Chrono",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:50.203891"
+      "scraped_at": "2026-11-01T01:12:53.467018"
     },
     {
       "id": "porsche_cayenne_electric_cayenne",
@@ -45024,7 +44913,7 @@
         "Instrumentation digitale: 14.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:51.480006"
+      "scraped_at": "2026-11-01T01:12:54.632312"
     },
     {
       "id": "porsche_cayenne_electric_cayenne_turbo",
@@ -45134,7 +45023,7 @@
         "Instrumentation digitale: 14.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:52.639074"
+      "scraped_at": "2026-11-01T01:12:55.710662"
     },
     {
       "id": "porsche_cayenne_e_hybrid_coup__cayenne_e_hybrid_coup__black_edition",
@@ -45252,7 +45141,7 @@
         "Pack Sport Chrono",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:54.095598"
+      "scraped_at": "2026-11-01T01:12:56.849965"
     },
     {
       "id": "porsche_cayenne_e_hybrid_coup__cayenne_s_e_hybrid_coup__black_edition",
@@ -45370,7 +45259,7 @@
         "Pack Sport Chrono",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:55.097324"
+      "scraped_at": "2026-11-01T01:12:57.937758"
     },
     {
       "id": "porsche_taycan_taycan",
@@ -45481,7 +45370,7 @@
         "Pack Sport Chrono",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:56.457167"
+      "scraped_at": "2026-11-01T01:12:59.303530"
     },
     {
       "id": "porsche_taycan_taycan_4s",
@@ -45593,7 +45482,7 @@
         "Pack Sport Chrono",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:57.491860"
+      "scraped_at": "2026-11-01T01:13:00.426930"
     },
     {
       "id": "renault_kwid_populaire_1_0_l_outsider",
@@ -45672,7 +45561,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:39:58.491959"
+      "scraped_at": "2026-11-01T01:13:01.548060"
     },
     {
       "id": "renault_austral_1_3_l",
@@ -45775,7 +45664,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:39:59.714586"
+      "scraped_at": "2026-11-01T01:13:02.691131"
     },
     {
       "id": "renault_express_combi_1_5_l_dci",
@@ -45854,7 +45743,7 @@
         "Rétroviseurs extérieurs: Électriques, Avec clignotants intégrés",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:40:00.843710"
+      "scraped_at": "2026-11-01T01:13:03.989416"
     },
     {
       "id": "renault_clio_1_0_l_tce_100_bvm",
@@ -45947,7 +45836,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:02.133400"
+      "scraped_at": "2026-11-01T01:13:05.639394"
     },
     {
       "id": "renault_clio_1_0_l_tce_100_bva",
@@ -46046,7 +45935,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:03.290942"
+      "scraped_at": "2026-11-01T01:13:06.578322"
     },
     {
       "id": "renault_clio_1_0_l_tce_100_esprit_alpine_bva",
@@ -46148,7 +46037,7 @@
         "Instrumentation digitale: 7 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:04.692869"
+      "scraped_at": "2026-11-01T01:13:07.844346"
     },
     {
       "id": "renault_express_van_1_5_l_dci",
@@ -46168,7 +46057,7 @@
       "top_speed_kmh": 163,
       "acceleration_0_100": 13.0,
       "fuel_type": "diesel",
-      "consumption_mixed": 6.1,
+      "consumption_mixed": 5.0,
       "consumption_city": null,
       "consumption_highway": null,
       "co2_emissions": null,
@@ -46193,7 +46082,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "thumbnail": "https://catalogue.automobile.tn/big/2022/06/46765.jpg?t=1778574155",
+      "thumbnail": "https://catalogue.automobile.tn/big/2022/06/46765.jpg?t=1793192423",
       "equipment_safety": [
         "ABS",
         "Airbags: Frontaux",
@@ -46224,7 +46113,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:40:06.050050"
+      "scraped_at": "2026-11-01T01:13:09.032571"
     },
     {
       "id": "renault_express_van_1_5_l_dci_luxe",
@@ -46244,7 +46133,7 @@
       "top_speed_kmh": 163,
       "acceleration_0_100": 13.0,
       "fuel_type": "diesel",
-      "consumption_mixed": 6.1,
+      "consumption_mixed": 5.0,
       "consumption_city": null,
       "consumption_highway": null,
       "co2_emissions": null,
@@ -46269,7 +46158,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "thumbnail": "https://catalogue.automobile.tn/big/2026/04/47616.jpg?t=1778573689",
+      "thumbnail": "https://catalogue.automobile.tn/big/2026/04/47616.jpg?t=1793192436",
       "equipment_safety": [
         "ABS",
         "Airbags: Frontaux",
@@ -46301,7 +46190,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:40:07.138861"
+      "scraped_at": "2026-11-01T01:13:10.318644"
     },
     {
       "id": "renault_master_2_3_l_8m3",
@@ -46367,7 +46256,7 @@
         "Climatisation: Manuelle",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:40:08.530607"
+      "scraped_at": "2026-11-01T01:13:11.711179"
     },
     {
       "id": "renault_master_2_3_l_10_8_m3",
@@ -46433,7 +46322,7 @@
         "Climatisation: Manuelle",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:40:09.892306"
+      "scraped_at": "2026-11-01T01:13:12.813335"
     },
     {
       "id": "renault_master_2_3_l_13_m3",
@@ -46499,7 +46388,7 @@
         "Climatisation: Manuelle",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:40:11.095668"
+      "scraped_at": "2026-11-01T01:13:14.133205"
     },
     {
       "id": "seat_ibiza_1_0_l_mpi_reference",
@@ -46591,7 +46480,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:12.387771"
+      "scraped_at": "2026-11-01T01:13:15.253419"
     },
     {
       "id": "seat_ibiza_1_0_l_mpi_style",
@@ -46686,7 +46575,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:13.675558"
+      "scraped_at": "2026-11-01T01:13:16.391809"
     },
     {
       "id": "seat_ibiza_1_0_l_tsi_reference_bva",
@@ -46778,7 +46667,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:14.936205"
+      "scraped_at": "2026-11-01T01:13:17.777080"
     },
     {
       "id": "seat_ibiza_1_0_l_tsi__move_bva",
@@ -46876,7 +46765,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:16.171774"
+      "scraped_at": "2026-11-01T01:13:18.837974"
     },
     {
       "id": "seat_ibiza_1_0_l_tsi__fr_bva",
@@ -46976,7 +46865,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:17.264064"
+      "scraped_at": "2026-11-01T01:13:20.050783"
     },
     {
       "id": "seat_arona_1_0_tsi_r_f_rence",
@@ -47074,7 +46963,7 @@
         "Préparation pour téléphone",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:18.462812"
+      "scraped_at": "2026-11-01T01:13:21.142356"
     },
     {
       "id": "seat_arona_1_0_tsi_move",
@@ -47177,7 +47066,7 @@
         "Préparation pour téléphone",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:19.576141"
+      "scraped_at": "2026-11-01T01:13:22.470659"
     },
     {
       "id": "seat_arona_1_0_tsi_fr",
@@ -47282,7 +47171,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:20.876043"
+      "scraped_at": "2026-11-01T01:13:23.835601"
     },
     {
       "id": "seat_leon_1_4_tsi_dynamic",
@@ -47383,7 +47272,7 @@
         "Rétroviseurs extérieurs: Électriques, Dégivrants, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:22.053723"
+      "scraped_at": "2026-11-01T01:13:25.007134"
     },
     {
       "id": "seat_leon_1_4_tsi_fr_black_edition",
@@ -47494,7 +47383,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:23.210589"
+      "scraped_at": "2026-11-01T01:13:26.270111"
     },
     {
       "id": "seat_ateca_1_4_l_tsi_style",
@@ -47599,7 +47488,7 @@
         "Instrumentation digitale: Digital Cockpit",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:24.930869"
+      "scraped_at": "2026-11-01T01:13:27.366583"
     },
     {
       "id": "seat_ateca_1_4_l_tsi_fr",
@@ -47708,7 +47597,7 @@
         "Instrumentation digitale: Digital Cockpit",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:26.007190"
+      "scraped_at": "2026-11-01T01:13:28.541941"
     },
     {
       "id": "seat_ateca_1_4_l_tsi_fr_black_edition",
@@ -47816,7 +47705,7 @@
         "Instrumentation digitale: Digital Cockpit",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:27.046324"
+      "scraped_at": "2026-11-01T01:13:29.858287"
     },
     {
       "id": "skoda_fabia_1_0_l_mpi_essence",
@@ -47908,7 +47797,7 @@
         "Système Start & Stop",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:40:28.331814"
+      "scraped_at": "2026-11-01T01:13:30.847906"
     },
     {
       "id": "skoda_slavia_1_0_tsi_active",
@@ -47997,7 +47886,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:29.601081"
+      "scraped_at": "2026-11-01T01:13:31.921355"
     },
     {
       "id": "skoda_slavia_1_0_tsi_ambition",
@@ -48095,7 +47984,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:30.865615"
+      "scraped_at": "2026-11-01T01:13:33.251685"
     },
     {
       "id": "skoda_slavia_1_0_tsi_ambition_bva",
@@ -48193,7 +48082,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:31.933194"
+      "scraped_at": "2026-11-01T01:13:34.247125"
     },
     {
       "id": "skoda_slavia_1_0_tsi_style_bva",
@@ -48296,7 +48185,7 @@
         "Instrumentation digitale: Virtual Cockpit",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:33.140085"
+      "scraped_at": "2026-11-01T01:13:35.524151"
     },
     {
       "id": "skoda_scala_1_0_l_tsi_essence_dsg",
@@ -48389,7 +48278,7 @@
         "Rétroviseurs extérieurs: Électriques, Dégivrants",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:34.364536"
+      "scraped_at": "2026-11-01T01:13:36.892689"
     },
     {
       "id": "skoda_scala_1_0_l_tsi_selection_dsg",
@@ -48495,7 +48384,7 @@
         "Instrumentation digitale: 10.25 pouces, Virtual Cockpit",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:35.419428"
+      "scraped_at": "2026-11-01T01:13:38.222358"
     },
     {
       "id": "skoda_scala_1_0_l_tsi_monte_carlo_dsg",
@@ -48607,7 +48496,7 @@
         "Instrumentation digitale: 10.25 pouces, Virtual Cockpit",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:36.495125"
+      "scraped_at": "2026-11-01T01:13:39.363723"
     },
     {
       "id": "skoda_kamiq_1_0_l_tsi_essence_dsg",
@@ -48700,7 +48589,7 @@
         "Rétroviseurs extérieurs: Électriques, Dégivrants",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:37.617985"
+      "scraped_at": "2026-11-01T01:13:40.658136"
     },
     {
       "id": "skoda_kamiq_1_0_l_tsi_monte_carlo_dsg",
@@ -48808,7 +48697,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:39.104689"
+      "scraped_at": "2026-11-01T01:13:41.711534"
     },
     {
       "id": "skoda_octavia_1_4_tsi_selection_bva",
@@ -48915,7 +48804,7 @@
         "Système Start & Stop",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:40.089216"
+      "scraped_at": "2026-11-01T01:13:43.171309"
     },
     {
       "id": "skoda_octavia_1_4_tsi_sportline_bva",
@@ -49029,7 +48918,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:41.256442"
+      "scraped_at": "2026-11-01T01:13:44.198117"
     },
     {
       "id": "skoda_superb_1_5_tsi_essence_dsg",
@@ -49131,7 +49020,7 @@
         "Instrumentation digitale: 10.25 pouces, Virtual Cockpit",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:42.453244"
+      "scraped_at": "2026-11-01T01:13:45.528854"
     },
     {
       "id": "skoda_superb_1_5_tsi_selection_dsg",
@@ -49240,7 +49129,7 @@
         "Instrumentation digitale: 10.25 pouces, Virtual Cockpit",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:43.783994"
+      "scraped_at": "2026-11-01T01:13:46.905556"
     },
     {
       "id": "ssangyong_tivoli_1_5_t_ilovit_bva",
@@ -49344,7 +49233,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:45.115589"
+      "scraped_at": "2026-11-01T01:13:47.977236"
     },
     {
       "id": "ssangyong_korando_1_5_l_gdi_limited_bva",
@@ -49452,7 +49341,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:46.261149"
+      "scraped_at": "2026-11-01T01:13:49.216164"
     },
     {
       "id": "ssangyong_musso_2_2_l_diesel_4wd_crm",
@@ -49552,7 +49441,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:47.487303"
+      "scraped_at": "2026-11-01T01:13:50.303659"
     },
     {
       "id": "ssangyong_rexton_2_2_l_diesel_5_places_bva",
@@ -49669,7 +49558,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:48.580450"
+      "scraped_at": "2026-11-01T01:13:51.494238"
     },
     {
       "id": "suzuki_celerio_populaire_1_0_l_gl",
@@ -49749,7 +49638,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:49.797178"
+      "scraped_at": "2026-11-01T01:13:52.603895"
     },
     {
       "id": "suzuki_swift_1_2_l_gl_",
@@ -49832,7 +49721,7 @@
         "Système Start & Stop",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:50.862272"
+      "scraped_at": "2026-11-01T01:13:53.632275"
     },
     {
       "id": "suzuki_swift_1_2_l_glx",
@@ -49920,7 +49809,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:52.123191"
+      "scraped_at": "2026-11-01T01:13:54.657543"
     },
     {
       "id": "suzuki_swift_1_2_l_cvt_gl_",
@@ -50002,7 +49891,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:53.463828"
+      "scraped_at": "2026-11-01T01:13:55.809735"
     },
     {
       "id": "suzuki_swift_1_2_l_cvt_glx",
@@ -50089,7 +49978,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:54.817220"
+      "scraped_at": "2026-11-01T01:13:56.889160"
     },
     {
       "id": "suzuki_dzire_1_2_l_gl_",
@@ -50175,7 +50064,7 @@
         "Rétroviseurs extérieurs: Électriques, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:55.897785"
+      "scraped_at": "2026-11-01T01:13:58.036219"
     },
     {
       "id": "suzuki_dzire_1_2_l_glx",
@@ -50265,7 +50154,7 @@
         "Rétroviseurs extérieurs: Électriques, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:57.184310"
+      "scraped_at": "2026-11-01T01:13:59.304354"
     },
     {
       "id": "suzuki_dzire_1_2_l_cvt_gl_",
@@ -50351,7 +50240,7 @@
         "Rétroviseurs extérieurs: Électriques, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:58.426748"
+      "scraped_at": "2026-11-01T01:14:00.550334"
     },
     {
       "id": "suzuki_dzire_1_2_l_cvt_glx",
@@ -50444,7 +50333,7 @@
         "Rétroviseurs extérieurs: Électriques, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:40:59.455705"
+      "scraped_at": "2026-11-01T01:14:01.546696"
     },
     {
       "id": "suzuki_baleno_1_5_l_gl_bvm",
@@ -50529,7 +50418,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:00.666227"
+      "scraped_at": "2026-11-01T01:14:02.684289"
     },
     {
       "id": "suzuki_baleno_1_5_l_glx_bva",
@@ -50626,7 +50515,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:01.679504"
+      "scraped_at": "2026-11-01T01:14:03.729751"
     },
     {
       "id": "suzuki_fronx_1_5_l_gl_bvm",
@@ -50714,7 +50603,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:03.007760"
+      "scraped_at": "2026-11-01T01:14:04.822939"
     },
     {
       "id": "suzuki_fronx_1_5_l_glx_bva",
@@ -50811,7 +50700,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:04.507012"
+      "scraped_at": "2026-11-01T01:14:06.055645"
     },
     {
       "id": "tata_super_ace_simple_cabine_1_4_l_turbo_diesel",
@@ -50874,7 +50763,7 @@
         "Climatisation: Manuelle",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:41:05.183348"
+      "scraped_at": "2026-11-01T01:14:07.368133"
     },
     {
       "id": "tata_xenon_x2_simple_cabine_2_2l_turbo",
@@ -50943,7 +50832,7 @@
         "Fermeture centralisée: À distance",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:41:06.506486"
+      "scraped_at": "2026-11-01T01:14:08.680841"
     },
     {
       "id": "tata_xenon_x2_double_cabine_4x2_2_2_l_turbo",
@@ -51015,7 +50904,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:07.974918"
+      "scraped_at": "2026-11-01T01:14:09.920378"
     },
     {
       "id": "tata_xenon_x2_double_cabine_4x4_2_2_l_turbo",
@@ -51087,7 +50976,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:09.177831"
+      "scraped_at": "2026-11-01T01:14:11.214322"
     },
     {
       "id": "toyota_yaris_hybride_1_5_l_cvt_france",
@@ -51179,7 +51068,7 @@
         "Rétroviseurs extérieurs: Électriques, Avec clignotants intégrés",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:41:10.434895"
+      "scraped_at": "2026-11-01T01:14:12.512532"
     },
     {
       "id": "toyota_yaris_cross_hybride_1_5_l_cvt",
@@ -51275,7 +51164,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:11.596980"
+      "scraped_at": "2026-11-01T01:14:13.622350"
     },
     {
       "id": "toyota_bz4x_73_1_kwh",
@@ -51375,7 +51264,7 @@
         "Système de récupération d'énergie",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:12.815507"
+      "scraped_at": "2026-11-01T01:14:14.951608"
     },
     {
       "id": "toyota_rav_4_hybride_2_5_l",
@@ -51479,7 +51368,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:14.092115"
+      "scraped_at": "2026-11-01T01:14:16.134279"
     },
     {
       "id": "toyota_land_cruiser_76_4_2_l",
@@ -51550,7 +51439,7 @@
         "Fermeture centralisée: À distance",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:15.130618"
+      "scraped_at": "2026-11-01T01:14:17.179298"
     },
     {
       "id": "toyota_fortuner_2_4_l_d_4d_7_places_bva",
@@ -51647,7 +51536,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:16.240228"
+      "scraped_at": "2026-11-01T01:14:18.446351"
     },
     {
       "id": "toyota_hilux_simple_cabine_2_4_l_diesel_d_4d_4x4",
@@ -51724,7 +51613,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:41:17.460177"
+      "scraped_at": "2026-11-01T01:14:19.539893"
     },
     {
       "id": "toyota_land_cruiser_79_4_2_l_diesel_4x4_simple_cabine",
@@ -51794,7 +51683,7 @@
         "Fermeture centralisée: À distance",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:41:18.450382"
+      "scraped_at": "2026-11-01T01:14:20.929235"
     },
     {
       "id": "toyota_hiace_16_places_2_5_l_diesel",
@@ -51862,7 +51751,7 @@
         "Alimentation électrique: 1 prise 12 V",
         "Climatisation: Manuelle, Ventilation arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:19.846710"
+      "scraped_at": "2026-11-01T01:14:22.014592"
     },
     {
       "id": "toyota_coaster_4_2_l_diesel_23_places",
@@ -51930,7 +51819,7 @@
       "equipment_functional": [
         "Climatisation: Manuelle, Ventilation arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:21.039709"
+      "scraped_at": "2026-11-01T01:14:23.091001"
     },
     {
       "id": "toyota_hiace_van_3_0_l_diesel",
@@ -52000,7 +51889,7 @@
         "Climatisation: Manuelle",
         "Fermeture centralisée"
       ],
-      "scraped_at": "2026-10-22T17:41:22.305221"
+      "scraped_at": "2026-11-01T01:14:24.298815"
     },
     {
       "id": "toyota_ace_14_places_2_8_l_diesel",
@@ -52080,7 +51969,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Avec clignotants intégrés",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:41:23.244963"
+      "scraped_at": "2026-11-01T01:14:25.551024"
     },
     {
       "id": "toyota_prado_2_8_l_tx_business_bva",
@@ -52176,7 +52065,7 @@
         "Rétroviseurs extérieurs: Électriques, Noirs, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:24.287355"
+      "scraped_at": "2026-11-01T01:14:26.668934"
     },
     {
       "id": "toyota_prado_2_8_l_wx_adventure_bva",
@@ -52283,7 +52172,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:25.405628"
+      "scraped_at": "2026-11-01T01:14:27.922187"
     },
     {
       "id": "toyota_land_cruiser_300_3_5_l_v6_bi_turbo_essence_4wd_vx",
@@ -52385,7 +52274,7 @@
         "Rétroviseur intérieur: Anti-éblouissement",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:26.661215"
+      "scraped_at": "2026-11-01T01:14:29.094255"
     },
     {
       "id": "toyota_land_cruiser_300_3_3_l_v6_bi_turbo_diesel_4wd_vx",
@@ -52487,7 +52376,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:27.857961"
+      "scraped_at": "2026-11-01T01:14:30.251361"
     },
     {
       "id": "toyota_hilux_double_cabine_2_4_l_diesel_d_4d_4x4",
@@ -52566,7 +52455,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:29.245119"
+      "scraped_at": "2026-11-01T01:14:31.547275"
     },
     {
       "id": "toyota_hilux_double_cabine_2_4_l_diesel_d_4d_4x4_bva",
@@ -52657,7 +52546,7 @@
         "Rétroviseurs extérieurs: Électriques",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:30.445049"
+      "scraped_at": "2026-11-01T01:14:32.617415"
     },
     {
       "id": "volkswagen_amarok_2_0_l_tdi_210_ch_4x4_aventura_bva",
@@ -52772,7 +52661,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:31.645213"
+      "scraped_at": "2026-11-01T01:14:33.707236"
     },
     {
       "id": "volkswagen_caddy_cargo_2_0_l_tdi_business",
@@ -52862,7 +52751,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:41:32.967969"
+      "scraped_at": "2026-11-01T01:14:34.970149"
     },
     {
       "id": "volkswagen_crafter_11_3_m3_l3h3",
@@ -52946,7 +52835,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant"
       ],
-      "scraped_at": "2026-10-22T17:41:33.983749"
+      "scraped_at": "2026-11-01T01:14:36.002371"
     },
     {
       "id": "volkswagen_virtus_1_0_l_tsi_confortline",
@@ -53034,7 +52923,7 @@
         "Rétroviseurs extérieurs: Électriques, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:35.135524"
+      "scraped_at": "2026-11-01T01:14:37.280146"
     },
     {
       "id": "volkswagen_virtus_1_0_l_tsi_highline_bva",
@@ -53129,7 +53018,7 @@
         "Rétroviseurs extérieurs: Électriques, Rabattables, Dégivrants, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:36.459415"
+      "scraped_at": "2026-11-01T01:14:38.662372"
     },
     {
       "id": "volkswagen_virtus_1_0_l_tsi_topline_bva",
@@ -53231,7 +53120,7 @@
         "Instrumentation digitale: Digital Cockpit",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:37.504608"
+      "scraped_at": "2026-11-01T01:14:40.006830"
     },
     {
       "id": "volkswagen_t_cross_1_0_l_tsi_confortline",
@@ -53324,7 +53213,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:38.882982"
+      "scraped_at": "2026-11-01T01:14:41.355165"
     },
     {
       "id": "volkswagen_t_cross_1_0_l_tsi_highline_bva",
@@ -53428,7 +53317,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:39.862909"
+      "scraped_at": "2026-11-01T01:14:42.391935"
     },
     {
       "id": "volkswagen_t_cross_1_0_l_tsi_topline_bva",
@@ -53473,7 +53362,7 @@
       "is_new": true,
       "is_populaire": false,
       "concessionnaire": "",
-      "thumbnail": "https://catalogue.automobile.tn/big/2026/10/47700.jpg?t=1791294800",
+      "thumbnail": "https://catalogue.automobile.tn/big/2026/10/47700.jpg?t=1793276899",
       "equipment_safety": [
         "ABS",
         "Airbags: Frontaux, Latéraux, Rideaux",
@@ -53539,7 +53428,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:40.903412"
+      "scraped_at": "2026-11-01T01:14:43.474678"
     },
     {
       "id": "volkswagen_golf_8_1_4_l_tsi_drive",
@@ -53636,7 +53525,7 @@
         "Instrumentation digitale: Digital Cockpit",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:42.018182"
+      "scraped_at": "2026-11-01T01:14:44.614743"
     },
     {
       "id": "volkswagen_golf_8_1_4_l_tsi_life",
@@ -53741,7 +53630,7 @@
         "Instrumentation digitale: Digital Cockpit",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:43.208581"
+      "scraped_at": "2026-11-01T01:14:45.706004"
     },
     {
       "id": "volkswagen_tiguan_1_4_l_tsi_life",
@@ -53848,7 +53737,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:44.370697"
+      "scraped_at": "2026-11-01T01:14:46.980759"
     },
     {
       "id": "volkswagen_tiguan_1_4_l_tsi_exclusive",
@@ -53957,7 +53846,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:45.693845"
+      "scraped_at": "2026-11-01T01:14:48.077494"
     },
     {
       "id": "volkswagen_tiguan_1_4_l_tsi_r_line",
@@ -54071,7 +53960,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:46.944826"
+      "scraped_at": "2026-11-01T01:14:49.424722"
     },
     {
       "id": "volvo_ec40_single_motor_ultra",
@@ -54116,7 +54005,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "thumbnail": "https://catalogue.automobile.tn/big/2025/06/47399.png?t=1791544913",
+      "thumbnail": "https://catalogue.automobile.tn/big/2025/06/47399.png?t=1793386591",
       "equipment_safety": [
         "ABS",
         "Airbags: Frontaux, Latéraux, Rideaux, Genoux conducteur",
@@ -54186,7 +54075,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:47.989636"
+      "scraped_at": "2026-11-01T01:14:50.671784"
     },
     {
       "id": "volvo_ex30_single_motor_core",
@@ -54297,7 +54186,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:49.253762"
+      "scraped_at": "2026-11-01T01:14:52.085324"
     },
     {
       "id": "volvo_ex30_single_motor_extended_range_plus",
@@ -54412,7 +54301,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:50.490693"
+      "scraped_at": "2026-11-01T01:14:53.341622"
     },
     {
       "id": "volvo_ex30_twin_motor_ultra",
@@ -54528,7 +54417,7 @@
         "Instrumentation digitale",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:51.564090"
+      "scraped_at": "2026-11-01T01:14:54.617607"
     },
     {
       "id": "volvo_xc40_2_0_l_plus_dark",
@@ -54647,7 +54536,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:52.661947"
+      "scraped_at": "2026-11-01T01:14:55.779717"
     },
     {
       "id": "volvo_xc40_2_0_l_ultimate_dark",
@@ -54768,7 +54657,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:53.937396"
+      "scraped_at": "2026-11-01T01:14:56.859080"
     },
     {
       "id": "volvo_xc40_2_0_l_black_edition",
@@ -54889,7 +54778,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:55.111753"
+      "scraped_at": "2026-11-01T01:14:57.848076"
     },
     {
       "id": "volvo_es90_single_motor_extended_range_plus",
@@ -54999,7 +54888,7 @@
         "Instrumentation digitale: 9 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:56.353907"
+      "scraped_at": "2026-11-01T01:14:59.223633"
     },
     {
       "id": "volvo_es90_single_motor_extended_range_ultra",
@@ -55111,7 +55000,7 @@
         "Instrumentation digitale: 9 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:57.703603"
+      "scraped_at": "2026-11-01T01:15:00.364409"
     },
     {
       "id": "volvo_ex90_single_motor_plus___7_places",
@@ -55221,7 +55110,7 @@
         "Instrumentation digitale: 9 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:58.720712"
+      "scraped_at": "2026-11-01T01:15:01.592853"
     },
     {
       "id": "volvo_ex90_twin_performance_ultra___7_places",
@@ -55333,7 +55222,7 @@
         "Instrumentation digitale: 9 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:41:59.744114"
+      "scraped_at": "2026-11-01T01:15:02.985446"
     },
     {
       "id": "volvo_ex90_twin_performance_ultra___6_places",
@@ -55445,7 +55334,7 @@
         "Instrumentation digitale: 9 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:00.905158"
+      "scraped_at": "2026-11-01T01:15:04.296977"
     },
     {
       "id": "volvo_xc60_2_0_l_t8_awd_ultra_dark",
@@ -55566,7 +55455,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:01.949820"
+      "scraped_at": "2026-11-01T01:15:05.420788"
     },
     {
       "id": "volvo_xc60_2_0_l_t8_awd_ultra_black_edition",
@@ -55687,7 +55576,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:03.103217"
+      "scraped_at": "2026-11-01T01:15:06.769429"
     },
     {
       "id": "volvo_xc60_2_0_l_b5_awd_ultimate_dark",
@@ -55811,7 +55700,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:04.526495"
+      "scraped_at": "2026-11-01T01:15:07.794555"
     },
     {
       "id": "volvo_xc90_2_0_l_t8_awd_ultra_bright",
@@ -55925,7 +55814,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:05.667501"
+      "scraped_at": "2026-11-01T01:15:09.098798"
     },
     {
       "id": "volvo_xc90_2_0_l_t8_awd_ultra_black_edition",
@@ -56039,7 +55928,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:06.767047"
+      "scraped_at": "2026-11-01T01:15:10.485466"
     },
     {
       "id": "voyah_dream_1_5_l_phev_awd",
@@ -56154,7 +56043,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:07.779501"
+      "scraped_at": "2026-11-01T01:15:11.463158"
     },
     {
       "id": "voyah_courage_80_kwh_premium",
@@ -56266,7 +56155,7 @@
         "Instrumentation digitale: 6 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:08.923917"
+      "scraped_at": "2026-11-01T01:15:12.615820"
     },
     {
       "id": "voyah_courage_80_kwh_awd_flagship",
@@ -56380,7 +56269,7 @@
         "Instrumentation digitale: 6 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:09.972199"
+      "scraped_at": "2026-11-01T01:15:13.926854"
     },
     {
       "id": "voyah_free_1_5_l_reev_43_kwh_premium",
@@ -56490,7 +56379,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:11.260254"
+      "scraped_at": "2026-11-01T01:15:14.921186"
     },
     {
       "id": "voyah_free_1_5_l_reev_43_kwh_awd_flagship",
@@ -56504,7 +56393,7 @@
       "discount_tnd": null,
       "has_discount": false,
       "engine_cc": 1498,
-      "cv_fiscal": 8,
+      "cv_fiscal": 11,
       "cv_din": 490,
       "torque_nm": 720,
       "top_speed_kmh": 200,
@@ -56535,7 +56424,7 @@
       "is_new": false,
       "is_populaire": false,
       "concessionnaire": "",
-      "thumbnail": "https://catalogue.automobile.tn/big/2026/09/47668.jpg?t=1788858389",
+      "thumbnail": "https://catalogue.automobile.tn/big/2026/09/47668.jpg?t=1793275267",
       "equipment_safety": [
         "ABS",
         "Airbags: Frontaux, Latéraux, Rideaux",
@@ -56601,7 +56490,7 @@
         "Instrumentation digitale: 12.3 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:12.520293"
+      "scraped_at": "2026-11-01T01:15:16.308972"
     },
     {
       "id": "wallyscar_annibal_2_5_l_diesel_4x2",
@@ -56695,7 +56584,7 @@
         "Rétroviseurs extérieurs: Électriques, Chromés, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:13.846637"
+      "scraped_at": "2026-11-01T01:15:17.528390"
     },
     {
       "id": "wallyscar_annibal_2_5_l_diesel_4x4",
@@ -56789,7 +56678,7 @@
         "Rétroviseurs extérieurs: Électriques, Chromés, Avec clignotants intégrés",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:15.131444"
+      "scraped_at": "2026-11-01T01:15:18.725054"
     },
     {
       "id": "wallyscar_annibal_xxl_2_3_l_turbo_diesel_4x4_bva",
@@ -56899,7 +56788,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:16.501730"
+      "scraped_at": "2026-11-01T01:15:19.843162"
     },
     {
       "id": "wallyscar_annibal_xxl_2_0_l_turbo_essence_4x4_bva",
@@ -57009,7 +56898,7 @@
         "Version pays chauds",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:17.737445"
+      "scraped_at": "2026-11-01T01:15:21.053738"
     },
     {
       "id": "xpeng_g6_68_5_kwh_standard",
@@ -57130,7 +57019,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:18.993047"
+      "scraped_at": "2026-11-01T01:15:22.221634"
     },
     {
       "id": "xpeng_g6_80_8_kwh_long_range",
@@ -57251,7 +57140,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:20.208142"
+      "scraped_at": "2026-11-01T01:15:23.313777"
     },
     {
       "id": "xpeng_g6_80_8_kwh_awd_performance",
@@ -57372,7 +57261,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:21.298720"
+      "scraped_at": "2026-11-01T01:15:24.687056"
     },
     {
       "id": "xpeng_g9_93_1_kwh_long_range",
@@ -57488,7 +57377,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:22.376900"
+      "scraped_at": "2026-11-01T01:15:25.880231"
     },
     {
       "id": "xpeng_g9_93_1_kwh_awd_performance",
@@ -57604,7 +57493,7 @@
         "Instrumentation digitale: 10.25 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:23.733690"
+      "scraped_at": "2026-11-01T01:15:26.928406"
     },
     {
       "id": "xpeng_p7__74_9_kwh_long_range",
@@ -57719,7 +57608,7 @@
         "Instrumentation digitale: 8.8 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:25.097554"
+      "scraped_at": "2026-11-01T01:15:28.314045"
     },
     {
       "id": "xpeng_p7__74_9_kwh_awd_performance",
@@ -57834,7 +57723,7 @@
         "Instrumentation digitale: 8.8 pouces",
         "Vitres électriques: Avant/Arrière"
       ],
-      "scraped_at": "2026-10-22T17:42:26.046923"
+      "scraped_at": "2026-11-01T01:15:29.282039"
     }
   ]
 }
