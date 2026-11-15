@@ -1,6 +1,1045 @@
 {
   "entries": [
     {
+      "date": "2026-11-15",
+      "previous_scrape": "2026-11-01T01:15:29.292495",
+      "current_scrape": "2026-11-15T01:15:28.728235",
+      "summary": {
+        "total_before": 564,
+        "total_after": 567,
+        "brands_added": 1,
+        "brands_removed": 0,
+        "models_added": 14,
+        "models_removed": 6,
+        "trims_added": 21,
+        "trims_removed": 18,
+        "price_changes": 38,
+        "price_drops": 12,
+        "price_increases": 26,
+        "spec_changes": 4
+      },
+      "changes": {
+        "brands_added": [
+          "Maxus"
+        ],
+        "brands_removed": [],
+        "models_added": [
+          {
+            "brand": "Citroen",
+            "model": "C3 Aircross"
+          },
+          {
+            "brand": "Jac",
+            "model": "T8 4x2"
+          },
+          {
+            "brand": "Jac",
+            "model": "T8 Pro 4x4"
+          },
+          {
+            "brand": "Jac",
+            "model": "T9 4x4"
+          },
+          {
+            "brand": "Maxus",
+            "model": "Deliver 9"
+          },
+          {
+            "brand": "Maxus",
+            "model": "G10"
+          },
+          {
+            "brand": "Maxus",
+            "model": "T60"
+          },
+          {
+            "brand": "Maxus",
+            "model": "Terron 9"
+          },
+          {
+            "brand": "Maxus",
+            "model": "eDeliver 3"
+          },
+          {
+            "brand": "Maxus",
+            "model": "eDeliver 5"
+          },
+          {
+            "brand": "Suzuki",
+            "model": "Ertiga"
+          },
+          {
+            "brand": "Suzuki",
+            "model": "Jimny 3 portes"
+          },
+          {
+            "brand": "Suzuki",
+            "model": "Jimny 5 portes"
+          },
+          {
+            "brand": "Xpeng",
+            "model": "X9"
+          }
+        ],
+        "models_removed": [
+          {
+            "brand": "Byd",
+            "model": "Atto 3"
+          },
+          {
+            "brand": "Byd",
+            "model": "Dolphin"
+          },
+          {
+            "brand": "Jac",
+            "model": "T8"
+          },
+          {
+            "brand": "Jac",
+            "model": "T8 Pro"
+          },
+          {
+            "brand": "Jac",
+            "model": "T9"
+          },
+          {
+            "brand": "Suzuki",
+            "model": "Fronx"
+          }
+        ],
+        "trims_added": [
+          {
+            "id": "citroen_c3_aircross_1_2_l_turbo_plus___7_places_bva",
+            "full_name": "Citroën C3 Aircross 1.2 L Turbo Plus - 7 places BVA",
+            "brand": "Citroen",
+            "model": "C3 Aircross",
+            "trim": "1.2 L Turbo Plus - 7 places BVA",
+            "price_tnd": 89900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/citroen/c3-aircross/1.2-l-turbo-bva-plus-7-places"
+          },
+          {
+            "id": "citroen_c3_aircross_1_2_l_turbo_plus_bva",
+            "full_name": "Citroën C3 Aircross 1.2 L Turbo Plus BVA",
+            "brand": "Citroen",
+            "model": "C3 Aircross",
+            "trim": "1.2 L Turbo Plus BVA",
+            "price_tnd": 86500,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/citroen/c3-aircross/1.2-l-turbo-bva-plus"
+          },
+          {
+            "id": "jac_t8_4x2_2_0_l_cti_diesel",
+            "full_name": "JAC T8 4x2 2.0 L CTI Diesel",
+            "brand": "Jac",
+            "model": "T8 4x2",
+            "trim": "2.0 L CTI Diesel",
+            "price_tnd": 88000,
+            "fuel_type": "diesel",
+            "body_type": "Pick up",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/jac/t8-double-cabine/2.0-l-cti-diesel"
+          },
+          {
+            "id": "jac_t8_pro_4x4_2_0_l_cti_diesel_all_black",
+            "full_name": "JAC T8 Pro 4x4 2.0 L CTI Diesel All Black",
+            "brand": "Jac",
+            "model": "T8 Pro 4x4",
+            "trim": "2.0 L CTI Diesel All Black",
+            "price_tnd": 105000,
+            "fuel_type": "diesel",
+            "body_type": "Pick up",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/jac/t8-dc/2.0-l-cti-diesel-4x4"
+          },
+          {
+            "id": "jac_t9_4x4_2_0_l_cti_diesel_bva",
+            "full_name": "JAC T9 4x4 2.0 L CTI Diesel BVA",
+            "brand": "Jac",
+            "model": "T9 4x4",
+            "trim": "2.0 L CTI Diesel BVA",
+            "price_tnd": 135000,
+            "fuel_type": "diesel",
+            "body_type": "Pick up",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/jac/t9/2.0-l-cti-diesel-bva"
+          },
+          {
+            "id": "maxus_deliver_9_2_0l_turbo",
+            "full_name": "Maxus Deliver 9 2.0L Turbo",
+            "brand": "Maxus",
+            "model": "Deliver 9",
+            "trim": "2.0L Turbo",
+            "price_tnd": 99400,
+            "fuel_type": "diesel",
+            "body_type": "Utilitaire",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/maxus/deliver-9/2.0l-turbo"
+          },
+          {
+            "id": "maxus_edeliver_3_50_kwh",
+            "full_name": "Maxus eDeliver 3 50 kWh",
+            "brand": "Maxus",
+            "model": "eDeliver 3",
+            "trim": "50 kWh",
+            "price_tnd": 69800,
+            "fuel_type": "electric",
+            "body_type": "Utilitaire",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/maxus/edeliver-3/50-kwh"
+          },
+          {
+            "id": "maxus_edeliver_5_64_kwh",
+            "full_name": "Maxus eDeliver 5 64 kWh",
+            "brand": "Maxus",
+            "model": "eDeliver 5",
+            "trim": "64 kWh",
+            "price_tnd": 85800,
+            "fuel_type": "electric",
+            "body_type": "Utilitaire",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/maxus/edeliver-5/64-kwh"
+          },
+          {
+            "id": "maxus_g10_2_0l_turbo",
+            "full_name": "Maxus G10 2.0L Turbo",
+            "brand": "Maxus",
+            "model": "G10",
+            "trim": "2.0L Turbo",
+            "price_tnd": 79400,
+            "fuel_type": "diesel",
+            "body_type": "Utilitaire",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/maxus/g10/2.0l-turbo"
+          },
+          {
+            "id": "maxus_t60_2_0l_turbo_4x4",
+            "full_name": "Maxus T60 2.0L Turbo 4x4",
+            "brand": "Maxus",
+            "model": "T60",
+            "trim": "2.0L Turbo 4x4",
+            "price_tnd": 79400,
+            "fuel_type": "diesel",
+            "body_type": "Pick up",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/maxus/t60/2.0l-turbo-4x4"
+          },
+          {
+            "id": "maxus_terron_9_2_5l_turbo_4x4_bva",
+            "full_name": "Maxus Terron 9 2.5L Turbo 4x4 BVA",
+            "brand": "Maxus",
+            "model": "Terron 9",
+            "trim": "2.5L Turbo 4x4 BVA",
+            "price_tnd": 149000,
+            "fuel_type": "diesel",
+            "body_type": "Pick up",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/maxus/terron-9/2.5l-turbo-4x4-bva"
+          },
+          {
+            "id": "renault_master_2_0_dci_l2h2_10_8_m3",
+            "full_name": "Renault Master 2.0 dCi L2H2 10.8 m3",
+            "brand": "Renault",
+            "model": "Master",
+            "trim": "2.0 dCi L2H2 10.8 m3",
+            "price_tnd": 92900,
+            "fuel_type": "diesel",
+            "body_type": "Utilitaire",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/renault/master/2.0-dci-l2h2-10.8-m3"
+          },
+          {
+            "id": "renault_master_2_0_dci_l3h2_13_m3",
+            "full_name": "Renault Master 2.0 dCi L3H2 13 m3",
+            "brand": "Renault",
+            "model": "Master",
+            "trim": "2.0 dCi L3H2 13 m3",
+            "price_tnd": 94500,
+            "fuel_type": "diesel",
+            "body_type": "Utilitaire",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/renault/master/2.0-dci-l3h2-13-m3"
+          },
+          {
+            "id": "suzuki_ertiga_1_5_l_glx_7_places",
+            "full_name": "Suzuki Ertiga 1.5 L GLX 7 places",
+            "brand": "Suzuki",
+            "model": "Ertiga",
+            "trim": "1.5 L GLX 7 places",
+            "price_tnd": 82900,
+            "fuel_type": "essence",
+            "body_type": "Monospace",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/suzuki/ertiga/1.5-l-glx-7-places-2026"
+          },
+          {
+            "id": "suzuki_ertiga_1_5_l_glx_7_places_bva",
+            "full_name": "Suzuki Ertiga 1.5 L GLX 7 places BVA",
+            "brand": "Suzuki",
+            "model": "Ertiga",
+            "trim": "1.5 L GLX 7 places BVA",
+            "price_tnd": 88900,
+            "fuel_type": "essence",
+            "body_type": "Monospace",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/suzuki/ertiga/1.5-l-bva-glx-7-places-2026"
+          },
+          {
+            "id": "suzuki_jimny_3_portes_1_5_l_4x4_glx_bva",
+            "full_name": "Suzuki Jimny 3 portes 1.5 L 4x4 GLX BVA",
+            "brand": "Suzuki",
+            "model": "Jimny 3 portes",
+            "trim": "1.5 L 4x4 GLX BVA",
+            "price_tnd": 99900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/suzuki/jimny/1.5-l-4x4-bva-glx"
+          },
+          {
+            "id": "suzuki_jimny_5_portes_1_5_l_4x4_bva",
+            "full_name": "Suzuki Jimny 5 portes 1.5 L 4x4 BVA",
+            "brand": "Suzuki",
+            "model": "Jimny 5 portes",
+            "trim": "1.5 L 4x4 BVA",
+            "price_tnd": 115000,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/suzuki/jimny-5p/1.5-l-4x4-bva"
+          },
+          {
+            "id": "volvo_xc60_2_0_l_t8_awd_long_range_plus",
+            "full_name": "Volvo XC60 2.0 l T8 AWD Long Range Plus",
+            "brand": "Volvo",
+            "model": "XC60",
+            "trim": "2.0 l T8 AWD Long Range Plus",
+            "price_tnd": 239900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/volvo/xc60/2.0-l-t8-awd-long-range-plus"
+          },
+          {
+            "id": "volvo_xc60_2_0_l_t8_awd_long_range_ultra",
+            "full_name": "Volvo XC60 2.0 l T8 AWD Long Range Ultra",
+            "brand": "Volvo",
+            "model": "XC60",
+            "trim": "2.0 l T8 AWD Long Range Ultra",
+            "price_tnd": 259900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/volvo/xc60/2.0-l-t8-awd-long-range-ultra"
+          },
+          {
+            "id": "volvo_xc90_2_0_l_t8_awd_long_range_ultra",
+            "full_name": "Volvo XC90 2.0 l T8 AWD Long Range Ultra",
+            "brand": "Volvo",
+            "model": "XC90",
+            "trim": "2.0 l T8 AWD Long Range Ultra",
+            "price_tnd": 359900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/volvo/xc90/2.0-l-t8-awd-ultra"
+          },
+          {
+            "id": "xpeng_x9_110_kwh_awd_performance",
+            "full_name": "Xpeng X9 110 kWh AWD Performance",
+            "brand": "Xpeng",
+            "model": "X9",
+            "trim": "110 kWh AWD Performance",
+            "price_tnd": 234950,
+            "fuel_type": "electric",
+            "body_type": "Monospace",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/xpeng/x9/110-kwh-awd-performance"
+          }
+        ],
+        "trims_removed": [
+          {
+            "id": "byd_atto_3_60_48_kwh",
+            "full_name": "BYD Atto 3 60.48 kWh",
+            "brand": "Byd",
+            "model": "Atto 3",
+            "trim": "60.48 kWh",
+            "price_tnd": 123990,
+            "fuel_type": "electric",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/byd/atto-3/bev"
+          },
+          {
+            "id": "byd_dolphin_44_9_kwh",
+            "full_name": "BYD Dolphin 44.9 kWh",
+            "brand": "Byd",
+            "model": "Dolphin",
+            "trim": "44.9 kWh",
+            "price_tnd": 94990,
+            "fuel_type": "electric",
+            "body_type": "Compacte",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/byd/dolphin/fwd"
+          },
+          {
+            "id": "byd_dolphin_surf_30_08_kwh",
+            "full_name": "BYD Dolphin Surf 30.08 KWH",
+            "brand": "Byd",
+            "model": "Dolphin Surf",
+            "trim": "30.08 KWH",
+            "price_tnd": 51000,
+            "fuel_type": "electric",
+            "body_type": "Citadine",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/byd/dolphin-surf/30.08-kwh"
+          },
+          {
+            "id": "jac_t8_2_0_l_cti_diesel_4x2",
+            "full_name": "JAC T8 2.0 L CTI Diesel 4x2",
+            "brand": "Jac",
+            "model": "T8",
+            "trim": "2.0 L CTI Diesel 4x2",
+            "price_tnd": 88000,
+            "fuel_type": "diesel",
+            "body_type": "Pick up",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/jac/t8-double-cabine/2.0-l-cti-diesel"
+          },
+          {
+            "id": "jac_t8_pro_2_0_l_cti_diesel_4x4_all_black",
+            "full_name": "JAC T8 Pro  2.0 L CTI Diesel 4x4 All Black",
+            "brand": "Jac",
+            "model": "T8 Pro",
+            "trim": "2.0 L CTI Diesel 4x4 All Black",
+            "price_tnd": 105000,
+            "fuel_type": "diesel",
+            "body_type": "Pick up",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/jac/t8-dc/2.0-l-cti-diesel-4x4"
+          },
+          {
+            "id": "jac_t9_2_0_l_cti_diesel_4x4_bva",
+            "full_name": "JAC T9 2.0 L CTI Diesel 4x4 BVA",
+            "brand": "Jac",
+            "model": "T9",
+            "trim": "2.0 L CTI Diesel 4x4 BVA",
+            "price_tnd": 135000,
+            "fuel_type": "diesel",
+            "body_type": "Pick up",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/jac/t9/2.0-l-cti-diesel-bva"
+          },
+          {
+            "id": "renault_master_2_3_l_10_8_m3",
+            "full_name": "Renault Master 2.3 L 10.8 m3",
+            "brand": "Renault",
+            "model": "Master",
+            "trim": "2.3 L 10.8 m3",
+            "price_tnd": 87950,
+            "fuel_type": "diesel",
+            "body_type": "Utilitaire",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/renault/master/2.3-l-10.8-m3"
+          },
+          {
+            "id": "renault_master_2_3_l_13_m3",
+            "full_name": "Renault Master 2.3 L 13 m3",
+            "brand": "Renault",
+            "model": "Master",
+            "trim": "2.3 L 13 m3",
+            "price_tnd": 89950,
+            "fuel_type": "diesel",
+            "body_type": "Utilitaire",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/renault/master/2.3-l-13-m3"
+          },
+          {
+            "id": "renault_master_2_3_l_8m3",
+            "full_name": "Renault Master 2.3 L 8m3",
+            "brand": "Renault",
+            "model": "Master",
+            "trim": "2.3 L 8m3",
+            "price_tnd": 84900,
+            "fuel_type": "diesel",
+            "body_type": "Utilitaire",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/renault/master/2.3-l-8-m3"
+          },
+          {
+            "id": "suzuki_baleno_1_5_l_glx_bva",
+            "full_name": "Suzuki Baleno 1.5 L GLX BVA",
+            "brand": "Suzuki",
+            "model": "Baleno",
+            "trim": "1.5 L GLX BVA",
+            "price_tnd": 76900,
+            "fuel_type": "essence",
+            "body_type": "Compacte",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/suzuki/baleno/1.5-l-glx-bva"
+          },
+          {
+            "id": "suzuki_fronx_1_5_l_gl_bvm",
+            "full_name": "Suzuki Fronx 1.5 L GL BVM",
+            "brand": "Suzuki",
+            "model": "Fronx",
+            "trim": "1.5 L GL BVM",
+            "price_tnd": 76900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "manual",
+            "url": "https://www.automobile.tn/fr/neuf/suzuki/fronx/1.5-l-bvm"
+          },
+          {
+            "id": "suzuki_fronx_1_5_l_glx_bva",
+            "full_name": "Suzuki Fronx 1.5 L GLX BVA",
+            "brand": "Suzuki",
+            "model": "Fronx",
+            "trim": "1.5 L GLX BVA",
+            "price_tnd": 87900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/suzuki/fronx/1.5-l-bva-glx"
+          },
+          {
+            "id": "volvo_ex90_twin_performance_ultra___6_places",
+            "full_name": "Volvo EX90 Twin Performance Ultra - 6 places",
+            "brand": "Volvo",
+            "model": "EX90",
+            "trim": "Twin Performance Ultra - 6 places",
+            "price_tnd": 329900,
+            "fuel_type": "electric",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/volvo/ex90/twin-performance-ultra-6-places"
+          },
+          {
+            "id": "volvo_xc60_2_0_l_b5_awd_ultimate_dark",
+            "full_name": "Volvo XC60 2.0 l B5 AWD Ultimate Dark",
+            "brand": "Volvo",
+            "model": "XC60",
+            "trim": "2.0 l B5 AWD Ultimate Dark",
+            "price_tnd": 324900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/volvo/xc60/2.0-l-b5-ultimate-dark"
+          },
+          {
+            "id": "volvo_xc60_2_0_l_t8_awd_ultra_black_edition",
+            "full_name": "Volvo XC60 2.0 l T8 AWD Ultra Black Edition",
+            "brand": "Volvo",
+            "model": "XC60",
+            "trim": "2.0 l T8 AWD Ultra Black Edition",
+            "price_tnd": 259900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/volvo/xc60/2.0-l-t8-recharge-ultra-black-edition"
+          },
+          {
+            "id": "volvo_xc60_2_0_l_t8_awd_ultra_dark",
+            "full_name": "Volvo XC60 2.0 l T8 AWD Ultra Dark",
+            "brand": "Volvo",
+            "model": "XC60",
+            "trim": "2.0 l T8 AWD Ultra Dark",
+            "price_tnd": 239900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/volvo/xc60/2.0-l-t8-recharge-ultra-dark"
+          },
+          {
+            "id": "volvo_xc90_2_0_l_t8_awd_ultra_black_edition",
+            "full_name": "Volvo XC90 2.0 l T8 AWD Ultra Black Edition",
+            "brand": "Volvo",
+            "model": "XC90",
+            "trim": "2.0 l T8 AWD Ultra Black Edition",
+            "price_tnd": 364900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/volvo/xc90/2.0-l-recharge-ultra-black-edition"
+          },
+          {
+            "id": "volvo_xc90_2_0_l_t8_awd_ultra_bright",
+            "full_name": "Volvo XC90 2.0 l T8 AWD Ultra Bright",
+            "brand": "Volvo",
+            "model": "XC90",
+            "trim": "2.0 l T8 AWD Ultra Bright",
+            "price_tnd": 349900,
+            "fuel_type": "essence",
+            "body_type": "SUV",
+            "transmission": "automatic",
+            "url": "https://www.automobile.tn/fr/neuf/volvo/xc90/2.0-l-recharge-ultra-bright"
+          }
+        ],
+        "price_changes": [
+          {
+            "id": "byd_tang_ev_108_8_kwh",
+            "full_name": "BYD Tang EV 108.8 kWh",
+            "brand": "Byd",
+            "model": "Tang EV",
+            "trim": "108.8 kWh",
+            "old_price": 229990,
+            "new_price": 189900,
+            "change": -40090,
+            "change_pct": -17.43
+          },
+          {
+            "id": "kia_ev9_99_8_kwh_gt_line_6_places",
+            "full_name": "KIA EV9 99.8 kWh GT-Line 6 places",
+            "brand": "Kia",
+            "model": "EV9",
+            "trim": "99.8 kWh GT-Line 6 places",
+            "old_price": 304980,
+            "new_price": 284980,
+            "change": -20000,
+            "change_pct": -6.56
+          },
+          {
+            "id": "kia_ev9_99_8_kwh_gt_line_7_places",
+            "full_name": "KIA EV9 99.8 kWh GT-Line 7 places",
+            "brand": "Kia",
+            "model": "EV9",
+            "trim": "99.8 kWh GT-Line 7 places",
+            "old_price": 299980,
+            "new_price": 279980,
+            "change": -20000,
+            "change_pct": -6.67
+          },
+          {
+            "id": "bmw_x1_18i_sdrive_lounge",
+            "full_name": "BMW X1 18i sDrive Lounge",
+            "brand": "Bmw",
+            "model": "X1",
+            "trim": "18i sDrive Lounge",
+            "old_price": 184900,
+            "new_price": 199900,
+            "change": 15000,
+            "change_pct": 8.11
+          },
+          {
+            "id": "mini_cooper_5_portes_1_5_l_favoured",
+            "full_name": "Mini Cooper 5 portes 1.5 l Favoured",
+            "brand": "Mini",
+            "model": "Cooper 5 portes",
+            "trim": "1.5 l Favoured",
+            "old_price": 154900,
+            "new_price": 169900,
+            "change": 15000,
+            "change_pct": 9.68
+          },
+          {
+            "id": "volvo_ec40_single_motor_ultra",
+            "full_name": "Volvo EC40 Single Motor Ultra",
+            "brand": "Volvo",
+            "model": "EC40",
+            "trim": "Single Motor Ultra",
+            "old_price": 169900,
+            "new_price": 154900,
+            "change": -15000,
+            "change_pct": -8.83
+          },
+          {
+            "id": "volvo_ex90_twin_performance_ultra___7_places",
+            "full_name": "Volvo EX90 Twin Performance Ultra - 7 places",
+            "brand": "Volvo",
+            "model": "EX90",
+            "trim": "Twin Performance Ultra - 7 places",
+            "old_price": 319900,
+            "new_price": 304900,
+            "change": -15000,
+            "change_pct": -4.69
+          },
+          {
+            "id": "volvo_es90_single_motor_extended_range_ultra",
+            "full_name": "Volvo ES90 Single Motor Extended range Ultra",
+            "brand": "Volvo",
+            "model": "ES90",
+            "trim": "Single Motor Extended range Ultra",
+            "old_price": 239900,
+            "new_price": 229900,
+            "change": -10000,
+            "change_pct": -4.17
+          },
+          {
+            "id": "volvo_ex90_single_motor_plus___7_places",
+            "full_name": "Volvo EX90 Single Motor Plus - 7 places",
+            "brand": "Volvo",
+            "model": "EX90",
+            "trim": "Single Motor Plus - 7 places",
+            "old_price": 274900,
+            "new_price": 265900,
+            "change": -9000,
+            "change_pct": -3.27
+          },
+          {
+            "id": "volvo_es90_single_motor_extended_range_plus",
+            "full_name": "Volvo ES90 Single Motor Extended range Plus",
+            "brand": "Volvo",
+            "model": "ES90",
+            "trim": "Single Motor Extended range Plus",
+            "old_price": 214900,
+            "new_price": 209900,
+            "change": -5000,
+            "change_pct": -2.33
+          },
+          {
+            "id": "volvo_ex30_single_motor_extended_range_plus",
+            "full_name": "Volvo EX30 Single Motor Extended Range Plus",
+            "brand": "Volvo",
+            "model": "EX30",
+            "trim": "Single Motor Extended Range Plus",
+            "old_price": 129900,
+            "new_price": 124900,
+            "change": -5000,
+            "change_pct": -3.85
+          },
+          {
+            "id": "volvo_ex30_twin_motor_ultra",
+            "full_name": "Volvo EX30 Twin Motor Ultra",
+            "brand": "Volvo",
+            "model": "EX30",
+            "trim": "Twin Motor Ultra",
+            "old_price": 144900,
+            "new_price": 139900,
+            "change": -5000,
+            "change_pct": -3.45
+          },
+          {
+            "id": "xpeng_g6_68_5_kwh_standard",
+            "full_name": "Xpeng G6 68.5 kWh Standard",
+            "brand": "Xpeng",
+            "model": "G6",
+            "trim": "68.5 kWh Standard",
+            "old_price": 119950,
+            "new_price": 124950,
+            "change": 5000,
+            "change_pct": 4.17
+          },
+          {
+            "id": "xpeng_g6_80_8_kwh_awd_performance",
+            "full_name": "Xpeng G6 80.8 kWh AWD Performance",
+            "brand": "Xpeng",
+            "model": "G6",
+            "trim": "80.8 kWh AWD Performance",
+            "old_price": 139950,
+            "new_price": 144950,
+            "change": 5000,
+            "change_pct": 3.57
+          },
+          {
+            "id": "xpeng_g6_80_8_kwh_long_range",
+            "full_name": "Xpeng G6 80.8 kWh Long Range",
+            "brand": "Xpeng",
+            "model": "G6",
+            "trim": "80.8 kWh Long Range",
+            "old_price": 129950,
+            "new_price": 134950,
+            "change": 5000,
+            "change_pct": 3.85
+          },
+          {
+            "id": "xpeng_g9_93_1_kwh_awd_performance",
+            "full_name": "Xpeng G9 93.1 kWh AWD Performance",
+            "brand": "Xpeng",
+            "model": "G9",
+            "trim": "93.1 kWh AWD Performance",
+            "old_price": 184950,
+            "new_price": 189950,
+            "change": 5000,
+            "change_pct": 2.7
+          },
+          {
+            "id": "xpeng_p7__74_9_kwh_long_range",
+            "full_name": "Xpeng P7+ 74.9 kWh Long Range",
+            "brand": "Xpeng",
+            "model": "P7+",
+            "trim": "74.9 kWh Long Range",
+            "old_price": 127950,
+            "new_price": 132950,
+            "change": 5000,
+            "change_pct": 3.91
+          },
+          {
+            "id": "citroen_berlingo_1_6_l_hdi_you",
+            "full_name": "Citroën Berlingo 1.6 L HDI You",
+            "brand": "Citroen",
+            "model": "Berlingo",
+            "trim": "1.6 L HDI You",
+            "old_price": 98900,
+            "new_price": 102900,
+            "change": 4000,
+            "change_pct": 4.04
+          },
+          {
+            "id": "byd_dolphin_surf_38_88_kwh",
+            "full_name": "BYD Dolphin Surf 38.88 KWH",
+            "brand": "Byd",
+            "model": "Dolphin Surf",
+            "trim": "38.88 KWH",
+            "old_price": 55000,
+            "new_price": 51900,
+            "change": -3100,
+            "change_pct": -5.64
+          },
+          {
+            "id": "opel_mokka_1_2_l_turbo_130_ch_at8_gs_special_edition",
+            "full_name": "Opel Mokka 1.2 L Turbo 130 ch AT8 GS Special Edition",
+            "brand": "Opel",
+            "model": "Mokka",
+            "trim": "1.2 L Turbo 130 ch AT8 GS Special Edition",
+            "old_price": 88900,
+            "new_price": 91900,
+            "change": 3000,
+            "change_pct": 3.37
+          },
+          {
+            "id": "chery_tiggo_4_hev_1_5_l",
+            "full_name": "Chery Tiggo 4 HEV 1.5 L",
+            "brand": "Chery",
+            "model": "Tiggo 4 HEV",
+            "trim": "1.5 L",
+            "old_price": 79900,
+            "new_price": 81990,
+            "change": 2090,
+            "change_pct": 2.62
+          },
+          {
+            "id": "chery_tiggo_7_phev_1_5_t_dht_hybrid",
+            "full_name": "Chery Tiggo 7 PHEV 1.5 T DHT Hybrid",
+            "brand": "Chery",
+            "model": "Tiggo 7 PHEV",
+            "trim": "1.5 T DHT Hybrid",
+            "old_price": 88900,
+            "new_price": 90990,
+            "change": 2090,
+            "change_pct": 2.35
+          },
+          {
+            "id": "chery_tiggo_9_phev_1_5_t_dht_awd",
+            "full_name": "Chery Tiggo 9 PHEV 1.5 T DHT AWD",
+            "brand": "Chery",
+            "model": "Tiggo 9 PHEV",
+            "trim": "1.5 T DHT AWD",
+            "old_price": 129900,
+            "new_price": 131990,
+            "change": 2090,
+            "change_pct": 1.61
+          },
+          {
+            "id": "chery_tiggo_8_phev_1_5_t_dht",
+            "full_name": "Chery Tiggo 8 PHEV 1.5 T DHT",
+            "brand": "Chery",
+            "model": "Tiggo 8 PHEV",
+            "trim": "1.5 T DHT",
+            "old_price": 102990,
+            "new_price": 104990,
+            "change": 2000,
+            "change_pct": 1.94
+          },
+          {
+            "id": "citroen_jumpy_fourgon_2_0_l_hdi",
+            "full_name": "Citroën Jumpy Fourgon 2.0 L HDI",
+            "brand": "Citroen",
+            "model": "Jumpy Fourgon",
+            "trim": "2.0 L HDI",
+            "old_price": 88900,
+            "new_price": 90900,
+            "change": 2000,
+            "change_pct": 2.25
+          },
+          {
+            "id": "opel_corsa_1_2_turbo_edition",
+            "full_name": "Opel Corsa 1.2 Turbo Edition",
+            "brand": "Opel",
+            "model": "Corsa",
+            "trim": "1.2 Turbo Edition",
+            "old_price": 60900,
+            "new_price": 62900,
+            "change": 2000,
+            "change_pct": 3.28
+          },
+          {
+            "id": "opel_corsa_1_2_turbo_gs",
+            "full_name": "Opel Corsa 1.2 Turbo GS",
+            "brand": "Opel",
+            "model": "Corsa",
+            "trim": "1.2 Turbo GS",
+            "old_price": 67900,
+            "new_price": 69900,
+            "change": 2000,
+            "change_pct": 2.95
+          },
+          {
+            "id": "peugeot_expert_2_0_l_hdi",
+            "full_name": "Peugeot Expert 2.0 L HDI",
+            "brand": "Peugeot",
+            "model": "Expert",
+            "trim": "2.0 L HDI",
+            "old_price": 88900,
+            "new_price": 90900,
+            "change": 2000,
+            "change_pct": 2.25
+          },
+          {
+            "id": "peugeot_traveller_2_0_l_hdi__9_places",
+            "full_name": "Peugeot Traveller 2.0 L HDI  9 places",
+            "brand": "Peugeot",
+            "model": "Traveller",
+            "trim": "2.0 L HDI  9 places",
+            "old_price": 169900,
+            "new_price": 171900,
+            "change": 2000,
+            "change_pct": 1.18
+          },
+          {
+            "id": "chery_arrizo_8_phev_1_5_t_dht",
+            "full_name": "Chery Arrizo 8 PHEV 1.5 T DHT",
+            "brand": "Chery",
+            "model": "Arrizo 8 PHEV",
+            "trim": "1.5 T DHT",
+            "old_price": 89900,
+            "new_price": 90990,
+            "change": 1090,
+            "change_pct": 1.21
+          },
+          {
+            "id": "citroen_jumper_2_2_l_hdi__l2h2_11_5m3",
+            "full_name": "Citroën Jumper 2.2 L HDI  L2H2 11.5m3",
+            "brand": "Citroen",
+            "model": "Jumper",
+            "trim": "2.2 L HDI  L2H2 11.5m3",
+            "old_price": 97900,
+            "new_price": 98900,
+            "change": 1000,
+            "change_pct": 1.02
+          },
+          {
+            "id": "peugeot_208_1_2_l_style",
+            "full_name": "Peugeot 208 1.2 L Style",
+            "brand": "Peugeot",
+            "model": "208",
+            "trim": "1.2 L Style",
+            "old_price": 63900,
+            "new_price": 64900,
+            "change": 1000,
+            "change_pct": 1.56
+          },
+          {
+            "id": "peugeot_boxer_2_2_l_hdi_l2h2_11_5m3",
+            "full_name": "Peugeot Boxer 2.2 L HDI L2H2 11.5m3",
+            "brand": "Peugeot",
+            "model": "Boxer",
+            "trim": "2.2 L HDI L2H2 11.5m3",
+            "old_price": 97900,
+            "new_price": 98900,
+            "change": 1000,
+            "change_pct": 1.02
+          },
+          {
+            "id": "peugeot_boxer_2_2_l_hdi_l3h2_13m3",
+            "full_name": "Peugeot Boxer 2.2 L HDI L3H2 13m3",
+            "brand": "Peugeot",
+            "model": "Boxer",
+            "trim": "2.2 L HDI L3H2 13m3",
+            "old_price": 99900,
+            "new_price": 100900,
+            "change": 1000,
+            "change_pct": 1.0
+          },
+          {
+            "id": "peugeot_partner_1_6_l_hdi_650_kg",
+            "full_name": "Peugeot Partner 1.6 L HDI 650 Kg",
+            "brand": "Peugeot",
+            "model": "Partner",
+            "trim": "1.6 L HDI 650 Kg",
+            "old_price": 62990,
+            "new_price": 63990,
+            "change": 1000,
+            "change_pct": 1.59
+          },
+          {
+            "id": "citroen_c3_1_2_l_plus",
+            "full_name": "Citroën C3 1.2 L Plus",
+            "brand": "Citroen",
+            "model": "C3",
+            "trim": "1.2 L Plus",
+            "old_price": 60900,
+            "new_price": 61500,
+            "change": 600,
+            "change_pct": 0.99
+          },
+          {
+            "id": "peugeot_expert_combi_2_0_l_hdi__9_places",
+            "full_name": "Peugeot Expert Combi 2.0 L HDI  9 places",
+            "brand": "Peugeot",
+            "model": "Expert Combi",
+            "trim": "2.0 L HDI  9 places",
+            "old_price": 147900,
+            "new_price": 147400,
+            "change": -500,
+            "change_pct": -0.34
+          },
+          {
+            "id": "peugeot_rifter_1_6_l_hdi_92ch",
+            "full_name": "Peugeot Rifter 1.6 L HDI 92ch",
+            "brand": "Peugeot",
+            "model": "Rifter",
+            "trim": "1.6 L HDI 92ch",
+            "old_price": 104900,
+            "new_price": 105400,
+            "change": 500,
+            "change_pct": 0.48
+          }
+        ],
+        "spec_changes": [
+          {
+            "id": "bmw_s_rie_3_hybride_330e_lounge",
+            "full_name": "BMW Série 3 Hybride 330e Lounge",
+            "brand": "Bmw",
+            "model": "Série 3 Hybride",
+            "field": "range_km",
+            "old_value": 92,
+            "new_value": 101
+          },
+          {
+            "id": "bmw_s_rie_3_hybride_330e_pack_m",
+            "full_name": "BMW Série 3 Hybride 330e Pack M",
+            "brand": "Bmw",
+            "model": "Série 3 Hybride",
+            "field": "range_km",
+            "old_value": 92,
+            "new_value": 101
+          },
+          {
+            "id": "bmw_s_rie_3_hybride_330e_pack_m_pro",
+            "full_name": "BMW Série 3 Hybride 330e Pack M Pro",
+            "brand": "Bmw",
+            "model": "Série 3 Hybride",
+            "field": "range_km",
+            "old_value": 92,
+            "new_value": 101
+          },
+          {
+            "id": "bmw_x1_hybride_xdrive_30e_pack_m",
+            "full_name": "BMW X1 Hybride xDrive 30e Pack M",
+            "brand": "Bmw",
+            "model": "X1 Hybride",
+            "field": "range_km",
+            "old_value": 76,
+            "new_value": 83
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-01",
       "previous_scrape": "2026-10-22T17:42:26.058754",
       "current_scrape": "2026-11-01T01:15:29.292495",
